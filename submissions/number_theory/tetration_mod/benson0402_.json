@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_ab_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 856064,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "2_3_32_00",
+      "checker_out": "b2sgIjE2Igo=",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNjkzIHRva2Vucwo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk4IHRva2Vucwo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgODggdG9rZW5zCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzIHRva2Vucwo=",
+      "memory": 696320,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTMyIHRva2Vucwo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_998244353_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 860160,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_998244353_01",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_998244353_02",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_1000000000_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_1000000000_01",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_1000000000_02",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.003
+    }
+  ],
+  "overview": {
+    "id": 315354,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 860160,
+    "problem_name": "tetration_mod",
+    "problem_title": "Tetration Mod",
+    "status": "AC",
+    "submission_time": "2025-09-18T17:32:04.553622Z",
+    "time": 0.006,
+    "user_name": "benson0402_"
+  }
+}

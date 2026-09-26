@@ -1,0 +1,227 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 121040896,
+      "status": "AC",
+      "time": 0.199
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 120901632,
+      "status": "AC",
+      "time": 0.198
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 120975360,
+      "status": "AC",
+      "time": 0.198
+    },
+    {
+      "case": "mod998244353_q2_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121122816,
+      "status": "AC",
+      "time": 0.266
+    },
+    {
+      "case": "mod998244353_q2_maxi_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121192448,
+      "status": "AC",
+      "time": 0.289
+    },
+    {
+      "case": "mod1000000007_q2_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121151488,
+      "status": "AC",
+      "time": 0.266
+    },
+    {
+      "case": "mod2_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121159680,
+      "status": "AC",
+      "time": 0.21
+    },
+    {
+      "case": "mod2_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 2891776,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "mod3_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121016320,
+      "status": "AC",
+      "time": 0.213
+    },
+    {
+      "case": "mod3_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 2920448,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "mod3_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 2928640,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3198976,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3231744,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3186688,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3207168,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3153920,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "med_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6111232,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "med_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 5967872,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "med_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 5361664,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "large_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121159680,
+      "status": "AC",
+      "time": 0.269
+    },
+    {
+      "case": "large_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121147392,
+      "status": "AC",
+      "time": 0.267
+    },
+    {
+      "case": "large_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121081856,
+      "status": "AC",
+      "time": 0.262
+    },
+    {
+      "case": "q_01_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121126912,
+      "status": "AC",
+      "time": 0.259
+    },
+    {
+      "case": "q_01_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 121163776,
+      "status": "AC",
+      "time": 0.268
+    },
+    {
+      "case": "small_ord_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 69586944,
+      "status": "AC",
+      "time": 0.221
+    },
+    {
+      "case": "small_ord_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 45658112,
+      "status": "AC",
+      "time": 0.15
+    },
+    {
+      "case": "small_ord_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 28975104,
+      "status": "AC",
+      "time": 0.09
+    },
+    {
+      "case": "small_ord_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 24469504,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "small_ord_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 16171008,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "small_ord_05",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 14475264,
+      "status": "AC",
+      "time": 0.059
+    }
+  ],
+  "overview": {
+    "id": 406025,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 121192448,
+    "problem_name": "q_binomial_coefficient_prime_mod",
+    "problem_title": "$q$-Binomial Coefficient (Prime Mod)",
+    "status": "AC",
+    "submission_time": "2026-09-25T07:03:51.842705Z",
+    "time": 0.289,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjE5MjI3OTIyMCIK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 602112,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 602112,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 520192,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_10",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_11",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_12",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_13",
+      "checker_out": "b2sgMTQgdG9rZW5zCg==",
+      "memory": 610304,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_14",
+      "checker_out": "b2sgMTUgdG9rZW5zCg==",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_15",
+      "checker_out": "b2sgMTYgdG9rZW5zCg==",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTMyMyB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNDI5NCB0b2tlbnMK",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgNDE4NCB0b2tlbnMK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 17182720,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 18509824,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 2662400,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19914752,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19906560,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "fft_killer_00",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19689472,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "fft_killer_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19902464,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "fft_killer_02",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19902464,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "fft_killer_03",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19673088,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "fft_killer_04",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19906560,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "fft_killer_05",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19906560,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "fft_killer_06",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19701760,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "fft_killer_07",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19906560,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "fft_killer_08",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19800064,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "fft_killer_09",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19644416,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "medium_all_zero_00",
+      "checker_out": "b2sgMTMyMyB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_c_zero_00",
+      "checker_out": "b2sgMTMyMyB0b2tlbnMK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 375167,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 19914752,
+    "problem_name": "polynomial_taylor_shift",
+    "problem_title": "Polynomial Taylor Shift",
+    "status": "AC",
+    "submission_time": "2026-05-27T10:11:39.693191Z",
+    "time": 0.039,
+    "user_name": "urectanc"
+  }
+}

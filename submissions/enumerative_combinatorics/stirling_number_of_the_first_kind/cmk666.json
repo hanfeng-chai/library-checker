@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "2_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "262143_00",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 9187328,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "262144_00",
+      "checker_out": "b2sgMjYyMTQ1IHRva2Vucwo=",
+      "memory": 16404480,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "491519_00",
+      "checker_out": "b2sgNDkxNTIwIHRva2Vucwo=",
+      "memory": 17412096,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "499999_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 18100224,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "5000_00",
+      "checker_out": "b2sgNTAwMSB0b2tlbnMK",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 21782528,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 243215,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 21782528,
+    "problem_name": "stirling_number_of_the_first_kind",
+    "problem_title": "Stirling Number of the First Kind",
+    "status": "AC",
+    "submission_time": "2024-10-18T02:53:29.713874Z",
+    "time": 0.088,
+    "user_name": "cmk666"
+  }
+}

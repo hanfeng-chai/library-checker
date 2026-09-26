@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 598016,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "identity_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDc5MCB0b2tlbnMK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDI5NSB0b2tlbnMK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDE4NSB0b2tlbnMK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzI2NiB0b2tlbnMK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNjY3NyB0b2tlbnMK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1290240,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1515520,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1298432,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1323008,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1314816,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_identity_00",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1298432,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_degree_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 716800,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_03",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_04",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_05",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_06",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_07",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_08",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_09",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 338567,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1515520,
+    "problem_name": "compositional_inverse_of_formal_power_series",
+    "problem_title": "Compositional Inverse of Formal Power Series",
+    "status": "AC",
+    "submission_time": "2025-12-19T23:25:35.318025Z",
+    "time": 0.021,
+    "user_name": "MeIoN"
+  }
+}

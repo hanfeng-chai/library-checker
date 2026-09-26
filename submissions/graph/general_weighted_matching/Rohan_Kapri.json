@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDMgbWF0Y2hpbmdzIChjb3N0ID0gMTUpCg==",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0s6IDEgbWF0Y2hpbmdzIChjb3N0ID0gMykK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "minimal_00",
+      "checker_out": "b2sgT0s6IDAgbWF0Y2hpbmdzIChjb3N0ID0gMCkK",
+      "memory": 647168,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "issue610_00",
+      "checker_out": "b2sgT0s6IDcgbWF0Y2hpbmdzIChjb3N0ID0gNykK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "anti53256_00",
+      "checker_out": "b2sgT0s6IDkgbWF0Y2hpbmdzIChjb3N0ID0gODEpCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0s6IDYgbWF0Y2hpbmdzIChjb3N0ID0gNTApCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0s6IDMgbWF0Y2hpbmdzIChjb3N0ID0gMTkpCg==",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAyNDQxOTQ1MzApCg==",
+      "memory": 7286784,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAyNDg1ODAyNTApCg==",
+      "memory": 7553024,
+      "status": "AC",
+      "time": 0.205
+    },
+    {
+      "case": "sparse_00",
+      "checker_out": "b2sgT0s6IDIwOCBtYXRjaGluZ3MgKGNvc3QgPSAxNDA2MDcyMTIpCg==",
+      "memory": 6873088,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "sparse_01",
+      "checker_out": "b2sgT0s6IDExNSBtYXRjaGluZ3MgKGNvc3QgPSA2OTcyMzM1MSkK",
+      "memory": 6823936,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "sparse_02",
+      "checker_out": "b2sgT0s6IDcwIG1hdGNoaW5ncyAoY29zdCA9IDM1OTM1OTk3KQo=",
+      "memory": 6828032,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "sparse_03",
+      "checker_out": "b2sgT0s6IDIzNiBtYXRjaGluZ3MgKGNvc3QgPSAxNzYwNjUwMjYpCg==",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "sparse_04",
+      "checker_out": "b2sgT0s6IDE5MiBtYXRjaGluZ3MgKGNvc3QgPSAxMjU2NjcwOTApCg==",
+      "memory": 6860800,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "binary_tree_00",
+      "checker_out": "b2sgT0s6IDE2OCBtYXRjaGluZ3MgKGNvc3QgPSAxMTk1ODE4ODgpCg==",
+      "memory": 7045120,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "cycles_00",
+      "checker_out": "b2sgT0s6IDIyOSBtYXRjaGluZ3MgKGNvc3QgPSAxNDMxNjMxNzUpCg==",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "grid_00",
+      "checker_out": "b2sgT0s6IDI0NiBtYXRjaGluZ3MgKGNvc3QgPSAyMzY4MDU5OTcpCg==",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "complete_00",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAyNDkyMDk3OTYpCg==",
+      "memory": 7868416,
+      "status": "AC",
+      "time": 0.167
+    },
+    {
+      "case": "complete_01",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAyNDkxOTAyNDcpCg==",
+      "memory": 7086080,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "lila_arena_00",
+      "checker_out": "b2sgT0s6IDUwIG1hdGNoaW5ncyAoY29zdCA9IDQ4ODE0NTU5KQo=",
+      "memory": 1609728,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "complete_plane_00",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAxMzUxMzE0MTUpCg==",
+      "memory": 8429568,
+      "status": "AC",
+      "time": 0.239
+    },
+    {
+      "case": "complete_plane_01",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAxMzc3Njg1NDcpCg==",
+      "memory": 8687616,
+      "status": "AC",
+      "time": 0.24
+    },
+    {
+      "case": "complete_mandist_00",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAxMjQzMjg5MDEpCg==",
+      "memory": 11841536,
+      "status": "AC",
+      "time": 0.186
+    },
+    {
+      "case": "complete_mandist_01",
+      "checker_out": "b2sgT0s6IDI1MCBtYXRjaGluZ3MgKGNvc3QgPSAxMjY3MzY4NTEpCg==",
+      "memory": 11857920,
+      "status": "AC",
+      "time": 0.182
+    }
+  ],
+  "overview": {
+    "id": 404902,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 11857920,
+    "problem_name": "general_weighted_matching",
+    "problem_title": "General Weighted Matching",
+    "status": "AC",
+    "submission_time": "2026-09-22T04:55:56.56015Z",
+    "time": 0.24,
+    "user_name": "Rohan_Kapri"
+  }
+}

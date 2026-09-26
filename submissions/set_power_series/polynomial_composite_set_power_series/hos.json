@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 103821312,
+      "status": "AC",
+      "time": 0.661
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 103854080,
+      "status": "AC",
+      "time": 0.674
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 103841792,
+      "status": "AC",
+      "time": 0.666
+    },
+    {
+      "case": "nm_01_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "nm_01_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "nm_01_02",
+      "checker_out": "b2sgODE5MiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "nm_01_03",
+      "checker_out": "b2sgIjkyNDI2MTEwNyIK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "nm_01_04",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "nm_01_05",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 12824576,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "nm_01_06",
+      "checker_out": "b2sgIjgyOTcyMjg2NCIK",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "nm_01_07",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 1531904,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 103591936,
+      "status": "AC",
+      "time": 0.647
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 26279936,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAyNCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNTEyIHRva2Vucwo=",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 244815,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 103854080,
+    "problem_name": "polynomial_composite_set_power_series",
+    "problem_title": "Polynomial Composite Set Power Series",
+    "status": "AC",
+    "submission_time": "2024-10-25T02:27:20.211334Z",
+    "time": 0.674,
+    "user_name": "hos"
+  }
+}

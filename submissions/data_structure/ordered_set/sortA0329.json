@@ -1,0 +1,276 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMzMzMzU1IHRva2Vucwo=",
+      "memory": 8945664,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMzk5MzYzIHRva2Vucwo=",
+      "memory": 9441280,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTg5NjkgdG9rZW5zCg==",
+      "memory": 7823360,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTg4NjkgdG9rZW5zCg==",
+      "memory": 7909376,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNDkwNjcyIHRva2Vucwo=",
+      "memory": 10878976,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgNDkwNTIzIHRva2Vucwo=",
+      "memory": 8896512,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgNDkwNzc3IHRva2Vucwo=",
+      "memory": 10604544,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgNDkwNTc1IHRva2Vucwo=",
+      "memory": 10616832,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_08",
+      "checker_out": "b2sgMzMzMjYyIHRva2Vucwo=",
+      "memory": 9089024,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_09",
+      "checker_out": "b2sgMzk5MjY3IHRva2Vucwo=",
+      "memory": 9895936,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_10",
+      "checker_out": "b2sgMTg5NDQgdG9rZW5zCg==",
+      "memory": 7909376,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_11",
+      "checker_out": "b2sgMTg4MDUgdG9rZW5zCg==",
+      "memory": 7905280,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_12",
+      "checker_out": "b2sgNDkwNDM3IHRva2Vucwo=",
+      "memory": 10813440,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "max_random_13",
+      "checker_out": "b2sgNDkwNTUxIHRva2Vucwo=",
+      "memory": 8892416,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_14",
+      "checker_out": "b2sgNDkwNTAyIHRva2Vucwo=",
+      "memory": 11411456,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_15",
+      "checker_out": "b2sgNDkwNTM3IHRva2Vucwo=",
+      "memory": 11931648,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_16",
+      "checker_out": "b2sgMzMzMTgyIHRva2Vucwo=",
+      "memory": 15974400,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "max_random_17",
+      "checker_out": "b2sgMzk5MzYwIHRva2Vucwo=",
+      "memory": 16760832,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "max_random_18",
+      "checker_out": "b2sgMTkwMTUgdG9rZW5zCg==",
+      "memory": 13848576,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_19",
+      "checker_out": "b2sgMTg2NTIgdG9rZW5zCg==",
+      "memory": 13770752,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_20",
+      "checker_out": "b2sgNDkwNTcwIHRva2Vucwo=",
+      "memory": 17805312,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "max_random_21",
+      "checker_out": "b2sgNDkwMzkyIHRva2Vucwo=",
+      "memory": 16232448,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_22",
+      "checker_out": "b2sgNDkwNjY3IHRva2Vucwo=",
+      "memory": 17838080,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_random_23",
+      "checker_out": "b2sgNDkwNTk3IHRva2Vucwo=",
+      "memory": 17289216,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_24",
+      "checker_out": "b2sgMzMzMjIxIHRva2Vucwo=",
+      "memory": 16498688,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "max_random_25",
+      "checker_out": "b2sgMzk5MDYwIHRva2Vucwo=",
+      "memory": 17113088,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_26",
+      "checker_out": "b2sgMTg5OTggdG9rZW5zCg==",
+      "memory": 13959168,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "max_random_27",
+      "checker_out": "b2sgMTg3NjIgdG9rZW5zCg==",
+      "memory": 14036992,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "max_random_28",
+      "checker_out": "b2sgNDkwNTExIHRva2Vucwo=",
+      "memory": 18325504,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "max_random_29",
+      "checker_out": "b2sgNDkwNTM1IHRva2Vucwo=",
+      "memory": 17027072,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_random_30",
+      "checker_out": "b2sgNDkwNTEzIHRva2Vucwo=",
+      "memory": 18345984,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_random_31",
+      "checker_out": "b2sgNDkwNTQ1IHRva2Vucwo=",
+      "memory": 18432000,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzMzMjg1IHRva2Vucwo=",
+      "memory": 7909376,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMzMyODM5IHRva2Vucwo=",
+      "memory": 7561216,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMzMzNDQxIHRva2Vucwo=",
+      "memory": 7905280,
+      "status": "AC",
+      "time": 0.016
+    }
+  ],
+  "overview": {
+    "id": 263061,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18432000,
+    "problem_name": "ordered_set",
+    "problem_title": "Ordered Set",
+    "status": "AC",
+    "submission_time": "2025-01-23T09:56:59.619726Z",
+    "time": 0.062,
+    "user_name": "sortA0329"
+  }
+}

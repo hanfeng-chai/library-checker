@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2318336,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2314240,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2314240,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3366912,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "path_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3108864,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "path_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "path_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2834432,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4Nzc5IHRva2Vucwo=",
+      "memory": 2314240,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTQ4NzU3IHRva2Vucwo=",
+      "memory": 2314240,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjAzIHRva2Vucwo=",
+      "memory": 1527808,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 2052096,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 1261568,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgMTQwNTA5IHRva2Vucwo=",
+      "memory": 1527808,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgMTA4NjE3IHRva2Vucwo=",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgMTE0NzUgdG9rZW5zCg==",
+      "memory": 1527808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgNDk0NTUgdG9rZW5zCg==",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgMTk1NTc4IHRva2Vucwo=",
+      "memory": 2048000,
+      "status": "AC",
+      "time": 0.008
+    }
+  ],
+  "overview": {
+    "id": 224108,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 3366912,
+    "problem_name": "unionfind_with_potential",
+    "problem_title": "Unionfind with Potential",
+    "status": "AC",
+    "submission_time": "2024-07-28T01:02:14.513052Z",
+    "time": 0.008,
+    "user_name": "sortA0329"
+  }
+}

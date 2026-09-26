@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 614400,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3936256,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4448256,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1036288,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 4177920,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2871296,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4714496,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4849664,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4853760,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 4714496,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 4714496,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "hand_max_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 9306112,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "hand_min_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4702208,
+      "status": "AC",
+      "time": 0.004
+    }
+  ],
+  "overview": {
+    "id": 372659,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 9306112,
+    "problem_name": "longest_increasing_subsequence",
+    "problem_title": "Longest Increasing Subsequence",
+    "status": "AC",
+    "submission_time": "2026-05-15T11:59:09.848266Z",
+    "time": 0.01,
+    "user_name": "IceKylin"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 659456,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 4763648,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgOTk5MDYgdG9rZW5zCg==",
+      "memory": 14843904,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgOTk3NjIgdG9rZW5zCg==",
+      "memory": 14979072,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgOTk5MzcgdG9rZW5zCg==",
+      "memory": 14995456,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgMTAwMDQ5IHRva2Vucwo=",
+      "memory": 14864384,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMTAwMTgzIHRva2Vucwo=",
+      "memory": 14979072,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgMTAwMzg1IHRva2Vucwo=",
+      "memory": 14954496,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgMTAwMTQ2IHRva2Vucwo=",
+      "memory": 15024128,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTAwMTQ4IHRva2Vucwo=",
+      "memory": 21975040,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTAwMDAyIHRva2Vucwo=",
+      "memory": 21995520,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTAwMzQ0IHRva2Vucwo=",
+      "memory": 21737472,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgMTAwMTMzIHRva2Vucwo=",
+      "memory": 21934080,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgOTk5NTEgdG9rZW5zCg==",
+      "memory": 21975040,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_05",
+      "checker_out": "b2sgOTk5NTYgdG9rZW5zCg==",
+      "memory": 22233088,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "max_06",
+      "checker_out": "b2sgOTk3NzggdG9rZW5zCg==",
+      "memory": 25636864,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_07",
+      "checker_out": "b2sgOTk2NzQgdG9rZW5zCg==",
+      "memory": 27369472,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "many_query_0_00",
+      "checker_out": "b2sgMjAwNSB0b2tlbnMK",
+      "memory": 25677824,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "many_query_0_01",
+      "checker_out": "b2sgMTk0OCB0b2tlbnMK",
+      "memory": 25673728,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "many_query_0_02",
+      "checker_out": "b2sgMjA1NyB0b2tlbnMK",
+      "memory": 25939968,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "many_query_0_03",
+      "checker_out": "b2sgMTk2MSB0b2tlbnMK",
+      "memory": 31330304,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "many_query_1_00",
+      "checker_out": "b2sgMTk4MDAzIHRva2Vucwo=",
+      "memory": 17829888,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "many_query_1_01",
+      "checker_out": "b2sgMTk4MDMxIHRva2Vucwo=",
+      "memory": 17821696,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "many_query_1_02",
+      "checker_out": "b2sgMTk3OTYyIHRva2Vucwo=",
+      "memory": 18096128,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "many_query_1_03",
+      "checker_out": "b2sgMTk4MDU5IHRva2Vucwo=",
+      "memory": 19111936,
+      "status": "AC",
+      "time": 0.031
+    }
+  ],
+  "overview": {
+    "id": 393918,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 31330304,
+    "problem_name": "point_set_range_frequency",
+    "problem_title": "Point Set Range Frequency",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:06:15.940005Z",
+    "time": 0.034,
+    "user_name": "chaihf"
+  }
+}

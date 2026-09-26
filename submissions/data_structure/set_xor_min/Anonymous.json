@@ -1,0 +1,99 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "ans_big_00",
+      "checker_out": "b2sgIjEwNzM3NDE4MjMiCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI5OTQ2IHRva2Vucwo=",
+      "memory": 10244096,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTU0MzIxIHRva2Vucwo=",
+      "memory": 10444800,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTc2MzggdG9rZW5zCg==",
+      "memory": 9637888,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTY2MzI4IHRva2Vucwo=",
+      "memory": 10551296,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTY2NTIxIHRva2Vucwo=",
+      "memory": 10498048,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTY2NjM2IHRva2Vucwo=",
+      "memory": 10493952,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "almost_all_insert_00",
+      "checker_out": "b2sgIjExMjAiCg==",
+      "memory": 12591104,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "almost_all_query_00",
+      "checker_out": "b2sgNDk5OTk5IHRva2Vucwo=",
+      "memory": 5824512,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "almost_all_query_close_00",
+      "checker_out": "b2sgNDk5OTk5IHRva2Vucwo=",
+      "memory": 1855488,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_ans_small_00",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 10997760,
+      "status": "AC",
+      "time": 0.024
+    }
+  ],
+  "overview": {
+    "id": 112939,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 12591104,
+    "problem_name": "set_xor_min",
+    "problem_title": "Set Xor-Min",
+    "status": "AC",
+    "time": 0.025
+  }
+}

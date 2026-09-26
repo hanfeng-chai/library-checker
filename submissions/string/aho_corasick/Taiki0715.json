@@ -1,0 +1,521 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgMjAgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgMTYgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "bfs_00",
+      "checker_out": "b2sgNDI0MCB0b2tlbnMK",
+      "memory": 1060864,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "bfs_01",
+      "checker_out": "b2sgMjEyMDY4IHRva2Vucwo=",
+      "memory": 6529024,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "bfs_02",
+      "checker_out": "b2sgNDIwNzcyIHRva2Vucwo=",
+      "memory": 13066240,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "bfs_03",
+      "checker_out": "b2sgNzY0MjU0IHRva2Vucwo=",
+      "memory": 19972096,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTAwMDAwNSB0b2tlbnMK",
+      "memory": 6795264,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjY2ODE0IHRva2Vucwo=",
+      "memory": 4952064,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjY1NyB0b2tlbnMK",
+      "memory": 46116864,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTUzODQ5OCB0b2tlbnMK",
+      "memory": 71811072,
+      "status": "AC",
+      "time": 0.118
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 90529792,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgMjAwMDAwMSB0b2tlbnMK",
+      "memory": 90087424,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgMTk5OTk2OSB0b2tlbnMK",
+      "memory": 94511104,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgMTk5OTY4NyB0b2tlbnMK",
+      "memory": 94613504,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgMTAwMDA1MyB0b2tlbnMK",
+      "memory": 7315456,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgNjY2NTAwIHRva2Vucwo=",
+      "memory": 4714496,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_10",
+      "checker_out": "b2sgNTI0MTMzIHRva2Vucwo=",
+      "memory": 16248832,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_11",
+      "checker_out": "b2sgMTkyNjcyNSB0b2tlbnMK",
+      "memory": 89636864,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "random_12",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 90935296,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "random_13",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 91918336,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "random_14",
+      "checker_out": "b2sgMjAwMDAxMSB0b2tlbnMK",
+      "memory": 91844608,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "random_15",
+      "checker_out": "b2sgMTk5OTAyOSB0b2tlbnMK",
+      "memory": 94298112,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "random_16",
+      "checker_out": "b2sgMTAwMDAxMSB0b2tlbnMK",
+      "memory": 6795264,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_17",
+      "checker_out": "b2sgNjY3NjgxIHRva2Vucwo=",
+      "memory": 5750784,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_18",
+      "checker_out": "b2sgMTg1ODE4IHRva2Vucwo=",
+      "memory": 2375680,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_19",
+      "checker_out": "b2sgMTgxMjY0NSB0b2tlbnMK",
+      "memory": 84361216,
+      "status": "AC",
+      "time": 0.134
+    },
+    {
+      "case": "random_20",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 90406912,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "random_21",
+      "checker_out": "b2sgMTk5OTk5NSB0b2tlbnMK",
+      "memory": 90701824,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "random_22",
+      "checker_out": "b2sgMTk5OTk5MSB0b2tlbnMK",
+      "memory": 93806592,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "random_23",
+      "checker_out": "b2sgMTk5OTkzOSB0b2tlbnMK",
+      "memory": 94367744,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "short_period_00",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 95678464,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "short_period_01",
+      "checker_out": "b2sgMTA3MzkxMSB0b2tlbnMK",
+      "memory": 51707904,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "short_period_02",
+      "checker_out": "b2sgMTUxNzI3NSB0b2tlbnMK",
+      "memory": 72638464,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "short_period_03",
+      "checker_out": "b2sgMTkxNzMxIHRva2Vucwo=",
+      "memory": 9179136,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "short_period_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 95657984,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "short_period_05",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 94965760,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "short_period_06",
+      "checker_out": "b2sgNzQ1MzM5IHRva2Vucwo=",
+      "memory": 35631104,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "short_period_07",
+      "checker_out": "b2sgMjE0MjYxIHRva2Vucwo=",
+      "memory": 10657792,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "short_period_08",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 95399936,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "short_period_09",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 95064064,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "short_period_10",
+      "checker_out": "b2sgMTAwMjIzNSB0b2tlbnMK",
+      "memory": 47575040,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "short_period_11",
+      "checker_out": "b2sgNTI0NTk5IHRva2Vucwo=",
+      "memory": 25415680,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "short_period_12",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 95899648,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "short_period_13",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 95076352,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "short_period_14",
+      "checker_out": "b2sgMTk3OTAwMyB0b2tlbnMK",
+      "memory": 94199808,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "short_period_15",
+      "checker_out": "b2sgMTYxMzEyNyB0b2tlbnMK",
+      "memory": 76595200,
+      "status": "AC",
+      "time": 0.094
+    },
+    {
+      "case": "fibonacci_00",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 95260672,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_01",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 94674944,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "fibonacci_02",
+      "checker_out": "b2sgMTk5OTc0OSB0b2tlbnMK",
+      "memory": 95174656,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "fibonacci_03",
+      "checker_out": "b2sgMTk2OTkzMyB0b2tlbnMK",
+      "memory": 93265920,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 95391744,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "fibonacci_05",
+      "checker_out": "b2sgMTk5OTk5NSB0b2tlbnMK",
+      "memory": 95064064,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "fibonacci_06",
+      "checker_out": "b2sgMTk5ODc3MSB0b2tlbnMK",
+      "memory": 94621696,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "fibonacci_07",
+      "checker_out": "b2sgMTk1NjUwMyB0b2tlbnMK",
+      "memory": 92520448,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "fibonacci_08",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 94892032,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_09",
+      "checker_out": "b2sgMTk5OTk5MyB0b2tlbnMK",
+      "memory": 95121408,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "fibonacci_10",
+      "checker_out": "b2sgMTk5ODg3MSB0b2tlbnMK",
+      "memory": 94359552,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "fibonacci_11",
+      "checker_out": "b2sgMTk1MTYyNyB0b2tlbnMK",
+      "memory": 91983872,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_12",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 94863360,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "fibonacci_13",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 95358976,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "fibonacci_14",
+      "checker_out": "b2sgMTk5OTk1OSB0b2tlbnMK",
+      "memory": 94777344,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "fibonacci_15",
+      "checker_out": "b2sgMTk2MTk0NyB0b2tlbnMK",
+      "memory": 92643328,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "almost_single_00",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 90533888,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "almost_single_01",
+      "checker_out": "b2sgMjAwMDAwMSB0b2tlbnMK",
+      "memory": 94801920,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "almost_single_02",
+      "checker_out": "b2sgMTk5OTk3MyB0b2tlbnMK",
+      "memory": 90800128,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "almost_single_03",
+      "checker_out": "b2sgMTU0Mjg0MSB0b2tlbnMK",
+      "memory": 73117696,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "almost_single_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 90664960,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "almost_single_05",
+      "checker_out": "b2sgMjAwMDAwMSB0b2tlbnMK",
+      "memory": 95596544,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "almost_single_06",
+      "checker_out": "b2sgMTg5MzUwNSB0b2tlbnMK",
+      "memory": 89636864,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "almost_single_07",
+      "checker_out": "b2sgMTM4MjgzMSB0b2tlbnMK",
+      "memory": 65253376,
+      "status": "AC",
+      "time": 0.078
+    }
+  ],
+  "overview": {
+    "id": 307580,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 95899648,
+    "problem_name": "aho_corasick",
+    "problem_title": "Aho Corasick",
+    "status": "AC",
+    "submission_time": "2025-08-15T10:31:06.01944Z",
+    "time": 0.134,
+    "user_name": "Taiki0715"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 643072,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNzYgdG9rZW5zCg==",
+      "memory": 1036288,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTUgdG9rZW5zCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTI3IHRva2Vucwo=",
+      "memory": 786432,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjYgdG9rZW5zCg==",
+      "memory": 782336,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjA3IHRva2Vucwo=",
+      "memory": 884736,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTkxNTQgdG9rZW5zCg==",
+      "memory": 13488128,
+      "status": "AC",
+      "time": 0.584
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk0OSB0b2tlbnMK",
+      "memory": 17412096,
+      "status": "AC",
+      "time": 0.263
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTU1NDUgdG9rZW5zCg==",
+      "memory": 19333120,
+      "status": "AC",
+      "time": 0.692
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwMTAgdG9rZW5zCg==",
+      "memory": 33685504,
+      "status": "AC",
+      "time": 1.5
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwNjMgdG9rZW5zCg==",
+      "memory": 33722368,
+      "status": "AC",
+      "time": 1.505
+    },
+    {
+      "case": "many_points_00",
+      "checker_out": "b2sgNjI2MiB0b2tlbnMK",
+      "memory": 45068288,
+      "status": "AC",
+      "time": 0.624
+    },
+    {
+      "case": "many_updates_00",
+      "checker_out": "b2sgNjM4NyB0b2tlbnMK",
+      "memory": 29708288,
+      "status": "AC",
+      "time": 0.445
+    },
+    {
+      "case": "many_random_queries_00",
+      "checker_out": "b2sgNDM1ODcgdG9rZW5zCg==",
+      "memory": 29990912,
+      "status": "AC",
+      "time": 2.338
+    },
+    {
+      "case": "many_sum_queries_00",
+      "checker_out": "b2sgODEyODAgdG9rZW5zCg==",
+      "memory": 29757440,
+      "status": "AC",
+      "time": 1.965
+    },
+    {
+      "case": "many_affine_queries_00",
+      "checker_out": "b2sgNjE1OSB0b2tlbnMK",
+      "memory": 29708288,
+      "status": "AC",
+      "time": 2.448
+    },
+    {
+      "case": "xy_concentrate_00",
+      "checker_out": "b2sgMjQ5MjggdG9rZW5zCg==",
+      "memory": 33533952,
+      "status": "AC",
+      "time": 1.481
+    },
+    {
+      "case": "xy_concentrate_01",
+      "checker_out": "b2sgMjUwNTEgdG9rZW5zCg==",
+      "memory": 33517568,
+      "status": "AC",
+      "time": 1.495
+    },
+    {
+      "case": "xy_concentrate_02",
+      "checker_out": "b2sgMjQ5NDQgdG9rZW5zCg==",
+      "memory": 33525760,
+      "status": "AC",
+      "time": 1.496
+    },
+    {
+      "case": "power_of_2_00",
+      "checker_out": "b2sgMTg1NDUgdG9rZW5zCg==",
+      "memory": 22818816,
+      "status": "AC",
+      "time": 0.927
+    },
+    {
+      "case": "power_of_2_01",
+      "checker_out": "b2sgMTg4MDEgdG9rZW5zCg==",
+      "memory": 22556672,
+      "status": "AC",
+      "time": 0.931
+    },
+    {
+      "case": "power_of_2_minus_1_00",
+      "checker_out": "b2sgMjg0ODkgdG9rZW5zCg==",
+      "memory": 18956288,
+      "status": "AC",
+      "time": 1.14
+    },
+    {
+      "case": "power_of_2_minus_1_01",
+      "checker_out": "b2sgMjg2MzYgdG9rZW5zCg==",
+      "memory": 18862080,
+      "status": "AC",
+      "time": 1.147
+    },
+    {
+      "case": "issue_1298_00",
+      "checker_out": "b2sgMTAwNTggdG9rZW5zCg==",
+      "memory": 26988544,
+      "status": "AC",
+      "time": 0.145
+    },
+    {
+      "case": "issue_1298_01",
+      "checker_out": "b2sgOTgzNyB0b2tlbnMK",
+      "memory": 26013696,
+      "status": "AC",
+      "time": 0.146
+    }
+  ],
+  "overview": {
+    "id": 375390,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 45068288,
+    "problem_name": "dynamic_point_set_rectangle_affine_rectangle_sum",
+    "problem_title": "Dynamic Point Rectangle Affine Rectangle Sum",
+    "status": "AC",
+    "submission_time": "2026-05-28T05:30:58.862218Z",
+    "time": 2.448,
+    "user_name": "mackerel38"
+  }
+}

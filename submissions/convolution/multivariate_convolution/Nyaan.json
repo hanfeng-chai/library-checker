@@ -1,0 +1,135 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "dim1_00",
+      "checker_out": "b2sgMjYxODM2IHRva2Vucwo=",
+      "memory": 12541952,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "dim1_01",
+      "checker_out": "b2sgMjYxMzQxIHRva2Vucwo=",
+      "memory": 12533760,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "dim2_00",
+      "checker_out": "b2sgMjU1MzQwIHRva2Vucwo=",
+      "memory": 16637952,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "dim2_01",
+      "checker_out": "b2sgMjYyMDgzIHRva2Vucwo=",
+      "memory": 16691200,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjU2MDg4Igo=",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "k0_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "k0_01",
+      "checker_out": "b2sgIjI2MTM3MjYyNiIK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTUxMjAwIHRva2Vucwo=",
+      "memory": 36200448,
+      "status": "AC",
+      "time": 0.153
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTgxNDQwIHRva2Vucwo=",
+      "memory": 36700160,
+      "status": "AC",
+      "time": 0.154
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNjAwIHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgOTQ0IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "threes_00",
+      "checker_out": "b2sgMTg2NjI0IHRva2Vucwo=",
+      "memory": 66134016,
+      "status": "AC",
+      "time": 0.421
+    },
+    {
+      "case": "threes_01",
+      "checker_out": "b2sgMTM5OTY4IHRva2Vucwo=",
+      "memory": 61440000,
+      "status": "AC",
+      "time": 0.368
+    },
+    {
+      "case": "twos_00",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 83816448,
+      "status": "AC",
+      "time": 0.619
+    },
+    {
+      "case": "twos_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 40353792,
+      "status": "AC",
+      "time": 0.281
+    }
+  ],
+  "overview": {
+    "id": 40748,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 83816448,
+    "problem_name": "multivariate_convolution",
+    "problem_title": "Multidimensional Convolution (Truncated)",
+    "status": "AC",
+    "time": 0.619,
+    "user_name": "Nyaan"
+  }
+}

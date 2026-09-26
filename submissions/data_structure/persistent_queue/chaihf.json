@@ -1,0 +1,115 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTY5OTQxIHRva2Vucwo=",
+      "memory": 9723904,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjAyNzExIHRva2Vucwo=",
+      "memory": 11030528,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjMzMDUgdG9rZW5zCg==",
+      "memory": 1851392,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_2_00",
+      "checker_out": "b2sgMTE0NDkyIHRva2Vucwo=",
+      "memory": 8949760,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_2_01",
+      "checker_out": "b2sgMTM2NjcwIHRva2Vucwo=",
+      "memory": 10510336,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_2_02",
+      "checker_out": "b2sgMTU3NjMgdG9rZW5zCg==",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_3_00",
+      "checker_out": "b2sgMTE2NzgzIHRva2Vucwo=",
+      "memory": 10317824,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_3_01",
+      "checker_out": "b2sgMTM5MTU0IHRva2Vucwo=",
+      "memory": 12111872,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_3_02",
+      "checker_out": "b2sgMTYwODYgdG9rZW5zCg==",
+      "memory": 1884160,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "ephemeral_00",
+      "checker_out": "b2sgMTg4ODM0IHRva2Vucwo=",
+      "memory": 16097280,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "two_stacks_killer_00",
+      "checker_out": "b2sgMTY2NjY2IHRva2Vucwo=",
+      "memory": 15773696,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "half_rot_killer_00",
+      "checker_out": "b2sgMjkzMDc5IHRva2Vucwo=",
+      "memory": 16490496,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "half_rot_killer2_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 9977856,
+      "status": "AC",
+      "time": 0.009
+    }
+  ],
+  "overview": {
+    "id": 393911,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16490496,
+    "problem_name": "persistent_queue",
+    "problem_title": "Persistent Queue",
+    "status": "AC",
+    "submission_time": "2026-08-16T12:56:12.883739Z",
+    "time": 0.029,
+    "user_name": "chaihf"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 35844096,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 35995648,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 36282368,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 36339712,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 35885056,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "no_edge_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 9953280,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "complete_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 24911872,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "star_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 36220928,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "star_remove_one_edge_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 36249600,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "complement_of_sparse_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 24883200,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "complement_of_sparse_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 24985600,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "complement_of_sparse_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 24887296,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "complement_of_sparse_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 24887296,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "complement_of_sparse_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 24915968,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "complement_of_many_paths_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 24891392,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "complement_of_many_paths_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 24887296,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "complement_of_many_paths_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 24920064,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "complement_of_many_paths_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 24887296,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "complement_of_many_paths_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 24989696,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "minimum_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "minimum_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "minimum_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 257369,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 36339712,
+    "problem_name": "connected_components_of_complement_graph",
+    "problem_title": "Connected Components of Complement Graph",
+    "status": "AC",
+    "submission_time": "2024-12-20T11:49:24.21687Z",
+    "time": 0.04,
+    "user_name": "square1001"
+  }
+}

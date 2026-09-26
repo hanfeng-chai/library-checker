@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 17543168,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTk0OTQ3IHRva2Vucwo=",
+      "memory": 19386368,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjMxMDQwIHRva2Vucwo=",
+      "memory": 19382272,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjg4OTQwIHRva2Vucwo=",
+      "memory": 19591168,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDY0IHRva2Vucwo=",
+      "memory": 23048192,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNDk5ODg3IHRva2Vucwo=",
+      "memory": 22523904,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMjUxIHRva2Vucwo=",
+      "memory": 22024192,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "max_many_updates_00",
+      "checker_out": "b2sgMTAwMzkgdG9rZW5zCg==",
+      "memory": 18001920,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "unordered_map_killer_00",
+      "checker_out": "b2sgNTAwMzE5IHRva2Vucwo=",
+      "memory": 19402752,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "unordered_map_killer_01",
+      "checker_out": "b2sgNTAwMzI2IHRva2Vucwo=",
+      "memory": 19234816,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "unordered_map_killer_02",
+      "checker_out": "b2sgNDk5NDY2IHRva2Vucwo=",
+      "memory": 18862080,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "unordered_map_killer_03",
+      "checker_out": "b2sgNDk5NjYzIHRva2Vucwo=",
+      "memory": 19353600,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "sparse_keys_00",
+      "checker_out": "b2sgMTk0OTIzIHRva2Vucwo=",
+      "memory": 22007808,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "sparse_keys_01",
+      "checker_out": "b2sgMjMxODI3IHRva2Vucwo=",
+      "memory": 22585344,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "2_powers_00",
+      "checker_out": "b2sgNTAwMzE5IHRva2Vucwo=",
+      "memory": 19464192,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "many_0set_00",
+      "checker_out": "b2sgNTAxNTA0IHRva2Vucwo=",
+      "memory": 21340160,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "many_0set_sparse_00",
+      "checker_out": "b2sgMTk0MzY0IHRva2Vucwo=",
+      "memory": 20430848,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "py_killer_00",
+      "checker_out": "b2sgNjAwMDAwIHRva2Vucwo=",
+      "memory": 19525632,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "py_killer_01",
+      "checker_out": "b2sgNjAwMDAwIHRva2Vucwo=",
+      "memory": 19611648,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "c_sharp_killer_00",
+      "checker_out": "b2sgNjAwMDAwIHRva2Vucwo=",
+      "memory": 19984384,
+      "status": "AC",
+      "time": 0.023
+    }
+  ],
+  "overview": {
+    "id": 272998,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 23048192,
+    "problem_name": "associative_array",
+    "problem_title": "Associative Array",
+    "status": "AC",
+    "submission_time": "2025-03-13T01:00:51.421919Z",
+    "time": 0.044,
+    "user_name": "mayaming"
+  }
+}

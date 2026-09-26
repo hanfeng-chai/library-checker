@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "from_issue1124_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10334208,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "from_issue1124_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 10600448,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "from_issue1124_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10264576,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 12554240,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "large_cycle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 12910592,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3624960,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4460544,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10682368,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 10489856,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 12390400,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 4665344,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 5812224,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 7204864,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 4091904,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10272768,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 10280960,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 14618624,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13103104,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13332480,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "many_smalls_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 9932800,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "many_smalls_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9756672,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "worst_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14245888,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "worst_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 14594048,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "worst_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 14143488,
+      "status": "AC",
+      "time": 0.097
+    }
+  ],
+  "overview": {
+    "id": 342111,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 14618624,
+    "problem_name": "bipartite_edge_coloring",
+    "problem_title": "Edge Coloring of Bipartite Graph",
+    "status": "AC",
+    "submission_time": "2026-01-01T13:18:30.377504Z",
+    "time": 0.098,
+    "user_name": "TeaTime"
+  }
+}

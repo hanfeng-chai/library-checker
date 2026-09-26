@@ -1,0 +1,164 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "almostclique_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3534848,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "balance_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3543040,
+      "status": "AC",
+      "time": 0.693
+    },
+    {
+      "case": "balance_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3514368,
+      "status": "AC",
+      "time": 0.696
+    },
+    {
+      "case": "balance_many_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3457024,
+      "status": "AC",
+      "time": 1.157
+    },
+    {
+      "case": "balance_many_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3506176,
+      "status": "AC",
+      "time": 1.166
+    },
+    {
+      "case": "clique_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3072000,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "clique_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3846144,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "deep_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3690496,
+      "status": "AC",
+      "time": 0.887
+    },
+    {
+      "case": "deep_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3694592,
+      "status": "AC",
+      "time": 0.891
+    },
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 7778304,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 8323072,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "doubledeep_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3665920,
+      "status": "AC",
+      "time": 1.061
+    },
+    {
+      "case": "doubledeep_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3690496,
+      "status": "AC",
+      "time": 1.06
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "handmake_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3731456,
+      "status": "AC",
+      "time": 0.879
+    },
+    {
+      "case": "noedge_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3694592,
+      "status": "AC",
+      "time": 0.397
+    },
+    {
+      "case": "only_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2605056,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "onlyzero_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 118145024,
+      "status": "AC",
+      "time": 1.16
+    },
+    {
+      "case": "sparse_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25042944,
+      "status": "AC",
+      "time": 0.891
+    },
+    {
+      "case": "sparse_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 24403968,
+      "status": "AC",
+      "time": 0.896
+    }
+  ],
+  "overview": {
+    "id": 281136,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 118145024,
+    "problem_name": "global_minimum_cut_of_dynamic_star_augmented_graph",
+    "problem_title": "Global Minimum Cut of Dynamic Star Augmented Graph",
+    "status": "AC",
+    "submission_time": "2025-04-23T13:37:24.596948Z",
+    "time": 1.166,
+    "user_name": "anon123"
+  }
+}

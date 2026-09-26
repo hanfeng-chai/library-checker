@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 9158656,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 10399744,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 4177920,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 7323648,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 5484544,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 520192,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 647168,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11538432,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11378688,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11202560,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11771904,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11558912,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_width_query_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12562432,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_width_query_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12595200,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_width_query_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12562432,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_width_query_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12566528,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_width_query_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12566528,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_values_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9457664,
+      "status": "AC",
+      "time": 0.015
+    }
+  ],
+  "overview": {
+    "id": 362370,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 12595200,
+    "problem_name": "staticrmq",
+    "problem_title": "Static RMQ",
+    "status": "AC",
+    "submission_time": "2026-03-26T00:10:26.065674Z",
+    "time": 0.02,
+    "user_name": "IceKylin"
+  }
+}

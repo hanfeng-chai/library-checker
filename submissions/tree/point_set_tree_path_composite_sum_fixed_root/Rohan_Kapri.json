@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_hundreds_00",
+      "checker_out": "b2sgMTQyIHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_hundreds_01",
+      "checker_out": "b2sgMTIwIHRva2Vucwo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "typical_tree_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 36499456,
+      "status": "AC",
+      "time": 0.151
+    },
+    {
+      "case": "typical_tree_max_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32514048,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "typical_tree_max_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32808960,
+      "status": "AC",
+      "time": 0.147
+    },
+    {
+      "case": "typical_tree_max_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 36474880,
+      "status": "AC",
+      "time": 0.153
+    },
+    {
+      "case": "typical_tree_max_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32813056,
+      "status": "AC",
+      "time": 0.134
+    },
+    {
+      "case": "typical_tree_max_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 33861632,
+      "status": "AC",
+      "time": 0.137
+    },
+    {
+      "case": "typical_tree_max_06",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 34373632,
+      "status": "AC",
+      "time": 0.149
+    },
+    {
+      "case": "typical_tree_max_07",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 36450304,
+      "status": "AC",
+      "time": 0.152
+    },
+    {
+      "case": "typical_tree_max_08",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32141312,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "typical_tree_max_09",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 34111488,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "typical_tree_max_degree_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 36446208,
+      "status": "AC",
+      "time": 0.151
+    },
+    {
+      "case": "typical_tree_max_degree_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32509952,
+      "status": "AC",
+      "time": 0.104
+    },
+    {
+      "case": "typical_tree_max_degree_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32804864,
+      "status": "AC",
+      "time": 0.144
+    },
+    {
+      "case": "typical_tree_max_degree_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 36483072,
+      "status": "AC",
+      "time": 0.148
+    },
+    {
+      "case": "typical_tree_max_degree_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32788480,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "typical_tree_max_degree_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 33722368,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "typical_tree_max_degree_06",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 34377728,
+      "status": "AC",
+      "time": 0.137
+    },
+    {
+      "case": "typical_tree_max_degree_07",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 36442112,
+      "status": "AC",
+      "time": 0.152
+    },
+    {
+      "case": "typical_tree_max_degree_08",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 32243712,
+      "status": "AC",
+      "time": 0.132
+    },
+    {
+      "case": "typical_tree_max_degree_09",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 34115584,
+      "status": "AC",
+      "time": 0.122
+    }
+  ],
+  "overview": {
+    "id": 405110,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 36499456,
+    "problem_name": "point_set_tree_path_composite_sum_fixed_root",
+    "problem_title": "Point Set Tree Path Composite Sum (Fixed Root)",
+    "status": "AC",
+    "submission_time": "2026-09-22T10:56:19.707156Z",
+    "time": 0.153,
+    "user_name": "Rohan_Kapri"
+  }
+}

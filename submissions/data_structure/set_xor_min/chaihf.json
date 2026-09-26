@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 7643136,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "ans_big_00",
+      "checker_out": "b2sgIjEwNzM3NDE4MjMiCg==",
+      "memory": 9445376,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI5OTQ2IHRva2Vucwo=",
+      "memory": 11022336,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTU0MzIxIHRva2Vucwo=",
+      "memory": 11046912,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTc2MzggdG9rZW5zCg==",
+      "memory": 9650176,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTY2MzI4IHRva2Vucwo=",
+      "memory": 11046912,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTY2NTIxIHRva2Vucwo=",
+      "memory": 11051008,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTY2NjM2IHRva2Vucwo=",
+      "memory": 11022336,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "almost_all_insert_00",
+      "checker_out": "b2sgIjExMjAiCg==",
+      "memory": 13115392,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "almost_all_query_00",
+      "checker_out": "b2sgNDk5OTk5IHRva2Vucwo=",
+      "memory": 16265216,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "almost_all_query_close_00",
+      "checker_out": "b2sgNDk5OTk5IHRva2Vucwo=",
+      "memory": 12066816,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_ans_small_00",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 12075008,
+      "status": "AC",
+      "time": 0.038
+    }
+  ],
+  "overview": {
+    "id": 393936,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16265216,
+    "problem_name": "set_xor_min",
+    "problem_title": "Set Xor-Min",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:16:31.745483Z",
+    "time": 0.051,
+    "user_name": "chaihf"
+  }
+}

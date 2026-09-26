@@ -1,0 +1,346 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 593920,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjI2MTM3MjYyNiIK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjk1NjA5MDM3MyIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_10",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_11",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 29908992,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 30433280,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 15323136,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "large_03",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 15679488,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "large_04",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 9789440,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "large_05",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 9957376,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "n_equals_00",
+      "checker_out": "b2sgIjUwMDYwOTk5MiIK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "n_equals_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_03",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_04",
+      "checker_out": "b2sgMTYgdG9rZW5zCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_05",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_06",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 1085440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_07",
+      "checker_out": "b2sgMTI4IHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_08",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_09",
+      "checker_out": "b2sgNTEyIHRva2Vucwo=",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_10",
+      "checker_out": "b2sgMTAyNCB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_11",
+      "checker_out": "b2sgMjA0OCB0b2tlbnMK",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_12",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 1327104,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_13",
+      "checker_out": "b2sgODE5MiB0b2tlbnMK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_equals_14",
+      "checker_out": "b2sgMTYzODQgdG9rZW5zCg==",
+      "memory": 1757184,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "n_equals_15",
+      "checker_out": "b2sgMzI3NjggdG9rZW5zCg==",
+      "memory": 2007040,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "n_equals_16",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 2936832,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "n_equals_17",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 4681728,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "n_equals_18",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 9461760,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "n_equals_19",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 15581184,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "n_equals_20",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 30236672,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 593920,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "all_zero_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_zero_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "all_zero_03",
+      "checker_out": "b2sgMzI3NjggdG9rZW5zCg==",
+      "memory": 1720320,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "ans_zero_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 29401088,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "ans_zero_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 15241216,
+      "status": "AC",
+      "time": 0.037
+    }
+  ],
+  "overview": {
+    "id": 405734,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 30433280,
+    "problem_name": "mul_mod2n_convolution",
+    "problem_title": "Convolution on the Multiplicative Monoid of $\\mathbb{Z} / 2^N\\mathbb{Z}$",
+    "status": "AC",
+    "submission_time": "2026-09-24T07:59:52.118096Z",
+    "time": 0.084,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 393216,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIi02MzAzODQxMDY3NDA3OTgyNDUiCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQ2ODYgdG9rZW5zCg==",
+      "memory": 17207296,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQyODEgdG9rZW5zCg==",
+      "memory": 17768448,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTk4NzQgdG9rZW5zCg==",
+      "memory": 10801152,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDIwIHRva2Vucwo=",
+      "memory": 22249472,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk2NTMgdG9rZW5zCg==",
+      "memory": 22360064,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk5NDEgdG9rZW5zCg==",
+      "memory": 22278144,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "parabola_random_00",
+      "checker_out": "b2sgMTAwMzI2IHRva2Vucwo=",
+      "memory": 22249472,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "parabola_random_01",
+      "checker_out": "b2sgOTk4NTIgdG9rZW5zCg==",
+      "memory": 22282240,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "parabola_random_02",
+      "checker_out": "b2sgOTk3NTAgdG9rZW5zCg==",
+      "memory": 22138880,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "hand_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 29319168,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "half_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 19869696,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "no_output_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 13574144,
+      "status": "AC",
+      "time": 0.013
+    }
+  ],
+  "overview": {
+    "id": 404938,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 29319168,
+    "problem_name": "line_add_get_min",
+    "problem_title": "Line Add Get Min",
+    "status": "AC",
+    "submission_time": "2026-09-22T06:08:25.02019Z",
+    "time": 0.069,
+    "user_name": "toomer"
+  }
+}

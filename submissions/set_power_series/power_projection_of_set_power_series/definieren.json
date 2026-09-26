@@ -1,0 +1,227 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjEyMDk5OTE0NiIK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjQzNzAxOTI2MiIK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgIjQyNTk1NjM4MSIK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 753664,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_10",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 757760,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_11",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTc3MDYgdG9rZW5zCg==",
+      "memory": 141619200,
+      "status": "AC",
+      "time": 0.672
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk2OTAgdG9rZW5zCg==",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjE5NTcgdG9rZW5zCg==",
+      "memory": 1552384,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzggdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTYgdG9rZW5zCg==",
+      "memory": 68001792,
+      "status": "AC",
+      "time": 0.315
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgOTQzNiB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNjI2MTEgdG9rZW5zCg==",
+      "memory": 1331200,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgMzExMjYgdG9rZW5zCg==",
+      "memory": 32894976,
+      "status": "AC",
+      "time": 0.145
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgNjE0NDYgdG9rZW5zCg==",
+      "memory": 2560000,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgNjQ1MDUgdG9rZW5zCg==",
+      "memory": 1372160,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 141737984,
+      "status": "AC",
+      "time": 0.678
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 141627392,
+      "status": "AC",
+      "time": 0.678
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 141611008,
+      "status": "AC",
+      "time": 0.682
+    },
+    {
+      "case": "first_zero_00",
+      "checker_out": "b2sgMTc3MDYgdG9rZW5zCg==",
+      "memory": 141635584,
+      "status": "AC",
+      "time": 0.676
+    },
+    {
+      "case": "first_zero_01",
+      "checker_out": "b2sgMTk2OTAgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "first_zero_02",
+      "checker_out": "b2sgNjE5NTcgdG9rZW5zCg==",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "issue1147_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 350055,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 141737984,
+    "problem_name": "power_projection_of_set_power_series",
+    "problem_title": "Power Projection of Set Power Series",
+    "status": "AC",
+    "submission_time": "2026-02-03T12:50:38.899278Z",
+    "time": 0.682,
+    "user_name": "definieren"
+  }
+}

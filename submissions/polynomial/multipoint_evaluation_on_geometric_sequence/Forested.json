@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNDMgdG9rZW5zCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 663552,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 18931712,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 20148224,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 9048064,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 20692992,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 20422656,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 21999616,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "nm_1_00",
+      "checker_out": "b2sgIjE1NDM5NjM4NCIK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "nm_1_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 8110080,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "nm_1_02",
+      "checker_out": "b2sgIjQyNTIwMjM2MSIK",
+      "memory": 11513856,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "a0_r01_00",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 10219520,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "a0_r01_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 20426752,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "a0_r01_02",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 20684800,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "a0_r01_03",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 10006528,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "a0_r01_04",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19972096,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "near_pow_of_2_00",
+      "checker_out": "b2sgMjYyMTQzIHRva2Vucwo=",
+      "memory": 11194368,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "near_pow_of_2_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 10985472,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "near_pow_of_2_02",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 10493952,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "near_pow_of_2_03",
+      "checker_out": "b2sgMjYyMTQ1IHRva2Vucwo=",
+      "memory": 10203136,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "near_pow_of_2_04",
+      "checker_out": "b2sgMjYyMTQ1IHRva2Vucwo=",
+      "memory": 15704064,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "near_pow_of_2_05",
+      "checker_out": "b2sgMjYyMTQ2IHRva2Vucwo=",
+      "memory": 15364096,
+      "status": "AC",
+      "time": 0.067
+    }
+  ],
+  "overview": {
+    "id": 312137,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 21999616,
+    "problem_name": "multipoint_evaluation_on_geometric_sequence",
+    "problem_title": "Multipoint Evaluation (Geometric Sequence)",
+    "status": "AC",
+    "submission_time": "2025-09-03T06:18:56.39091Z",
+    "time": 0.081,
+    "user_name": "Forested"
+  }
+}

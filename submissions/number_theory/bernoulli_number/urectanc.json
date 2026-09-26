@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 1191936,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "100_00",
+      "checker_out": "b2sgMTAxIHRva2Vucwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "1000_00",
+      "checker_out": "b2sgMTAwMSB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "10000_00",
+      "checker_out": "b2sgMTAwMDEgdG9rZW5zCg==",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "100000_00",
+      "checker_out": "b2sgMTAwMDAxIHRva2Vucwo=",
+      "memory": 4362240,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "200000_00",
+      "checker_out": "b2sgMjAwMDAxIHRva2Vucwo=",
+      "memory": 8151040,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "300000_00",
+      "checker_out": "b2sgMzAwMDAxIHRva2Vucwo=",
+      "memory": 12992512,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "400000_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 15216640,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 16830464,
+      "status": "AC",
+      "time": 0.038
+    }
+  ],
+  "overview": {
+    "id": 383856,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 16830464,
+    "problem_name": "bernoulli_number",
+    "problem_title": "Bernoulli Number",
+    "status": "AC",
+    "submission_time": "2026-07-04T04:25:56.698257Z",
+    "time": 0.038,
+    "user_name": "urectanc"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjU0IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjM0IHRva2Vucwo=",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgNzE2IHRva2Vucwo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgNTgwIHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNDIxIHRva2Vucwo=",
+      "memory": 626688,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNDkwIHRva2Vucwo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDg2IHRva2Vucwo=",
+      "memory": 700416,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTAyIHRva2Vucwo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTA4IHRva2Vucwo=",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTMzIHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1NjA2IHRva2Vucwo=",
+      "memory": 27041792,
+      "status": "AC",
+      "time": 0.089
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2NDA1IHRva2Vucwo=",
+      "memory": 28590080,
+      "status": "AC",
+      "time": 0.09
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkwOTc0IHRva2Vucwo=",
+      "memory": 6852608,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI5MjIgdG9rZW5zCg==",
+      "memory": 24678400,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk0ODMgdG9rZW5zCg==",
+      "memory": 23121920,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwMjY5IHRva2Vucwo=",
+      "memory": 29368320,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjQ5OTczIHRva2Vucwo=",
+      "memory": 29892608,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMTkzIHRva2Vucwo=",
+      "memory": 29790208,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjUwMjAxIHRva2Vucwo=",
+      "memory": 29143040,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjUwMTk3IHRva2Vucwo=",
+      "memory": 29667328,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "max_lazy_00",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 16023552,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "max_update_00",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 16003072,
+      "status": "AC",
+      "time": 0.078
+    }
+  ],
+  "overview": {
+    "id": 393923,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 29892608,
+    "problem_name": "range_add_range_min",
+    "problem_title": "Range Add Range Min",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:08:54.768462Z",
+    "time": 0.117,
+    "user_name": "chaihf"
+  }
+}

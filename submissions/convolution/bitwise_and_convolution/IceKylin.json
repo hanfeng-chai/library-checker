@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 700416,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzI3NjggdG9rZW5zCg==",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 2347008,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 5517312,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19681280,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19644416,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19640320,
+      "status": "AC",
+      "time": 0.029
+    }
+  ],
+  "overview": {
+    "id": 362198,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 19681280,
+    "problem_name": "bitwise_and_convolution",
+    "problem_title": "Bitwise And Convolution",
+    "status": "AC",
+    "submission_time": "2026-03-24T23:34:37.516068Z",
+    "time": 0.029,
+    "user_name": "IceKylin"
+  }
+}

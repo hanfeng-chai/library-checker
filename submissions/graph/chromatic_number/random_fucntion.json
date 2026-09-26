@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 524288,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgIjEyIgo=",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_00",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_01",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_02",
+      "checker_out": "b2sgIjgiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_03",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_04",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_05",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_06",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_07",
+      "checker_out": "b2sgIjEyIgo=",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_08",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_09",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "clique_cycle_00",
+      "checker_out": "b2sgIjEwIgo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "clique_cycle_01",
+      "checker_out": "b2sgIjEwIgo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "clique_cycle_02",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "clique_cycle_03",
+      "checker_out": "b2sgIjIwIgo=",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 296109,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 806912,
+    "problem_name": "chromatic_number",
+    "problem_title": "Chromatic Number",
+    "status": "AC",
+    "submission_time": "2025-06-28T16:29:13.07625Z",
+    "time": 0.004,
+    "user_name": "random_fucntion"
+  }
+}

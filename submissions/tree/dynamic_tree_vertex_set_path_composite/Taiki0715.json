@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjY1NDEgdG9rZW5zCg==",
+      "memory": 16044032,
+      "status": "AC",
+      "time": 0.311
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjY1OTMgdG9rZW5zCg==",
+      "memory": 16039936,
+      "status": "AC",
+      "time": 0.314
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 659456,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ0Igo=",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQyIgo=",
+      "memory": 585728,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjM5Igo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTA5IHRva2Vucwo=",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNzMgdG9rZW5zCg==",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMTI1IHRva2Vucwo=",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNzcgdG9rZW5zCg==",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgMjc1IHRva2Vucwo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDk3MTUgdG9rZW5zCg==",
+      "memory": 10502144,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk3NjMgdG9rZW5zCg==",
+      "memory": 12148736,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDAxNjIgdG9rZW5zCg==",
+      "memory": 5271552,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODUyMiB0b2tlbnMK",
+      "memory": 12886016,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzMwOTMgdG9rZW5zCg==",
+      "memory": 2347008,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjcxNDIgdG9rZW5zCg==",
+      "memory": 16138240,
+      "status": "AC",
+      "time": 0.163
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY1MTQgdG9rZW5zCg==",
+      "memory": 16027648,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY1OTIgdG9rZW5zCg==",
+      "memory": 16031744,
+      "status": "AC",
+      "time": 0.161
+    },
+    {
+      "case": "issue_1216_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 17350656,
+      "status": "AC",
+      "time": 0.032
+    }
+  ],
+  "overview": {
+    "id": 259949,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 17350656,
+    "problem_name": "dynamic_tree_vertex_set_path_composite",
+    "problem_title": "Dynamic Tree Vertex Set Path Composite",
+    "status": "AC",
+    "submission_time": "2025-01-04T12:59:30.040135Z",
+    "time": 0.314,
+    "user_name": "Taiki0715"
+  }
+}

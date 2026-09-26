@@ -1,0 +1,213 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "identity_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_identity_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 28729344,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 29790208,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 29782016,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 29749248,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 29786112,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 29786112,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "mid_00",
+      "checker_out": "b2sgNDc5OCB0b2tlbnMK",
+      "memory": 2568192,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "mid_01",
+      "checker_out": "b2sgNDMwMyB0b2tlbnMK",
+      "memory": 2310144,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "mid_02",
+      "checker_out": "b2sgNDE5MyB0b2tlbnMK",
+      "memory": 2514944,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "mid_03",
+      "checker_out": "b2sgMzI3NCB0b2tlbnMK",
+      "memory": 1523712,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "mid_04",
+      "checker_out": "b2sgNjY4NSB0b2tlbnMK",
+      "memory": 2387968,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI3NjcwIHRva2Vucwo=",
+      "memory": 29507584,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjk4MzEgdG9rZW5zCg==",
+      "memory": 26386432,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzcgdG9rZW5zCg==",
+      "memory": 14499840,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzYwMzQgdG9rZW5zCg==",
+      "memory": 13586432,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTQ4NjkgdG9rZW5zCg==",
+      "memory": 4562944,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_degree_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_03",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_04",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_05",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_06",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_07",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_08",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_09",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 249758,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 29790208,
+    "problem_name": "compositional_inverse_of_formal_power_series_large",
+    "problem_title": "Compositional Inverse of Formal Power Series (Large)",
+    "status": "AC",
+    "submission_time": "2024-11-15T12:29:22.450101Z",
+    "time": 0.117,
+    "user_name": "cmk666"
+  }
+}

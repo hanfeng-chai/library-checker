@@ -1,0 +1,198 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTMzMjI2NCB0b2tlbnMK",
+      "memory": 10768384,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgNzI2NjUyIHRva2Vucwo=",
+      "memory": 8957952,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgMjY3MDAgdG9rZW5zCg==",
+      "memory": 9740288,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgNzg2IHRva2Vucwo=",
+      "memory": 7614464,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgNzIgdG9rZW5zCg==",
+      "memory": 13402112,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgNzggdG9rZW5zCg==",
+      "memory": 13123584,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 2891776,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 7081984,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 7122944,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "a_max_b_random_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 23379968,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "a_max_b_random_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 47730688,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "a_max_b_random_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 41844736,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "r_nearly_zero_00",
+      "checker_out": "b2sgNzI1MTAwIHRva2Vucwo=",
+      "memory": 8425472,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "r_nearly_zero_01",
+      "checker_out": "b2sgNzk4NiB0b2tlbnMK",
+      "memory": 5029888,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "r_nearly_zero_02",
+      "checker_out": "b2sgNzQgdG9rZW5zCg==",
+      "memory": 9707520,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "length_ratio_integer_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 38318080,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "length_ratio_integer_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 37240832,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "length_ratio_integer_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 26497024,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "length_ratio_integer_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 26353664,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "length_ratio_integer_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 21266432,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "length_ratio_integer_05",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 15613952,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "burnikel_ziegler_bound_00",
+      "checker_out": "b2sgMjMwOCB0b2tlbnMK",
+      "memory": 9744384,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "burnikel_ziegler_bound_01",
+      "checker_out": "b2sgNzY4IHRva2Vucwo=",
+      "memory": 8957952,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "burnikel_ziegler_bound_02",
+      "checker_out": "b2sgNDIwNiB0b2tlbnMK",
+      "memory": 9216000,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "burnikel_ziegler_bound_03",
+      "checker_out": "b2sgNzQyIHRva2Vucwo=",
+      "memory": 8179712,
+      "status": "AC",
+      "time": 0.023
+    }
+  ],
+  "overview": {
+    "id": 391180,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 47730688,
+    "problem_name": "division_of_big_integers",
+    "problem_title": "Division of Big Integers",
+    "status": "AC",
+    "submission_time": "2026-08-07T03:16:23.893817Z",
+    "time": 0.029
+  }
+}

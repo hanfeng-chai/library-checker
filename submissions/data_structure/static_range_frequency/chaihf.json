@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 23117824,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 22822912,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 23150592,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 15220736,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 33857536,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 32288768,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 19177472,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 40116224,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 37003264,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 37339136,
+      "status": "AC",
+      "time": 0.056
+    }
+  ],
+  "overview": {
+    "id": 393938,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 40116224,
+    "problem_name": "static_range_frequency",
+    "problem_title": "Static Range Frequency",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:18:51.906394Z",
+    "time": 0.056,
+    "user_name": "chaihf"
+  }
+}

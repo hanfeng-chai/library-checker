@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDIxCg==",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0s6IDQ3Cg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0s6IDYwCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgT0s6IDgxCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IDI4ODMwMTYxNDc3MQo=",
+      "memory": 12107776,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IDMxMzg5MzYxNTc4OQo=",
+      "memory": 14073856,
+      "status": "AC",
+      "time": 0.17
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IDE4NjkwNzMwMDExMQo=",
+      "memory": 5275648,
+      "status": "AC",
+      "time": 0.055
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IDM2MDc4MTkxNjU0Ngo=",
+      "memory": 18358272,
+      "status": "AC",
+      "time": 0.229
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IDM2MTM0MzMxNTE2NAo=",
+      "memory": 18640896,
+      "status": "AC",
+      "time": 0.23
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0s6IDM2MTA3MzE5NjIyMwo=",
+      "memory": 18653184,
+      "status": "AC",
+      "time": 0.23
+    },
+    {
+      "case": "many_cluster_00",
+      "checker_out": "b2sgT0s6IDExMTkwNzk1MjI0NAo=",
+      "memory": 18636800,
+      "status": "AC",
+      "time": 0.206
+    },
+    {
+      "case": "many_cluster_01",
+      "checker_out": "b2sgT0s6IDExMTM3MzA4NzY2Mgo=",
+      "memory": 18591744,
+      "status": "AC",
+      "time": 0.207
+    },
+    {
+      "case": "many_cluster_02",
+      "checker_out": "b2sgT0s6IDExMTM1NjMwNDk3Ngo=",
+      "memory": 18374656,
+      "status": "AC",
+      "time": 0.205
+    },
+    {
+      "case": "enclosed_00",
+      "checker_out": "b2sgT0s6IDQ1MDA2NjA3MDEK",
+      "memory": 17055744,
+      "status": "AC",
+      "time": 0.146
+    },
+    {
+      "case": "enclosed_01",
+      "checker_out": "b2sgT0s6IDQ1MDA0NTYyOTgK",
+      "memory": 16797696,
+      "status": "AC",
+      "time": 0.145
+    },
+    {
+      "case": "enclosed_02",
+      "checker_out": "b2sgT0s6IDQ0OTk0NzczODMK",
+      "memory": 16936960,
+      "status": "AC",
+      "time": 0.155
+    }
+  ],
+  "overview": {
+    "id": 406195,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18653184,
+    "problem_name": "manhattanmst",
+    "problem_title": "Manhattan MST",
+    "status": "AC",
+    "submission_time": "2026-09-26T05:13:44.492589Z",
+    "time": 0.23,
+    "user_name": "Rohan_Kapri"
+  }
+}

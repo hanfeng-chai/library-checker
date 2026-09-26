@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4820992,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5079040,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5074944,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5083136,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4825088,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 471040,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "fib_str_00",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 5472256,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "fib_str_01",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 4292608,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "fib_str_02",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 4399104,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "fib_str_03",
+      "checker_out": "b2sgMzMxMzM5IHRva2Vucwo=",
+      "memory": 6516736,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "fib_str_04",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 5349376,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjI0OTUgdG9rZW5zCg==",
+      "memory": 5062656,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjIxNzQgdG9rZW5zCg==",
+      "memory": 5083136,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjIzMTIgdG9rZW5zCg==",
+      "memory": 5079040,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjIxNTAgdG9rZW5zCg==",
+      "memory": 5079040,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjIwMjEgdG9rZW5zCg==",
+      "memory": 4861952,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4MjcgdG9rZW5zCg==",
+      "memory": 3743744,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTcxOTEgdG9rZW5zCg==",
+      "memory": 4034560,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjMxOSB0b2tlbnMK",
+      "memory": 2056192,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzMDAgdG9rZW5zCg==",
+      "memory": 4558848,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTYyNCB0b2tlbnMK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.002
+    }
+  ],
+  "overview": {
+    "id": 227467,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 6516736,
+    "problem_name": "runenumerate",
+    "problem_title": "Run Enumerate",
+    "status": "AC",
+    "submission_time": "2024-08-11T06:32:13.928136Z",
+    "time": 0.03,
+    "user_name": "Kiffaz11"
+  }
+}

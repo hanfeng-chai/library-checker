@@ -1,0 +1,161 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMTUgbXMKYmFzZSBjYXNlOiAwLjAwOSBtcwpjb21iaW5lOiAwLjAwMyBtcwpkb3Q6IDAuMDA0IG1zCmZpeCAwOiAwLjAwNyBtcwpnYXRoZXI6IDAuMDA0IG1zCmluaXQ6IDAuMDA2IG1zCm1lbXNldDogMC4wMDQgbXMKcHJlcGFyZTogMC4wMDYgbXMKcmVhZDogMS42MTYgbXMKdHJhbnNmb3JtOiAwLjAxNiBtcwp3cml0ZTogMC4wMDEgbXMKVG90YWw6IDEuNjkzIG1zCg==",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 774144,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wNTEgbXMKYmFzZSBjYXNlOiAwLjAyNCBtcwpjb21iaW5lOiAwLjAwOCBtcwpkb3Q6IDAuMDQzIG1zCmZpeCAwOiAwLjA0MSBtcwpnYXRoZXI6IDAuMDQzIG1zCmluaXQ6IDAuMDQyIG1zCm1lbXNldDogMC4wMzQgbXMKcHJlcGFyZTogMC4wMjIgbXMKcmVhZDogMS42MTMgbXMKdHJhbnNmb3JtOiAwLjA4NyBtcwp3cml0ZTogMC4wMDUgbXMKVG90YWw6IDIuMDE0IG1zCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNTEyIHRva2Vucwo=",
+      "memory": 835584,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wNjEgbXMKYmFzZSBjYXNlOiAwLjAxOSBtcwpjb21iaW5lOiAwLjAwOCBtcwpkb3Q6IDAuMDc3IG1zCmZpeCAwOiAwLjA0OCBtcwpnYXRoZXI6IDAuMDU2IG1zCmluaXQ6IDAuMDY1IG1zCm1lbXNldDogMC4wNDYgbXMKcHJlcGFyZTogMC4wNDEgbXMKcmVhZDogMS41NzkgbXMKdHJhbnNmb3JtOiAwLjExNSBtcwp3cml0ZTogMC4wMTEgbXMKVG90YWw6IDIuMTI4IG1zCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMjQgbXMKYmFzZSBjYXNlOiAwLjAxMyBtcwpjb21iaW5lOiAwLjAwNCBtcwpkb3Q6IDAuMDEyIG1zCmZpeCAwOiAwLjAxOSBtcwpnYXRoZXI6IDAuMDA5IG1zCmluaXQ6IDAuMDEgbXMKbWVtc2V0OiAwLjAxMiBtcwpwcmVwYXJlOiAwLjAxMSBtcwpyZWFkOiAxLjU5OSBtcwp0cmFuc2Zvcm06IDAuMDI5IG1zCndyaXRlOiAwLjAwMSBtcwpUb3RhbDogMS43NDUgbXMK",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 22560768,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMTMuNDQ2IG1zCmJhc2UgY2FzZTogMy41MTMgbXMKY29tYmluZTogMS42OSBtcwpkb3Q6IDQzLjU3MSBtcwpmaXggMDogOS44NzEgbXMKZ2F0aGVyOiA3LjM2NyBtcwppbml0OiAxNS40MDMgbXMKbWVtc2V0OiAzLjA0MyBtcwpwcmVwYXJlOiAwLjQ2NSBtcwpyZWFkOiA5LjY1IG1zCnRyYW5zZm9ybTogNDEuMDg5IG1zCndyaXRlOiA4LjM5MyBtcwpUb3RhbDogMTU3LjUwMyBtcwo=",
+      "time": 0.157
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 6963200,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMy45NzYgbXMKYmFzZSBjYXNlOiAwLjc2NyBtcwpjb21iaW5lOiAwLjcyNSBtcwpkb3Q6IDkuNTQxIG1zCmZpeCAwOiAyLjcwOCBtcwpnYXRoZXI6IDIuMDUxIG1zCmluaXQ6IDQuMDI5IG1zCm1lbXNldDogMC45MDYgbXMKcHJlcGFyZTogMC4xNjIgbXMKcmVhZDogMy44OCBtcwp0cmFuc2Zvcm06IDkuNDEzIG1zCndyaXRlOiAyLjM3MiBtcwpUb3RhbDogNDAuNTMyIG1zCg==",
+      "time": 0.04
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAyNCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wOSBtcwpiYXNlIGNhc2U6IDAuMTA2IG1zCmNvbWJpbmU6IDAuMDA3IG1zCmRvdDogMC4xMDUgbXMKZml4IDA6IDAuMDYzIG1zCmdhdGhlcjogMC4wNjYgbXMKaW5pdDogMC4wODQgbXMKbWVtc2V0OiAwLjA3MiBtcwpwcmVwYXJlOiAwLjA0IG1zCnJlYWQ6IDEuNjIzIG1zCnRyYW5zZm9ybTogMC4xNjUgbXMKd3JpdGU6IDAuMDE4IG1zClRvdGFsOiAyLjQ0IG1zCg==",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 22732800,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMTIuMjU5IG1zCmJhc2UgY2FzZTogOC40MSBtcwpjb21iaW5lOiAxLjcwNSBtcwpkb3Q6IDQzLjI5NiBtcwpmaXggMDogOS42MjEgbXMKZ2F0aGVyOiA3LjMxMiBtcwppbml0OiAxNS4zNjkgbXMKbWVtc2V0OiAzLjAzMiBtcwpwcmVwYXJlOiAwLjQ3MyBtcwpyZWFkOiAxMC4zNjUgbXMKdHJhbnNmb3JtOiA0MC45MDYgbXMKd3JpdGU6IDguMzQ3IG1zClRvdGFsOiAxNjEuMDk3IG1zCg==",
+      "time": 0.159
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 22650880,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMTIuMzM3IG1zCmJhc2UgY2FzZTogOC40NTkgbXMKY29tYmluZTogMS42OTggbXMKZG90OiA0My4yNDIgbXMKZml4IDA6IDkuNjA2IG1zCmdhdGhlcjogNy4zMzYgbXMKaW5pdDogMTUuNDAxIG1zCm1lbXNldDogMy4wODYgbXMKcHJlcGFyZTogMC40NjIgbXMKcmVhZDogMTAuMzg3IG1zCnRyYW5zZm9ybTogNDAuOTk3IG1zCndyaXRlOiA4LjQ3NSBtcwpUb3RhbDogMTYxLjQ4OCBtcwo=",
+      "time": 0.161
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 22790144,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMTIuMjQzIG1zCmJhc2UgY2FzZTogOC40MjUgbXMKY29tYmluZTogMS42OSBtcwpkb3Q6IDQzLjUgbXMKZml4IDA6IDkuNTk5IG1zCmdhdGhlcjogNy40MDYgbXMKaW5pdDogMTUuMDk4IG1zCm1lbXNldDogMi45ODEgbXMKcHJlcGFyZTogMC40NzQgbXMKcmVhZDogMTAuMjY1IG1zCnRyYW5zZm9ybTogNDAuODMxIG1zCndyaXRlOiA4LjQ3MyBtcwpUb3RhbDogMTYwLjk4OCBtcwo=",
+      "time": 0.159
+    },
+    {
+      "case": "nm_01_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 811008,
+      "status": "AC",
+      "stderr": "YmFzZSBjYXNlOiAwLjAwOSBtcwpyZWFkOiAxLjYxOCBtcwp3cml0ZTogMC4wMDEgbXMKVG90YWw6IDEuNjI5IG1zCg==",
+      "time": 0
+    },
+    {
+      "case": "nm_01_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMDkgbXMKYmFzZSBjYXNlOiAwLjAwOSBtcwpjb21iaW5lOiAwLjAwMSBtcwpkb3Q6IDAuMDAyIG1zCmZpeCAwOiAwLjAwMiBtcwpnYXRoZXI6IDAgbXMKaW5pdDogMC4wMDEgbXMKbWVtc2V0OiAwLjAwMiBtcwpwcmVwYXJlOiAwLjAwMSBtcwpyZWFkOiAxLjU0MSBtcwp0cmFuc2Zvcm06IDAuMDA4IG1zCndyaXRlOiAwLjAwMSBtcwpUb3RhbDogMS41NzggbXMK",
+      "time": 0.001
+    },
+    {
+      "case": "nm_01_02",
+      "checker_out": "b2sgODE5MiB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4yMTUgbXMKYmFzZSBjYXNlOiAwLjAxMSBtcwpjb21iaW5lOiAwLjAxMiBtcwpkb3Q6IDAuMzYzIG1zCmZpeCAwOiAwLjE2MyBtcwpnYXRoZXI6IDAuMTkgbXMKaW5pdDogMC4yNDUgbXMKbWVtc2V0OiAwLjE0OCBtcwpwcmVwYXJlOiAwLjA2NiBtcwpyZWFkOiAxLjYwNSBtcwp0cmFuc2Zvcm06IDAuNDc4IG1zCndyaXRlOiAwLjAzMyBtcwpUb3RhbDogMy41MyBtcwo=",
+      "time": 0.002
+    },
+    {
+      "case": "nm_01_03",
+      "checker_out": "b2sgIjkyNDI2MTEwNyIK",
+      "memory": 761856,
+      "status": "AC",
+      "stderr": "YmFzZSBjYXNlOiAwLjAwOSBtcwpyZWFkOiAxLjU3MSBtcwp3cml0ZTogMC4wMDIgbXMKVG90YWw6IDEuNTgyIG1zCg==",
+      "time": 0
+    },
+    {
+      "case": "nm_01_04",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMDggbXMKYmFzZSBjYXNlOiAwLjAwOSBtcwpjb21iaW5lOiAwLjAwMSBtcwpkb3Q6IDAuMDAzIG1zCmZpeCAwOiAwLjAwMSBtcwpnYXRoZXI6IDAuMDAxIG1zCmluaXQ6IDAuMDAxIG1zCm1lbXNldDogMC4wMDEgbXMKcHJlcGFyZTogMC4wMDEgbXMKcmVhZDogMS41MDUgbXMKdHJhbnNmb3JtOiAwLjAwOCBtcwp3cml0ZTogMC4wMDIgbXMKVG90YWw6IDEuNTQyIG1zCg==",
+      "time": 0.001
+    },
+    {
+      "case": "nm_01_05",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 3706880,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMi4wNjggbXMKYmFzZSBjYXNlOiAwLjAxNiBtcwpjb21iaW5lOiAwLjMyMSBtcwpkb3Q6IDQuNzI1IG1zCmZpeCAwOiAxLjUwNSBtcwpnYXRoZXI6IDEuMTQzIG1zCmluaXQ6IDIuMTI5IG1zCm1lbXNldDogMC41MzIgbXMKcHJlcGFyZTogMC4xMzIgbXMKcmVhZDogMi42NjQgbXMKdHJhbnNmb3JtOiA0LjY1IG1zCndyaXRlOiAwLjUzMyBtcwpUb3RhbDogMjAuNDIgbXMK",
+      "time": 0.019
+    },
+    {
+      "case": "nm_01_06",
+      "checker_out": "b2sgIjgyOTcyMjg2NCIK",
+      "memory": 1028096,
+      "status": "AC",
+      "stderr": "YmFzZSBjYXNlOiAwLjM3NyBtcwpyZWFkOiAxLjkxOSBtcwp3cml0ZTogMC4wMTkgbXMKVG90YWw6IDIuMzE2IG1zCg==",
+      "time": 0.001
+    },
+    {
+      "case": "nm_01_07",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 1564672,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMzkgbXMKYmFzZSBjYXNlOiAxLjI0OSBtcwpjb21iaW5lOiAwLjAwMiBtcwpkb3Q6IDAuMDAxIG1zCmZpeCAwOiAwLjAwMyBtcwpnYXRoZXI6IDAuMDAxIG1zCmluaXQ6IDAuMDAxIG1zCm1lbXNldDogMC4wMDIgbXMKcHJlcGFyZTogMC4wMDIgbXMKcmVhZDogMi40NyBtcwp0cmFuc2Zvcm06IDAuMDA3IG1zCndyaXRlOiAwLjAwMSBtcwpUb3RhbDogMy43NzkgbXMK",
+      "time": 0.003
+    }
+  ],
+  "overview": {
+    "id": 339878,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 22790144,
+    "problem_name": "polynomial_composite_set_power_series",
+    "problem_title": "Polynomial Composite Set Power Series",
+    "status": "AC",
+    "submission_time": "2025-12-24T00:16:22.21006Z",
+    "time": 0.161,
+    "user_name": "adamant"
+  }
+}

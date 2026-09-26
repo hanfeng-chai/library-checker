@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6004736,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6045696,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6004736,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6000640,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "middle_random_00",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3112960,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "middle_random_01",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3375104,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "middle_random_02",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3231744,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "middle_random_03",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3379200,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "middle_random_04",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3383296,
+      "status": "AC",
+      "time": 0.022
+    }
+  ],
+  "overview": {
+    "id": 200617,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6045696,
+    "problem_name": "count_points_in_triangle",
+    "problem_title": "Count Points in Triangles",
+    "status": "AC",
+    "submission_time": "2024-04-05T01:51:20.485606Z",
+    "time": 0.079,
+    "user_name": "maspy"
+  }
+}

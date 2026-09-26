@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1871872,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2150400,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3452928,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2887680,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "example_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 3194880,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 16044032,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 16826368,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 13111296,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 7352320,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 7872512,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 14708736,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 11956224,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 4476928,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 11014144,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 8433664,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_dense_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13410304,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_dense_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13385728,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_dense_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 14163968,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "tree_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 15769600,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "tree_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 18104320,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "tree_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5132288,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "unicyclic_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 15765504,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "unicyclic_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 18137088,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "unicyclic_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5017600,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "long_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 24416256,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "long_cycle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 24174592,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "long_cycle_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5615616,
+      "status": "AC",
+      "time": 0.007
+    }
+  ],
+  "overview": {
+    "id": 404585,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24416256,
+    "problem_name": "cycle_detection_undirected",
+    "problem_title": "Cycle Detection (Undirected)",
+    "status": "AC",
+    "submission_time": "2026-09-21T09:38:20.797832Z",
+    "time": 0.05,
+    "user_name": "Rohan_Kapri"
+  }
+}

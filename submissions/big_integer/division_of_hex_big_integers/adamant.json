@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTYgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTE1MjMxOCB0b2tlbnMK",
+      "memory": 7057408,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgNDU4NTQwIHRva2Vucwo=",
+      "memory": 4603904,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgMTYzMDAgdG9rZW5zCg==",
+      "memory": 4173824,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 3907584,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgNTggdG9rZW5zCg==",
+      "memory": 4108288,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgNTggdG9rZW5zCg==",
+      "memory": 4247552,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 7553024,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 4165632,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 6430720,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "a_max_b_random_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 32964608,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "a_max_b_random_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 32907264,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "a_max_b_random_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 37462016,
+      "status": "AC",
+      "time": 0.149
+    },
+    {
+      "case": "power_00",
+      "checker_out": "b2sgNzE0MCB0b2tlbnMK",
+      "memory": 3125248,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "r_nearly_zero_00",
+      "checker_out": "b2sgNTk3OTE4IHRva2Vucwo=",
+      "memory": 3661824,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "r_nearly_zero_01",
+      "checker_out": "b2sgNjk1NCB0b2tlbnMK",
+      "memory": 1290240,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "r_nearly_zero_02",
+      "checker_out": "b2sgNzAgdG9rZW5zCg==",
+      "memory": 2023424,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "length_ratio_integer_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 31424512,
+      "status": "AC",
+      "time": 0.192
+    },
+    {
+      "case": "length_ratio_integer_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 31223808,
+      "status": "AC",
+      "time": 0.147
+    },
+    {
+      "case": "length_ratio_integer_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 36163584,
+      "status": "AC",
+      "time": 0.19
+    },
+    {
+      "case": "length_ratio_integer_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 36683776,
+      "status": "AC",
+      "time": 0.166
+    },
+    {
+      "case": "length_ratio_integer_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 37572608,
+      "status": "AC",
+      "time": 0.149
+    },
+    {
+      "case": "length_ratio_integer_05",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 41119744,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "burnikel_ziegler_bound_00",
+      "checker_out": "b2sgMjI2NCB0b2tlbnMK",
+      "memory": 3829760,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "burnikel_ziegler_bound_01",
+      "checker_out": "b2sgNzU0IHRva2Vucwo=",
+      "memory": 4456448,
+      "status": "AC",
+      "time": 0.119
+    },
+    {
+      "case": "burnikel_ziegler_bound_02",
+      "checker_out": "b2sgNDEyOCB0b2tlbnMK",
+      "memory": 4440064,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "burnikel_ziegler_bound_03",
+      "checker_out": "b2sgNzI4IHRva2Vucwo=",
+      "memory": 3776512,
+      "status": "AC",
+      "time": 0.132
+    }
+  ],
+  "overview": {
+    "id": 337454,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 41119744,
+    "problem_name": "division_of_hex_big_integers",
+    "problem_title": "Division of Hex Big Integers",
+    "status": "AC",
+    "submission_time": "2025-12-15T17:48:29.086606Z",
+    "time": 0.192,
+    "user_name": "adamant"
+  }
+}

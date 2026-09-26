@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_hundreds_00",
+      "checker_out": "b2sgMTQyIHRva2Vucwo=",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_hundreds_01",
+      "checker_out": "b2sgMTIwIHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "typical_tree_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 57348096,
+      "status": "AC",
+      "time": 0.304
+    },
+    {
+      "case": "typical_tree_max_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 43892736,
+      "status": "AC",
+      "time": 0.243
+    },
+    {
+      "case": "typical_tree_max_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 43724800,
+      "status": "AC",
+      "time": 0.336
+    },
+    {
+      "case": "typical_tree_max_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 43859968,
+      "status": "AC",
+      "time": 0.341
+    },
+    {
+      "case": "typical_tree_max_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 52322304,
+      "status": "AC",
+      "time": 0.291
+    },
+    {
+      "case": "typical_tree_max_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 53264384,
+      "status": "AC",
+      "time": 0.272
+    },
+    {
+      "case": "typical_tree_max_06",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 53149696,
+      "status": "AC",
+      "time": 0.27
+    },
+    {
+      "case": "typical_tree_max_07",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 55836672,
+      "status": "AC",
+      "time": 0.298
+    },
+    {
+      "case": "typical_tree_max_08",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 43810816,
+      "status": "AC",
+      "time": 0.308
+    },
+    {
+      "case": "typical_tree_max_09",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 45629440,
+      "status": "AC",
+      "time": 0.256
+    },
+    {
+      "case": "typical_tree_max_degree_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 57262080,
+      "status": "AC",
+      "time": 0.294
+    },
+    {
+      "case": "typical_tree_max_degree_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 44072960,
+      "status": "AC",
+      "time": 0.208
+    },
+    {
+      "case": "typical_tree_max_degree_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 43778048,
+      "status": "AC",
+      "time": 0.337
+    },
+    {
+      "case": "typical_tree_max_degree_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 43905024,
+      "status": "AC",
+      "time": 0.302
+    },
+    {
+      "case": "typical_tree_max_degree_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 52211712,
+      "status": "AC",
+      "time": 0.281
+    },
+    {
+      "case": "typical_tree_max_degree_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 53112832,
+      "status": "AC",
+      "time": 0.254
+    },
+    {
+      "case": "typical_tree_max_degree_06",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 52895744,
+      "status": "AC",
+      "time": 0.265
+    },
+    {
+      "case": "typical_tree_max_degree_07",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 55758848,
+      "status": "AC",
+      "time": 0.298
+    },
+    {
+      "case": "typical_tree_max_degree_08",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 43802624,
+      "status": "AC",
+      "time": 0.305
+    },
+    {
+      "case": "typical_tree_max_degree_09",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 45498368,
+      "status": "AC",
+      "time": 0.229
+    }
+  ],
+  "overview": {
+    "id": 232761,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 57348096,
+    "problem_name": "point_set_tree_path_composite_sum",
+    "problem_title": "Point Set Tree Path Composite Sum",
+    "status": "AC",
+    "submission_time": "2024-09-03T04:04:02.327305Z",
+    "time": 0.341,
+    "user_name": "maspy"
+  }
+}

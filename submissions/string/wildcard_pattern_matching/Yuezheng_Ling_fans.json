@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjEwMTExMDExIgo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12443648,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12378112,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 2072576,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12267520,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 11915264,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_ab_00",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12181504,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_ab_01",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12595200,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_ab_02",
+      "checker_out": "b2sgIjAwMDEwMDAwMDAwMDAwMTEwMTEwMDEwMDEwMDAwMC4uLjAwMDAwMDExMTAxMDAwMDAwMDAwMDAwMTExMDEwMTAiCg==",
+      "memory": 2084864,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_ab_03",
+      "checker_out": "b2sgIjEwMTAwMDAwMTAwMTAxMTAxMDAwMDAwMDAxMDAwMS4uLjAwMDAwMDAwMTAxMTExMDAwMTExMTEwMDEwMDEwMDAiCg==",
+      "memory": 12148736,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_ab_04",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 11919360,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "alternating_00",
+      "checker_out": "b2sgIjExMTExMTExMTExMTExMTExMTExMTExMTExMTExMS4uLjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAiCg==",
+      "memory": 12476416,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "alternating_01",
+      "checker_out": "b2sgIjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMS4uLjEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEiCg==",
+      "memory": 12587008,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "alternating_02",
+      "checker_out": "b2sgIjExMTExMTExMTExMTExMTExMTExMTExMTExMTExMS4uLjExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTEiCg==",
+      "memory": 2256896,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "alternating_03",
+      "checker_out": "b2sgIjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMS4uLjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAiCg==",
+      "memory": 12103680,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "alternating_04",
+      "checker_out": "b2sgIjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMS4uLjEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEiCg==",
+      "memory": 11911168,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "hack_998244353_00",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12443648,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "hack_998244353_01",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12443648,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "hack_998244353_02",
+      "checker_out": "b2sgIjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMC4uLjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiCg==",
+      "memory": 12439552,
+      "status": "AC",
+      "time": 0.015
+    }
+  ],
+  "overview": {
+    "id": 365123,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 12595200,
+    "problem_name": "wildcard_pattern_matching",
+    "problem_title": "Wildcard Pattern Matching",
+    "status": "AC",
+    "submission_time": "2026-04-08T20:42:57.797517Z",
+    "time": 0.017,
+    "user_name": "Yuezheng_Ling_fans"
+  }
+}

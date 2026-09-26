@@ -1,0 +1,93 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack01_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 215142400,
+      "status": "AC",
+      "time": 0.312
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 215154688,
+      "status": "AC",
+      "time": 0.32
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 215142400,
+      "status": "AC",
+      "time": 0.32
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 215261184,
+      "status": "AC",
+      "time": 0.31
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 215261184,
+      "status": "AC",
+      "time": 0.315
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAyNCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 48052,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 215261184,
+    "problem_name": "subset_convolution",
+    "problem_title": "Subset Convolution",
+    "status": "AC",
+    "time": 0.32,
+    "user_name": "Nyaan"
+  }
+}

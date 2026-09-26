@@ -1,0 +1,121 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMTYgbXMKZG90OiAwLjAwNCBtcwpleHRlbmQgb3V0OiAwLjAwMiBtcwpmaXggMDogMC4wMDQgbXMKZ2F0aGVyOiAwLjAwMyBtcwppbml0OiAwLjAwMyBtcwptZW1zZXQ6IDAuMDAzIG1zCnByZXBhcmU6IDAuMDAzIG1zCnJlYWQ6IDEuNjA3IG1zCnRyYW5zZm9ybTogMC4wMDkgbXMKd3JpdGU6IDAuMDA1IG1zClRvdGFsOiAxLjY2MiBtcwo=",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 811008,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMiBtcwpkb3Q6IDAuMDExIG1zCmV4dGVuZCBvdXQ6IDAuMDA3IG1zCmZpeCAwOiAwLjAwOCBtcwpnYXRoZXI6IDAuMDA4IG1zCmluaXQ6IDAuMDA5IG1zCm1lbXNldDogMC4wMDggbXMKcHJlcGFyZTogMC4wMDQgbXMKcmVhZDogMS41NjcgbXMKdHJhbnNmb3JtOiAwLjAxOSBtcwp3cml0ZTogMC4wMDcgbXMKVG90YWw6IDEuNjcxIG1zCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 831488,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMjYgbXMKZG90OiAwLjAyMiBtcwpleHRlbmQgb3V0OiAwLjAwNyBtcwpmaXggMDogMC4wMTEgbXMKZ2F0aGVyOiAwLjAxNSBtcwppbml0OiAwLjAxOCBtcwptZW1zZXQ6IDAuMDEyIG1zCnByZXBhcmU6IDAuMDA4IG1zCnJlYWQ6IDEuNTM4IG1zCnRyYW5zZm9ybTogMC4wMjkgbXMKd3JpdGU6IDAuMDEgbXMKVG90YWw6IDEuNjk5IG1zCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 704512,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMTggbXMKZG90OiAwLjAxMSBtcwpleHRlbmQgb3V0OiAwLjAwNiBtcwpmaXggMDogMC4wMDcgbXMKZ2F0aGVyOiAwLjAwNSBtcwppbml0OiAwLjAwNSBtcwptZW1zZXQ6IDAuMDA2IG1zCnByZXBhcmU6IDAuMDA1IG1zCnJlYWQ6IDEuNjEzIG1zCnRyYW5zZm9ybTogMC4wMTEgbXMKd3JpdGU6IDAuMDA1IG1zClRvdGFsOiAxLjY5NiBtcwo=",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTYzODQgdG9rZW5zCg==",
+      "memory": 1265664,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4xNzEgbXMKZG90OiAwLjI4NyBtcwpleHRlbmQgb3V0OiAwLjAyMSBtcwpmaXggMDogMC4wOTQgbXMKZ2F0aGVyOiAwLjA4NiBtcwppbml0OiAwLjE1NSBtcwptZW1zZXQ6IDAuMDM5IG1zCnByZXBhcmU6IDAuMDE0IG1zCnJlYWQ6IDEuNjk0IG1zCnRyYW5zZm9ybTogMC4zMDUgbXMKd3JpdGU6IDAuMTUgbXMKVG90YWw6IDMuMDIgbXMK",
+      "time": 0.002
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 6524928,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMi4zNTUgbXMKZG90OiA0Ljg4NSBtcwpleHRlbmQgb3V0OiAwLjg3MyBtcwpmaXggMDogMS4zOCBtcwpnYXRoZXI6IDAuOTY1IG1zCmluaXQ6IDEuOTg4IG1zCm1lbXNldDogMC40MDkgbXMKcHJlcGFyZTogMC4xNDggbXMKcmVhZDogMy44NTEgbXMKdHJhbnNmb3JtOiA0LjgyNSBtcwp3cml0ZTogMi4xMjkgbXMKVG90YWw6IDIzLjgxNCBtcwo=",
+      "time": 0.023
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1970176,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC42MzcgbXMKZG90OiAxLjE0MiBtcwpleHRlbmQgb3V0OiAwLjE3IG1zCmZpeCAwOiAwLjM4NyBtcwpnYXRoZXI6IDAuMjU0IG1zCmluaXQ6IDAuNDkgbXMKbWVtc2V0OiAwLjA5OCBtcwpwcmVwYXJlOiAwLjA0MSBtcwpyZWFkOiAyLjIwNiBtcwp0cmFuc2Zvcm06IDEuMTYgbXMKd3JpdGU6IDAuNjA3IG1zClRvdGFsOiA3LjE5NiBtcwo=",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 20783104,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogNi4xNDkgbXMKZG90OiAyMi45ODIgbXMKZXh0ZW5kIG91dDogMS41ODkgbXMKZml4IDA6IDQuNzkzIG1zCmdhdGhlcjogMy41ODcgbXMKaW5pdDogNy42ODIgbXMKbWVtc2V0OiAxLjU2NCBtcwpwcmVwYXJlOiAwLjIxMSBtcwpyZWFkOiA5LjMzOCBtcwp0cmFuc2Zvcm06IDIxLjQ0NyBtcwp3cml0ZTogOC41ODUgbXMKVG90YWw6IDg3LjkzNCBtcwo=",
+      "time": 0.087
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 20938752,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogNi4wNzkgbXMKZG90OiAyMy4wMDEgbXMKZXh0ZW5kIG91dDogMS41OTkgbXMKZml4IDA6IDQuNzg1IG1zCmdhdGhlcjogMy41OTUgbXMKaW5pdDogNy42NDIgbXMKbWVtc2V0OiAxLjU1MSBtcwpwcmVwYXJlOiAwLjIxMSBtcwpyZWFkOiA5LjQ2IG1zCnRyYW5zZm9ybTogMjEuNDE1IG1zCndyaXRlOiA4LjU3IG1zClRvdGFsOiA4Ny45MTQgbXMK",
+      "time": 0.087
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 20799488,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogNi4wNjIgbXMKZG90OiAyMy4xNjQgbXMKZXh0ZW5kIG91dDogMS41NjcgbXMKZml4IDA6IDQuNzYxIG1zCmdhdGhlcjogMy41ODEgbXMKaW5pdDogNy43MDUgbXMKbWVtc2V0OiAxLjUxIG1zCnByZXBhcmU6IDAuMjI2IG1zCnJlYWQ6IDkuMzQyIG1zCnRyYW5zZm9ybTogMjEuMzYgbXMKd3JpdGU6IDguNDg2IG1zClRvdGFsOiA4Ny43NyBtcwo=",
+      "time": 0.087
+    },
+    {
+      "case": "n_01_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 761856,
+      "status": "AC",
+      "stderr": "cmVhZDogMS42MzMgbXMKd3JpdGU6IDAuMDA3IG1zClRvdGFsOiAxLjY0NiBtcwo=",
+      "time": 0.001
+    },
+    {
+      "case": "n_01_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 757760,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogMC4wMSBtcwpkb3Q6IDAuMDAxIG1zCmV4dGVuZCBvdXQ6IDAuMDAxIG1zCmZpeCAwOiAwLjAwMyBtcwpnYXRoZXI6IDAgbXMKaW5pdDogMC4wMDEgbXMKbWVtc2V0OiAwLjAwMiBtcwpwcmVwYXJlOiAwLjAwMiBtcwpyZWFkOiAxLjY1MiBtcwp0cmFuc2Zvcm06IDAuMDA3IG1zCndyaXRlOiAwLjAwOCBtcwpUb3RhbDogMS42OSBtcwo=",
+      "time": 0.001
+    },
+    {
+      "case": "overflow_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 20926464,
+      "status": "AC",
+      "stderr": "YWxsb2MgYnVmZmVyczogNi4wOTYgbXMKZG90OiAyMy4wMzQgbXMKZXh0ZW5kIG91dDogMS42NTMgbXMKZml4IDA6IDQuOTA1IG1zCmdhdGhlcjogMy43OSBtcwppbml0OiA4LjA5NiBtcwptZW1zZXQ6IDEuNTg1IG1zCnByZXBhcmU6IDAuMjM1IG1zCnJlYWQ6IDcuODExIG1zCnRyYW5zZm9ybTogMjEuNTczIG1zCndyaXRlOiA4Ljc3NiBtcwpUb3RhbDogODcuNTYzIG1zCg==",
+      "time": 0.087
+    }
+  ],
+  "overview": {
+    "id": 339836,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 20938752,
+    "problem_name": "exp_of_set_power_series",
+    "problem_title": "Exp of Set Power Series",
+    "status": "AC",
+    "submission_time": "2025-12-23T22:52:38.603182Z",
+    "time": 0.087,
+    "user_name": "adamant"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjE0Igo=",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjY2NDkwMjU1MyIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "minimum_00",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_sparse_00",
+      "checker_out": "b2sgIjMxODI3MDUzMCIK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_sparse_01",
+      "checker_out": "b2sgIjQ0NzEzNzcyMCIK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_sparse_02",
+      "checker_out": "b2sgIjM3NTIxOTk3MiIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_dense_00",
+      "checker_out": "b2sgIjM1NDI5MTk0MyIK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_dense_01",
+      "checker_out": "b2sgIjY5NTcyMDQiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_dense_02",
+      "checker_out": "b2sgIjY5NDkyMDkxNSIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_sparse_00",
+      "checker_out": "b2sgIjU2NjkwOTIyMyIK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_sparse_01",
+      "checker_out": "b2sgIjQ5MjQxOTQ1MCIK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_sparse_02",
+      "checker_out": "b2sgIjgwOTc3NjU3NyIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_sparse_03",
+      "checker_out": "b2sgIjUyOTk2NDU4MyIK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_sparse_04",
+      "checker_out": "b2sgIjkwODUwNjQ1Igo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_random_00",
+      "checker_out": "b2sgIjIzODI0OTQ0MCIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_random_01",
+      "checker_out": "b2sgIjQ2MTQ5MjU3MiIK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_random_02",
+      "checker_out": "b2sgIjc5MDQyMzQzIgo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjEyMTE3Mzg5Igo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjQzNzY1NTEwMCIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjk3ODMwNjg1MyIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "star_00",
+      "checker_out": "b2sgIjYzMzYwODEwIgo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "star_01",
+      "checker_out": "b2sgIjQyMDI5ODQ1NiIK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_complete_00",
+      "checker_out": "b2sgIjc5MjE3NDIyNCIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 392978,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 843776,
+    "problem_name": "enumerate_cliques",
+    "problem_title": "Enumerate Cliques",
+    "status": "AC",
+    "submission_time": "2026-08-13T21:49:25.719733Z",
+    "time": 0.001,
+    "user_name": "isaunoya"
+  }
+}

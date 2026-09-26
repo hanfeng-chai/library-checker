@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgIjQ5MTMyMiIK",
+      "memory": 6979584,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgIjQ5NDI5MyIK",
+      "memory": 7184384,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgIjQ5NDE4MyIK",
+      "memory": 7237632,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgIjQ5MzI2NCIK",
+      "memory": 7180288,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgIjQ5MDgxMiIK",
+      "memory": 7155712,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjIxIgo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjUzIgo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjMzIgo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "fib_str_00",
+      "checker_out": "b2sgIjU4MTk5NzA5MDE5Igo=",
+      "memory": 10285056,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "fib_str_01",
+      "checker_out": "b2sgIjMxMzEwMTgzMjM1Igo=",
+      "memory": 7684096,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "fib_str_02",
+      "checker_out": "b2sgIjI4MzM4NDc0MjQxIgo=",
+      "memory": 8699904,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "fib_str_03",
+      "checker_out": "b2sgIjIzODQ0MzU5NTIyIgo=",
+      "memory": 6103040,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "fib_str_04",
+      "checker_out": "b2sgIjU1NjYyMTc3MDI1Igo=",
+      "memory": 11079680,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjEyMDY5NzI0Mjg4MSIK",
+      "memory": 9699328,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjEyMjE2MTM2NDM1OCIK",
+      "memory": 9691136,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjEyMjEwNjk5ODU5MyIK",
+      "memory": 9719808,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjEyMTY1MzI3MDEzNiIK",
+      "memory": 9699328,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjEyMDQ0NjgwMDcwNiIK",
+      "memory": 9682944,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjc1OTc1OTk2OTgxIgo=",
+      "memory": 7901184,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjEwNzIwNDQ3ODE3NyIK",
+      "memory": 9306112,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjE0MjIyNDU0MTQiCg==",
+      "memory": 1638400,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjkyMTI2MTM4MzExIgo=",
+      "memory": 8724480,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjM4MzY3MDc3MjEyIgo=",
+      "memory": 5844992,
+      "status": "AC",
+      "time": 0.018
+    }
+  ],
+  "overview": {
+    "id": 235767,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 11079680,
+    "problem_name": "number_of_substrings",
+    "problem_title": "Number of Substrings",
+    "status": "AC",
+    "submission_time": "2024-09-15T07:07:20.100128Z",
+    "time": 0.035,
+    "user_name": "andyli"
+  }
+}

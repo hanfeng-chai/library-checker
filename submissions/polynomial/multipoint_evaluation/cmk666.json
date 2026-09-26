@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEwMDAwMDAwIgo=",
+      "memory": 262144,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "issue_1287_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "issue_1287_cpp_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 33275904,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "issue_1287_cpp_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 33124352,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 33271808,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 33271808,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTc3MDcgdG9rZW5zCg==",
+      "memory": 31182848,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk2OTEgdG9rZW5zCg==",
+      "memory": 30912512,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjAzIHRva2Vucwo=",
+      "memory": 32681984,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "zero_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 248977,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 33275904,
+    "problem_name": "multipoint_evaluation",
+    "problem_title": "Multipoint Evaluation",
+    "status": "AC",
+    "submission_time": "2024-11-13T05:27:02.637827Z",
+    "time": 0.042,
+    "user_name": "cmk666"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "2tree_00",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 10936320,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "2tree_01",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 11120640,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "2tree_02",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 11173888,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "2tree_03",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 11042816,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "2tree_04",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 11051008,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "complete_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk2IGFucz1ZRVMK",
+      "memory": 9797632,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "complete_minus_ab_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk1IGFucz1ZRVMK",
+      "memory": 10821632,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "complete_minus_ab_ac_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk0IGFucz1ZRVMK",
+      "memory": 10727424,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "complete_minus_ab_cd_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk0IGFucz1OTwo=",
+      "memory": 9605120,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "cycle_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 14176256,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgbj00LCBtPTQgYW5zPVlFUwo=",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgbj01LCBtPTQgYW5zPU5PCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgbj0xMCwgbT0xNSBhbnM9Tk8K",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "heawood_00",
+      "checker_out": "b2sgbj0xNCwgbT0yOCBhbnM9Tk8K",
+      "memory": 626688,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 12324864,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 12111872,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 12058624,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 12058624,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 12054528,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 12062720,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "thick_cycle_00",
+      "checker_out": "b2sgbj0xMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 11186176,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "wheel_00",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 11112448,
+      "status": "AC",
+      "time": 0.023
+    }
+  ],
+  "overview": {
+    "id": 102683,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 14176256,
+    "problem_name": "chordal_graph_recognition",
+    "problem_title": "Chordal Graph Recognition",
+    "status": "AC",
+    "time": 0.031,
+    "user_name": "Nachia"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTI1IHRva2Vucwo=",
+      "memory": 528384,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDk4IHRva2Vucwo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNDgxIHRva2Vucwo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNDkxIHRva2Vucwo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTIzIHRva2Vucwo=",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5ODYwIHRva2Vucwo=",
+      "memory": 90890240,
+      "status": "AC",
+      "time": 0.181
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMTE4IHRva2Vucwo=",
+      "memory": 90918912,
+      "status": "AC",
+      "time": 0.181
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMTA3IHRva2Vucwo=",
+      "memory": 91353088,
+      "status": "AC",
+      "time": 0.182
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjUwMDMyIHRva2Vucwo=",
+      "memory": 90882048,
+      "status": "AC",
+      "time": 0.18
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjUwMTc4IHRva2Vucwo=",
+      "memory": 91090944,
+      "status": "AC",
+      "time": 0.185
+    },
+    {
+      "case": "top2_killer_00",
+      "checker_out": "b2sgNDc0OTY5IHRva2Vucwo=",
+      "memory": 79568896,
+      "status": "AC",
+      "time": 0.122
+    }
+  ],
+  "overview": {
+    "id": 385958,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 91353088,
+    "problem_name": "majority_voting",
+    "problem_title": "Majority Voting",
+    "status": "AC",
+    "submission_time": "2026-07-17T10:00:25.366245Z",
+    "time": 0.185,
+    "user_name": "urectanc"
+  }
+}

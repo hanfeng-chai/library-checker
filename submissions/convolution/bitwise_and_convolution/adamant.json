@@ -1,0 +1,121 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAwMiBtcwppdHJhbnNmb3JtOiAwLjAwMSBtcwpyZWFkOiAxLjYwNyBtcwp0cmFuc2Zvcm06IDAuMDA4IG1zCndyaXRlOiAwLjAwNyBtcwpUb3RhbDogMS42MjYgbXMK",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 884736,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAwMSBtcwppdHJhbnNmb3JtOiAwLjAwMiBtcwpyZWFkOiAxLjYzMiBtcwp0cmFuc2Zvcm06IDAuMDA4IG1zCndyaXRlOiAwLjAwNiBtcwpUb3RhbDogMS42NSBtcwo=",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAwMSBtcwppdHJhbnNmb3JtOiAwLjAwMiBtcwpyZWFkOiAxLjM3NSBtcwp0cmFuc2Zvcm06IDAuMDA3IG1zCndyaXRlOiAwLjAwNSBtcwpUb3RhbDogMS4zOTEgbXMK",
+      "time": 0
+    },
+    {
+      "case": "tiny_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAwMiBtcwppdHJhbnNmb3JtOiAwLjAwMSBtcwpyZWFkOiAxLjYwNyBtcwp0cmFuc2Zvcm06IDAuMDA4IG1zCndyaXRlOiAwLjAwNyBtcwpUb3RhbDogMS42MjYgbXMK",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 835584,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAwMiBtcwppdHJhbnNmb3JtOiAwLjAwMSBtcwpyZWFkOiAxLjYyMSBtcwp0cmFuc2Zvcm06IDAuMDA4IG1zCndyaXRlOiAwLjAwOCBtcwpUb3RhbDogMS42NDEgbXMK",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 569344,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAwMSBtcwppdHJhbnNmb3JtOiAwLjAwMiBtcwpyZWFkOiAxLjY1NiBtcwp0cmFuc2Zvcm06IDAuMDA5IG1zCndyaXRlOiAwLjAwOCBtcwpUb3RhbDogMS42NzcgbXMK",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAwMiBtcwppdHJhbnNmb3JtOiAwLjAwMyBtcwpyZWFkOiAxLjY2MiBtcwp0cmFuc2Zvcm06IDAuMDA5IG1zCndyaXRlOiAwLjAxMSBtcwpUb3RhbDogMS42ODkgbXMK",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzI3NjggdG9rZW5zCg==",
+      "memory": 1351680,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjAzNSBtcwppdHJhbnNmb3JtOiAwLjAzMiBtcwpyZWFkOiAyLjA4NyBtcwp0cmFuc2Zvcm06IDAuMDcgbXMKd3JpdGU6IDAuMzUzIG1zClRvdGFsOiAyLjU3OCBtcwo=",
+      "time": 0.002
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1572864,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjA1OSBtcwppdHJhbnNmb3JtOiAwLjEgbXMKcmVhZDogMi40OCBtcwp0cmFuc2Zvcm06IDAuMjMzIG1zCndyaXRlOiAwLjU4OSBtcwpUb3RhbDogMy40NjMgbXMK",
+      "time": 0.003
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 5509120,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjIzIG1zCml0cmFuc2Zvcm06IDAuMzg1IG1zCnJlYWQ6IDQuODI5IG1zCnRyYW5zZm9ybTogMC45NCBtcwp3cml0ZTogMS45NTkgbXMKVG90YWw6IDguMzQ1IG1zCg==",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19148800,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjkxNSBtcwppdHJhbnNmb3JtOiAxLjY1NyBtcwpyZWFkOiAxMi4wOTIgbXMKdHJhbnNmb3JtOiAzLjkzIG1zCndyaXRlOiA3LjUyOCBtcwpUb3RhbDogMjYuMTIzIG1zCg==",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19304448,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjkwOCBtcwppdHJhbnNmb3JtOiAxLjY0MSBtcwpyZWFkOiAxMS45NDggbXMKdHJhbnNmb3JtOiAzLjkxMiBtcwp3cml0ZTogNy41MzQgbXMKVG90YWw6IDI1Ljk0NSBtcwo=",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19705856,
+      "status": "AC",
+      "stderr": "ZG90OiAwLjkwOSBtcwppdHJhbnNmb3JtOiAxLjY0MiBtcwpyZWFkOiAxMS45NjQgbXMKdHJhbnNmb3JtOiAzLjkxNCBtcwp3cml0ZTogNy41NzUgbXMKVG90YWw6IDI2LjAwNiBtcwo=",
+      "time": 0.026
+    }
+  ],
+  "overview": {
+    "id": 400554,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 19705856,
+    "problem_name": "bitwise_and_convolution",
+    "problem_title": "Bitwise And Convolution",
+    "status": "AC",
+    "submission_time": "2026-09-07T17:23:37.162339Z",
+    "time": 0.026,
+    "user_name": "adamant"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1175552,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1085440,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "small_n_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1122304,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "small_n_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1355776,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "small_n_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 120889344,
+      "status": "AC",
+      "time": 0.148
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 47763456,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 6590464,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25886720,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 23539712,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 78163968,
+      "status": "AC",
+      "time": 0.139
+    },
+    {
+      "case": "small_p_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.092
+    },
+    {
+      "case": "small_p_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "small_p_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "small_p_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1150976,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "small_p_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "small_p_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.062
+    }
+  ],
+  "overview": {
+    "id": 390552,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 120889344,
+    "problem_name": "stirling_number_of_the_second_kind_small_p_large_n",
+    "problem_title": "Stirling Number of the Second Kind (Small p, Large n)",
+    "status": "AC",
+    "submission_time": "2026-08-04T03:26:47.170067Z",
+    "time": 0.148,
+    "user_name": "hushuqi"
+  }
+}

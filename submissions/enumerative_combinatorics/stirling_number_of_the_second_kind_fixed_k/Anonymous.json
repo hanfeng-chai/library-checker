@@ -1,0 +1,114 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "0_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 3719168,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27639808,
+      "status": "AC",
+      "time": 0.092
+    },
+    {
+      "case": "2_00",
+      "checker_out": "b2sgNDk5OTk5IHRva2Vucwo=",
+      "memory": 26611712,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_max_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 28004352,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgODE0NDIgdG9rZW5zCg==",
+      "memory": 28717056,
+      "status": "AC",
+      "time": 0.152
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMzg2NjM0IHRva2Vucwo=",
+      "memory": 28119040,
+      "status": "AC",
+      "time": 0.121
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMzcwNTY5IHRva2Vucwo=",
+      "memory": 25919488,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTMxNzQ5IHRva2Vucwo=",
+      "memory": 27828224,
+      "status": "AC",
+      "time": 0.138
+    },
+    {
+      "case": "max_small_00",
+      "checker_out": "b2sgNDk5MDc0IHRva2Vucwo=",
+      "memory": 27779072,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "max_small_01",
+      "checker_out": "b2sgNDk5MzMyIHRva2Vucwo=",
+      "memory": 29057024,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTIwNTIgdG9rZW5zCg==",
+      "memory": 28725248,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjM2NTggdG9rZW5zCg==",
+      "memory": 4411392,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTA3NzU1IHRva2Vucwo=",
+      "memory": 25976832,
+      "status": "AC",
+      "time": 0.144
+    }
+  ],
+  "overview": {
+    "id": 238808,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 29057024,
+    "problem_name": "stirling_number_of_the_second_kind_fixed_k",
+    "problem_title": "Stirling Number of the Second Kind (Fixed K)",
+    "status": "AC",
+    "submission_time": "2024-09-30T05:26:35.149172Z",
+    "time": 0.152
+  }
+}

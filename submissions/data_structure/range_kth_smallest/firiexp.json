@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4Nzc5IHRva2Vucwo=",
+      "memory": 4284416,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTQ4NzU3IHRva2Vucwo=",
+      "memory": 4661248,
+      "status": "AC",
+      "time": 0.055
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjAzIHRva2Vucwo=",
+      "memory": 2859008,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 4648960,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 2248704,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjk5IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjM1IHRva2Vucwo=",
+      "memory": 786432,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMzk1IHRva2Vucwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjM5IHRva2Vucwo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgODEzIHRva2Vucwo=",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMjIxIHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgMjUyIHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMjExIHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgMzAzIHRva2Vucwo=",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNzkyIHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 6012928,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 6008832,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 5967872,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 5967872,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 6004736,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "dense_small_a_00",
+      "checker_out": "b2sgMTk4NDg1IHRva2Vucwo=",
+      "memory": 1581056,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "dense_large_a_00",
+      "checker_out": "b2sgMTk4NDg1IHRva2Vucwo=",
+      "memory": 2887680,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgNjkzIHRva2Vucwo=",
+      "memory": 1077248,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 391951,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6012928,
+    "problem_name": "range_kth_smallest",
+    "problem_title": "Range Kth Smallest",
+    "status": "AC",
+    "submission_time": "2026-08-11T04:17:06.878792Z",
+    "time": 0.08,
+    "user_name": "firiexp"
+  }
+}

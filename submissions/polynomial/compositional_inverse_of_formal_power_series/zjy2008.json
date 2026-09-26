@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "identity_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 757760,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_identity_00",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1945600,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1941504,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1949696,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1933312,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1941504,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgODAwMCB0b2tlbnMK",
+      "memory": 1945600,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDc5MCB0b2tlbnMK",
+      "memory": 1871872,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDI5NSB0b2tlbnMK",
+      "memory": 1724416,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDE4NSB0b2tlbnMK",
+      "memory": 1822720,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzI2NiB0b2tlbnMK",
+      "memory": 1212416,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNjY3NyB0b2tlbnMK",
+      "memory": 1847296,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_degree_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_03",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_04",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_05",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_06",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_07",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_08",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_09",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 602112,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 282847,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1949696,
+    "problem_name": "compositional_inverse_of_formal_power_series",
+    "problem_title": "Compositional Inverse of Formal Power Series",
+    "status": "AC",
+    "submission_time": "2025-05-02T05:53:05.304133Z",
+    "time": 0.02,
+    "user_name": "zjy2008"
+  }
+}

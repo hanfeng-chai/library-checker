@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1036288,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1159168,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1024000,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1552384,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "fibonacci_like_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1150976,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "fibonacci_like_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1118208,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "large_gcd_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3129344,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "large_gcd_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 3153920,
+      "status": "AC",
+      "time": 0.016
+    }
+  ],
+  "overview": {
+    "id": 336180,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 3153920,
+    "problem_name": "gcd_of_gaussian_integers",
+    "problem_title": "Gcd of Gaussian Integers",
+    "status": "AC",
+    "submission_time": "2025-12-11T21:53:03.85186Z",
+    "time": 0.031,
+    "user_name": "zwezdinv"
+  }
+}

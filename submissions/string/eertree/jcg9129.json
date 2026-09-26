@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMjIgdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgMzYgdG9rZW5zCg==",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "short_period_00",
+      "checker_out": "b2sgMzAwMDAwMSB0b2tlbnMK",
+      "memory": 67002368,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "short_period_01",
+      "checker_out": "b2sgMTUwMDAwMSB0b2tlbnMK",
+      "memory": 33681408,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "short_period_02",
+      "checker_out": "b2sgMzAwMDAwMSB0b2tlbnMK",
+      "memory": 66629632,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "short_period_03",
+      "checker_out": "b2sgMTUwMDAwMSB0b2tlbnMK",
+      "memory": 33460224,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "short_period_04",
+      "checker_out": "b2sgMzAwMDAwMSB0b2tlbnMK",
+      "memory": 66969600,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "short_period_05",
+      "checker_out": "b2sgMTUwMDAwMSB0b2tlbnMK",
+      "memory": 33464320,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "short_period_06",
+      "checker_out": "b2sgMjk5OTk5OCB0b2tlbnMK",
+      "memory": 66973696,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "short_period_07",
+      "checker_out": "b2sgMTQ5OTk5NSB0b2tlbnMK",
+      "memory": 33947648,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "short_period_08",
+      "checker_out": "b2sgMTAwMDAwNiB0b2tlbnMK",
+      "memory": 12181504,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "short_period_09",
+      "checker_out": "b2sgNTAwMDA1IHRva2Vucwo=",
+      "memory": 6451200,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "binary_00",
+      "checker_out": "b2sgMjA1NzExMyB0b2tlbnMK",
+      "memory": 42786816,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "binary_01",
+      "checker_out": "b2sgMjA1Njk1NSB0b2tlbnMK",
+      "memory": 42618880,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "binary_02",
+      "checker_out": "b2sgMjA1NzI2MSB0b2tlbnMK",
+      "memory": 43110400,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "binary_03",
+      "checker_out": "b2sgMjA1NjkxOSB0b2tlbnMK",
+      "memory": 42586112,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTAwNTY1MyB0b2tlbnMK",
+      "memory": 12967936,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTAwNTc1MyB0b2tlbnMK",
+      "memory": 13242368,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "random_small_sigma_00",
+      "checker_out": "b2sgMzAwMDAwMSB0b2tlbnMK",
+      "memory": 67006464,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "random_small_sigma_01",
+      "checker_out": "b2sgMTAxMjMyNSB0b2tlbnMK",
+      "memory": 13496320,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_small_sigma_02",
+      "checker_out": "b2sgMTAwODY3OSB0b2tlbnMK",
+      "memory": 12980224,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "random_small_sigma_03",
+      "checker_out": "b2sgMTAwNzc2NyB0b2tlbnMK",
+      "memory": 12972032,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "random_small_sigma_04",
+      "checker_out": "b2sgMTAwNzAxNyB0b2tlbnMK",
+      "memory": 12697600,
+      "status": "AC",
+      "time": 0.043
+    }
+  ],
+  "overview": {
+    "id": 394036,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 67006464,
+    "problem_name": "eertree",
+    "problem_title": "Eertree",
+    "status": "AC",
+    "submission_time": "2026-08-16T20:17:14.05633Z",
+    "time": 0.068,
+    "user_name": "jcg9129"
+  }
+}

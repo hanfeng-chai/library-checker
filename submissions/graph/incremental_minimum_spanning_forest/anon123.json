@@ -1,0 +1,136 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSBudW1iZXIocyk6ICItMSAtMSAxIDMgNCIK",
+      "memory": 622592,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIG51bWJlcnMK",
+      "memory": 9416704,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IG51bWJlcnMK",
+      "memory": 10199040,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgOTA2NjM1IG51bWJlcnMK",
+      "memory": 8372224,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTUwMTI3IG51bWJlcnMK",
+      "memory": 10674176,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgbnVtYmVycwo=",
+      "memory": 6209536,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 14401536,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 8208384,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 8376320,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 14397440,
+      "status": "AC",
+      "time": 0.137
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 14397440,
+      "status": "AC",
+      "time": 0.138
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 8376320,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 8372224,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 8110080,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_08",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 8523776,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_09",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 14397440,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "hack_decreasing_00",
+      "checker_out": "b2sgMTAwMDAwMCBudW1iZXJzCg==",
+      "memory": 14401536,
+      "status": "AC",
+      "time": 0.086
+    }
+  ],
+  "overview": {
+    "id": 327769,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 14401536,
+    "problem_name": "incremental_minimum_spanning_forest",
+    "problem_title": "Incremental Minimum Spanning Forest",
+    "status": "AC",
+    "submission_time": "2025-11-10T12:00:19.806691Z",
+    "time": 0.141,
+    "user_name": "anon123"
+  }
+}

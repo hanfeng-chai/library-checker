@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 708608,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11681792,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11780096,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11788288,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 17817600,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 23707648,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 15712256,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 22007808,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 26230784,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28291072,
+      "status": "AC",
+      "time": 0.049
+    }
+  ],
+  "overview": {
+    "id": 363615,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 28291072,
+    "problem_name": "static_range_count_distinct",
+    "problem_title": "Static Range Count Distinct",
+    "status": "AC",
+    "submission_time": "2026-04-01T04:32:28.067562Z",
+    "time": 0.049,
+    "user_name": "IceKylin"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 651264,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1355776,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1327104,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1331200,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1318912,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "safe_prime_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "safe_prime_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1134592,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "safe_prime_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "safe_prime_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "safe_prime_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1052672,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "Tonelli-Shanks_worstcase_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1363968,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "Tonelli-Shanks_worstcase_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1351680,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "Tonelli-Shanks_worstcase_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1204224,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "Tonelli-Shanks_worstcase_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1347584,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "Tonelli-Shanks_worstcase_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1351680,
+      "status": "AC",
+      "time": 0.011
+    }
+  ],
+  "overview": {
+    "id": 152069,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 1363968,
+    "problem_name": "kth_root_mod",
+    "problem_title": "Kth Root (Mod)",
+    "status": "AC",
+    "time": 0.013,
+    "user_name": "kaze"
+  }
+}

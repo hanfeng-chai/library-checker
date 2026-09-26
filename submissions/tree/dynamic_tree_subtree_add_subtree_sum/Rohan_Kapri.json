@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjYzNTEgdG9rZW5zCg==",
+      "memory": 37990400,
+      "status": "AC",
+      "time": 0.238
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjY0NTEgdG9rZW5zCg==",
+      "memory": 37715968,
+      "status": "AC",
+      "time": 0.233
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTAyIHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNzUgdG9rZW5zCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTQwIHRva2Vucwo=",
+      "memory": 647168,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNzIgdG9rZW5zCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjczIHRva2Vucwo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDk0NDkgdG9rZW5zCg==",
+      "memory": 23375872,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk3MzMgdG9rZW5zCg==",
+      "memory": 25497600,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDAxNzggdG9rZW5zCg==",
+      "memory": 14176256,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODYzNyB0b2tlbnMK",
+      "memory": 20787200,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzMxNjUgdG9rZW5zCg==",
+      "memory": 9773056,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjY2NDYgdG9rZW5zCg==",
+      "memory": 37183488,
+      "status": "AC",
+      "time": 0.155
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY3NTQgdG9rZW5zCg==",
+      "memory": 37699584,
+      "status": "AC",
+      "time": 0.154
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY2NTggdG9rZW5zCg==",
+      "memory": 38223872,
+      "status": "AC",
+      "time": 0.156
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNjcxMjMgdG9rZW5zCg==",
+      "memory": 36974592,
+      "status": "AC",
+      "time": 0.156
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNjY4MTcgdG9rZW5zCg==",
+      "memory": 37982208,
+      "status": "AC",
+      "time": 0.158
+    }
+  ],
+  "overview": {
+    "id": 405123,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 38223872,
+    "problem_name": "dynamic_tree_subtree_add_subtree_sum",
+    "problem_title": "Dynamic Tree Subtree Add Subtree Sum",
+    "status": "AC",
+    "submission_time": "2026-09-22T11:20:51.870558Z",
+    "time": 0.238,
+    "user_name": "Rohan_Kapri"
+  }
+}

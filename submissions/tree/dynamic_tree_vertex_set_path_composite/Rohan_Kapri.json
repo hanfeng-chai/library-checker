@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 6901760,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 6819840,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjY1NDEgdG9rZW5zCg==",
+      "memory": 15781888,
+      "status": "AC",
+      "time": 0.238
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjY1OTMgdG9rZW5zCg==",
+      "memory": 16031744,
+      "status": "AC",
+      "time": 0.245
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 7905280,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ0Igo=",
+      "memory": 7917568,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 7872512,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQyIgo=",
+      "memory": 8097792,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjM5Igo=",
+      "memory": 7876608,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTA5IHRva2Vucwo=",
+      "memory": 7127040,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNzMgdG9rZW5zCg==",
+      "memory": 7876608,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMTI1IHRva2Vucwo=",
+      "memory": 6868992,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNzcgdG9rZW5zCg==",
+      "memory": 7868416,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgMjc1IHRva2Vucwo=",
+      "memory": 7970816,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDk3MTUgdG9rZW5zCg==",
+      "memory": 11841536,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk3NjMgdG9rZW5zCg==",
+      "memory": 11808768,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDAxNjIgdG9rZW5zCg==",
+      "memory": 9986048,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODUyMiB0b2tlbnMK",
+      "memory": 11546624,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzMwOTMgdG9rZW5zCg==",
+      "memory": 8691712,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjcxNDIgdG9rZW5zCg==",
+      "memory": 13684736,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY1MTQgdG9rZW5zCg==",
+      "memory": 13639680,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY1OTIgdG9rZW5zCg==",
+      "memory": 13672448,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "issue_1216_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 19701760,
+      "status": "AC",
+      "time": 0.027
+    }
+  ],
+  "overview": {
+    "id": 405116,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 19701760,
+    "problem_name": "dynamic_tree_vertex_set_path_composite",
+    "problem_title": "Dynamic Tree Vertex Set Path Composite",
+    "status": "AC",
+    "submission_time": "2026-09-22T11:00:26.692107Z",
+    "time": 0.245,
+    "user_name": "Rohan_Kapri"
+  }
+}

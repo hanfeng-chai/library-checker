@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 524288,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 520192,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10493952,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 12087296,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2338816,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 11268096,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 7593984,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13090816,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13094912,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "uni_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13094912,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 16240640,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 373366,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16240640,
+    "problem_name": "tree_diameter",
+    "problem_title": "Tree Diameter",
+    "status": "AC",
+    "submission_time": "2026-05-19T07:05:34.673845Z",
+    "time": 0.032,
+    "user_name": "brendon4565"
+  }
+}

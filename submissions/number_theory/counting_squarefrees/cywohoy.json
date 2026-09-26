@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 29380608,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjYxIgo=",
+      "memory": 29351936,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjcyMiIK",
+      "memory": 29605888,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjczMiIK",
+      "memory": 29782016,
+      "status": "AC",
+      "time": 0.161
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjc0MyIK",
+      "memory": 29601792,
+      "status": "AC",
+      "time": 0.161
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjcyOCIK",
+      "memory": 29601792,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjcwNCIK",
+      "memory": 29696000,
+      "status": "AC",
+      "time": 0.161
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjQ2OTkxNzIiCg==",
+      "memory": 29347840,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjIxNjMzODciCg==",
+      "memory": 29540352,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjEyMzI5MjUiCg==",
+      "memory": 29343744,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQwODU3MTMiCg==",
+      "memory": 29548544,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjQ5NDkzMjUiCg==",
+      "memory": 29532160,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "very_small_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 29347840,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "very_small_01",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 29339648,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "very_small_02",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 29347840,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "very_small_03",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 29339648,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "very_small_04",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 29339648,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjQzNDY5ODk2MTAxMTU1MzUxNSIK",
+      "memory": 29646848,
+      "status": "AC",
+      "time": 0.139
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjE3Mjk0NDY4ODI3NzkwMzIwOCIK",
+      "memory": 29609984,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjQ0NDk3MjUxMzg0MzgzMDc1OCIK",
+      "memory": 29605888,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjM1MTkzNzA2NTYzODkwNDU0Igo=",
+      "memory": 29343744,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjE1MDY0MDg5ODIxOTgzMjcxNSIK",
+      "memory": 29601792,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "issue_1232_00",
+      "checker_out": "b2sgIjg0MzU0MzE0NDY2NzIxNjcwIgo=",
+      "memory": 29421568,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "issue_1232_01",
+      "checker_out": "b2sgIjQ4OTczOTM3NjEzMDY1MDYwOCIK",
+      "memory": 29605888,
+      "status": "AC",
+      "time": 0.147
+    },
+    {
+      "case": "issue_1232_02",
+      "checker_out": "b2sgIjc0MzIxNDU0NTE4MDE0MzYwIgo=",
+      "memory": 29343744,
+      "status": "AC",
+      "time": 0.085
+    }
+  ],
+  "overview": {
+    "id": 368126,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 29782016,
+    "problem_name": "counting_squarefrees",
+    "problem_title": "Counting Square-free Integers",
+    "status": "AC",
+    "submission_time": "2026-04-23T02:27:56.00141Z",
+    "time": 0.161,
+    "user_name": "cywohoy"
+  }
+}

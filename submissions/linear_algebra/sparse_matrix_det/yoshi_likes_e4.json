@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 598016,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 528384,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack2_00",
+      "checker_out": "b2sgIjEwMDEwODU0OCIK",
+      "memory": 1335296,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjgyOTM1ODk4MyIK",
+      "memory": 1290240,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjY2MDk0ODM1MSIK",
+      "memory": 950272,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1286144,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1298432,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIjIxODYxMzc1NSIK",
+      "memory": 1024000,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIjQ4ODI1MTM1MiIK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgIjYwNzMxNjIwOCIK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgIjE1MDQ3NzU0MiIK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgIjU4NzIzMDQwNyIK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_plus_random_00",
+      "checker_out": "b2sgIjIyNzY1Nzc4OCIK",
+      "memory": 4198400,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "perm_plus_random_01",
+      "checker_out": "b2sgIjg0NDM4NDM5NCIK",
+      "memory": 4186112,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "perm_plus_random_02",
+      "checker_out": "b2sgIjgxNzAyMjY1NSIK",
+      "memory": 4452352,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "perm_plus_random_03",
+      "checker_out": "b2sgIjg3NzA3Mjg2Igo=",
+      "memory": 4190208,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "perm_plus_random_04",
+      "checker_out": "b2sgIjI0MzkyNzE0NyIK",
+      "memory": 4976640,
+      "status": "AC",
+      "time": 0.07
+    }
+  ],
+  "overview": {
+    "id": 299154,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 4976640,
+    "problem_name": "sparse_matrix_det",
+    "problem_title": "Determinant of Sparse Matrix",
+    "status": "AC",
+    "submission_time": "2025-07-12T02:26:05.269948Z",
+    "time": 0.07,
+    "user_name": "yoshi_likes_e4"
+  }
+}

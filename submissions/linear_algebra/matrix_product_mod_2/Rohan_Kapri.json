@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 2891776,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEwMSIK",
+      "memory": 2899968,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 2895872,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjc0MCB0b2tlbnMK",
+      "memory": 16539648,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjI0NSB0b2tlbnMK",
+      "memory": 12361728,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjEzNSB0b2tlbnMK",
+      "memory": 10788864,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24154112,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24129536,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24322048,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTMgdG9rZW5zCg==",
+      "memory": 3121152,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNzAgdG9rZW5zCg==",
+      "memory": 2936832,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgODggdG9rZW5zCg==",
+      "memory": 3072000,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjUgdG9rZW5zCg==",
+      "memory": 3153920,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjAgdG9rZW5zCg==",
+      "memory": 3125248,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMTA2IHRva2Vucwo=",
+      "memory": 3096576,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 2924544,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgOTEgdG9rZW5zCg==",
+      "memory": 3182592,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 2928640,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgOTcgdG9rZW5zCg==",
+      "memory": 2924544,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "middle_00",
+      "checker_out": "b2sgNjkzIHRva2Vucwo=",
+      "memory": 3678208,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "middle_01",
+      "checker_out": "b2sgMTk4IHRva2Vucwo=",
+      "memory": 3158016,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "middle_02",
+      "checker_out": "b2sgODggdG9rZW5zCg==",
+      "memory": 3194880,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "middle_03",
+      "checker_out": "b2sgMTkzIHRva2Vucwo=",
+      "memory": 3153920,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "middle_04",
+      "checker_out": "b2sgNTMyIHRva2Vucwo=",
+      "memory": 3678208,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "many_1_00",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24170496,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "many_1_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24162304,
+      "status": "AC",
+      "time": 0.038
+    }
+  ],
+  "overview": {
+    "id": 406212,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24322048,
+    "problem_name": "matrix_product_mod_2",
+    "problem_title": "Matrix Product (Mod 2)",
+    "status": "AC",
+    "submission_time": "2026-09-26T06:12:29.041323Z",
+    "time": 0.038,
+    "user_name": "Rohan_Kapri"
+  }
+}

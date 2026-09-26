@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "100_00",
+      "checker_out": "b2sgMTAxIHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "1000_00",
+      "checker_out": "b2sgMTAwMSB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "10000_00",
+      "checker_out": "b2sgMTAwMDEgdG9rZW5zCg==",
+      "memory": 1355776,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "100000_00",
+      "checker_out": "b2sgMTAwMDAxIHRva2Vucwo=",
+      "memory": 6590464,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "200000_00",
+      "checker_out": "b2sgMjAwMDAxIHRva2Vucwo=",
+      "memory": 12357632,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "300000_00",
+      "checker_out": "b2sgMzAwMDAxIHRva2Vucwo=",
+      "memory": 22581248,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "400000_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 24432640,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 26943488,
+      "status": "AC",
+      "time": 0.139
+    }
+  ],
+  "overview": {
+    "id": 395861,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 26943488,
+    "problem_name": "bell_number",
+    "problem_title": "Bell Number",
+    "status": "AC",
+    "submission_time": "2026-08-21T21:24:42.342802Z",
+    "time": 0.139,
+    "user_name": "hushuqi"
+  }
+}

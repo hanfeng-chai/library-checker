@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_all_zero_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25075712,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "max_ans_zero_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28930048,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28954624,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28790784,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28930048,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 29040640,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28860416,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "near_262144_00",
+      "checker_out": "b2sgMjYyMTQzIHRva2Vucwo=",
+      "memory": 14925824,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "near_262144_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 15343616,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "near_262144_02",
+      "checker_out": "b2sgMjYyMTQ1IHRva2Vucwo=",
+      "memory": 17108992,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 23134208,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 27140096,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 4141056,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNDI5MjQ5IHRva2Vucwo=",
+      "memory": 25530368,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjc3MDEyIHRva2Vucwo=",
+      "memory": 17240064,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "small_degree_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_04",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_05",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_06",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 729088,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_07",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_08",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_09",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 248680,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 29040640,
+    "problem_name": "exp_of_formal_power_series",
+    "problem_title": "Exp of Formal Power Series",
+    "status": "AC",
+    "submission_time": "2024-11-12T09:52:44.580967Z",
+    "time": 0.044,
+    "user_name": "cmk666"
+  }
+}

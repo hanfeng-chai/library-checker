@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjI4Igo=",
+      "memory": 344064,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjIzMjYyOTY5NyIK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjk0MTg3NDYyMCIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjI3MTM2ODg0OSIK",
+      "memory": 585728,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgIjE2OTkxMjc2MCIK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgIjk5NzMxMTcxMiIK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgIjk5NjY0NTc5MiIK",
+      "memory": 720896,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjQxNjI4MDMxNCIK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.604
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjkxNzIyMjk0OSIK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.605
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjc0NDUzNzc0MiIK",
+      "memory": 974848,
+      "status": "AC",
+      "time": 0.603
+    },
+    {
+      "case": "hack77047_00",
+      "checker_out": "b2sgIjMxMjg4MjgxMCIK",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.595
+    }
+  ],
+  "overview": {
+    "id": 388507,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1007616,
+    "problem_name": "hafnian_of_matrix",
+    "problem_title": "Hafnian of Matrix",
+    "status": "AC",
+    "submission_time": "2026-07-26T19:34:56.960057Z",
+    "time": 0.605,
+    "user_name": "Ausp3x"
+  }
+}

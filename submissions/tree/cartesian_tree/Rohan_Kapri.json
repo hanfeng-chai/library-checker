@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 12070912,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 5771264,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTc3NjI0IHRva2Vucwo=",
+      "memory": 6561792,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNDI5MjQ5IHRva2Vucwo=",
+      "memory": 5255168,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgODAxMzAwIHRva2Vucwo=",
+      "memory": 9220096,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "increasing_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 24129536,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "increasing_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 11026432,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "decreasing_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 11059200,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "decreasing_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 5898240,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "almost-increasing_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 22986752,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "almost-increasing_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 11292672,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "almost-decreasing_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 11046912,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "almost-decreasing_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 4771840,
+      "status": "AC",
+      "time": 0.007
+    }
+  ],
+  "overview": {
+    "id": 405124,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 24129536,
+    "problem_name": "cartesian_tree",
+    "problem_title": "Cartesian Tree",
+    "status": "AC",
+    "submission_time": "2026-09-22T11:21:53.69111Z",
+    "time": 0.022,
+    "user_name": "Rohan_Kapri"
+  }
+}

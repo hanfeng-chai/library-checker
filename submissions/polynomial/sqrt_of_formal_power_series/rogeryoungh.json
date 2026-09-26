@@ -1,0 +1,296 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4673536,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.004
+    },
+    {
+      "case": "all_zero_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5459968,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.005
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 733184,
+      "status": "AC",
+      "stderr": "CjE4Cg==",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 729088,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0
+    },
+    {
+      "case": "lower_deg_zero_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 9957376,
+      "status": "AC",
+      "stderr": "CjM4MzE5MTQK",
+      "time": 0.028
+    },
+    {
+      "case": "lower_deg_zero_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9015296,
+      "status": "AC",
+      "stderr": "CjMwNDU0ODIK",
+      "time": 0.022
+    },
+    {
+      "case": "lower_deg_zero_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2838528,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.004
+    },
+    {
+      "case": "lower_deg_zero_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2842624,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.005
+    },
+    {
+      "case": "lower_deg_zero_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2834432,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.003
+    },
+    {
+      "case": "lower_deg_zero_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 2838528,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.004
+    },
+    {
+      "case": "lower_deg_zero_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 2838528,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.003
+    },
+    {
+      "case": "lower_deg_zero_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 2838528,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.003
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2842624,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13295616,
+      "status": "AC",
+      "stderr": "CjQ2MTgzNDYK",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 12009472,
+      "status": "AC",
+      "stderr": "CjQ2MTgzNDYK",
+      "time": 0.033
+    },
+    {
+      "case": "monomial_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10448896,
+      "status": "AC",
+      "stderr": "CjM1Njk3NzAK",
+      "time": 0.023
+    },
+    {
+      "case": "monomial_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2838528,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.003
+    },
+    {
+      "case": "monomial_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 11571200,
+      "status": "AC",
+      "stderr": "CjQwOTQwNTgK",
+      "time": 0.026
+    },
+    {
+      "case": "monomial_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2838528,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.003
+    },
+    {
+      "case": "near_262144_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1794048,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.003
+    },
+    {
+      "case": "near_262144_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6406144,
+      "status": "AC",
+      "stderr": "CjIzMDkxNTQK",
+      "time": 0.017
+    },
+    {
+      "case": "near_262144_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6836224,
+      "status": "AC",
+      "stderr": "CjI3ODMzMzgK",
+      "time": 0.019
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2834432,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.006
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 12804096,
+      "status": "AC",
+      "stderr": "CjQ2MTgzNDYK",
+      "time": 0.033
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 12800000,
+      "status": "AC",
+      "stderr": "CjQ2MTgzNDYK",
+      "time": 0.033
+    },
+    {
+      "case": "small_degree_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 729088,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0
+    },
+    {
+      "case": "small_degree_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 733184,
+      "status": "AC",
+      "stderr": "CjEwCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CjE4Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 737280,
+      "status": "AC",
+      "stderr": "CjI2Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CjM0Cg==",
+      "time": 0
+    },
+    {
+      "case": "small_degree_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 737280,
+      "status": "AC",
+      "stderr": "CjQyCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 737280,
+      "status": "AC",
+      "stderr": "CjY2Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 745472,
+      "status": "AC",
+      "stderr": "CjAK",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 144650,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 13295616,
+    "problem_name": "sqrt_of_formal_power_series",
+    "problem_title": "Sqrt of Formal Power Series",
+    "status": "AC",
+    "time": 0.033,
+    "user_name": "rogeryoungh"
+  }
+}

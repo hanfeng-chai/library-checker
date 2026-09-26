@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 585728,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 10506240,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 11161600,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 7360512,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 4509696,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 4472832,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12894208,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12886016,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12890112,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12853248,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12849152,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "cycle_unsat_00",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 12746752,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "cycle_unsat_01",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 12816384,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "long_chain_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12087296,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "long_chain_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12693504,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "long_chain_02",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 12365824,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "long_chain_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 11587584,
+      "status": "AC",
+      "time": 0.023
+    }
+  ],
+  "overview": {
+    "id": 405839,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 12894208,
+    "problem_name": "two_sat",
+    "problem_title": "2 Sat",
+    "status": "AC",
+    "submission_time": "2026-09-24T15:28:56.202688Z",
+    "time": 0.038,
+    "user_name": "Rohan_Kapri"
+  }
+}

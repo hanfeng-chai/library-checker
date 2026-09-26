@@ -1,0 +1,122 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjY1MzIgdG9rZW5zCg==",
+      "memory": 11530240,
+      "status": "AC",
+      "time": 0.187
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjYzNjIgdG9rZW5zCg==",
+      "memory": 11567104,
+      "status": "AC",
+      "time": 0.187
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgODYgdG9rZW5zCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNzcgdG9rZW5zCg==",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTQwIHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDk2NDcgdG9rZW5zCg==",
+      "memory": 7688192,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk3NzYgdG9rZW5zCg==",
+      "memory": 8773632,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzk5NDAgdG9rZW5zCg==",
+      "memory": 3846144,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODY4MiB0b2tlbnMK",
+      "memory": 9191424,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzI3ODQgdG9rZW5zCg==",
+      "memory": 1880064,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjY2ODQgdG9rZW5zCg==",
+      "memory": 11399168,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY4MzUgdG9rZW5zCg==",
+      "memory": 11280384,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY3MjQgdG9rZW5zCg==",
+      "memory": 11399168,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "issue_1216_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 13750272,
+      "status": "AC",
+      "time": 0.021
+    }
+  ],
+  "overview": {
+    "id": 284283,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 13750272,
+    "problem_name": "dynamic_tree_vertex_add_path_sum",
+    "problem_title": "Dynamic Tree Vertex Add Path Sum",
+    "status": "AC",
+    "submission_time": "2025-05-09T11:53:42.651859Z",
+    "time": 0.187,
+    "user_name": "Taiki0715"
+  }
+}

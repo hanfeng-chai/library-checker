@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 1077248,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTUyIHRva2Vucwo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTIyIHRva2Vucwo=",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTk0IHRva2Vucwo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMTEzIHRva2Vucwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDMyIHRva2Vucwo=",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg4MDQgdG9rZW5zCg==",
+      "memory": 7323648,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTg4MiB0b2tlbnMK",
+      "memory": 5742592,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzEwMTcgdG9rZW5zCg==",
+      "memory": 8630272,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAxMzUgdG9rZW5zCg==",
+      "memory": 14348288,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNDk5OTggdG9rZW5zCg==",
+      "memory": 14635008,
+      "status": "AC",
+      "time": 0.151
+    },
+    {
+      "case": "many_points_00",
+      "checker_out": "b2sgMTY3MzMgdG9rZW5zCg==",
+      "memory": 12296192,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "many_queries_00",
+      "checker_out": "b2sgODM0MDYgdG9rZW5zCg==",
+      "memory": 16203776,
+      "status": "AC",
+      "time": 0.154
+    },
+    {
+      "case": "xy_concentrate_00",
+      "checker_out": "b2sgNTAyNTMgdG9rZW5zCg==",
+      "memory": 12521472,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "xy_concentrate_01",
+      "checker_out": "b2sgNDk5OTkgdG9rZW5zCg==",
+      "memory": 12546048,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "xy_concentrate_02",
+      "checker_out": "b2sgNDk4ODIgdG9rZW5zCg==",
+      "memory": 12283904,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "power_of_2_00",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 11767808,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "power_of_2_01",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 11513856,
+      "status": "AC",
+      "time": 0.054
+    }
+  ],
+  "overview": {
+    "id": 401366,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 16203776,
+    "problem_name": "point_add_rectangle_sum",
+    "problem_title": "Point Add Rectangle Sum",
+    "status": "AC",
+    "submission_time": "2026-09-10T05:13:27.394133Z",
+    "time": 0.154,
+    "user_name": "ArcAki"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 389120,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 593920,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_1_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_1_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_1_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 712704,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 720896,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 593920,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_1_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14745600,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_1_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 15675392,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "random_1_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10256384,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 5312512,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1675264,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 7151616,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_2_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 10256384,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_2_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 4284416,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 20951040,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 20848640,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 20930560,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 11571200,
+      "status": "AC",
+      "time": 0.025
+    }
+  ],
+  "overview": {
+    "id": 317515,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 20951040,
+    "problem_name": "three_edge_connected_components",
+    "problem_title": "Three-Edge-Connected Components",
+    "status": "AC",
+    "submission_time": "2025-09-29T14:30:28.45749Z",
+    "time": 0.059,
+    "user_name": "jeoffrey0522"
+  }
+}

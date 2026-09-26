@@ -1,0 +1,283 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "big2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "big2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "big2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "big_semiprime_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "big_semiprime_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "fixed_RNG_buster_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "num_of_solution_max_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 7159808,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "num_of_solution_max_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "power_of_2_3_5_13_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "power_of_2_3_5_13_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "power_of_2_3_5_13_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "power_of_2_3_5_13_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "prime_1_mod_4_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "prime_1_mod_4_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "prime_1_mod_4_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "prime_3_mod_4_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "smooth_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smooth_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 917504,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "smooth_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1585152,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "smooth_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2703360,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "smooth_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1060864,
+      "status": "AC",
+      "time": 0.01
+    }
+  ],
+  "overview": {
+    "id": 405837,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 7159808,
+    "problem_name": "two_square_sum",
+    "problem_title": "Represent A Number As Two Square Sum",
+    "status": "AC",
+    "submission_time": "2026-09-24T15:25:58.136182Z",
+    "time": 0.031,
+    "user_name": "Rohan_Kapri"
+  }
+}

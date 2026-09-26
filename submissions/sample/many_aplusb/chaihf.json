@@ -1,0 +1,80 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 9216000,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 10522624,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 21291008,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 21442560,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "digit_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 13893632,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "digit_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 13934592,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "all_max_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 21413888,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 5267456,
+      "status": "AC",
+      "time": 0.013
+    }
+  ],
+  "overview": {
+    "id": 393713,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 21442560,
+    "problem_name": "many_aplusb",
+    "problem_title": "Many A + B",
+    "status": "AC",
+    "submission_time": "2026-08-15T14:48:43.266101Z",
+    "time": 0.025,
+    "user_name": "chaihf"
+  }
+}

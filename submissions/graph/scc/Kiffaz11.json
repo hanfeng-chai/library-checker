@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 36941824,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 27811840,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 27787264,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 27774976,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 27611136,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 27770880,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 22048768,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 25141248,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 9179136,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 19120128,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 13611008,
+      "status": "AC",
+      "time": 0.018
+    }
+  ],
+  "overview": {
+    "id": 287255,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 36941824,
+    "problem_name": "scc",
+    "problem_title": "Strongly Connected Components",
+    "status": "AC",
+    "submission_time": "2025-05-19T13:05:27.655245Z",
+    "time": 0.051,
+    "user_name": "Kiffaz11"
+  }
+}

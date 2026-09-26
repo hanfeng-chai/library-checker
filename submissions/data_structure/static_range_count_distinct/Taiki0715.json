@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 20344832,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 23560192,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 10506240,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25137152,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 26054656,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28303360,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9838592,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9809920,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 9908224,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 15982592,
+      "status": "AC",
+      "time": 0.02
+    }
+  ],
+  "overview": {
+    "id": 259922,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 28303360,
+    "problem_name": "static_range_count_distinct",
+    "problem_title": "Static Range Count Distinct",
+    "status": "AC",
+    "submission_time": "2025-01-04T07:43:24.140788Z",
+    "time": 0.069,
+    "user_name": "Taiki0715"
+  }
+}

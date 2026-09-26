@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "n_hundreds_00",
+      "checker_out": "b2sgMjgwIHRva2Vucwo=",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "n_hundreds_01",
+      "checker_out": "b2sgMjk3IHRva2Vucwo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 602112,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "typical_tree_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25731072,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "typical_tree_max_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 27512832,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "typical_tree_max_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25669632,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "typical_tree_max_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25698304,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "typical_tree_max_04",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25702400,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "typical_tree_max_05",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 26710016,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "typical_tree_max_06",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 26488832,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "typical_tree_max_07",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25763840,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "typical_tree_max_08",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 25669632,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "typical_tree_max_09",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 26718208,
+      "status": "AC",
+      "time": 0.041
+    }
+  ],
+  "overview": {
+    "id": 366502,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 27512832,
+    "problem_name": "tree_path_composite_sum",
+    "problem_title": "Tree Path Composite Sum",
+    "status": "AC",
+    "submission_time": "2026-04-15T10:44:03.66428Z",
+    "time": 0.044,
+    "user_name": "urectanc"
+  }
+}

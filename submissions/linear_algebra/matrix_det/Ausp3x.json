@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjk5ODI0NDI2MyIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 700416,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjk5ODI0NDM1MiIK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjY4NDc4NzExNSIK",
+      "memory": 1253376,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjU3OTE4MDU5MiIK",
+      "memory": 1347584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjkxNjM0Mjg4NyIK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjg4NzU1NDYwMCIK",
+      "memory": 1314816,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjg2MjE5MTU5MiIK",
+      "memory": 700416,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjE5MzE0Mjc2MSIK",
+      "memory": 3686400,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjMxODU1MTA1MSIK",
+      "memory": 3682304,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjUzNDA3ODA2MSIK",
+      "memory": 3702784,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjczNDg4OTA0NiIK",
+      "memory": 3706880,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjg1OTQxMTA0MiIK",
+      "memory": 3710976,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "lowrank_max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3723264,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "lowrank_max_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3739648,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "lowrank_max_random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3743744,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "lowrank_max_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3706880,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "lowrank_max_random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3678208,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIjY3NDUzNzg4MyIK",
+      "memory": 2936832,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIjUyODg2ODQ1NCIK",
+      "memory": 3739648,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgIjM1MjM1NTM4MCIK",
+      "memory": 3219456,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgIjgyMzA4Mzk4MyIK",
+      "memory": 3440640,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgIjM0NzYxNzQ5Igo=",
+      "memory": 2936832,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "signed_overflow_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "unsigned_overflow_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 383378,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 3743744,
+    "problem_name": "matrix_det",
+    "problem_title": "Determinant of Matrix",
+    "status": "AC",
+    "submission_time": "2026-07-01T19:16:49.327964Z",
+    "time": 0.024,
+    "user_name": "Ausp3x"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTU3IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTIxIHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTg1IHRva2Vucwo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMTI1IHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDMwIHRva2Vucwo=",
+      "memory": 667648,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg2NDUgdG9rZW5zCg==",
+      "memory": 15888384,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTc5MyB0b2tlbnMK",
+      "memory": 12451840,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzA5ODUgdG9rZW5zCg==",
+      "memory": 17747968,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAxODQgdG9rZW5zCg==",
+      "memory": 29949952,
+      "status": "AC",
+      "time": 0.131
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwNjMgdG9rZW5zCg==",
+      "memory": 29929472,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "many_points_00",
+      "checker_out": "b2sgOTA5OTQgdG9rZW5zCg==",
+      "memory": 31936512,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "many_rectangles_00",
+      "checker_out": "b2sgODk5MCB0b2tlbnMK",
+      "memory": 26517504,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "small_coord_00",
+      "checker_out": "b2sgNTAwMzcgdG9rZW5zCg==",
+      "memory": 29655040,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "small_coord_01",
+      "checker_out": "b2sgNDk5NTYgdG9rZW5zCg==",
+      "memory": 29691904,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "small_coord_02",
+      "checker_out": "b2sgNTAwNzcgdG9rZW5zCg==",
+      "memory": 29917184,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "power_of_2_00",
+      "checker_out": "b2sgMzI4ODMgdG9rZW5zCg==",
+      "memory": 19787776,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "power_of_2_01",
+      "checker_out": "b2sgMzI3NDMgdG9rZW5zCg==",
+      "memory": 20332544,
+      "status": "AC",
+      "time": 0.077
+    }
+  ],
+  "overview": {
+    "id": 393933,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 31936512,
+    "problem_name": "rectangle_add_point_get",
+    "problem_title": "Rectangle Add Point Get",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:14:57.840644Z",
+    "time": 0.133,
+    "user_name": "chaihf"
+  }
+}

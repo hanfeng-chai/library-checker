@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjI4Igo=",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjIzMjYyOTY5NyIK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjk0MTg3NDYyMCIK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjI3MTM2ODg0OSIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgIjE2OTkxMjc2MCIK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgIjk5NzMxMTcxMiIK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgIjk5NjY0NTc5MiIK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjQxNjI4MDMxNCIK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.605
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjkxNzIyMjk0OSIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.606
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjc0NDUzNzc0MiIK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.603
+    },
+    {
+      "case": "hack77047_00",
+      "checker_out": "b2sgIjMxMjg4MjgxMCIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.595
+    }
+  ],
+  "overview": {
+    "id": 406228,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 839680,
+    "problem_name": "hafnian_of_matrix",
+    "problem_title": "Hafnian of Matrix",
+    "status": "AC",
+    "submission_time": "2026-09-26T06:36:09.312261Z",
+    "time": 0.606,
+    "user_name": "Rohan_Kapri"
+  }
+}

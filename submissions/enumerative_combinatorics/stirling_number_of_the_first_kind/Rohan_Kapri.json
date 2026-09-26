@@ -1,0 +1,97 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDcyCg==",
+      "time": 0
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 831488,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDAK",
+      "time": 0
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 716800,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDAK",
+      "time": 0
+    },
+    {
+      "case": "2_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDI0Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "5000_00",
+      "checker_out": "b2sgNTAwMSB0b2tlbnMK",
+      "memory": 1069056,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDk4MjgwCg==",
+      "time": 0.002
+    },
+    {
+      "case": "262143_00",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 8523776,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDMxNDU3MDQK",
+      "time": 0.026
+    },
+    {
+      "case": "262144_00",
+      "checker_out": "b2sgMjYyMTQ1IHRva2Vucwo=",
+      "memory": 15585280,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDYyOTE0MzIK",
+      "time": 0.052
+    },
+    {
+      "case": "491519_00",
+      "checker_out": "b2sgNDkxNTIwIHRva2Vucwo=",
+      "memory": 15859712,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDYyOTE0MzIK",
+      "time": 0.052
+    },
+    {
+      "case": "499999_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16121856,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDYyOTE0MzIK",
+      "time": 0.052
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 15826944,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDYyOTE0MzIK",
+      "time": 0.051
+    }
+  ],
+  "overview": {
+    "id": 406197,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16121856,
+    "problem_name": "stirling_number_of_the_first_kind",
+    "problem_title": "Stirling Number of the First Kind",
+    "status": "AC",
+    "submission_time": "2026-09-26T05:22:06.479797Z",
+    "time": 0.052,
+    "user_name": "Rohan_Kapri"
+  }
+}

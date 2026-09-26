@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 17833984,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 17858560,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 17813504,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 12046336,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 22945792,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 26198016,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 19156992,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28041216,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30126080,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30134272,
+      "status": "AC",
+      "time": 0.046
+    }
+  ],
+  "overview": {
+    "id": 362490,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 30134272,
+    "problem_name": "static_range_frequency",
+    "problem_title": "Static Range Frequency",
+    "status": "AC",
+    "submission_time": "2026-03-26T12:19:51.07031Z",
+    "time": 0.046,
+    "user_name": "IceKylin"
+  }
+}

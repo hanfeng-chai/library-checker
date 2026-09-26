@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjY5MTIiCg==",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjIwMDAwMDAwMDAiCg==",
+      "memory": 495616,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjM0ODkyNzk2NiIK",
+      "memory": 389120,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjM4NTcwMzM0MyIK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjExMzM5NDYzMzciCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjExMzIzOTI4NzgiCg==",
+      "memory": 524288,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjExNDQ4OTY4MzEiCg==",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgIjM5MzkzMzg5MyIK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgIjg5OTg0NjI3MiIK",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgIjUwNzYxODA5MiIK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgIjM0MDcyMzM5NyIK",
+      "memory": 487424,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgIjExOTgzMDAyNDkiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 332042,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 524288,
+    "problem_name": "aplusb",
+    "problem_title": "A + B",
+    "status": "AC",
+    "submission_time": "2025-11-26T23:41:13.935013Z",
+    "time": 0,
+    "user_name": "cool_ewrey_boy"
+  }
+}

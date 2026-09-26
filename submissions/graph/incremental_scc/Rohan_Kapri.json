@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30633984,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 33067008,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 15020032,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31764480,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27455488,
+      "status": "AC",
+      "time": 0.183
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28250112,
+      "status": "AC",
+      "time": 0.148
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 32788480,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 18165760,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27324416,
+      "status": "AC",
+      "time": 0.189
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 19165184,
+      "status": "AC",
+      "time": 0.154
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 34930688,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 34869248,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 34930688,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30769152,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "large_cycle_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30900224,
+      "status": "AC",
+      "time": 0.048
+    }
+  ],
+  "overview": {
+    "id": 404617,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 34930688,
+    "problem_name": "incremental_scc",
+    "problem_title": "Strongly Connected Components (Incremental)",
+    "status": "AC",
+    "submission_time": "2026-09-21T10:50:53.985155Z",
+    "time": 0.189,
+    "user_name": "Rohan_Kapri"
+  }
+}

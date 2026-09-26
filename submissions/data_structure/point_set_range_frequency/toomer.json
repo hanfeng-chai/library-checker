@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2236416,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgOTk5MDYgdG9rZW5zCg==",
+      "memory": 11624448,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgOTk3NjIgdG9rZW5zCg==",
+      "memory": 11644928,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgOTk5MzcgdG9rZW5zCg==",
+      "memory": 11706368,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgMTAwMDQ5IHRva2Vucwo=",
+      "memory": 11542528,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMTAwMTgzIHRva2Vucwo=",
+      "memory": 11714560,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgMTAwMzg1IHRva2Vucwo=",
+      "memory": 11542528,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgMTAwMTQ2IHRva2Vucwo=",
+      "memory": 11698176,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTAwMTQ4IHRva2Vucwo=",
+      "memory": 26468352,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTAwMDAyIHRva2Vucwo=",
+      "memory": 26472448,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTAwMzQ0IHRva2Vucwo=",
+      "memory": 26431488,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgMTAwMTMzIHRva2Vucwo=",
+      "memory": 26701824,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgOTk5NTEgdG9rZW5zCg==",
+      "memory": 28282880,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_05",
+      "checker_out": "b2sgOTk5NTYgdG9rZW5zCg==",
+      "memory": 28561408,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_06",
+      "checker_out": "b2sgOTk3NzggdG9rZW5zCg==",
+      "memory": 24756224,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_07",
+      "checker_out": "b2sgOTk2NzQgdG9rZW5zCg==",
+      "memory": 24064000,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "many_query_0_00",
+      "checker_out": "b2sgMjAwNSB0b2tlbnMK",
+      "memory": 29732864,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "many_query_0_01",
+      "checker_out": "b2sgMTk0OCB0b2tlbnMK",
+      "memory": 30035968,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "many_query_0_02",
+      "checker_out": "b2sgMjA1NyB0b2tlbnMK",
+      "memory": 30146560,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "many_query_0_03",
+      "checker_out": "b2sgMTk2MSB0b2tlbnMK",
+      "memory": 22097920,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "many_query_1_00",
+      "checker_out": "b2sgMTk4MDAzIHRva2Vucwo=",
+      "memory": 22601728,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "many_query_1_01",
+      "checker_out": "b2sgMTk4MDMxIHRva2Vucwo=",
+      "memory": 23117824,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "many_query_1_02",
+      "checker_out": "b2sgMTk3OTYyIHRva2Vucwo=",
+      "memory": 24596480,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "many_query_1_03",
+      "checker_out": "b2sgMTk4MDU5IHRva2Vucwo=",
+      "memory": 23875584,
+      "status": "AC",
+      "time": 0.035
+    }
+  ],
+  "overview": {
+    "id": 404947,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 30146560,
+    "problem_name": "point_set_range_frequency",
+    "problem_title": "Point Set Range Frequency",
+    "status": "AC",
+    "submission_time": "2026-09-22T06:19:51.327186Z",
+    "time": 0.042,
+    "user_name": "toomer"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDE3Cg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0s6IDI0Cg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IDExOTI4MjYyMjYzMDI0Mgo=",
+      "memory": 7376896,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IDE0MjI0NzA4Nzc1MjIwNwo=",
+      "memory": 8962048,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IDIxMTkyNDMxMjgzNjQzCg==",
+      "memory": 6856704,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0s6IDE1NDgwNDExNzI5NjQ5OAo=",
+      "memory": 9179136,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0s6IDIxOTkzMjU1MDE1MDcK",
+      "memory": 5025792,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IDE5OTkzMTE4OTg5ODk3Mgo=",
+      "memory": 9715712,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IDE5OTk1NzU2NjE1OTA5MQo=",
+      "memory": 9732096,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0s6IDE5OTk4MTc3MDAyNzAxNAo=",
+      "memory": 10186752,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0s6IDE5OTk1NTk2MzEwMTc0Mwo=",
+      "memory": 9740288,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0s6IDE5OTg5NzM0OTQ0MDE2Mgo=",
+      "memory": 10231808,
+      "status": "AC",
+      "time": 0.022
+    }
+  ],
+  "overview": {
+    "id": 86010,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 10231808,
+    "problem_name": "directedmst",
+    "problem_title": "Directed MST",
+    "status": "AC",
+    "time": 0.023,
+    "user_name": "Felerius"
+  }
+}

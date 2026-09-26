@@ -1,0 +1,193 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjcKd29yazo3Mgo=",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjcKd29yazo3Ngo=",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjU3ODU2MzIzMSIK",
+      "memory": 815104,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjYKd29yazo3Mgo=",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTM3ODQwIHRva2Vucwo=",
+      "memory": 33857536,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46NTA0MTEKd29yazo1NzA2Mgo=",
+      "time": 0.073
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTU4NjkyIHRva2Vucwo=",
+      "memory": 33329152,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46NTA1NDEKd29yazo1NzI0Nwo=",
+      "time": 0.072
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzQzMjI3IHRva2Vucwo=",
+      "memory": 31477760,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46NTAzMjcKd29yazo1Njk5Nwo=",
+      "time": 0.071
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 40685568,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46NTA1MzYKd29yazo1Njg2MQo=",
+      "time": 0.082
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 40673280,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46NTA0NTcKd29yazo1Njc3NQo=",
+      "time": 0.082
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 40644608,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46NTA1NDYKd29yazo1NjkzNgo=",
+      "time": 0.083
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTE0MSB0b2tlbnMK",
+      "memory": 1302528,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTczCndvcms6MzA1Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTQ3MCB0b2tlbnMK",
+      "memory": 593920,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTc2Cndvcms6MzA5Cg==",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTI4IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTc3Cndvcms6MzA3Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTMzMCB0b2tlbnMK",
+      "memory": 1327104,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTc2Cndvcms6Mjk2Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjU0MCB0b2tlbnMK",
+      "memory": 835584,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTgxCndvcms6MzExCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNDk4MiB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTc2Cndvcms6MjkyCg==",
+      "time": 0.002
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDM4IHRva2Vucwo=",
+      "memory": 1097728,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTc2Cndvcms6Mjk5Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMjA5MyB0b2tlbnMK",
+      "memory": 1056768,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MTc2Cndvcms6MzEzCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNDQ4IHRva2Vucwo=",
+      "memory": 819200,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjUKd29yazo2NQo=",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMjMyOCB0b2tlbnMK",
+      "memory": 1183744,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjA0Cndvcms6MzI0Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "signed_overflow_00",
+      "checker_out": "b2sgMTQ0NCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjUKd29yazo2Nwo=",
+      "time": 0.001
+    },
+    {
+      "case": "unsigned_overflow_00",
+      "checker_out": "b2sgMzI0IHRva2Vucwo=",
+      "memory": 577536,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjYKd29yazo4Mwo=",
+      "time": 0.001
+    },
+    {
+      "case": "unsigned_overflow_01",
+      "checker_out": "b2sgMzYxIHRva2Vucwo=",
+      "memory": 577536,
+      "status": "AC",
+      "stderr": "U3RyYXNzZW46MjYKd29yazo2OQo=",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 193471,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 40685568,
+    "problem_name": "matrix_product",
+    "problem_title": "Matrix Product",
+    "status": "AC",
+    "submission_time": "2024-02-26T08:37:11.355728Z",
+    "time": 0.083,
+    "user_name": "Yuezheng_Ling_fans"
+  }
+}

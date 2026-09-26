@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 786432,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_05",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_06",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 462848,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_07",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_08",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgOTcwMjQwIHRva2Vucwo=",
+      "memory": 8163328,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTM2ODgxOCB0b2tlbnMK",
+      "memory": 10600448,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_small_00",
+      "checker_out": "b2sgMTI0OCB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_small_01",
+      "checker_out": "b2sgMTM2MCB0b2tlbnMK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_small_02",
+      "checker_out": "b2sgMTUyMCB0b2tlbnMK",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_small_03",
+      "checker_out": "b2sgMTMxMCB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_small_04",
+      "checker_out": "b2sgMTc5MCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "square_00",
+      "checker_out": "b2sgNzc5NjI2IHRva2Vucwo=",
+      "memory": 5955584,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "square_01",
+      "checker_out": "b2sgOTI2MDkyIHRva2Vucwo=",
+      "memory": 7901184,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMjAwMDAwMCB0b2tlbnMK",
+      "memory": 15892480,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "polynom_p1p1m1_00",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 15511552,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "polynom_p1p1m1_01",
+      "checker_out": "b2sgOTI2MTEwIHRva2Vucwo=",
+      "memory": 7090176,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "polynom_p1p1z_00",
+      "checker_out": "b2sgMTk5OTk5OSB0b2tlbnMK",
+      "memory": 15519744,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "polynom_p1p1z_01",
+      "checker_out": "b2sgOTI2MTExIHRva2Vucwo=",
+      "memory": 7114752,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "polynom_p1zm1_00",
+      "checker_out": "b2sgMTk5OTk5OSB0b2tlbnMK",
+      "memory": 16109568,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "polynom_p1zm1_01",
+      "checker_out": "b2sgOTI2MTA5IHRva2Vucwo=",
+      "memory": 7348224,
+      "status": "AC",
+      "time": 0.006
+    }
+  ],
+  "overview": {
+    "id": 393721,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16109568,
+    "problem_name": "enumerate_quotients",
+    "problem_title": "Enumerate Quotients",
+    "status": "AC",
+    "submission_time": "2026-08-15T15:49:10.400287Z",
+    "time": 0.012,
+    "user_name": "chaihf"
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjE1NTc2MzcxMiIK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjczMTIyNzgzNSIK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 331776,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgIjYwNTk2Nzk5MyIK",
+      "memory": 593920,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzc5MDMgdG9rZW5zCg==",
+      "memory": 3907584,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTI1MzUgdG9rZW5zCg==",
+      "memory": 4427776,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTA3MTEgdG9rZW5zCg==",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODU2NzMgdG9rZW5zCg==",
+      "memory": 4177920,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTU0OTQgdG9rZW5zCg==",
+      "memory": 3096576,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgOTk1NDIgdG9rZW5zCg==",
+      "memory": 4968448,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk3MzYgdG9rZW5zCg==",
+      "memory": 4956160,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDk1IHRva2Vucwo=",
+      "memory": 4960256,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNDkzMyB0b2tlbnMK",
+      "memory": 8163328,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNDk2OSB0b2tlbnMK",
+      "memory": 8368128,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgMjU2MiB0b2tlbnMK",
+      "memory": 4702208,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgMjU0OCB0b2tlbnMK",
+      "memory": 4431872,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgNDc5OTA2IHRva2Vucwo=",
+      "memory": 7839744,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_08",
+      "checker_out": "b2sgMTYwMzQxIHRva2Vucwo=",
+      "memory": 8634368,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_09",
+      "checker_out": "b2sgMTM0NjIxIHRva2Vucwo=",
+      "memory": 5492736,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_10",
+      "checker_out": "b2sgNzc5NzMgdG9rZW5zCg==",
+      "memory": 4689920,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_11",
+      "checker_out": "b2sgMTQ5NzM1IHRva2Vucwo=",
+      "memory": 5480448,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_12",
+      "checker_out": "b2sgMTE3ODk4IHRva2Vucwo=",
+      "memory": 4956160,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_13",
+      "checker_out": "b2sgMTEwOTUyIHRva2Vucwo=",
+      "memory": 6803456,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_14",
+      "checker_out": "b2sgMTM2MTAxIHRva2Vucwo=",
+      "memory": 6791168,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_15",
+      "checker_out": "b2sgMTQyMjgzIHRva2Vucwo=",
+      "memory": 4956160,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_16",
+      "checker_out": "b2sgMTUzNjA3IHRva2Vucwo=",
+      "memory": 7581696,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_17",
+      "checker_out": "b2sgNjc1MzAgdG9rZW5zCg==",
+      "memory": 4698112,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_18",
+      "checker_out": "b2sgMjQ2NjI3IHRva2Vucwo=",
+      "memory": 8634368,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_19",
+      "checker_out": "b2sgNjA3OTQgdG9rZW5zCg==",
+      "memory": 4456448,
+      "status": "AC",
+      "time": 0.006
+    }
+  ],
+  "overview": {
+    "id": 327841,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 8634368,
+    "problem_name": "deque",
+    "problem_title": "Deque",
+    "status": "AC",
+    "submission_time": "2025-11-10T15:59:58.103624Z",
+    "time": 0.01,
+    "user_name": "tanakh"
+  }
+}

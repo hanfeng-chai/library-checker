@@ -1,0 +1,339 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2080768,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1921024,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2072576,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1904640,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2174976,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "small_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 2076672,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "small_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 1908736,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "small_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 2158592,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "mid_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1921024,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "mid_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1691648,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "mid_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1912832,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13889536,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13873152,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.066
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 13664256,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 13639680,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 13881344,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 13656064,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 13910016,
+      "status": "AC",
+      "time": 0.066
+    },
+    {
+      "case": "max_colinear_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13815808,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "max_colinear_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "near_circle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 16199680,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "near_circle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 16171008,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "near_grid_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "near_grid_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "fix_near_grid_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13783040,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "fix_near_grid_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "max_convex_hull_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 20021248,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "hack_uso_caliper_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hack_uso_caliper_large_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13803520,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "hack_uso_caliper_large_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13873152,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "hack_uso_caliper_large_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 13905920,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "hack_uso_caliper_large_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 13770752,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "hack_uso_caliper_large_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 13869056,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "hack_uso_caliper_large_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "hack_uso_caliper_large_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 13873152,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "hack_uso_caliper_large_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 13664256,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "hack_uso_caliper_large_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 13684736,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "hack_uso_caliper_large_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 13910016,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "hack_uso_caliper_large_10",
+      "checker_out": "b2sgT0sK",
+      "memory": 13873152,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "hack_uso_caliper_large_11",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "hack_uso_caliper_large_12",
+      "checker_out": "b2sgT0sK",
+      "memory": 13873152,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "hack_uso_caliper_large_13",
+      "checker_out": "b2sgT0sK",
+      "memory": 13881344,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "hack_uso_caliper_large_14",
+      "checker_out": "b2sgT0sK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.068
+    }
+  ],
+  "overview": {
+    "id": 367086,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 20021248,
+    "problem_name": "furthest_pair",
+    "problem_title": "Furthest Pair of Points",
+    "status": "AC",
+    "submission_time": "2026-04-18T07:15:55.805467Z",
+    "time": 0.072,
+    "user_name": "vjudge1"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 819200,
+      "status": "AC",
+      "stderr": "MTc4Ngo=",
+      "time": 0.002
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjYxIgo=",
+      "memory": 860160,
+      "status": "AC",
+      "stderr": "MTU3Mwo=",
+      "time": 0.001
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjcyMiIK",
+      "memory": 41996288,
+      "status": "AC",
+      "stderr": "MTAxODEyCg==",
+      "time": 0.103
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjczMiIK",
+      "memory": 42106880,
+      "status": "AC",
+      "stderr": "MTAxMTQ5Cg==",
+      "time": 0.103
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjc0MyIK",
+      "memory": 42127360,
+      "status": "AC",
+      "stderr": "MTAyMzg5Cg==",
+      "time": 0.104
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjcyOCIK",
+      "memory": 41992192,
+      "status": "AC",
+      "stderr": "MTAxNzU5Cg==",
+      "time": 0.104
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgIjYwNzkyNzEwMTg1NDAyMjcwNCIK",
+      "memory": 41984000,
+      "status": "AC",
+      "stderr": "MTAxNzY0Cg==",
+      "time": 0.103
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjQ2OTkxNzIiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "stderr": "MTU3Ngo=",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjIxNjMzODciCg==",
+      "memory": 577536,
+      "status": "AC",
+      "stderr": "MTU0NAo=",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjEyMzI5MjUiCg==",
+      "memory": 835584,
+      "status": "AC",
+      "stderr": "MTUzMAo=",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQwODU3MTMiCg==",
+      "memory": 540672,
+      "status": "AC",
+      "stderr": "MTU3MQo=",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjQ5NDkzMjUiCg==",
+      "memory": 561152,
+      "status": "AC",
+      "stderr": "MTU5NAo=",
+      "time": 0
+    },
+    {
+      "case": "very_small_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 835584,
+      "status": "AC",
+      "stderr": "MTUwNgo=",
+      "time": 0
+    },
+    {
+      "case": "very_small_01",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 843776,
+      "status": "AC",
+      "stderr": "MTUzOAo=",
+      "time": 0
+    },
+    {
+      "case": "very_small_02",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 827392,
+      "status": "AC",
+      "stderr": "MTY1NQo=",
+      "time": 0
+    },
+    {
+      "case": "very_small_03",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 757760,
+      "status": "AC",
+      "stderr": "MTYzNwo=",
+      "time": 0.001
+    },
+    {
+      "case": "very_small_04",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 823296,
+      "status": "AC",
+      "stderr": "MTUzOAo=",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjQzNDY5ODk2MTAxMTU1MzUxNSIK",
+      "memory": 37875712,
+      "status": "AC",
+      "stderr": "OTAyNDgK",
+      "time": 0.099
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjE3Mjk0NDY4ODI3NzkwMzIwOCIK",
+      "memory": 28684288,
+      "status": "AC",
+      "stderr": "Njc0NDAK",
+      "time": 0.068
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjQ0NDk3MjUxMzg0MzgzMDc1OCIK",
+      "memory": 38105088,
+      "status": "AC",
+      "stderr": "OTA5NjcK",
+      "time": 0.091
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjM1MTkzNzA2NTYzODkwNDU0Igo=",
+      "memory": 17063936,
+      "status": "AC",
+      "stderr": "NDAyMDYK",
+      "time": 0.039
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjE1MDY0MDg5ODIxOTgzMjcxNSIK",
+      "memory": 27418624,
+      "status": "AC",
+      "stderr": "NjQwOTcK",
+      "time": 0.065
+    },
+    {
+      "case": "issue_1232_00",
+      "checker_out": "b2sgIjg0MzU0MzE0NDY2NzIxNjcwIgo=",
+      "memory": 23166976,
+      "status": "AC",
+      "stderr": "NTQ3NDcK",
+      "time": 0.054
+    },
+    {
+      "case": "issue_1232_01",
+      "checker_out": "b2sgIjQ4OTczOTM3NjEzMDY1MDYwOCIK",
+      "memory": 39395328,
+      "status": "AC",
+      "stderr": "OTQzMjgK",
+      "time": 0.095
+    },
+    {
+      "case": "issue_1232_02",
+      "checker_out": "b2sgIjc0MzIxNDU0NTE4MDE0MzYwIgo=",
+      "memory": 21409792,
+      "status": "AC",
+      "stderr": "NTEyODMK",
+      "time": 0.05
+    }
+  ],
+  "overview": {
+    "id": 196053,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 42127360,
+    "problem_name": "counting_squarefrees",
+    "problem_title": "Counting Square-free Integers",
+    "status": "AC",
+    "submission_time": "2024-03-09T23:05:19.020096Z",
+    "time": 0.104,
+    "user_name": "negiizhao"
+  }
+}

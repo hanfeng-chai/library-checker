@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1589248,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1531904,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1523712,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1523712,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1572864,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "mod_998244353_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1572864,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "mod_998244353_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1798144,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 995328,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1327104,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1519616,
+      "status": "AC",
+      "time": 0.018
+    }
+  ],
+  "overview": {
+    "id": 207878,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1798144,
+    "problem_name": "sqrt_mod",
+    "problem_title": "Sqrt Mod",
+    "status": "AC",
+    "submission_time": "2024-05-09T14:29:41.932837Z",
+    "time": 0.034,
+    "user_name": "sortA0329"
+  }
+}

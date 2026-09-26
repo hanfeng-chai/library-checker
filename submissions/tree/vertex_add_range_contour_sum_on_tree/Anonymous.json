@@ -1,0 +1,268 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_small_tree_many_query_1_00",
+      "checker_out": "b2sgMTAwMjczIHRva2Vucwo=",
+      "memory": 3919872,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_small_tree_many_query_1_01",
+      "checker_out": "b2sgMTAwMDg0IHRva2Vucwo=",
+      "memory": 3338240,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_small_tree_many_query_1_02",
+      "checker_out": "b2sgMTAwMTQ5IHRva2Vucwo=",
+      "memory": 3387392,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_small_tree_many_query_1_03",
+      "checker_out": "b2sgMTAwMjcxIHRva2Vucwo=",
+      "memory": 3915776,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_small_tree_many_query_1_04",
+      "checker_out": "b2sgMTAwMjQ5IHRva2Vucwo=",
+      "memory": 3399680,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_small_tree_many_query_2_00",
+      "checker_out": "b2sgMTAwMDc0IHRva2Vucwo=",
+      "memory": 3919872,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_small_tree_many_query_2_01",
+      "checker_out": "b2sgMTAwMDUwIHRva2Vucwo=",
+      "memory": 3993600,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_small_tree_many_query_2_02",
+      "checker_out": "b2sgMTAwMDQwIHRva2Vucwo=",
+      "memory": 3915776,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_small_tree_many_query_2_03",
+      "checker_out": "b2sgMTAwMjcxIHRva2Vucwo=",
+      "memory": 3928064,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_small_tree_many_query_2_04",
+      "checker_out": "b2sgMTAwMDc5IHRva2Vucwo=",
+      "memory": 3915776,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_medium_1_00",
+      "checker_out": "b2sgNjQ3IHRva2Vucwo=",
+      "memory": 692224,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_medium_1_01",
+      "checker_out": "b2sgNjU3IHRva2Vucwo=",
+      "memory": 884736,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_medium_2_00",
+      "checker_out": "b2sgNjQ0IHRva2Vucwo=",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_medium_2_01",
+      "checker_out": "b2sgNjc0IHRva2Vucwo=",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_02",
+      "checker_out": "b2sgNjc5IHRva2Vucwo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_medium_2_03",
+      "checker_out": "b2sgNjI3IHRva2Vucwo=",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_04",
+      "checker_out": "b2sgOTIwIHRva2Vucwo=",
+      "memory": 1433600,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_05",
+      "checker_out": "b2sgNjIwIHRva2Vucwo=",
+      "memory": 1564672,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_06",
+      "checker_out": "b2sgNjMzIHRva2Vucwo=",
+      "memory": 1040384,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_medium_2_07",
+      "checker_out": "b2sgNjI1IHRva2Vucwo=",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_large_1_00",
+      "checker_out": "b2sgOTk2MzUgdG9rZW5zCg==",
+      "memory": 31977472,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "random_large_2_00",
+      "checker_out": "b2sgOTk4NDUgdG9rZW5zCg==",
+      "memory": 33935360,
+      "status": "AC",
+      "time": 0.121
+    },
+    {
+      "case": "random_max_1_00",
+      "checker_out": "b2sgOTk2MzEgdG9rZW5zCg==",
+      "memory": 32227328,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "random_max_2_00",
+      "checker_out": "b2sgOTk3NTkgdG9rZW5zCg==",
+      "memory": 34033664,
+      "status": "AC",
+      "time": 0.119
+    },
+    {
+      "case": "random_many_addquery_2_00",
+      "checker_out": "b2sgMjAyMzAgdG9rZW5zCg==",
+      "memory": 32227328,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "random_many_addquery_2_01",
+      "checker_out": "b2sgMjAyMTYgdG9rZW5zCg==",
+      "memory": 32235520,
+      "status": "AC",
+      "time": 0.122
+    },
+    {
+      "case": "random_many_sumquery_2_00",
+      "checker_out": "b2sgMTc5OTc2IHRva2Vucwo=",
+      "memory": 35024896,
+      "status": "AC",
+      "time": 0.121
+    },
+    {
+      "case": "random_many_sumquery_2_01",
+      "checker_out": "b2sgMTc5ODk4IHRva2Vucwo=",
+      "memory": 35262464,
+      "status": "AC",
+      "time": 0.124
+    },
+    {
+      "case": "uni_2_00",
+      "checker_out": "b2sgOTk2ODggdG9rZW5zCg==",
+      "memory": 33116160,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "uni_2_01",
+      "checker_out": "b2sgMTAwMjU4IHRva2Vucwo=",
+      "memory": 33062912,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "binary_2_00",
+      "checker_out": "b2sgOTk5ODUgdG9rZW5zCg==",
+      "memory": 34062336,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "binary_2_01",
+      "checker_out": "b2sgMTAwMDEwIHRva2Vucwo=",
+      "memory": 34058240,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "line_1_00",
+      "checker_out": "b2sgOTk4NjYgdG9rZW5zCg==",
+      "memory": 49528832,
+      "status": "AC",
+      "time": 0.182
+    },
+    {
+      "case": "line_2_00",
+      "checker_out": "b2sgMTAwMDU1IHRva2Vucwo=",
+      "memory": 49750016,
+      "status": "AC",
+      "time": 0.183
+    }
+  ],
+  "overview": {
+    "id": 374968,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 49750016,
+    "problem_name": "vertex_add_range_contour_sum_on_tree",
+    "problem_title": "Vertex Add Range Contour Sum on Tree",
+    "status": "AC",
+    "submission_time": "2026-05-26T06:26:39.229739Z",
+    "time": 0.183
+  }
+}

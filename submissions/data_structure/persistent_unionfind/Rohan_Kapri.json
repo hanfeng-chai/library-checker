@@ -1,0 +1,115 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 753664,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hand_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQ2NjYgdG9rZW5zCg==",
+      "memory": 12005376,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQyMjUgdG9rZW5zCg==",
+      "memory": 11939840,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjAwODAgdG9rZW5zCg==",
+      "memory": 9469952,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4NTEgdG9rZW5zCg==",
+      "memory": 3166208,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk1ODkgdG9rZW5zCg==",
+      "memory": 7872512,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMzcxIHRva2Vucwo=",
+      "memory": 15769600,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDU3IHRva2Vucwo=",
+      "memory": 15781888,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk3ODcgdG9rZW5zCg==",
+      "memory": 15785984,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgOTk4MjAgdG9rZW5zCg==",
+      "memory": 15765504,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTAwMjY0IHRva2Vucwo=",
+      "memory": 15773696,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "conchon_filliatre_tle_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 15761408,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "conchon_filliatre_tle_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 15736832,
+      "status": "AC",
+      "time": 0.016
+    }
+  ],
+  "overview": {
+    "id": 404578,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 15785984,
+    "problem_name": "persistent_unionfind",
+    "problem_title": "Persistent Unionfind",
+    "status": "AC",
+    "submission_time": "2026-09-21T09:33:33.545298Z",
+    "time": 0.018,
+    "user_name": "Rohan_Kapri"
+  }
+}

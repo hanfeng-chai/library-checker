@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13873152,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14110720,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14118912,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13819904,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14139392,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 11247616,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 12152832,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 8372224,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 4460544,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 4964352,
+      "status": "AC",
+      "time": 0.005
+    }
+  ],
+  "overview": {
+    "id": 278229,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 14139392,
+    "problem_name": "static_range_sum",
+    "problem_title": "Static Range Sum",
+    "status": "AC",
+    "submission_time": "2025-04-09T06:05:58.363651Z",
+    "time": 0.017,
+    "user_name": "chaihf"
+  }
+}

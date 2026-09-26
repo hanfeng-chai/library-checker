@@ -1,0 +1,276 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 495616,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 696320,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_05",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_06",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_07",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 1363968,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk4IHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4202496,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 5070848,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 21069824,
+      "status": "AC",
+      "time": 0.167
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 5079040,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 5070848,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "random_fullrank_00",
+      "checker_out": "b2sgNjkzIHRva2Vucwo=",
+      "memory": 1839104,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_fullrank_01",
+      "checker_out": "b2sgMTk4IHRva2Vucwo=",
+      "memory": 1060864,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_fullrank_02",
+      "checker_out": "b2sgODggdG9rZW5zCg==",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_fullrank_03",
+      "checker_out": "b2sgMzI2NSB0b2tlbnMK",
+      "memory": 14917632,
+      "status": "AC",
+      "time": 0.123
+    },
+    {
+      "case": "max_fullrank_00",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 21590016,
+      "status": "AC",
+      "time": 0.168
+    },
+    {
+      "case": "max_fullrank_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 21164032,
+      "status": "AC",
+      "time": 0.168
+    },
+    {
+      "case": "max_fullrank_02",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 21856256,
+      "status": "AC",
+      "time": 0.168
+    },
+    {
+      "case": "max_fullrank_03",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 21073920,
+      "status": "AC",
+      "time": 0.168
+    },
+    {
+      "case": "lowrank_max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "lowrank_max_random_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4984832,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "lowrank_max_random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4964352,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "lowrank_max_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 5083136,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "lowrank_max_random_04",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4882432,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "lowrank_max_random_05",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 5074944,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "lowrank_max_random_06",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4956160,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "lowrank_max_random_07",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4923392,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4997120,
+      "status": "AC",
+      "time": 0.005
+    }
+  ],
+  "overview": {
+    "id": 406225,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 21856256,
+    "problem_name": "inverse_matrix_mod_2",
+    "problem_title": "Inverse Matrix (Mod 2)",
+    "status": "AC",
+    "submission_time": "2026-09-26T06:30:38.886135Z",
+    "time": 0.168,
+    "user_name": "Rohan_Kapri"
+  }
+}

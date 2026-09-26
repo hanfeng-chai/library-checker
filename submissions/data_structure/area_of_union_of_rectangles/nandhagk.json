@@ -1,0 +1,164 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjk5OTk2ODQ2MjgyNzMxODg2NiIK",
+      "memory": 28971008,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjk5OTk3ODA1OTI0MjI5NDc3NyIK",
+      "memory": 34181120,
+      "status": "AC",
+      "time": 0.131
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjk5OTczNjI4ODA3MDg4MTYxMiIK",
+      "memory": 4194304,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjk5OTk3MzM3MDQ3ODY5MzE3MSIK",
+      "memory": 31760384,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjk5OTk1NzMwMjc2NzkzMDc2MCIK",
+      "memory": 20746240,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjk5OTk2NzY0MDAxODk3MzM5MCIK",
+      "memory": 36999168,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjk5OTk3MzkyODIwMjk1MDUyOCIK",
+      "memory": 36982784,
+      "status": "AC",
+      "time": 0.129
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjk5OTk2NzA4NzE1MTk2ODExMSIK",
+      "memory": 36962304,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjk5OTk3MDEzMzg4MzcwODgzMiIK",
+      "memory": 37003264,
+      "status": "AC",
+      "time": 0.129
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjk5OTk1NDc2NDUxMTQzNzM2NiIK",
+      "memory": 37003264,
+      "status": "AC",
+      "time": 0.128
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjk4ODE3NjI5NDA5MDk1NjY5NyIK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjk2MTc2OTQ3MzcyNjczMTMxMCIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjg5Nzc0NzM4MjY0ODAyOTg5MCIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjk5MjEzNjA4OTYyNDMzMjEzMSIK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjk3NzgxMDk1NTg1MTE2MDcxMyIK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "edge_bound_00",
+      "checker_out": "b2sgIjU1MDA5MzU2NjI4ODgyMDI5MiIK",
+      "memory": 36962304,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "edge_bound_01",
+      "checker_out": "b2sgIjU0ODk1MDI5OTgwOTQ1MDc3NCIK",
+      "memory": 36962304,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "edge_bound_02",
+      "checker_out": "b2sgIjU0ODI0Mzc1NzU3ODc2NDkxNyIK",
+      "memory": 36990976,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "edge_bound_03",
+      "checker_out": "b2sgIjU1MDA3MzYwMDAzMTM2MTk1NyIK",
+      "memory": 36974592,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "edge_bound_04",
+      "checker_out": "b2sgIjU0OTE1NDU1Nzk3ODk4NzAwNCIK",
+      "memory": 36966400,
+      "status": "AC",
+      "time": 0.126
+    }
+  ],
+  "overview": {
+    "id": 403009,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 37003264,
+    "problem_name": "area_of_union_of_rectangles",
+    "problem_title": "Area of Union of Rectangles",
+    "status": "AC",
+    "submission_time": "2026-09-16T18:55:21.276861Z",
+    "time": 0.131,
+    "user_name": "nandhagk"
+  }
+}

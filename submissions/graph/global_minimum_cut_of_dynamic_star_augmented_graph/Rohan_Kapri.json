@@ -1,0 +1,164 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 585728,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 8404992,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 8364032,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "sparse_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 24985600,
+      "status": "AC",
+      "time": 0.877
+    },
+    {
+      "case": "sparse_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 24387584,
+      "status": "AC",
+      "time": 0.885
+    },
+    {
+      "case": "noedge_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3727360,
+      "status": "AC",
+      "time": 0.368
+    },
+    {
+      "case": "only_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2715648,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "onlyzero_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 118222848,
+      "status": "AC",
+      "time": 1.141
+    },
+    {
+      "case": "clique_max_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3739648,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "clique_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3117056,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "almostclique_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3452928,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "balance_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3432448,
+      "status": "AC",
+      "time": 0.677
+    },
+    {
+      "case": "balance_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3571712,
+      "status": "AC",
+      "time": 0.677
+    },
+    {
+      "case": "balance_many_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3547136,
+      "status": "AC",
+      "time": 1.152
+    },
+    {
+      "case": "balance_many_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3452928,
+      "status": "AC",
+      "time": 1.153
+    },
+    {
+      "case": "deep_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3743744,
+      "status": "AC",
+      "time": 0.917
+    },
+    {
+      "case": "deep_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3727360,
+      "status": "AC",
+      "time": 0.928
+    },
+    {
+      "case": "doubledeep_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3727360,
+      "status": "AC",
+      "time": 1.06
+    },
+    {
+      "case": "doubledeep_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3653632,
+      "status": "AC",
+      "time": 1.062
+    },
+    {
+      "case": "handmake_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3751936,
+      "status": "AC",
+      "time": 0.909
+    }
+  ],
+  "overview": {
+    "id": 404922,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 118222848,
+    "problem_name": "global_minimum_cut_of_dynamic_star_augmented_graph",
+    "problem_title": "Global Minimum Cut of Dynamic Star Augmented Graph",
+    "status": "AC",
+    "submission_time": "2026-09-22T05:29:33.375376Z",
+    "time": 1.153,
+    "user_name": "Rohan_Kapri"
+  }
+}

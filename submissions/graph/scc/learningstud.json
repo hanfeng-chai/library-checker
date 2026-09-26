@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 7393280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14950400,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 17309696,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 11055104,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 16789504,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 14991360,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 17555456,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 17571840,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 16007168,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 17604608,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 17494016,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 15765504,
+      "status": "AC",
+      "time": 0.018
+    }
+  ],
+  "overview": {
+    "id": 404707,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 17604608,
+    "problem_name": "scc",
+    "problem_title": "Strongly Connected Components",
+    "status": "AC",
+    "submission_time": "2026-09-21T15:12:00.9581Z",
+    "time": 0.022,
+    "user_name": "learningstud"
+  }
+}

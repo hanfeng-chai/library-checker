@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 757760,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTYzODQgdG9rZW5zCg==",
+      "memory": 2093056,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 23461888,
+      "status": "AC",
+      "time": 0.136
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 6008832,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 99655680,
+      "status": "AC",
+      "time": 0.666
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 99684352,
+      "status": "AC",
+      "time": 0.668
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 99708928,
+      "status": "AC",
+      "time": 0.666
+    },
+    {
+      "case": "n_01_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 491520,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "n_01_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 355549,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 99708928,
+    "problem_name": "log_of_set_power_series",
+    "problem_title": "Log of Set Power Series",
+    "status": "AC",
+    "submission_time": "2026-02-25T15:03:24.461684Z",
+    "time": 0.668,
+    "user_name": "MeIoN"
+  }
+}

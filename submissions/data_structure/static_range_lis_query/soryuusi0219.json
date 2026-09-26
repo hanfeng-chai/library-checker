@@ -1,0 +1,122 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgODI5IHRva2Vucwo=",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNzU5IHRva2Vucwo=",
+      "memory": 655360,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMzkyIHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzU4NDggdG9rZW5zCg==",
+      "memory": 1302528,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzg3NCB0b2tlbnMK",
+      "memory": 2617344,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjgxNjYgdG9rZW5zCg==",
+      "memory": 2871296,
+      "status": "AC",
+      "time": 0.119
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 4444160,
+      "status": "AC",
+      "time": 0.22
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 4444160,
+      "status": "AC",
+      "time": 0.217
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 4435968,
+      "status": "AC",
+      "time": 0.219
+    },
+    {
+      "case": "almost_sorted_00",
+      "checker_out": "b2sgNzgxMiB0b2tlbnMK",
+      "memory": 4464640,
+      "status": "AC",
+      "time": 0.154
+    },
+    {
+      "case": "almost_sorted_01",
+      "checker_out": "b2sgNDg5MTQgdG9rZW5zCg==",
+      "memory": 4435968,
+      "status": "AC",
+      "time": 0.163
+    },
+    {
+      "case": "almost_sorted_02",
+      "checker_out": "b2sgNTc5MDAgdG9rZW5zCg==",
+      "memory": 4435968,
+      "status": "AC",
+      "time": 0.164
+    },
+    {
+      "case": "sorted_00",
+      "checker_out": "b2sgNzgxMiB0b2tlbnMK",
+      "memory": 4280320,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "issue_1223_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 4349952,
+      "status": "AC",
+      "time": 0.144
+    }
+  ],
+  "overview": {
+    "id": 346156,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 4464640,
+    "problem_name": "static_range_lis_query",
+    "problem_title": "Static Range LIS Query",
+    "status": "AC",
+    "submission_time": "2026-01-16T16:33:39.503299Z",
+    "time": 0.22,
+    "user_name": "soryuusi0219"
+  }
+}

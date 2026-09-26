@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "many_0_query_00",
+      "checker_out": "b2sgMTAzIHRva2Vucwo=",
+      "memory": 17186816,
+      "status": "AC",
+      "time": 0.349
+    },
+    {
+      "case": "many_0_query_01",
+      "checker_out": "b2sgOTggdG9rZW5zCg==",
+      "memory": 17416192,
+      "status": "AC",
+      "time": 0.33
+    },
+    {
+      "case": "many_1_query_00",
+      "checker_out": "b2sgOTk2NjAgdG9rZW5zCg==",
+      "memory": 19955712,
+      "status": "AC",
+      "time": 0.364
+    },
+    {
+      "case": "many_1_query_01",
+      "checker_out": "b2sgOTk3MDkgdG9rZW5zCg==",
+      "memory": 21209088,
+      "status": "AC",
+      "time": 0.362
+    },
+    {
+      "case": "many_2_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 13983744,
+      "status": "AC",
+      "time": 0.197
+    },
+    {
+      "case": "many_2_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 13848576,
+      "status": "AC",
+      "time": 0.192
+    },
+    {
+      "case": "many_3_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 13950976,
+      "status": "AC",
+      "time": 0.205
+    },
+    {
+      "case": "many_3_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 13791232,
+      "status": "AC",
+      "time": 0.201
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5NDIgdG9rZW5zCg==",
+      "memory": 14917632,
+      "status": "AC",
+      "time": 0.339
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUxNzUgdG9rZW5zCg==",
+      "memory": 15110144,
+      "status": "AC",
+      "time": 0.327
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjQ5NzIgdG9rZW5zCg==",
+      "memory": 14929920,
+      "status": "AC",
+      "time": 0.327
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTkzNzMgdG9rZW5zCg==",
+      "memory": 3874816,
+      "status": "AC",
+      "time": 0.179
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDg4OCB0b2tlbnMK",
+      "memory": 11382784,
+      "status": "AC",
+      "time": 0.091
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTUxOTEgdG9rZW5zCg==",
+      "memory": 8265728,
+      "status": "AC",
+      "time": 0.18
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjQyIHRva2Vucwo=",
+      "memory": 729088,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjM4IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjQ2IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjUxIHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjUzIHRva2Vucwo=",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "sort_only_short_00",
+      "checker_out": "b2sgMjQ5MjIgdG9rZW5zCg==",
+      "memory": 16273408,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "sort_only_short_01",
+      "checker_out": "b2sgMjUxMTMgdG9rZW5zCg==",
+      "memory": 16351232,
+      "status": "AC",
+      "time": 0.102
+    }
+  ],
+  "overview": {
+    "id": 233961,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 21209088,
+    "problem_name": "point_set_range_sort_range_composite",
+    "problem_title": "Point Set Range Sort Range Composite",
+    "status": "AC",
+    "submission_time": "2024-09-08T10:24:20.94746Z",
+    "time": 0.364,
+    "user_name": "oldyan"
+  }
+}

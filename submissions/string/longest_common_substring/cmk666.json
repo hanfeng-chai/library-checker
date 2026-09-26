@@ -1,0 +1,213 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgb2sK",
+      "memory": 18534400,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgb2sK",
+      "memory": 18620416,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgb2sK",
+      "memory": 18669568,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgb2sK",
+      "memory": 18690048,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgb2sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgb2sK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgb2sK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgb2sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_large_ans_00",
+      "checker_out": "b2sgb2sK",
+      "memory": 22364160,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "max_large_ans_01",
+      "checker_out": "b2sgb2sK",
+      "memory": 23121920,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "max_large_ans_02",
+      "checker_out": "b2sgb2sK",
+      "memory": 23670784,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "max_large_ans_03",
+      "checker_out": "b2sgb2sK",
+      "memory": 24498176,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgb2sK",
+      "memory": 22495232,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgb2sK",
+      "memory": 22990848,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgb2sK",
+      "memory": 23875584,
+      "status": "AC",
+      "time": 0.076
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgb2sK",
+      "memory": 23973888,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgb2sK",
+      "memory": 18309120,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgb2sK",
+      "memory": 20283392,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgb2sK",
+      "memory": 10764288,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgb2sK",
+      "memory": 11264000,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgb2sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgb2sK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgb2sK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgb2sK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgb2sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgb2sK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgb2sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgb2sK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 251457,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24498176,
+    "problem_name": "longest_common_substring",
+    "problem_title": "Longest Common Substring",
+    "status": "AC",
+    "submission_time": "2024-11-22T08:04:00.987996Z",
+    "time": 0.076,
+    "user_name": "cmk666"
+  }
+}

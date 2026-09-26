@@ -1,0 +1,93 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjI4Igo=",
+      "memory": 708608,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hack77047_00",
+      "checker_out": "b2sgIjMxMjg4MjgxMCIK",
+      "memory": 97492992,
+      "status": "AC",
+      "time": 0.675
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgIjE2OTkxMjc2MCIK",
+      "memory": 1712128,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgIjk5NzMxMTcxMiIK",
+      "memory": 3125248,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgIjk5NjY0NTc5MiIK",
+      "memory": 11776000,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjQxNjI4MDMxNCIK",
+      "memory": 97497088,
+      "status": "AC",
+      "time": 0.678
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjkxNzIyMjk0OSIK",
+      "memory": 97239040,
+      "status": "AC",
+      "time": 0.674
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjc0NDUzNzc0MiIK",
+      "memory": 97234944,
+      "status": "AC",
+      "time": 0.674
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjIzMjYyOTY5NyIK",
+      "memory": 598016,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjk0MTg3NDYyMCIK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjI3MTM2ODg0OSIK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 279353,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 97497088,
+    "problem_name": "hafnian_of_matrix",
+    "problem_title": "Hafnian of Matrix",
+    "status": "AC",
+    "submission_time": "2025-04-16T04:47:43.75773Z",
+    "time": 0.678
+  }
+}

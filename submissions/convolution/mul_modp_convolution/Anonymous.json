@@ -1,0 +1,296 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 729088,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "all_zero_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "all_zero_02",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "all_zero_03",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 618496,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgMTQ3MzcgdG9rZW5zCg==",
+      "memory": 1794048,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgMzAzMjMgdG9rZW5zCg==",
+      "memory": 2736128,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgNTk0NTMgdG9rZW5zCg==",
+      "memory": 4714496,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "large_03",
+      "checker_out": "b2sgMTI4NDczIHRva2Vucwo=",
+      "memory": 8617984,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "large_04",
+      "checker_out": "b2sgMjA5NjM5IHRva2Vucwo=",
+      "memory": 18292736,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "large_05",
+      "checker_out": "b2sgNTE4NzM3IHRva2Vucwo=",
+      "memory": 37580800,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTkxIHRva2Vucwo=",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgMTgxIHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMzE3IHRva2Vucwo=",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNDc5IHRva2Vucwo=",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgNTQxIHRva2Vucwo=",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_05",
+      "checker_out": "b2sgOTQ3IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_06",
+      "checker_out": "b2sgMTEyOSB0b2tlbnMK",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_07",
+      "checker_out": "b2sgMTQ4OSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_08",
+      "checker_out": "b2sgMjUzOSB0b2tlbnMK",
+      "memory": 864256,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "medium_09",
+      "checker_out": "b2sgMzk4OSB0b2tlbnMK",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_10",
+      "checker_out": "b2sgNjY1MyB0b2tlbnMK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "medium_11",
+      "checker_out": "b2sgNDk5OSB0b2tlbnMK",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "p_max_00",
+      "checker_out": "b2sgNTI0Mjg3IHRva2Vucwo=",
+      "memory": 36827136,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "p_max_01",
+      "checker_out": "b2sgNTI0Mjg3IHRva2Vucwo=",
+      "memory": 38686720,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "p_max_02",
+      "checker_out": "b2sgNTI0Mjg3IHRva2Vucwo=",
+      "memory": 38162432,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "p_max_03",
+      "checker_out": "b2sgNTI0Mjg3IHRva2Vucwo=",
+      "memory": 37056512,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgMjMgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMTkgdG9rZW5zCg==",
+      "memory": 720896,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNDEgdG9rZW5zCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMzcgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_10",
+      "checker_out": "b2sgMTA3IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_11",
+      "checker_out": "b2sgMTA5IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 247641,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 38686720,
+    "problem_name": "mul_modp_convolution",
+    "problem_title": "Convolution on the Multiplicative Monoid of $\\mathbb{Z} / P\\mathbb{Z}$",
+    "status": "AC",
+    "submission_time": "2024-11-08T06:01:59.388902Z",
+    "time": 0.085
+  }
+}

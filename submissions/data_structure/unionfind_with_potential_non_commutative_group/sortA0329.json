@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMjIgdG9rZW5zCg==",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjE4OTU3IHRva2Vucwo=",
+      "memory": 4149248,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjA1ODY1IHRva2Vucwo=",
+      "memory": 4374528,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMzQ0NDI2IHRva2Vucwo=",
+      "memory": 3747840,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 7462912,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "path_01",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 7299072,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "path_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 5193728,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "path_03",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 5115904,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ5ODIwIHRva2Vucwo=",
+      "memory": 3878912,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTQ4NzY2IHRva2Vucwo=",
+      "memory": 4141056,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTYwMTcyIHRva2Vucwo=",
+      "memory": 2572288,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 4415488,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjAzNDQ4IHRva2Vucwo=",
+      "memory": 2576384,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgMjA1Mjc5IHRva2Vucwo=",
+      "memory": 3096576,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgMTA4NjE3IHRva2Vucwo=",
+      "memory": 4935680,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgMTE0NzUgdG9rZW5zCg==",
+      "memory": 2314240,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgMTA1NjA5IHRva2Vucwo=",
+      "memory": 1527808,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgMjMxNzE5IHRva2Vucwo=",
+      "memory": 3883008,
+      "status": "AC",
+      "time": 0.013
+    }
+  ],
+  "overview": {
+    "id": 236404,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 7462912,
+    "problem_name": "unionfind_with_potential_non_commutative_group",
+    "problem_title": "Unionfind with Potential (Non-Commutative Group)",
+    "status": "AC",
+    "submission_time": "2024-09-18T11:02:25.136878Z",
+    "time": 0.015,
+    "user_name": "sortA0329"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 696320,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQzOTkgdG9rZW5zCg==",
+      "memory": 19496960,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQzNzIgdG9rZW5zCg==",
+      "memory": 20410368,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjAxMDUgdG9rZW5zCg==",
+      "memory": 12464128,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMzM1IHRva2Vucwo=",
+      "memory": 24805376,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk3NDggdG9rZW5zCg==",
+      "memory": 24719360,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMTQ4IHRva2Vucwo=",
+      "memory": 25272320,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "all_twice_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 31117312,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "no_output_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 23818240,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "all_intersect_00",
+      "checker_out": "b2sgIi01MDAwMDAwMDAiCg==",
+      "memory": 23638016,
+      "status": "AC",
+      "time": 0.026
+    }
+  ],
+  "overview": {
+    "id": 401386,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 31117312,
+    "problem_name": "segment_add_get_min",
+    "problem_title": "Segment Add Get Min",
+    "status": "AC",
+    "submission_time": "2026-09-10T06:09:04.084322Z",
+    "time": 0.064,
+    "user_name": "Rohan_Kapri"
+  }
+}

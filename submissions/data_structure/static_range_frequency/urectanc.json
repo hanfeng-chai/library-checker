@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 24944640,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 24879104,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 24977408,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 7057408,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 25317376,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 26243072,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 20058112,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30965760,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30916608,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30949376,
+      "status": "AC",
+      "time": 0.062
+    }
+  ],
+  "overview": {
+    "id": 382978,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 30965760,
+    "problem_name": "static_range_frequency",
+    "problem_title": "Static Range Frequency",
+    "status": "AC",
+    "submission_time": "2026-06-29T12:37:18.1673Z",
+    "time": 0.062,
+    "user_name": "urectanc"
+  }
+}

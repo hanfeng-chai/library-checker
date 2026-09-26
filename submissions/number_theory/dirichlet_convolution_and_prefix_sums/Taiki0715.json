@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 614400,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 68399104,
+      "status": "AC",
+      "time": 2.515
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 68755456,
+      "status": "AC",
+      "time": 2.519
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 68739072,
+      "status": "AC",
+      "time": 2.525
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 68403200,
+      "status": "AC",
+      "time": 2.522
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 68468736,
+      "status": "AC",
+      "time": 2.507
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTU1OSB0b2tlbnMK",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMzc3MSB0b2tlbnMK",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjg0NyB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTE4MyB0b2tlbnMK",
+      "memory": 1036288,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTcwNSB0b2tlbnMK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "very_small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "very_small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "very_small_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "very_small_03",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "very_small_04",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgOTcwMjM5IHRva2Vucwo=",
+      "memory": 33538048,
+      "status": "AC",
+      "time": 0.965
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTM2ODgxNyB0b2tlbnMK",
+      "memory": 47198208,
+      "status": "AC",
+      "time": 1.52
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDg0NDEyIHRva2Vucwo=",
+      "memory": 17354752,
+      "status": "AC",
+      "time": 0.384
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzOTIyNyB0b2tlbnMK",
+      "memory": 66813952,
+      "status": "AC",
+      "time": 2.411
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTY4MzI0MCB0b2tlbnMK",
+      "memory": 57958400,
+      "status": "AC",
+      "time": 2.001
+    },
+    {
+      "case": "many_00",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 14131200,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "many_01",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 14135296,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "many_02",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 14147584,
+      "status": "AC",
+      "time": 0.101
+    }
+  ],
+  "overview": {
+    "id": 346761,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 68755456,
+    "problem_name": "dirichlet_convolution_and_prefix_sums",
+    "problem_title": "Dirichlet Convolution and Prefix Sums",
+    "status": "AC",
+    "submission_time": "2026-01-19T14:50:46.445505Z",
+    "time": 2.525,
+    "user_name": "Taiki0715"
+  }
+}

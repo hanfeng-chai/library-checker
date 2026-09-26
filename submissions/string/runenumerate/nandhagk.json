@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4MjcgdG9rZW5zCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTcxOTEgdG9rZW5zCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjMxOSB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzMDAgdG9rZW5zCg==",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTYyNCB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjI0OTUgdG9rZW5zCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjIxNzQgdG9rZW5zCg==",
+      "memory": 1048576,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjIzMTIgdG9rZW5zCg==",
+      "memory": 1040384,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjIxNTAgdG9rZW5zCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjIwMjEgdG9rZW5zCg==",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "fib_str_00",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 2269184,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "fib_str_01",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 1454080,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "fib_str_02",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 2260992,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "fib_str_03",
+      "checker_out": "b2sgMzMxMzM5IHRva2Vucwo=",
+      "memory": 3571712,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "fib_str_04",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 1716224,
+      "status": "AC",
+      "time": 0.005
+    }
+  ],
+  "overview": {
+    "id": 403379,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 3571712,
+    "problem_name": "runenumerate",
+    "problem_title": "Run Enumerate",
+    "status": "AC",
+    "submission_time": "2026-09-17T14:56:35.33538Z",
+    "time": 0.012,
+    "user_name": "nandhagk"
+  }
+}

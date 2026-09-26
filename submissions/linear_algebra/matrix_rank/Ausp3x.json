@@ -1,0 +1,269 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjE4MSIK",
+      "memory": 3559424,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjE5OCIK",
+      "memory": 3768320,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjg4Igo=",
+      "memory": 2142208,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjE5MyIK",
+      "memory": 3719168,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjIwIgo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgIjIyMSIK",
+      "memory": 1613824,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "lowrank_00",
+      "checker_out": "b2sgIjQ1Igo=",
+      "memory": 3710976,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "lowrank_01",
+      "checker_out": "b2sgIjIxIgo=",
+      "memory": 3149824,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "lowrank_02",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 2367488,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "lowrank_03",
+      "checker_out": "b2sgIjgyIgo=",
+      "memory": 3858432,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "lowrank_04",
+      "checker_out": "b2sgIjE5Igo=",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "lowrank_05",
+      "checker_out": "b2sgIjE3NSIK",
+      "memory": 1732608,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "hack_of_system_of_linear_00",
+      "checker_out": "b2sgIjI5Igo=",
+      "memory": 1318912,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "hack_of_system_of_linear_01",
+      "checker_out": "b2sgIjMwIgo=",
+      "memory": 880640,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "hack_of_system_of_linear_02",
+      "checker_out": "b2sgIjg4Igo=",
+      "memory": 1105920,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "hack_of_system_of_linear_03",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack_of_system_of_linear_04",
+      "checker_out": "b2sgIjE5Igo=",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hack_of_system_of_linear_05",
+      "checker_out": "b2sgIjc0Igo=",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 2699264,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 2699264,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 3375104,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgIjQ5OSIK",
+      "memory": 3678208,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgIjUwMCIK",
+      "memory": 3674112,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_05",
+      "checker_out": "b2sgIjQ5OSIK",
+      "memory": 3702784,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_06",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 7376896,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_07",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 8900608,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_08",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 16429056,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "zero_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "zero_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "zero_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1609728,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "zero_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "zero_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6877184,
+      "status": "AC",
+      "time": 0.016
+    }
+  ],
+  "overview": {
+    "id": 383380,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16429056,
+    "problem_name": "matrix_rank",
+    "problem_title": "Rank of Matrix",
+    "status": "AC",
+    "submission_time": "2026-07-01T19:17:00.335945Z",
+    "time": 0.026,
+    "user_name": "Ausp3x"
+  }
+}

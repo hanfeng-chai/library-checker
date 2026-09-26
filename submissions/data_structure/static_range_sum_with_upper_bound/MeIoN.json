@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgODIxODQ2IHRva2Vucwo=",
+      "memory": 26722304,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgODI1ODE0IHRva2Vucwo=",
+      "memory": 28823552,
+      "status": "AC",
+      "time": 0.144
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNzY0Njk0IHRva2Vucwo=",
+      "memory": 18968576,
+      "status": "AC",
+      "time": 0.076
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 32972800,
+      "status": "AC",
+      "time": 0.17
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 32784384,
+      "status": "AC",
+      "time": 0.169
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 33005568,
+      "status": "AC",
+      "time": 0.169
+    },
+    {
+      "case": "small_a_x_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 33026048,
+      "status": "AC",
+      "time": 0.132
+    },
+    {
+      "case": "small_a_x_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 33013760,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "small_a_x_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 33013760,
+      "status": "AC",
+      "time": 0.134
+    }
+  ],
+  "overview": {
+    "id": 365955,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 33026048,
+    "problem_name": "static_range_sum_with_upper_bound",
+    "problem_title": "Static Range Sum with Upper Bound",
+    "status": "AC",
+    "submission_time": "2026-04-12T09:57:11.000915Z",
+    "time": 0.17,
+    "user_name": "MeIoN"
+  }
+}

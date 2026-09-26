@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 643072,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzI3NjEgdG9rZW5zCg==",
+      "memory": 1687552,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMzkyMDQgdG9rZW5zCg==",
+      "memory": 1519616,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNzc0NCB0b2tlbnMK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzcyNDkgdG9rZW5zCg==",
+      "memory": 1425408,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDAwIHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 6135808,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 6385664,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 6156288,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 6066176,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 6164480,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "lowrank_max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4755456,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "lowrank_max_random_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4722688,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "lowrank_max_random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4726784,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "lowrank_max_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4755456,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "lowrank_max_random_04",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4722688,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgMjQ0MDM2IHRva2Vucwo=",
+      "memory": 4726784,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgMjQ1MDI1IHRva2Vucwo=",
+      "memory": 5545984,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgMjQ3MDA5IHRva2Vucwo=",
+      "memory": 5050368,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgMjQwMTAwIHRva2Vucwo=",
+      "memory": 4722688,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgMjQzMDQ5IHRva2Vucwo=",
+      "memory": 4591616,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "anti55588_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "signed_overflow_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "unsigned_overflow_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 388716,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6385664,
+    "problem_name": "inverse_matrix",
+    "problem_title": "Inverse Matrix",
+    "status": "AC",
+    "submission_time": "2026-07-27T16:26:21.394631Z",
+    "time": 0.058,
+    "user_name": "Ausp3x"
+  }
+}

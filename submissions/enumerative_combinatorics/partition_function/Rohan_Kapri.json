@@ -1,0 +1,105 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 794624,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDE1MAo=",
+      "time": 0.001
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 794624,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDAK",
+      "time": 0.01
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 704512,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDEwCg==",
+      "time": 0.001
+    },
+    {
+      "case": "100_00",
+      "checker_out": "b2sgMTAxIHRva2Vucwo=",
+      "memory": 819200,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDEyNzAK",
+      "time": 0.001
+    },
+    {
+      "case": "1000_00",
+      "checker_out": "b2sgMTAwMSB0b2tlbnMK",
+      "memory": 696320,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDEwMjMwCg==",
+      "time": 0.001
+    },
+    {
+      "case": "10000_00",
+      "checker_out": "b2sgMTAwMDEgdG9rZW5zCg==",
+      "memory": 1060864,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDE2MzgzMAo=",
+      "time": 0.001
+    },
+    {
+      "case": "100000_00",
+      "checker_out": "b2sgMTAwMDAxIHRva2Vucwo=",
+      "memory": 2371584,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDEzMTA3MTAK",
+      "time": 0.006
+    },
+    {
+      "case": "200000_00",
+      "checker_out": "b2sgMjAwMDAxIHRva2Vucwo=",
+      "memory": 4460544,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDI2MjE0MzAK",
+      "time": 0.012
+    },
+    {
+      "case": "300000_00",
+      "checker_out": "b2sgMzAwMDAxIHRva2Vucwo=",
+      "memory": 7131136,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDUyNDI4NzAK",
+      "time": 0.022
+    },
+    {
+      "case": "400000_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 8114176,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDUyNDI4NzAK",
+      "time": 0.023
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 8691712,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDUyNDI4NzAK",
+      "time": 0.025
+    }
+  ],
+  "overview": {
+    "id": 406026,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 8691712,
+    "problem_name": "partition_function",
+    "problem_title": "Partition Function",
+    "status": "AC",
+    "submission_time": "2026-09-25T07:04:57.431607Z",
+    "time": 0.025,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,520 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 30982144,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 30941184,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgMjAgdG9rZW5zCg==",
+      "memory": 30965760,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgMTYgdG9rZW5zCg==",
+      "memory": 30973952,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "bfs_00",
+      "checker_out": "b2sgNDI0MCB0b2tlbnMK",
+      "memory": 30990336,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "bfs_01",
+      "checker_out": "b2sgMjEyMDY4IHRva2Vucwo=",
+      "memory": 40157184,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "bfs_02",
+      "checker_out": "b2sgNDIwNzcyIHRva2Vucwo=",
+      "memory": 50360320,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "bfs_03",
+      "checker_out": "b2sgNzY0MjU0IHRva2Vucwo=",
+      "memory": 47857664,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTAwMDAwNSB0b2tlbnMK",
+      "memory": 36982784,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjY2ODE0IHRva2Vucwo=",
+      "memory": 35692544,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjY1NyB0b2tlbnMK",
+      "memory": 98320384,
+      "status": "AC",
+      "time": 0.09
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTUzODQ5OCB0b2tlbnMK",
+      "memory": 129835008,
+      "status": "AC",
+      "time": 0.12
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 157642752,
+      "status": "AC",
+      "time": 0.104
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgMjAwMDAwMSB0b2tlbnMK",
+      "memory": 157294592,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgMTk5OTk2OSB0b2tlbnMK",
+      "memory": 160976896,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgMTk5OTY4NyB0b2tlbnMK",
+      "memory": 160739328,
+      "status": "AC",
+      "time": 0.128
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgMTAwMDA1MyB0b2tlbnMK",
+      "memory": 38051840,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgNjY2NTAwIHRva2Vucwo=",
+      "memory": 35749888,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "random_10",
+      "checker_out": "b2sgNTI0MTMzIHRva2Vucwo=",
+      "memory": 54562816,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "random_11",
+      "checker_out": "b2sgMTkyNjcyNSB0b2tlbnMK",
+      "memory": 154787840,
+      "status": "AC",
+      "time": 0.139
+    },
+    {
+      "case": "random_12",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 157548544,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "random_13",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 158388224,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "random_14",
+      "checker_out": "b2sgMjAwMDAxMSB0b2tlbnMK",
+      "memory": 158109696,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "random_15",
+      "checker_out": "b2sgMTk5OTAyOSB0b2tlbnMK",
+      "memory": 160837632,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "random_16",
+      "checker_out": "b2sgMTAwMDAxMSB0b2tlbnMK",
+      "memory": 36974592,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_17",
+      "checker_out": "b2sgNjY3NjgxIHRva2Vucwo=",
+      "memory": 36491264,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_18",
+      "checker_out": "b2sgMTg1ODE4IHRva2Vucwo=",
+      "memory": 32256000,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_19",
+      "checker_out": "b2sgMTgxMjY0NSB0b2tlbnMK",
+      "memory": 147886080,
+      "status": "AC",
+      "time": 0.134
+    },
+    {
+      "case": "random_20",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 157470720,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "random_21",
+      "checker_out": "b2sgMTk5OTk5NSB0b2tlbnMK",
+      "memory": 157040640,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "random_22",
+      "checker_out": "b2sgMTk5OTk5MSB0b2tlbnMK",
+      "memory": 159903744,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "random_23",
+      "checker_out": "b2sgMTk5OTkzOSB0b2tlbnMK",
+      "memory": 161267712,
+      "status": "AC",
+      "time": 0.124
+    },
+    {
+      "case": "short_period_00",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 162660352,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "short_period_01",
+      "checker_out": "b2sgMTA3MzkxMSB0b2tlbnMK",
+      "memory": 101298176,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "short_period_02",
+      "checker_out": "b2sgMTUxNzI3NSB0b2tlbnMK",
+      "memory": 130203648,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "short_period_03",
+      "checker_out": "b2sgMTkxNzMxIHRva2Vucwo=",
+      "memory": 43651072,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "short_period_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 161886208,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "short_period_05",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 161525760,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "short_period_06",
+      "checker_out": "b2sgNzQ1MzM5IHRva2Vucwo=",
+      "memory": 80474112,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "short_period_07",
+      "checker_out": "b2sgMjE0MjYxIHRva2Vucwo=",
+      "memory": 45395968,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "short_period_08",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 162279424,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "short_period_09",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 161525760,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "short_period_10",
+      "checker_out": "b2sgMTAwMjIzNSB0b2tlbnMK",
+      "memory": 96698368,
+      "status": "AC",
+      "time": 0.066
+    },
+    {
+      "case": "short_period_11",
+      "checker_out": "b2sgNTI0NTk5IHRva2Vucwo=",
+      "memory": 65544192,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "short_period_12",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 162004992,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "short_period_13",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 161488896,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "short_period_14",
+      "checker_out": "b2sgMTk3OTAwMyB0b2tlbnMK",
+      "memory": 159952896,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "short_period_15",
+      "checker_out": "b2sgMTYxMzEyNyB0b2tlbnMK",
+      "memory": 136372224,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "fibonacci_00",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 162127872,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "fibonacci_01",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 161517568,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_02",
+      "checker_out": "b2sgMTk5OTc0OSB0b2tlbnMK",
+      "memory": 162320384,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "fibonacci_03",
+      "checker_out": "b2sgMTk2OTkzMyB0b2tlbnMK",
+      "memory": 160186368,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "fibonacci_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 161800192,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_05",
+      "checker_out": "b2sgMTk5OTk5NSB0b2tlbnMK",
+      "memory": 161812480,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_06",
+      "checker_out": "b2sgMTk5ODc3MSB0b2tlbnMK",
+      "memory": 162103296,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "fibonacci_07",
+      "checker_out": "b2sgMTk1NjUwMyB0b2tlbnMK",
+      "memory": 158388224,
+      "status": "AC",
+      "time": 0.138
+    },
+    {
+      "case": "fibonacci_08",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 161812480,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "fibonacci_09",
+      "checker_out": "b2sgMTk5OTk5MyB0b2tlbnMK",
+      "memory": 161501184,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "fibonacci_10",
+      "checker_out": "b2sgMTk5ODg3MSB0b2tlbnMK",
+      "memory": 161488896,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "fibonacci_11",
+      "checker_out": "b2sgMTk1MTYyNyB0b2tlbnMK",
+      "memory": 158343168,
+      "status": "AC",
+      "time": 0.134
+    },
+    {
+      "case": "fibonacci_12",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 161824768,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "fibonacci_13",
+      "checker_out": "b2sgMjAwMDAwMyB0b2tlbnMK",
+      "memory": 162254848,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "fibonacci_14",
+      "checker_out": "b2sgMTk5OTk1OSB0b2tlbnMK",
+      "memory": 161935360,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "fibonacci_15",
+      "checker_out": "b2sgMTk2MTk0NyB0b2tlbnMK",
+      "memory": 159596544,
+      "status": "AC",
+      "time": 0.123
+    },
+    {
+      "case": "almost_single_00",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 158179328,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "almost_single_01",
+      "checker_out": "b2sgMjAwMDAwMSB0b2tlbnMK",
+      "memory": 161550336,
+      "status": "AC",
+      "time": 0.104
+    },
+    {
+      "case": "almost_single_02",
+      "checker_out": "b2sgMTk5OTk3MyB0b2tlbnMK",
+      "memory": 157106176,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "almost_single_03",
+      "checker_out": "b2sgMTU0Mjg0MSB0b2tlbnMK",
+      "memory": 131338240,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "almost_single_04",
+      "checker_out": "b2sgMjAwMDAwMiB0b2tlbnMK",
+      "memory": 158117888,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "almost_single_05",
+      "checker_out": "b2sgMjAwMDAwMSB0b2tlbnMK",
+      "memory": 161726464,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "almost_single_06",
+      "checker_out": "b2sgMTg5MzUwNSB0b2tlbnMK",
+      "memory": 154750976,
+      "status": "AC",
+      "time": 0.104
+    },
+    {
+      "case": "almost_single_07",
+      "checker_out": "b2sgMTM4MjgzMSB0b2tlbnMK",
+      "memory": 120766464,
+      "status": "AC",
+      "time": 0.089
+    }
+  ],
+  "overview": {
+    "id": 389965,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 162660352,
+    "problem_name": "aho_corasick",
+    "problem_title": "Aho Corasick",
+    "status": "AC",
+    "submission_time": "2026-08-02T00:52:14.228968Z",
+    "time": 0.143
+  }
+}

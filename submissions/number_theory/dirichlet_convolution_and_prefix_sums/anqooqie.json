@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 44548096,
+      "status": "AC",
+      "time": 2.746
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 44548096,
+      "status": "AC",
+      "time": 2.763
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 44544000,
+      "status": "AC",
+      "time": 2.759
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 44548096,
+      "status": "AC",
+      "time": 2.744
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 44544000,
+      "status": "AC",
+      "time": 2.737
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTU1OSB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMzc3MSB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjg0NyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTE4MyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTcwNSB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "very_small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "very_small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 495616,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "very_small_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "very_small_03",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "very_small_04",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgOTcwMjM5IHRva2Vucwo=",
+      "memory": 21671936,
+      "status": "AC",
+      "time": 1.068
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTM2ODgxNyB0b2tlbnMK",
+      "memory": 30650368,
+      "status": "AC",
+      "time": 1.673
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDg0NDEyIHRva2Vucwo=",
+      "memory": 11296768,
+      "status": "AC",
+      "time": 0.449
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzOTIyNyB0b2tlbnMK",
+      "memory": 43024384,
+      "status": "AC",
+      "time": 2.64
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTY4MzI0MCB0b2tlbnMK",
+      "memory": 37470208,
+      "status": "AC",
+      "time": 2.191
+    },
+    {
+      "case": "many_00",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 13877248,
+      "status": "AC",
+      "time": 0.231
+    },
+    {
+      "case": "many_01",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 13803520,
+      "status": "AC",
+      "time": 0.231
+    },
+    {
+      "case": "many_02",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 13811712,
+      "status": "AC",
+      "time": 0.231
+    }
+  ],
+  "overview": {
+    "id": 321777,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 44548096,
+    "problem_name": "dirichlet_convolution_and_prefix_sums",
+    "problem_title": "Dirichlet Convolution and Prefix Sums",
+    "status": "AC",
+    "submission_time": "2025-10-19T08:57:27.539441Z",
+    "time": 2.763,
+    "user_name": "anqooqie"
+  }
+}

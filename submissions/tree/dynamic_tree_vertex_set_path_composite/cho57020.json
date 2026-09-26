@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjY1NDEgdG9rZW5zCg==",
+      "memory": 16785408,
+      "status": "AC",
+      "time": 0.302
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjY1OTMgdG9rZW5zCg==",
+      "memory": 16793600,
+      "status": "AC",
+      "time": 0.302
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ0Igo=",
+      "memory": 659456,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQyIgo=",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjM5Igo=",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTA5IHRva2Vucwo=",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNzMgdG9rZW5zCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMTI1IHRva2Vucwo=",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNzcgdG9rZW5zCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgMjc1IHRva2Vucwo=",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDk3MTUgdG9rZW5zCg==",
+      "memory": 11051008,
+      "status": "AC",
+      "time": 0.144
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk3NjMgdG9rZW5zCg==",
+      "memory": 12779520,
+      "status": "AC",
+      "time": 0.167
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDAxNjIgdG9rZW5zCg==",
+      "memory": 5251072,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODUyMiB0b2tlbnMK",
+      "memory": 13672448,
+      "status": "AC",
+      "time": 0.123
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzMwOTMgdG9rZW5zCg==",
+      "memory": 2367488,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjcxNDIgdG9rZW5zCg==",
+      "memory": 16818176,
+      "status": "AC",
+      "time": 0.232
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY1MTQgdG9rZW5zCg==",
+      "memory": 16818176,
+      "status": "AC",
+      "time": 0.236
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY1OTIgdG9rZW5zCg==",
+      "memory": 16781312,
+      "status": "AC",
+      "time": 0.249
+    },
+    {
+      "case": "issue_1216_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 18206720,
+      "status": "AC",
+      "time": 0.046
+    }
+  ],
+  "overview": {
+    "id": 405777,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18206720,
+    "problem_name": "dynamic_tree_vertex_set_path_composite",
+    "problem_title": "Dynamic Tree Vertex Set Path Composite",
+    "status": "AC",
+    "submission_time": "2026-09-24T10:11:19.591055Z",
+    "time": 0.302,
+    "user_name": "cho57020"
+  }
+}

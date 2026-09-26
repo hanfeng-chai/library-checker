@@ -1,0 +1,272 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MjQK",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 585728,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MjQK",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNDMgdG9rZW5zCg==",
+      "memory": 823296,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6Mzg0Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 569344,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6Mzg0Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 577536,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6Mzg0Cg==",
+      "time": 0
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgODIgdG9rZW5zCg==",
+      "memory": 565248,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6NzY4Cg==",
+      "time": 0
+    },
+    {
+      "case": "medium_random_00",
+      "checker_out": "b2sgOTk0MiB0b2tlbnMK",
+      "memory": 1511424,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6OTgzMDQK",
+      "time": 0.001
+    },
+    {
+      "case": "medium_random_01",
+      "checker_out": "b2sgOTkyMCB0b2tlbnMK",
+      "memory": 1351680,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6OTgzMDQK",
+      "time": 0.001
+    },
+    {
+      "case": "medium_random_02",
+      "checker_out": "b2sgMTAwMzggdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6OTgzMDQK",
+      "time": 0.002
+    },
+    {
+      "case": "medium_random_03",
+      "checker_out": "b2sgOTk4MSB0b2tlbnMK",
+      "memory": 1060864,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6OTgzMDQK",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 33316864,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.041
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 32808960,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.04
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 33595392,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.04
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 32808960,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.041
+    },
+    {
+      "case": "type0_random_00",
+      "checker_out": "b2sgNzcxMDEgdG9rZW5zCg==",
+      "memory": 3158016,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MAo=",
+      "time": 0.004
+    },
+    {
+      "case": "type0_random_01",
+      "checker_out": "b2sgMTc2ODUgdG9rZW5zCg==",
+      "memory": 2703360,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MAo=",
+      "time": 0.005
+    },
+    {
+      "case": "type0_random_02",
+      "checker_out": "b2sgODI0NSB0b2tlbnMK",
+      "memory": 987136,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MAo=",
+      "time": 0.001
+    },
+    {
+      "case": "type0_random_03",
+      "checker_out": "b2sgMTMwMzg2IHRva2Vucwo=",
+      "memory": 3670016,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MAo=",
+      "time": 0.006
+    },
+    {
+      "case": "type1_random_00",
+      "checker_out": "b2sgNDczMzQ3IHRva2Vucwo=",
+      "memory": 27271168,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.034
+    },
+    {
+      "case": "type1_random_01",
+      "checker_out": "b2sgMTk4ODk4IHRva2Vucwo=",
+      "memory": 23629824,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.032
+    },
+    {
+      "case": "type1_random_02",
+      "checker_out": "b2sgMzQ4OTcgdG9rZW5zCg==",
+      "memory": 3182592,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTk2NjA4Cg==",
+      "time": 0.004
+    },
+    {
+      "case": "type1_random_03",
+      "checker_out": "b2sgNDg0Mjg3IHRva2Vucwo=",
+      "memory": 20721664,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTU3Mjg2NAo=",
+      "time": 0.024
+    },
+    {
+      "case": "type2_random_00",
+      "checker_out": "b2sgNDEwOTI0IHRva2Vucwo=",
+      "memory": 27811840,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.035
+    },
+    {
+      "case": "type2_random_01",
+      "checker_out": "b2sgNDEyOTA4IHRva2Vucwo=",
+      "memory": 29413376,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.037
+    },
+    {
+      "case": "type2_random_02",
+      "checker_out": "b2sgMzgyMzQ4IHRva2Vucwo=",
+      "memory": 14700544,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTU3Mjg2NAo=",
+      "time": 0.016
+    },
+    {
+      "case": "type2_random_03",
+      "checker_out": "b2sgMjU4NDAgdG9rZW5zCg==",
+      "memory": 15478784,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTU3Mjg2NAo=",
+      "time": 0.02
+    },
+    {
+      "case": "type3_random_00",
+      "checker_out": "b2sgNDEwOTI0IHRva2Vucwo=",
+      "memory": 24416256,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.032
+    },
+    {
+      "case": "type3_random_01",
+      "checker_out": "b2sgNDEyOTA4IHRva2Vucwo=",
+      "memory": 27566080,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MzE0NTcyOAo=",
+      "time": 0.035
+    },
+    {
+      "case": "type3_random_02",
+      "checker_out": "b2sgMzgyMzQ4IHRva2Vucwo=",
+      "memory": 13643776,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTk2NjA4MAo=",
+      "time": 0.016
+    },
+    {
+      "case": "type3_random_03",
+      "checker_out": "b2sgMjU4NDAgdG9rZW5zCg==",
+      "memory": 15491072,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTU3Mjg2NAo=",
+      "time": 0.02
+    },
+    {
+      "case": "N_1_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 13672448,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTU3Mjg2NAo=",
+      "time": 0.015
+    },
+    {
+      "case": "c_0_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 18370560,
+      "status": "AC",
+      "stderr": "bnR0X3NpemU6MTU3Mjg2NAo=",
+      "time": 0.023
+    }
+  ],
+  "overview": {
+    "id": 146817,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 33595392,
+    "problem_name": "shift_of_sampling_points_of_polynomial",
+    "problem_title": "Shift of Sampling Points of Polynomial",
+    "status": "AC",
+    "time": 0.041,
+    "user_name": "QedDust413"
+  }
+}

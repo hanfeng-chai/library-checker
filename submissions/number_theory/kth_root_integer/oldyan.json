@@ -1,0 +1,122 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_k2_00",
+      "checker_out": "b2sgNDkxMzIyIHRva2Vucwo=",
+      "memory": 6926336,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "all_k2_01",
+      "checker_out": "b2sgNDk0MjkzIHRva2Vucwo=",
+      "memory": 6610944,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "all_k3_00",
+      "checker_out": "b2sgNDkxMzIyIHRva2Vucwo=",
+      "memory": 3727360,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "all_k3_01",
+      "checker_out": "b2sgNDk0MjkzIHRva2Vucwo=",
+      "memory": 4501504,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "all_k3_2_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 4763648,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "all_k3_2_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5238784,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "near_border_00",
+      "checker_out": "b2sgNDkxMzIyIHRva2Vucwo=",
+      "memory": 2842624,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "near_border_01",
+      "checker_out": "b2sgNDk0MjkzIHRva2Vucwo=",
+      "memory": 2920448,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "near_border_02",
+      "checker_out": "b2sgNDk0MTgzIHRva2Vucwo=",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "near_border_2_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2666496,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "near_border_2_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2740224,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "near_border_2_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 2650112,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 2674688,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 3104768,
+      "status": "AC",
+      "time": 0.018
+    }
+  ],
+  "overview": {
+    "id": 246999,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6926336,
+    "problem_name": "kth_root_integer",
+    "problem_title": "Kth Root (Integer)",
+    "status": "AC",
+    "submission_time": "2024-11-05T07:48:41.722381Z",
+    "time": 0.027,
+    "user_name": "oldyan"
+  }
+}

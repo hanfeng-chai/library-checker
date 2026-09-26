@@ -1,0 +1,115 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "conchon_filliatre_tle_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 16211968,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "conchon_filliatre_tle_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 16211968,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hand_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMzcxIHRva2Vucwo=",
+      "memory": 16379904,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDU3IHRva2Vucwo=",
+      "memory": 16277504,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk3ODcgdG9rZW5zCg==",
+      "memory": 16384000,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgOTk4MjAgdG9rZW5zCg==",
+      "memory": 16453632,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTAwMjY0IHRva2Vucwo=",
+      "memory": 16363520,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQ2NjYgdG9rZW5zCg==",
+      "memory": 12275712,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQyMjUgdG9rZW5zCg==",
+      "memory": 12275712,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjAwODAgdG9rZW5zCg==",
+      "memory": 9920512,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4NTEgdG9rZW5zCg==",
+      "memory": 3358720,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk1ODkgdG9rZW5zCg==",
+      "memory": 8081408,
+      "status": "AC",
+      "time": 0.008
+    }
+  ],
+  "overview": {
+    "id": 218108,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16453632,
+    "problem_name": "persistent_unionfind",
+    "problem_title": "Persistent Unionfind",
+    "status": "AC",
+    "submission_time": "2024-07-01T03:19:34.43052Z",
+    "time": 0.018,
+    "user_name": "sortA0329"
+  }
+}

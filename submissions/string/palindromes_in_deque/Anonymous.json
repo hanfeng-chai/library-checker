@@ -1,0 +1,184 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMjcgdG9rZW5zCg==",
+      "memory": 614400,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMzYgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_all_00",
+      "checker_out": "b2sgMTE3OTYzNiB0b2tlbnMK",
+      "memory": 52486144,
+      "status": "AC",
+      "time": 0.094
+    },
+    {
+      "case": "small_all_01",
+      "checker_out": "b2sgODg1NzI2IHRva2Vucwo=",
+      "memory": 39124992,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "small_all_02",
+      "checker_out": "b2sgOTE3NDk2IHRva2Vucwo=",
+      "memory": 40615936,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "short_period_00",
+      "checker_out": "b2sgMTUwMDAwMCB0b2tlbnMK",
+      "memory": 73379840,
+      "status": "AC",
+      "time": 0.125
+    },
+    {
+      "case": "short_period_01",
+      "checker_out": "b2sgMTUwMDAwMCB0b2tlbnMK",
+      "memory": 72855552,
+      "status": "AC",
+      "time": 0.123
+    },
+    {
+      "case": "short_period_02",
+      "checker_out": "b2sgMTUwMDAwMCB0b2tlbnMK",
+      "memory": 73379840,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "short_period_03",
+      "checker_out": "b2sgMTUwMDAwMCB0b2tlbnMK",
+      "memory": 73039872,
+      "status": "AC",
+      "time": 0.124
+    },
+    {
+      "case": "short_period_04",
+      "checker_out": "b2sgMTUwMDAwMCB0b2tlbnMK",
+      "memory": 73482240,
+      "status": "AC",
+      "time": 0.131
+    },
+    {
+      "case": "short_period_05",
+      "checker_out": "b2sgMTUwMDAwMCB0b2tlbnMK",
+      "memory": 72859648,
+      "status": "AC",
+      "time": 0.125
+    },
+    {
+      "case": "short_period_06",
+      "checker_out": "b2sgMTQ5OTk5NCB0b2tlbnMK",
+      "memory": 73400320,
+      "status": "AC",
+      "time": 0.132
+    },
+    {
+      "case": "short_period_07",
+      "checker_out": "b2sgMTQ5OTk5NCB0b2tlbnMK",
+      "memory": 73027584,
+      "status": "AC",
+      "time": 0.128
+    },
+    {
+      "case": "short_period_08",
+      "checker_out": "b2sgMTQ5OTk5NCB0b2tlbnMK",
+      "memory": 70500352,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "short_period_09",
+      "checker_out": "b2sgMTQ5OTk5NCB0b2tlbnMK",
+      "memory": 68141056,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "binary_00",
+      "checker_out": "b2sgNzg2NDI2IHRva2Vucwo=",
+      "memory": 37998592,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "binary_01",
+      "checker_out": "b2sgNzg2NDI2IHRva2Vucwo=",
+      "memory": 37986304,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "binary_02",
+      "checker_out": "b2sgNzg2NDI2IHRva2Vucwo=",
+      "memory": 37986304,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "binary_03",
+      "checker_out": "b2sgNzg2NDI2IHRva2Vucwo=",
+      "memory": 38146048,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "bad_failure_link_00",
+      "checker_out": "b2sgMTUwMDAwMCB0b2tlbnMK",
+      "memory": 72589312,
+      "status": "AC",
+      "time": 0.131
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTE2OTQzOSB0b2tlbnMK",
+      "memory": 55844864,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTM4OTEzOCB0b2tlbnMK",
+      "memory": 66412544,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "random_small_sigma_00",
+      "checker_out": "b2sgMTE2OTQzOSB0b2tlbnMK",
+      "memory": 54693888,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "random_small_sigma_01",
+      "checker_out": "b2sgMTM4OTEzOCB0b2tlbnMK",
+      "memory": 65015808,
+      "status": "AC",
+      "time": 0.114
+    }
+  ],
+  "overview": {
+    "id": 332793,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 73482240,
+    "problem_name": "palindromes_in_deque",
+    "problem_title": "Palindromes in Deque",
+    "status": "AC",
+    "submission_time": "2025-11-29T16:28:08.486854Z",
+    "time": 0.132
+  }
+}

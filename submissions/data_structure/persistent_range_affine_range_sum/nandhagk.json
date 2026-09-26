@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_less_query_types_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 198942720,
+      "status": "AC",
+      "time": 0.217
+    },
+    {
+      "case": "max_less_query_types_01",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 199213056,
+      "status": "AC",
+      "time": 0.229
+    },
+    {
+      "case": "max_less_query_types_02",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 9150464,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "max_less_query_types_03",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 199168000,
+      "status": "AC",
+      "time": 0.226
+    },
+    {
+      "case": "max_less_query_types_04",
+      "checker_out": "b2sgNTAxMDAgdG9rZW5zCg==",
+      "memory": 103813120,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "max_less_query_types_05",
+      "checker_out": "b2sgNDk5ODAgdG9rZW5zCg==",
+      "memory": 104095744,
+      "status": "AC",
+      "time": 0.135
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMzMxMjcgdG9rZW5zCg==",
+      "memory": 136318976,
+      "status": "AC",
+      "time": 0.167
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMzMyNDQgdG9rZW5zCg==",
+      "memory": 135815168,
+      "status": "AC",
+      "time": 0.171
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMzM0MDQgdG9rZW5zCg==",
+      "memory": 135364608,
+      "status": "AC",
+      "time": 0.169
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjU3MjMgdG9rZW5zCg==",
+      "memory": 84123648,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjYyOSB0b2tlbnMK",
+      "memory": 29442048,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjA3ODggdG9rZW5zCg==",
+      "memory": 78647296,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNDEyIHRva2Vucwo=",
+      "memory": 1036288,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNDE5IHRva2Vucwo=",
+      "memory": 1302528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzMyIHRva2Vucwo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMzQ3IHRva2Vucwo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMzIzIHRva2Vucwo=",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMzQwIHRva2Vucwo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMzI0IHRva2Vucwo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMzE2IHRva2Vucwo=",
+      "memory": 684032,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgMzQwIHRva2Vucwo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgMzQxIHRva2Vucwo=",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgMzI5IHRva2Vucwo=",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgMzMwIHRva2Vucwo=",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 331942,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 199213056,
+    "problem_name": "persistent_range_affine_range_sum",
+    "problem_title": "Persistent Range Affine Range Sum",
+    "status": "AC",
+    "submission_time": "2025-11-26T13:53:51.009474Z",
+    "time": 0.229,
+    "user_name": "nandhagk"
+  }
+}

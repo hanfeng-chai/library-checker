@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 86937600,
+      "status": "AC",
+      "time": 0.173
+    },
+    {
+      "case": "large_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 86917120,
+      "status": "AC",
+      "time": 0.174
+    },
+    {
+      "case": "large_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 86519808,
+      "status": "AC",
+      "time": 0.171
+    },
+    {
+      "case": "med_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 8015872,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "med_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7647232,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "med_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 9887744,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "mod1000000007_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 87048192,
+      "status": "AC",
+      "time": 0.172
+    },
+    {
+      "case": "mod1000000007_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 87040000,
+      "status": "AC",
+      "time": 0.171
+    },
+    {
+      "case": "mod2_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 2871296,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "mod2_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 2789376,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "mod3_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 2867200,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "mod3_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 2875392,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "mod998244353_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 87007232,
+      "status": "AC",
+      "time": 0.173
+    },
+    {
+      "case": "mod998244353_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 87072768,
+      "status": "AC",
+      "time": 0.173
+    },
+    {
+      "case": "mod998244353_maxi_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 90951680,
+      "status": "AC",
+      "time": 0.194
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3387392,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3395584,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 3391488,
+      "status": "AC",
+      "time": 0.018
+    }
+  ],
+  "overview": {
+    "id": 171539,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 90951680,
+    "problem_name": "binomial_coefficient_prime_mod",
+    "problem_title": "Binomial Coefficient (Prime Mod)",
+    "status": "AC",
+    "submission_time": "2023-11-13T03:44:41.687191Z",
+    "time": 0.194,
+    "user_name": "maspy"
+  }
+}

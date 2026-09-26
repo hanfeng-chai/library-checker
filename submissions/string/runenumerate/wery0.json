@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5115904,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5103616,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5115904,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5111808,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5107712,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 458752,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "fib_str_00",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 5677056,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "fib_str_01",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 4841472,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "fib_str_02",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 4706304,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "fib_str_03",
+      "checker_out": "b2sgMzMxMzM5IHRva2Vucwo=",
+      "memory": 6545408,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "fib_str_04",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 5341184,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjI0OTUgdG9rZW5zCg==",
+      "memory": 5214208,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjIxNzQgdG9rZW5zCg==",
+      "memory": 5111808,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjIzMTIgdG9rZW5zCg==",
+      "memory": 5337088,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjIxNTAgdG9rZW5zCg==",
+      "memory": 5115904,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjIwMjEgdG9rZW5zCg==",
+      "memory": 5107712,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4MjcgdG9rZW5zCg==",
+      "memory": 3792896,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTcxOTEgdG9rZW5zCg==",
+      "memory": 4321280,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjMxOSB0b2tlbnMK",
+      "memory": 2076672,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzMDAgdG9rZW5zCg==",
+      "memory": 4587520,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTYyNCB0b2tlbnMK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 191550,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6545408,
+    "problem_name": "runenumerate",
+    "problem_title": "Run Enumerate",
+    "status": "AC",
+    "submission_time": "2024-02-18T00:46:07.945493Z",
+    "time": 0.022,
+    "user_name": "wery0"
+  }
+}

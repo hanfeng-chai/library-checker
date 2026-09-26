@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 148467712,
+      "status": "AC",
+      "time": 0.494
+    },
+    {
+      "case": "large_cycle_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 148500480,
+      "status": "AC",
+      "time": 0.495
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 32669696,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 32677888,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 32940032,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 29589504,
+      "status": "AC",
+      "time": 0.139
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30527488,
+      "status": "AC",
+      "time": 0.076
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25395200,
+      "status": "AC",
+      "time": 0.162
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30056448,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28209152,
+      "status": "AC",
+      "time": 0.301
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28770304,
+      "status": "AC",
+      "time": 0.242
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30388224,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 26050560,
+      "status": "AC",
+      "time": 0.244
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28213248,
+      "status": "AC",
+      "time": 0.31
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 26120192,
+      "status": "AC",
+      "time": 0.266
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 218842,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 148500480,
+    "problem_name": "incremental_scc",
+    "problem_title": "Strongly Connected Components (Incremental)",
+    "status": "AC",
+    "submission_time": "2024-07-03T16:40:49.710363Z",
+    "time": 0.495,
+    "user_name": "Nachia"
+  }
+}

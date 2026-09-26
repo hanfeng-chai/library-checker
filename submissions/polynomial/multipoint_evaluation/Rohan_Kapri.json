@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEwMDAwMDAwIgo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTc3MDcgdG9rZW5zCg==",
+      "memory": 7356416,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk2OTEgdG9rZW5zCg==",
+      "memory": 7131136,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjAzIHRva2Vucwo=",
+      "memory": 21770240,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23080960,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 22953984,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "zero_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "issue_1287_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "issue_1287_cpp_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 22978560,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "issue_1287_cpp_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23109632,
+      "status": "AC",
+      "time": 0.042
+    }
+  ],
+  "overview": {
+    "id": 405992,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 23109632,
+    "problem_name": "multipoint_evaluation",
+    "problem_title": "Multipoint Evaluation",
+    "status": "AC",
+    "submission_time": "2026-09-25T05:52:14.313691Z",
+    "time": 0.05,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjU2MDg4Igo=",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "twos_00",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 5304320,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "twos_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 3166208,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "twos_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1593344,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "threes_00",
+      "checker_out": "b2sgMTg2NjI0IHRva2Vucwo=",
+      "memory": 3973120,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "threes_01",
+      "checker_out": "b2sgMTM5OTY4IHRva2Vucwo=",
+      "memory": 3067904,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "threes_02",
+      "checker_out": "b2sgMTg2NjI0IHRva2Vucwo=",
+      "memory": 3944448,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "dim1_00",
+      "checker_out": "b2sgMjYxODM2IHRva2Vucwo=",
+      "memory": 39886848,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "dim1_01",
+      "checker_out": "b2sgMjYxMzQxIHRva2Vucwo=",
+      "memory": 40124416,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "dim1_02",
+      "checker_out": "b2sgMjYxMjMxIHRva2Vucwo=",
+      "memory": 40120320,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "dim2_00",
+      "checker_out": "b2sgMjU1MzQwIHRva2Vucwo=",
+      "memory": 22360064,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "dim2_01",
+      "checker_out": "b2sgMjYyMDgzIHRva2Vucwo=",
+      "memory": 5619712,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "dim2_02",
+      "checker_out": "b2sgMjEzMzQ4IHRva2Vucwo=",
+      "memory": 12984320,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTUxMjAwIHRva2Vucwo=",
+      "memory": 3182592,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTgxNDQwIHRva2Vucwo=",
+      "memory": 3936256,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "k0_00",
+      "checker_out": "b2sgIjExNTIxMzUzNyIK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "k0_01",
+      "checker_out": "b2sgIjQwMjczMDc5MiIK",
+      "memory": 589824,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 405732,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 40124416,
+    "problem_name": "multivariate_convolution_cyclic",
+    "problem_title": "Multidimensional Convolution (Circular)",
+    "status": "AC",
+    "submission_time": "2026-09-24T07:51:01.120486Z",
+    "time": 0.117,
+    "user_name": "Rohan_Kapri"
+  }
+}

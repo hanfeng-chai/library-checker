@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "many_0_query_00",
+      "checker_out": "b2sgMTAzIHRva2Vucwo=",
+      "memory": 43372544,
+      "status": "AC",
+      "time": 0.331
+    },
+    {
+      "case": "many_0_query_01",
+      "checker_out": "b2sgOTggdG9rZW5zCg==",
+      "memory": 43159552,
+      "status": "AC",
+      "time": 0.326
+    },
+    {
+      "case": "many_1_query_00",
+      "checker_out": "b2sgOTk2NjAgdG9rZW5zCg==",
+      "memory": 23203840,
+      "status": "AC",
+      "time": 0.164
+    },
+    {
+      "case": "many_1_query_01",
+      "checker_out": "b2sgOTk3MDkgdG9rZW5zCg==",
+      "memory": 23040000,
+      "status": "AC",
+      "time": 0.174
+    },
+    {
+      "case": "many_2_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 33808384,
+      "status": "AC",
+      "time": 0.363
+    },
+    {
+      "case": "many_2_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 33804288,
+      "status": "AC",
+      "time": 0.364
+    },
+    {
+      "case": "many_3_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 33808384,
+      "status": "AC",
+      "time": 0.36
+    },
+    {
+      "case": "many_3_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 33800192,
+      "status": "AC",
+      "time": 0.354
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5NDIgdG9rZW5zCg==",
+      "memory": 33656832,
+      "status": "AC",
+      "time": 0.354
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUxNzUgdG9rZW5zCg==",
+      "memory": 33660928,
+      "status": "AC",
+      "time": 0.35
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjQ5NzIgdG9rZW5zCg==",
+      "memory": 33865728,
+      "status": "AC",
+      "time": 0.352
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTkzNzMgdG9rZW5zCg==",
+      "memory": 14807040,
+      "status": "AC",
+      "time": 0.163
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDg4OCB0b2tlbnMK",
+      "memory": 16617472,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTUxOTEgdG9rZW5zCg==",
+      "memory": 19410944,
+      "status": "AC",
+      "time": 0.185
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjQyIHRva2Vucwo=",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjM4IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjQ2IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjUxIHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjUzIHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "sort_only_short_00",
+      "checker_out": "b2sgMjQ5MjIgdG9rZW5zCg==",
+      "memory": 28450816,
+      "status": "AC",
+      "time": 0.177
+    },
+    {
+      "case": "sort_only_short_01",
+      "checker_out": "b2sgMjUxMTMgdG9rZW5zCg==",
+      "memory": 28401664,
+      "status": "AC",
+      "time": 0.181
+    }
+  ],
+  "overview": {
+    "id": 262459,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 43372544,
+    "problem_name": "point_set_range_sort_range_composite",
+    "problem_title": "Point Set Range Sort Range Composite",
+    "status": "AC",
+    "submission_time": "2025-01-19T18:05:10.971775Z",
+    "time": 0.364,
+    "user_name": "tonegawa"
+  }
+}

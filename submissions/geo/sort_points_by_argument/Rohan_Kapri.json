@@ -1,0 +1,164 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 7110656,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 7974912,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4059136,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10006528,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9994240,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 9973760,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "near_arg_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10006528,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "near_arg_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9981952,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "near_arg_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 9965568,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "near_arg_shuffle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10002432,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "near_arg_shuffle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9953280,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "near_arg_shuffle_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10022912,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "small_all_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "only_x_axis_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 9195520,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9482240,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 9957376,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "half_same_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 9973760,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "half_same_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9936896,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "half_same_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 9990144,
+      "status": "AC",
+      "time": 0.016
+    }
+  ],
+  "overview": {
+    "id": 406187,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 10022912,
+    "problem_name": "sort_points_by_argument",
+    "problem_title": "Sort Points by Argument",
+    "status": "AC",
+    "submission_time": "2026-09-26T04:55:49.803538Z",
+    "time": 0.024,
+    "user_name": "Rohan_Kapri"
+  }
+}

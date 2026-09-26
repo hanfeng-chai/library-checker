@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "middle_random_00",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3416064,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "middle_random_01",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3416064,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "middle_random_02",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3399680,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "middle_random_03",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3420160,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "middle_random_04",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 3198976,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6037504,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6053888,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6045696,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 6033408,
+      "status": "AC",
+      "time": 0.073
+    }
+  ],
+  "overview": {
+    "id": 406189,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6053888,
+    "problem_name": "count_points_in_triangle",
+    "problem_title": "Count Points in Triangles",
+    "status": "AC",
+    "submission_time": "2026-09-26T05:00:29.641917Z",
+    "time": 0.073,
+    "user_name": "Rohan_Kapri"
+  }
+}

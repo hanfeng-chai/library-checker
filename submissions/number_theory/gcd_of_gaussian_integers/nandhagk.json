@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1314816,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "fibonacci_like_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "fibonacci_like_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "large_gcd_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2117632,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "large_gcd_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2105344,
+      "status": "AC",
+      "time": 0.007
+    }
+  ],
+  "overview": {
+    "id": 403018,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 2117632,
+    "problem_name": "gcd_of_gaussian_integers",
+    "problem_title": "Gcd of Gaussian Integers",
+    "status": "AC",
+    "submission_time": "2026-09-16T20:01:30.796372Z",
+    "time": 0.01,
+    "user_name": "nandhagk"
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "complete_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10260480,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 11223040,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "cycle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 11227136,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10444800,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9654272,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10604544,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 11358208,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 10526720,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 9916416,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 10440704,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 11280384,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "mid_no_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1150976,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "mid_no_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1212416,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "mid_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1282048,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "mid_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1241088,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "mid_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1257472,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "mid_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1171456,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "mid_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1269760,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 11358208,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1077248,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1073152,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "star_plus_one_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10960896,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "triangle_path_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10964992,
+      "status": "AC",
+      "time": 0.026
+    }
+  ],
+  "overview": {
+    "id": 262729,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 11358208,
+    "problem_name": "st_numbering",
+    "problem_title": "st-Numbering",
+    "status": "AC",
+    "submission_time": "2025-01-21T14:37:17.614762Z",
+    "time": 0.034,
+    "user_name": "Nachia"
+  }
+}

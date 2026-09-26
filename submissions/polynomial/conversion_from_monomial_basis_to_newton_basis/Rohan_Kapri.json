@@ -1,0 +1,122 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 704512,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjExOTU1MTQyMiIK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgOTQ4MDggdG9rZW5zCg==",
+      "memory": 18640896,
+      "status": "AC",
+      "time": 0.128
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTAxNjU2IHRva2Vucwo=",
+      "memory": 19918848,
+      "status": "AC",
+      "time": 0.137
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgOTgxNyB0b2tlbnMK",
+      "memory": 2560000,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23703552,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23883776,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23703552,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "near_65536_00",
+      "checker_out": "b2sgNjU1MzQgdG9rZW5zCg==",
+      "memory": 11640832,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "near_65536_01",
+      "checker_out": "b2sgNjU1MzUgdG9rZW5zCg==",
+      "memory": 11804672,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "near_65536_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 11636736,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "near_65536_03",
+      "checker_out": "b2sgNjU1MzcgdG9rZW5zCg==",
+      "memory": 14979072,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "near_65536_04",
+      "checker_out": "b2sgNjU1MzggdG9rZW5zCg==",
+      "memory": 14970880,
+      "status": "AC",
+      "time": 0.107
+    }
+  ],
+  "overview": {
+    "id": 406002,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 23883776,
+    "problem_name": "conversion_from_monomial_basis_to_newton_basis",
+    "problem_title": "Conversion from Monomial Basis to Newton Basis",
+    "status": "AC",
+    "submission_time": "2026-09-25T06:05:29.787451Z",
+    "time": 0.16,
+    "user_name": "Rohan_Kapri"
+  }
+}

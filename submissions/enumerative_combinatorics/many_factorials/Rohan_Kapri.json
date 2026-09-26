@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1343488,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1478656,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "near_max_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1380352,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "near_max_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1630208,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "near_half_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1867776,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "near_half_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 2367488,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "many_bits_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 2367488,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "many_bits_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1331200,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "many_bits_02",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 2400256,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "many_bits_03",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 2404352,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "many_bits_04",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 2379776,
+      "status": "AC",
+      "time": 0.005
+    }
+  ],
+  "overview": {
+    "id": 406019,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 2404352,
+    "problem_name": "many_factorials",
+    "problem_title": "Many Factorials",
+    "status": "AC",
+    "submission_time": "2026-09-25T06:36:15.326125Z",
+    "time": 0.015,
+    "user_name": "Rohan_Kapri"
+  }
+}

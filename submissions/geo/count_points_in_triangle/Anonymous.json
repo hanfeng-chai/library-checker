@@ -1,0 +1,86 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7958528,
+      "status": "AC",
+      "time": 0.171
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7974912,
+      "status": "AC",
+      "time": 0.168
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7634944,
+      "status": "AC",
+      "time": 0.17
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7712768,
+      "status": "AC",
+      "time": 0.17
+    },
+    {
+      "case": "middle_random_00",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 5148672,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "middle_random_01",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 5083136,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "middle_random_02",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 5083136,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "middle_random_03",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 5095424,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "middle_random_04",
+      "checker_out": "b2sgODAwMDAgdG9rZW5zCg==",
+      "memory": 5091328,
+      "status": "AC",
+      "time": 0.031
+    }
+  ],
+  "overview": {
+    "id": 269787,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 7974912,
+    "problem_name": "count_points_in_triangle",
+    "problem_title": "Count Points in Triangles",
+    "status": "AC",
+    "submission_time": "2025-02-25T15:13:12.208333Z",
+    "time": 0.171
+  }
+}

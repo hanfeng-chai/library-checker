@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMjUgdG9rZW5zCg==",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hand_00",
+      "checker_out": "b2sgMTcwIHRva2Vucwo=",
+      "memory": 700416,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hand_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 659456,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_ancestor_no_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 2080768,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "random_ancestor_yes_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3911680,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_lca_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 2080768,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_range_00",
+      "checker_out": "b2sgNDAwMDAwIHRva2Vucwo=",
+      "memory": 6012928,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_encode_00",
+      "checker_out": "b2sgMzUwNzQ0MiB0b2tlbnMK",
+      "memory": 9158656,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "random_decode_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 3907584,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "small_ancestor_00",
+      "checker_out": "b2sgMTIyNzUyIHRva2Vucwo=",
+      "memory": 2076672,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_lca_00",
+      "checker_out": "b2sgMTY3MDQyIHRva2Vucwo=",
+      "memory": 2080768,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_range_00",
+      "checker_out": "b2sgMzk5NDI0IHRva2Vucwo=",
+      "memory": 3960832,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_encode_00",
+      "checker_out": "b2sgMTEyNTgxMCB0b2tlbnMK",
+      "memory": 4960256,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_decode_00",
+      "checker_out": "b2sgMTk5NzEyIHRva2Vucwo=",
+      "memory": 3330048,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "edge_lca_00",
+      "checker_out": "b2sgMTAwMzUyIHRva2Vucwo=",
+      "memory": 2031616,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "edge_range_00",
+      "checker_out": "b2sgMjI5Mzc2IHRva2Vucwo=",
+      "memory": 3944448,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "edge_encode_00",
+      "checker_out": "b2sgOTA5MzEyIHRva2Vucwo=",
+      "memory": 4759552,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "edge_decode_00",
+      "checker_out": "b2sgMTE0Njg4IHRva2Vucwo=",
+      "memory": 2596864,
+      "status": "AC",
+      "time": 0.012
+    }
+  ],
+  "overview": {
+    "id": 327748,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 9158656,
+    "problem_name": "stern_brocot_tree",
+    "problem_title": "Stern\u2013Brocot Tree",
+    "status": "AC",
+    "submission_time": "2025-11-10T08:49:58.481195Z",
+    "time": 0.036,
+    "user_name": "fhdqwq"
+  }
+}

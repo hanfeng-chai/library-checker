@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 552960,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgODIxODQ2IHRva2Vucwo=",
+      "memory": 32788480,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgODI1ODE0IHRva2Vucwo=",
+      "memory": 35291136,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNzY0Njk0IHRva2Vucwo=",
+      "memory": 23080960,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 42278912,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 41476096,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 42287104,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "small_a_x_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 38604800,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "small_a_x_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 38576128,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "small_a_x_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 38572032,
+      "status": "AC",
+      "time": 0.066
+    }
+  ],
+  "overview": {
+    "id": 393944,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 42287104,
+    "problem_name": "static_range_sum_with_upper_bound",
+    "problem_title": "Static Range Sum with Upper Bound",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:21:28.047019Z",
+    "time": 0.081,
+    "user_name": "chaihf"
+  }
+}

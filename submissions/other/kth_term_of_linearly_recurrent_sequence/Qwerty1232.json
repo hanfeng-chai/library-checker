@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjgiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjU2ODA2OTY3NiIK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ4MjQzNDIxMCIK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjMwODMyMjgxOCIK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQ2MzM5Njg5MyIK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjc2OTY0NzM5NSIK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgIjE4OTMwNTAxMCIK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgIjg4MzgxNDg1NiIK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgIjI0MzkyNzAzNSIK",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgIjI2ODE5NjY2MiIK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgIjM3MDYyMDUwNCIK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjE0MTc2MjU1MiIK",
+      "memory": 9027584,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjQxMTU1ODc3NyIK",
+      "memory": 9121792,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjYxODYwOTAyNSIK",
+      "memory": 9125888,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "near_65536_00",
+      "checker_out": "b2sgIjMxODYwMjE3OSIK",
+      "memory": 6479872,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "near_65536_01",
+      "checker_out": "b2sgIjY1NzI2NTc5NiIK",
+      "memory": 8482816,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "near_65536_02",
+      "checker_out": "b2sgIjE1OTEwOTEyMiIK",
+      "memory": 8482816,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjY4OTMyMDY1MyIK",
+      "memory": 2580480,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjI5NTUxNzIzMyIK",
+      "memory": 8441856,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjEwNTczOTI3MiIK",
+      "memory": 6008832,
+      "status": "AC",
+      "time": 0.06
+    }
+  ],
+  "overview": {
+    "id": 307762,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 9125888,
+    "problem_name": "kth_term_of_linearly_recurrent_sequence",
+    "problem_title": "Kth term of Linearly Recurrent Sequence",
+    "status": "AC",
+    "submission_time": "2025-08-15T22:22:13.20142Z",
+    "time": 0.117,
+    "user_name": "Qwerty1232"
+  }
+}

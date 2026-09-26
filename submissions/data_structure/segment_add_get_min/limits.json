@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 782336,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQzOTkgdG9rZW5zCg==",
+      "memory": 19480576,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQzNzIgdG9rZW5zCg==",
+      "memory": 20283392,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjAxMDUgdG9rZW5zCg==",
+      "memory": 12455936,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMzM1IHRva2Vucwo=",
+      "memory": 24788992,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk3NDggdG9rZW5zCg==",
+      "memory": 24813568,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMTQ4IHRva2Vucwo=",
+      "memory": 24776704,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "all_twice_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 31260672,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "no_output_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 23842816,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "all_intersect_00",
+      "checker_out": "b2sgIi01MDAwMDAwMDAiCg==",
+      "memory": 23793664,
+      "status": "AC",
+      "time": 0.029
+    }
+  ],
+  "overview": {
+    "id": 377140,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 31260672,
+    "problem_name": "segment_add_get_min",
+    "problem_title": "Segment Add Get Min",
+    "status": "AC",
+    "submission_time": "2026-06-05T12:20:47.089963Z",
+    "time": 0.064,
+    "user_name": "limits"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "near_half_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "near_half_01",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "near_max_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "near_max_01",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 243233,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 745472,
+    "problem_name": "factorial",
+    "problem_title": "Factorial",
+    "status": "AC",
+    "submission_time": "2024-10-18T03:44:20.534794Z",
+    "time": 0.001,
+    "user_name": "cmk666"
+  }
+}

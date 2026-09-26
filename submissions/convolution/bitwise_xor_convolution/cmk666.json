@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgMzI3NjggdG9rZW5zCg==",
+      "memory": 995328,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1261568,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 5455872,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19750912,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19750912,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 19750912,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "tiny_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 243969,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 19750912,
+    "problem_name": "bitwise_xor_convolution",
+    "problem_title": "Bitwise Xor Convolution",
+    "status": "AC",
+    "submission_time": "2024-10-21T08:11:36.035249Z",
+    "time": 0.038,
+    "user_name": "cmk666"
+  }
+}

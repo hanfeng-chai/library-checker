@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgMTIyOTEgdG9rZW5zCg==",
+      "memory": 872448,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjAwMjk3IHRva2Vucwo=",
+      "memory": 6463488,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjAwODk2IHRva2Vucwo=",
+      "memory": 6438912,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_sparse_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10596352,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_sparse_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10219520,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_all0_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 5668864,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_all0_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 5726208,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "max_all1_00",
+      "checker_out": "b2sgNzUwMjcyIHRva2Vucwo=",
+      "memory": 7540736,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_all1_01",
+      "checker_out": "b2sgNzUwMjMyIHRva2Vucwo=",
+      "memory": 7581696,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_query0_1_2_00",
+      "checker_out": "b2sgMzM0MjM1IHRva2Vucwo=",
+      "memory": 3903488,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_query0_1_2_01",
+      "checker_out": "b2sgMzMzNjYxIHRva2Vucwo=",
+      "memory": 3911680,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNjAxMDggdG9rZW5zCg==",
+      "memory": 2875392,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTk4MjQgdG9rZW5zCg==",
+      "memory": 2867200,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNjAwOTAgdG9rZW5zCg==",
+      "memory": 2867200,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjAxMTIgdG9rZW5zCg==",
+      "memory": 2863104,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTk5ODYgdG9rZW5zCg==",
+      "memory": 2867200,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgNjAwNTcgdG9rZW5zCg==",
+      "memory": 2863104,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNTk4NzYgdG9rZW5zCg==",
+      "memory": 2895872,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgNjAwODMgdG9rZW5zCg==",
+      "memory": 2904064,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNjAwNjggdG9rZW5zCg==",
+      "memory": 2863104,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgNTk5MjAgdG9rZW5zCg==",
+      "memory": 3133440,
+      "status": "AC",
+      "time": 0.003
+    }
+  ],
+  "overview": {
+    "id": 362492,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 10596352,
+    "problem_name": "predecessor_problem",
+    "problem_title": "Predecessor Problem",
+    "status": "AC",
+    "submission_time": "2026-03-26T12:29:32.12373Z",
+    "time": 0.023,
+    "user_name": "IceKylin"
+  }
+}

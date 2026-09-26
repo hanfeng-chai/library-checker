@@ -1,0 +1,261 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6856704,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4849664,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6852608,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6828032,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6828032,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 6868992,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 6823936,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 6868992,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 6316032,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 6868992,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 6856704,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_dense_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6877184,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_dense_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6864896,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_dense_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6828032,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_dense_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 6873088,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_dense_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 6864896,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_dag_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6864896,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_dag_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6864896,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_dag_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6856704,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_dag_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 6750208,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_dag_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 6836224,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_dag_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_dag_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 6868992,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_dag_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 6823936,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_dag_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 6852608,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_dag_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 6864896,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_dag_dense_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6873088,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_dag_dense_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_dag_dense_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_dag_dense_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 6868992,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_dag_dense_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 6836224,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "long_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6934528,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "long_cycle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 7393280,
+      "status": "AC",
+      "time": 0.025
+    }
+  ],
+  "overview": {
+    "id": 399512,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 7393280,
+    "problem_name": "cycle_detection",
+    "problem_title": "Cycle Detection (Directed)",
+    "status": "AC",
+    "submission_time": "2026-09-04T09:26:16.62366Z",
+    "time": 0.025
+  }
+}

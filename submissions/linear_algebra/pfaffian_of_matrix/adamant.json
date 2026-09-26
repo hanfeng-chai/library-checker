@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjgiCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjcxODYwOTU0Igo=",
+      "memory": 2895872,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjI4NDk1NjgzMSIK",
+      "memory": 3416064,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjI2NTQyNzE0NSIK",
+      "memory": 1339392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjIwMDM2MTIzOCIK",
+      "memory": 3166208,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjczMDg3ODk3NyIK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjMzNzA0NzU2MSIK",
+      "memory": 6602752,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjU4OTcxNTQ4Igo=",
+      "memory": 6643712,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjY0OTA5NzM2NiIK",
+      "memory": 6594560,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjEyNzQ1NTUxMyIK",
+      "memory": 6316032,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjkyNDMwMDczNiIK",
+      "memory": 6336512,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "sparse_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 5808128,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "sparse_01",
+      "checker_out": "b2sgIjYxMDQ3OTY0NyIK",
+      "memory": 6578176,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "sparse_02",
+      "checker_out": "b2sgIjExNTU1MTc5MCIK",
+      "memory": 6569984,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "sparse_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6332416,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "sparse_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6561792,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "sparse_05",
+      "checker_out": "b2sgIjI0ODM3ODUiCg==",
+      "memory": 6602752,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "sparse_06",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6561792,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "sparse_07",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6602752,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "sparse_08",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6574080,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "sparse_09",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 4657152,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjI4NjI5NjU0MyIK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjIxNTcwNTI4Igo=",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjI2NTQyNzE0NSIK",
+      "memory": 1318912,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjI4Njk2MzcwNiIK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjczMDg3ODk3NyIK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 405510,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6643712,
+    "problem_name": "pfaffian_of_matrix",
+    "problem_title": "Pfaffian of Matrix",
+    "status": "AC",
+    "submission_time": "2026-09-23T12:25:35.129901Z",
+    "time": 0.014,
+    "user_name": "adamant"
+  }
+}

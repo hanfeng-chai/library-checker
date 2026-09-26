@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 6938624,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 5042176,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 7122944,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "100_00",
+      "checker_out": "b2sgMTAxIHRva2Vucwo=",
+      "memory": 7090176,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "1000_00",
+      "checker_out": "b2sgMTAwMSB0b2tlbnMK",
+      "memory": 7086080,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "10000_00",
+      "checker_out": "b2sgMTAwMDEgdG9rZW5zCg==",
+      "memory": 8146944,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "100000_00",
+      "checker_out": "b2sgMTAwMDAxIHRva2Vucwo=",
+      "memory": 23003136,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "200000_00",
+      "checker_out": "b2sgMjAwMDAxIHRva2Vucwo=",
+      "memory": 29986816,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "300000_00",
+      "checker_out": "b2sgMzAwMDAxIHRva2Vucwo=",
+      "memory": 51630080,
+      "status": "AC",
+      "time": 0.09
+    },
+    {
+      "case": "400000_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 53096448,
+      "status": "AC",
+      "time": 0.094
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 54247424,
+      "status": "AC",
+      "time": 0.107
+    }
+  ],
+  "overview": {
+    "id": 400319,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 54247424,
+    "problem_name": "bell_number",
+    "problem_title": "Bell Number",
+    "status": "AC",
+    "submission_time": "2026-09-07T09:25:56.345144Z",
+    "time": 0.107,
+    "user_name": "adamant"
+  }
+}

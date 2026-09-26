@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTE1NjUgdG9rZW5zCg==",
+      "memory": 3678208,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk2OTEgdG9rZW5zCg==",
+      "memory": 4771840,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgODI0NSB0b2tlbnMK",
+      "memory": 3682304,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 6688768,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzM1ODEgdG9rZW5zCg==",
+      "memory": 8749056,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "abnormal_random_00",
+      "checker_out": "b2sgOTU5IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "abnormal_random_01",
+      "checker_out": "b2sgOTYzIHRva2Vucwo=",
+      "memory": 1085440,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "abnormal_random_02",
+      "checker_out": "b2sgOTcwIHRva2Vucwo=",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "abnormal_random_03",
+      "checker_out": "b2sgOTc1IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "abnormal_random_04",
+      "checker_out": "b2sgOTUzIHRva2Vucwo=",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAgdG9rZW5zCg==",
+      "memory": 9957376,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAgdG9rZW5zCg==",
+      "memory": 9949184,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAgdG9rZW5zCg==",
+      "memory": 9932800,
+      "status": "AC",
+      "time": 0.097
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNTAwMDAgdG9rZW5zCg==",
+      "memory": 9826304,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNTAwMDAgdG9rZW5zCg==",
+      "memory": 10096640,
+      "status": "AC",
+      "time": 0.104
+    }
+  ],
+  "overview": {
+    "id": 406000,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 10096640,
+    "problem_name": "inv_of_polynomials",
+    "problem_title": "Inv of Polynomials",
+    "status": "AC",
+    "submission_time": "2026-09-25T06:03:11.537283Z",
+    "time": 0.104,
+    "user_name": "Rohan_Kapri"
+  }
+}

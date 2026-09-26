@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "euler_tour_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10960896,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "euler_tour_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 10989568,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "euler_tour_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10989568,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "euler_tour_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 10473472,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "many_same_vertex_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 12828672,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "many_same_vertex_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13344768,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "many_same_vertex_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 13131776,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 5873664,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5251072,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 7708672,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_walk_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10731520,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_walk_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 10493952,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_walk_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 12906496,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "mid_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "mid_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "mid_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "mid_random_walk_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2678784,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "mid_random_walk_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2596864,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "mid_random_walk_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2609152,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "small_random_walk_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1773568,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_random_walk_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1839104,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_random_walk_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1818624,
+      "status": "AC",
+      "time": 0.009
+    }
+  ],
+  "overview": {
+    "id": 286968,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 13344768,
+    "problem_name": "eulerian_trail_undirected",
+    "problem_title": "Eulerian Trail (Undirected)",
+    "status": "AC",
+    "submission_time": "2025-05-19T05:31:02.972595Z",
+    "time": 0.029,
+    "user_name": "Kiffaz11"
+  }
+}

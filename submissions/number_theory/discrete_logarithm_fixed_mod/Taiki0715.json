@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 7376896,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTUgdG9rZW5zCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgOTYzMjQ5IHRva2Vucwo=",
+      "memory": 13156352,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTUyNzY4IHRva2Vucwo=",
+      "memory": 15515648,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzU3Nzc1IHRva2Vucwo=",
+      "memory": 9744384,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzYzNTcxIHRva2Vucwo=",
+      "memory": 10264576,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzUxMzQ4IHRva2Vucwo=",
+      "memory": 4579328,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17354752,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17416192,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17580032,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17575936,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17571840,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "big_safe_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17580032,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "big_safe_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17567744,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "big_safe_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17575936,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "big_safe_random_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17362944,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "big_safe_random_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17551360,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "big_safe_random_g2_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17584128,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "big_safe_random_g2_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17321984,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "big_safe_random_g2_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17346560,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "big_safe_random_g2_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17580032,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "big_safe_random_g2_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 17362944,
+      "status": "AC",
+      "time": 0.101
+    }
+  ],
+  "overview": {
+    "id": 348836,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 17584128,
+    "problem_name": "discrete_logarithm_fixed_mod",
+    "problem_title": "Discrete Logarithm (Fixed Mod)",
+    "status": "AC",
+    "submission_time": "2026-01-29T16:28:11.140834Z",
+    "time": 0.11,
+    "user_name": "Taiki0715"
+  }
+}

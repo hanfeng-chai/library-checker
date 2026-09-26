@@ -1,0 +1,128 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgIjM4OTgxMyIK",
+      "memory": 2572288,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgIjQ2MzA0NiIK",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjExIgo=",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjI1MSIK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "mini_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "narrow_max_00",
+      "checker_out": "b2sgIjgyNTYwMTM4MiIK",
+      "memory": 7032832,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "narrow_max_01",
+      "checker_out": "b2sgIjI0MzQyMTA5OCIK",
+      "memory": 7028736,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "narrow_random_00",
+      "checker_out": "b2sgIjM0NTUzMTY4MyIK",
+      "memory": 6504448,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "narrow_random_01",
+      "checker_out": "b2sgIjIwMjMzNTgyIgo=",
+      "memory": 6918144,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgIjMwIgo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgIjU5Igo=",
+      "memory": 487424,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgIjE0MyIK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "wide_max_00",
+      "checker_out": "b2sgIjQ1OTM4ODI0MSIK",
+      "memory": 7028736,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "wide_max_01",
+      "checker_out": "b2sgIjc3NDMwNTkwOCIK",
+      "memory": 7032832,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "wide_random_00",
+      "checker_out": "b2sgIjM0NjUyNjMxNyIK",
+      "memory": 6508544,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "wide_random_01",
+      "checker_out": "b2sgIjExMTAyMjIxNiIK",
+      "memory": 7032832,
+      "status": "AC",
+      "time": 0.015
+    }
+  ],
+  "overview": {
+    "id": 97283,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 7032832,
+    "problem_name": "number_of_subsequences",
+    "problem_title": "Number of Subsequences ",
+    "status": "AC",
+    "time": 0.019,
+    "user_name": "MtSaka"
+  }
+}

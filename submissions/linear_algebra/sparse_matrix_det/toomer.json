@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 417792,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack2_00",
+      "checker_out": "b2sgIjEwMDEwODU0OCIK",
+      "memory": 1331200,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 622592,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjgyOTM1ODk4MyIK",
+      "memory": 1085440,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjY2MDk0ODM1MSIK",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1118208,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1363968,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1077248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIjIxODYxMzc1NSIK",
+      "memory": 1048576,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIjQ4ODI1MTM1MiIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgIjYwNzMxNjIwOCIK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgIjE1MDQ3NzU0MiIK",
+      "memory": 1286144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgIjU4NzIzMDQwNyIK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_plus_random_00",
+      "checker_out": "b2sgIjIyNzY1Nzc4OCIK",
+      "memory": 3182592,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "perm_plus_random_01",
+      "checker_out": "b2sgIjg0NDM4NDM5NCIK",
+      "memory": 2924544,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "perm_plus_random_02",
+      "checker_out": "b2sgIjgxNzAyMjY1NSIK",
+      "memory": 3289088,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "perm_plus_random_03",
+      "checker_out": "b2sgIjg3NzA3Mjg2Igo=",
+      "memory": 3158016,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "perm_plus_random_04",
+      "checker_out": "b2sgIjI0MzkyNzE0NyIK",
+      "memory": 3411968,
+      "status": "AC",
+      "time": 0.049
+    }
+  ],
+  "overview": {
+    "id": 404068,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 3411968,
+    "problem_name": "sparse_matrix_det",
+    "problem_title": "Determinant of Sparse Matrix",
+    "status": "AC",
+    "submission_time": "2026-09-20T02:48:46.864429Z",
+    "time": 0.049,
+    "user_name": "toomer"
+  }
+}

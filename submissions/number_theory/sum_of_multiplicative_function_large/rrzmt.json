@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjE4MTgwNCIK",
+      "memory": 704512,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjMxNDEyMDc1NyIK",
+      "memory": 52432896,
+      "status": "AC",
+      "time": 8.543
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTAwMDAgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.144
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjI1NzQ1ODMxNSIK",
+      "memory": 37584896,
+      "status": "AC",
+      "time": 5.577
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjE4NTQyNzc5MyIK",
+      "memory": 41521152,
+      "status": "AC",
+      "time": 6.192
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjExNDI2Mzk1NyIK",
+      "memory": 52441088,
+      "status": "AC",
+      "time": 8.545
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjc3NDU2MDczIgo=",
+      "memory": 52432896,
+      "status": "AC",
+      "time": 8.551
+    },
+    {
+      "case": "boundaryA_00",
+      "checker_out": "b2sgIjI0ODU3MTY2MCIK",
+      "memory": 37584896,
+      "status": "AC",
+      "time": 5.49
+    },
+    {
+      "case": "boundaryA_01",
+      "checker_out": "b2sgIjI5MjExMTc4Igo=",
+      "memory": 41259008,
+      "status": "AC",
+      "time": 6.26
+    },
+    {
+      "case": "boundaryA_02",
+      "checker_out": "b2sgIjQ2NzEwODI5OCIK",
+      "memory": 52322304,
+      "status": "AC",
+      "time": 8.518
+    },
+    {
+      "case": "boundaryB_00",
+      "checker_out": "b2sgIjE2MzIzMjA5MSIK",
+      "memory": 37588992,
+      "status": "AC",
+      "time": 5.489
+    },
+    {
+      "case": "boundaryB_01",
+      "checker_out": "b2sgIjE4NzIxMTU5MCIK",
+      "memory": 41299968,
+      "status": "AC",
+      "time": 6.179
+    },
+    {
+      "case": "boundaryB_02",
+      "checker_out": "b2sgIjQ0Mzg5Njk1OSIK",
+      "memory": 52322304,
+      "status": "AC",
+      "time": 8.504
+    },
+    {
+      "case": "hack_wrong_zky_method_00",
+      "checker_out": "b2sgNDg2IHRva2Vucwo=",
+      "memory": 880640,
+      "status": "AC",
+      "time": 0.229
+    },
+    {
+      "case": "hack_wrong_zky_method_01",
+      "checker_out": "b2sgMzUxIHRva2Vucwo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.215
+    },
+    {
+      "case": "hack_wrong_zky_method_02",
+      "checker_out": "b2sgMzMzIHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.151
+    },
+    {
+      "case": "hack_wrong_zky_method_03",
+      "checker_out": "b2sgIjQwNjM5OTU3MiIK",
+      "memory": 52424704,
+      "status": "AC",
+      "time": 8.458
+    },
+    {
+      "case": "hack_wrong_zky_method_04",
+      "checker_out": "b2sgIjM1ODQ2NDMyOSIK",
+      "memory": 52432896,
+      "status": "AC",
+      "time": 8.534
+    },
+    {
+      "case": "hack_wrong_zky_method_05",
+      "checker_out": "b2sgIjExMDYzNjA1NiIK",
+      "memory": 51109888,
+      "status": "AC",
+      "time": 8.081
+    }
+  ],
+  "overview": {
+    "id": 360331,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 52441088,
+    "problem_name": "sum_of_multiplicative_function_large",
+    "problem_title": "Sum of Multiplicative Function(Large)",
+    "status": "AC",
+    "submission_time": "2026-03-17T03:00:46.198812Z",
+    "time": 8.551,
+    "user_name": "rrzmt"
+  }
+}

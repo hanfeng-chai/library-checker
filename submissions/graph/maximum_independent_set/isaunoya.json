@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDQgdmVydGV4ZXMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0s6IDMgdmVydGV4ZXMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IDUgdmVydGV4ZXMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IDMgdmVydGV4ZXMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IDIxIHZlcnRleGVzCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0s6IDEgdmVydGV4ZXMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0s6IDggdmVydGV4ZXMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IDMgdmVydGV4ZXMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IDExIHZlcnRleGVzCg==",
+      "memory": 655360,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0s6IDE5IHZlcnRleGVzCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0s6IDExIHZlcnRleGVzCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0s6IDUgdmVydGV4ZXMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack0_00",
+      "checker_out": "b2sgT0s6IDMwIHZlcnRleGVzCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "handmade_00",
+      "checker_out": "b2sgT0s6IDQgdmVydGV4ZXMK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "one_two_00",
+      "checker_out": "b2sgT0s6IDE0IHZlcnRleGVzCg==",
+      "memory": 528384,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "many_maximals_00",
+      "checker_out": "b2sgT0s6IDEzIHZlcnRleGVzCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 392682,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 839680,
+    "problem_name": "maximum_independent_set",
+    "problem_title": "Maximum Independent Set",
+    "status": "AC",
+    "submission_time": "2026-08-13T14:26:56.190827Z",
+    "time": 0.001,
+    "user_name": "isaunoya"
+  }
+}

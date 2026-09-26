@@ -1,0 +1,220 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 696320,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_sparse_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13615104,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "max_sparse_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13643776,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_sparse_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 13742080,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "sparse_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 8683520,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "sparse_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 9314304,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "sparse_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 8503296,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_star_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10731520,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_star_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 10735616,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_dense_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 8761344,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_dense_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 8896512,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_dense_long_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 8908800,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_dense_zero_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 8908800,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 15159296,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 15052800,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "almost_line_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 14917632,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 24080384,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "grid_swirl_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14893056,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "grid_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 9687040,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "wrong_dijkstra_killer_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 17027072,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "wrong_dijkstra_killer_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 19533824,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "spfa_killer_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 17272832,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "wrong_dijkstra_handmade_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 602112,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 373581,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24080384,
+    "problem_name": "shortest_path",
+    "problem_title": "Shortest Path",
+    "status": "AC",
+    "submission_time": "2026-05-20T02:14:05.796036Z",
+    "time": 0.061,
+    "user_name": "sigma"
+  }
+}

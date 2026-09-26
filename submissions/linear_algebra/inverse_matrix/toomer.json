@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzI3NjEgdG9rZW5zCg==",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMzkyMDQgdG9rZW5zCg==",
+      "memory": 1650688,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNzc0NCB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzcyNDkgdG9rZW5zCg==",
+      "memory": 1740800,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDAwIHRva2Vucwo=",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 7319552,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 8073216,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 8065024,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 8155136,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjUwMDAwIHRva2Vucwo=",
+      "memory": 8192000,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "lowrank_max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4616192,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "lowrank_max_random_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 3735552,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "lowrank_max_random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4759552,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "lowrank_max_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 3719168,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "lowrank_max_random_04",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 4677632,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgMjQ0MDM2IHRva2Vucwo=",
+      "memory": 3710976,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgMjQ1MDI1IHRva2Vucwo=",
+      "memory": 3743744,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgMjQ3MDA5IHRva2Vucwo=",
+      "memory": 4132864,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgMjQwMTAwIHRva2Vucwo=",
+      "memory": 3600384,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgMjQzMDQ5IHRva2Vucwo=",
+      "memory": 4198400,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "anti55588_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "signed_overflow_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "unsigned_overflow_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 404070,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 8192000,
+    "problem_name": "inverse_matrix",
+    "problem_title": "Inverse Matrix",
+    "status": "AC",
+    "submission_time": "2026-09-20T02:54:18.611155Z",
+    "time": 0.018,
+    "user_name": "toomer"
+  }
+}

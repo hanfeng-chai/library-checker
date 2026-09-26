@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 651264,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgIjgiCg==",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 598016,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 462848,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjQ1Njg3MDE5OCIK",
+      "memory": 1085440,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjU3NTMzMDI3MiIK",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjgyNTI5NDQzMSIK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjQ2OTk0ODQ4NiIK",
+      "memory": 1355776,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjI1MTc3NDEyMyIK",
+      "memory": 851968,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjU2MDU4ODczOCIK",
+      "memory": 4796416,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjIwMzA3NDk4OCIK",
+      "memory": 5017600,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjIzNjg5MTA1OSIK",
+      "memory": 5001216,
+      "status": "AC",
+      "time": 0.015
+    }
+  ],
+  "overview": {
+    "id": 405011,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 5017600,
+    "problem_name": "counting_spanning_tree_directed",
+    "problem_title": "Counting Spanning Trees (Directed)",
+    "status": "AC",
+    "submission_time": "2026-09-22T07:45:55.737631Z",
+    "time": 0.015,
+    "user_name": "Rohan_Kapri"
+  }
+}

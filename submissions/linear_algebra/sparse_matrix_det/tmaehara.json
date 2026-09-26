@@ -1,0 +1,184 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 589824,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack2_00",
+      "checker_out": "b2sgIjEwMDEwODU0OCIK",
+      "memory": 942080,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1024000,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1044480,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1220608,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1052672,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIjIxODYxMzc1NSIK",
+      "memory": 1146880,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIjQ4ODI1MTM1MiIK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgIjYwNzMxNjIwOCIK",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgIjE1MDQ3NzU0MiIK",
+      "memory": 1024000,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgIjU4NzIzMDQwNyIK",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "perm_plus_random_00",
+      "checker_out": "b2sgIjIyNzY1Nzc4OCIK",
+      "memory": 4186112,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "perm_plus_random_01",
+      "checker_out": "b2sgIjg0NDM4NDM5NCIK",
+      "memory": 4194304,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "perm_plus_random_02",
+      "checker_out": "b2sgIjgxNzAyMjY1NSIK",
+      "memory": 4456448,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "perm_plus_random_03",
+      "checker_out": "b2sgIjg3NzA3Mjg2Igo=",
+      "memory": 4399104,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "perm_plus_random_04",
+      "checker_out": "b2sgIjI0MzkyNzE0NyIK",
+      "memory": 4829184,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjgyOTM1ODk4MyIK",
+      "memory": 1290240,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjY2MDk0ODM1MSIK",
+      "memory": 892928,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 22557,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 4829184,
+    "problem_name": "sparse_matrix_det",
+    "problem_title": "Determinant of Sparse Matrix",
+    "status": "AC",
+    "time": 0.071,
+    "user_name": "tmaehara"
+  }
+}

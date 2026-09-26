@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1118208,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1142784,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1323008,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1069056,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "fibonacci_like_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "fibonacci_like_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1323008,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "large_gcd_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2117632,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "large_gcd_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2146304,
+      "status": "AC",
+      "time": 0.016
+    }
+  ],
+  "overview": {
+    "id": 405836,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 2146304,
+    "problem_name": "gcd_of_gaussian_integers",
+    "problem_title": "Gcd of Gaussian Integers",
+    "status": "AC",
+    "submission_time": "2026-09-24T15:25:00.292756Z",
+    "time": 0.016,
+    "user_name": "Rohan_Kapri"
+  }
+}

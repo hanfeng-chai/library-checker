@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 8892416,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 11522048,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTc3NjI0IHRva2Vucwo=",
+      "memory": 13348864,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNDI5MjQ5IHRva2Vucwo=",
+      "memory": 9412608,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgODAxMzAwIHRva2Vucwo=",
+      "memory": 17801216,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 24625152,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 24735744,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 23224320,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 24588288,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 23089152,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "small_dense_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 22528000,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "small_dense_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 24629248,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "small_dense_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 23695360,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "small_dense_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 23683072,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "small_dense_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 22618112,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "small_N_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 520192,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_K_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 9461760,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "min_K_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 9940992,
+      "status": "AC",
+      "time": 0.009
+    }
+  ],
+  "overview": {
+    "id": 307818,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24735744,
+    "problem_name": "exp_of_formal_power_series_sparse",
+    "problem_title": "Exp of Formal Power Series (Sparse)",
+    "status": "AC",
+    "submission_time": "2025-08-16T04:20:42.357299Z",
+    "time": 0.039,
+    "user_name": "drken"
+  }
+}

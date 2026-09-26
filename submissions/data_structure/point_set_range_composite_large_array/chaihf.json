@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1MzAyIHRva2Vucwo=",
+      "memory": 21065728,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2OTE2IHRva2Vucwo=",
+      "memory": 20992000,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMDU4IHRva2Vucwo=",
+      "memory": 20058112,
+      "status": "AC",
+      "time": 0.066
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4NjMgdG9rZW5zCg==",
+      "memory": 2080768,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk1MzYgdG9rZW5zCg==",
+      "memory": 6164480,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "small_N_00",
+      "checker_out": "b2sgMjUwMTY3IHRva2Vucwo=",
+      "memory": 23126016,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "small_N_01",
+      "checker_out": "b2sgMjQ5NDE1IHRva2Vucwo=",
+      "memory": 23076864,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "small_N_02",
+      "checker_out": "b2sgMjUwMTA2IHRva2Vucwo=",
+      "memory": 23089152,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "small_N_03",
+      "checker_out": "b2sgMjQ5OTE1IHRva2Vucwo=",
+      "memory": 23109632,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "small_N_04",
+      "checker_out": "b2sgMjUwMDE5IHRva2Vucwo=",
+      "memory": 23113728,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwMjg5IHRva2Vucwo=",
+      "memory": 24399872,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjQ5Njg2IHRva2Vucwo=",
+      "memory": 24420352,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMzM4IHRva2Vucwo=",
+      "memory": 24858624,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "many_query_0_00",
+      "checker_out": "b2sgNTAyOCB0b2tlbnMK",
+      "memory": 23523328,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "many_query_0_01",
+      "checker_out": "b2sgNDkxNiB0b2tlbnMK",
+      "memory": 23478272,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "many_query_1_00",
+      "checker_out": "b2sgNDk0OTc2IHRva2Vucwo=",
+      "memory": 27021312,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "many_query_1_01",
+      "checker_out": "b2sgNDk1MDg4IHRva2Vucwo=",
+      "memory": 27033600,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "query_0_then_1_00",
+      "checker_out": "b2sgMjQ5OTYwIHRva2Vucwo=",
+      "memory": 24940544,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "query_0_then_1_01",
+      "checker_out": "b2sgMjQ5OTQ1IHRva2Vucwo=",
+      "memory": 24416256,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "near_0_and_N_00",
+      "checker_out": "b2sgMjQ5NzI0IHRva2Vucwo=",
+      "memory": 23076864,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "near_0_and_N_01",
+      "checker_out": "b2sgMjQ5ODE1IHRva2Vucwo=",
+      "memory": 23109632,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgMjUwMDcyIHRva2Vucwo=",
+      "memory": 23080960,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgMjUwMzAxIHRva2Vucwo=",
+      "memory": 23089152,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "dense_02",
+      "checker_out": "b2sgMjQ5ODM2IHRva2Vucwo=",
+      "memory": 24547328,
+      "status": "AC",
+      "time": 0.085
+    }
+  ],
+  "overview": {
+    "id": 393916,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 27033600,
+    "problem_name": "point_set_range_composite_large_array",
+    "problem_title": "Point Set Range Composite (Large Array)",
+    "status": "AC",
+    "submission_time": "2026-08-16T12:59:07.269655Z",
+    "time": 0.101,
+    "user_name": "chaihf"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 3710976,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 4628480,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 3231744,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ0NjAwIHRva2Vucwo=",
+      "memory": 2150400,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTc1MDQyIHRva2Vucwo=",
+      "memory": 5279744,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzk4NTA0IHRva2Vucwo=",
+      "memory": 2367488,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 10784768,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 10735616,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 10792960,
+      "status": "AC",
+      "time": 0.035
+    }
+  ],
+  "overview": {
+    "id": 406236,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 10792960,
+    "problem_name": "prefix_substring_lcs",
+    "problem_title": "Prefix-Substring LCS",
+    "status": "AC",
+    "submission_time": "2026-09-26T06:46:05.769961Z",
+    "time": 0.037,
+    "user_name": "Rohan_Kapri"
+  }
+}

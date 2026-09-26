@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "dim1_00",
+      "checker_out": "b2sgMjYxODM2IHRva2Vucwo=",
+      "memory": 29257728,
+      "status": "AC",
+      "time": 0.371
+    },
+    {
+      "case": "dim1_01",
+      "checker_out": "b2sgMjYxMzQxIHRva2Vucwo=",
+      "memory": 29265920,
+      "status": "AC",
+      "time": 0.37
+    },
+    {
+      "case": "dim1_02",
+      "checker_out": "b2sgMjYxMjMxIHRva2Vucwo=",
+      "memory": 29265920,
+      "status": "AC",
+      "time": 0.369
+    },
+    {
+      "case": "dim2_00",
+      "checker_out": "b2sgMjU1MzQwIHRva2Vucwo=",
+      "memory": 16850944,
+      "status": "AC",
+      "time": 0.367
+    },
+    {
+      "case": "dim2_01",
+      "checker_out": "b2sgMjYyMDgzIHRva2Vucwo=",
+      "memory": 7479296,
+      "status": "AC",
+      "time": 0.61
+    },
+    {
+      "case": "dim2_02",
+      "checker_out": "b2sgMjEzMzQ4IHRva2Vucwo=",
+      "memory": 9207808,
+      "status": "AC",
+      "time": 0.343
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjU2MDg4Igo=",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "k0_00",
+      "checker_out": "b2sgIjExNTIxMzUzNyIK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "k0_01",
+      "checker_out": "b2sgIjQwMjczMDc5MiIK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTUxMjAwIHRva2Vucwo=",
+      "memory": 4866048,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTgxNDQwIHRva2Vucwo=",
+      "memory": 5238784,
+      "status": "AC",
+      "time": 0.129
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 471040,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "threes_00",
+      "checker_out": "b2sgMTg2NjI0IHRva2Vucwo=",
+      "memory": 5271552,
+      "status": "AC",
+      "time": 0.228
+    },
+    {
+      "case": "threes_01",
+      "checker_out": "b2sgMTM5OTY4IHRva2Vucwo=",
+      "memory": 4206592,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "threes_02",
+      "checker_out": "b2sgMTg2NjI0IHRva2Vucwo=",
+      "memory": 4763648,
+      "status": "AC",
+      "time": 0.23
+    },
+    {
+      "case": "twos_00",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 7516160,
+      "status": "AC",
+      "time": 0.436
+    },
+    {
+      "case": "twos_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 4087808,
+      "status": "AC",
+      "time": 0.206
+    },
+    {
+      "case": "twos_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1523712,
+      "status": "AC",
+      "time": 0.101
+    }
+  ],
+  "overview": {
+    "id": 205653,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 29265920,
+    "problem_name": "multivariate_convolution_cyclic",
+    "problem_title": "Multidimensional Convolution (Circular)",
+    "status": "AC",
+    "submission_time": "2024-05-02T17:47:57.369394Z",
+    "time": 0.61,
+    "user_name": "maspy"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 7581696,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 7585792,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjY1NDEgdG9rZW5zCg==",
+      "memory": 15638528,
+      "status": "AC",
+      "time": 0.247
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjY1OTMgdG9rZW5zCg==",
+      "memory": 16003072,
+      "status": "AC",
+      "time": 0.246
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 6270976,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ0Igo=",
+      "memory": 7843840,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 7847936,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQyIgo=",
+      "memory": 7843840,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjM5Igo=",
+      "memory": 6250496,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTA5IHRva2Vucwo=",
+      "memory": 7839744,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNzMgdG9rZW5zCg==",
+      "memory": 7057408,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMTI1IHRva2Vucwo=",
+      "memory": 6795264,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNzcgdG9rZW5zCg==",
+      "memory": 7847936,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgMjc1IHRva2Vucwo=",
+      "memory": 7327744,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDk3MTUgdG9rZW5zCg==",
+      "memory": 11722752,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk3NjMgdG9rZW5zCg==",
+      "memory": 12156928,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDAxNjIgdG9rZW5zCg==",
+      "memory": 9986048,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODUyMiB0b2tlbnMK",
+      "memory": 11513856,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzMwOTMgdG9rZW5zCg==",
+      "memory": 8896512,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjcxNDIgdG9rZW5zCg==",
+      "memory": 13651968,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY1MTQgdG9rZW5zCg==",
+      "memory": 13606912,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY1OTIgdG9rZW5zCg==",
+      "memory": 13475840,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "issue_1216_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 19636224,
+      "status": "AC",
+      "time": 0.027
+    }
+  ],
+  "overview": {
+    "id": 334740,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 19636224,
+    "problem_name": "dynamic_tree_vertex_set_path_composite",
+    "problem_title": "Dynamic Tree Vertex Set Path Composite",
+    "status": "AC",
+    "submission_time": "2025-12-06T11:46:59.879506Z",
+    "time": 0.247,
+    "user_name": "nandhagk"
+  }
+}

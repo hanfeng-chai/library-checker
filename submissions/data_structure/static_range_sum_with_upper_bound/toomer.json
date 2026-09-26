@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgODIxODQ2IHRva2Vucwo=",
+      "memory": 44093440,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgODI1ODE0IHRva2Vucwo=",
+      "memory": 47992832,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNzY0Njk0IHRva2Vucwo=",
+      "memory": 24772608,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 54722560,
+      "status": "AC",
+      "time": 0.137
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 54726656,
+      "status": "AC",
+      "time": 0.136
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 54792192,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "small_a_x_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 54820864,
+      "status": "AC",
+      "time": 0.097
+    },
+    {
+      "case": "small_a_x_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 54751232,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "small_a_x_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 54833152,
+      "status": "AC",
+      "time": 0.086
+    }
+  ],
+  "overview": {
+    "id": 404965,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 54833152,
+    "problem_name": "static_range_sum_with_upper_bound",
+    "problem_title": "Static Range Sum with Upper Bound",
+    "status": "AC",
+    "submission_time": "2026-09-22T06:43:18.797341Z",
+    "time": 0.143,
+    "user_name": "toomer"
+  }
+}

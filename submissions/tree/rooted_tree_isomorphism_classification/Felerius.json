@@ -1,0 +1,135 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_isomorphic_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 13598720,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_isomorphic_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 13524992,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_line_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6856704,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14831616,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 15314944,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 15056896,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 15097856,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 15327232,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_star_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10760192,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 593920,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "sqrt_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4755456,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 106481,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 15327232,
+    "problem_name": "rooted_tree_isomorphism_classification",
+    "problem_title": "Rooted Tree Isomorphism Classification",
+    "status": "AC",
+    "time": 0.026,
+    "user_name": "Felerius"
+  }
+}

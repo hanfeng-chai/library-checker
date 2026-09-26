@@ -1,0 +1,158 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjgiCg==",
+      "memory": 1302528,
+      "status": "AC",
+      "stderr": "W21haW4ucnM6NDkyXSAibW9udF90b19zdGFuZGFyZF9zY2FsYXIiID0gIm1vbnRfdG9fc3RhbmRhcmRfc2NhbGFyIgpbbWFpbi5yczo0OTJdICJtb250X3RvX3N0YW5kYXJkX3NjYWxhciIgPSAibW9udF90b19zdGFuZGFyZF9zY2FsYXIiClttYWluLnJzOjQ5Ml0gIm1vbnRfdG9fc3RhbmRhcmRfc2NhbGFyIiA9ICJtb250X3RvX3N0YW5kYXJkX3NjYWxhciIKW21haW4ucnM6NDkyXSAibW9udF90b19zdGFuZGFyZF9zY2FsYXIiID0gIm1vbnRfdG9fc3RhbmRhcmRfc2NhbGFyIgpbbWFpbi5yczo0OTJdICJtb250X3RvX3N0YW5kYXJkX3NjYWxhciIgPSAibW9udF90b19zdGFuZGFyZF9zY2FsYXIiClttYWluLnJzOjQ5Ml0gIm1vbnRfdG9fc3RhbmRhcmRfc2NhbGFyIiA9ICJtb250X3RvX3N0YW5kYXJkX3NjYWxhciIKW21haW4ucnM6NDkyXSAibW9udF90b19zdGFuZGFyZF9zY2FsYXIiID0gIm1vbnRfdG9fc3RhbmRhcmRfc2NhbGFyIgpbbWFpbi5yczo0OTJdICJtb250X3RvX3N0YW5kYXJkX3NjYWxhciIgPSAibW9udF90b19zdGFuZGFyZF9zY2FsYXIiCg==",
+      "time": 0.002
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjU2ODA2OTY3NiIK",
+      "memory": 331776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ4MjQzNDIxMCIK",
+      "memory": 1294336,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjMwODMyMjgxOCIK",
+      "memory": 1290240,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQ2MzM5Njg5MyIK",
+      "memory": 1282048,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjc2OTY0NzM5NSIK",
+      "memory": 1548288,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgIjE4OTMwNTAxMCIK",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgIjg4MzgxNDg1NiIK",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgIjI0MzkyNzAzNSIK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgIjI2ODE5NjY2MiIK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgIjM3MDYyMDUwNCIK",
+      "memory": 1589248,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjE0MTc2MjU1MiIK",
+      "memory": 9670656,
+      "status": "AC",
+      "time": 0.129
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjQxMTU1ODc3NyIK",
+      "memory": 10366976,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjYxODYwOTAyNSIK",
+      "memory": 9842688,
+      "status": "AC",
+      "time": 0.129
+    },
+    {
+      "case": "near_65536_00",
+      "checker_out": "b2sgIjMxODYwMjE3OSIK",
+      "memory": 6057984,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "near_65536_01",
+      "checker_out": "b2sgIjY1NzI2NTc5NiIK",
+      "memory": 9142272,
+      "status": "AC",
+      "time": 0.122
+    },
+    {
+      "case": "near_65536_02",
+      "checker_out": "b2sgIjE1OTEwOTEyMiIK",
+      "memory": 9252864,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjY4OTMyMDY1MyIK",
+      "memory": 3633152,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjI5NTUxNzIzMyIK",
+      "memory": 8962048,
+      "status": "AC",
+      "time": 0.125
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjEwNTczOTI3MiIK",
+      "memory": 6135808,
+      "status": "AC",
+      "time": 0.064
+    }
+  ],
+  "overview": {
+    "id": 342628,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 10366976,
+    "problem_name": "kth_term_of_linearly_recurrent_sequence",
+    "problem_title": "Kth term of Linearly Recurrent Sequence",
+    "status": "AC",
+    "submission_time": "2026-01-02T20:56:09.673152Z",
+    "time": 0.13,
+    "user_name": "sakikuroe"
+  }
+}

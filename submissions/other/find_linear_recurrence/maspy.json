@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 684032,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1638400,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1724416,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1720320,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1638400,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "long_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1552384,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "long_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1384448,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "long_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1585152,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "zero_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "zero_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1314816,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "suffix_zero_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1798144,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "suffix_zero_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1916928,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "suffix_zero_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1740800,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "suffix_zero_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1617920,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "issue_1253_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 379831,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1916928,
+    "problem_name": "find_linear_recurrence",
+    "problem_title": "Find Linear Recurrence",
+    "status": "AC",
+    "submission_time": "2026-06-16T21:28:28.94968Z",
+    "time": 0.044,
+    "user_name": "maspy"
+  }
+}

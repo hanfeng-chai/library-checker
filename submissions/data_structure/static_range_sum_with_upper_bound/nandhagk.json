@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 651264,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgODIxODQ2IHRva2Vucwo=",
+      "memory": 28823552,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgODI1ODE0IHRva2Vucwo=",
+      "memory": 30302208,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNzY0Njk0IHRva2Vucwo=",
+      "memory": 21307392,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 35459072,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 35737600,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 35172352,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "small_a_x_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 31780864,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "small_a_x_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 31502336,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "small_a_x_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 31498240,
+      "status": "AC",
+      "time": 0.045
+    }
+  ],
+  "overview": {
+    "id": 402379,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 35737600,
+    "problem_name": "static_range_sum_with_upper_bound",
+    "problem_title": "Static Range Sum with Upper Bound",
+    "status": "AC",
+    "submission_time": "2026-09-14T17:34:05.718683Z",
+    "time": 0.058,
+    "user_name": "nandhagk"
+  }
+}

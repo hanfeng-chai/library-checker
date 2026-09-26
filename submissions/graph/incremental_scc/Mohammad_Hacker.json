@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 32808960,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 32780288,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 32817152,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 32780288,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 32817152,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 32817152,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 32866304,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 33013760,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 70754304,
+      "status": "AC",
+      "time": 0.527
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 71704576,
+      "status": "AC",
+      "time": 0.569
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 70754304,
+      "status": "AC",
+      "time": 0.267
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 70852608,
+      "status": "AC",
+      "time": 0.551
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 68718592,
+      "status": "AC",
+      "time": 0.462
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 68018176,
+      "status": "AC",
+      "time": 0.479
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 72679424,
+      "status": "AC",
+      "time": 0.569
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 71286784,
+      "status": "AC",
+      "time": 0.312
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 75517952,
+      "status": "AC",
+      "time": 0.456
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 71651328,
+      "status": "AC",
+      "time": 0.324
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 71909376,
+      "status": "AC",
+      "time": 0.591
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 71319552,
+      "status": "AC",
+      "time": 0.6
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 70815744,
+      "status": "AC",
+      "time": 0.593
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 99356672,
+      "status": "AC",
+      "time": 0.512
+    },
+    {
+      "case": "large_cycle_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 99373056,
+      "status": "AC",
+      "time": 0.508
+    }
+  ],
+  "overview": {
+    "id": 387377,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 99373056,
+    "problem_name": "incremental_scc",
+    "problem_title": "Strongly Connected Components (Incremental)",
+    "status": "AC",
+    "submission_time": "2026-07-22T16:21:40.944355Z",
+    "time": 0.6,
+    "user_name": "Mohammad_Hacker"
+  }
+}

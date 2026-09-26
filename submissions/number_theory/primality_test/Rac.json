@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 1359872,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1617920,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "less_1000000000_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1511424,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "carmichael_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_prime_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1400832,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "prod_two_prime_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1359872,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1323008,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1351680,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1347584,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "hack_issue996_00",
+      "checker_out": "b2sgNDAgdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack_issue1325_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 1277952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "pseudoprimes_00",
+      "checker_out": "b2sgNzMgdG9rZW5zCg==",
+      "memory": 1355776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "many_liars_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1359872,
+      "status": "AC",
+      "time": 0.033
+    }
+  ],
+  "overview": {
+    "id": 340522,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1617920,
+    "problem_name": "primality_test",
+    "problem_title": "Primality Test",
+    "status": "AC",
+    "submission_time": "2025-12-26T01:48:07.604974Z",
+    "time": 0.034,
+    "user_name": "Rac"
+  }
+}

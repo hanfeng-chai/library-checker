@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13717504,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13725696,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13746176,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ0NjAwIHRva2Vucwo=",
+      "memory": 4145152,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTc1MDQyIHRva2Vucwo=",
+      "memory": 5259264,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzk4NTA0IHRva2Vucwo=",
+      "memory": 10330112,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12709888,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13905920,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13287424,
+      "status": "AC",
+      "time": 0.032
+    }
+  ],
+  "overview": {
+    "id": 227569,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 13905920,
+    "problem_name": "prefix_substring_lcs",
+    "problem_title": "Prefix-Substring LCS",
+    "status": "AC",
+    "submission_time": "2024-08-11T13:15:48.871904Z",
+    "time": 0.047,
+    "user_name": "Kiffaz11"
+  }
+}

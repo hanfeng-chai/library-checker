@@ -1,0 +1,220 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "decr_period_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30535680,
+      "status": "AC",
+      "time": 0.237
+    },
+    {
+      "case": "decr_period_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30273536,
+      "status": "AC",
+      "time": 0.235
+    },
+    {
+      "case": "decr_period_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30359552,
+      "status": "AC",
+      "time": 0.241
+    },
+    {
+      "case": "decr_period_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30539776,
+      "status": "AC",
+      "time": 0.248
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_k_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28831744,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "large_k_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28721152,
+      "status": "AC",
+      "time": 0.097
+    },
+    {
+      "case": "large_k_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28581888,
+      "status": "AC",
+      "time": 0.095
+    },
+    {
+      "case": "periodic_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30457856,
+      "status": "AC",
+      "time": 0.228
+    },
+    {
+      "case": "periodic_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30011392,
+      "status": "AC",
+      "time": 0.227
+    },
+    {
+      "case": "periodic_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30457856,
+      "status": "AC",
+      "time": 0.231
+    },
+    {
+      "case": "periodic_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 32059392,
+      "status": "AC",
+      "time": 0.234
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 23494656,
+      "status": "AC",
+      "time": 0.181
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27500544,
+      "status": "AC",
+      "time": 0.211
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 8097792,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 1748992,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5808128,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5672960,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5672960,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5677056,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5677056,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5754880,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5931008,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 5668864,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "small_k_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28585984,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "small_k_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28409856,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "small_k_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28450816,
+      "status": "AC",
+      "time": 0.127
+    }
+  ],
+  "overview": {
+    "id": 214473,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 32059392,
+    "problem_name": "range_parallel_unionfind",
+    "problem_title": "Range Parallel Unionfind",
+    "status": "AC",
+    "submission_time": "2024-06-12T08:52:07.83393Z",
+    "time": 0.248,
+    "user_name": "Nachia"
+  }
+}

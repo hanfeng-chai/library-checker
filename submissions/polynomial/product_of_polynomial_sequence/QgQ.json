@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 19546112,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 20393984,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 16125952,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 1847296,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 5390336,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 21639168,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 22839296,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 18313216,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 23470080,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 21127168,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "all_degree_one_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 26710016,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "all_degree_one_01",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 25833472,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "all_degree_one_02",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 26357760,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "all_degree_one_03",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 26066944,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "all_degree_one_04",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 25808896,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "unbalanced_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 16273408,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "unbalanced_01",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 17162240,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "unbalanced_02",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 16822272,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_and_zero_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 7614464,
+      "status": "AC",
+      "time": 0.011
+    }
+  ],
+  "overview": {
+    "id": 399144,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 26710016,
+    "problem_name": "product_of_polynomial_sequence",
+    "problem_title": "Product of Polynomial Sequence",
+    "status": "AC",
+    "submission_time": "2026-09-03T09:04:37.175388Z",
+    "time": 0.082,
+    "user_name": "QgQ"
+  }
+}

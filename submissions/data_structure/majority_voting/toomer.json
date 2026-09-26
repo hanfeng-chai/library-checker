@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTI1IHRva2Vucwo=",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDk4IHRva2Vucwo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNDgxIHRva2Vucwo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNDkxIHRva2Vucwo=",
+      "memory": 446464,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTIzIHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5ODYwIHRva2Vucwo=",
+      "memory": 89919488,
+      "status": "AC",
+      "time": 0.199
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMTE4IHRva2Vucwo=",
+      "memory": 90677248,
+      "status": "AC",
+      "time": 0.201
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMTA3IHRva2Vucwo=",
+      "memory": 92065792,
+      "status": "AC",
+      "time": 0.201
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjUwMDMyIHRva2Vucwo=",
+      "memory": 89829376,
+      "status": "AC",
+      "time": 0.2
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjUwMTc4IHRva2Vucwo=",
+      "memory": 90005504,
+      "status": "AC",
+      "time": 0.199
+    },
+    {
+      "case": "top2_killer_00",
+      "checker_out": "b2sgNDc0OTY5IHRva2Vucwo=",
+      "memory": 101425152,
+      "status": "AC",
+      "time": 0.151
+    }
+  ],
+  "overview": {
+    "id": 404956,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 101425152,
+    "problem_name": "majority_voting",
+    "problem_title": "Majority Voting",
+    "status": "AC",
+    "submission_time": "2026-09-22T06:33:09.785618Z",
+    "time": 0.201,
+    "user_name": "toomer"
+  }
+}

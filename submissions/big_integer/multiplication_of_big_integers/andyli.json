@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "fft_killer_00",
+      "checker_out": "b2sgIjkwOTc1OTkwNzgwNTY3NTk3Njk2MjI1MjY1NDg3NC4uLjkwNjUwMjE1ODgzMjU0NTUxMTgwNTUxNjE2MTQzNDAiCg==",
+      "memory": 27660288,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "fft_killer_01",
+      "checker_out": "b2sgIjM3ODU4MjQzMjk4MzY5Nzg3MDA3NDAzMTY4MDk3NC4uLjc5MTU2OTE0MDAyNzMwMDEzMDgzOTE4NDY5MDM4MTAiCg==",
+      "memory": 27729920,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgMzYgdG9rZW5zCg==",
+      "memory": 6651904,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgMzggdG9rZW5zCg==",
+      "memory": 6537216,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgNDAgdG9rZW5zCg==",
+      "memory": 6791168,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "large_small_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 19316736,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_max_00",
+      "checker_out": "b2sgIjQ1NzY2ODc3MDQ4NTc5MDQzODIzOTM1NjYzMjY1Ni4uLjY3MjU5ODQwMzYzNjMzNzM5NDU3MDk1OTQ5NzQxMzAiCg==",
+      "memory": 27815936,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_max_01",
+      "checker_out": "b2sgIi02NDc1MTA4MDY2MTg4NDc2MzEzNTE2NDA1NjU1MS4uLjk4ODY4ODIyNzkzMzcxOTA2Nzg3ODEyNjg0MTY3NTQiCg==",
+      "memory": 27852800,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_max_02",
+      "checker_out": "b2sgIi0zODgzOTkwMzY3NTU3NTYzODYzODk1NTgwMTMwOC4uLjgxNjQ1MjU2Njc2NzI5Mjk4NTg0MTAwNjc2OTU4OTIiCg==",
+      "memory": 27762688,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_max_03",
+      "checker_out": "b2sgIjEwMjc0OTM5ODYzNjcxMDkwMjY0OTE0MzAzMjYzNi4uLjEwMzAwNTQ2MDY1MTEyOTMxNzc0MjIxNTM2NzQ5NzEiCg==",
+      "memory": 27721728,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_max_04",
+      "checker_out": "b2sgIjEwNzQ3MjU2NTQ5NzYxNTEyMjUyOTkxMTU3MzQzMi4uLjQ1NjkwMjMzMzY0NzI2NjY2ODY5OTMyODM0NjI1OTQiCg==",
+      "memory": 27750400,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_max_05",
+      "checker_out": "b2sgIi02MTE0NTc2NDA5MDkyMTk2NzM3ODg4MzMxNDc3My4uLjM2NjA4MDY2NDM1NzE2NjY0NjY2NDgxMzQzODI2ODUiCg==",
+      "memory": 27734016,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_max_06",
+      "checker_out": "b2sgIi0yMzQyNzE0NjQ2NzQyMjk4MjQ0MjI1MTQwMzQ1Ny4uLjY1MzY3NTUzODM3NDkwMjQ1NDczODM1NDIzNjA0MDAiCg==",
+      "memory": 27803648,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_max_07",
+      "checker_out": "b2sgIjI1NzExMjk5NDkwMjMxNzMxNjYwNzAwMjU2NTUxNy4uLjY3MjU3MzM2MDAyNTM4MDkzNTIyNjAwNTE3NDA1NDAiCg==",
+      "memory": 27807744,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMzk3MiB0b2tlbnMK",
+      "memory": 5496832,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNDAwOCB0b2tlbnMK",
+      "memory": 5001216,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMzk3NiB0b2tlbnMK",
+      "memory": 5746688,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 4788224,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "zero_00",
+      "checker_out": "b2sgNzk1OCB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.003
+    }
+  ],
+  "overview": {
+    "id": 192927,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 27852800,
+    "problem_name": "multiplication_of_big_integers",
+    "problem_title": "Multiplication of Big Integers",
+    "status": "AC",
+    "submission_time": "2024-02-23T14:48:01.677161Z",
+    "time": 0.038,
+    "user_name": "andyli"
+  }
+}

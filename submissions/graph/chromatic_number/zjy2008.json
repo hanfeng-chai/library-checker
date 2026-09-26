@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "big_00",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_01",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_02",
+      "checker_out": "b2sgIjgiCg==",
+      "memory": 786432,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_03",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_04",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_05",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_06",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_07",
+      "checker_out": "b2sgIjEyIgo=",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "big_08",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "big_09",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "clique_cycle_00",
+      "checker_out": "b2sgIjEwIgo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "clique_cycle_01",
+      "checker_out": "b2sgIjEwIgo=",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "clique_cycle_02",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "clique_cycle_03",
+      "checker_out": "b2sgIjIwIgo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgIjEyIgo=",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 618496,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 291193,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 786432,
+    "problem_name": "chromatic_number",
+    "problem_title": "Chromatic Number",
+    "status": "AC",
+    "submission_time": "2025-06-06T11:14:41.911407Z",
+    "time": 0.004,
+    "user_name": "zjy2008"
+  }
+}

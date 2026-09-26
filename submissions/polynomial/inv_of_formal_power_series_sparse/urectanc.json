@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 3899392,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 4448256,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTc3NjI0IHRva2Vucwo=",
+      "memory": 4513792,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNDI5MjQ5IHRva2Vucwo=",
+      "memory": 3244032,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgODAxMzAwIHRva2Vucwo=",
+      "memory": 7106560,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7094272,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 8417280,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 8908800,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7593984,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 7098368,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "small_dense_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 13553664,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_dense_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 14106624,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "small_dense_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 13815808,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "small_dense_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 8114176,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_dense_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 14594048,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "small_N_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 778240,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 520192,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_03",
+      "checker_out": "b2sgIjYwMDk0MjU4MiIK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 610304,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_K_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 3915776,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "min_K_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 3117056,
+      "status": "AC",
+      "time": 0.004
+    }
+  ],
+  "overview": {
+    "id": 375636,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 14594048,
+    "problem_name": "inv_of_formal_power_series_sparse",
+    "problem_title": "Inv of Formal Power Series (Sparse)",
+    "status": "AC",
+    "submission_time": "2026-05-29T12:27:30.205285Z",
+    "time": 0.03,
+    "user_name": "urectanc"
+  }
+}

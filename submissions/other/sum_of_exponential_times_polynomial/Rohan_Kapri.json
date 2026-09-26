@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjI3Njc0MTgiCg==",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 843776,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "0_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "0_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 50950144,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "0_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 50794496,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "0_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 50868224,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgIjcxNjA3MDg5OCIK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "1_01",
+      "checker_out": "b2sgIjU2NDYzNjY0NCIK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "1_02",
+      "checker_out": "b2sgIjc1MzI4OTU2NyIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "1_03",
+      "checker_out": "b2sgIjE2MjUyMjY2NiIK",
+      "memory": 204926976,
+      "status": "AC",
+      "time": 0.446
+    },
+    {
+      "case": "1_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 50900992,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "1_05",
+      "checker_out": "b2sgIjg2MjI3MzI3NiIK",
+      "memory": 80953344,
+      "status": "AC",
+      "time": 0.158
+    },
+    {
+      "case": "1_06",
+      "checker_out": "b2sgIjQyNTE0NzYxNSIK",
+      "memory": 204918784,
+      "status": "AC",
+      "time": 0.445
+    },
+    {
+      "case": "2_00",
+      "checker_out": "b2sgIjM1NTU3NjMwMiIK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "2_01",
+      "checker_out": "b2sgIjY5OTA1ODY2NSIK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "2_02",
+      "checker_out": "b2sgIjgzOTA3NDI4NiIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "2_03",
+      "checker_out": "b2sgIjkyNjIzMjgxNyIK",
+      "memory": 177844224,
+      "status": "AC",
+      "time": 0.579
+    },
+    {
+      "case": "2_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 50872320,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "2_05",
+      "checker_out": "b2sgIjEwNjEwNDIyNSIK",
+      "memory": 80961536,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "2_06",
+      "checker_out": "b2sgIjgzMDk2ODM1OCIK",
+      "memory": 177856512,
+      "status": "AC",
+      "time": 0.579
+    }
+  ],
+  "overview": {
+    "id": 405841,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 204926976,
+    "problem_name": "sum_of_exponential_times_polynomial",
+    "problem_title": "$\\sum_{i=0}^{n-1} r^i i^d$",
+    "status": "AC",
+    "submission_time": "2026-09-24T15:35:21.841688Z",
+    "time": 0.579,
+    "user_name": "Rohan_Kapri"
+  }
+}

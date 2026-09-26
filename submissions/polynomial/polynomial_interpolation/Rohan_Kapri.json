@@ -1,0 +1,80 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEwMDAwMDAwIgo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI3NjY5IHRva2Vucwo=",
+      "memory": 23613440,
+      "status": "AC",
+      "time": 0.055
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjk4MzAgdG9rZW5zCg==",
+      "memory": 14696448,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 10264576,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23871488,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23728128,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "1169_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "x_zero_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 24133632,
+      "status": "AC",
+      "time": 0.058
+    }
+  ],
+  "overview": {
+    "id": 405994,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24133632,
+    "problem_name": "polynomial_interpolation",
+    "problem_title": "Polynomial Interpolation",
+    "status": "AC",
+    "submission_time": "2026-09-25T05:54:05.338021Z",
+    "time": 0.058,
+    "user_name": "Rohan_Kapri"
+  }
+}

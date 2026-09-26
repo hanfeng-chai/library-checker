@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2379776,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1888256,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3518464,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1699840,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2392064,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "lowrank_00",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 5251072,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "lowrank_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5992448,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "lowrank_02",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 5517312,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "lowrank_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 6828032,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "lowrank_04",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 4247552,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "lowrank_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 6565888,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "hack_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4243456,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "hack_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2408448,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "hack_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3194880,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "hack_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1105920,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "hack_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2400256,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "hack_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 3424256,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "fullrank_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2375680,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "fullrank_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2400256,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "fullrank_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1527808,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "fullrank_no_solution_00",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 2371584,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "fullrank_no_solution_01",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 2408448,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "fullrank_no_solution_02",
+      "checker_out": "b2sgT0sgTm8gc29sdXRpb24K",
+      "memory": 1622016,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 5001216,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4849664,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5033984,
+      "status": "AC",
+      "time": 0.011
+    }
+  ],
+  "overview": {
+    "id": 405293,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6828032,
+    "problem_name": "system_of_linear_equations",
+    "problem_title": "System of Linear Equations",
+    "status": "AC",
+    "submission_time": "2026-09-22T19:11:01.611137Z",
+    "time": 0.011,
+    "user_name": "adamant"
+  }
+}

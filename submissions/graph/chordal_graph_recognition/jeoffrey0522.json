@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "2tree_00",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 8626176,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "2tree_01",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 8744960,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "2tree_02",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 8753152,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "2tree_03",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 8753152,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "2tree_04",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 8757248,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "complete_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk2IGFucz1ZRVMK",
+      "memory": 5345280,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "complete_minus_ab_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk1IGFucz1ZRVMK",
+      "memory": 5480448,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "complete_minus_ab_ac_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk0IGFucz1ZRVMK",
+      "memory": 5476352,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "complete_minus_ab_cd_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk0IGFucz1OTwo=",
+      "memory": 5480448,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "cycle_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 14372864,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgbj00LCBtPTQgYW5zPVlFUwo=",
+      "memory": 491520,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgbj01LCBtPTQgYW5zPU5PCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgbj0xMCwgbT0xNSBhbnM9Tk8K",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "heawood_00",
+      "checker_out": "b2sgbj0xNCwgbT0yOCBhbnM9Tk8K",
+      "memory": 389120,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 12017664,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 13115392,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 13062144,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 13062144,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 13025280,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 12537856,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "thick_cycle_00",
+      "checker_out": "b2sgbj0xMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 9498624,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "wheel_00",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 9535488,
+      "status": "AC",
+      "time": 0.028
+    }
+  ],
+  "overview": {
+    "id": 280414,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 14372864,
+    "problem_name": "chordal_graph_recognition",
+    "problem_title": "Chordal Graph Recognition",
+    "status": "AC",
+    "submission_time": "2025-04-21T06:29:33.397619Z",
+    "time": 0.047,
+    "user_name": "jeoffrey0522"
+  }
+}

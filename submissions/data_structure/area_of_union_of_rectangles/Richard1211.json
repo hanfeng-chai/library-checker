@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "edge_bound_00",
+      "checker_out": "b2sgIjU1MDA5MzU2NjI4ODgyMDI5MiIK",
+      "memory": 51007488,
+      "status": "AC",
+      "stderr": "VGltZTogMzI4IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.329
+    },
+    {
+      "case": "edge_bound_01",
+      "checker_out": "b2sgIjU0ODk1MDI5OTgwOTQ1MDc3NCIK",
+      "memory": 50999296,
+      "status": "AC",
+      "stderr": "VGltZTogMzA0IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.305
+    },
+    {
+      "case": "edge_bound_02",
+      "checker_out": "b2sgIjU0ODI0Mzc1NzU3ODc2NDkxNyIK",
+      "memory": 50982912,
+      "status": "AC",
+      "stderr": "VGltZTogMjk3IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.298
+    },
+    {
+      "case": "edge_bound_03",
+      "checker_out": "b2sgIjU1MDA3MzYwMDAzMTM2MTk1NyIK",
+      "memory": 51023872,
+      "status": "AC",
+      "stderr": "VGltZTogMzAxIG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.301
+    },
+    {
+      "case": "edge_bound_04",
+      "checker_out": "b2sgIjU0OTE1NDU1Nzk3ODk4NzAwNCIK",
+      "memory": 50900992,
+      "status": "AC",
+      "stderr": "VGltZTogMzMyIG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.333
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjciCg==",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IC02LjAyOCBNQgo=",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjk5OTk2NzY0MDAxODk3MzM5MCIK",
+      "memory": 50962432,
+      "status": "AC",
+      "stderr": "VGltZTogMzg5IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.39
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjk5OTk3MzkyODIwMjk1MDUyOCIK",
+      "memory": 51003392,
+      "status": "AC",
+      "stderr": "VGltZTogMzg5IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.39
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjk5OTk2NzA4NzE1MTk2ODExMSIK",
+      "memory": 50991104,
+      "status": "AC",
+      "stderr": "VGltZTogMzk0IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.395
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjk5OTk3MDEzMzg4MzcwODgzMiIK",
+      "memory": 50925568,
+      "status": "AC",
+      "stderr": "VGltZTogMzk4IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.399
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjk5OTk1NDc2NDUxMTQzNzM2NiIK",
+      "memory": 50987008,
+      "status": "AC",
+      "stderr": "VGltZTogMzQ5IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.349
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjk5OTk2ODQ2MjgyNzMxODg2NiIK",
+      "memory": 45789184,
+      "status": "AC",
+      "stderr": "VGltZTogMjczIG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.273
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjk5OTk3ODA1OTI0MjI5NDc3NyIK",
+      "memory": 49213440,
+      "status": "AC",
+      "stderr": "VGltZTogMzMxIG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.332
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjk5OTczNjI4ODA3MDg4MTYxMiIK",
+      "memory": 7430144,
+      "status": "AC",
+      "stderr": "VGltZTogMzIgbXMKTWVtb3J5OiAtNi4wMjggTUIK",
+      "time": 0.033
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjk5OTk3MzM3MDQ3ODY5MzE3MSIK",
+      "memory": 47575040,
+      "status": "AC",
+      "stderr": "VGltZTogMjk0IG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.295
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjk5OTk1NzMwMjc2NzkzMDc2MCIK",
+      "memory": 40247296,
+      "status": "AC",
+      "stderr": "VGltZTogMTkyIG1zCk1lbW9yeTogLTYuMDI4IE1CCg==",
+      "time": 0.193
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjk4ODE3NjI5NDA5MDk1NjY5NyIK",
+      "memory": 729088,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IC02LjAyOCBNQgo=",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjk2MTc2OTQ3MzcyNjczMTMxMCIK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IC02LjAyOCBNQgo=",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjg5Nzc0NzM4MjY0ODAyOTg5MCIK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IC02LjAyOCBNQgo=",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjk5MjEzNjA4OTYyNDMzMjEzMSIK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "VGltZTogMSBtcwpNZW1vcnk6IC02LjAyOCBNQgo=",
+      "time": 0.002
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjk3NzgxMDk1NTg1MTE2MDcxMyIK",
+      "memory": 733184,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IC02LjAyOCBNQgo=",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 272605,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 51023872,
+    "problem_name": "area_of_union_of_rectangles",
+    "problem_title": "Area of Union of Rectangles",
+    "status": "AC",
+    "submission_time": "2025-03-11T06:15:16.263573Z",
+    "time": 0.399,
+    "user_name": "Richard1211"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4698112,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNjUyIHRva2Vucwo=",
+      "memory": 4177920,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjI3IHRva2Vucwo=",
+      "memory": 3915776,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNzE1IHRva2Vucwo=",
+      "memory": 4706304,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjE4IHRva2Vucwo=",
+      "memory": 4702208,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDEzIHRva2Vucwo=",
+      "memory": 4702208,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1Mzk3IHRva2Vucwo=",
+      "memory": 16478208,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2MzEyIHRva2Vucwo=",
+      "memory": 17838080,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMTIyIHRva2Vucwo=",
+      "memory": 9420800,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4NTYgdG9rZW5zCg==",
+      "memory": 13873152,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk2NDYgdG9rZW5zCg==",
+      "memory": 11522048,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5OTA3IHRva2Vucwo=",
+      "memory": 19382272,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMDU2IHRva2Vucwo=",
+      "memory": 19382272,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjQ5Nzc0IHRva2Vucwo=",
+      "memory": 19329024,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgMjQ5OTM0IHRva2Vucwo=",
+      "memory": 20176896,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgMjQ5NDU1IHRva2Vucwo=",
+      "memory": 20164608,
+      "status": "AC",
+      "time": 0.035
+    }
+  ],
+  "overview": {
+    "id": 306174,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 20176896,
+    "problem_name": "vertex_add_subtree_sum",
+    "problem_title": "Vertex Add Subtree Sum",
+    "status": "AC",
+    "submission_time": "2025-08-10T12:14:56.263597Z",
+    "time": 0.035,
+    "user_name": "mukundan314"
+  }
+}

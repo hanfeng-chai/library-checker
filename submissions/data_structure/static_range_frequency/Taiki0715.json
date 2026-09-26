@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 20545536,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 20844544,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 11755520,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25174016,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 24203264,
+      "status": "AC",
+      "time": 0.056
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 23207936,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13393920,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13910016,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13840384,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 10358784,
+      "status": "AC",
+      "time": 0.016
+    }
+  ],
+  "overview": {
+    "id": 258498,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 25174016,
+    "problem_name": "static_range_frequency",
+    "problem_title": "Static Range Frequency",
+    "status": "AC",
+    "submission_time": "2024-12-26T05:47:49.949727Z",
+    "time": 0.069,
+    "user_name": "Taiki0715"
+  }
+}

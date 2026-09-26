@@ -1,0 +1,163 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_1_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_1_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_1_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_1_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 7585792,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_1_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 8110080,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_1_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6012928,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3915776,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1040384,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5251072,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_2_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 7061504,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_2_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2863104,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10539008,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 10465280,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10428416,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6537216,
+      "status": "AC",
+      "time": 0.015
+    }
+  ],
+  "overview": {
+    "id": 106412,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 10539008,
+    "problem_name": "two_edge_connected_components",
+    "problem_title": "Two-Edge-Connected Components",
+    "status": "AC",
+    "time": 0.027,
+    "user_name": "Nachia"
+  }
+}

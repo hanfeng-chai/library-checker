@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 610304,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 589824,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 495616,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28008448,
+      "status": "AC",
+      "time": 0.515
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30408704,
+      "status": "AC",
+      "time": 0.59
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 37126144,
+      "status": "AC",
+      "time": 0.24
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 29364224,
+      "status": "AC",
+      "time": 0.554
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27918336,
+      "status": "AC",
+      "time": 0.425
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25903104,
+      "status": "AC",
+      "time": 0.448
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30035968,
+      "status": "AC",
+      "time": 0.579
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 34979840,
+      "status": "AC",
+      "time": 0.3
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28045312,
+      "status": "AC",
+      "time": 0.419
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 34549760,
+      "status": "AC",
+      "time": 0.308
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31408128,
+      "status": "AC",
+      "time": 0.609
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31440896,
+      "status": "AC",
+      "time": 0.598
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31444992,
+      "status": "AC",
+      "time": 0.601
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 33067008,
+      "status": "AC",
+      "time": 0.317
+    },
+    {
+      "case": "large_cycle_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 33071104,
+      "status": "AC",
+      "time": 0.316
+    }
+  ],
+  "overview": {
+    "id": 391362,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 37126144,
+    "problem_name": "incremental_scc",
+    "problem_title": "Strongly Connected Components (Incremental)",
+    "status": "AC",
+    "submission_time": "2026-08-08T06:42:44.530747Z",
+    "time": 0.609,
+    "user_name": "MeIoN"
+  }
+}

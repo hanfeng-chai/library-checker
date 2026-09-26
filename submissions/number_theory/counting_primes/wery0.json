@@ -1,0 +1,234 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 5771264,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjI1Igo=",
+      "memory": 5812224,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjQxMTgwNTQ4MTIiCg==",
+      "memory": 6205440,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjQxMTgwNTQ4MTIiCg==",
+      "memory": 5861376,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjQxMTgwNTQ4MTMiCg==",
+      "memory": 6389760,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgIjQxMTgwNTQ4MTIiCg==",
+      "memory": 6352896,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgIjQxMTgwNTQ4MTAiCg==",
+      "memory": 6213632,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjUyMjc4NCIK",
+      "memory": 5779456,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjI1Mzk4MiIK",
+      "memory": 5775360,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjE1MDg3OSIK",
+      "memory": 5828608,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQ1ODgzMyIK",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjU0ODYxMiIK",
+      "memory": 5881856,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "very_small_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 5537792,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "very_small_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 5791744,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "very_small_02",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 5771264,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "very_small_03",
+      "checker_out": "b2sgIjIiCg==",
+      "memory": 5767168,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "very_small_04",
+      "checker_out": "b2sgIjMiCg==",
+      "memory": 5783552,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjQwMzUyMTkzMTMiCg==",
+      "memory": 5906432,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjIzNjY2NTQ0NzEiCg==",
+      "memory": 6053888,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjI0NzAxODc2ODEiCg==",
+      "memory": 5890048,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjE4OTcwMzU1MDIiCg==",
+      "memory": 6148096,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjkyOTgyMjAzMCIK",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "Grothendieck_prime_00",
+      "checker_out": "b2sgIjE2Igo=",
+      "memory": 5677056,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_prime_00",
+      "checker_out": "b2sgIjI2Igo=",
+      "memory": 5808128,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_prime_01",
+      "checker_out": "b2sgIjQ2Igo=",
+      "memory": 5799936,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "boundaryA_00",
+      "checker_out": "b2sgIjQwMzUyMTQxODIiCg==",
+      "memory": 6258688,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "boundaryA_01",
+      "checker_out": "b2sgIjIzNjY2Mzc5MDkiCg==",
+      "memory": 6180864,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "boundaryA_02",
+      "checker_out": "b2sgIjI0NzAxNjg4OTAiCg==",
+      "memory": 5771264,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "boundaryB_00",
+      "checker_out": "b2sgIjQwMzUyMDE3MTQiCg==",
+      "memory": 6213632,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "boundaryB_01",
+      "checker_out": "b2sgIjIzNjY2NDc0OTciCg==",
+      "memory": 6033408,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "boundaryB_02",
+      "checker_out": "b2sgIjI0NzAxNzg3NDYiCg==",
+      "memory": 6320128,
+      "status": "AC",
+      "time": 0.005
+    }
+  ],
+  "overview": {
+    "id": 377988,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6389760,
+    "problem_name": "counting_primes",
+    "problem_title": "Counting Primes",
+    "status": "AC",
+    "submission_time": "2026-06-08T13:42:25.508392Z",
+    "time": 0.006,
+    "user_name": "wery0"
+  }
+}

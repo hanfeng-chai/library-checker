@@ -1,0 +1,206 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "euler_tour_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6770688,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "euler_tour_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6717440,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "euler_tour_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6148096,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "euler_tour_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 6242304,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "many_same_vertex_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 7286784,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "many_same_vertex_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 7114752,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "many_same_vertex_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 6807552,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6508544,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 6508544,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 7028736,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_random_walk_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6242304,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_walk_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5722112,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_walk_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 7110656,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "mid_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "mid_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1122304,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "mid_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "mid_random_walk_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2547712,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "mid_random_walk_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2469888,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "mid_random_walk_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2621440,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1171456,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_random_walk_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2052096,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_random_walk_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2039808,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_random_walk_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2048000,
+      "status": "AC",
+      "time": 0.009
+    }
+  ],
+  "overview": {
+    "id": 185415,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 7286784,
+    "problem_name": "eulerian_trail_directed",
+    "problem_title": "Eulerian Trail (Directed)",
+    "status": "AC",
+    "submission_time": "2024-01-22T14:28:43.633206Z",
+    "time": 0.028,
+    "user_name": "Nachia"
+  }
+}

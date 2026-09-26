@@ -1,0 +1,213 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTUgdG9rZW5zCg==",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 23134208,
+      "status": "AC",
+      "time": 0.245
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 25853952,
+      "status": "AC",
+      "time": 0.253
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzIwMDE2IHRva2Vucwo=",
+      "memory": 23322624,
+      "status": "AC",
+      "time": 0.239
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNDI5MjQ5IHRva2Vucwo=",
+      "memory": 25427968,
+      "status": "AC",
+      "time": 0.249
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjc3MDEyIHRva2Vucwo=",
+      "memory": 22282240,
+      "status": "AC",
+      "time": 0.235
+    },
+    {
+      "case": "maxDegX_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25939968,
+      "status": "AC",
+      "time": 0.256
+    },
+    {
+      "case": "maxDegY_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 18493440,
+      "status": "AC",
+      "time": 0.154
+    },
+    {
+      "case": "maxDeg_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 23056384,
+      "status": "AC",
+      "time": 0.245
+    },
+    {
+      "case": "maxDeg_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 25681920,
+      "status": "AC",
+      "time": 0.252
+    },
+    {
+      "case": "maxDeg_02",
+      "checker_out": "b2sgNDgwMDI0IHRva2Vucwo=",
+      "memory": 24453120,
+      "status": "AC",
+      "time": 0.358
+    },
+    {
+      "case": "smallDeg_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "smallDeg_01",
+      "checker_out": "b2sgMzAgdG9rZW5zCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smallDeg_02",
+      "checker_out": "b2sgNDggdG9rZW5zCg==",
+      "memory": 663552,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smallDeg_03",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 712704,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "smallDeg_04",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 692224,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "randomSquare_00",
+      "checker_out": "b2sgNDk5NTEwIHRva2Vucwo=",
+      "memory": 26066944,
+      "status": "AC",
+      "time": 0.361
+    },
+    {
+      "case": "randomSquare_01",
+      "checker_out": "b2sgNDk5OTUwIHRva2Vucwo=",
+      "memory": 26030080,
+      "status": "AC",
+      "time": 0.36
+    },
+    {
+      "case": "randomSquare_02",
+      "checker_out": "b2sgNDk5ODQwIHRva2Vucwo=",
+      "memory": 26292224,
+      "status": "AC",
+      "time": 0.361
+    },
+    {
+      "case": "randomSquare_03",
+      "checker_out": "b2sgNDk5NzY1IHRva2Vucwo=",
+      "memory": 25939968,
+      "status": "AC",
+      "time": 0.364
+    },
+    {
+      "case": "randomSquare_04",
+      "checker_out": "b2sgNDk5NDYwIHRva2Vucwo=",
+      "memory": 24518656,
+      "status": "AC",
+      "time": 0.359
+    },
+    {
+      "case": "degX2_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 24997888,
+      "status": "AC",
+      "time": 0.216
+    },
+    {
+      "case": "degX10_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28241920,
+      "status": "AC",
+      "time": 0.35
+    },
+    {
+      "case": "degX100_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 28233728,
+      "status": "AC",
+      "time": 0.348
+    },
+    {
+      "case": "degY2_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25944064,
+      "status": "AC",
+      "time": 0.257
+    },
+    {
+      "case": "degY10_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 24793088,
+      "status": "AC",
+      "time": 0.361
+    },
+    {
+      "case": "degY100_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 26095616,
+      "status": "AC",
+      "time": 0.358
+    },
+    {
+      "case": "square_00",
+      "checker_out": "b2sgNDk5ODQ5IHRva2Vucwo=",
+      "memory": 25026560,
+      "status": "AC",
+      "time": 0.36
+    }
+  ],
+  "overview": {
+    "id": 348816,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 28241920,
+    "problem_name": "inv_of_formal_power_series_2d",
+    "problem_title": "Inv of Bivariate Formal Power Series",
+    "status": "AC",
+    "submission_time": "2026-01-29T14:27:23.247379Z",
+    "time": 0.364,
+    "user_name": "hly1204"
+  }
+}

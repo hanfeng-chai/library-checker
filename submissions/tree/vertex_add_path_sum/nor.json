@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgMjUwMjE3IHRva2Vucwo=",
+      "memory": 23097344,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgMjUwMTY3IHRva2Vucwo=",
+      "memory": 23162880,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgMjUwMTE0IHRva2Vucwo=",
+      "memory": 23216128,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgMjUwMjEzIHRva2Vucwo=",
+      "memory": 23375872,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "long-path-decomposition_killer_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25804800,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwNjQwIHRva2Vucwo=",
+      "memory": 22306816,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwNDQwIHRva2Vucwo=",
+      "memory": 22323200,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwOTAzIHRva2Vucwo=",
+      "memory": 22319104,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA2MDAwIHRva2Vucwo=",
+      "memory": 18165760,
+      "status": "AC",
+      "time": 0.097
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2NjkyIHRva2Vucwo=",
+      "memory": 20664320,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMTUzIHRva2Vucwo=",
+      "memory": 6590464,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTMwMTUgdG9rZW5zCg==",
+      "memory": 17281024,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk2MDYgdG9rZW5zCg==",
+      "memory": 12529664,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTM1IHRva2Vucwo=",
+      "memory": 3014656,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTE1IHRva2Vucwo=",
+      "memory": 2580480,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTkwIHRva2Vucwo=",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMTA4IHRva2Vucwo=",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDA3IHRva2Vucwo=",
+      "memory": 2854912,
+      "status": "AC",
+      "time": 0.002
+    }
+  ],
+  "overview": {
+    "id": 243452,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 25804800,
+    "problem_name": "vertex_add_path_sum",
+    "problem_title": "Vertex Add Path Sum",
+    "status": "AC",
+    "submission_time": "2024-10-18T17:15:37.534866Z",
+    "time": 0.127,
+    "user_name": "nor"
+  }
+}

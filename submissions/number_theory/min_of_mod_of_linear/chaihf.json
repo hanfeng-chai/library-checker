@@ -1,0 +1,136 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTQgdG9rZW5zCg==",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 958464,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 1052672,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 1093632,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgODg1NjAgdG9rZW5zCg==",
+      "memory": 1085440,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1847296,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 929792,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 1060864,
+      "status": "AC",
+      "time": 0.015
+    }
+  ],
+  "overview": {
+    "id": 393723,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1847296,
+    "problem_name": "min_of_mod_of_linear",
+    "problem_title": "Min of Mod of Linear",
+    "status": "AC",
+    "submission_time": "2026-08-15T15:50:14.642667Z",
+    "time": 0.017,
+    "user_name": "chaihf"
+  }
+}

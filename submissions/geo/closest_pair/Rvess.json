@@ -1,0 +1,220 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3219456,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "fix_near_grid_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14946304,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "fix_near_grid_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 14946304,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "max_colinear_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14901248,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "max_colinear_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 14893056,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14888960,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 14893056,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 14848000,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 14938112,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 14909440,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 14893056,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 14897152,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 14893056,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "mid_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2834432,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "mid_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2834432,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "mid_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2842624,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "near_circle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14901248,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "near_circle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 14921728,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "near_grid_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14934016,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "near_grid_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 14934016,
+      "status": "AC",
+      "time": 0.125
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3022848,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 3010560,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2994176,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2985984,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2994176,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "small_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 2981888,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "small_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 2977792,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "small_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 3006464,
+      "status": "AC",
+      "time": 0.042
+    }
+  ],
+  "overview": {
+    "id": 251618,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 14946304,
+    "problem_name": "closest_pair",
+    "problem_title": "Closest Pair of Points",
+    "status": "AC",
+    "submission_time": "2024-11-22T22:12:41.281448Z",
+    "time": 0.127,
+    "user_name": "Rvess"
+  }
+}

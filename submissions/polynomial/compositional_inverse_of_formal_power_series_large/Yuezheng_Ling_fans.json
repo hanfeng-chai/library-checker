@@ -1,0 +1,241 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MzUyCg==",
+      "time": 0.001
+    },
+    {
+      "case": "identity_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 618496,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjAK",
+      "time": 0.001
+    },
+    {
+      "case": "max_identity_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 8998912,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.375
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 9003008,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.379
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 9232384,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.381
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 9007104,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.385
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 9240576,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.381
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 8998912,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.38
+    },
+    {
+      "case": "mid_00",
+      "checker_out": "b2sgNDc5OCB0b2tlbnMK",
+      "memory": 1265664,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MTA0ODU0NAo=",
+      "time": 0.016
+    },
+    {
+      "case": "mid_01",
+      "checker_out": "b2sgNDMwMyB0b2tlbnMK",
+      "memory": 1265664,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MTA0ODU0NAo=",
+      "time": 0.017
+    },
+    {
+      "case": "mid_02",
+      "checker_out": "b2sgNDE5MyB0b2tlbnMK",
+      "memory": 1269760,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MTA0ODU0NAo=",
+      "time": 0.016
+    },
+    {
+      "case": "mid_03",
+      "checker_out": "b2sgMzI3NCB0b2tlbnMK",
+      "memory": 1003520,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46NDkxNDg4Cg==",
+      "time": 0.008
+    },
+    {
+      "case": "mid_04",
+      "checker_out": "b2sgNjY4NSB0b2tlbnMK",
+      "memory": 1392640,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MTA0ODU0NAo=",
+      "time": 0.016
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI3NjcwIHRva2Vucwo=",
+      "memory": 8998912,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.381
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjk4MzEgdG9rZW5zCg==",
+      "memory": 8757248,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjA5NzE0ODgK",
+      "time": 0.374
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzcgdG9rZW5zCg==",
+      "memory": 4997120,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46OTk2MTQ0MAo=",
+      "time": 0.181
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzYwMzQgdG9rZW5zCg==",
+      "memory": 4685824,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46OTk2MTQ0MAo=",
+      "time": 0.17
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTQ4NjkgdG9rZW5zCg==",
+      "memory": 1810432,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjIyODE5Mgo=",
+      "time": 0.036
+    },
+    {
+      "case": "small_degree_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MjAK",
+      "time": 0
+    },
+    {
+      "case": "small_degree_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 733184,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MTI4Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MTI4Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_03",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MzUyCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_04",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MzUyCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_05",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MzUyCg==",
+      "time": 0
+    },
+    {
+      "case": "small_degree_06",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46MzUyCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_07",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46ODY0Cg==",
+      "time": 0
+    },
+    {
+      "case": "small_degree_08",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46ODY0Cg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_09",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 737280,
+      "status": "AC",
+      "stderr": "CmZmdF9sZW46ODY0Cg==",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 202342,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 9240576,
+    "problem_name": "compositional_inverse_of_formal_power_series_large",
+    "problem_title": "Compositional Inverse of Formal Power Series (Large)",
+    "status": "AC",
+    "submission_time": "2024-04-13T09:49:24.937778Z",
+    "time": 0.385,
+    "user_name": "Yuezheng_Ling_fans"
+  }
+}

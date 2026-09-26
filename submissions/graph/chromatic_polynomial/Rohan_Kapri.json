@@ -1,0 +1,255 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 5029888,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32935936,
+      "status": "AC",
+      "time": 0.15
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 5013504,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 5033984,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 5005312,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 5017600,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32780288,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 5111808,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 5033984,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgMjAgdG9rZW5zCg==",
+      "memory": 16846848,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgMTYgdG9rZW5zCg==",
+      "memory": 5693440,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "big_00",
+      "checker_out": "b2sgMTggdG9rZW5zCg==",
+      "memory": 7016448,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "big_01",
+      "checker_out": "b2sgMTkgdG9rZW5zCg==",
+      "memory": 8921088,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "big_02",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32690176,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "big_03",
+      "checker_out": "b2sgMTggdG9rZW5zCg==",
+      "memory": 7016448,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "big_04",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32776192,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "big_05",
+      "checker_out": "b2sgMTkgdG9rZW5zCg==",
+      "memory": 8695808,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "big_06",
+      "checker_out": "b2sgMTkgdG9rZW5zCg==",
+      "memory": 8695808,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "big_07",
+      "checker_out": "b2sgMjAgdG9rZW5zCg==",
+      "memory": 16785408,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "big_08",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32776192,
+      "status": "AC",
+      "time": 0.142
+    },
+    {
+      "case": "big_09",
+      "checker_out": "b2sgMTggdG9rZW5zCg==",
+      "memory": 6983680,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "clique_cycle_00",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32808960,
+      "status": "AC",
+      "time": 0.15
+    },
+    {
+      "case": "clique_cycle_01",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32817152,
+      "status": "AC",
+      "time": 0.142
+    },
+    {
+      "case": "clique_cycle_02",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32919552,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "clique_cycle_03",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 32903168,
+      "status": "AC",
+      "time": 0.142
+    },
+    {
+      "case": "loop_00",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 5013504,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "loop_01",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "multi_edge_00",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 4997120,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "multi_edge_01",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 5013504,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "multi_edge_02",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 5025792,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "multi_edge_03",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.004
+    }
+  ],
+  "overview": {
+    "id": 404915,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 32935936,
+    "problem_name": "chromatic_polynomial",
+    "problem_title": "Chromatic Polynomial",
+    "status": "AC",
+    "submission_time": "2026-09-22T05:17:59.466364Z",
+    "time": 0.15,
+    "user_name": "Rohan_Kapri"
+  }
+}

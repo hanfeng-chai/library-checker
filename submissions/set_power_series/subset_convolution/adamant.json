@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 516096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 782336,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35512320,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAyNCB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35368960,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35373056,
+      "status": "AC",
+      "time": 0.094
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35385344,
+      "status": "AC",
+      "time": 0.094
+    },
+    {
+      "case": "hack01_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35364864,
+      "status": "AC",
+      "time": 0.087
+    }
+  ],
+  "overview": {
+    "id": 352953,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 35512320,
+    "problem_name": "subset_convolution",
+    "problem_title": "Subset Convolution",
+    "status": "AC",
+    "submission_time": "2026-02-15T12:12:39.657796Z",
+    "time": 0.094,
+    "user_name": "adamant"
+  }
+}

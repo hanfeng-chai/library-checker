@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgODIxODQ2IHRva2Vucwo=",
+      "memory": 29929472,
+      "status": "AC",
+      "time": 0.127
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgODI1ODE0IHRva2Vucwo=",
+      "memory": 31506432,
+      "status": "AC",
+      "time": 0.142
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNzY0Njk0IHRva2Vucwo=",
+      "memory": 21434368,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 37527552,
+      "status": "AC",
+      "time": 0.163
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 36990976,
+      "status": "AC",
+      "time": 0.162
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 37289984,
+      "status": "AC",
+      "time": 0.162
+    },
+    {
+      "case": "small_a_x_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 33329152,
+      "status": "AC",
+      "time": 0.138
+    },
+    {
+      "case": "small_a_x_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 33087488,
+      "status": "AC",
+      "time": 0.134
+    },
+    {
+      "case": "small_a_x_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 33251328,
+      "status": "AC",
+      "time": 0.139
+    }
+  ],
+  "overview": {
+    "id": 400956,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 37527552,
+    "problem_name": "static_range_sum_with_upper_bound",
+    "problem_title": "Static Range Sum with Upper Bound",
+    "status": "AC",
+    "submission_time": "2026-09-09T08:51:05.075457Z",
+    "time": 0.163,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "cactus_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 53489664,
+      "status": "AC",
+      "time": 0.15
+    },
+    {
+      "case": "cactus_01",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 60129280,
+      "status": "AC",
+      "time": 0.182
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sgbm90IGZvdW5kCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "many_series_parallel_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 51314688,
+      "status": "AC",
+      "time": 0.168
+    },
+    {
+      "case": "many_series_parallel_01",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 51408896,
+      "status": "AC",
+      "time": 0.163
+    },
+    {
+      "case": "max_cycle_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 62115840,
+      "status": "AC",
+      "time": 0.217
+    },
+    {
+      "case": "max_parallel_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 35823616,
+      "status": "AC",
+      "time": 0.117
+    },
+    {
+      "case": "max_sparse_random_00",
+      "checker_out": "b2sgT0sgbm90IGZvdW5kCg==",
+      "memory": 40861696,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "max_sparse_random_01",
+      "checker_out": "b2sgT0sgbm90IGZvdW5kCg==",
+      "memory": 40787968,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "max_sparse_random_02",
+      "checker_out": "b2sgT0sgbm90IGZvdW5kCg==",
+      "memory": 40976384,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "outer_planer_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 24924160,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "outer_planer_01",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 28364800,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "outer_planer_fix_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 47177728,
+      "status": "AC",
+      "time": 0.173
+    },
+    {
+      "case": "outer_planer_fix_01",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 50765824,
+      "status": "AC",
+      "time": 0.183
+    },
+    {
+      "case": "series_parallel_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 33714176,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "series_parallel_01",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 33759232,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sgbm90IGZvdW5kCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sgbm90IGZvdW5kCg==",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tree_00",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 56918016,
+      "status": "AC",
+      "time": 0.172
+    },
+    {
+      "case": "tree_01",
+      "checker_out": "b2sgT0sgZm91bmQK",
+      "memory": 57069568,
+      "status": "AC",
+      "time": 0.168
+    }
+  ],
+  "overview": {
+    "id": 111917,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 62115840,
+    "problem_name": "tree_decomposition_width_2",
+    "problem_title": "Tree Decomposition (Width 2)",
+    "status": "AC",
+    "time": 0.217,
+    "user_name": "Nachia"
+  }
+}

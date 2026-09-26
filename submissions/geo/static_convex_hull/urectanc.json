@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1118208,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1146880,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6336512,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1802240,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1867776,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2285568,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 6537216,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "small_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 1957888,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "small_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 1818624,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "small_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 2338816,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4988928,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4816896,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5038080,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5025792,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 5017600,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 4878336,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 5017600,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_colinear_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4808704,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_colinear_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5025792,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "near_circle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 11313152,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "near_circle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 10727424,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_ans_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 18190336,
+      "status": "AC",
+      "time": 0.035
+    }
+  ],
+  "overview": {
+    "id": 385806,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 18190336,
+    "problem_name": "static_convex_hull",
+    "problem_title": "Static Convex Hull",
+    "status": "AC",
+    "submission_time": "2026-07-16T11:25:20.549339Z",
+    "time": 0.035,
+    "user_name": "urectanc"
+  }
+}

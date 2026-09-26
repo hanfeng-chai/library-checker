@@ -1,0 +1,213 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "almost_t0_00",
+      "checker_out": "b2sgOTc1IHRva2Vucwo=",
+      "memory": 17776640,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "almost_t0_01",
+      "checker_out": "b2sgOTk0IHRva2Vucwo=",
+      "memory": 17780736,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "almost_t0_02",
+      "checker_out": "b2sgOTc0IHRva2Vucwo=",
+      "memory": 17862656,
+      "status": "AC",
+      "time": 0.131
+    },
+    {
+      "case": "almost_t1_00",
+      "checker_out": "b2sgOTkwMDkgdG9rZW5zCg==",
+      "memory": 17780736,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "almost_t1_01",
+      "checker_out": "b2sgOTg5NTcgdG9rZW5zCg==",
+      "memory": 17805312,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "almost_t1_02",
+      "checker_out": "b2sgOTkwMTIgdG9rZW5zCg==",
+      "memory": 17809408,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAxMzUgdG9rZW5zCg==",
+      "memory": 17825792,
+      "status": "AC",
+      "time": 0.219
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAxNTAgdG9rZW5zCg==",
+      "memory": 17596416,
+      "status": "AC",
+      "time": 0.213
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAxNzEgdG9rZW5zCg==",
+      "memory": 17817600,
+      "status": "AC",
+      "time": 0.218
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg3NDggdG9rZW5zCg==",
+      "memory": 6053888,
+      "status": "AC",
+      "time": 0.092
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTg3MCB0b2tlbnMK",
+      "memory": 15187968,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzA4NzMgdG9rZW5zCg==",
+      "memory": 9658368,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTExIHRva2Vucwo=",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTAxIHRva2Vucwo=",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTAzIHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTA3IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTA3IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNTE0IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDU1IHRva2Vucwo=",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNDkwIHRva2Vucwo=",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNTA1IHRva2Vucwo=",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNTA4IHRva2Vucwo=",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjYxIHRva2Vucwo=",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjQxIHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "width_almost_n_00",
+      "checker_out": "b2sgNDk5NDcgdG9rZW5zCg==",
+      "memory": 17272832,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "width_almost_n_01",
+      "checker_out": "b2sgNDk4MTggdG9rZW5zCg==",
+      "memory": 17272832,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "width_almost_n_02",
+      "checker_out": "b2sgNTAwNzggdG9rZW5zCg==",
+      "memory": 17465344,
+      "status": "AC",
+      "time": 0.078
+    }
+  ],
+  "overview": {
+    "id": 234541,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 17862656,
+    "problem_name": "range_linear_add_range_min",
+    "problem_title": "Range Linear Add Range Min",
+    "status": "AC",
+    "submission_time": "2024-09-10T07:00:45.633493Z",
+    "time": 0.219,
+    "user_name": "tonegawa"
+  }
+}

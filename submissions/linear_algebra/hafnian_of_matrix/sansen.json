@@ -1,0 +1,93 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjI4Igo=",
+      "memory": 331776,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "hack77047_00",
+      "checker_out": "b2sgIjMxMjg4MjgxMCIK",
+      "memory": 40615936,
+      "status": "AC",
+      "time": 0.538
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgIjE2OTkxMjc2MCIK",
+      "memory": 1024000,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgIjk5NzMxMTcxMiIK",
+      "memory": 1548288,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgIjk5NjY0NTc5MiIK",
+      "memory": 4698112,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgIjQxNjI4MDMxNCIK",
+      "memory": 40611840,
+      "status": "AC",
+      "time": 0.54
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgIjkxNzIyMjk0OSIK",
+      "memory": 40607744,
+      "status": "AC",
+      "time": 0.538
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgIjc0NDUzNzc0MiIK",
+      "memory": 40611840,
+      "status": "AC",
+      "time": 0.539
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjIzMjYyOTY5NyIK",
+      "memory": 593920,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjk0MTg3NDYyMCIK",
+      "memory": 339968,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjI3MTM2ODg0OSIK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 118101,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 40615936,
+    "problem_name": "hafnian_of_matrix",
+    "problem_title": "Hafnian of Matrix",
+    "status": "AC",
+    "time": 0.54,
+    "user_name": "sansen"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 524288,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 512000,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4MjcgdG9rZW5zCg==",
+      "memory": 3600384,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTcxOTEgdG9rZW5zCg==",
+      "memory": 4050944,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjMxOSB0b2tlbnMK",
+      "memory": 1851392,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzMDAgdG9rZW5zCg==",
+      "memory": 4308992,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTYyNCB0b2tlbnMK",
+      "memory": 946176,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjI0OTUgdG9rZW5zCg==",
+      "memory": 4833280,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjIxNzQgdG9rZW5zCg==",
+      "memory": 5070848,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjIzMTIgdG9rZW5zCg==",
+      "memory": 4861952,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjIxNTAgdG9rZW5zCg==",
+      "memory": 5062656,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjIwMjEgdG9rZW5zCg==",
+      "memory": 4841472,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4841472,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4845568,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4841472,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4792320,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 4845568,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "fib_str_00",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 5582848,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "fib_str_01",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 4579328,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "fib_str_02",
+      "checker_out": "b2sgMTcxOTM0IHRva2Vucwo=",
+      "memory": 4231168,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "fib_str_03",
+      "checker_out": "b2sgMzMxMzM5IHRva2Vucwo=",
+      "memory": 6246400,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "fib_str_04",
+      "checker_out": "b2sgMTA2MjU4IHRva2Vucwo=",
+      "memory": 5226496,
+      "status": "AC",
+      "time": 0.017
+    }
+  ],
+  "overview": {
+    "id": 313634,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6246400,
+    "problem_name": "runenumerate",
+    "problem_title": "Run Enumerate",
+    "status": "AC",
+    "submission_time": "2025-09-09T23:18:42.627957Z",
+    "time": 0.029
+  }
+}

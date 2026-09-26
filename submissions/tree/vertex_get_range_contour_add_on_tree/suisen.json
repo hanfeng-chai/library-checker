@@ -1,0 +1,338 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "binary_2_00",
+      "checker_out": "b2sgMTAwMDM3IHRva2Vucwo=",
+      "memory": 60416000,
+      "status": "AC",
+      "time": 0.157
+    },
+    {
+      "case": "binary_2_01",
+      "checker_out": "b2sgOTk4MTMgdG9rZW5zCg==",
+      "memory": 59891712,
+      "status": "AC",
+      "time": 0.163
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTIgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "line_1_00",
+      "checker_out": "b2sgOTk5NDIgdG9rZW5zCg==",
+      "memory": 73031680,
+      "status": "AC",
+      "time": 0.204
+    },
+    {
+      "case": "line_2_00",
+      "checker_out": "b2sgOTk4MDEgdG9rZW5zCg==",
+      "memory": 75493376,
+      "status": "AC",
+      "time": 0.205
+    },
+    {
+      "case": "random_large_1_00",
+      "checker_out": "b2sgOTk5MzcgdG9rZW5zCg==",
+      "memory": 63778816,
+      "status": "AC",
+      "time": 0.197
+    },
+    {
+      "case": "random_large_2_00",
+      "checker_out": "b2sgOTk5NDMgdG9rZW5zCg==",
+      "memory": 62951424,
+      "status": "AC",
+      "time": 0.203
+    },
+    {
+      "case": "random_many_addquery_2_00",
+      "checker_out": "b2sgMjAwNTggdG9rZW5zCg==",
+      "memory": 64221184,
+      "status": "AC",
+      "time": 0.216
+    },
+    {
+      "case": "random_many_addquery_2_01",
+      "checker_out": "b2sgMjAyMzggdG9rZW5zCg==",
+      "memory": 63975424,
+      "status": "AC",
+      "time": 0.212
+    },
+    {
+      "case": "random_many_getquery_2_00",
+      "checker_out": "b2sgMTc5ODcwIHRva2Vucwo=",
+      "memory": 64290816,
+      "status": "AC",
+      "time": 0.191
+    },
+    {
+      "case": "random_many_getquery_2_01",
+      "checker_out": "b2sgMTc5OTI4IHRva2Vucwo=",
+      "memory": 63787008,
+      "status": "AC",
+      "time": 0.192
+    },
+    {
+      "case": "random_max_1_00",
+      "checker_out": "b2sgOTk5NzggdG9rZW5zCg==",
+      "memory": 64057344,
+      "status": "AC",
+      "time": 0.195
+    },
+    {
+      "case": "random_max_2_00",
+      "checker_out": "b2sgMTAwMDQ2IHRva2Vucwo=",
+      "memory": 63881216,
+      "status": "AC",
+      "time": 0.205
+    },
+    {
+      "case": "random_medium_1_00",
+      "checker_out": "b2sgNjU2IHRva2Vucwo=",
+      "memory": 1568768,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_1_01",
+      "checker_out": "b2sgNjQwIHRva2Vucwo=",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_00",
+      "checker_out": "b2sgNjUyIHRva2Vucwo=",
+      "memory": 1568768,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_01",
+      "checker_out": "b2sgNjUwIHRva2Vucwo=",
+      "memory": 1372160,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_02",
+      "checker_out": "b2sgNzA2IHRva2Vucwo=",
+      "memory": 1269760,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_03",
+      "checker_out": "b2sgNTg1IHRva2Vucwo=",
+      "memory": 1261568,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_04",
+      "checker_out": "b2sgOTEwIHRva2Vucwo=",
+      "memory": 1589248,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_medium_2_05",
+      "checker_out": "b2sgNjQwIHRva2Vucwo=",
+      "memory": 1789952,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_medium_2_06",
+      "checker_out": "b2sgNjE1IHRva2Vucwo=",
+      "memory": 1794048,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_medium_2_07",
+      "checker_out": "b2sgNjI3IHRva2Vucwo=",
+      "memory": 1527808,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_small_tree_many_query_1_00",
+      "checker_out": "b2sgMTAwMzM3IHRva2Vucwo=",
+      "memory": 1916928,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_small_tree_many_query_1_01",
+      "checker_out": "b2sgMTAwMDc0IHRva2Vucwo=",
+      "memory": 2031616,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_small_tree_many_query_1_02",
+      "checker_out": "b2sgOTk1MzMgdG9rZW5zCg==",
+      "memory": 2072576,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_1_03",
+      "checker_out": "b2sgMTAwMTc0IHRva2Vucwo=",
+      "memory": 1851392,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_1_04",
+      "checker_out": "b2sgOTk5NzkgdG9rZW5zCg==",
+      "memory": 1867776,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_small_tree_many_query_1_05",
+      "checker_out": "b2sgMTAwMjAyIHRva2Vucwo=",
+      "memory": 2097152,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_1_06",
+      "checker_out": "b2sgMTAwMDUzIHRva2Vucwo=",
+      "memory": 1794048,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_1_07",
+      "checker_out": "b2sgOTk5OTcgdG9rZW5zCg==",
+      "memory": 1892352,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_small_tree_many_query_1_08",
+      "checker_out": "b2sgMTAwNjA4IHRva2Vucwo=",
+      "memory": 1896448,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_1_09",
+      "checker_out": "b2sgOTk1NjMgdG9rZW5zCg==",
+      "memory": 1921024,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_2_00",
+      "checker_out": "b2sgMTAwMzM3IHRva2Vucwo=",
+      "memory": 1884160,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_small_tree_many_query_2_01",
+      "checker_out": "b2sgMTAwMDc0IHRva2Vucwo=",
+      "memory": 1933312,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_small_tree_many_query_2_02",
+      "checker_out": "b2sgOTk2NzQgdG9rZW5zCg==",
+      "memory": 2068480,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_small_tree_many_query_2_03",
+      "checker_out": "b2sgMTAwMjU5IHRva2Vucwo=",
+      "memory": 1855488,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_small_tree_many_query_2_04",
+      "checker_out": "b2sgOTk5MDAgdG9rZW5zCg==",
+      "memory": 1974272,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_small_tree_many_query_2_05",
+      "checker_out": "b2sgMTAwMTU2IHRva2Vucwo=",
+      "memory": 2007040,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "random_small_tree_many_query_2_06",
+      "checker_out": "b2sgMTAwMTU1IHRva2Vucwo=",
+      "memory": 1933312,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_2_07",
+      "checker_out": "b2sgMTAwMDQyIHRva2Vucwo=",
+      "memory": 1994752,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_small_tree_many_query_2_08",
+      "checker_out": "b2sgMTAwMzIzIHRva2Vucwo=",
+      "memory": 1896448,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_small_tree_many_query_2_09",
+      "checker_out": "b2sgOTk5MDAgdG9rZW5zCg==",
+      "memory": 1851392,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "uni_2_00",
+      "checker_out": "b2sgMTAwMDUyIHRva2Vucwo=",
+      "memory": 70942720,
+      "status": "AC",
+      "time": 0.207
+    },
+    {
+      "case": "uni_2_01",
+      "checker_out": "b2sgMTAwMDU1IHRva2Vucwo=",
+      "memory": 70864896,
+      "status": "AC",
+      "time": 0.211
+    }
+  ],
+  "overview": {
+    "id": 140471,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 75493376,
+    "problem_name": "vertex_get_range_contour_add_on_tree",
+    "problem_title": "Vertex Get Range Contour Add on Tree",
+    "status": "AC",
+    "time": 0.216,
+    "user_name": "suisen"
+  }
+}

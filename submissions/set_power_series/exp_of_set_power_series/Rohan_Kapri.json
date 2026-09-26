@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTYzODQgdG9rZW5zCg==",
+      "memory": 1048576,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 5799936,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1990656,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 20828160,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 20828160,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 21012480,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "n_01_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "n_01_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "overflow_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 20987904,
+      "status": "AC",
+      "time": 0.083
+    }
+  ],
+  "overview": {
+    "id": 406011,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 21012480,
+    "problem_name": "exp_of_set_power_series",
+    "problem_title": "Exp of Set Power Series",
+    "status": "AC",
+    "submission_time": "2026-09-25T06:17:42.950445Z",
+    "time": 0.085,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjQ4Igo=",
+      "memory": 3674112,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjEzMzI5NDMxIgo=",
+      "memory": 3448832,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3207168,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjI3NjQ3NzE5MyIK",
+      "memory": 8409088,
+      "status": "AC",
+      "time": 0.097
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjc4MzAwMjU5OCIK",
+      "memory": 10416128,
+      "status": "AC",
+      "time": 0.221
+    },
+    {
+      "case": "maxi_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3416064,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "maxi_01",
+      "checker_out": "b2sgIjk2OTgxOTA3MiIK",
+      "memory": 13516800,
+      "status": "AC",
+      "time": 0.348
+    },
+    {
+      "case": "maxi_02",
+      "checker_out": "b2sgIjU3NTI5MTIiCg==",
+      "memory": 13324288,
+      "status": "AC",
+      "time": 0.393
+    },
+    {
+      "case": "maxi_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3411968,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "maxi_04",
+      "checker_out": "b2sgIjQwMjY5MTY0NSIK",
+      "memory": 13344768,
+      "status": "AC",
+      "time": 0.394
+    },
+    {
+      "case": "special_00",
+      "checker_out": "b2sgIjczNzAyNTIzOCIK",
+      "memory": 16531456,
+      "status": "AC",
+      "time": 0.205
+    },
+    {
+      "case": "special_01",
+      "checker_out": "b2sgIjM2MTAxODk4OCIK",
+      "memory": 16769024,
+      "status": "AC",
+      "time": 0.386
+    },
+    {
+      "case": "special_02",
+      "checker_out": "b2sgIjYxNzI2NTkxMSIK",
+      "memory": 16789504,
+      "status": "AC",
+      "time": 0.381
+    },
+    {
+      "case": "special_03",
+      "checker_out": "b2sgIjM0MTY1MzI2MyIK",
+      "memory": 17170432,
+      "status": "AC",
+      "time": 0.334
+    },
+    {
+      "case": "special_04",
+      "checker_out": "b2sgIjYyODgyNTM0NSIK",
+      "memory": 16572416,
+      "status": "AC",
+      "time": 0.296
+    },
+    {
+      "case": "special_05",
+      "checker_out": "b2sgIjQxMTg5NjgxIgo=",
+      "memory": 20848640,
+      "status": "AC",
+      "time": 0.379
+    }
+  ],
+  "overview": {
+    "id": 406208,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 20848640,
+    "problem_name": "number_of_increasing_sequences_between_two_sequences",
+    "problem_title": "Number of Increasing Sequences Between Two Sequences",
+    "status": "AC",
+    "submission_time": "2026-09-26T05:37:31.004268Z",
+    "time": 0.394,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgNjAxMTkgdG9rZW5zCg==",
+      "memory": 18694144,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgNTk4NTYgdG9rZW5zCg==",
+      "memory": 17838080,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "dense_02",
+      "checker_out": "b2sgNTk3MzEgdG9rZW5zCg==",
+      "memory": 17907712,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "link_and_cut_00",
+      "checker_out": "b2sgMzAwMCB0b2tlbnMK",
+      "memory": 28663808,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNzUyNTIgdG9rZW5zCg==",
+      "memory": 25530368,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNzQ3MTQgdG9rZW5zCg==",
+      "memory": 25526272,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNzUwNTMgdG9rZW5zCg==",
+      "memory": 25526272,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNjg2MzYgdG9rZW5zCg==",
+      "memory": 22859776,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNTI2MTcgdG9rZW5zCg==",
+      "memory": 16646144,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjMxNTUgdG9rZW5zCg==",
+      "memory": 7413760,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMzI0OTIgdG9rZW5zCg==",
+      "memory": 8781824,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMjQ5NDMgdG9rZW5zCg==",
+      "memory": 13996032,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgODEgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTggdG9rZW5zCg==",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTAwIHRva2Vucwo=",
+      "memory": 495616,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "uv_swapped_00",
+      "checker_out": "b2sgNzUwOTAgdG9rZW5zCg==",
+      "memory": 25694208,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "uv_swapped_01",
+      "checker_out": "b2sgNzQ5NzYgdG9rZW5zCg==",
+      "memory": 25530368,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "uv_swapped_02",
+      "checker_out": "b2sgNzQ2NTYgdG9rZW5zCg==",
+      "memory": 25522176,
+      "status": "AC",
+      "time": 0.041
+    }
+  ],
+  "overview": {
+    "id": 283414,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 28663808,
+    "problem_name": "dynamic_graph_vertex_add_component_sum",
+    "problem_title": "Dynamic Graph Vertex Add Component Sum",
+    "status": "AC",
+    "submission_time": "2025-05-05T03:44:14.90396Z",
+    "time": 0.072,
+    "user_name": "Taiki0715"
+  }
+}

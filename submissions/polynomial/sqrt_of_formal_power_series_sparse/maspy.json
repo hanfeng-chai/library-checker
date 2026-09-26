@@ -1,0 +1,331 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4149248,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4665344,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3883008,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 16052224,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 4653056,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 16310272,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 3887104,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 4702208,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_random_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 4673536,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_random_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 3358720,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "min_K_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2351104,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "min_K_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 3616768,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2310144,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1789952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1523712,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 3362816,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 5586944,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 1531904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 11313152,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 13451264,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 3100672,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_dense_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 18268160,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "small_dense_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 4190208,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_dense_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4673536,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_dense_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 7553024,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "small_dense_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 3887104,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_dense_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 18386944,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "small_dense_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 18608128,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "small_dense_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 4640768,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_dense_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 18837504,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "small_dense_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 8343552,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "small_N_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 93368,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18837504,
+    "problem_name": "sqrt_of_formal_power_series_sparse",
+    "problem_title": "Sqrt of Formal Power Series (Sparse)",
+    "status": "AC",
+    "time": 0.08,
+    "user_name": "maspy"
+  }
+}

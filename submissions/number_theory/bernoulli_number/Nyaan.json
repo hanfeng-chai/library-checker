@@ -1,0 +1,93 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 7122944,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 7114752,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 7127040,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "100_00",
+      "checker_out": "b2sgMTAxIHRva2Vucwo=",
+      "memory": 7090176,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "1000_00",
+      "checker_out": "b2sgMTAwMSB0b2tlbnMK",
+      "memory": 7090176,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "10000_00",
+      "checker_out": "b2sgMTAwMDEgdG9rZW5zCg==",
+      "memory": 7352320,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "100000_00",
+      "checker_out": "b2sgMTAwMDAxIHRva2Vucwo=",
+      "memory": 9748480,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "200000_00",
+      "checker_out": "b2sgMjAwMDAxIHRva2Vucwo=",
+      "memory": 11943936,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "300000_00",
+      "checker_out": "b2sgMzAwMDAxIHRva2Vucwo=",
+      "memory": 16134144,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "400000_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 16896000,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 17674240,
+      "status": "AC",
+      "time": 0.054
+    }
+  ],
+  "overview": {
+    "id": 17797,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 17674240,
+    "problem_name": "bernoulli_number",
+    "problem_title": "Bernoulli Number",
+    "status": "AC",
+    "time": 0.054,
+    "user_name": "Nyaan"
+  }
+}

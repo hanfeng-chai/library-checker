@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_random_1_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 372736,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_1_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 28884992,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "random_2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 27013120,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "random_2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 22814720,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "random_2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 15601664,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 35696640,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "max_random_2_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 30932992,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "max_random_2_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 31023104,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "max_random_2_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 30973952,
+      "status": "AC",
+      "time": 0.076
+    },
+    {
+      "case": "max_tree_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 16523264,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_star_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 16551936,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "max_line_clique_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 31731712,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 40157184,
+      "status": "AC",
+      "time": 0.064
+    }
+  ],
+  "overview": {
+    "id": 404623,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 40157184,
+    "problem_name": "biconnected_components",
+    "problem_title": "Biconnected Components",
+    "status": "AC",
+    "submission_time": "2026-09-21T11:55:31.776405Z",
+    "time": 0.076,
+    "user_name": "Rohan_Kapri"
+  }
+}

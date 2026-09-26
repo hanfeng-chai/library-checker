@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "big_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30097408,
+      "status": "AC",
+      "time": 0.161
+    },
+    {
+      "case": "big_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31662080,
+      "status": "AC",
+      "time": 0.161
+    },
+    {
+      "case": "big_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31711232,
+      "status": "AC",
+      "time": 0.162
+    },
+    {
+      "case": "big_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30367744,
+      "status": "AC",
+      "time": 0.161
+    },
+    {
+      "case": "big_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31686656,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "many_sets_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30892032,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "many_sets_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31637504,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "many_sets_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31567872,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "many_sets_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 30928896,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "many_sets_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 31657984,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 27156480,
+      "status": "AC",
+      "time": 0.144
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 27488256,
+      "status": "AC",
+      "time": 0.145
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 26992640,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 4145152,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 10084352,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMTAwMCB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_large_T_00",
+      "checker_out": "b2sgNDk5OTQyIHRva2Vucwo=",
+      "memory": 27492352,
+      "status": "AC",
+      "time": 0.135
+    },
+    {
+      "case": "small_N_large_T_01",
+      "checker_out": "b2sgNDk5OTIwIHRva2Vucwo=",
+      "memory": 27136000,
+      "status": "AC",
+      "time": 0.134
+    },
+    {
+      "case": "small_N_large_T_02",
+      "checker_out": "b2sgNDk5OTEwIHRva2Vucwo=",
+      "memory": 27570176,
+      "status": "AC",
+      "time": 0.135
+    }
+  ],
+  "overview": {
+    "id": 243226,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 31711232,
+    "problem_name": "sharp_p_subset_sum",
+    "problem_title": "$\\#_p$ Subset Sum",
+    "status": "AC",
+    "submission_time": "2024-10-18T03:35:23.642774Z",
+    "time": 0.162,
+    "user_name": "cmk666"
+  }
+}

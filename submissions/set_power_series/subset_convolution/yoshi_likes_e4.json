@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 49008640,
+      "status": "AC",
+      "time": 0.209
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 49131520,
+      "status": "AC",
+      "time": 0.208
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 49008640,
+      "status": "AC",
+      "time": 0.209
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 49000448,
+      "status": "AC",
+      "time": 0.208
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 67883008,
+      "status": "AC",
+      "time": 0.233
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 49168384,
+      "status": "AC",
+      "time": 0.206
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAyNCB0b2tlbnMK",
+      "memory": 49180672,
+      "status": "AC",
+      "time": 0.206
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 67874816,
+      "status": "AC",
+      "time": 0.235
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 67813376,
+      "status": "AC",
+      "time": 0.234
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 67878912,
+      "status": "AC",
+      "time": 0.233
+    },
+    {
+      "case": "hack01_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 67895296,
+      "status": "AC",
+      "time": 0.228
+    }
+  ],
+  "overview": {
+    "id": 367847,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 67895296,
+    "problem_name": "subset_convolution",
+    "problem_title": "Subset Convolution",
+    "status": "AC",
+    "submission_time": "2026-04-21T13:14:13.807728Z",
+    "time": 0.235,
+    "user_name": "yoshi_likes_e4"
+  }
+}

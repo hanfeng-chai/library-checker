@@ -1,0 +1,276 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_05",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_06",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_07",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 1310720,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk4IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 5459968,
+      "status": "AC",
+      "time": 0.129
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 8028160,
+      "status": "AC",
+      "time": 0.232
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24252416,
+      "status": "AC",
+      "time": 0.243
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7884800,
+      "status": "AC",
+      "time": 0.225
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7815168,
+      "status": "AC",
+      "time": 0.233
+    },
+    {
+      "case": "random_fullrank_00",
+      "checker_out": "b2sgNjkzIHRva2Vucwo=",
+      "memory": 1306624,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "random_fullrank_01",
+      "checker_out": "b2sgMTk4IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_fullrank_02",
+      "checker_out": "b2sgODggdG9rZW5zCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_fullrank_03",
+      "checker_out": "b2sgMzI2NSB0b2tlbnMK",
+      "memory": 15822848,
+      "status": "AC",
+      "time": 0.142
+    },
+    {
+      "case": "max_fullrank_00",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 23842816,
+      "status": "AC",
+      "time": 0.242
+    },
+    {
+      "case": "max_fullrank_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24199168,
+      "status": "AC",
+      "time": 0.241
+    },
+    {
+      "case": "max_fullrank_02",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 23502848,
+      "status": "AC",
+      "time": 0.241
+    },
+    {
+      "case": "max_fullrank_03",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24023040,
+      "status": "AC",
+      "time": 0.243
+    },
+    {
+      "case": "lowrank_max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 6819840,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "lowrank_max_random_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7921664,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "lowrank_max_random_02",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7393280,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "lowrank_max_random_03",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 8065024,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "lowrank_max_random_04",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7888896,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "lowrank_max_random_05",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7884800,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "lowrank_max_random_06",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 6828032,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "lowrank_max_random_07",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7872512,
+      "status": "AC",
+      "time": 0.066
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7110656,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIi0xIgo=",
+      "memory": 7131136,
+      "status": "AC",
+      "time": 0.022
+    }
+  ],
+  "overview": {
+    "id": 391388,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24252416,
+    "problem_name": "inverse_matrix_mod_2",
+    "problem_title": "Inverse Matrix (Mod 2)",
+    "status": "AC",
+    "submission_time": "2026-08-08T10:15:20.14299Z",
+    "time": 0.243,
+    "user_name": "MeIoN"
+  }
+}

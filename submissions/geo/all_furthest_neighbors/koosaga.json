@@ -1,0 +1,122 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2138112,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4046848,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 3792896,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3940352,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 3874816,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 3940352,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "many_small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1470464,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "many_small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1327104,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "symmetric_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 5574656,
+      "status": "AC",
+      "time": 0.092
+    },
+    {
+      "case": "symmetric_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5496832,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "non_unimodal_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1314816,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "overflow_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 851968,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_convex_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 18841600,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "max_convex_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 18878464,
+      "status": "AC",
+      "time": 0.106
+    }
+  ],
+  "overview": {
+    "id": 403758,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18878464,
+    "problem_name": "all_furthest_neighbors",
+    "problem_title": "All Furthest Neighbors of a Convex Polygon",
+    "status": "AC",
+    "submission_time": "2026-09-18T21:02:29.239516Z",
+    "time": 0.107,
+    "user_name": "koosaga"
+  }
+}

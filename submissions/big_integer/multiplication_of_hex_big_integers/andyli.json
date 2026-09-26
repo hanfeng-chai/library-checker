@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 487424,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "fft_killer_00",
+      "checker_out": "b2sgIjIyRTMyNkREMjU1RDk2NTgwNTM2MTI2NURGQTU3NC4uLjEwQUQ4NDVFNDVCQzFFN0E2MTcyQkRDNzdFRDNDMDIiCg==",
+      "memory": 27000832,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "fft_killer_01",
+      "checker_out": "b2sgIjMyNEZEQTkwNEQ1N0UxOUI5RkEzNjI0OENGOTRBNS4uLjRCQzQ0QUNEQzRBNzcxMjAzQUE1QzQwODI4QzAwMDEiCg==",
+      "memory": 27025408,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgMzUgdG9rZW5zCg==",
+      "memory": 5623808,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgMzMgdG9rZW5zCg==",
+      "memory": 5668864,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgMzMgdG9rZW5zCg==",
+      "memory": 5685248,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "large_small_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 16805888,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "max_max_00",
+      "checker_out": "b2sgIjU2OTQ0QUQ5Rjk2NzJFN0JENDc5Qjc0QUJFOTQ5My4uLkM1MDFDOTAxODY3MkQ2QzQ3REJCNDlDMzI0MzdGNEMiCg==",
+      "memory": 26996736,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_max_01",
+      "checker_out": "b2sgIi1BNTg0OTc0NTUwRkZGNjFCOTk4OTUxNjMzMkE1My4uLjQ2OUQ1MzM2QUFEOEY2NzgxMTBBNDg0NjI0NkRGRkEiCg==",
+      "memory": 27971584,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_max_02",
+      "checker_out": "b2sgIi0xOUMzM0VENTAyN0UxNTRGMjNDOTJENjk0MDU1Qi4uLkRBQTkwREY0OUI5RTEwRTkzQzA1RDk5NzI0RDM5ODAiCg==",
+      "memory": 27041792,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "max_max_03",
+      "checker_out": "b2sgIjdGMDU2QzRFRDJFRDdDNEFBMUNEQ0Y4RkRBMDJERC4uLkYwMkYzMDQ3NjQxRkZBRDU1REEzQzkyRUFCNjYwQTkiCg==",
+      "memory": 26988544,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "max_max_04",
+      "checker_out": "b2sgIkE0NjZFOUJERUY4MzM5RjYxRjk1MzlCNDVDOTFCQy4uLjYyN0Y2OTQzQThEMTQ2M0E4QzYwNkUzMDY2ODk1NTYiCg==",
+      "memory": 26996736,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_max_05",
+      "checker_out": "b2sgIi01QTBEM0YwQUJGQjU1MzNGQkVGOUZCNUM3MjhBQS4uLjhENTQ0RTdCREU3NDVBN0QxOTFEOERCRjRGRkEyOUEiCg==",
+      "memory": 27918336,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_max_06",
+      "checker_out": "b2sgIi02RDZGMEM2NzA4MUU3RjZGRjM0NkZBQkVCMDlFOC4uLjAzNUJDMTYyQzc3M0U1MTAxREVGMEI0MzFBNDBCRTAiCg==",
+      "memory": 26664960,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "max_max_07",
+      "checker_out": "b2sgIjQ5QTc0NzlEMjE0M0M0MkJEMUZBQzQwQzFBMkFEMy4uLkJGMDU4N0RBOTFGQzYxOEVBMjg4NkQ5M0FDQjEzMDgiCg==",
+      "memory": 26992640,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMzE3OSB0b2tlbnMK",
+      "memory": 5074944,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgMzE5NiB0b2tlbnMK",
+      "memory": 4816896,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMzE2OCB0b2tlbnMK",
+      "memory": 4501504,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "power_00",
+      "checker_out": "b2sgMzU3MCB0b2tlbnMK",
+      "memory": 4833280,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "power_01",
+      "checker_out": "b2sgMzU2OCB0b2tlbnMK",
+      "memory": 5079040,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTU5OTg0IHRva2Vucwo=",
+      "memory": 5009408,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "zero_00",
+      "checker_out": "b2sgNjMwMSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.006
+    }
+  ],
+  "overview": {
+    "id": 198541,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 27971584,
+    "problem_name": "multiplication_of_hex_big_integers",
+    "problem_title": "Multiplication of Hex Big Integers",
+    "status": "AC",
+    "submission_time": "2024-03-22T15:06:44.532763Z",
+    "time": 0.048,
+    "user_name": "andyli"
+  }
+}

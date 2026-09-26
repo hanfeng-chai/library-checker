@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjIxIgo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjUzIgo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjMzIgo=",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgIjUiCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjc1OTc1OTk2OTgxIgo=",
+      "memory": 5251072,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjEwNzIwNDQ3ODE3NyIK",
+      "memory": 6053888,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjE0MjIyNDU0MTQiCg==",
+      "memory": 1077248,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjkyMTI2MTM4MzExIgo=",
+      "memory": 5906432,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjM4MzY3MDc3MjEyIgo=",
+      "memory": 3944448,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjEyMDY5NzI0Mjg4MSIK",
+      "memory": 6598656,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjEyMjE2MTM2NDM1OCIK",
+      "memory": 6434816,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjEyMjEwNjk5ODU5MyIK",
+      "memory": 6598656,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjEyMTY1MzI3MDEzNiIK",
+      "memory": 6602752,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjEyMDQ0NjgwMDcwNiIK",
+      "memory": 6557696,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgIjQ5MTMyMiIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgIjQ5NDI5MyIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgIjQ5NDE4MyIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgIjQ5MzI2NCIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgIjQ5MDgxMiIK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "fib_str_00",
+      "checker_out": "b2sgIjU4MTk5NzA5MDE5Igo=",
+      "memory": 5120000,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "fib_str_01",
+      "checker_out": "b2sgIjMxMzEwMTgzMjM1Igo=",
+      "memory": 4112384,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "fib_str_02",
+      "checker_out": "b2sgIjI4MzM4NDc0MjQxIgo=",
+      "memory": 4333568,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "fib_str_03",
+      "checker_out": "b2sgIjIzODQ0MzU5NTIyIgo=",
+      "memory": 3706880,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "fib_str_04",
+      "checker_out": "b2sgIjU1NjYyMTc3MDI1Igo=",
+      "memory": 5332992,
+      "status": "AC",
+      "time": 0.01
+    }
+  ],
+  "overview": {
+    "id": 406233,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6602752,
+    "problem_name": "number_of_substrings",
+    "problem_title": "Number of Substrings",
+    "status": "AC",
+    "submission_time": "2026-09-26T06:43:39.587358Z",
+    "time": 0.018,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "almost_straight_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 29704192,
+      "status": "AC",
+      "stderr": "VGltZTogNDMgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.043
+    },
+    {
+      "case": "almost_straight_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 32325632,
+      "status": "AC",
+      "stderr": "VGltZTogNTEgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.052
+    },
+    {
+      "case": "almost_straight_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4558848,
+      "status": "AC",
+      "stderr": "VGltZTogNiBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.007
+    },
+    {
+      "case": "ascending_order_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 28131328,
+      "status": "AC",
+      "stderr": "VGltZTogNDQgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.044
+    },
+    {
+      "case": "ascending_order_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 32555008,
+      "status": "AC",
+      "stderr": "VGltZTogNDkgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.05
+    },
+    {
+      "case": "ascending_order_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4296704,
+      "status": "AC",
+      "stderr": "VGltZTogNiBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.007
+    },
+    {
+      "case": "descending_order_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 28176384,
+      "status": "AC",
+      "stderr": "VGltZTogNDMgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.043
+    },
+    {
+      "case": "descending_order_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 31608832,
+      "status": "AC",
+      "stderr": "VGltZTogNDkgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.049
+    },
+    {
+      "case": "descending_order_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4562944,
+      "status": "AC",
+      "stderr": "VGltZTogNiBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.007
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 536576,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 516096,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.001
+    },
+    {
+      "case": "killer_case_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 42991616,
+      "status": "AC",
+      "stderr": "VGltZTogODUgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.086
+    },
+    {
+      "case": "killer_case_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 43249664,
+      "status": "AC",
+      "stderr": "VGltZTogODUgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.085
+    },
+    {
+      "case": "killer_case_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 42987520,
+      "status": "AC",
+      "stderr": "VGltZTogODUgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.085
+    },
+    {
+      "case": "killer_case_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 42795008,
+      "status": "AC",
+      "stderr": "VGltZTogODUgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.086
+    },
+    {
+      "case": "killer_case_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 42856448,
+      "status": "AC",
+      "stderr": "VGltZTogODQgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.084
+    },
+    {
+      "case": "killer_straight_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 47415296,
+      "status": "AC",
+      "stderr": "VGltZTogODQgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.084
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 32239616,
+      "status": "AC",
+      "stderr": "VGltZTogNTkgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.059
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 32264192,
+      "status": "AC",
+      "stderr": "VGltZTogNTYgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.057
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 32210944,
+      "status": "AC",
+      "stderr": "VGltZTogNTcgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.057
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 25542656,
+      "status": "AC",
+      "stderr": "VGltZTogNDUgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.045
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 28876800,
+      "status": "AC",
+      "stderr": "VGltZTogNTIgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.051
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4558848,
+      "status": "AC",
+      "stderr": "VGltZTogNiBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.006
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 802816,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 770048,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 765952,
+      "status": "AC",
+      "stderr": "VGltZTogMCBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.001
+    },
+    {
+      "case": "swap_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 25985024,
+      "status": "AC",
+      "stderr": "VGltZTogNDYgbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.047
+    },
+    {
+      "case": "swap_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 31911936,
+      "status": "AC",
+      "stderr": "VGltZTogNTggbXMKTWVtb3J5OiA2LjAyOCBNQgo=",
+      "time": 0.059
+    },
+    {
+      "case": "swap_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4227072,
+      "status": "AC",
+      "stderr": "VGltZTogNyBtcwpNZW1vcnk6IDYuMDI4IE1CCg==",
+      "time": 0.007
+    }
+  ],
+  "overview": {
+    "id": 279529,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 47415296,
+    "problem_name": "common_interval_decomposition_tree",
+    "problem_title": "Common Interval Decomposition Tree",
+    "status": "AC",
+    "submission_time": "2025-04-17T02:58:43.737909Z",
+    "time": 0.086,
+    "user_name": "Richard1211"
+  }
+}

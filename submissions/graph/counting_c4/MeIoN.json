@@ -1,0 +1,220 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "minimum_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_sparse_simple_00",
+      "checker_out": "b2sgMTMyMyB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_sparse_simple_01",
+      "checker_out": "b2sgMjM1IHRva2Vucwo=",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_sparse_simple_02",
+      "checker_out": "b2sgMTM5IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_dense_simple_00",
+      "checker_out": "b2sgMTQ4Nzc5IHRva2Vucwo=",
+      "memory": 9736192,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "small_dense_simple_01",
+      "checker_out": "b2sgMTk2OTEgdG9rZW5zCg==",
+      "memory": 2113536,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "small_dense_simple_02",
+      "checker_out": "b2sgMTQxOSB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_random_simple_00",
+      "checker_out": "b2sgMjc0MDEwIHRva2Vucwo=",
+      "memory": 25227264,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "large_random_simple_01",
+      "checker_out": "b2sgMjEwNTQ4IHRva2Vucwo=",
+      "memory": 19038208,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "large_random_simple_02",
+      "checker_out": "b2sgOTIyMjIgdG9rZW5zCg==",
+      "memory": 7548928,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_simple_00",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 28651520,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "max_random_simple_01",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 28151808,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "max_random_simple_02",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 29159424,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "star_00",
+      "checker_out": "b2sgMjk5OTk5IHRva2Vucwo=",
+      "memory": 29474816,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "star_01",
+      "checker_out": "b2sgMjk5OTk5IHRva2Vucwo=",
+      "memory": 29319168,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "max_near_k_simple_00",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 21110784,
+      "status": "AC",
+      "time": 0.296
+    },
+    {
+      "case": "max_near_k_simple_01",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 20844544,
+      "status": "AC",
+      "time": 0.359
+    },
+    {
+      "case": "max_near_k_simple_02",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 20070400,
+      "status": "AC",
+      "time": 0.379
+    },
+    {
+      "case": "max_near_k_simple_03",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 21110784,
+      "status": "AC",
+      "time": 0.393
+    },
+    {
+      "case": "max_complete_00",
+      "checker_out": "b2sgMjk5OTI1IHRva2Vucwo=",
+      "memory": 20316160,
+      "status": "AC",
+      "time": 0.425
+    },
+    {
+      "case": "multiplied_c4_00",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 18444288,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "multiplied_c4_01",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 19066880,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 9875456,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 10059776,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "dense_02",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 10145792,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "dense_03",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 9801728,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "dense_04",
+      "checker_out": "b2sgMzAwMDAwIHRva2Vucwo=",
+      "memory": 9121792,
+      "status": "AC",
+      "time": 0.04
+    }
+  ],
+  "overview": {
+    "id": 393619,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 29474816,
+    "problem_name": "counting_c4",
+    "problem_title": "Counting $C _ 4$'s",
+    "status": "AC",
+    "submission_time": "2026-08-15T13:07:38.413834Z",
+    "time": 0.425,
+    "user_name": "MeIoN"
+  }
+}

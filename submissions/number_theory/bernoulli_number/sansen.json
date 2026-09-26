@@ -1,0 +1,93 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 471040,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "100_00",
+      "checker_out": "b2sgMTAxIHRva2Vucwo=",
+      "memory": 368640,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "1000_00",
+      "checker_out": "b2sgMTAwMSB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "10000_00",
+      "checker_out": "b2sgMTAwMDEgdG9rZW5zCg==",
+      "memory": 1060864,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "100000_00",
+      "checker_out": "b2sgMTAwMDAxIHRva2Vucwo=",
+      "memory": 3579904,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "200000_00",
+      "checker_out": "b2sgMjAwMDAxIHRva2Vucwo=",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "300000_00",
+      "checker_out": "b2sgMzAwMDAxIHRva2Vucwo=",
+      "memory": 10977280,
+      "status": "AC",
+      "time": 0.071
+    },
+    {
+      "case": "400000_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 12914688,
+      "status": "AC",
+      "time": 0.078
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 14917632,
+      "status": "AC",
+      "time": 0.085
+    }
+  ],
+  "overview": {
+    "id": 103477,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 14917632,
+    "problem_name": "bernoulli_number",
+    "problem_title": "Bernoulli Number",
+    "status": "AC",
+    "time": 0.085,
+    "user_name": "sansen"
+  }
+}

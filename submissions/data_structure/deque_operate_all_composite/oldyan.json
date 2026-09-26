@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEzMzMiCg==",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_max_00",
+      "checker_out": "b2sgODI5MDEgdG9rZW5zCg==",
+      "memory": 5459968,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "large_max_01",
+      "checker_out": "b2sgODMwNzAgdG9rZW5zCg==",
+      "memory": 6508544,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "large_min_00",
+      "checker_out": "b2sgMTYzODgxIHRva2Vucwo=",
+      "memory": 3514368,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "large_min_01",
+      "checker_out": "b2sgMTYzNDc2IHRva2Vucwo=",
+      "memory": 2834432,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "large_triangle_00",
+      "checker_out": "b2sgMTY2NTA5IHRva2Vucwo=",
+      "memory": 5722112,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "large_triangle_01",
+      "checker_out": "b2sgMTY2MTkyIHRva2Vucwo=",
+      "memory": 5554176,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTI0NTM1IHRva2Vucwo=",
+      "memory": 9129984,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTI0NzQ5IHRva2Vucwo=",
+      "memory": 9125888,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTI1Mjg3IHRva2Vucwo=",
+      "memory": 9142272,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgOTc0ODEgdG9rZW5zCg==",
+      "memory": 4141056,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTE1NDg3IHRva2Vucwo=",
+      "memory": 4673536,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTMzOTYgdG9rZW5zCg==",
+      "memory": 1269760,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNDIgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTUgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 211474,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 9142272,
+    "problem_name": "deque_operate_all_composite",
+    "problem_title": "Deque Operate All Composite",
+    "status": "AC",
+    "submission_time": "2024-05-27T01:45:46.699904Z",
+    "time": 0.014,
+    "user_name": "oldyan"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTEgdG9rZW5zCg==",
+      "memory": 5804032,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 6270976,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 6565888,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "100_00",
+      "checker_out": "b2sgMTAxIHRva2Vucwo=",
+      "memory": 6742016,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "1000_00",
+      "checker_out": "b2sgMTAwMSB0b2tlbnMK",
+      "memory": 6799360,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "10000_00",
+      "checker_out": "b2sgMTAwMDEgdG9rZW5zCg==",
+      "memory": 6860800,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "100000_00",
+      "checker_out": "b2sgMTAwMDAxIHRva2Vucwo=",
+      "memory": 8400896,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "200000_00",
+      "checker_out": "b2sgMjAwMDAxIHRva2Vucwo=",
+      "memory": 10231808,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "300000_00",
+      "checker_out": "b2sgMzAwMDAxIHRva2Vucwo=",
+      "memory": 13156352,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "400000_00",
+      "checker_out": "b2sgNDAwMDAxIHRva2Vucwo=",
+      "memory": 13729792,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 13901824,
+      "status": "AC",
+      "time": 0.085
+    }
+  ],
+  "overview": {
+    "id": 65329,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 13901824,
+    "problem_name": "bernoulli_number",
+    "problem_title": "Bernoulli Number",
+    "status": "AC",
+    "time": 0.085,
+    "user_name": "anonymous"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 10764288,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 12279808,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 4702208,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 8671232,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 6795264,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 11522048,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 12791808,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "line_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 4694016,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "line_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 8114176,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "line_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 6025216,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14098432,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_line_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13881344,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_line_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14249984,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13357056,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13225984,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13221888,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "binary_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13348864,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "binary_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13352960,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "binary_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13176832,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "path_graph_root_centroid_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12005376,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "path_graph_root_centroid_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12009472,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "path_graph_root_centroid_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 12263424,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14934016,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 15060992,
+      "status": "AC",
+      "time": 0.029
+    }
+  ],
+  "overview": {
+    "id": 354023,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 15060992,
+    "problem_name": "lca",
+    "problem_title": "Lowest Common Ancestor",
+    "status": "AC",
+    "submission_time": "2026-02-19T19:02:38.700808Z",
+    "time": 0.029,
+    "user_name": "2qbingxuan"
+  }
+}

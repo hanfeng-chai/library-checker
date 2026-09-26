@@ -1,0 +1,115 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDkK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IC0xNzc3ODY5OTY0NTkK",
+      "memory": 1331200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IC0xOTQ1Njk4OTg1MTQK",
+      "memory": 1060864,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IC04NDQ1NzQ4MTczNwo=",
+      "memory": 856064,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0s6IC0xODk3NzY0NTQzNzYK",
+      "memory": 1351680,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0s6IC0xNzU4MjQ2NjUzNgo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IC00OTY3MDQzNzUxOTAK",
+      "memory": 4997120,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IC00OTY4MTM4MTk5MjAK",
+      "memory": 5005312,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0s6IC00OTY3MDU4ODM3MzUK",
+      "memory": 4993024,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0s6IC00OTY3MjA0MDE0OTYK",
+      "memory": 5025792,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0s6IC00OTY3MzA3MjU4ODEK",
+      "memory": 5025792,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "hand_plus_00",
+      "checker_out": "b2sgT0s6IDgzMzMzMDAwCg==",
+      "memory": 3940352,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "hand_minus_00",
+      "checker_out": "b2sgT0s6IC04MzMzMzAwMAo=",
+      "memory": 4997120,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "multiplication_table_00",
+      "checker_out": "b2sgT0s6IDIwOTU4NTAwCg==",
+      "memory": 3956736,
+      "status": "AC",
+      "time": 0.005
+    }
+  ],
+  "overview": {
+    "id": 392439,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 5025792,
+    "problem_name": "assignment",
+    "problem_title": "Assignment Problem",
+    "status": "AC",
+    "submission_time": "2026-08-12T20:38:54.765998Z",
+    "time": 0.017,
+    "user_name": "jcg9129"
+  }
+}

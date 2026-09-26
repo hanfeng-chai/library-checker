@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQ1ODAgdG9rZW5zCg==",
+      "memory": 14925824,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQ2MDggdG9rZW5zCg==",
+      "memory": 17285120,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTk4MzUgdG9rZW5zCg==",
+      "memory": 7507968,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgOTk5NjcgdG9rZW5zCg==",
+      "memory": 22433792,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk5ODUgdG9rZW5zCg==",
+      "memory": 22450176,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMTg4IHRva2Vucwo=",
+      "memory": 22323200,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNjUzIHRva2Vucwo=",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjU1IHRva2Vucwo=",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNjk2IHRva2Vucwo=",
+      "memory": 499712,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjE3IHRva2Vucwo=",
+      "memory": 688128,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDMyIHRva2Vucwo=",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "worst_for_path_decomposition_00",
+      "checker_out": "b2sgMTkwNTMwIHRva2Vucwo=",
+      "memory": 24104960,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "worst_for_path_decomposition_01",
+      "checker_out": "b2sgMTkwMjkzIHRva2Vucwo=",
+      "memory": 24096768,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "long-path-decomposition_killer_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 23834624,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgMTAwMDgxIHRva2Vucwo=",
+      "memory": 25034752,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgOTk5NDkgdG9rZW5zCg==",
+      "memory": 25931776,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgOTk5MTUgdG9rZW5zCg==",
+      "memory": 27500544,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgOTk5NzggdG9rZW5zCg==",
+      "memory": 28295168,
+      "status": "AC",
+      "time": 0.105
+    }
+  ],
+  "overview": {
+    "id": 319096,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 28295168,
+    "problem_name": "vertex_set_path_composite",
+    "problem_title": "Vertex Set Path Composite",
+    "status": "AC",
+    "submission_time": "2025-10-07T10:37:05.497705Z",
+    "time": 0.116,
+    "user_name": "vjudge1"
+  }
+}

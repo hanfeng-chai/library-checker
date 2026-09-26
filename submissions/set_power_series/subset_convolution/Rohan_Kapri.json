@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35397632,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTAyNCB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35409920,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35405824,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35430400,
+      "status": "AC",
+      "time": 0.093
+    },
+    {
+      "case": "hack01_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 35401728,
+      "status": "AC",
+      "time": 0.087
+    }
+  ],
+  "overview": {
+    "id": 406006,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 35430400,
+    "problem_name": "subset_convolution",
+    "problem_title": "Subset Convolution",
+    "status": "AC",
+    "submission_time": "2026-09-25T06:09:18.324715Z",
+    "time": 0.093,
+    "user_name": "Rohan_Kapri"
+  }
+}

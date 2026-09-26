@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 7061504,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 5488640,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjQyIHRva2Vucwo=",
+      "memory": 7069696,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjM4IHRva2Vucwo=",
+      "memory": 6533120,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjQ2IHRva2Vucwo=",
+      "memory": 5488640,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjUxIHRva2Vucwo=",
+      "memory": 7069696,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjUzIHRva2Vucwo=",
+      "memory": 6529024,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTkzNzMgdG9rZW5zCg==",
+      "memory": 8417280,
+      "status": "AC",
+      "time": 0.123
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDg4OCB0b2tlbnMK",
+      "memory": 17547264,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTUxOTEgdG9rZW5zCg==",
+      "memory": 16232448,
+      "status": "AC",
+      "time": 0.142
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5NDIgdG9rZW5zCg==",
+      "memory": 24883200,
+      "status": "AC",
+      "time": 0.265
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUxNzUgdG9rZW5zCg==",
+      "memory": 24895488,
+      "status": "AC",
+      "time": 0.264
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjQ5NzIgdG9rZW5zCg==",
+      "memory": 24887296,
+      "status": "AC",
+      "time": 0.266
+    },
+    {
+      "case": "many_0_query_00",
+      "checker_out": "b2sgMTAzIHRva2Vucwo=",
+      "memory": 24645632,
+      "status": "AC",
+      "time": 0.255
+    },
+    {
+      "case": "many_0_query_01",
+      "checker_out": "b2sgOTggdG9rZW5zCg==",
+      "memory": 24727552,
+      "status": "AC",
+      "time": 0.251
+    },
+    {
+      "case": "many_1_query_00",
+      "checker_out": "b2sgOTk2NjAgdG9rZW5zCg==",
+      "memory": 25669632,
+      "status": "AC",
+      "time": 0.138
+    },
+    {
+      "case": "many_1_query_01",
+      "checker_out": "b2sgOTk3MDkgdG9rZW5zCg==",
+      "memory": 25784320,
+      "status": "AC",
+      "time": 0.137
+    },
+    {
+      "case": "many_2_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 24727552,
+      "status": "AC",
+      "time": 0.297
+    },
+    {
+      "case": "many_2_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 24584192,
+      "status": "AC",
+      "time": 0.295
+    },
+    {
+      "case": "many_3_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 24662016,
+      "status": "AC",
+      "time": 0.299
+    },
+    {
+      "case": "many_3_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 24621056,
+      "status": "AC",
+      "time": 0.297
+    },
+    {
+      "case": "sort_only_short_00",
+      "checker_out": "b2sgMjQ5MjIgdG9rZW5zCg==",
+      "memory": 24891392,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "sort_only_short_01",
+      "checker_out": "b2sgMjUxMTMgdG9rZW5zCg==",
+      "memory": 24989696,
+      "status": "AC",
+      "time": 0.085
+    }
+  ],
+  "overview": {
+    "id": 363210,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 25784320,
+    "problem_name": "point_set_range_sort_range_composite",
+    "problem_title": "Point Set Range Sort Range Composite",
+    "status": "AC",
+    "submission_time": "2026-03-30T03:51:59.72702Z",
+    "time": 0.299,
+    "user_name": "ssmkybb"
+  }
+}

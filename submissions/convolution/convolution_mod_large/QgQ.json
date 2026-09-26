@@ -1,0 +1,395 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjg3MTkzODIyNSIK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 630784,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_10",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_11",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_12",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_13",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 585728,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_14",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_15",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTEyNzUgdG9rZW5zCg==",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNzYwMCB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgOTY5OCB0b2tlbnMK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTMzODM2NDcgdG9rZW5zCg==",
+      "memory": 268443648,
+      "status": "AC",
+      "time": 0.337
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTY2MDQ1OTIgdG9rZW5zCg==",
+      "memory": 300445696,
+      "status": "AC",
+      "time": 0.369
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjY2NTAwODIgdG9rZW5zCg==",
+      "memory": 534478848,
+      "status": "AC",
+      "time": 0.674
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602988544,
+      "status": "AC",
+      "time": 0.737
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602877952,
+      "status": "AC",
+      "time": 0.737
+    },
+    {
+      "case": "fft_killer_00",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602984448,
+      "status": "AC",
+      "time": 0.709
+    },
+    {
+      "case": "fft_killer_01",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602943488,
+      "status": "AC",
+      "time": 0.709
+    },
+    {
+      "case": "fft_killer_02",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602943488,
+      "status": "AC",
+      "time": 0.71
+    },
+    {
+      "case": "fft_killer_03",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602939392,
+      "status": "AC",
+      "time": 0.704
+    },
+    {
+      "case": "fft_killer_04",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602943488,
+      "status": "AC",
+      "time": 0.703
+    },
+    {
+      "case": "fft_killer_05",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 603054080,
+      "status": "AC",
+      "time": 0.704
+    },
+    {
+      "case": "fft_killer_06",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602992640,
+      "status": "AC",
+      "time": 0.705
+    },
+    {
+      "case": "fft_killer_07",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 603095040,
+      "status": "AC",
+      "time": 0.704
+    },
+    {
+      "case": "fft_killer_08",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602968064,
+      "status": "AC",
+      "time": 0.704
+    },
+    {
+      "case": "fft_killer_09",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 603099136,
+      "status": "AC",
+      "time": 0.706
+    },
+    {
+      "case": "medium_all_zero_00",
+      "checker_out": "b2sgMTEyNzUgdG9rZW5zCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_all_zero_01",
+      "checker_out": "b2sgNzYwMCB0b2tlbnMK",
+      "memory": 491520,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_all_zero_02",
+      "checker_out": "b2sgOTY5OCB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_ans_zero_00",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602873856,
+      "status": "AC",
+      "time": 0.735
+    },
+    {
+      "case": "signed_overflow_00",
+      "checker_out": "b2sgNzUgdG9rZW5zCg==",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "unsigned_overflow_00",
+      "checker_out": "b2sgMzUgdG9rZW5zCg==",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_pre_suf_zero_00",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "medium_pre_suf_zero_01",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 815104,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_pre_suf_zero_02",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "medium_pre_suf_zero_03",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "medium_pre_suf_zero_04",
+      "checker_out": "b2sgMTk5OSB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_and_large_00",
+      "checker_out": "b2sgMTY3NzczMTUgdG9rZW5zCg==",
+      "memory": 436477952,
+      "status": "AC",
+      "time": 0.575
+    },
+    {
+      "case": "small_and_large_01",
+      "checker_out": "b2sgMTY3NzgyMTUgdG9rZW5zCg==",
+      "memory": 436502528,
+      "status": "AC",
+      "time": 0.577
+    },
+    {
+      "case": "small_and_large_02",
+      "checker_out": "b2sgMTY3NzczMTUgdG9rZW5zCg==",
+      "memory": 436617216,
+      "status": "AC",
+      "time": 0.576
+    },
+    {
+      "case": "small_and_large_03",
+      "checker_out": "b2sgMTY3NzgyMTUgdG9rZW5zCg==",
+      "memory": 436482048,
+      "status": "AC",
+      "time": 0.574
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 550518784,
+      "status": "AC",
+      "time": 0.687
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602972160,
+      "status": "AC",
+      "time": 0.689
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgMzM1NTQ0MzEgdG9rZW5zCg==",
+      "memory": 602947584,
+      "status": "AC",
+      "time": 0.69
+    }
+  ],
+  "overview": {
+    "id": 403499,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 603099136,
+    "problem_name": "convolution_mod_large",
+    "problem_title": "Convolution (Large)",
+    "status": "AC",
+    "submission_time": "2026-09-18T05:02:37.636656Z",
+    "time": 0.737,
+    "user_name": "QgQ"
+  }
+}

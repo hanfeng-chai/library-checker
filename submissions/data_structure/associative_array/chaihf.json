@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTk0OTQ3IHRva2Vucwo=",
+      "memory": 20148224,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjMxMDQwIHRva2Vucwo=",
+      "memory": 20692992,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjg4OTQwIHRva2Vucwo=",
+      "memory": 20697088,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDY0IHRva2Vucwo=",
+      "memory": 24625152,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNDk5ODg3IHRva2Vucwo=",
+      "memory": 24363008,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMjUxIHRva2Vucwo=",
+      "memory": 23777280,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "max_many_updates_00",
+      "checker_out": "b2sgMTAwMzkgdG9rZW5zCg==",
+      "memory": 18071552,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "unordered_map_killer_00",
+      "checker_out": "b2sgNTAwMzE5IHRva2Vucwo=",
+      "memory": 21299200,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "unordered_map_killer_01",
+      "checker_out": "b2sgNTAwMzI2IHRva2Vucwo=",
+      "memory": 21217280,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "unordered_map_killer_02",
+      "checker_out": "b2sgNDk5NDY2IHRva2Vucwo=",
+      "memory": 21200896,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "unordered_map_killer_03",
+      "checker_out": "b2sgNDk5NjYzIHRva2Vucwo=",
+      "memory": 21168128,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "sparse_keys_00",
+      "checker_out": "b2sgMTk0OTIzIHRva2Vucwo=",
+      "memory": 6008832,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "sparse_keys_01",
+      "checker_out": "b2sgMjMxODI3IHRva2Vucwo=",
+      "memory": 7032832,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "2_powers_00",
+      "checker_out": "b2sgNTAwMzE5IHRva2Vucwo=",
+      "memory": 21217280,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "many_0set_00",
+      "checker_out": "b2sgNTAxNTA0IHRva2Vucwo=",
+      "memory": 23060480,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "many_0set_sparse_00",
+      "checker_out": "b2sgMTk0MzY0IHRva2Vucwo=",
+      "memory": 4890624,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "py_killer_00",
+      "checker_out": "b2sgNjAwMDAwIHRva2Vucwo=",
+      "memory": 21708800,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "py_killer_01",
+      "checker_out": "b2sgNjAwMDAwIHRva2Vucwo=",
+      "memory": 21626880,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "c_sharp_killer_00",
+      "checker_out": "b2sgNjAwMDAwIHRva2Vucwo=",
+      "memory": 21737472,
+      "status": "AC",
+      "time": 0.026
+    }
+  ],
+  "overview": {
+    "id": 278226,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24625152,
+    "problem_name": "associative_array",
+    "problem_title": "Associative Array",
+    "status": "AC",
+    "submission_time": "2025-04-09T06:02:19.798987Z",
+    "time": 0.043,
+    "user_name": "chaihf"
+  }
+}

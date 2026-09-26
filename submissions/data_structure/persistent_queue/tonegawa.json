@@ -1,0 +1,115 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "ephemeral_00",
+      "checker_out": "b2sgMTg4ODM0IHRva2Vucwo=",
+      "memory": 20344832,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 2838528,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "half_rot_killer_00",
+      "checker_out": "b2sgMjkzMDc5IHRva2Vucwo=",
+      "memory": 25616384,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "half_rot_killer2_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 19353600,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTY5OTQxIHRva2Vucwo=",
+      "memory": 29253632,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjAyNzExIHRva2Vucwo=",
+      "memory": 32018432,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjMzMDUgdG9rZW5zCg==",
+      "memory": 7819264,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_2_00",
+      "checker_out": "b2sgMTE0NDkyIHRva2Vucwo=",
+      "memory": 25780224,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_2_01",
+      "checker_out": "b2sgMTM2NjcwIHRva2Vucwo=",
+      "memory": 27987968,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_2_02",
+      "checker_out": "b2sgMTU3NjMgdG9rZW5zCg==",
+      "memory": 7294976,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_3_00",
+      "checker_out": "b2sgMTE2NzgzIHRva2Vucwo=",
+      "memory": 21934080,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_3_01",
+      "checker_out": "b2sgMTM5MTU0IHRva2Vucwo=",
+      "memory": 23711744,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_3_02",
+      "checker_out": "b2sgMTYwODYgdG9rZW5zCg==",
+      "memory": 7028736,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "two_stacks_killer_00",
+      "checker_out": "b2sgMTY2NjY2IHRva2Vucwo=",
+      "memory": 26275840,
+      "status": "AC",
+      "time": 0.023
+    }
+  ],
+  "overview": {
+    "id": 231826,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 32018432,
+    "problem_name": "persistent_queue",
+    "problem_title": "Persistent Queue",
+    "status": "AC",
+    "submission_time": "2024-08-29T12:48:25.42208Z",
+    "time": 0.05,
+    "user_name": "tonegawa"
+  }
+}

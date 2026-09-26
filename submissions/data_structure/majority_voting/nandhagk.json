@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTI1IHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDk4IHRva2Vucwo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNDgxIHRva2Vucwo=",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNDkxIHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTIzIHRva2Vucwo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5ODYwIHRva2Vucwo=",
+      "memory": 63188992,
+      "status": "AC",
+      "time": 0.189
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwMTE4IHRva2Vucwo=",
+      "memory": 63475712,
+      "status": "AC",
+      "time": 0.188
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMTA3IHRva2Vucwo=",
+      "memory": 63762432,
+      "status": "AC",
+      "time": 0.188
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMjUwMDMyIHRva2Vucwo=",
+      "memory": 63713280,
+      "status": "AC",
+      "time": 0.188
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMjUwMTc4IHRva2Vucwo=",
+      "memory": 63750144,
+      "status": "AC",
+      "time": 0.188
+    },
+    {
+      "case": "top2_killer_00",
+      "checker_out": "b2sgNDc0OTY5IHRva2Vucwo=",
+      "memory": 66863104,
+      "status": "AC",
+      "time": 0.145
+    }
+  ],
+  "overview": {
+    "id": 390875,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 66863104,
+    "problem_name": "majority_voting",
+    "problem_title": "Majority Voting",
+    "status": "AC",
+    "submission_time": "2026-08-05T16:09:04.317896Z",
+    "time": 0.189,
+    "user_name": "nandhagk"
+  }
+}

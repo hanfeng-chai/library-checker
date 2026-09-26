@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjY2NTAgdG9rZW5zCg==",
+      "memory": 37416960,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjYyNjIgdG9rZW5zCg==",
+      "memory": 37416960,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzM0IHRva2Vucwo=",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjk5IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMzA4IHRva2Vucwo=",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMzU1IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMzE5IHRva2Vucwo=",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDkzODAgdG9rZW5zCg==",
+      "memory": 20951040,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk2NDIgdG9rZW5zCg==",
+      "memory": 21536768,
+      "status": "AC",
+      "time": 0.054
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDAwMjEgdG9rZW5zCg==",
+      "memory": 16855040,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODU5MCB0b2tlbnMK",
+      "memory": 19537920,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzI3NjAgdG9rZW5zCg==",
+      "memory": 10231808,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjY0ODcgdG9rZW5zCg==",
+      "memory": 37433344,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY0MzMgdG9rZW5zCg==",
+      "memory": 37429248,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY4NTkgdG9rZW5zCg==",
+      "memory": 37412864,
+      "status": "AC",
+      "time": 0.083
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgNjY3MDQgdG9rZW5zCg==",
+      "memory": 37404672,
+      "status": "AC",
+      "time": 0.082
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgNjcyMDUgdG9rZW5zCg==",
+      "memory": 37376000,
+      "status": "AC",
+      "time": 0.088
+    }
+  ],
+  "overview": {
+    "id": 405118,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 37433344,
+    "problem_name": "dynamic_tree_vertex_add_subtree_sum",
+    "problem_title": "Dynamic Tree Vertex Add Subtree Sum",
+    "status": "AC",
+    "submission_time": "2026-09-22T11:06:07.149759Z",
+    "time": 0.115,
+    "user_name": "Rohan_Kapri"
+  }
+}

@@ -1,0 +1,247 @@
+// #pragma GCC optimize("Ofast")
+// // #pragma GCC target("avx,avx2,fma")
+
+// #include "bits/stdc++.h"
+
+// //#define NDEBUG
+// #define F first
+// #define S second
+// #define vec vector
+// #define pb push_back
+// #define pll pair<ll, ll>
+// #define pdd pair<ld, ld>
+// #define pii pair<int, int>
+// #define all(m) m.begin(), m.end()
+// #define rall(m) m.rbegin(), m.rend()
+// #define uid uniform_int_distribution
+// #define timeStamp() std::chrono::steady_clock::now()
+// #define unify(m) sort(all(m)), m.erase(unique(all(m)), m.end());
+// #define duration_micro(a) chrono::duration_cast<chrono::microseconds>(a).count()
+// #define duration_milli(a) chrono::duration_cast<chrono::milliseconds>(a).count()
+// #define fast cin.tie(0), cout.tie(0), cin.sync_with_stdio(0), cout.sync_with_stdio(0);
+// using namespace std;
+// using str = string;
+// using ll = long long;
+// using ld = long double;
+// using uint = unsigned int;
+// using ull = unsigned long long;
+// mt19937 rnd(timeStamp().time_since_epoch().count());
+// mt19937_64 rndll(timeStamp().time_since_epoch().count());
+// template<typename T, typename U> bool chmin(T& a, const U& b) {return (T)b < a ? a = b, 1 : 0;}
+// template<typename T, typename U> bool chmax(T& a, const U& b) {return (T)b > a ? a = b, 1 : 0;}
+// struct custom_hash {static uint64_t xs(uint64_t x) {x += 0x9e3779b97f4a7c15; x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9; x = (x ^ (x >> 27)) * 0x94d049bb133111eb; return x ^ (x >> 31);} template<typename T> size_t operator()(T x) const {static const uint64_t C = timeStamp().time_since_epoch().count(); return xs(hash<T> {}(x) + C);}};
+// template<typename K> using uset = unordered_set<K, custom_hash>;
+// template<typename K, typename V> using umap = unordered_map<K, V, custom_hash>;
+// template<typename T1, typename T2> ostream& operator<<(ostream& out, const pair<T1, T2>& x) {return out << x.F << ' ' << x.S;}
+// template<typename T1, typename T2> istream& operator>>(istream& in, pair<T1, T2>& x) {return in >> x.F >> x.S;}
+// template<typename T, size_t N> istream& operator>>(istream& in, array<T, N>& a) {for (auto &x : a) in >> x; return in;}
+// template<typename T, size_t N> ostream& operator<<(ostream& out, const array<T, N>& a) {for (size_t i = 0; i < a.size(); ++i) {out << a[i]; if (i + 1 < a.size()) out << ' ';} return out;}
+// template<typename T> istream& operator>>(istream& in, vector<T>& a) {for (auto& x : a) in >> x; return in;}
+// template<typename T> ostream& operator<<(ostream& out, const vector<T>& a) {for (size_t i = 0; i < a.size(); ++i) {out << a[i]; if (i + 1 < a.size()) out << ' ';} return out;}
+
+// int main() {
+//     fast;
+//     int a; cin>>a;
+//     vec<int> m(a); cin>>m;
+//     stack<int> stq;
+//     for (int i = 0; i < a; ++i) {
+//         while(!stq.empty() && m[stq.top()] < m[i]) {
+//             vector<int> n;
+//             int must = m[stq.top()];
+//             while(!stq.empty() && m[stq.top()] == must) {
+//                 n.push_back(stq.top());
+//                 stq.pop();
+//             }
+//             reverse(n.begin(), n.end());
+//             int l = stq.empty() ? 0 : stq.top() + 1;
+//             int r = i - 1;
+//         }
+//         stq.push(i);
+//     }
+// }
+
+#pragma GCC optimize("Ofast")
+// #pragma GCC target("avx,avx2,fma")
+
+#include "bits/stdc++.h"
+
+//#define NDEBUG
+#define F first
+#define S second
+#define vec vector
+#define pb push_back
+#define pll pair<ll, ll>
+#define pdd pair<ld, ld>
+#define pii pair<int, int>
+#define all(m) m.begin(), m.end()
+#define rall(m) m.rbegin(), m.rend()
+#define uid uniform_int_distribution
+#define timeStamp() std::chrono::steady_clock::now()
+#define unify(m) sort(all(m)), m.erase(unique(all(m)), m.end());
+#define duration_micro(a) chrono::duration_cast<chrono::microseconds>(a).count()
+#define duration_milli(a) chrono::duration_cast<chrono::milliseconds>(a).count()
+#define fast cin.tie(0), cout.tie(0), cin.sync_with_stdio(0), cout.sync_with_stdio(0);
+using namespace std;
+using str = string;
+using ll = long long;
+using ld = long double;
+using uint = unsigned int;
+using ull = unsigned long long;
+mt19937 rnd(timeStamp().time_since_epoch().count());
+mt19937_64 rndll(timeStamp().time_since_epoch().count());
+template<typename T, typename U> bool chmin(T& a, const U& b) {return (T)b < a ? a = b, 1 : 0;}
+template<typename T, typename U> bool chmax(T& a, const U& b) {return (T)b > a ? a = b, 1 : 0;}
+struct custom_hash {static uint64_t xs(uint64_t x) {x += 0x9e3779b97f4a7c15; x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9; x = (x ^ (x >> 27)) * 0x94d049bb133111eb; return x ^ (x >> 31);} template<typename T> size_t operator()(T x) const {static const uint64_t C = timeStamp().time_since_epoch().count(); return xs(hash<T> {}(x) + C);}};
+template<typename K> using uset = unordered_set<K, custom_hash>;
+template<typename K, typename V> using umap = unordered_map<K, V, custom_hash>;
+template<typename T1, typename T2> ostream& operator<<(ostream& out, const pair<T1, T2>& x) {return out << x.F << ' ' << x.S;}
+template<typename T1, typename T2> istream& operator>>(istream& in, pair<T1, T2>& x) {return in >> x.F >> x.S;}
+template<typename T, size_t N> istream& operator>>(istream& in, array<T, N>& a) {for (auto &x : a) in >> x; return in;}
+template<typename T, size_t N> ostream& operator<<(ostream& out, const array<T, N>& a) {for (size_t i = 0; i < a.size(); ++i) {out << a[i]; if (i + 1 < a.size()) out << ' ';} return out;}
+template<typename T> istream& operator>>(istream& in, vector<T>& a) {for (auto& x : a) in >> x; return in;}
+template<typename T> ostream& operator<<(ostream& out, const vector<T>& a) {for (size_t i = 0; i < a.size(); ++i) {out << a[i]; if (i + 1 < a.size()) out << ' ';} return out;}
+
+static const auto IOSetup = [] {
+    std::cin.tie(nullptr)->sync_with_stdio(false);
+    // std::cout << std::setprecision(6) << std::fixed;
+    return nullptr;}();
+struct IOPre {static constexpr int TEN = 10, SZ = TEN * TEN * TEN * TEN;std::array<char, 4 * SZ> num;constexpr IOPre() : num{} {for (int i = 0; i < SZ; i++) {int n = i;for (int j = 3; j >= 0; j--) {num[i * 4 + j] = static_cast<char>(n % TEN + '0');n /= TEN;}}}};
+struct IO {
+#if !HAVE_DECL_FREAD_UNLOCKED
+#define fread_unlocked fread
+#endif
+#if !HAVE_DECL_FWRITE_UNLOCKED
+#define fwrite_unlocked fwrite
+#endif
+    static constexpr int SZ = 1 << 17, LEN = 32, TEN = 10, HUNDRED = TEN * TEN,THOUSAND = HUNDRED * TEN, TENTHOUSAND = THOUSAND * TEN,MAGIC_MULTIPLY = 205, MAGIC_SHIFT = 11, MASK = 15,TWELVE = 12, SIXTEEN = 16;static constexpr IOPre io_pre = {};std::array<char, SZ> input_buffer, output_buffer;int input_ptr_left, input_ptr_right, output_ptr_right;
+    IO(): input_buffer{},output_buffer{},input_ptr_left{},input_ptr_right{},output_ptr_right{} {}
+    IO(const IO&) = delete;IO(IO&&) = delete;IO& operator=(const IO&) = delete;IO& operator=(IO&&) = delete;
+    ~IO() { flush(); }
+    template <class T>struct is_char {static constexpr bool value = std::is_same_v<T, char>;};
+    template <class T>struct is_bool {static constexpr bool value = std::is_same_v<T, bool>;};
+    template <class T>struct is_string {static constexpr bool value =std::is_same_v<T, std::string> || std::is_same_v<T, const char*> ||std::is_same_v<T, char*> || std::is_same_v<std::decay_t<T>, char*>;;};
+    template <class T, class D = void>struct is_custom {static constexpr bool value = false;};
+    template <class T>struct is_custom<T, std::void_t<typename T::internal_value_type>> {static constexpr bool value = true;};
+    template <class T>struct is_default {static constexpr bool value = is_char<T>::value || is_bool<T>::value ||is_string<T>::value ||std::is_integral_v<T>;};
+    template <class T, class D = void>struct is_iterable {static constexpr bool value = false;};
+    template <class T>struct is_iterable <T, typename std::void_t<decltype(std::begin(std::declval<T>())) >> {static constexpr bool value = true;};
+    template <class T, class D = void, class E = void>struct is_applyable {static constexpr bool value = false;};
+    template <class T>struct is_applyable<T, std::void_t<typename std::tuple_size<T>::type>,std::void_t<decltype(std::get<0>(std::declval<T>()))>> {static constexpr bool value = true;};
+    template <class T>static constexpr bool needs_newline = (is_iterable<T>::value || is_applyable<T>::value) && (!is_default<T>::value);
+    template <typename T, typename U> struct any_needs_newline {static constexpr bool value = false;}; template <typename T>
+    struct any_needs_newline<T, std::index_sequence<>> {static constexpr bool value = false;};
+    template <typename T, std::size_t I, std::size_t... Is>struct any_needs_newline<T, std::index_sequence<I, Is...>> {static constexpr bool value = needs_newline<decltype(std::get<I>(std::declval<T>()))> || any_needs_newline<T, std::index_sequence<Is...>>::value;};
+    inline void load() {memmove(std::begin(input_buffer), std::begin(input_buffer) + input_ptr_left, input_ptr_right - input_ptr_left); input_ptr_right = input_ptr_right - input_ptr_left + static_cast<int>(fread_unlocked(std::begin(input_buffer) + input_ptr_right - input_ptr_left, 1, SZ - input_ptr_right + input_ptr_left, stdin)); input_ptr_left = 0;}
+    inline void read_char(char& c) {if (input_ptr_left + LEN > input_ptr_right) load(); c = input_buffer[input_ptr_left++];}
+    inline void read_string(std::string& x) {char c; while (read_char(c), c < '!') continue; x = c; while (read_char(c), c >= '!') x += c;}
+    template <class T> inline std::enable_if_t<std::is_integral_v<T>, void> read_int(T& x) {if (input_ptr_left + LEN > input_ptr_right) load(); char c = 0; do c = input_buffer[input_ptr_left++]; while (c < '-'); [[maybe_unused]] bool minus = false; if constexpr (std::is_signed<T>::value == true)if (c == '-') minus = true, c = input_buffer[input_ptr_left++]; x = 0; while (c >= '0')x = x * TEN + (c & MASK), c = input_buffer[input_ptr_left++]; if constexpr (std::is_signed<T>::value == true)if (minus) x = -x;}
+    inline void skip_space() {if (input_ptr_left + LEN > input_ptr_right) load(); while (input_buffer[input_ptr_left] <= ' ') input_ptr_left++;}
+    inline void flush() {fwrite_unlocked(std::begin(output_buffer), 1, output_ptr_right, stdout); output_ptr_right = 0;}
+    inline void write_char(char c) {if (output_ptr_right > SZ - LEN) flush(); output_buffer[output_ptr_right++] = c;}
+    inline void write_bool(bool b) {if (output_ptr_right > SZ - LEN) flush(); output_buffer[output_ptr_right++] = b ? '1' : '0';}
+    inline void write_string(const std::string& s) {for (auto x : s) write_char(x);}
+    inline void write_string(const char* s) {while (*s) write_char(*s++);}
+    inline void write_string(char* s) {while (*s) write_char(*s++);}
+    template <typename T>inline std::enable_if_t<std::is_integral_v<T>, void> write_int(T x) {if (output_ptr_right > SZ - LEN) flush(); if (!x) {output_buffer[output_ptr_right++] = '0'; return;} if constexpr (std::is_signed<T>::value == true)if (x < 0) output_buffer[output_ptr_right++] = '-', x = -x; int i = TWELVE; std::array<char, SIXTEEN> buf{}; while (x >= TENTHOUSAND) {memcpy(std::begin(buf) + i, std::begin(io_pre.num) + (x % TENTHOUSAND) * 4, 4); x /= TENTHOUSAND; i -= 4;} if (x < HUNDRED) {if (x < TEN) {output_buffer[output_ptr_right++] = static_cast<char>('0' + x);} else {std::uint32_t q = (static_cast<std::uint32_t>(x) * MAGIC_MULTIPLY) >> MAGIC_SHIFT; std::uint32_t r = static_cast<std::uint32_t>(x) - q * TEN; output_buffer[output_ptr_right] = static_cast<char>('0' + q); output_buffer[output_ptr_right + 1] = static_cast<char>('0' + r); output_ptr_right += 2;}} else {if (x < THOUSAND) {memcpy(std::begin(output_buffer) + output_ptr_right, std::begin(io_pre.num) + (x << 2) + 1, 3), output_ptr_right += 3;} else {memcpy(std::begin(output_buffer) + output_ptr_right, std::begin(io_pre.num) + (x << 2), 4), output_ptr_right += 4;}} memcpy(std::begin(output_buffer) + output_ptr_right, std::begin(buf) + i + 4, TWELVE - i); output_ptr_right += TWELVE - i;}
+    template <typename T_>IO& operator<<(T_&& x) {using T = typename std::remove_cv < typename std::remove_reference<T_>::type >::type; static_assert(is_custom<T>::value or is_default<T>::value or is_iterable<T>::value or is_applyable<T>::value); if constexpr (is_custom<T>::value) {write_int(x.get());} else if constexpr (is_default<T>::value) {if constexpr (is_bool<T>::value) {write_bool(x);} else if constexpr (is_string<T>::value) {write_string(x);} else if constexpr (is_char<T>::value) {write_char(x);} else if constexpr (std::is_integral_v<T>) {write_int(x);}} else if constexpr (is_iterable<T>::value) {using E = decltype(*std::begin(x)); constexpr char sep = needs_newline<E> ? '\n' : ' '; int i = 0; for (const auto& y : x) {if (i++) write_char(sep); operator<<(y);}} else if constexpr (is_applyable<T>::value) {constexpr char sep = (any_needs_newline < T, std::make_index_sequence<std::tuple_size_v<T> >>::value) ? '\n' : ' '; int i = 0; std::apply([this, &sep, &i](auto const & ... y) {(((i++ ? write_char(sep) : void()), this->operator<<(y)), ...);}, x);} return *this;}
+    template <typename T>IO& operator>>(T& x) {static_assert(is_custom<T>::value or is_default<T>::value or is_iterable<T>::value or is_applyable<T>::value); static_assert(!is_bool<T>::value); if constexpr (is_custom<T>::value) {typename T::internal_value_type y; read_int(y); x = y;} else if constexpr (is_default<T>::value) {if constexpr (is_string<T>::value) {read_string(x);} else if constexpr (is_char<T>::value) {read_char(x);} else if constexpr (std::is_integral_v<T>) {read_int(x);}} else if constexpr (is_iterable<T>::value) {for (auto& y : x) operator>>(y);} else if constexpr (is_applyable<T>::value) {std::apply([this](auto & ... y) { ((this->operator>>(y)), ...); }, x);} return *this;}
+    IO* tie(std::nullptr_t) { return this; }
+    void sync_with_stdio(bool) {}
+} io;
+#define cin io
+#define cout io
+
+//T - integral type we are working with.
+//N - max bitness of numbers, i. e. all numbers are in range [0, 2^N).
+//O(N) per insert and count operations, O(N * sizeof(T)) memory.
+template<typename T, const size_t N>
+class xor_basis {
+    static_assert(is_integral_v<T>);
+    static_assert(is_unsigned_v<T>);
+
+    T r = 0;
+    T a[N];
+
+public:
+    xor_basis() = default;
+    template<typename I>
+    xor_basis(I first, I last) {
+        for (; first != last; ++first) insert(*first);
+    }
+
+    int rank() const {return r;}
+    bool empty() const {return r == 0;}
+
+    void clear() {r = 0;}
+
+    void insert(T val) {
+        for (T b : *this) val = min(val, val ^ b);
+        if (val == 0) return;
+        a[r] = val;
+        for (size_t i = r++; i && a[i - 1] < a[i]; --i) swap(a[i - 1], a[i]);
+    }
+
+    void merge_with(const xor_basis& rhs) {
+        for (T b : rhs) insert(b);
+    }
+
+    //Zassenhaus algorithm
+    template<typename H>
+    void intersect_with(const xor_basis& rhs) {
+        static_assert(sizeof(H) * 8 >= N * 2);
+        xor_basis<H, N * 2> nb;
+        for (H b : *this) nb.insert(b << N | b);
+        for (H b : rhs) nb.insert(b << N);
+        for (r = 0; H b : nb) {
+            if (b < H(1) << N) a[r++] = b;
+        }       
+    }
+
+    bool contains(T x) const {
+        return calc_min_xor(x) == 0;
+    }
+
+    T calc_min_xor(T x) const {
+        for (T b : *this) x = min(x, x ^ b);
+        return x;
+    }
+
+    T calc_max_xor(T x) const {
+        for (T b : *this) x = max(x, x ^ b);
+        return x;
+    }
+
+    vector<T> get_basis() const {
+        vector<T> res(r);
+        std::copy(a, a + r, res.begin());
+        return res;
+    }
+
+    auto begin() const {return a;}
+    auto end() const {return a + r;}
+};
+using basis = xor_basis<uint32_t, 30>;
+
+int main() {
+    fast;
+    ll z; cin >> z;
+    xor_basis<uint64_t, 60> xb;
+    uint64_t res[64], s;
+    for (; z--;) {
+        xb.clear();
+        ll a; cin >> a;
+        for (int q = 0; q < a; ++q) {
+            uint64_t x; cin >> x;
+            xb.insert(x << 30 | x);
+        }
+        ll b; cin >> b;
+        for (int q = 0; q < b; ++q) {
+            uint64_t x; cin >> x;
+            xb.insert(x<<30);
+        }
+        s = 0;
+        for (auto b : xb) if(b < 1<<30) res[s++] = b;
+        cout << s << ' ';
+        for (size_t i = 0; i < s; ++i) cout << res[i] << ' '; cout << '\n';
+    }
+}

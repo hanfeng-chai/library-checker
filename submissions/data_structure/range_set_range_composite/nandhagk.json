@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 724992,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjE2IHRva2Vucwo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjE3IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNDg1IHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDk1IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNDg5IHRva2Vucwo=",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNTE2IHRva2Vucwo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNDk3IHRva2Vucwo=",
+      "memory": 589824,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1NzQ4IHRva2Vucwo=",
+      "memory": 21037056,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2ODMyIHRva2Vucwo=",
+      "memory": 23330816,
+      "status": "AC",
+      "time": 0.119
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMzM2IHRva2Vucwo=",
+      "memory": 10313728,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5ODk3IHRva2Vucwo=",
+      "memory": 26193920,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwNzE0IHRva2Vucwo=",
+      "memory": 26181632,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMDY3IHRva2Vucwo=",
+      "memory": 26189824,
+      "status": "AC",
+      "time": 0.141
+    },
+    {
+      "case": "fragment_00",
+      "checker_out": "b2sgMjQ5OTA5IHRva2Vucwo=",
+      "memory": 17342464,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "fragment_01",
+      "checker_out": "b2sgMjQ5NjI3IHRva2Vucwo=",
+      "memory": 17342464,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "slide_window_00",
+      "checker_out": "b2sgMjA3OTc3IHRva2Vucwo=",
+      "memory": 25800704,
+      "status": "AC",
+      "time": 0.123
+    },
+    {
+      "case": "slide_window_01",
+      "checker_out": "b2sgMjA4NTMzIHRva2Vucwo=",
+      "memory": 25796608,
+      "status": "AC",
+      "time": 0.123
+    }
+  ],
+  "overview": {
+    "id": 402518,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 26193920,
+    "problem_name": "range_set_range_composite",
+    "problem_title": "Range Set Range Composite",
+    "status": "AC",
+    "submission_time": "2026-09-15T04:40:54.695828Z",
+    "time": 0.143,
+    "user_name": "nandhagk"
+  }
+}

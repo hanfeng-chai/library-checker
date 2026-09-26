@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 7901184,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 7880704,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNjY1NDEgdG9rZW5zCg==",
+      "memory": 15785984,
+      "status": "AC",
+      "time": 0.237
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNjY1OTMgdG9rZW5zCg==",
+      "memory": 16064512,
+      "status": "AC",
+      "time": 0.235
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 7880704,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjQ0Igo=",
+      "memory": 6565888,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 6569984,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjQyIgo=",
+      "memory": 7626752,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjM5Igo=",
+      "memory": 7880704,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_00",
+      "checker_out": "b2sgMTA5IHRva2Vucwo=",
+      "memory": 6832128,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "medium_01",
+      "checker_out": "b2sgNzMgdG9rZW5zCg==",
+      "memory": 7868416,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_02",
+      "checker_out": "b2sgMTI1IHRva2Vucwo=",
+      "memory": 7385088,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "medium_03",
+      "checker_out": "b2sgNzcgdG9rZW5zCg==",
+      "memory": 7356416,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "medium_04",
+      "checker_out": "b2sgMjc1IHRva2Vucwo=",
+      "memory": 7901184,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDk3MTUgdG9rZW5zCg==",
+      "memory": 11915264,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDk3NjMgdG9rZW5zCg==",
+      "memory": 12357632,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDAxNjIgdG9rZW5zCg==",
+      "memory": 9986048,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODUyMiB0b2tlbnMK",
+      "memory": 11444224,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMzMwOTMgdG9rZW5zCg==",
+      "memory": 9187328,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNjcxNDIgdG9rZW5zCg==",
+      "memory": 13643776,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNjY1MTQgdG9rZW5zCg==",
+      "memory": 13692928,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNjY1OTIgdG9rZW5zCg==",
+      "memory": 13697024,
+      "status": "AC",
+      "time": 0.105
+    },
+    {
+      "case": "issue_1216_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 19943424,
+      "status": "AC",
+      "time": 0.026
+    }
+  ],
+  "overview": {
+    "id": 270645,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 19943424,
+    "problem_name": "dynamic_tree_vertex_set_path_composite",
+    "problem_title": "Dynamic Tree Vertex Set Path Composite",
+    "status": "AC",
+    "submission_time": "2025-03-02T07:00:39.406018Z",
+    "time": 0.237,
+    "user_name": "chaihf"
+  }
+}

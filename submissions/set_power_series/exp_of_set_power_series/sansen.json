@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 99487744,
+      "status": "AC",
+      "time": 0.334
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 99422208,
+      "status": "AC",
+      "time": 0.334
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 99450880,
+      "status": "AC",
+      "time": 0.335
+    },
+    {
+      "case": "n_01_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "n_01_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "overflow_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 99414016,
+      "status": "AC",
+      "time": 0.33
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTYzODQgdG9rZW5zCg==",
+      "memory": 1839104,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 22745088,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 5738496,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 589824,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 675840,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 289157,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 99487744,
+    "problem_name": "exp_of_set_power_series",
+    "problem_title": "Exp of Set Power Series",
+    "status": "AC",
+    "submission_time": "2025-05-27T14:13:28.031929Z",
+    "time": 0.335,
+    "user_name": "sansen"
+  }
+}

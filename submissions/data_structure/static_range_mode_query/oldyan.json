@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3215360,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 3358720,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3723264,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 4554752,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5484544,
+      "status": "AC",
+      "time": 0.077
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 5689344,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2834432,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2834432,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2318336,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4673536,
+      "status": "AC",
+      "time": 0.024
+    }
+  ],
+  "overview": {
+    "id": 211820,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 5689344,
+    "problem_name": "static_range_mode_query",
+    "problem_title": "Static Range Mode Query",
+    "status": "AC",
+    "submission_time": "2024-05-29T06:44:22.343495Z",
+    "time": 0.077,
+    "user_name": "oldyan"
+  }
+}

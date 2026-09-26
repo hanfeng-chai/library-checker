@@ -1,0 +1,269 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 438272,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "middle_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "middle_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "middle_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "middle_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "middle_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "middle_05",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 856064,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 548864,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 3153920,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 2392064,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 3719168,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3915776,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 3948544,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3969024,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 3948544,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3977216,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 3944448,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "lowrank_max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3682304,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "lowrank_max_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3612672,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "lowrank_max_random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3686400,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "lowrank_max_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3719168,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "lowrank_max_random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3690496,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3059712,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 3158016,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 2904064,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 2871296,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 2961408,
+      "status": "AC",
+      "time": 0.004
+    }
+  ],
+  "overview": {
+    "id": 404142,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 3977216,
+    "problem_name": "matrix_det_mod_2",
+    "problem_title": "Determinant of Matrix (Mod 2)",
+    "status": "AC",
+    "submission_time": "2026-09-20T10:06:03.324137Z",
+    "time": 0.029,
+    "user_name": "toomer"
+  }
+}

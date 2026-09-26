@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 471040,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 10690560,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 10653696,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 10764288,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ0NjAwIHRva2Vucwo=",
+      "memory": 2048000,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTc1MDQyIHRva2Vucwo=",
+      "memory": 4849664,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzk4NTA0IHRva2Vucwo=",
+      "memory": 2371584,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 3727360,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 4644864,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 3174400,
+      "status": "AC",
+      "time": 0.024
+    }
+  ],
+  "overview": {
+    "id": 261415,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 10764288,
+    "problem_name": "prefix_substring_lcs",
+    "problem_title": "Prefix-Substring LCS",
+    "status": "AC",
+    "submission_time": "2025-01-13T13:25:35.989318Z",
+    "time": 0.037,
+    "user_name": "cheat_when_I_was_young"
+  }
+}

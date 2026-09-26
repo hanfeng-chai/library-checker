@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 1077248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjE2IHRva2Vucwo=",
+      "memory": 1880064,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjE3IHRva2Vucwo=",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNDg1IHRva2Vucwo=",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDk1IHRva2Vucwo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNDg5IHRva2Vucwo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 1847296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNTE2IHRva2Vucwo=",
+      "memory": 1056768,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 970752,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNDk3IHRva2Vucwo=",
+      "memory": 1617920,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 847872,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 1847296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1NzQ4IHRva2Vucwo=",
+      "memory": 48275456,
+      "status": "AC",
+      "time": 0.156
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2ODMyIHRva2Vucwo=",
+      "memory": 48037888,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMzM2IHRva2Vucwo=",
+      "memory": 27009024,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5ODk3IHRva2Vucwo=",
+      "memory": 55635968,
+      "status": "AC",
+      "time": 0.195
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwNzE0IHRva2Vucwo=",
+      "memory": 55504896,
+      "status": "AC",
+      "time": 0.195
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMDY3IHRva2Vucwo=",
+      "memory": 55439360,
+      "status": "AC",
+      "time": 0.196
+    },
+    {
+      "case": "fragment_00",
+      "checker_out": "b2sgMjQ5OTA5IHRva2Vucwo=",
+      "memory": 27013120,
+      "status": "AC",
+      "time": 0.132
+    },
+    {
+      "case": "fragment_01",
+      "checker_out": "b2sgMjQ5NjI3IHRva2Vucwo=",
+      "memory": 27045888,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "slide_window_00",
+      "checker_out": "b2sgMjA3OTc3IHRva2Vucwo=",
+      "memory": 36450304,
+      "status": "AC",
+      "time": 0.152
+    },
+    {
+      "case": "slide_window_01",
+      "checker_out": "b2sgMjA4NTMzIHRva2Vucwo=",
+      "memory": 36450304,
+      "status": "AC",
+      "time": 0.153
+    }
+  ],
+  "overview": {
+    "id": 401017,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 55635968,
+    "problem_name": "range_set_range_composite",
+    "problem_title": "Range Set Range Composite",
+    "status": "AC",
+    "submission_time": "2026-09-09T10:40:39.923148Z",
+    "time": 0.196,
+    "user_name": "Rohan_Kapri"
+  }
+}

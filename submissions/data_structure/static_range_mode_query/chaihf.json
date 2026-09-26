@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2891776,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2383872,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2416640,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4513792,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 3010560,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 3076096,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5001216,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 5267456,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5787648,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 6270976,
+      "status": "AC",
+      "time": 0.061
+    }
+  ],
+  "overview": {
+    "id": 393941,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 6270976,
+    "problem_name": "static_range_mode_query",
+    "problem_title": "Static Range Mode Query",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:20:25.115595Z",
+    "time": 0.074,
+    "user_name": "chaihf"
+  }
+}

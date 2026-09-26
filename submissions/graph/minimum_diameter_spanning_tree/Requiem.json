@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0s6IDUK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0s6IDUwMDAwMDAwMDAK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgT0s6IDAK",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IDEzNjYzMjIyMjE5Cg==",
+      "memory": 1261568,
+      "status": "AC",
+      "time": 0.349
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IDEzMjAzNDUyMzU2Cg==",
+      "memory": 1257472,
+      "status": "AC",
+      "time": 0.347
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0s6IDE1MDc2NDM5MDM2Cg==",
+      "memory": 1261568,
+      "status": "AC",
+      "time": 0.347
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0s6IDE3NjgwOTE3NjM5Cg==",
+      "memory": 1011712,
+      "status": "AC",
+      "time": 0.341
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0s6IDE0MDA5MDY1NjE4Cg==",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.338
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IDYwMDA4MTAxNDcK",
+      "memory": 1048576,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IDEwMTUyNDI1MzgK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IDQ3MDA0NTA3Ngo=",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0s6IDExMTc2NjE0MDkyCg==",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0s6IDQxMDgxNjM2NzgK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0s6IDYwMDA4MTAxNDcK",
+      "memory": 1007616,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0s6IDEwMTUyNDI1MzgK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgT0s6IDQ3MDA0NTA3Ngo=",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgT0s6IDEwNDkwNjE0OTQK",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgT0s6IDQxMDgxNjM2NzgK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "small_c01_00",
+      "checker_out": "b2sgT0s6IDYK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "small_c01_01",
+      "checker_out": "b2sgT0s6IDgK",
+      "memory": 733184,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_c01_02",
+      "checker_out": "b2sgT0s6IDYK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_c01_03",
+      "checker_out": "b2sgT0s6IDUK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_c01_04",
+      "checker_out": "b2sgT0s6IDYK",
+      "memory": 999424,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "star_00",
+      "checker_out": "b2sgT0s6IDE5OTcxMDAyNDYK",
+      "memory": 1273856,
+      "status": "AC",
+      "time": 0.318
+    }
+  ],
+  "overview": {
+    "id": 255655,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 1273856,
+    "problem_name": "minimum_diameter_spanning_tree",
+    "problem_title": "Minimum Diameter Spanning Tree",
+    "status": "AC",
+    "submission_time": "2024-12-11T14:59:14.037679Z",
+    "time": 0.349,
+    "user_name": "Requiem"
+  }
+}

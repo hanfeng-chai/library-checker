@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 503808,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQzOTkgdG9rZW5zCg==",
+      "memory": 19267584,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQzNzIgdG9rZW5zCg==",
+      "memory": 20410368,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjAxMDUgdG9rZW5zCg==",
+      "memory": 12275712,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMzM1IHRva2Vucwo=",
+      "memory": 25317376,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk3NDggdG9rZW5zCg==",
+      "memory": 24784896,
+      "status": "AC",
+      "time": 0.062
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMTQ4IHRva2Vucwo=",
+      "memory": 24772608,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "all_twice_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 31084544,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "no_output_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 23834624,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "all_intersect_00",
+      "checker_out": "b2sgIi01MDAwMDAwMDAiCg==",
+      "memory": 23580672,
+      "status": "AC",
+      "time": 0.025
+    }
+  ],
+  "overview": {
+    "id": 357121,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 31084544,
+    "problem_name": "segment_add_get_min",
+    "problem_title": "Segment Add Get Min",
+    "status": "AC",
+    "submission_time": "2026-03-03T03:05:50.212747Z",
+    "time": 0.062,
+    "user_name": "IceKylin"
+  }
+}

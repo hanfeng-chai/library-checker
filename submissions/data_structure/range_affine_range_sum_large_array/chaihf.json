@@ -1,0 +1,234 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgODg2NCB0b2tlbnMK",
+      "memory": 3584000,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTgyMCB0b2tlbnMK",
+      "memory": 3547136,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzEwMDYgdG9rZW5zCg==",
+      "memory": 7217152,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4NTEgdG9rZW5zCg==",
+      "memory": 3809280,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDkzMDggdG9rZW5zCg==",
+      "memory": 13234176,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "small_N_00",
+      "checker_out": "b2sgNTAwMTcgdG9rZW5zCg==",
+      "memory": 3842048,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_N_01",
+      "checker_out": "b2sgNTAxMzAgdG9rZW5zCg==",
+      "memory": 4087808,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "small_N_02",
+      "checker_out": "b2sgNDk4OTYgdG9rZW5zCg==",
+      "memory": 4366336,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_N_03",
+      "checker_out": "b2sgNDk3OTEgdG9rZW5zCg==",
+      "memory": 4632576,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_N_04",
+      "checker_out": "b2sgNDk5NjcgdG9rZW5zCg==",
+      "memory": 4849664,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "small_Q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_Q_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 667648,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_Q_02",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_Q_03",
+      "checker_out": "b2sgIjQ4NTUzOTQ4NSIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_Q_04",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_Q_05",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNDk4OTIgdG9rZW5zCg==",
+      "memory": 13262848,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAyNDQgdG9rZW5zCg==",
+      "memory": 13254656,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNDk2OTEgdG9rZW5zCg==",
+      "memory": 13250560,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "many_query_0_00",
+      "checker_out": "b2sgOTgyIHRva2Vucwo=",
+      "memory": 12210176,
+      "status": "AC",
+      "time": 0.107
+    },
+    {
+      "case": "many_query_0_01",
+      "checker_out": "b2sgOTI1IHRva2Vucwo=",
+      "memory": 12222464,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "many_query_1_00",
+      "checker_out": "b2sgOTg5ODggdG9rZW5zCg==",
+      "memory": 13758464,
+      "status": "AC",
+      "time": 0.09
+    },
+    {
+      "case": "many_query_1_01",
+      "checker_out": "b2sgOTkwMDEgdG9rZW5zCg==",
+      "memory": 13758464,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "query_0_then_1_00",
+      "checker_out": "b2sgNTAwMzkgdG9rZW5zCg==",
+      "memory": 13242368,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "query_0_then_1_01",
+      "checker_out": "b2sgNDk5NTYgdG9rZW5zCg==",
+      "memory": 13266944,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "near_0_and_N_00",
+      "checker_out": "b2sgNTAxNzMgdG9rZW5zCg==",
+      "memory": 9076736,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "near_0_and_N_01",
+      "checker_out": "b2sgNTAwMTEgdG9rZW5zCg==",
+      "memory": 9043968,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "dense_00",
+      "checker_out": "b2sgNDk5MzYgdG9rZW5zCg==",
+      "memory": 4620288,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "dense_01",
+      "checker_out": "b2sgNTAwODcgdG9rZW5zCg==",
+      "memory": 4616192,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "dense_02",
+      "checker_out": "b2sgNTAwMDQgdG9rZW5zCg==",
+      "memory": 13238272,
+      "status": "AC",
+      "time": 0.103
+    }
+  ],
+  "overview": {
+    "id": 393925,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 13758464,
+    "problem_name": "range_affine_range_sum_large_array",
+    "problem_title": "Range Affine Range Sum (Large Array)",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:10:15.370324Z",
+    "time": 0.109,
+    "user_name": "chaihf"
+  }
+}

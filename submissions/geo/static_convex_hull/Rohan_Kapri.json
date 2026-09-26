@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2363392,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2330624,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 6590464,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1798144,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1929216,
+      "status": "AC",
+      "time": 0.021
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2441216,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 6569984,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "small_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 1957888,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "small_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 2142208,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "small_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 2195456,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 17948672,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 17842176,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 17846272,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 17969152,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 17973248,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 18010112,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 17870848,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 18042880,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_colinear_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 17956864,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_colinear_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 17944576,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "near_circle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 19832832,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "near_circle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 19791872,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "max_ans_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 20885504,
+      "status": "AC",
+      "time": 0.041
+    }
+  ],
+  "overview": {
+    "id": 406188,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 20885504,
+    "problem_name": "static_convex_hull",
+    "problem_title": "Static Convex Hull",
+    "status": "AC",
+    "submission_time": "2026-09-26T04:59:02.384478Z",
+    "time": 0.041,
+    "user_name": "Rohan_Kapri"
+  }
+}

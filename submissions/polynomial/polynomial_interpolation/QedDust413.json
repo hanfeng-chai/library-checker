@@ -1,0 +1,89 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDIzOAo=",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEwMDAwMDAwIgo=",
+      "memory": 811008,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDAK",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI3NjY5IHRva2Vucwo=",
+      "memory": 23605248,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDE2NDI4Mjg2Cg==",
+      "time": 0.07
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjk4MzAgdG9rZW5zCg==",
+      "memory": 14729216,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDk2ODQ5MzIK",
+      "time": 0.041
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 10235904,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDY3MDQ3NjYK",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23912448,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDE2Njk1Mjg2Cg==",
+      "time": 0.07
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23875584,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDE2Njk1Mjg2Cg==",
+      "time": 0.07
+    },
+    {
+      "case": "1169_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDk2Cg==",
+      "time": 0
+    },
+    {
+      "case": "x_zero_00",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 23924736,
+      "status": "AC",
+      "stderr": "bnR0X2xlbiA6IDE2Njk1Mjg2Cg==",
+      "time": 0.07
+    }
+  ],
+  "overview": {
+    "id": 201386,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 23924736,
+    "problem_name": "polynomial_interpolation",
+    "problem_title": "Polynomial Interpolation",
+    "status": "AC",
+    "submission_time": "2024-04-08T13:55:14.347018Z",
+    "time": 0.07,
+    "user_name": "QedDust413"
+  }
+}

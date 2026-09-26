@@ -1,0 +1,171 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgbj00LCBtPTQgYW5zPVlFUwo=",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgbj01LCBtPTQgYW5zPU5PCg==",
+      "memory": 786432,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgbj0xMCwgbT0xNSBhbnM9Tk8K",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "heawood_00",
+      "checker_out": "b2sgbj0xNCwgbT0yOCBhbnM9Tk8K",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 22454272,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "cycle_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 25718784,
+      "status": "AC",
+      "time": 0.068
+    },
+    {
+      "case": "thick_cycle_00",
+      "checker_out": "b2sgbj0xMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 17276928,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "wheel_00",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 17838080,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "complete_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk2IGFucz1ZRVMK",
+      "memory": 7090176,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "complete_minus_ab_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk1IGFucz1ZRVMK",
+      "memory": 7118848,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "complete_minus_ab_cd_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk0IGFucz1OTwo=",
+      "memory": 7114752,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "complete_minus_ab_ac_00",
+      "checker_out": "b2sgbj02MzIsIG09MTk5Mzk0IGFucz1ZRVMK",
+      "memory": 7000064,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 24162304,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 24174592,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 24145920,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 24211456,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgbj0yMDAwMDAsIG09MjAwMDAwIGFucz1OTwo=",
+      "memory": 24104960,
+      "status": "AC",
+      "time": 0.051
+    },
+    {
+      "case": "2tree_00",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 15507456,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "2tree_01",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 15446016,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "2tree_02",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 15446016,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "2tree_03",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 15441920,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "2tree_04",
+      "checker_out": "b2sgbj0xMDAwMDEsIG09MTk5OTk5IGFucz1ZRVMK",
+      "memory": 15466496,
+      "status": "AC",
+      "time": 0.043
+    }
+  ],
+  "overview": {
+    "id": 383174,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 25718784,
+    "problem_name": "chordal_graph_recognition",
+    "problem_title": "Chordal Graph Recognition",
+    "status": "AC",
+    "submission_time": "2026-06-30T12:34:44.109641Z",
+    "time": 0.068,
+    "user_name": "t98slider"
+  }
+}

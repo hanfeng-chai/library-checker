@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16764928,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16711680,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "binary_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14651392,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "binary_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14544896,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "binary_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14577664,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 12918784,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "line_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 14622720,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "line_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 4141056,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "line_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 10964992,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "line_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 7815168,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_line_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16302080,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_line_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16601088,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_line_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 16547840,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 14692352,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13430784,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13361152,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "path_graph_root_centroid_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13373440,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "path_graph_root_centroid_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13328384,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "path_graph_root_centroid_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 13291520,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDEwOTIzIHRva2Vucwo=",
+      "memory": 10543104,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEyOTA3IHRva2Vucwo=",
+      "memory": 12419072,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyMzQ3IHRva2Vucwo=",
+      "memory": 2637824,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMjU4MzkgdG9rZW5zCg==",
+      "memory": 10964992,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgOTkxMTcgdG9rZW5zCg==",
+      "memory": 7290880,
+      "status": "AC",
+      "time": 0.009
+    }
+  ],
+  "overview": {
+    "id": 195957,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 16764928,
+    "problem_name": "lca",
+    "problem_title": "Lowest Common Ancestor",
+    "status": "AC",
+    "submission_time": "2024-03-09T16:49:00.966475Z",
+    "time": 0.027,
+    "user_name": "andyli"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjQyIHRva2Vucwo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjM4IHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjQ2IHRva2Vucwo=",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjUxIHRva2Vucwo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjUzIHRva2Vucwo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTkzNzMgdG9rZW5zCg==",
+      "memory": 3018752,
+      "status": "AC",
+      "time": 0.122
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDg4OCB0b2tlbnMK",
+      "memory": 9175040,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTUxOTEgdG9rZW5zCg==",
+      "memory": 6877184,
+      "status": "AC",
+      "time": 0.133
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5NDIgdG9rZW5zCg==",
+      "memory": 11988992,
+      "status": "AC",
+      "time": 0.242
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUxNzUgdG9rZW5zCg==",
+      "memory": 12103680,
+      "status": "AC",
+      "time": 0.242
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjQ5NzIgdG9rZW5zCg==",
+      "memory": 12111872,
+      "status": "AC",
+      "time": 0.244
+    },
+    {
+      "case": "many_0_query_00",
+      "checker_out": "b2sgMTAzIHRva2Vucwo=",
+      "memory": 11894784,
+      "status": "AC",
+      "time": 0.231
+    },
+    {
+      "case": "many_0_query_01",
+      "checker_out": "b2sgOTggdG9rZW5zCg==",
+      "memory": 11915264,
+      "status": "AC",
+      "time": 0.226
+    },
+    {
+      "case": "many_1_query_00",
+      "checker_out": "b2sgOTk2NjAgdG9rZW5zCg==",
+      "memory": 13393920,
+      "status": "AC",
+      "time": 0.113
+    },
+    {
+      "case": "many_1_query_01",
+      "checker_out": "b2sgOTk3MDkgdG9rZW5zCg==",
+      "memory": 13336576,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "many_2_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 11771904,
+      "status": "AC",
+      "time": 0.273
+    },
+    {
+      "case": "many_2_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 11935744,
+      "status": "AC",
+      "time": 0.273
+    },
+    {
+      "case": "many_3_query_00",
+      "checker_out": "b2sgOTIgdG9rZW5zCg==",
+      "memory": 11935744,
+      "status": "AC",
+      "time": 0.294
+    },
+    {
+      "case": "many_3_query_01",
+      "checker_out": "b2sgMTA1IHRva2Vucwo=",
+      "memory": 11911168,
+      "status": "AC",
+      "time": 0.285
+    },
+    {
+      "case": "sort_only_short_00",
+      "checker_out": "b2sgMjQ5MjIgdG9rZW5zCg==",
+      "memory": 10559488,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "sort_only_short_01",
+      "checker_out": "b2sgMjUxMTMgdG9rZW5zCg==",
+      "memory": 10727424,
+      "status": "AC",
+      "time": 0.071
+    }
+  ],
+  "overview": {
+    "id": 401387,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 13393920,
+    "problem_name": "point_set_range_sort_range_composite",
+    "problem_title": "Point Set Range Sort Range Composite",
+    "status": "AC",
+    "submission_time": "2026-09-10T06:11:10.029724Z",
+    "time": 0.294,
+    "user_name": "Rohan_Kapri"
+  }
+}

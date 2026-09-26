@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzQ2MjcgdG9rZW5zCg==",
+      "memory": 2961408,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNzQ0MDQgdG9rZW5zCg==",
+      "memory": 2924544,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTk3NzMgdG9rZW5zCg==",
+      "memory": 2920448,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTI4MTYgdG9rZW5zCg==",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNDk3MjMgdG9rZW5zCg==",
+      "memory": 2924544,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNzAxMDcgdG9rZW5zCg==",
+      "memory": 2899968,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "random_06",
+      "checker_out": "b2sgNTQwODEgdG9rZW5zCg==",
+      "memory": 2924544,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_07",
+      "checker_out": "b2sgNTY3NyB0b2tlbnMK",
+      "memory": 811008,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_08",
+      "checker_out": "b2sgMjQ1MzYgdG9rZW5zCg==",
+      "memory": 2895872,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_09",
+      "checker_out": "b2sgOTc5NTMgdG9rZW5zCg==",
+      "memory": 2932736,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMzUwIHRva2Vucwo=",
+      "memory": 2891776,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk5NDggdG9rZW5zCg==",
+      "memory": 3125248,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk2MzIgdG9rZW5zCg==",
+      "memory": 3162112,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "path_00",
+      "checker_out": "b2sgNjY2NjcgdG9rZW5zCg==",
+      "memory": 2830336,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "path_01",
+      "checker_out": "b2sgNjY2NjcgdG9rZW5zCg==",
+      "memory": 2899968,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "path_02",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 2936832,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "path_03",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 2932736,
+      "status": "AC",
+      "time": 0.003
+    }
+  ],
+  "overview": {
+    "id": 400979,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 3162112,
+    "problem_name": "unionfind",
+    "problem_title": "Unionfind",
+    "status": "AC",
+    "submission_time": "2026-09-09T09:06:38.081678Z",
+    "time": 0.005,
+    "user_name": "Rohan_Kapri"
+  }
+}

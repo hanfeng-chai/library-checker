@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 10194944,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 11059200,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5545984,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 7856128,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5779456,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 12615680,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 12861440,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 12849152,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 12701696,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 12333056,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "large_cycle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 8171520,
+      "status": "AC",
+      "time": 0.021
+    }
+  ],
+  "overview": {
+    "id": 403026,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 12861440,
+    "problem_name": "scc",
+    "problem_title": "Strongly Connected Components",
+    "status": "AC",
+    "submission_time": "2026-09-16T21:56:51.357212Z",
+    "time": 0.029,
+    "user_name": "nandhagk"
+  }
+}

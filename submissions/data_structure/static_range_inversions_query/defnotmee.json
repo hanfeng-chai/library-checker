@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 1028096,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 15187968,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 15339520,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 15405056,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzcxMDEgdG9rZW5zCg==",
+      "memory": 9687040,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTk2OTEgdG9rZW5zCg==",
+      "memory": 6426624,
+      "status": "AC",
+      "time": 0.031
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNjE5NTggdG9rZW5zCg==",
+      "memory": 9703424,
+      "status": "AC",
+      "time": 0.046
+    },
+    {
+      "case": "small_a_00",
+      "checker_out": "b2sgMTAwMDAwIHRva2Vucwo=",
+      "memory": 15187968,
+      "status": "AC",
+      "time": 0.102
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgMTc3MDcgdG9rZW5zCg==",
+      "memory": 1810432,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNjk4MzAgdG9rZW5zCg==",
+      "memory": 4165632,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 3661824,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_n_03",
+      "checker_out": "b2sgMzYwMzMgdG9rZW5zCg==",
+      "memory": 3137536,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "small_n_04",
+      "checker_out": "b2sgMTQ4NjggdG9rZW5zCg==",
+      "memory": 2342912,
+      "status": "AC",
+      "time": 0.003
+    }
+  ],
+  "overview": {
+    "id": 181308,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 15405056,
+    "problem_name": "static_range_inversions_query",
+    "problem_title": "Static Range Inversions Query",
+    "status": "AC",
+    "submission_time": "2024-01-03T14:48:37.806931Z",
+    "time": 0.102,
+    "user_name": "defnotmee"
+  }
+}

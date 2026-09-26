@@ -1,0 +1,227 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 598016,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 23515136,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 27779072,
+      "status": "AC",
+      "time": 0.055
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3792896,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 30445568,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 30556160,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 30183424,
+      "status": "AC",
+      "time": 0.058
+    },
+    {
+      "case": "ascending_order_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 27836416,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "ascending_order_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 31805440,
+      "status": "AC",
+      "time": 0.052
+    },
+    {
+      "case": "ascending_order_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 4325376,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "descending_order_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 28770304,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "descending_order_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 31797248,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "descending_order_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3567616,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "swap_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 24875008,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "swap_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 30945280,
+      "status": "AC",
+      "time": 0.06
+    },
+    {
+      "case": "swap_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3612672,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "almost_straight_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 27664384,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "almost_straight_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 31346688,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "almost_straight_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 3801088,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "killer_case_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 41738240,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "killer_case_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 42012672,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "killer_case_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 41975808,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "killer_case_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 42012672,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "killer_case_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 42029056,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "killer_straight_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 45883392,
+      "status": "AC",
+      "time": 0.087
+    }
+  ],
+  "overview": {
+    "id": 405146,
+    "is_latest": true,
+    "lang": "cpp17",
+    "memory": 45883392,
+    "problem_name": "common_interval_decomposition_tree",
+    "problem_title": "Common Interval Decomposition Tree",
+    "status": "AC",
+    "submission_time": "2026-09-22T11:34:30.136101Z",
+    "time": 0.088,
+    "user_name": "Rohan_Kapri"
+  }
+}

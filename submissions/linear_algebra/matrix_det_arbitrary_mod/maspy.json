@@ -1,0 +1,156 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 761856,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjc3MzYzMTMyIgo=",
+      "memory": 2641920,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjk2MzMyMDE0Igo=",
+      "memory": 2629632,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjQxMDIxMDAwNiIK",
+      "memory": 2625536,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgIjI0OTc4NDg4MCIK",
+      "memory": 2596864,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgIjM3MDMyNDYyOCIK",
+      "memory": 2596864,
+      "status": "AC",
+      "time": 0.048
+    },
+    {
+      "case": "perm_max_random_00",
+      "checker_out": "b2sgIjc1NDY5OTY4Igo=",
+      "memory": 2646016,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "perm_max_random_01",
+      "checker_out": "b2sgIjEwOTI3MzkxNiIK",
+      "memory": 2613248,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "perm_max_random_02",
+      "checker_out": "b2sgIjIxNTc5MTQyMCIK",
+      "memory": 2867200,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "perm_max_random_03",
+      "checker_out": "b2sgIjQ1ODY0NzM5MiIK",
+      "memory": 2613248,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "perm_max_random_04",
+      "checker_out": "b2sgIjE4MzU5MjkyMCIK",
+      "memory": 2605056,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgIjMwMDYyNjgxIgo=",
+      "memory": 1073152,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgIjExODc2MjA5MiIK",
+      "memory": 1024000,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgIjcxMzg2OTA4Igo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgIjQ3OTIyODQ0NiIK",
+      "memory": 1032192,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgIjIwNTEzNzMzMiIK",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "signed_overflow_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 774144,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "unsigned_overflow_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 507904,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 109538,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 2867200,
+    "problem_name": "matrix_det_arbitrary_mod",
+    "problem_title": "Determinant of Matrix (Arbitrary Mod)",
+    "status": "AC",
+    "time": 0.049,
+    "user_name": "maspy"
+  }
+}

@@ -1,0 +1,808 @@
+use std::{
+    collections::HashMap,
+    hash::{BuildHasher, Hasher},
+};
+
+use urectanc::{binary_indexed_tree::BinaryIndexedTree, compressed_sparse_row::CSRArray, fast_io};
+
+fn main() {
+    let mut input = fast_io::stdin();
+    let mut output = fast_io::stdout();
+
+    let n: usize = input.val();
+    let q: usize = input.val();
+
+    let mut seen = HashMap::<_, _, FxHasher>::default();
+    let mut compress = |a: u32| {
+        let i = seen.len();
+        *seen.entry(a).or_insert(i)
+    };
+
+    let mut events = vec![];
+    let mut a: Vec<_> = (0..n)
+        .map(|i| {
+            let a = compress(input.val());
+            events.push((a, (1u8, i)));
+            a
+        })
+        .collect();
+
+    let mut ask = 0;
+    for _ in 0..q {
+        let op: u8 = input.val();
+        if op == 0 {
+            let k: usize = input.val();
+            let v = compress(input.val());
+            let old = std::mem::replace(&mut a[k], v);
+            events.push((old, (0u8, k)));
+            events.push((v, (1u8, k)));
+        } else {
+            let l: usize = input.val();
+            let r: usize = input.val();
+            let x: usize = compress(input.val());
+            events.push((x, (2u8, ask << 40 | l << 20 | r)));
+            ask += 1;
+        }
+    }
+
+    for (i, &a) in a.iter().enumerate() {
+        events.push((a, (0, i)));
+    }
+    let events = CSRArray::new(seen.len(), &events);
+
+    let mask = (1 << 20) - 1;
+    let mut set = OrderedSet::new(n, &[]);
+    let mut ans = vec![0; ask];
+    for events in &events {
+        for &(t, x) in events {
+            if t == 0 {
+                set.remove(x);
+            } else if t == 1 {
+                set.insert(x);
+            } else {
+                let i = x >> 40;
+                let l = x >> 20 & mask;
+                let r = x & mask;
+                ans[i] = set.rank(r) - set.rank(l);
+            }
+        }
+    }
+
+    for ans in ans {
+        output.writeln(ans);
+    }
+}
+
+const B: usize = std::mem::size_of::<u64>() * 8;
+pub struct OrderedSet {
+    bitset: Vec<u64>,
+    bit: BinaryIndexedTree<u32>,
+}
+
+impl OrderedSet {
+    pub fn new(max: usize, a: &[usize]) -> Self {
+        let mut bitset = vec![0u64; (max + 1).div_ceil(B)];
+        for &a in a {
+            let (b, i) = Self::index(a);
+            bitset[b] |= 1 << i;
+        }
+
+        let init: Vec<_> = bitset.iter().map(|&bitset| bitset.count_ones()).collect();
+        let bit = BinaryIndexedTree::from(init);
+
+        Self { bitset, bit }
+    }
+
+    #[inline]
+    pub fn index(x: usize) -> (usize, usize) {
+        (x / B, x % B)
+    }
+
+    pub fn contains(&self, x: usize) -> bool {
+        let (b, i) = Self::index(x as usize);
+        self.bitset[b] >> i & 1 == 1
+    }
+
+    pub fn insert(&mut self, x: usize) {
+        if self.contains(x) {
+            return;
+        }
+        let (b, i) = Self::index(x as usize);
+        self.bitset[b] |= 1 << i;
+        self.bit.add(b, 1);
+    }
+
+    pub fn remove(&mut self, x: usize) {
+        if !self.contains(x) {
+            return;
+        }
+        let (b, i) = Self::index(x as usize);
+        self.bitset[b] ^= 1 << i;
+        self.bit.add(b, !0);
+    }
+
+    pub fn nth(&self, n: usize) -> Option<usize> {
+        let b = self.bit.max_right(|acc| acc <= n as _);
+        self.bitset.get(b).map(|&bits| {
+            let acc = self.bit.sum(..b) as usize;
+            let i = kth_bit(bits, n - acc);
+            b * B + i
+        })
+    }
+
+    pub fn rank(&self, x: usize) -> usize {
+        let (b, i) = Self::index(x);
+        self.bit.sum(..b) as usize + (self.bitset[b] & ((1 << i) - 1)).count_ones() as usize
+    }
+}
+
+fn kth_bit(mut x: u64, k: usize) -> usize {
+    if is_x86_feature_detected!("bmi2") {
+        unsafe { kth_bit_bmi2(x, k) }
+    } else {
+        for _ in 0..k {
+            x &= x - 1;
+        }
+        x.trailing_zeros() as usize
+    }
+}
+
+#[target_feature(enable = "bmi2")]
+unsafe fn kth_bit_bmi2(x: u64, k: usize) -> usize {
+    core::arch::x86_64::_pdep_u64(1 << k, x).trailing_zeros() as usize
+}
+
+const K: u64 = 0xf1357aea2e62a9c5;
+#[derive(Default)]
+struct FxHasher(u64);
+
+impl Hasher for FxHasher {
+    fn finish(&self) -> u64 {
+        self.0.rotate_left(20)
+    }
+
+    fn write(&mut self, _bytes: &[u8]) {
+        unimplemented!()
+    }
+
+    fn write_u32(&mut self, i: u32) {
+        self.0 = self.0.wrapping_add(i as u64).wrapping_mul(K);
+    }
+}
+
+impl BuildHasher for FxHasher {
+    type Hasher = Self;
+
+    fn build_hasher(&self) -> Self::Hasher {
+        Self::default()
+    }
+}
+
+
+pub mod urectanc {
+    pub mod binary_indexed_tree {
+        use crate::urectanc::{clamp_range, num_traits};
+        use std::ops::RangeBounds;
+        use clamp_range::ClampRange;
+        use num_traits::PrimitiveInteger;
+        pub struct BinaryIndexedTree<T> {
+            len: usize,
+            tree: Vec<T>,
+        }
+        impl<T, A> From<A> for BinaryIndexedTree<T>
+        where
+            T: PrimitiveInteger,
+            A: AsRef<[T]>,
+        {
+            fn from(a: A) -> Self {
+                let a = a.as_ref();
+                let len = a.len();
+                let mut tree = vec![T::zero(); len + 1];
+                tree[1..].copy_from_slice(a);
+                for i in 1..len {
+                    let lsb = i & i.wrapping_neg();
+                    if i + lsb <= len {
+                        let add = tree[i];
+                        tree[i + lsb] += add;
+                    }
+                }
+                Self { len, tree }
+            }
+        }
+        impl<T> BinaryIndexedTree<T>
+        where
+            T: PrimitiveInteger,
+        {
+            pub fn new(len: usize) -> Self {
+                Self {
+                    len,
+                    tree: vec![T::zero(); len + 1],
+                }
+            }
+            pub fn to_vec(&self) -> Vec<T> {
+                let mut a = self.tree.clone();
+                for i in (1..self.len).rev() {
+                    let lsb = i & i.wrapping_neg();
+                    if i + lsb <= self.len {
+                        let sub = a[i];
+                        a[i + lsb] -= sub;
+                    }
+                }
+                a[1..].to_owned()
+            }
+            pub fn get(&self, i: usize) -> T {
+                self.sum(i..=i)
+            }
+            pub fn set(&mut self, i: usize, x: T) {
+                self.add(i, x - self.get(i));
+            }
+            pub fn add(&mut self, i: usize, x: T) {
+                let mut i = i + 1;
+                while i <= self.len {
+                    self.tree[i] += x;
+                    i += i & i.wrapping_neg();
+                }
+            }
+            pub fn sum(&self, range: impl RangeBounds<usize>) -> T {
+                let (mut l, mut r) = range.clamp(0, self.len);
+                let mut sum = T::zero();
+                while l < r {
+                    sum += self.tree[r];
+                    r -= r & r.wrapping_neg();
+                }
+                while r < l {
+                    sum -= self.tree[l];
+                    l -= l & l.wrapping_neg();
+                }
+                sum
+            }
+            pub fn max_right(&self, f: impl Fn(T) -> bool) -> usize {
+                let mut r = 0;
+                let mut sum = T::zero();
+                assert!(f(sum));
+                let mut width = self.len.next_power_of_two();
+                while width > 0 {
+                    if r + width <= self.len && f(sum + self.tree[r + width]) {
+                        sum += self.tree[r + width];
+                        r += width;
+                    }
+                    width >>= 1;
+                }
+                r
+            }
+        }
+    }
+    pub mod compressed_sparse_row {
+        use std::fmt::Debug;
+        pub struct CSRArray<T> {
+            n: usize,
+            index: Vec<usize>,
+            csr: Vec<T>,
+        }
+        impl<T> CSRArray<T> {
+            pub fn new(n: usize, items: impl AsRef<[(usize, T)]>) -> Self
+            where
+                T: Copy,
+            {
+                let items = items.as_ref();
+                let mut index = vec![0; n + 1];
+                for &(k, _) in items {
+                    index[k] += 1;
+                }
+                for i in 0..n {
+                    index[i + 1] += index[i];
+                }
+                let m = items.len();
+                let mut csr: Vec<T> = Vec::with_capacity(m);
+                {
+                    let csr = csr.spare_capacity_mut();
+                    for &(k, v) in items.iter().rev() {
+                        index[k] -= 1;
+                        csr[index[k]].write(v);
+                    }
+                }
+                unsafe {
+                    csr.set_len(m);
+                }
+                Self { n, index, csr }
+            }
+            pub fn len(&self) -> usize {
+                self.n
+            }
+            pub fn is_empty(&self) -> bool {
+                self.n == 0
+            }
+            pub fn get(&self, i: usize) -> Option<&[T]> {
+                (i < self.n).then(|| &self.csr[self.index[i]..self.index[i + 1]])
+            }
+            pub fn iter(&'_ self) -> Row<'_, T> {
+                Row { csr: self, index: 0 }
+            }
+        }
+        impl<T> std::ops::Index<usize> for CSRArray<T> {
+            type Output = [T];
+            fn index(&self, index: usize) -> &Self::Output {
+                self.get(index).unwrap()
+            }
+        }
+        impl<'a, T> IntoIterator for &'a CSRArray<T> {
+            type Item = &'a [T];
+            type IntoIter = Row<'a, T>;
+            fn into_iter(self) -> Self::IntoIter {
+                self.iter()
+            }
+        }
+        impl<T: Debug> Debug for CSRArray<T> {
+            fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+                let mut f = f.debug_list();
+                for row in self {
+                    f.entry(&row);
+                }
+                f.finish()
+            }
+        }
+        pub struct Row<'a, T> {
+            csr: &'a CSRArray<T>,
+            index: usize,
+        }
+        impl<'a, T> Iterator for Row<'a, T> {
+            type Item = &'a [T];
+            fn next(&mut self) -> Option<Self::Item> {
+                let row = self.csr.get(self.index)?;
+                self.index += 1;
+                Some(row)
+            }
+        }
+    }
+    pub mod fast_io {
+        mod input {
+            use std::{io::Read, os::fd::FromRawFd};
+            mod mman {
+                use std::ffi::{c_int, c_void};
+                pub const PROT_READ: c_int = 1;
+                pub const MAP_PRIVATE: c_int = 2;
+                #[link(name = "c")]
+                unsafe extern "C" {
+                    pub unsafe fn mmap(
+                        addr: *mut c_void,
+                        len: usize,
+                        prot: c_int,
+                        flags: c_int,
+                        fd: c_int,
+                        offset: isize,
+                    ) -> *mut c_void;
+                }
+            }
+            pub struct Input {
+                cursor: *const u8,
+            }
+            impl Input {
+                pub fn new(buf: &[u8]) -> Self {
+                    Self { cursor: buf.as_ptr() }
+                }
+                pub fn stdin() -> Self {
+                    use mman::*;
+                    let mut stdin = unsafe { std::fs::File::from_raw_fd(0) };
+                    let buf = match stdin.metadata() {
+                        Ok(metadata) if metadata.is_file() => {
+                            let len = metadata.len() as usize;
+                            unsafe {
+                                mmap(
+                                    std::ptr::null_mut(),
+                                    len,
+                                    PROT_READ,
+                                    MAP_PRIVATE,
+                                    0,
+                                    0,
+                                ) as _
+                            }
+                        }
+                        _ => {
+                            let mut buf = Vec::new();
+                            stdin.read_to_end(&mut buf).unwrap();
+                            Box::leak(buf.into_boxed_slice()).as_ptr()
+                        }
+                    };
+                    Self { cursor: buf }
+                }
+                fn seek(&mut self, offset: usize) {
+                    self.cursor = unsafe { self.cursor.add(offset) };
+                }
+                fn peek<T>(&self) -> T {
+                    let ptr = self.cursor as *const T;
+                    unsafe { std::ptr::read_unaligned(ptr) }
+                }
+                fn next<T>(&mut self) -> T {
+                    let val = self.peek();
+                    self.seek(std::mem::size_of::<T>());
+                    val
+                }
+                fn skip_whitespace(&mut self) {
+                    while self.peek::<u8>().is_ascii_whitespace() {
+                        self.seek(1);
+                    }
+                }
+                fn parse_neg(&mut self) -> bool {
+                    let neg = self.peek::<u8>() == b'-';
+                    self.seek(neg as usize);
+                    neg
+                }
+                fn parse_digits(&mut self, mut val: u64) -> u64 {
+                    loop {
+                        let c = self.next::<u8>();
+                        if c.is_ascii_whitespace() {
+                            break;
+                        }
+                        val = val * 10 + (c - b'0') as u64;
+                    }
+                    val
+                }
+                fn parse_8digits(&mut self) -> Option<u64> {
+                    let mut val = self.peek::<u64>() ^ 0x3030303030303030;
+                    if val & 0xf0f0f0f0f0f0f0f0 != 0 {
+                        return None;
+                    }
+                    self.seek(8);
+                    val = val.wrapping_mul((10 << 8) + 1) >> 8 & 0x00ff00ff00ff00ff;
+                    val = val.wrapping_mul((100 << 16) + 1) >> 16 & 0x0000ffff0000ffff;
+                    val = val.wrapping_mul((10000 << 32) + 1) >> 32;
+                    Some(val)
+                }
+                pub fn val<T: Readable>(&mut self) -> T {
+                    self.skip_whitespace();
+                    T::read(self)
+                }
+                pub fn vec<T: Readable>(&mut self, len: usize) -> Vec<T> {
+                    (0..len).map(|_| self.val()).collect()
+                }
+                pub fn bytes(&mut self) -> &[u8] {
+                    self.skip_whitespace();
+                    let start = self.cursor;
+                    while !self.peek::<u8>().is_ascii_whitespace() {
+                        self.seek(1);
+                    }
+                    unsafe {
+                        let len = self.cursor.offset_from(start) as usize;
+                        std::slice::from_raw_parts(start, len)
+                    }
+                }
+            }
+            pub trait Readable {
+                fn read(input: &mut Input) -> Self;
+            }
+            impl Readable for u8 {
+                fn read(input: &mut Input) -> Self {
+                    input.parse_digits(0) as _
+                }
+            }
+            impl Readable for u16 {
+                fn read(input: &mut Input) -> Self {
+                    input.parse_digits(0) as _
+                }
+            }
+            impl Readable for u32 {
+                fn read(input: &mut Input) -> Self {
+                    let val = input.parse_8digits().unwrap_or(0);
+                    input.parse_digits(val) as _
+                }
+            }
+            impl Readable for u64 {
+                fn read(input: &mut Input) -> Self {
+                    let val = input
+                        .parse_8digits()
+                        .map_or(
+                            0,
+                            |x| {
+                                input.parse_8digits().map_or(x, |y| x * 100_000_000 + y)
+                            },
+                        );
+                    input.parse_digits(val)
+                }
+            }
+            impl Readable for usize {
+                fn read(input: &mut Input) -> Self {
+                    u64::read(input) as _
+                }
+            }
+            macro_rules! impl_readable_signed {
+                ($signed:ty, $unsigned:ty) => {
+                    impl Readable for $signed { fn read(input : & mut Input) -> Self {
+                    let neg = input.parse_neg(); let val = <$unsigned >::read(input) as
+                    Self; if neg { - val } else { val } } }
+                };
+            }
+            impl_readable_signed!(i8, u8);
+            impl_readable_signed!(i16, u16);
+            impl_readable_signed!(i32, u32);
+            impl_readable_signed!(i64, u64);
+            impl_readable_signed!(isize, usize);
+        }
+        mod output {
+            use std::io::Write;
+            const BUF_SIZE: usize = 1 << 18;
+            const MIN_WRITE_CAPACITY: usize = 50;
+            pub struct Output<W: Write> {
+                buf: [u8; BUF_SIZE],
+                pos: usize,
+                inner: W,
+            }
+            impl Output<std::io::StdoutLock<'static>> {
+                pub fn stdout() -> Self {
+                    Self::new(std::io::stdout().lock())
+                }
+            }
+            impl<W: Write> Drop for Output<W> {
+                fn drop(&mut self) {
+                    self.flush();
+                }
+            }
+            impl<W: Write> Output<W> {
+                pub fn new(inner: W) -> Self {
+                    Self {
+                        buf: [0; BUF_SIZE],
+                        pos: 0,
+                        inner,
+                    }
+                }
+                #[cold]
+                pub fn flush(&mut self) {
+                    self.inner.write_all(&self.buf[..self.pos]).expect("flush failed");
+                    self.pos = 0;
+                }
+                pub fn write<T: Writable<W>>(&mut self, val: T) {
+                    self.ensure_capacity();
+                    unsafe {
+                        T::write_unchecked(self, val);
+                        self.write_byte_unchecked(b' ');
+                    }
+                }
+                pub fn writeln<T: Writable<W>>(&mut self, val: T) {
+                    self.ensure_capacity();
+                    unsafe {
+                        T::write_unchecked(self, val);
+                        self.write_byte_unchecked(b'\n');
+                    }
+                }
+                #[inline]
+                fn spare_capacity(&self) -> usize {
+                    BUF_SIZE - self.pos
+                }
+                fn ensure_capacity(&mut self) {
+                    if self.spare_capacity() < MIN_WRITE_CAPACITY {
+                        self.flush();
+                    }
+                }
+                unsafe fn write_byte_unchecked(&mut self, byte: u8) {
+                    unsafe {
+                        let dst = self.buf.as_mut_ptr().add(self.pos);
+                        std::ptr::write_unaligned(dst, byte);
+                    }
+                    self.pos += 1;
+                }
+                unsafe fn write_digits_unchecked<const LZ: bool>(&mut self, n: usize) {
+                    static TABLE: [u8; 40_000] = {
+                        let mut table = [b'0'; 40_000];
+                        let mut i = 0;
+                        while i < 10_000 {
+                            table[4 * i] += (i / 1000) as u8;
+                            table[4 * i + 1] += (i / 100 % 10) as u8;
+                            table[4 * i + 2] += (i / 10 % 10) as u8;
+                            table[4 * i + 3] += (i % 10) as u8;
+                            i += 1;
+                        }
+                        table
+                    };
+                    let offset = if LZ {
+                        0
+                    } else {
+                        (n < 10) as usize + (n < 100) as usize + (n < 1000) as usize
+                    };
+                    unsafe {
+                        let src = TABLE.as_ptr().add(4 * n + offset) as *const u32;
+                        let dst = self.buf.as_mut_ptr().add(self.pos) as *mut u32;
+                        std::ptr::write_unaligned(dst, std::ptr::read_unaligned(src));
+                    }
+                    self.pos += 4 - offset;
+                }
+            }
+            pub trait Writable<W: Write> {
+                unsafe fn write_unchecked(output: &mut Output<W>, val: Self);
+            }
+            impl<W: Write> Writable<W> for u32 {
+                unsafe fn write_unchecked(output: &mut Output<W>, val: Self) {
+                    unsafe {
+                        if val >= 1_0000_0000 {
+                            output
+                                .write_digits_unchecked::<
+                                    false,
+                                >((val / 10000 / 10000) as usize);
+                            output
+                                .write_digits_unchecked::<
+                                    true,
+                                >((val / 10000 % 10000) as usize);
+                            output
+                                .write_digits_unchecked::<true>((val % 10000) as usize);
+                        } else if val >= 1_0000 {
+                            output
+                                .write_digits_unchecked::<false>((val / 10000) as usize);
+                            output
+                                .write_digits_unchecked::<true>((val % 10000) as usize);
+                        } else {
+                            output.write_digits_unchecked::<false>(val as usize);
+                        }
+                    }
+                }
+            }
+            impl<W: Write> Writable<W> for u64 {
+                unsafe fn write_unchecked(output: &mut Output<W>, val: Self) {
+                    unsafe {
+                        if val >= 1_0000_0000_0000_0000 {
+                            output
+                                .write_digits_unchecked::<
+                                    false,
+                                >((val / 10000 / 10000 / 10000 / 10000) as usize);
+                            output
+                                .write_digits_unchecked::<
+                                    true,
+                                >((val / 10000 / 10000 / 10000 % 10000) as usize);
+                            output
+                                .write_digits_unchecked::<
+                                    true,
+                                >((val / 10000 / 10000 % 10000) as usize);
+                            output
+                                .write_digits_unchecked::<
+                                    true,
+                                >((val / 10000 % 10000) as usize);
+                            output
+                                .write_digits_unchecked::<true>((val % 10000) as usize);
+                        } else if val >= 1_0000_0000_0000 {
+                            output
+                                .write_digits_unchecked::<
+                                    false,
+                                >((val / 10000 / 10000 / 10000) as usize);
+                            output
+                                .write_digits_unchecked::<
+                                    true,
+                                >((val / 10000 / 10000 % 10000) as usize);
+                            output
+                                .write_digits_unchecked::<
+                                    true,
+                                >((val / 10000 % 10000) as usize);
+                            output
+                                .write_digits_unchecked::<true>((val % 10000) as usize);
+                        } else if val >= 1_0000_0000 {
+                            output
+                                .write_digits_unchecked::<
+                                    false,
+                                >((val / 10000 / 10000) as usize);
+                            output
+                                .write_digits_unchecked::<
+                                    true,
+                                >((val / 10000 % 10000) as usize);
+                            output
+                                .write_digits_unchecked::<true>((val % 10000) as usize);
+                        } else if val >= 1_0000 {
+                            output
+                                .write_digits_unchecked::<false>((val / 10000) as usize);
+                            output
+                                .write_digits_unchecked::<true>((val % 10000) as usize);
+                        } else {
+                            output.write_digits_unchecked::<false>(val as usize);
+                        }
+                    }
+                }
+            }
+            impl<W: Write> Writable<W> for usize {
+                unsafe fn write_unchecked(output: &mut Output<W>, val: Self) {
+                    unsafe {
+                        u64::write_unchecked(output, val as _);
+                    }
+                }
+            }
+            impl<W: Write> Writable<W> for i32 {
+                unsafe fn write_unchecked(output: &mut Output<W>, val: Self) {
+                    unsafe {
+                        if val < 0 {
+                            output.write_byte_unchecked(b'-');
+                        }
+                        u32::write_unchecked(output, val.unsigned_abs());
+                    }
+                }
+            }
+            impl<W: Write> Writable<W> for i64 {
+                unsafe fn write_unchecked(output: &mut Output<W>, val: Self) {
+                    unsafe {
+                        if val < 0 {
+                            output.write_byte_unchecked(b'-');
+                        }
+                        u64::write_unchecked(output, val.unsigned_abs());
+                    }
+                }
+            }
+            impl<W: Write> Writable<W> for &str {
+                unsafe fn write_unchecked(output: &mut Output<W>, val: Self) {
+                    let len = val.len();
+                    debug_assert!(len <= MIN_WRITE_CAPACITY);
+                    unsafe {
+                        let dst = output.buf.as_mut_ptr().add(output.pos);
+                        std::ptr::copy_nonoverlapping(val.as_ptr(), dst, len);
+                    }
+                    output.pos += len;
+                }
+            }
+        }
+        #[cfg(unix)]
+        pub use input::Input;
+        pub use output::Output;
+        pub fn stdin() -> Input {
+            Input::stdin()
+        }
+        pub fn stdout() -> Output<std::io::StdoutLock<'static>> {
+            Output::stdout()
+        }
+    }
+    pub mod clamp_range {
+        use std::ops::{Bound, RangeBounds};
+        pub trait ClampRange: RangeBounds<usize> {
+            fn clamp(&self, l: usize, r: usize) -> (usize, usize) {
+                assert!(l <= r);
+                let start = match self.start_bound() {
+                    Bound::Included(&l) => l,
+                    Bound::Excluded(&l) => l + 1,
+                    Bound::Unbounded => l,
+                }
+                    .clamp(l, r);
+                let end = match self.end_bound() {
+                    Bound::Included(&r) => r + 1,
+                    Bound::Excluded(&r) => r,
+                    Bound::Unbounded => r,
+                }
+                    .clamp(l, r);
+                (start.min(end), end)
+            }
+        }
+        impl<T: ?Sized> ClampRange for T
+        where
+            T: RangeBounds<usize>,
+        {}
+    }
+    pub mod num_traits {
+        use std::{
+            fmt::Debug,
+            ops::{
+                Add, AddAssign, Div, DivAssign, Mul, MulAssign, Rem, RemAssign, Sub,
+                SubAssign,
+            },
+        };
+        pub trait PrimitiveInteger: 'static + Copy + Ord + Debug + Add<
+                Output = Self,
+            > + Sub<
+                Output = Self,
+            > + Mul<
+                Output = Self,
+            > + Div<
+                Output = Self,
+            > + Rem<
+                Output = Self,
+            > + AddAssign + SubAssign + MulAssign + DivAssign + RemAssign {
+            fn midpoint(self, rhs: Self) -> Self;
+            fn rem_euclid(self, rhs: Self) -> Self;
+            fn zero() -> Self;
+            fn one() -> Self;
+            fn min_value() -> Self;
+            fn max_value() -> Self;
+        }
+        macro_rules! impl_primitive_integer {
+            ($($ty:ty),*) => {
+                $(impl PrimitiveInteger for $ty { fn midpoint(self, rhs : Self) -> Self {
+                self.midpoint(rhs) } fn rem_euclid(self, rhs : Self) -> Self { self
+                .rem_euclid(rhs) } fn zero() -> Self { 0 } fn one() -> Self { 1 } fn
+                min_value() -> Self { Self::MIN } fn max_value() -> Self { Self::MAX }
+                })*
+            };
+        }
+        impl_primitive_integer!(
+            i8, i16, i32, i64, i128, isize, u8, u16, u32, u64, u128, usize
+        );
+    }
+}

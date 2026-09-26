@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 5910528,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 5283840,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTc3NjI0IHRva2Vucwo=",
+      "memory": 6336512,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNDI5MjQ5IHRva2Vucwo=",
+      "memory": 4988928,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgODAxMzAwIHRva2Vucwo=",
+      "memory": 8654848,
+      "status": "AC",
+      "time": 0.023
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10498048,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10760192,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10727424,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10756096,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10493952,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "small_dense_00",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 20606976,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "small_dense_01",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 20574208,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "small_dense_02",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 20574208,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "small_dense_03",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 10522624,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "small_dense_04",
+      "checker_out": "b2sgMTAwMDAwMCB0b2tlbnMK",
+      "memory": 20611072,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "small_N_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_N_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_02",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_03",
+      "checker_out": "b2sgIjYwMDk0MjU4MiIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_N_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_K_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 4468736,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "min_K_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 6594560,
+      "status": "AC",
+      "time": 0.017
+    }
+  ],
+  "overview": {
+    "id": 405984,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 20611072,
+    "problem_name": "inv_of_formal_power_series_sparse",
+    "problem_title": "Inv of Formal Power Series (Sparse)",
+    "status": "AC",
+    "submission_time": "2026-09-25T05:44:58.613544Z",
+    "time": 0.029,
+    "user_name": "Rohan_Kapri"
+  }
+}

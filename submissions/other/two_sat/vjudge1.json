@@ -1,0 +1,143 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 22884352,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 28692480,
+      "status": "AC",
+      "time": 0.101
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 15097856,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 19578880,
+      "status": "AC",
+      "time": 0.039
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 15409152,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 31735808,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 31756288,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 31731712,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 31760384,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 31698944,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "cycle_unsat_00",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 74752000,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "cycle_unsat_01",
+      "checker_out": "b2sgT0sgVW5zYXRpc2ZpYWJsZQo=",
+      "memory": 75714560,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "long_chain_00",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 57712640,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "long_chain_01",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 83415040,
+      "status": "AC",
+      "time": 0.106
+    },
+    {
+      "case": "long_chain_02",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 57708544,
+      "status": "AC",
+      "time": 0.079
+    },
+    {
+      "case": "long_chain_03",
+      "checker_out": "b2sgT0sgU2F0aXNmaWFibGUK",
+      "memory": 57221120,
+      "status": "AC",
+      "time": 0.078
+    }
+  ],
+  "overview": {
+    "id": 270245,
+    "is_latest": true,
+    "lang": "cpp20",
+    "memory": 83415040,
+    "problem_name": "two_sat",
+    "problem_title": "2 Sat",
+    "status": "AC",
+    "submission_time": "2025-02-28T05:45:47.854781Z",
+    "time": 0.111,
+    "user_name": "vjudge1"
+  }
+}

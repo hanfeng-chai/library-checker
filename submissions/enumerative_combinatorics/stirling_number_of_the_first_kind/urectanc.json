@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "1_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "2_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 659456,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "5000_00",
+      "checker_out": "b2sgNTAwMSB0b2tlbnMK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "262143_00",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 6144000,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "262144_00",
+      "checker_out": "b2sgMjYyMTQ1IHRva2Vucwo=",
+      "memory": 8437760,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "491519_00",
+      "checker_out": "b2sgNDkxNTIwIHRva2Vucwo=",
+      "memory": 10924032,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "499999_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11218944,
+      "status": "AC",
+      "time": 0.061
+    },
+    {
+      "case": "500000_00",
+      "checker_out": "b2sgNTAwMDAxIHRva2Vucwo=",
+      "memory": 12636160,
+      "status": "AC",
+      "time": 0.045
+    }
+  ],
+  "overview": {
+    "id": 385635,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 12636160,
+    "problem_name": "stirling_number_of_the_first_kind",
+    "problem_title": "Stirling Number of the First Kind",
+    "status": "AC",
+    "submission_time": "2026-07-15T11:13:28.197922Z",
+    "time": 0.061,
+    "user_name": "urectanc"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjQiCg==",
+      "memory": 557056,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjM2Igo=",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjYiCg==",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6864896,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6856704,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_circuit_00",
+      "checker_out": "b2sgIjQ2ODc2ODI5MyIK",
+      "memory": 9220096,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_circuit_01",
+      "checker_out": "b2sgIjEyOTIyNzMxOCIK",
+      "memory": 9220096,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_circuit_02",
+      "checker_out": "b2sgIjYzODkzNTEiCg==",
+      "memory": 9211904,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_circuit_03",
+      "checker_out": "b2sgIjk3NTUxMTUzNyIK",
+      "memory": 9216000,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "has_isolated_point_00",
+      "checker_out": "b2sgIjIzNTUyOTUwNCIK",
+      "memory": 9469952,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "has_isolated_point_01",
+      "checker_out": "b2sgIjk5MjQwNTIyNyIK",
+      "memory": 8335360,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "has_isolated_point_02",
+      "checker_out": "b2sgIjcxNzkyMzEzNyIK",
+      "memory": 8953856,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "has_isolated_point_03",
+      "checker_out": "b2sgIjg0NDk0NDI1OSIK",
+      "memory": 8929280,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "loops_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 9187328,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "loops_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 6782976,
+      "status": "AC",
+      "time": 0.019
+    }
+  ],
+  "overview": {
+    "id": 384958,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 9469952,
+    "problem_name": "counting_eulerian_circuits",
+    "problem_title": "Counting Eulerian Circuits",
+    "status": "AC",
+    "submission_time": "2026-07-11T06:37:29.349605Z",
+    "time": 0.037,
+    "user_name": "Haar"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "fibonacci_like_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1331200,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "fibonacci_like_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1208320,
+      "status": "AC",
+      "time": 0.03
+    },
+    {
+      "case": "large_gcd_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2514944,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "large_gcd_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2318336,
+      "status": "AC",
+      "time": 0.016
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1212416,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1462272,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 1204224,
+      "status": "AC",
+      "time": 0.028
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 1335296,
+      "status": "AC",
+      "time": 0.027
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 1200128,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.006
+    }
+  ],
+  "overview": {
+    "id": 175700,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 2514944,
+    "problem_name": "gcd_of_gaussian_integers",
+    "problem_title": "Gcd of Gaussian Integers",
+    "status": "AC",
+    "submission_time": "2023-12-04T09:19:03.340706Z",
+    "time": 0.03,
+    "user_name": "maspy"
+  }
+}

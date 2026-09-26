@@ -1,0 +1,262 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2895872,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 16785408,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 16818176,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 2658304,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 16797696,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 16822272,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "lower_deg_zero_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 18620416,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "lower_deg_zero_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 16269312,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "lower_deg_zero_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 2658304,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "lower_deg_zero_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2666496,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "lower_deg_zero_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 2404352,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "lower_deg_zero_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 2666496,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "lower_deg_zero_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 2412544,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "lower_deg_zero_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 2396160,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "all_zero_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 4804608,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "all_zero_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5545984,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "monomial_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 14700544,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "monomial_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 2150400,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "monomial_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 15769600,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "monomial_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 2904064,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "near_262144_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 1343488,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "near_262144_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 8691712,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "near_262144_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 10534912,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "small_degree_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 831488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 720896,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_degree_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 532480,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_08",
+      "checker_out": "b2sgT0sK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_degree_09",
+      "checker_out": "b2sgT0sK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 405975,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18620416,
+    "problem_name": "sqrt_of_formal_power_series",
+    "problem_title": "Sqrt of Formal Power Series",
+    "status": "AC",
+    "submission_time": "2026-09-25T05:11:42.557373Z",
+    "time": 0.025,
+    "user_name": "Rohan_Kapri"
+  }
+}

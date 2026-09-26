@@ -1,0 +1,115 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 18661376,
+      "status": "AC",
+      "time": 0.11
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 18513920,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 18583552,
+      "status": "AC",
+      "time": 0.111
+    },
+    {
+      "case": "n_131072_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 15835136,
+      "status": "AC",
+      "time": 0.074
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4Nzc5IHRva2Vucwo=",
+      "memory": 13430784,
+      "status": "AC",
+      "time": 0.075
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTQ4NzU3IHRva2Vucwo=",
+      "memory": 13950976,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjAzIHRva2Vucwo=",
+      "memory": 9674752,
+      "status": "AC",
+      "time": 0.049
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMjk5IHRva2Vucwo=",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMjM1IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMzk1IHRva2Vucwo=",
+      "memory": 483328,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "xy_concentrate_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 17195008,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "xy_concentrate_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 17190912,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "xy_concentrate_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 17195008,
+      "status": "AC",
+      "time": 0.096
+    }
+  ],
+  "overview": {
+    "id": 220264,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18661376,
+    "problem_name": "rectangle_sum",
+    "problem_title": "Rectangle Sum",
+    "status": "AC",
+    "submission_time": "2024-07-11T19:37:15.513281Z",
+    "time": 0.111,
+    "user_name": "oldyan"
+  }
+}

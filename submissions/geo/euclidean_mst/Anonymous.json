@@ -1,0 +1,219 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 15585280,
+      "status": "AC",
+      "time": 0.05
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_colinear_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 15687680,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "max_colinear_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 15814656,
+      "status": "AC",
+      "time": 0.07
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 15704064,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 103354368,
+      "status": "AC",
+      "time": 0.267
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 109477888,
+      "status": "AC",
+      "time": 0.324
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 109469696,
+      "status": "AC",
+      "time": 0.325
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 15683584,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "max_random_05",
+      "checker_out": "b2sgT0sK",
+      "memory": 103264256,
+      "status": "AC",
+      "time": 0.266
+    },
+    {
+      "case": "max_random_06",
+      "checker_out": "b2sgT0sK",
+      "memory": 109727744,
+      "status": "AC",
+      "time": 0.325
+    },
+    {
+      "case": "max_random_07",
+      "checker_out": "b2sgT0sK",
+      "memory": 109600768,
+      "status": "AC",
+      "time": 0.326
+    },
+    {
+      "case": "max_slender_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 103325696,
+      "status": "AC",
+      "time": 0.251
+    },
+    {
+      "case": "max_slender_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 103428096,
+      "status": "AC",
+      "time": 0.273
+    },
+    {
+      "case": "max_slender_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 103292928,
+      "status": "AC",
+      "time": 0.253
+    },
+    {
+      "case": "max_slender_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 103428096,
+      "status": "AC",
+      "time": 0.252
+    },
+    {
+      "case": "mid_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "mid_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 983040,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "mid_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "mid_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "near_circle_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 30752768,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "near_circle_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 30728192,
+      "status": "AC",
+      "time": 0.108
+    },
+    {
+      "case": "near_grid_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 103419904,
+      "status": "AC",
+      "time": 0.294
+    },
+    {
+      "case": "near_grid_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 103436288,
+      "status": "AC",
+      "time": 0.298
+    },
+    {
+      "case": "small_chunks_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 61255680,
+      "status": "AC",
+      "time": 0.189
+    },
+    {
+      "case": "small_chunks_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 74973184,
+      "status": "AC",
+      "time": 0.211
+    }
+  ],
+  "overview": {
+    "id": 245064,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 109727744,
+    "problem_name": "euclidean_mst",
+    "problem_title": "Euclidean MST",
+    "status": "AC",
+    "submission_time": "2024-10-26T17:08:20.278686Z",
+    "time": 0.326
+  }
+}

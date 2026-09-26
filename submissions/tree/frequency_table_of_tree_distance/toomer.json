@@ -1,0 +1,157 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 655360,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjkyIHRva2Vucwo=",
+      "memory": 835584,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgMTk3IHRva2Vucwo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_02",
+      "checker_out": "b2sgODcgdG9rZW5zCg==",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_03",
+      "checker_out": "b2sgMTkyIHRva2Vucwo=",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_random_04",
+      "checker_out": "b2sgNTMxIHRva2Vucwo=",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTI3NjY4IHRva2Vucwo=",
+      "memory": 22872064,
+      "status": "AC",
+      "time": 0.088
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTUwNzYyIHRva2Vucwo=",
+      "memory": 24330240,
+      "status": "AC",
+      "time": 0.103
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzUgdG9rZW5zCg==",
+      "memory": 9854976,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTY3MTA0IHRva2Vucwo=",
+      "memory": 29585408,
+      "status": "AC",
+      "time": 0.124
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTQ4NjcgdG9rZW5zCg==",
+      "memory": 3440640,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 35119104,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 34865152,
+      "status": "AC",
+      "time": 0.14
+    },
+    {
+      "case": "uni_00",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 31174656,
+      "status": "AC",
+      "time": 0.112
+    },
+    {
+      "case": "almost_uni_00",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 31182848,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "almost_uni_01",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 31178752,
+      "status": "AC",
+      "time": 0.116
+    },
+    {
+      "case": "line_00",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 47644672,
+      "status": "AC",
+      "time": 0.223
+    },
+    {
+      "case": "line_star_00",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 40476672,
+      "status": "AC",
+      "time": 0.16
+    },
+    {
+      "case": "line_star_01",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 40079360,
+      "status": "AC",
+      "time": 0.148
+    },
+    {
+      "case": "line_star_02",
+      "checker_out": "b2sgMTk5OTk5IHRva2Vucwo=",
+      "memory": 40992768,
+      "status": "AC",
+      "time": 0.171
+    }
+  ],
+  "overview": {
+    "id": 405568,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 47644672,
+    "problem_name": "frequency_table_of_tree_distance",
+    "problem_title": "Frequency Table of Tree Distance",
+    "status": "AC",
+    "submission_time": "2026-09-23T15:32:23.380488Z",
+    "time": 0.223,
+    "user_name": "toomer"
+  }
+}

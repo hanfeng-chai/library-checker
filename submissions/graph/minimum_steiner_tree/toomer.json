@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0s6IDAK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgT0s6IDIK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IDAK",
+      "memory": 651264,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IDg2ODY3MDY0Mwo=",
+      "memory": 651264,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IDE3NTI1OTg5MjYK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0s6IDg3NTYxMDYyNwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0s6IDEwMDgxNjU0MAo=",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_max_00",
+      "checker_out": "b2sgT0s6IDExMzIyMTg3MTAK",
+      "memory": 7364608,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_max_01",
+      "checker_out": "b2sgT0s6IDEzNDY4Njc5MDUK",
+      "memory": 7380992,
+      "status": "AC",
+      "time": 0.041
+    },
+    {
+      "case": "random_max_02",
+      "checker_out": "b2sgT0s6IDE0MzE1NDU5MDEK",
+      "memory": 7352320,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "random_max_03",
+      "checker_out": "b2sgT0s6IDE3MDY1NTQ3MDkK",
+      "memory": 7348224,
+      "status": "AC",
+      "time": 0.042
+    },
+    {
+      "case": "random_max_04",
+      "checker_out": "b2sgT0s6IDEzNDAxMTUyNDgK",
+      "memory": 7385088,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_complete_00",
+      "checker_out": "b2sgT0s6IDU4OTQ3MjkxNwo=",
+      "memory": 3719168,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_complete_01",
+      "checker_out": "b2sgT0s6IDk0MjYxNjIxOAo=",
+      "memory": 3715072,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_complete_02",
+      "checker_out": "b2sgT0s6IDYyODAwNzExOAo=",
+      "memory": 3723264,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_complete_03",
+      "checker_out": "b2sgT0s6IDQ3OTI1NTgwNgo=",
+      "memory": 3678208,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_complete_04",
+      "checker_out": "b2sgT0s6IDU1OTU0Mjg5NQo=",
+      "memory": 3710976,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_small_00",
+      "checker_out": "b2sgT0s6IDAK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_small_01",
+      "checker_out": "b2sgT0s6IDEwODMxNTM1MAo=",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_small_02",
+      "checker_out": "b2sgT0s6IDYwMTE2MzA5OQo=",
+      "memory": 1101824,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_small_03",
+      "checker_out": "b2sgT0s6IDAK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_small_04",
+      "checker_out": "b2sgT0s6IDEwMDgxNjU0MAo=",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "overflow_killer_00",
+      "checker_out": "b2sgT0s6IDEyOTk5OTk5Mjk4Cg==",
+      "memory": 7376896,
+      "status": "AC",
+      "time": 0.04
+    }
+  ],
+  "overview": {
+    "id": 405563,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 7385088,
+    "problem_name": "minimum_steiner_tree",
+    "problem_title": "Minimum Steiner Tree",
+    "status": "AC",
+    "submission_time": "2026-09-23T15:24:03.019489Z",
+    "time": 0.043,
+    "user_name": "toomer"
+  }
+}

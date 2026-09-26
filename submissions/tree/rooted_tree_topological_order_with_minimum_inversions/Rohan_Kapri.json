@@ -1,0 +1,227 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "min_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "min_02",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 19787776,
+      "status": "AC",
+      "time": 0.059
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 24469504,
+      "status": "AC",
+      "time": 0.073
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 8810496,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 26804224,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 3051520,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31055872,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31059968,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31092736,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31047680,
+      "status": "AC",
+      "time": 0.099
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31358976,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "max_typical_tree_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 48844800,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "max_typical_tree_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31330304,
+      "status": "AC",
+      "time": 0.08
+    },
+    {
+      "case": "max_typical_tree_02",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31092736,
+      "status": "AC",
+      "time": 0.081
+    },
+    {
+      "case": "max_typical_tree_03",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31051776,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "two_path_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 40054784,
+      "status": "AC",
+      "time": 0.065
+    },
+    {
+      "case": "two_path_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 39989248,
+      "status": "AC",
+      "time": 0.072
+    },
+    {
+      "case": "two_path_02",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 39178240,
+      "status": "AC",
+      "time": 0.09
+    },
+    {
+      "case": "two_path_03",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 40189952,
+      "status": "AC",
+      "time": 0.069
+    },
+    {
+      "case": "two_path_04",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 39747584,
+      "status": "AC",
+      "time": 0.063
+    },
+    {
+      "case": "almost_line_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 39927808,
+      "status": "AC",
+      "time": 0.096
+    },
+    {
+      "case": "almost_line_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 39968768,
+      "status": "AC",
+      "time": 0.098
+    },
+    {
+      "case": "max_bival_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 30527488,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "max_bival_01",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31051776,
+      "status": "AC",
+      "time": 0.086
+    },
+    {
+      "case": "max_bival_02",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 30556160,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "weight_zero_00",
+      "checker_out": "b2sgY29ycmVjdCBhbnN3ZXIK",
+      "memory": 31080448,
+      "status": "AC",
+      "time": 0.073
+    }
+  ],
+  "overview": {
+    "id": 405149,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 48844800,
+    "problem_name": "rooted_tree_topological_order_with_minimum_inversions",
+    "problem_title": "Rooted Tree Topological Order with Minimum Inversions",
+    "status": "AC",
+    "submission_time": "2026-09-22T11:36:23.262079Z",
+    "time": 0.1,
+    "user_name": "Rohan_Kapri"
+  }
+}

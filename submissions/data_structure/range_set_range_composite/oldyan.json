@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "fragment_00",
+      "checker_out": "b2sgMjQ5OTA5IHRva2Vucwo=",
+      "memory": 27095040,
+      "status": "AC",
+      "time": 0.13
+    },
+    {
+      "case": "fragment_01",
+      "checker_out": "b2sgMjQ5NjI3IHRva2Vucwo=",
+      "memory": 26898432,
+      "status": "AC",
+      "time": 0.128
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5ODk3IHRva2Vucwo=",
+      "memory": 55394304,
+      "status": "AC",
+      "time": 0.19
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwNzE0IHRva2Vucwo=",
+      "memory": 55451648,
+      "status": "AC",
+      "time": 0.188
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMDY3IHRva2Vucwo=",
+      "memory": 55492608,
+      "status": "AC",
+      "time": 0.19
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1NzQ4IHRva2Vucwo=",
+      "memory": 48189440,
+      "status": "AC",
+      "time": 0.157
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2ODMyIHRva2Vucwo=",
+      "memory": 48029696,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMzM2IHRva2Vucwo=",
+      "memory": 27082752,
+      "status": "AC",
+      "time": 0.109
+    },
+    {
+      "case": "slide_window_00",
+      "checker_out": "b2sgMjA3OTc3IHRva2Vucwo=",
+      "memory": 36524032,
+      "status": "AC",
+      "time": 0.149
+    },
+    {
+      "case": "slide_window_01",
+      "checker_out": "b2sgMjA4NTMzIHRva2Vucwo=",
+      "memory": 36569088,
+      "status": "AC",
+      "time": 0.15
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNDg1IHRva2Vucwo=",
+      "memory": 475136,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDk1IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNDg5IHRva2Vucwo=",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 1003520,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 1527808,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNTE2IHRva2Vucwo=",
+      "memory": 1265664,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNDk3IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjE2IHRva2Vucwo=",
+      "memory": 1785856,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjE3IHRva2Vucwo=",
+      "memory": 1781760,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 227239,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 55492608,
+    "problem_name": "range_set_range_composite",
+    "problem_title": "Range Set Range Composite",
+    "status": "AC",
+    "submission_time": "2024-08-10T02:44:25.766798Z",
+    "time": 0.19,
+    "user_name": "oldyan"
+  }
+}

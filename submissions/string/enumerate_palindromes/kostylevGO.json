@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 11755520,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 12275712,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 12271616,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 11427840,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 12271616,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgMTcgdG9rZW5zCg==",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 7299072,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 7553024,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 6684672,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 7561216,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 7028736,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzc5NjI1IHRva2Vucwo=",
+      "memory": 5459968,
+      "status": "AC",
+      "time": 0.006
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTI2MDkxIHRva2Vucwo=",
+      "memory": 6504448,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTA2NjcxIHRva2Vucwo=",
+      "memory": 1261568,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODU4NDk3IHRva2Vucwo=",
+      "memory": 6512640,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTU0MDIzIHRva2Vucwo=",
+      "memory": 3883008,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTM4NSB0b2tlbnMK",
+      "memory": 479232,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMzk1IHRva2Vucwo=",
+      "memory": 737280,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTc1IHRva2Vucwo=",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjQzMyB0b2tlbnMK",
+      "memory": 741376,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMTA2MyB0b2tlbnMK",
+      "memory": 745472,
+      "status": "AC",
+      "time": 0.001
+    }
+  ],
+  "overview": {
+    "id": 265143,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 12275712,
+    "problem_name": "enumerate_palindromes",
+    "problem_title": "Enumerate Palindromes",
+    "status": "AC",
+    "submission_time": "2025-02-02T13:57:54.773302Z",
+    "time": 0.011,
+    "user_name": "kostylevGO"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0s6IDE3Cg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgT0s6IDI0Cg==",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0s6IDExOTI4MjYyMjYzMDI0Mgo=",
+      "memory": 15241216,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0s6IDE0MjI0NzA4Nzc1MjIwNwo=",
+      "memory": 17862656,
+      "status": "AC",
+      "time": 0.02
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0s6IDIxMTkyNDMxMjgzNjQzCg==",
+      "memory": 13676544,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0s6IDE1NDgwNDExNzI5NjQ5OAo=",
+      "memory": 19976192,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0s6IDIxOTkzMjU1MDE1MDcK",
+      "memory": 8441856,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0s6IDE5OTkzMTE4OTg5ODk3Mgo=",
+      "memory": 22589440,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0s6IDE5OTk1NzU2NjE1OTA5MQo=",
+      "memory": 22024192,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0s6IDE5OTk4MTc3MDAyNzAxNAo=",
+      "memory": 22847488,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0s6IDE5OTk1NTk2MzEwMTc0Mwo=",
+      "memory": 21794816,
+      "status": "AC",
+      "time": 0.025
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0s6IDE5OTg5NzM0OTQ0MDE2Mgo=",
+      "memory": 22061056,
+      "status": "AC",
+      "time": 0.025
+    }
+  ],
+  "overview": {
+    "id": 391294,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 22847488,
+    "problem_name": "directedmst",
+    "problem_title": "Directed MST",
+    "status": "AC",
+    "submission_time": "2026-08-07T18:47:36.190334Z",
+    "time": 0.026,
+    "user_name": "MeIoN"
+  }
+}

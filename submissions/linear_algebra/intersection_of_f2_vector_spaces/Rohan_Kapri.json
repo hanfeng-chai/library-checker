@@ -1,0 +1,136 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 19423232,
+      "status": "AC",
+      "time": 0.227
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 19226624,
+      "status": "AC",
+      "time": 0.229
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 19369984,
+      "status": "AC",
+      "time": 0.23
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 19247104,
+      "status": "AC",
+      "time": 0.228
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 19365888,
+      "status": "AC",
+      "time": 0.228
+    },
+    {
+      "case": "max_minus_1_random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 18722816,
+      "status": "AC",
+      "time": 0.218
+    },
+    {
+      "case": "max_minus_1_random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 18714624,
+      "status": "AC",
+      "time": 0.219
+    },
+    {
+      "case": "max_minus_1_random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 18976768,
+      "status": "AC",
+      "time": 0.219
+    },
+    {
+      "case": "max_minus_1_random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 18853888,
+      "status": "AC",
+      "time": 0.227
+    },
+    {
+      "case": "max_minus_1_random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 18722816,
+      "status": "AC",
+      "time": 0.219
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 5550080,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgT0sK",
+      "memory": 5468160,
+      "status": "AC",
+      "time": 0.087
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgT0sK",
+      "memory": 5545984,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgT0sK",
+      "memory": 5537792,
+      "status": "AC",
+      "time": 0.084
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgT0sK",
+      "memory": 5586944,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "nmk_all_00",
+      "checker_out": "b2sgT0sK",
+      "memory": 7622656,
+      "status": "AC",
+      "time": 0.085
+    }
+  ],
+  "overview": {
+    "id": 406229,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 19423232,
+    "problem_name": "intersection_of_f2_vector_spaces",
+    "problem_title": "Intersection of $\\mathbb{F}_{2}$ vector spaces",
+    "status": "AC",
+    "submission_time": "2026-09-26T06:37:08.106299Z",
+    "time": 0.23,
+    "user_name": "Rohan_Kapri"
+  }
+}

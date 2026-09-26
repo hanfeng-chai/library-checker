@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 757760,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjU2MDg4Igo=",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 524288,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 585728,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 765952,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 708608,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "twos_00",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 7438336,
+      "status": "AC",
+      "time": 0.1
+    },
+    {
+      "case": "twos_01",
+      "checker_out": "b2sgMTMxMDcyIHRva2Vucwo=",
+      "memory": 4030464,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "twos_02",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 2043904,
+      "status": "AC",
+      "time": 0.024
+    },
+    {
+      "case": "threes_00",
+      "checker_out": "b2sgMTg2NjI0IHRva2Vucwo=",
+      "memory": 5267456,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "threes_01",
+      "checker_out": "b2sgMTM5OTY4IHRva2Vucwo=",
+      "memory": 4460544,
+      "status": "AC",
+      "time": 0.047
+    },
+    {
+      "case": "threes_02",
+      "checker_out": "b2sgMTg2NjI0IHRva2Vucwo=",
+      "memory": 5312512,
+      "status": "AC",
+      "time": 0.064
+    },
+    {
+      "case": "dim1_00",
+      "checker_out": "b2sgMjYxODM2IHRva2Vucwo=",
+      "memory": 18681856,
+      "status": "AC",
+      "time": 0.349
+    },
+    {
+      "case": "dim1_01",
+      "checker_out": "b2sgMjYxMzQxIHRva2Vucwo=",
+      "memory": 18673664,
+      "status": "AC",
+      "time": 0.351
+    },
+    {
+      "case": "dim1_02",
+      "checker_out": "b2sgMjYxMjMxIHRva2Vucwo=",
+      "memory": 18673664,
+      "status": "AC",
+      "time": 0.347
+    },
+    {
+      "case": "dim2_00",
+      "checker_out": "b2sgMjU1MzQwIHRva2Vucwo=",
+      "memory": 15261696,
+      "status": "AC",
+      "time": 0.293
+    },
+    {
+      "case": "dim2_01",
+      "checker_out": "b2sgMjYyMDgzIHRva2Vucwo=",
+      "memory": 16572416,
+      "status": "AC",
+      "time": 0.381
+    },
+    {
+      "case": "dim2_02",
+      "checker_out": "b2sgMjEzMzQ4IHRva2Vucwo=",
+      "memory": 11722752,
+      "status": "AC",
+      "time": 0.242
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTUxMjAwIHRva2Vucwo=",
+      "memory": 4538368,
+      "status": "AC",
+      "time": 0.057
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTgxNDQwIHRva2Vucwo=",
+      "memory": 5074944,
+      "status": "AC",
+      "time": 0.067
+    },
+    {
+      "case": "k0_00",
+      "checker_out": "b2sgIjExNTIxMzUzNyIK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "k0_01",
+      "checker_out": "b2sgIjQwMjczMDc5MiIK",
+      "memory": 770048,
+      "status": "AC",
+      "time": 0
+    }
+  ],
+  "overview": {
+    "id": 345219,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 18681856,
+    "problem_name": "multivariate_convolution_cyclic",
+    "problem_title": "Multidimensional Convolution (Circular)",
+    "status": "AC",
+    "submission_time": "2026-01-12T14:20:00.598591Z",
+    "time": 0.381,
+    "user_name": "Hostek"
+  }
+}

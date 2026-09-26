@@ -1,0 +1,135 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjM2Igo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "minimum_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 1064960,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_sparse_00",
+      "checker_out": "b2sgIjY4OTY4MTQzIgo=",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_sparse_01",
+      "checker_out": "b2sgIjI3Mzg1NzkzMCIK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_sparse_02",
+      "checker_out": "b2sgIjM1MTc3NDYwMCIK",
+      "memory": 749568,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_dense_00",
+      "checker_out": "b2sgIjgxMDAwMDkzNiIK",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_dense_01",
+      "checker_out": "b2sgIjg5MzI2MzkzNCIK",
+      "memory": 1085440,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_dense_02",
+      "checker_out": "b2sgIjI4NTE0MTAyOCIK",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_random_00",
+      "checker_out": "b2sgIjM5Nzk2NTA4NCIK",
+      "memory": 3702784,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "large_random_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 4943872,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "large_random_02",
+      "checker_out": "b2sgIjkwNjQzMDU1NSIK",
+      "memory": 5779456,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgIjU0NDI5OTMzMSIK",
+      "memory": 9412608,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgIjE3MzA3NTQ1OCIK",
+      "memory": 9449472,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgIjkxNDY3NzgxMCIK",
+      "memory": 9445376,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "star_00",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 9707520,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "star_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 9895936,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "max_complete_00",
+      "checker_out": "b2sgIjY4NzM4ODkwNSIK",
+      "memory": 3424256,
+      "status": "AC",
+      "time": 0.01
+    }
+  ],
+  "overview": {
+    "id": 75761,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 9895936,
+    "problem_name": "enumerate_triangles",
+    "problem_title": "Enumerate Triangles",
+    "status": "AC",
+    "time": 0.013,
+    "user_name": "kostia244"
+  }
+}

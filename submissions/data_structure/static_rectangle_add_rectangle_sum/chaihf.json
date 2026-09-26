@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNyB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 757760,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_NQ_00",
+      "checker_out": "b2sgMTAwIHRva2Vucwo=",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_NQ_01",
+      "checker_out": "b2sgMTAwIHRva2Vucwo=",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_NQ_02",
+      "checker_out": "b2sgMTAwIHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMTQ4Nzc5IHRva2Vucwo=",
+      "memory": 27004928,
+      "status": "AC",
+      "time": 0.143
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTQ4NzU3IHRva2Vucwo=",
+      "memory": 35614720,
+      "status": "AC",
+      "time": 0.151
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTIwMjAzIHRva2Vucwo=",
+      "memory": 16584704,
+      "status": "AC",
+      "time": 0.085
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 47009792,
+      "status": "AC",
+      "time": 0.213
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 47017984,
+      "status": "AC",
+      "time": 0.212
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjAwMDAwIHRva2Vucwo=",
+      "memory": 47013888,
+      "status": "AC",
+      "time": 0.214
+    }
+  ],
+  "overview": {
+    "id": 393945,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 47017984,
+    "problem_name": "static_rectangle_add_rectangle_sum",
+    "problem_title": "Static Rectangle Add Rectangle Sum",
+    "status": "AC",
+    "submission_time": "2026-08-16T13:22:31.809205Z",
+    "time": 0.214,
+    "user_name": "chaihf"
+  }
+}

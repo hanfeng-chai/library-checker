@@ -1,0 +1,87 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgIjEwODIiCg==",
+      "memory": 80715776,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "0_00",
+      "checker_out": "b2sgIjEiCg==",
+      "memory": 80752640,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "0_01",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 80723968,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "0_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 163934208,
+      "status": "AC",
+      "time": 0.263
+    },
+    {
+      "case": "2_00",
+      "checker_out": "b2sgIjc5MzY0MDkxIgo=",
+      "memory": 80982016,
+      "status": "AC",
+      "time": 0.114
+    },
+    {
+      "case": "2_01",
+      "checker_out": "b2sgIjI1MzAxOTg2MCIK",
+      "memory": 80723968,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "2_02",
+      "checker_out": "b2sgIjE5MTE1NzcwNiIK",
+      "memory": 80982016,
+      "status": "AC",
+      "time": 0.115
+    },
+    {
+      "case": "2_03",
+      "checker_out": "b2sgIjgyMDUyNjAzOSIK",
+      "memory": 85147648,
+      "status": "AC",
+      "time": 0.126
+    },
+    {
+      "case": "2_04",
+      "checker_out": "b2sgIjM4NTA0MTQxMyIK",
+      "memory": 164986880,
+      "status": "AC",
+      "time": 0.345
+    },
+    {
+      "case": "2_05",
+      "checker_out": "b2sgIjU5NDU1MDk3MCIK",
+      "memory": 163938304,
+      "status": "AC",
+      "time": 0.343
+    }
+  ],
+  "overview": {
+    "id": 330500,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 164986880,
+    "problem_name": "sum_of_exponential_times_polynomial_limit",
+    "problem_title": "$\\sum_{i=0}^{\\infty} r^i i^d$",
+    "status": "AC",
+    "submission_time": "2025-11-21T03:27:25.053476Z",
+    "time": 0.345,
+    "user_name": "dnx04"
+  }
+}

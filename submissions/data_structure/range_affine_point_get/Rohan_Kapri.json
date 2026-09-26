@@ -1,0 +1,150 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTAgdG9rZW5zCg==",
+      "memory": 5029888,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjY2IHRva2Vucwo=",
+      "memory": 5033984,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjQ0IHRva2Vucwo=",
+      "memory": 4759552,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 5324800,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNTMwIHRva2Vucwo=",
+      "memory": 5525504,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNTAzIHRva2Vucwo=",
+      "memory": 5251072,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNDg1IHRva2Vucwo=",
+      "memory": 5292032,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTI3IHRva2Vucwo=",
+      "memory": 5513216,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNDg5IHRva2Vucwo=",
+      "memory": 4755456,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDcwIHRva2Vucwo=",
+      "memory": 5267456,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNTAzIHRva2Vucwo=",
+      "memory": 5021696,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNTMyIHRva2Vucwo=",
+      "memory": 5545984,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNTAxIHRva2Vucwo=",
+      "memory": 5545984,
+      "status": "AC",
+      "time": 0.004
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1NTcxIHRva2Vucwo=",
+      "memory": 18395136,
+      "status": "AC",
+      "time": 0.044
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2MDM3IHRva2Vucwo=",
+      "memory": 18399232,
+      "status": "AC",
+      "time": 0.045
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMjQwIHRva2Vucwo=",
+      "memory": 17186816,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjUwNTA2IHRva2Vucwo=",
+      "memory": 21274624,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjQ5NDM1IHRva2Vucwo=",
+      "memory": 21262336,
+      "status": "AC",
+      "time": 0.053
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMDQ0IHRva2Vucwo=",
+      "memory": 20746240,
+      "status": "AC",
+      "time": 0.063
+    }
+  ],
+  "overview": {
+    "id": 400998,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 21274624,
+    "problem_name": "range_affine_point_get",
+    "problem_title": "Range Affine Point Get",
+    "status": "AC",
+    "submission_time": "2026-09-09T09:47:05.888531Z",
+    "time": 0.063,
+    "user_name": "Rohan_Kapri"
+  }
+}

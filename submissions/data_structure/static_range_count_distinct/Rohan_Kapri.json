@@ -1,0 +1,94 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_n_00",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11821056,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "small_n_01",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11292672,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_n_02",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 11874304,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "small_q_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 13938688,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNDExMDIyIHRva2Vucwo=",
+      "memory": 18018304,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDEzMDA2IHRva2Vucwo=",
+      "memory": 23343104,
+      "status": "AC",
+      "time": 0.038
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMzgyNDQ2IHRva2Vucwo=",
+      "memory": 16297984,
+      "status": "AC",
+      "time": 0.022
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 22069248,
+      "status": "AC",
+      "time": 0.04
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 25722880,
+      "status": "AC",
+      "time": 0.043
+    },
+    {
+      "case": "random_05",
+      "checker_out": "b2sgNTAwMDAwIHRva2Vucwo=",
+      "memory": 27828224,
+      "status": "AC",
+      "time": 0.051
+    }
+  ],
+  "overview": {
+    "id": 401532,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 27828224,
+    "problem_name": "static_range_count_distinct",
+    "problem_title": "Static Range Count Distinct",
+    "status": "AC",
+    "submission_time": "2026-09-11T05:04:33.068299Z",
+    "time": 0.051,
+    "user_name": "Rohan_Kapri"
+  }
+}

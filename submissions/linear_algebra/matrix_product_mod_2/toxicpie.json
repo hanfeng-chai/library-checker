@@ -1,0 +1,199 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 3092480,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEwMSIK",
+      "memory": 2834432,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgIjAiCg==",
+      "memory": 2981888,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "many_1_00",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24285184,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "many_1_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24285184,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24281088,
+      "status": "AC",
+      "time": 0.034
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24264704,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNDA5NiB0b2tlbnMK",
+      "memory": 24276992,
+      "status": "AC",
+      "time": 0.036
+    },
+    {
+      "case": "middle_00",
+      "checker_out": "b2sgNjkzIHRva2Vucwo=",
+      "memory": 3751936,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "middle_01",
+      "checker_out": "b2sgMTk4IHRva2Vucwo=",
+      "memory": 3100672,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "middle_02",
+      "checker_out": "b2sgODggdG9rZW5zCg==",
+      "memory": 3100672,
+      "status": "AC",
+      "time": 0.019
+    },
+    {
+      "case": "middle_03",
+      "checker_out": "b2sgMTkzIHRva2Vucwo=",
+      "memory": 3215360,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "middle_04",
+      "checker_out": "b2sgNTMyIHRva2Vucwo=",
+      "memory": 3461120,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjc0MCB0b2tlbnMK",
+      "memory": 16515072,
+      "status": "AC",
+      "time": 0.029
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjI0NSB0b2tlbnMK",
+      "memory": 11972608,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjEzNSB0b2tlbnMK",
+      "memory": 10854400,
+      "status": "AC",
+      "time": 0.026
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTMgdG9rZW5zCg==",
+      "memory": 3100672,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNzAgdG9rZW5zCg==",
+      "memory": 3092480,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgODggdG9rZW5zCg==",
+      "memory": 3100672,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNjUgdG9rZW5zCg==",
+      "memory": 3100672,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMjAgdG9rZW5zCg==",
+      "memory": 3096576,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgMTA2IHRva2Vucwo=",
+      "memory": 3096576,
+      "status": "AC",
+      "time": 0.017
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNiB0b2tlbnMK",
+      "memory": 3100672,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgOTEgdG9rZW5zCg==",
+      "memory": 3096576,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 3092480,
+      "status": "AC",
+      "time": 0.018
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgOTcgdG9rZW5zCg==",
+      "memory": 3092480,
+      "status": "AC",
+      "time": 0.017
+    }
+  ],
+  "overview": {
+    "id": 246187,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 24285184,
+    "problem_name": "matrix_product_mod_2",
+    "problem_title": "Matrix Product (Mod 2)",
+    "status": "AC",
+    "submission_time": "2024-11-01T13:31:51.394397Z",
+    "time": 0.037,
+    "user_name": "toxicpie"
+  }
+}
