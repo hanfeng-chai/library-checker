@@ -1,0 +1,9 @@
+[submodule "ac-library"]
+	path = ac-library
+	url = https://github.com/atcoder/ac-library.git
+	shallow = true
+[submodule "problems"]
+	path = problems
+	url = https://github.com/hanfeng-chai/problems.git
+	shallow = true
+	branch = dev
