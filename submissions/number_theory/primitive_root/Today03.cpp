@@ -1566,7 +1566,7 @@ int main() {
 template <typename T = ll>
 T ModPow(T x, T n, T mod) {
     T ret = 1;
-    if(typeid(T) == typeid(i64) && mod > INFI * 2) return ModPow<i128>(x, n, mod);
+    if(std::is_same_v<T, i64> && mod > INFI * 2) return ModPow<i128>(x, n, mod);
     while(n > 0) {
         if(n & 1) (ret *= x) %= mod;
         (x *= x) %= mod;

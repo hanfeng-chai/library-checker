@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-__int128_t abs(__int128_t x) {return x < 0 ? -x : x;}
 __int128_t stoi128(string s) {int sign = s[0] == '-' ? -1 : 1; __int128_t x = 0; for (size_t i = sign == -1; i < s.size(); ++i) x = x * 10 + s[i] - '0'; return x * sign;}
 string to_string(__int128_t x) {int sign = x < 0 ? -1 : 1; x *= sign; if (x == 0) return "0"; string s; while (x) s += '0' + x % 10, x /= 10; if (sign == -1) s += '-'; reverse(s.begin(), s.end()); return s;}
 string to_string(__uint128_t x) {if (x == 0) return "0"; string s; while (x) s += '0' + x % 10, x /= 10; reverse(s.begin(), s.end()); return s;}

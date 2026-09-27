@@ -1542,7 +1542,7 @@ public:
     }
     constexpr Option& operator=(const Option& rhs) {
         if (has) destroy();
-        if (rhs.has) has = true, construct(rhs.ref());
+        if (rhs.has) has = true, construct(rhs.val());
         else has = false;
     }
     template<class... Args> constexpr T& emplace(Args&&... args) {

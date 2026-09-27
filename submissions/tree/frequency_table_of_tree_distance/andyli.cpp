@@ -128,7 +128,7 @@ constexpr auto divmod(auto x, auto y) {
 }
 template <typename T = u64>
 constexpr T ten(int t) { return t == 0 ? 1 : ten<T>(t - 1) * 10; }
-constexpr int get_lg(auto n) { return n <= 1 ? 1 : std::__bit_width(n - 1); }
+constexpr int get_lg(auto n) { return n <= 1 ? 1 : std::__bit_width((std::make_unsigned_t<decltype(n)>)(n - 1)); }
 constexpr auto Max(const auto& x) { return x; }
 constexpr auto Min(const auto& x) { return x; }
 constexpr auto Max(const auto& x, const auto& y, const auto&... arg) { return x < y ? Max(y, arg...) : Max(x, arg...); }

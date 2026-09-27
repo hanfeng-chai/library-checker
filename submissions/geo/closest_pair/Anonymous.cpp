@@ -166,7 +166,7 @@ template <class T> struct Point {
 	friend T dist2(const P& p) { return p.x * p.x + p.y * p.y; }
 	friend auto dist(const P& p) { return sqrt(D(dist2(p))); }
 
-	friend P unit(const P& p) { return p / p.dist(); }
+	friend P unit(const P& p) { return p / dist(p); }
 
 	friend double arg(const P& p) { return atan2(p.y, p.x); }
 
