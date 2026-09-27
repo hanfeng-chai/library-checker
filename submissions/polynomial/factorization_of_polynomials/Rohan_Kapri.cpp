@@ -437,7 +437,7 @@ inline void POSSIBLE(bool i = true) {
 #line 2 "library/Utility/random.hpp"
 
 namespace Random {
-    mt19937_64 randgen(chrono::steady_clock::now().time_since_epoch().count());
+    mt19937_64 randgen;
     using u64 = unsigned long long;
     u64 get() {
         return randgen();

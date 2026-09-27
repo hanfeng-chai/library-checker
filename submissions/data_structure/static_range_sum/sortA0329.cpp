@@ -2488,7 +2488,8 @@ int main() {
         using namespace gsh::ftype;
         using namespace gsh::ctype;
         u32 N = Parser<u8dig>{}(r).val, Q = Parser<u8dig>{}(r).val;
-        static u64 a[500000];
+        // a[i + 1] is written for every i < N, so N_MAX elements plus the leading zero are needed.
+        static u64 a[500001];
         for (u32 i = 0; i != N; ++i) a[i + 1] = Parser<u32>{}(r) + a[i];
         for (u32 i = 0; i != Q; ++i) {
             u32 L = Parser<u8dig>{}(r).val, R = Parser<u8dig>{}(r).val;

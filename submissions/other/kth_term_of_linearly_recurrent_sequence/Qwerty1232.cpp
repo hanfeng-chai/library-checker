@@ -11,8 +11,9 @@ using u64x4 = u32 __attribute__((vector_size(32)));
 template <u32 mod>
 class MintT_x8;
 
+// MintT_x8::operator[] reads its storage as MintT<mod>[], so this is the type that must alias.
 template <u32 mod>
-class MintT {
+class __attribute__((may_alias)) MintT {
    private:
     static constexpr u32 compute_n_inv() {
         u32 res = 1;

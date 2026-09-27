@@ -292,11 +292,13 @@ int main() {
 	if (input == MAP_FAILED) abort();
 
 	const int N = mini_strtoll(&input) + 1;
-	uint32_t* partitions = (uint32_t*)calloc((N + 128) * sizeof(uint32_t), 1);
+	// Tail room for the 256-element precompute and for the vectorised pass's whole-chunk writes.
+	uint32_t* partitions = (uint32_t*)calloc((N + 128 + 256) * sizeof(uint32_t), 1);
 
 	partitions += 128;
 
-	char* output = (char*)malloc(N * 10) + 32;
+	// wp starts 32 bytes in, so those 32 bytes have to be part of the block.
+	char* output = (char*)malloc(N * 10 + 32) + 32;
 	char* wp = output;
 	
 	partitions[0] = 1; partitions[1] = 1;

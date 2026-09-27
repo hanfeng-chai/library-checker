@@ -54,60 +54,9 @@
 #include <unordered_map>
 
 #include <unistd.h>
+#include <gmp.h>
 
 using namespace std;
-
-// resolves a library at runtime
-// you must have ld load the library before using this,
-// otherwise it will die and blow up everything
-struct DLL 
-{
-    char *base;
-    unordered_map<string, size_t> syms;
-    DLL(const char *file) 
-    {
-        // obtain symbols of requested library
-        // objdump -T <elf> | awk '{if($4 == ".text") print $1,$7}'
-        char buf[1024];
-        string command = "objdump -T " + string(file) +
-                         " | awk '{if($4 == \".text\") print $7,$1}'";
-        auto cmd = popen(command.c_str(), "r");
-        while (fgets(buf, 1024, cmd)) 
-        {
-            istringstream ss(buf);
-            string tmp;
-            ss >> tmp, ss >> hex >> syms[tmp];
-        }
-        pclose(cmd);
-
-        // obtain base address of requested library
-        // awk '{if(index($6, <elf>) != 0 && $3 == "00000000") print
-        // substr($1, 1, index($1, "-") - 1)}' /proc/<pid>/maps
-        string maps_file = "/proc/" + to_string(getpid()) + "/maps";
-        command = "awk '{if(index($6, \"" + string(file) +
-                  "\") != 0 && $3 == \"00000000\") print"
-                  " substr($1, 1, index($1, \"-\") - 1)}' " +
-                  maps_file;
-        cmd = popen(command.c_str(), "r");
-        while (fgets(buf, 1024, cmd)) 
-            base = reinterpret_cast<char *>(stoul(buf, 0, 16));
-        
-        pclose(cmd);
-    }
-    template <typename R = void, typename... T>
-    constexpr R call(const char *name, T... t) 
-    {
-        auto off = syms[string(name)];
-        assert(off != 0);
-        return ((R(*)(T...))(base + off))(t...);
-    };
-};
-
-constexpr const char *LIB_PATH = "/usr/lib/x86_64-linux-gnu/libgmp.so.10";
-
-using mpz_t = char[16];
-
-DLL *gmp;
 
 struct fastIO
 {
@@ -123,38 +72,22 @@ struct fastIO
 int t;
 char sa[2000010], sb[2000010], sq[2000010], sr[2000010];
 
-int main(int argc, char **argv) 
+int main()
 {
-    if (getenv("LD_PRELOAD") == nullptr) 
-    {
-        setenv("LD_PRELOAD", LIB_PATH, 1);
-        execve("/proc/self/exe", argv, environ);
-        exit(0);
-    }
-
-    gmp = new DLL(LIB_PATH);
-
     mpz_t a, b, q, r;
-
-    gmp->call("__gmpz_init", a);
-    gmp->call("__gmpz_init", b);
-    gmp->call("__gmpz_init", q);
-    gmp->call("__gmpz_init", r);
+    mpz_inits(a, b, q, r, NULL);
 
     scanf("%d", &t);
     while (t--) 
     {
         scanf("%s%s", sa, sb);
-        gmp->call("__gmpz_set_str", a, sa, 16);
-        gmp->call("__gmpz_set_str", b, sb, 16);
-        gmp->call("__gmpz_tdiv_qr", q, r, a, b);
-        gmp->call("__gmpz_get_str", sq, -16, q);
-        gmp->call("__gmpz_get_str", sr, -16, r);
+        mpz_set_str(a, sa, 16);
+        mpz_set_str(b, sb, 16);
+        mpz_tdiv_qr(q, r, a, b);
+        mpz_get_str(sq, -16, q);
+        mpz_get_str(sr, -16, r);
         printf("%s %s\n", sq, sr);
     }
 
-    gmp->call("__gmpz_clear", a);
-    gmp->call("__gmpz_clear", b);
-    gmp->call("__gmpz_clear", q);
-    gmp->call("__gmpz_clear", r);
+    mpz_clears(a, b, q, r, NULL);
 }
