@@ -1,0 +1,11 @@
+-C opt-level=3
+-C codegen-units=1
+-C lto=fat
+-C panic=abort
+
+-C target-cpu=x86-64-v3
+-C target-feature=+crt-static
+-C relocation-model=static
+-C link-arg=-Wl,-u,__cxa_thread_atexit_impl
+
+-C strip=symbols

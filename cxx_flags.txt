@@ -1,0 +1,21 @@
+-std=c++23
+
+-DEVAL
+-DONLINE_JUDGE
+
+-Iac-library
+-Iinclude
+-include cassert
+
+-O3
+-fwhole-program
+-fno-exceptions
+-fno-rtti
+
+-march=x86-64-v3
+-fno-pie
+-no-pie
+
+-static
+-lgmp
+-s
