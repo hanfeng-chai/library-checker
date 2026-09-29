@@ -3,6 +3,8 @@
 #   gen[-<problem>] [GEN_ARGS=--clean]     generate (or clean) official data
 #   check[-<problem>[-<solution>[-<case>]]] check existing data; cache each AC
 #   bench[-<problem>[-<solution>]]         cache perf stat reports for all cases
+#   bundle[-<category>[-<problem>[-<solution>]]] expand src/*.cxx into bundle/
+# Bundle also accepts the short bundle-<problem>[-<solution>] aliases.
 # Run gen before check/bench. Case names are input stems, e.g. example_00.
 
 .DEFAULT_GOAL := build
@@ -24,6 +26,7 @@ $(if $(RFL),,$(error rust_flags.txt is missing or empty))
 
 CPP := $(wildcard submissions/*/*/*.cpp)
 SRC := $(wildcard src/*/*/*.cxx)
+BUNDLE := $(patsubst src/%,bundle/%,$(SRC))
 RS  := $(wildcard submissions/*/*/*.rs src/*/*/*.rs)
 BIN := $(patsubst src/%,build/%,$(patsubst submissions/%,build/%,$(basename $(CPP) $(SRC) $(RS))))
 PROB := $(patsubst problems/%/info.toml,%,$(filter-out problems/test/%,$(wildcard problems/*/*/info.toml)))
@@ -32,11 +35,12 @@ SOL = $(notdir $(filter build/$(1)/%,$(BIN)))
 CASES = $(basename $(notdir $(wildcard problems/$(1)/in/*.in)))
 AC = $(addprefix check/$(1)/$(2)/,$(addsuffix .ac,$(call CASES,$(1))))
 
-.PHONY: build gen check bench $(GEN)
+.PHONY: build gen check bench bundle $(GEN)
 build: $(BIN)
 gen: $(GEN)
 check: $(addprefix check-,$(notdir $(PROB)))
 bench: $(addprefix bench-,$(notdir $(PROB)))
+bundle: $(BUNDLE)
 
 # Compile from the source directory for submissions with relative file access.
 # Absolute source/include paths keep the compiler's .d prerequisites valid here.
@@ -63,6 +67,22 @@ ifneq ($(SRC),)
 $(abspath $(SRC:.cxx=.cpp)):
 endif
 -include $(wildcard $(addsuffix .d,$(BIN)))
+-include $(wildcard $(addsuffix .d,$(BUNDLE)))
+
+bundle/%.cxx: src/%.cxx tools/bundle.py Makefile
+	python3 tools/bundle.py $< -o $@ --depfile $@.d
+
+define BUNDLE_RULES
+.PHONY: bundle-$(1) bundle-$(1)-$(2) bundle-$(1)-$(2)-$(3) bundle-$(2) bundle-$(2)-$(3)
+bundle-$(1): bundle-$(1)-$(2)
+bundle-$(1)-$(2): bundle-$(1)-$(2)-$(3)
+bundle-$(1)-$(2)-$(3): bundle/$(1)/$(2)/$(3).cxx
+bundle-$(2): bundle-$(1)-$(2)
+bundle-$(2)-$(3): bundle-$(1)-$(2)-$(3)
+endef
+
+$(foreach s,$(patsubst src/%.cxx,%,$(SRC)),\
+  $(eval $(call BUNDLE_RULES,$(word 1,$(subst /, ,$(s))),$(word 2,$(subst /, ,$(s))),$(word 3,$(subst /, ,$(s))))))
 
 $(GEN): gen-%:
 	cd problems && CXXFLAGS="$(PFL) -fexceptions" python3 generate.py $(GEN_ARGS) $(filter %/$*,$(PROB))/info.toml

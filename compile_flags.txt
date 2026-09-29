@@ -1,0 +1,16 @@
+-xc++
+-std=c++23
+
+-DEVAL
+-DONLINE_JUDGE
+
+-Wall
+-Wextra
+-Wshadow
+-Wconversion
+
+-Iinclude
+-Iac-libarary
+-Iproblems/common
+
+-march=x86-64-v3
