@@ -1,5 +1,5 @@
 # make [-jN] [-k]; <problem> is the directory name, without its category.
-#   build[-<problem>[-<solution>]]          compile submissions/ and src/
+#   build[-<problem>[-<solution>]]          compile submissions/*.cpp and src/*.cxx (also Rust)
 #   gen[-<problem>] [GEN_ARGS=--clean]     generate (or clean) official data
 #   check[-<problem>[-<solution>[-<case>]]] check existing data; cache each AC
 #   bench[-<problem>[-<solution>]]         cache perf stat reports for all cases
@@ -15,14 +15,17 @@ endif
 
 CXX ?= g++
 RUSTC ?= rustc
-FLG := $(patsubst -I%,-I$(CURDIR)/%,$(file <cxx_flags.txt))
+PFL := $(patsubst -I%,-I$(CURDIR)/%,$(file <cpp_flags.txt))
+CFL := $(patsubst -I%,-I$(CURDIR)/%,$(file <cxx_flags.txt))
 RFL := $(strip $(file <rust_flags.txt))
-$(if $(FLG),,$(error cxx_flags.txt is missing or empty))
+$(if $(PFL),,$(error cpp_flags.txt is missing or empty))
+$(if $(CFL),,$(error cxx_flags.txt is missing or empty))
 $(if $(RFL),,$(error rust_flags.txt is missing or empty))
 
-CPP := $(wildcard submissions/*/*/*.cpp src/*/*/*.cpp)
+CPP := $(wildcard submissions/*/*/*.cpp)
+SRC := $(wildcard src/*/*/*.cxx)
 RS  := $(wildcard submissions/*/*/*.rs src/*/*/*.rs)
-BIN := $(patsubst src/%,build/%,$(patsubst submissions/%,build/%,$(basename $(CPP) $(RS))))
+BIN := $(patsubst src/%,build/%,$(patsubst submissions/%,build/%,$(basename $(CPP) $(SRC) $(RS))))
 PROB := $(patsubst problems/%/info.toml,%,$(filter-out problems/test/%,$(wildcard problems/*/*/info.toml)))
 GEN := $(addprefix gen-,$(notdir $(PROB)))
 SOL = $(notdir $(filter build/$(1)/%,$(BIN)))
@@ -39,23 +42,30 @@ bench: $(addprefix bench-,$(notdir $(PROB)))
 # Absolute source/include paths keep the compiler's .d prerequisites valid here.
 DEP = -MMD -MP -MF $(abspath $@).d -MT $@
 GXX = @mkdir -p $(@D); cd $(dir $<) && \
-      { $(CXX) $(abspath $<) -o $(abspath $@) $(FLG) $(DEP) 2>/dev/null \
-        || $(CXX) $(abspath $<) -o $(abspath $@) $(FLG) $(DEP) -fexceptions; }
+      { $(CXX) $(abspath $<) -o $(abspath $@) $(PFL) $(DEP) 2>/dev/null \
+        || $(CXX) $(abspath $<) -o $(abspath $@) $(PFL) $(DEP) -fexceptions; }
 RST = @mkdir -p $(@D); cd $(dir $<) && \
       { $(RUSTC) --edition 2024 $(notdir $<) -o $(abspath $@) $(RFL) 2>/dev/null \
         || $(RUSTC) --edition 2021 $(notdir $<) -o $(abspath $@) $(RFL); }
 
-vpath %.cpp submissions src
+vpath %.cpp submissions
+vpath %.cxx src
 vpath %.rs submissions src
-build/%: %.cpp cxx_flags.txt
+build/%: %.cpp cpp_flags.txt
 	$(GXX)
+build/%: %.cxx cxx_flags.txt
+	@mkdir -p $(@D); cd $(dir $<) && $(CXX) $(abspath $<) -o $(abspath $@) $(CFL) $(DEP)
 build/%: %.rs rust_flags.txt
 	$(RST)
 
+# Allow the first rebuild after .cpp -> .cxx even if the old name remains in .d.
+ifneq ($(SRC),)
+$(abspath $(SRC:.cxx=.cpp)):
+endif
 -include $(wildcard $(addsuffix .d,$(BIN)))
 
 $(GEN): gen-%:
-	cd problems && CXXFLAGS="$(FLG) -fexceptions" python3 generate.py $(GEN_ARGS) $(filter %/$*,$(PROB))/info.toml
+	cd problems && CXXFLAGS="$(PFL) -fexceptions" python3 generate.py $(GEN_ARGS) $(filter %/$*,$(PROB))/info.toml
 
 CHK_SOL = $(patsubst %/,%,$(dir $*))
 CHK_BIN = build/$(CHK_SOL)

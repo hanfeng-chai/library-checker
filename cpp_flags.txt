@@ -3,7 +3,8 @@
 -DEVAL
 -DONLINE_JUDGE
 
--Iinclude
+-Iac-library
+-include cassert
 
 -O3
 -fwhole-program
@@ -14,7 +15,6 @@
 -fno-pie
 -no-pie
 
--nostdlib++
 -static
--lm
+-lgmp
 -s
