@@ -1,0 +1,17 @@
+#include <toy/io.h>
+#include <toy/multivariate_cyclic.h>
+using namespace toy;
+
+int main() {
+    Reader in; Writer out;
+    u32 p = in.read<u32, 9>();
+    usize k = in.read<u32, 2>(), n = 1;
+    Buffer<u32> dimensions(k);
+    for (usize i = 0; i < k; ++i) n *= dimensions[i] = in.read<u32, 6>();
+    while (*in.p <= ' ') ++in.p; // K=0 has an empty dimension line.
+    Buffer<u32> a(n), b(n);
+    for (usize i = 0; i < n; ++i) a[i] = in.read<u32, 9>();
+    for (usize i = 0; i < n; ++i) b[i] = in.read<u32, 9>();
+    auto c = multivariate_cyclic(span<const u32>(dimensions), std::move(a), std::move(b), p);
+    out.write(span(c.p, c.n), ' ');
+}

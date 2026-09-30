@@ -15,11 +15,32 @@ inline constexpr auto power = [] {
     return a;
 }();
 
+// For x > 0 with b significant bits, floor(log10(x)) differs from
+// floor(b*log10(2)) by at most one. Adding x to this bias carries into
+// the high word exactly when x reaches the next power of ten.
+inline constexpr auto length = [] {
+    array<u128, 64> a{};
+    for (int z = 0; z < 64; ++z) {
+        int d = ((64 - z) * 1233) >> 12;
+        a[z] = (u128(d + 1) << 64) - power[d];
+    }
+    return a;
+}();
+
+template<bool Parallel = false>
 [[gnu::always_inline]] inline u64 decimal8(u64 x) {
     x &= 0x0f0f0f0f0f0f0f0fULL;
     x = (x * 10 + (x >> 8)) & 0x00ff00ff00ff00ffULL;
-    x = (x * 100 + (x >> 16)) & 0x0000ffff0000ffffULL;
-    return (x * 10000 + (x >> 32)) & 0xffffffff;
+    if constexpr (Parallel) {
+        // c0,c1,c2,c3 are 2-digit groups. Two independent products compute
+        // c0*10^6+c2*100 and c1*10000+c3 in their high words.
+        u64 a = x & 0x000000ff000000ffULL;
+        u64 b = (x >> 16) & 0x000000ff000000ffULL;
+        return (a * ((1000000ULL << 32) + 100) + b * ((10000ULL << 32) + 1)) >> 32;
+    } else {
+        x = (x * 100 + (x >> 16)) & 0x0000ffff0000ffffULL;
+        return (x * 10000 + (x >> 32)) & 0xffffffff;
+    }
 }
 inline constexpr auto digits = [] {
     array<array<char, 4>, 10000> a{};
@@ -80,11 +101,11 @@ template<int Digits>
 }
 }
 
-// Valid decimal tokens separated by exactly one space/newline; stdin is a file.
-// One Reader per process. A zero page after the file makes SIMD tail loads safe.
+// ASCII tokens separated by exactly one space/newline; read() parses decimal.
+// Construct one file mapping per process; copied cursors share its zero padding.
 struct Reader {
     const char* p;
-    Reader() {
+    [[gnu::always_inline]] Reader() {
         struct stat st;
         fstat(0, &st);
         usize n = (st.st_size + 4095) & -usize(4096);
@@ -97,6 +118,13 @@ struct Reader {
     template<class T = u32, int Digits = (sizeof(T) * 8 * 30103 / 100000 + 1)>
     [[gnu::always_inline]] T read() {
         using U = conditional_t<(sizeof(T) > 8), u128, u64>;
+        if constexpr (sizeof(T) > 8 && T(-1) < T(0)) {
+            bool neg = *p == '-'; p += neg;
+            U v = read<U, Digits>();
+            // Form both halves from one word; a wide subtraction costs more.
+            u64 mask = -u64(neg);
+            return T((v ^ ((u128(mask) << 64) | mask)) + neg);
+        }
         bool neg = false;
         if constexpr (T(-1) < T(0)) neg = *p == '-', p += neg;
         U v;
@@ -121,16 +149,21 @@ struct Reader {
             u64 x;
             memcpy(&x, p, 8);
             // Digits have bit 4 set; space/newline do not. Right-align the
-            // digit nibbles, then combine adjacent groups of 1, 2 and 4 bytes.
+            // digit nibbles, then reduce pairs of decimal digits.
             int n = countr_zero(~x & 0x1010101010101010ULL) / 8;
-            v = io_detail::decimal8(x << ((8 - n) * 8));
+            if constexpr (Digits == 4) {
+                u32 y = u32(x) << ((4 - n) * 8);
+                y &= 0x0f0f0f0f;
+                y = (y * 10 + (y >> 8)) & 0x00ff00ff;
+                v = (y * 100 + (y >> 16)) & 0xffff;
+            } else v = io_detail::decimal8(x << ((8 - n) * 8));
             p += n + 1;
         } else if constexpr (Digits <= 13) {
             u64 x;
             memcpy(&x, p, 8);
             v = 0;
             if ((x & 0x1010101010101010ULL) == 0x1010101010101010ULL)
-                v = io_detail::decimal8(x), p += 8;
+                v = io_detail::decimal8<true>(x), p += 8;
             while (*p >= '0') v = v * 10 + *p++ - '0';
             ++p;
         } else {
@@ -138,7 +171,9 @@ struct Reader {
                 return _mm_sub_epi8(_mm_loadu_si128((const __m128i*)p), _mm_set1_epi8('0'));
             };
             auto short16 = [&] (__m128i x, int n) {
-                x = _mm_shuffle_epi8(x, _mm_loadu_si128((const __m128i*)io_detail::shift[n].data()));
+                // n + [-16,...,-1] selects digits; negative indices insert zeros.
+                auto indices = _mm_setr_epi8(-16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1);
+                x = _mm_shuffle_epi8(x, _mm_add_epi8(indices, _mm_set1_epi8(n)));
                 return io_detail::decimal16(x);
             };
             __m128i x = load();
@@ -155,11 +190,51 @@ struct Reader {
                 } else {
                     v = io_detail::decimal16(x); p += 16;
                     if constexpr (sizeof(T) <= 8) {
+                        if constexpr (Digits >= 18) {
+                            u32 tail;
+                            memcpy(&tail, p, 4);
+                            u32 flags = tail & 0x00101010;
+                            if (flags == 0x00001010) {
+                                u32 y = tail & 0x0f0f;
+                                v = v * 100 + ((y * 10 + (y >> 8)) & 255);
+                                p += 3;
+                                return T(neg ? U(0) - v : v);
+                            }
+                            if (flags == 0x00101010) {
+                                // Only full-range u64 inputs can need four more
+                                // digits. Handle their 3/4-digit tails without a loop.
+                                u32 four = 0;
+                                if constexpr (Digits >= 20 && T(-1) > T(0)) four = (tail >> 28) & 1;
+                                u32 y = (tail & 0x0f0f0f0f) << ((1 - four) * 8);
+                                y = (y * 10 + (y >> 8)) & 0x00ff00ff;
+                                v = v * (four ? 10000 : 1000) + ((y * 100 + (y >> 16)) & 0xffff);
+                                p += 4 + four;
+                                return T(neg ? U(0) - v : v);
+                            }
+                        }
                         while (*p >= '0') v = v * 10 + *p++ - '0';
                         ++p;
                     } else {
                         x = load(); mask = _mm_movemask_epi8(x);
                         if (!mask) {
+                            if constexpr (Digits <= 38) {
+                                // The token has at least 32 digits here. With a
+                                // 38-digit bound, two <=19-digit blocks fit u64,
+                                // so their combination needs only one 64x64 multiply.
+                                u64 high = u64(v) * 1000 + (p[0] - '0') * 100 + (p[1] - '0') * 10 + p[2] - '0';
+                                p += 3; x = load(); mask = _mm_movemask_epi8(x);
+                                u64 low;
+                                int n;
+                                if (mask) {
+                                    n = countr_zero(mask); low = short16(x, n);
+                                } else {
+                                    low = io_detail::decimal16(x); n = 16;
+                                    while (n < Digits - 19 && p[n] >= '0') low = low * 10 + p[n++] - '0';
+                                }
+                                v = u128(high) * io_detail::power[n] + low;
+                                p += n + 1;
+                                return T(neg ? U(0) - v : v);
+                            }
                             v = v * io_detail::power[16] + io_detail::decimal16(x);
                             p += 16; x = load(); mask = _mm_movemask_epi8(x);
                         }
@@ -169,12 +244,38 @@ struct Reader {
                 }
             }
         }
+
         return T(neg ? U(0) - v : v);
     }
 
-    string_view token() {
+    // Two unsigned integers of at most 7 digits fit in one 16-byte load.
+    // Shuffle each field into an independent eight-digit lane before reducing.
+    template<int Digits = 7>
+    [[gnu::always_inline]] array<u32, 2> read_pair() {
+        static_assert(1 <= Digits && Digits <= 7);
+        __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)p), _mm_set1_epi8('0'));
+        unsigned mask = _mm_movemask_epi8(x);
+        int a = countr_zero(mask), b = countr_zero(mask & (mask - 1));
+        auto first = _mm_loadu_si128((const __m128i*)io_detail::shift[a].data());
+        auto second = _mm_loadu_si128((const __m128i*)io_detail::shift[b - a - 1].data());
+        auto indices = _mm_add_epi8(_mm_unpackhi_epi64(first, second), _mm_set_epi64x(0x0101010101010101ULL * (a + 1), 0));
+        x = _mm_shuffle_epi8(x, indices);
+        x = _mm_maddubs_epi16(x, _mm_set1_epi16(0x010a));
+        x = _mm_madd_epi16(x, _mm_set1_epi32(0x00010064));
+        x = _mm_packus_epi32(x, x);
+        x = _mm_madd_epi16(x, _mm_set1_epi32(0x00012710));
+        p += b + 1;
+        return bit_cast<array<u32, 2>>(u64(_mm_cvtsi128_si64(x)));
+    }
+
+    [[gnu::always_inline]] string_view token() {
         const char* begin = p;
-        while (*p > ' ') ++p;
+        for (;;) {
+            auto x = _mm256_loadu_si256((const __m256i*)p);
+            u32 stop = _mm256_movemask_epi8(_mm256_cmpgt_epi8(_mm256_set1_epi8(' ' + 1), x));
+            if (stop) { p += countr_zero(stop); break; }
+            p += 32;
+        }
         return {begin, usize(p++ - begin)};
     }
 };
@@ -183,8 +284,16 @@ template<usize N = 1 << 19>
 struct Writer {
     static_assert(N >= 48);
     char buf[N], *p = buf;
-    ~Writer() { flush(); }
-    void flush() { ::write(1, buf, p - buf); p = buf; }
+    [[gnu::always_inline]] ~Writer() { flush(); }
+    [[gnu::always_inline]] void flush() { ::write(1, buf, p - buf); p = buf; }
+    [[gnu::always_inline]] void put(char c) { if (p == buf + N) flush(); *p++ = c; }
+    void append(string_view text) {
+        while (!text.empty()) {
+            usize count = min(text.size(), usize(buf + N - p));
+            if (!count) { flush(); continue; }
+            memcpy(p, text.data(), count); p += count; text.remove_prefix(count);
+        }
+    }
 
     template<int Digits, int Offset = 0>
     [[gnu::always_inline]] static char* fixed(char* p, u64 x) {
@@ -213,9 +322,7 @@ struct Writer {
         u64 a = io_detail::quotient<4>(x), b = io_detail::quotient<8>(x), c = io_detail::quotient<12>(x);
         auto word = [](u64 v) { return bit_cast<u32>(io_detail::digits[v]); };
         auto digits = _mm_set_epi32(word(x - a * 10000), word(a - b * 10000), word(b - c * 10000), word(c));
-        // 1233/4096 approximates log10(2); one comparison corrects the estimate.
-        int n = (bit_width(x) * 1233) >> 12;
-        n += x >= io_detail::power[n];
+        u32 n = u32((u128(x) + io_detail::length[__builtin_clzll(x)]) >> 64);
         digits = _mm_shuffle_epi8(digits, _mm_loadu_si128((const __m128i*)io_detail::trim[n].data()));
         _mm_storeu_si128((__m128i*)p, digits);
         return p + n;
@@ -225,7 +332,12 @@ struct Writer {
     [[gnu::always_inline]] static char* format(char* cursor, T x, char end) {
         using U = conditional_t<(sizeof(T) > 8), u128, u64>;
         U v = x;
-        if constexpr (T(-1) < T(0))
+        if constexpr (sizeof(T) > 8 && T(-1) < T(0)) {
+            if (!x) { cursor[0] = '0'; cursor[1] = end; return cursor + 2; }
+            U mask = x >> (sizeof(T) * 8 - 1);
+            *cursor = '-'; cursor += x < 0;
+            v = (v ^ mask) - mask;
+        } else if constexpr (T(-1) < T(0))
             if (x < 0) *cursor++ = '-', v = U(0) - v;
         if constexpr (sizeof(T) > 8) {
             constexpr u64 b = 10000000000000000000ULL;
@@ -245,7 +357,7 @@ struct Writer {
         p = format(p, x, end);
     }
     template<class T, usize Extent>
-    void write(span<T, Extent> values, char end = '\n') {
+    [[gnu::always_inline]] void write(span<T, Extent> values, char end = '\n') {
         for (usize i = 0; i < values.size();) {
             usize n = min(values.size() - i, usize(buf + N - p) / 48);
             if (!n) { flush(); continue; }

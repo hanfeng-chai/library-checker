@@ -9,7 +9,7 @@ int main() {
     while (t) {
         int n = min(t, 2048);
         for (int i = 0; i < n; ++i) {
-            u64 a = in.read<u64>(), b = in.read<u64>();
+            u64 a = in.read<u64, 19>(), b = in.read<u64, 19>();
             sums[i] = a + b;
         }
         out.write(span(sums, n));
