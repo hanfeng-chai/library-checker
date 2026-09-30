@@ -22,26 +22,21 @@ make check-static_range_sum-main check-static_range_sum-naive
 make bundle-data_structure-static_range_sum-main
 ```
 
-## Lenovo 对照（2026-09-30）
+## Lenovo 对照（2026-10-01）
 
-通过环境检查，不绑核；准备完成后只运行单个串行评测任务，期间没有其他 SSH 或操作。
-每个非样例各六次，轮换顺序，取 task-clock 中位数后求 max/sum（包含样例）。单位 ms。
+环境检查通过、不绑核，准备后只运行单个串行评测任务，期间没有其他 SSH 或操作。
+每例单次，全部用例 task-clock 的 max/sum（包含样例），单位 ms：
 
 | 解答 | max | sum |
 | --- | ---: | ---: |
-| main | 21.089 | 167.228 |
-| naive | 28.333 | 218.133 |
-| Anonymous | 26.063 | 205.600 |
-| chaihf | 28.649 | 222.224 |
-| cheat_when_I_was_young | 29.010 | 222.427 |
-| sortA0329 | 35.209 | 270.666 |
-| IceKylin | 35.381 | 274.387 |
+| main | 21.358 | 168.644 |
+| naive | 28.956 | 221.089 |
+| Anonymous | 26.770 | 207.793 |
+| chaihf | 29.856 | 229.532 |
+| cheat_when_I_was_young | 30.229 | 226.069 |
+| sortA0329 | 36.130 | 275.370 |
+| IceKylin | 36.867 | 281.770 |
 
-主解的 max、sum 均胜过下载的五份提交；朴素版的两项也胜过 chaihf。
-朴素版的 `random_02` 仍略慢，因此不能把汇总优势理解为逐测例都更快。
-成对读入后，主解在该测例为 11.540 ms，Anonymous 为 12.001 ms。
-
-新库下比较了数组值的 u32/u64 读取、朴素/分块主流程；最终主解和朴素版都选用 u64。
-GCC、Clang 均通过全部官方数据，展开后的程序也通过编译。
-完整记录和选中二进制哈希在 `bench/io-final-20260930/`，库的接口与其他题目结果见
-[io.md](../../../docs/io.md)。
+主解两项均胜过五份提交；朴素版两项也胜过 chaihf，不代表逐测例全部更快。
+证据：bench/ds-sequence-20261001/round1/。生产代码沿用此前定稿版本，未因本次复核修改。
+GCC/Clang 官方检查通过。

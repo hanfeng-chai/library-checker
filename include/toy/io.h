@@ -248,11 +248,12 @@ struct Reader {
         return T(neg ? U(0) - v : v);
     }
 
-    // Two unsigned integers of at most 7 digits fit in one 16-byte load.
-    // Shuffle each field into an independent eight-digit lane before reducing.
+    // Read two u32 fields separated by one byte. Up to seven digits use a
+    // 16-byte delimiter scan; wider fields use 32 bytes and separate lanes.
     template<int Digits = 7>
     [[gnu::always_inline]] array<u32, 2> read_pair() {
-        static_assert(1 <= Digits && Digits <= 7);
+        static_assert(1 <= Digits && Digits <= 10);
+        if constexpr(Digits <= 7) {
         __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)p), _mm_set1_epi8('0'));
         unsigned mask = _mm_movemask_epi8(x);
         int a = countr_zero(mask), b = countr_zero(mask & (mask - 1));
@@ -266,6 +267,32 @@ struct Reader {
         x = _mm_madd_epi16(x, _mm_set1_epi32(0x00012710));
         p += b + 1;
         return bit_cast<array<u32, 2>>(u64(_mm_cvtsi128_si64(x)));
+        } else if constexpr(Digits==9) {
+            auto raw=_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)p),_mm256_set1_epi8('0'));
+            u32 mask=_mm256_movemask_epi8(raw),a=countr_zero(mask),end=countr_zero(mask&(mask-1)),b=end-a-1;
+            static constexpr u64 shifts[]{64,56,48,40,32,24,16,8,0,0};
+            static constexpr u32 ninth[]{0,0,0,0,0,0,0,0,0,100000000};
+            // Keep the final eight digits in each u64 lane; loads never precede p.
+            u64 x,y;memcpy(&x,p+(a==9),8);memcpy(&y,p+a+1+(b==9),8);
+            auto digits=_mm_sllv_epi64(_mm_set_epi64x(y,x),_mm_set_epi64x(shifts[b],shifts[a]));
+            digits=_mm_and_si128(digits,_mm_set1_epi8(15));
+            digits=_mm_maddubs_epi16(digits,_mm_set1_epi16(0x010a));digits=_mm_madd_epi16(digits,_mm_set1_epi32(0x00010064));
+            digits=_mm_packus_epi32(digits,digits);digits=_mm_madd_epi16(digits,_mm_set1_epi32(0x00012710));
+            array<u32,2> result{u32(_mm_cvtsi128_si32(digits))+u32(p[0]-'0')*ninth[a],u32(_mm_extract_epi32(digits,1))+u32(p[a+1]-'0')*ninth[b]};
+            p+=end+1;return result;
+        } else {
+            auto raw=_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)p),_mm256_set1_epi8('0'));
+            u32 mask=_mm256_movemask_epi8(raw);u32 a=countr_zero(mask),b=countr_zero(mask&(mask-1));
+            auto first=_mm256_castsi256_si128(raw);
+            auto second=_mm_sub_epi8(_mm_loadu_si128((const __m128i*)(p+a+1)),_mm_set1_epi8('0'));
+            auto index=_mm_setr_epi8(-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1);
+            auto indices=_mm256_set_m128i(_mm_add_epi8(index,_mm_set1_epi8(b-a-1)),_mm_add_epi8(index,_mm_set1_epi8(a)));
+            auto x=_mm256_shuffle_epi8(_mm256_set_m128i(second,first),indices);
+            x=_mm256_maddubs_epi16(x,_mm256_set1_epi16(0x010a));x=_mm256_madd_epi16(x,_mm256_set1_epi32(0x00010064));
+            x=_mm256_packus_epi32(x,x);x=_mm256_madd_epi16(x,_mm256_set1_epi32(0x00012710));
+            x=_mm256_add_epi32(_mm256_mullo_epi32(x,_mm256_set1_epi32(100000000)),_mm256_srli_epi64(x,32));
+            p+=b+1;return {u32(_mm_cvtsi128_si32(_mm256_castsi256_si128(x))),u32(_mm_cvtsi128_si32(_mm256_extracti128_si256(x,1)))};
+        }
     }
 
     [[gnu::always_inline]] string_view token() {
