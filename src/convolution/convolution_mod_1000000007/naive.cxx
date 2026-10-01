@@ -1,5 +1,5 @@
 #include <toy/io_batch.h>
-#include <toy/fft_convolution.h>
+#include <toy/convolution_crt.h>
 using namespace toy;
 
 int main() {
@@ -8,6 +8,6 @@ int main() {
     Buffer<u32> a(n), b(m);
     read_bulk<u32,10>(in,std::span(a.p,a.n));
     read_bulk<u32,10>(in,std::span(b.p,b.n));
-    auto c = convolution_fft<1000000007>(a, b);
+    auto c = convolution_crt<1000000007>(a, b);
     out.write(std::span(c.p, c.n), ' ');
 }

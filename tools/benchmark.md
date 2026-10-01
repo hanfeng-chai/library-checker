@@ -3,6 +3,25 @@
 使用独立、空闲的评测机；同批保持机器、编译参数、输入和系统配置一致。
 不绑核、不预热。编译、正确性检查、数据同步全部在计时前完成。
 
+## Clang 23 对照
+
+从仓库根目录执行以下命令，用 Fedora 45 toolbox 的 Clang 23 编译无手写汇编
+版本。使用宿主机 sysroot，保持 C/C++ 头文件、libc/libm 与宿主机 GCC 一致；
+否则比较会同时混入容器运行库的变化。
+
+```bash
+mkdir -p build/convolution/convolution_mod
+toolbox run --container fedora-toolbox-45 clang++ \
+  --sysroot=/run/host --gcc-toolchain=/run/host/usr \
+  $(cat cxx_flags.txt) src/convolution/convolution_mod/ntt.cxx \
+  -o build/convolution/convolution_mod/ntt-clang23
+```
+
+随后按下面的流程将产物同步到 Lenovo。Clang 会忽略 GCC 的 `-fwhole-program`；
+两者均使用 x86-64-v3。对照产物另命名，避免覆盖默认 GCC binary。报告可在
+manifest 的题目条目中用 `compilers`、`labels` 标明同一源码的不同编译器版本。
+同题各算法必须使用相同的读写模板；程序自身的工作区分配和转换计入总耗时。
+
 ## 全量评测命令
 
 以下命令在本机仓库根目录执行。`master.local` 用 `-j40` 编译和检查，

@@ -1,5 +1,5 @@
 #include <toy/io_batch.h>
-#include <toy/convolution_u64.h>
+#include <toy/convolution_crt.h>
 using namespace toy;
 
 int main() {
@@ -8,6 +8,6 @@ int main() {
     Buffer<u64> a(n), b(m);
     read_bulk<u64,20>(in,std::span(a.p,a.n));
     read_bulk<u64,20>(in,std::span(b.p,b.n));
-    auto c = convolution_u64(a, b);
+    auto c = convolution_u64_basic(a, b);
     out.write(std::span(c.p, c.n), ' ');
 }

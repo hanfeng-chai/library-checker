@@ -1,14 +1,14 @@
-#include <toy/io.h>
-#include <toy/convolution.h>
+#include <toy/io_batch.h>
+#include <toy/convolution_fast.h>
 using namespace toy;
 
 int main() {
     Reader in; Writer out;
     usize n = in.read<u32, 8>(), m = in.read<u32, 8>();
     usize size = std::bit_ceil(n + m - 1);
-    Buffer<u32> a(n, size), b(m, size);
-    for (usize i = 0; i < n; ++i) a[i] = in.read<u32, 9>();
-    for (usize i = 0; i < m; ++i) b[i] = in.read<u32, 9>();
-    auto c = convolution(std::move(a), std::move(b));
-    out.write(std::span(c.p, c.n), ' ');
+    auto a=ntt_storage<u32>(n,size+16), b=ntt_storage<u32>(m,size+16);
+    read_bulk9(in,std::span(a.p,a.n));
+    read_bulk9(in,std::span(b.p,b.n));
+    auto c = convolution_fast(std::move(a), std::move(b));
+    write_bulk9(out,std::span<const u32>(c));
 }

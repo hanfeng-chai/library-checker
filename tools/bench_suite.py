@@ -215,8 +215,10 @@ def report(base):
             rows = [(case, *counters(best[problem, name, case]["perf"])) for case in item["cases"]]
             stats[name] = dict(max=max(r[1] for r in rows), sum=sum(r[1] for r in rows))
             measured = result.get("provenance", {}).get(problem, {}).get(name)
-            sections.append(f"\n{source}\nSHA-256: "
+            compiler = item.get("compilers", {}).get(name)
+            sections.append(f"\n{source}" + (f" [{name}]" if name != Path(source).stem else "") + "\nSHA-256: "
                             + result["manifest"]["sha256"][f"bin/{problem}/{name}"] + "\n"
+                            + (f"Compiler: {compiler}\n" if compiler else "")
                             + (f"Measured: {measured}\n" if measured else "") + table(rows))
         refs = [s for s, source in item["solutions"].items() if source.startswith("submissions/")]
         winners = {m: min(refs, key=lambda s: stats[s][m]) for m in ("max", "sum")} if refs else {}
@@ -251,7 +253,8 @@ def report(base):
                 if refs:
                     value += f" ({100 * (stats[name][m] / stats[winners[m]][m] - 1):+.2f}%)"
                 values.append(value)
-            top.append(f"- `{name}.cxx` " + ", ".join(values))
+            label = item.get("labels", {}).get(name, f"{name}.cxx")
+            top.append(f"- `{label}` " + ", ".join(values))
         top += ["", "明细见 [bench.txt](bench.txt)，方法见 [benchmark.md](../../../tools/benchmark.md)。",
                 "<!-- /benchmark-summary -->", ""]
         tutorial = ROOT / "src" / problem / "tutorial.md"

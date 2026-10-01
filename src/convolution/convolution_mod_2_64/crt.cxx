@@ -1,3 +1,5 @@
+#define TOY_CRT_FUSED_NTT 0
+#define TOY_NTT_ASM 0
 #include <toy/io_batch.h>
 #include <toy/convolution_u64.h>
 using namespace toy;

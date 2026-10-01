@@ -48,7 +48,7 @@ Buffer<u32> convolution_crt(std::span<const u32> a, std::span<const u32> b) {
 
 // Five primes reconstruct the full integer coefficient before reducing modulo
 // 2^64. Sufficient bound: min(n,m) <= 2^20, transform length <= 2^24.
-inline Buffer<u64> convolution_u64(std::span<const u64> a, std::span<const u64> b) {
+inline Buffer<u64> convolution_u64_basic(std::span<const u64> a, std::span<const u64> b) {
     if (a.empty() || b.empty()) return {};
     usize count = a.size() + b.size() - 1;
     Buffer<u64> c(count);

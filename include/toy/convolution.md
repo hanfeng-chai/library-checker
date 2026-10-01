@@ -23,6 +23,10 @@ auto c = convolution<998244353>(std::move(a), std::move(b));
 `convolution_cyclic<P>(a,b)` 消费两个等长、长度为二次幂的 Buffer，计算模 x^N-1
 的循环卷积。它复用相同内核，避免先计算两倍长度的普通卷积再折叠。
 
+整次卷积的新版缓存融合接口见 [`convolution_fast.h`](convolution_fast.md)。
+本头文件保留可独立正变换、乘法、逆变换的接口，供复用频谱的算法使用。
+下面是旧主解的历史记录；当前数值以各题 bench.txt 为准。
+
 ## convolution_mod 对照（2026-09-30）
 
 Lenovo，环境检查通过、不绑核、单个静默串行任务。每个非样例三次取中位数；
