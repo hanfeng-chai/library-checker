@@ -1,0 +1,107 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 9, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                134.253065     669.886931
+QedDust413                               168.680444     839.700326
+Rohan_Kapri                              134.123732     670.362429
+Yuezheng_Ling_fans                       168.489481     839.617364
+cmk666                                   129.883371     704.787518
+main                                     123.278259     655.904884
+
+submissions/polynomial/polynomial_interpolation/Anonymous.cpp
+SHA-256: 10b250b28bcd7606260d3137737f64f3545ae832c305328519f8ce2506b667aa
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)       134.253065          -             -      -              -                -            -
+sum                       669.886931          -             -      -              -                -            -
+example_00                  1.057377    1672498       2481245  1.484           7334            1.286        100.0
+example_01                  1.039463    1644106       2446087  1.488           7082            1.259        100.0
+1169_00                     1.038547    1642380       2511306  1.529           7244            1.242        100.0
+max_random_00             134.253065  214273555     443857314  2.071          61738            0.242        100.0
+max_random_01             134.014895  213863156     443396461  2.073          61758            0.244        100.0
+random_00                 131.521652  209931664     436357403  2.079          59316            0.239        100.0
+random_01                  79.179652  126362373     259869478  2.057          39434            0.269        100.0
+random_02                  54.102995   86331958     178327675  2.066          32672            0.307        100.0
+x_zero_00                 133.679285  213357253     443173903  2.077          60649            0.240        100.0
+
+submissions/polynomial/polynomial_interpolation/QedDust413.cpp
+SHA-256: 5e17d301e24a105b024d2397316bbc9706c1ed7a35f3e3c6e3fb67c049d3f327
+case             task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (x_zero_00)       168.680444          -             -      -              -                -            -
+sum                   839.700326          -             -      -              -                -            -
+example_00              1.071129    1694698       2504520  1.478           7213            1.242        100.0
+example_01              1.020513    1613877       2425912  1.503           6634            1.189        100.0
+1169_00                 1.028950    1627080       2487499  1.529           7046            1.218        100.0
+max_random_00         168.491067  268943680     664877549  2.472          58962            0.082        100.0
+max_random_01         168.301060  268605197     663529615  2.470          59670            0.083        100.0
+random_00             165.416396  263999765     650968604  2.466          59342            0.085        100.0
+random_01              97.531099  155637591     377011295  2.422          39640            0.101        100.0
+random_02              68.159668  108761184     267787385  2.462          32317            0.110        100.0
+x_zero_00             168.680444  269228536     663466855  2.464          58894            0.082        100.0
+
+submissions/polynomial/polynomial_interpolation/Rohan_Kapri.cpp
+SHA-256: 10b250b28bcd7606260d3137737f64f3545ae832c305328519f8ce2506b667aa
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)       134.123732          -             -      -              -                -            -
+sum                       670.362429          -             -      -              -                -            -
+example_00                  1.080837    1709715       2477232  1.449           7231            1.270        100.0
+example_01                  1.039104    1643621       2462877  1.498           7087            1.249        100.0
+1169_00                     1.045363    1653198       2507084  1.517           7265            1.247        100.0
+max_random_00             134.047263  213962623     444022913  2.075          60288            0.237        100.0
+max_random_01             134.123732  214044596     443494084  2.072          61968            0.244        100.0
+random_00                 131.758220  210283506     436419179  2.075          60480            0.244        100.0
+random_01                  79.051813  126174256     259812199  2.059          39009            0.266        100.0
+random_02                  54.122059   86362521     178320363  2.065          32494            0.305        100.0
+x_zero_00                 134.094038  214019712     444039604  2.075          61165            0.240        100.0
+
+submissions/polynomial/polynomial_interpolation/Yuezheng_Ling_fans.cpp
+SHA-256: 1cb1cd5529ff0630a896d12c5d702f3d1461cbe96d0840585866f959eca4e1b3
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)       168.489481          -             -      -              -                -            -
+sum                       839.617364          -             -      -              -                -            -
+example_00                  1.044928    1651569       2460289  1.490           7095            1.253        100.0
+example_01                  1.030935    1630747       2435147  1.493           6912            1.235        100.0
+1169_00                     1.037637    1641257       2486274  1.515           7227            1.255        100.0
+max_random_00             168.253078  268540758     664818095  2.476          58675            0.082        100.0
+max_random_01             168.489481  268894908     664843603  2.473          60260            0.084        100.0
+random_00                 165.642307  264354702     652749987  2.469          59179            0.085        100.0
+random_01                  97.562188  155705619     378027878  2.428          38656            0.098        100.0
+random_02                  68.169938  108775775     268383456  2.467          32461            0.110        100.0
+x_zero_00                 168.386872  268761151     664853698  2.474          58012            0.081        100.0
+
+submissions/polynomial/polynomial_interpolation/cmk666.cpp
+SHA-256: 1e80679f372c24e5cd14ad2a512cd9f7fc3826fd29691a0628af1ddc2738bc12
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)       129.883371          -             -      -              -                -            -
+sum                       704.787518          -             -      -              -                -            -
+example_00                  1.098074    1737844       2507870  1.443           6958            1.213        100.0
+example_01                  1.082180    1712075       2529272  1.477           6997            1.206        100.0
+1169_00                     1.047234    1655722       2514418  1.519           6970            1.207        100.0
+max_random_00             129.883371  207315436     449025448  2.166         117492            0.354        100.0
+max_random_01             129.598434  206830263     448317746  2.168         120165            0.364        100.0
+random_00                 129.228251  206229530     447741126  2.171         115983            0.351        100.0
+random_01                 123.352492  196841182     428688729  2.178          88513            0.289        100.0
+random_02                  59.821886   95462974     207354720  2.172          57887            0.367        100.0
+x_zero_00                 129.675596  206984533     447795172  2.163         118406            0.360        100.0
+
+src/polynomial/polynomial_interpolation/main.cxx
+SHA-256: 1d9c721c0ec48a8e8667c2bfc279c9dcd814483aa634edbf4d4cc03ea0089fb1
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)       123.278259          -             -      -              -                -            -
+sum                       655.904884          -             -      -              -                -            -
+example_00                  0.871394    1376097       1750726  1.272           5597            1.443        100.0
+example_01                  0.837713    1321772       1770747  1.340           5270            1.322        100.0
+1169_00                     0.796376    1255459       1752793  1.396           5455            1.405        100.0
+max_random_00             123.081730  196446349     475589466  2.421          66988            0.251        100.0
+max_random_01             123.278259  196771511     475988843  2.419          66433            0.248        100.0
+random_00                 122.282036  195156777     471941521  2.418          68596            0.261        100.0
+random_01                 106.705231  170290985     409851018  2.407          55742            0.249        100.0
+random_02                  55.006006   87763883     210423743  2.398          38781            0.315        100.0
+x_zero_00                 123.046139  196354490     474658595  2.417          68306            0.258        100.0

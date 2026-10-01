@@ -1,0 +1,180 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 16, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master (old results); fedora (new submissions); glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Rohan_Kapri                               80.856960     756.806724
+leeh18                                   139.326417    1271.884323
+nandhagk                                  80.915550     755.095699
+oldyan                                   105.047504     785.769780
+urectanc                                 121.831783    1033.613460
+main                                      39.077848     349.829419
+toomer                                   152.011516    1287.501011
+
+submissions/tree/tree_path_composite_sum/Rohan_Kapri.cpp
+SHA-256: 29e74192c792cf622a9e5e9d09f121e39c54aa77deeede68bcfe80b44716ec42
+Measured: full-20261001, original two complete passes
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (typical_tree_max_00)        80.856960          -             -      -              -                -            -
+sum                             756.806724          -             -      -              -                -            -
+example_00                        1.081757    1711591       2499309  1.460           7122            1.226        100.0
+example_01                        1.046260    1653955       2504393  1.514           7153            1.229        100.0
+n_hundreds_00                     1.112409    1760420       2698419  1.533           8171            1.362        100.0
+n_hundreds_01                     1.171373    1853921       2727890  1.471           8203            1.356        100.0
+tiny_00                           1.069075    1691522       2483971  1.468           7012            1.217        100.0
+tiny_01                           1.067429    1688416       2489723  1.475           7121            1.234        100.0
+typical_tree_max_00              80.856960  129041151     180683692  1.400         468378            2.151        100.0
+typical_tree_max_01              65.054691  103813185     181729372  1.751         286275            1.307        100.0
+typical_tree_max_02              73.350581  117074325     180412771  1.541         456991            2.104        100.0
+typical_tree_max_03              75.682364  120796417     180398575  1.493         492255            2.268        100.0
+typical_tree_max_04              77.635764  123881674     180392425  1.456         501387            2.310        100.0
+typical_tree_max_05              75.139952  119913409     178839892  1.491         483810            2.246        100.0
+typical_tree_max_06              74.295744  118555116     180044137  1.519         422832            1.952        100.0
+typical_tree_max_07              80.623601  128684065     180438665  1.402         467781            2.154        100.0
+typical_tree_max_08              73.070731  116610486     180379204  1.547         441799            2.036        100.0
+typical_tree_max_09              74.548033  118969005     179205050  1.506         554216            2.569        100.0
+
+submissions/tree/tree_path_composite_sum/leeh18.cpp
+SHA-256: 3e54690d379b2275aaa2a0733517eda8dedb7a3e6dfef03bffbc8b3d3d3b1628
+Measured: full-20261001, original two complete passes
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (typical_tree_max_00)       139.326417          -             -      -              -                -            -
+sum                            1271.884323          -             -      -              -                -            -
+example_00                        0.996168    1574148       2431337  1.545           6672            1.182        100.0
+example_01                        0.994654    1572122       2407871  1.532           6715            1.213        100.0
+n_hundreds_00                     1.152621    1825004       2865868  1.570           8705            1.387        100.0
+n_hundreds_01                     1.118236    1769819       2878905  1.627           8637            1.379        100.0
+tiny_00                           1.018387    1609649       2404767  1.494           6733            1.217        100.0
+tiny_01                           1.009369    1595675       2409458  1.510           6739            1.217        100.0
+typical_tree_max_00             139.326417  222256289     319985884  1.440         559094            1.259        100.0
+typical_tree_max_01             102.267071  163120010     320627024  1.966         212239            0.478        100.0
+typical_tree_max_02             128.214684  204567672     319750539  1.563         522274            1.178        100.0
+typical_tree_max_03             134.977655  215332297     319805056  1.485         626447            1.412        100.0
+typical_tree_max_04             128.750809  205380182     319779511  1.557         662497            1.494        100.0
+typical_tree_max_05             120.203394  191748415     318149568  1.659         493410            1.117        100.0
+typical_tree_max_06             123.434852  196921081     319481965  1.622         445281            1.005        100.0
+typical_tree_max_07             137.856259  219940219     319868666  1.454         557234            1.256        100.0
+typical_tree_max_08             126.534981  201855735     319975674  1.585         473967            1.067        100.0
+typical_tree_max_09             124.028766  197872562     318412792  1.609         721351            1.632        100.0
+
+submissions/tree/tree_path_composite_sum/nandhagk.cpp
+SHA-256: 29e74192c792cf622a9e5e9d09f121e39c54aa77deeede68bcfe80b44716ec42
+Measured: full-20261001, original two complete passes
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (typical_tree_max_00)        80.915550          -             -      -              -                -            -
+sum                             755.095699          -             -      -              -                -            -
+example_00                        1.071058    1694489       2505681  1.479           7129            1.225        100.0
+example_01                        1.051172    1662801       2499886  1.503           7094            1.221        100.0
+n_hundreds_00                     1.104021    1747641       2704240  1.547           7991            1.330        100.0
+n_hundreds_01                     1.142697    1809214       2730393  1.509           8265            1.367        100.0
+tiny_00                           1.041899    1648400       2489372  1.510           7153            1.240        100.0
+tiny_01                           1.050162    1660825       2492041  1.500           7106            1.230        100.0
+typical_tree_max_00              80.915550  129111726     180749536  1.400         468147            2.149        100.0
+typical_tree_max_01              65.424860  104421929     181344442  1.737         285532            1.309        100.0
+typical_tree_max_02              73.497445  117275938     180402193  1.538         457763            2.109        100.0
+typical_tree_max_03              75.055226  119776739     180348499  1.506         492848            2.272        100.0
+typical_tree_max_04              77.168169  123167687     180342576  1.464         499767            2.304        100.0
+typical_tree_max_05              74.534310  118963918     178918096  1.504         484154            2.247        100.0
+typical_tree_max_06              74.772666  119325486     180025464  1.509         422372            1.950        100.0
+typical_tree_max_07              79.757300  127261546     180859082  1.421         468880            2.150        100.0
+typical_tree_max_08              73.194570  116806991     180416423  1.545         441385            2.033        100.0
+typical_tree_max_09              74.314594  118593645     179087509  1.510         551549            2.558        100.0
+
+submissions/tree/tree_path_composite_sum/oldyan.cpp
+SHA-256: 4b40851fdfe2f54c3e8c4e39f83ba6738479b1e815e78928d4e43aa8fc74c5bd
+Measured: full-20261001, original two complete passes
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (typical_tree_max_00)       105.047504          -             -      -              -                -            -
+sum                             785.769780          -             -      -              -                -            -
+example_00                        0.931058    1470867       1888772  1.284           6853            1.627        100.0
+example_01                        0.840035    1325813       1797023  1.355           5603            1.403        100.0
+n_hundreds_00                     0.930581    1470264       1983878  1.349           7320            1.713        100.0
+n_hundreds_01                     0.925571    1461638       1973029  1.350           7224            1.720        100.0
+tiny_00                           0.837047    1321266       1779882  1.347           5537            1.400        100.0
+tiny_01                           0.865763    1367329       1835028  1.342           5580            1.349        100.0
+typical_tree_max_00             105.047504  167442520     149961861  0.896         764329            3.746        100.0
+typical_tree_max_01              45.085133   71954419     131851557  1.832         207409            1.337        100.0
+typical_tree_max_02              67.551253  107801226     127469548  1.182         546267            3.465        100.0
+typical_tree_max_03              87.727092  140023071     129675038  0.926         742804            4.688        100.0
+typical_tree_max_04              88.543367  141198512     142739850  1.011         776594            4.134        100.0
+typical_tree_max_05              72.832052  116101895     141925730  1.222         576707            3.169        100.0
+typical_tree_max_06              82.088438  130866857     142785900  1.091         567493            3.064        100.0
+typical_tree_max_07             104.824126  167157707     148107291  0.886         763449            3.820        100.0
+typical_tree_max_08              62.623208   99949932     129715515  1.298         472111            2.991        100.0
+typical_tree_max_09              64.117552  102335221     128484298  1.256         614987            3.940        100.0
+
+submissions/tree/tree_path_composite_sum/urectanc.rs
+SHA-256: 521583e23f6057a8b077a85b80c39a88cfe5a40b4e420b094770e4893b307e66
+Measured: full-20261001, original two complete passes
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (typical_tree_max_00)       121.831783          -             -      -              -                -            -
+sum                            1033.613460          -             -      -              -                -            -
+example_00                        1.135504    1797543       2330993  1.297           7108            1.348        100.0
+example_01                        1.122966    1776992       2321977  1.307           7025            1.336        100.0
+n_hundreds_00                     1.205183    1908590       2520291  1.320           9273            1.656        100.0
+n_hundreds_01                     1.205385    1908217       2543867  1.333           9312            1.643        100.0
+tiny_00                           1.121305    1774467       2328395  1.312           7057            1.339        100.0
+tiny_01                           1.147963    1816831       2337177  1.286           7129            1.343        100.0
+typical_tree_max_00             121.831783  194362318     161514887  0.831         565208            1.999        100.0
+typical_tree_max_01              69.431762  110690981     164268763  1.484         219190            0.763        100.0
+typical_tree_max_02             107.247135  171055198     161384240  0.943         526307            1.865        100.0
+typical_tree_max_03             114.344008  182397094     161301874  0.884         622968            2.207        100.0
+typical_tree_max_04             111.040655  177077856     161415897  0.912         668383            2.368        100.0
+typical_tree_max_05              91.978019  146638470     161129370  1.099         476154            1.685        100.0
+typical_tree_max_06              98.291476  156617175     162177507  1.036         455160            1.602        100.0
+typical_tree_max_07             119.425452  190302915     161847846  0.850         563205            1.988        100.0
+typical_tree_max_08              98.421725  156966287     161298875  1.028         478291            1.697        100.0
+typical_tree_max_09              94.663139  150920492     161166275  1.068         711397            2.516        100.0
+
+src/tree/tree_path_composite_sum/main.cxx
+SHA-256: b7be3635a53f69a254c690918438fecbce0731935e9f6fc0bec0dde06cf909bf
+Measured: full-20261001, original two complete passes
+case                       task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (typical_tree_max_07)        39.077848         -             -      -              -                -            -
+sum                             349.829419         -             -      -              -                -            -
+example_00                        0.864693   1365064       1770029  1.297           5585            1.403        100.0
+example_01                        0.867588   1369036       1749435  1.278           5460            1.392        100.0
+n_hundreds_00                     0.871671   1376243       1857164  1.349           5942            1.475        100.0
+n_hundreds_01                     0.893294   1410757       1860391  1.319           5885            1.461        100.0
+tiny_00                           0.820062   1293232       1741359  1.347           5574            1.443        100.0
+tiny_01                           0.833423   1314947       1746369  1.328           5574            1.439        100.0
+typical_tree_max_00              39.051716  62310861      66196240  1.062          10114            0.189        100.0
+typical_tree_max_01              24.435252  38990997      66070540  1.695           9305            0.174        100.0
+typical_tree_max_02              35.422771  56530615      66121436  1.170         164834            3.085        100.0
+typical_tree_max_03              38.717530  61772945      66214103  1.072          10921            0.203        100.0
+typical_tree_max_04              35.423767  56513816      66115068  1.170         110951            2.078        100.0
+typical_tree_max_05              31.800359  50748019      66097658  1.302          97626            1.828        100.0
+typical_tree_max_06              34.808081  55548679      66084276  1.190          97551            1.829        100.0
+typical_tree_max_07              39.077848  62365330      66109580  1.060           9312            0.174        100.0
+typical_tree_max_08              32.558233  51958051      66128673  1.273         124950            2.337        100.0
+typical_tree_max_09              33.383131  53274910      66094655  1.241         192585            3.607        100.0
+
+submissions/tree/tree_path_composite_sum/toomer.rs
+SHA-256: dd6abc4caafbd53c91ed08346e4791dbb3c9da89bd9e49cc42b472cb3e134288
+Measured: new-submissions-20261001, two complete passes
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (typical_tree_max_03)       152.011516          -             -      -              -                -            -
+sum                            1287.501011          -             -      -              -                -            -
+example_00                        0.963588    1522802       2015178  1.323           7225            1.594        100.0
+example_01                        0.958642    1514927       2023441  1.336           7195            1.580        100.0
+n_hundreds_00                     1.068850    1689878       2236496  1.323           9354            1.903        100.0
+n_hundreds_01                     1.048906    1659307       2239657  1.350           9220            1.874        100.0
+tiny_00                           0.969930    1532648       2030017  1.325           7216            1.580        100.0
+tiny_01                           0.944279    1491956       2028587  1.360           7244            1.588        100.0
+typical_tree_max_00             151.610258  241853939     154808289  0.640         443278            1.685        100.0
+typical_tree_max_01              80.294375  128098066     155868593  1.217         151381            0.570        100.0
+typical_tree_max_02             131.290066  209394909     154017581  0.736         472942            1.811        100.0
+typical_tree_max_03             152.011516  242557381     154528523  0.637         449084            1.711        100.0
+typical_tree_max_04             139.235033  222159028     154676697  0.696         511547            1.946        100.0
+typical_tree_max_05             108.024653  172281944     155162512  0.901         238952            0.905        100.0
+typical_tree_max_06             124.227340  198244747     155050325  0.782         325367            1.233        100.0
+typical_tree_max_07             150.962392  240820940     154350221  0.641         442033            1.687        100.0
+typical_tree_max_08             127.336205  203206709     154275415  0.759         397272            1.516        100.0
+typical_tree_max_09             116.554978  185946258     155180909  0.835         485936            1.842        100.0

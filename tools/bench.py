@@ -20,6 +20,30 @@ def number(counter, field="counter-value"):
         return None
 
 
+def counters(detail):
+    records = (json.loads(line) for line in detail.splitlines() if line.lstrip().startswith("{"))
+    events = {c["event"].split(":")[0].replace("cpu-cycles", "cycles"): c for c in records}
+    ms, cycles, instructions, branches, misses = [number(events.get(e)) for e in EVENTS.split(",")]
+    ms *= {"nsec": 1e-6, "usec": 1e-3, "msec": 1, "sec": 1e3}[events["task-clock"]["unit"]]
+    ipc = instructions / cycles if instructions is not None and cycles else None
+    miss_rate = 100 * misses / branches if misses is not None and branches else None
+    running = min((v for c in events.values() if (v := number(c, "pcnt-running")) is not None), default=None)
+    return ms, cycles, instructions, ipc, misses, miss_rate, running
+
+
+def table(rows):
+    slowest = max(rows, key=lambda row: row[1])
+    rows = [(f"max ({slowest[0]})", slowest[1], *[None] * 6),
+            ("sum", sum(row[1] for row in rows), *[None] * 6)] + rows
+    cells = [["case", "task-clock (ms)", "cycles", "instructions", "IPC",
+              "branch-misses", "branch-miss (%)", "running (%)"]]
+    formats = ("s", ".6f", ".0f", ".0f", ".3f", ".0f", ".3f", ".1f")
+    cells += [["-" if v is None else format(v, f) for v, f in zip(row, formats)] for row in rows]
+    widths = [max(map(len, column)) for column in zip(*cells)]
+    return "\n".join("  ".join(cell.ljust(w) if i == 0 else cell.rjust(w)
+                              for i, (cell, w) in enumerate(zip(row, widths))) for row in cells) + "\n"
+
+
 def main():
     if len(sys.argv) != 3:
         sys.exit("usage: bench.py BINARY PROBLEM_DIR")
@@ -47,29 +71,12 @@ def main():
             if run.returncode:
                 sys.exit(f"{case.name}: perf exited {run.returncode}\n{run.stderr}{detail}")
             try:
-                records = (json.loads(line) for line in detail.splitlines() if line.lstrip().startswith("{"))
-                counters = {c["event"].split(":")[0].replace("cpu-cycles", "cycles"): c for c in records}
-                ms, cycles, instructions, branches, misses = [number(counters.get(e)) for e in EVENTS.split(",")]
-                clock = counters["task-clock"]
-                ms *= {"nsec": 1e-6, "usec": 1e-3, "msec": 1, "sec": 1e3}[clock["unit"]]
+                rows.append((case.stem, *counters(detail)))
             except (ValueError, KeyError, TypeError):
                 sys.exit(f"{case.name}: missing/invalid task-clock\n{run.stderr}{detail}")
-            ipc = instructions / cycles if instructions is not None and cycles else None
-            miss_rate = 100 * misses / branches if misses is not None and branches else None
-            running = min((v for c in counters.values() if (v := number(c, "pcnt-running")) is not None), default=None)
-            rows.append((case.stem, ms, cycles, instructions, ipc, misses, miss_rate, running))
 
     # Summary rows only aggregate task-clock; other counters belong to individual cases.
-    slowest = max(rows, key=lambda row: row[1])
-    rows[:0] = [(f"max ({slowest[0]})", slowest[1], *[None] * 6),
-                ("sum", sum(row[1] for row in rows), *[None] * 6)]
-    table = [["case", clock["event"] + " (ms)", "cycles", "instructions", "IPC",
-              "branch-misses", "branch-miss (%)", "running (%)"]]
-    formats = ("s", ".6f", ".0f", ".0f", ".3f", ".0f", ".3f", ".1f")
-    table += [["-" if v is None else format(v, f) for v, f in zip(row, formats)] for row in rows]
-    widths = [max(map(len, column)) for column in zip(*table)]
-    for row in table:
-        print("  ".join(cell.ljust(w) if i == 0 else cell.rjust(w) for i, (cell, w) in enumerate(zip(row, widths))))
+    print(table(rows), end="")
 
 
 if __name__ == "__main__":

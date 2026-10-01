@@ -1,21 +1,18 @@
 # 两个凸序列的 min-plus 卷积
 
+<!-- benchmark-summary -->
+2026-10-01 Lenovo，两轮全量逐测例取较小 task-clock；单位 ms，包含样例。
+五份参考最佳：max 32.371 (Rohan_Kapri), sum 521.805 (urectanc)。
+
+- `main.cxx` max: 28.657 ms (-11.47%), sum: 452.230 ms (-13.33%)
+
+明细见 [bench.txt](bench.txt)，方法见 [benchmark.md](../../../tools/benchmark.md)。
+<!-- /benchmark-summary -->
 凸序列的相邻差分有序。每次比较两个下一步的和，选择较小的增量，相当于合并两个差分序列。时间、空间均 O(N+M)。
 
 实现使用 toy 的统一 I/O 和 Buffer。SIMD、接口约定与 Lenovo 对照见
-[`min_plus_convolution.md`](../../../docs/min_plus_convolution.md)。
-<!-- experiment-history -->
+[`min_plus_convolution.md`](../../../include/toy/min_plus_convolution.md)。
 
 ## 尝试过程与取舍
 
 把两个凸序列的差分看成有序序列，直接合并下一步增量。这里线性算法比引入通用卷积或分治结构更合适；在朴素对照通过后，首批完整测量即达到目标。
-
-## 阶段评测记录
-
-下表保留各阶段的真实第 0 次观测，单位 ms，max/sum 包含样例。早期诊断即使有多轮，也不逐例挑最快值；不同批次应与各自参考比较。参考栏分别取同批参考提交的最小 max、sum，可能来自不同人。全量且包含五份参考时才判断本轮门槛；子集测量只作诊断。
-
-| 批次 / 方案 | 覆盖 | max | sum | 参考 max / sum | 本轮结果 |
-|---|---|---:|---:|---:|---|
-| min-plus-20260930/round1 / 当时主解 | 全量 34 例 | 28.287 | 444.931 | 32.006 / 515.532（5 份） | 双项低于参考 |
-
-批次名对应当时的实验目录；表格本身保存了主要数据，不依赖未提交的 build/、bench/ 才能阅读。最终接口与正确性约束见上文所链的库文档；运行库更新与命名空间整理的验证口径见 [评测审计](../../../docs/measurement_audit.md)。

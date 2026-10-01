@@ -1,21 +1,18 @@
 # 凸序列与任意序列的 min-plus 卷积
 
+<!-- benchmark-summary -->
+2026-10-01 Lenovo，两轮全量逐测例取较小 task-clock；单位 ms，包含样例。
+五份参考最佳：max 80.900 (MeIoN), sum 1514.293 (MeIoN)。
+
+- `main.cxx` max: 45.949 ms (-43.20%), sum: 869.052 ms (-42.61%)
+
+明细见 [bench.txt](bench.txt)，方法见 [benchmark.md](../../../tools/benchmark.md)。
+<!-- /benchmark-summary -->
 对输出下标 k，最小化 A[k-j]+B[j]。A 凸时，选择最左的最优 j 随 k 单调不减；分治只扫描相邻最优决策限定的区间。时间 O((N+M) log(N+M))，空间 O(N+M)。
 
 实现使用 toy 的统一 I/O 和 Buffer。SIMD、接口约定与 Lenovo 对照见
-[`min_plus_convolution.md`](../../../docs/min_plus_convolution.md)。
-<!-- experiment-history -->
+[`min_plus_convolution.md`](../../../include/toy/min_plus_convolution.md)。
 
 ## 尝试过程与取舍
 
 利用最左最优决策单调不减做分治，只扫描相邻最优位置限定的范围。统一接口处理空输入与负数，用小规模朴素卷积验证单调性方向和边界。首批完整比较双项领先。
-
-## 阶段评测记录
-
-下表保留各阶段的真实第 0 次观测，单位 ms，max/sum 包含样例。早期诊断即使有多轮，也不逐例挑最快值；不同批次应与各自参考比较。参考栏分别取同批参考提交的最小 max、sum，可能来自不同人。全量且包含五份参考时才判断本轮门槛；子集测量只作诊断。
-
-| 批次 / 方案 | 覆盖 | max | sum | 参考 max / sum | 本轮结果 |
-|---|---|---:|---:|---:|---|
-| min-plus-20260930/round1 / 当时主解 | 全量 41 例 | 45.648 | 861.976 | 80.241 / 1505.199（5 份） | 双项低于参考 |
-
-批次名对应当时的实验目录；表格本身保存了主要数据，不依赖未提交的 build/、bench/ 才能阅读。最终接口与正确性约束见上文所链的库文档；运行库更新与命名空间整理的验证口径见 [评测审计](../../../docs/measurement_audit.md)。

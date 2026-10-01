@@ -1,0 +1,137 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 14, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                 30.464228     274.545805
+Rohan_Kapri                               33.339893     310.117061
+oldyan                                    30.543266     274.576409
+sortA0329                                 33.361006     310.741526
+toomer                                    35.852663     331.752951
+main                                      23.674604     216.363818
+
+submissions/data_structure/persistent_unionfind/Anonymous.cpp
+SHA-256: 0d30272715a5b6de457cd947a114dc7dfd7eba4a3414df292e7e0d5f8d10b798
+case                      task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_04)             30.464228         -             -      -              -                -            -
+sum                            274.545805         -             -      -              -                -            -
+example_00                       0.796799   1256180       1910403  1.521           5772            1.328        100.0
+conchon_filliatre_tle_00        20.038898  31973594      65805137  2.058         186825            1.796        100.0
+conchon_filliatre_tle_01        20.153230  32155267      65827113  2.047         187005            1.797        100.0
+hand_00                          0.824385   1300573       1859557  1.430           5519            1.326        100.0
+max_random_00                   30.433130  48566053      70437528  1.450         580246            5.390        100.0
+max_random_01                   30.363654  48454223      70491238  1.455         577469            5.356        100.0
+max_random_02                   30.442076  48578848      70563000  1.453         581477            5.386        100.0
+max_random_03                   30.362450  48452892      70504066  1.455         578406            5.360        100.0
+max_random_04                   30.464228  48615310      70502521  1.450         580070            5.377        100.0
+random_00                       21.793470  34774049      51813230  1.490         383673            4.774        100.0
+random_01                       22.268404  35533135      52376894  1.474         407708            5.030        100.0
+random_02                       17.652072  28163395      41091611  1.459         348040            5.395        100.0
+random_03                        5.063213   8067426      12463926  1.545          69378            3.194        100.0
+random_04                       13.889796  22157971      33349112  1.505         321196            6.070        100.0
+
+submissions/data_structure/persistent_unionfind/Rohan_Kapri.cpp
+SHA-256: 3327b8daa0f147da63a90e67bcad86d2106606a852bdb7f9362e5301224261e9
+case                      task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_04)             33.339893         -             -      -              -                -            -
+sum                            310.117061         -             -      -              -                -            -
+example_00                       0.956955   1512320       2419427  1.600           6629            1.185        100.0
+conchon_filliatre_tle_00        25.203392  40216649      63304886  1.574          94397            1.164        100.0
+conchon_filliatre_tle_01        25.223444  40250134      63285567  1.572          95004            1.173        100.0
+hand_00                          0.975477   1542235       2443013  1.584           6627            1.166        100.0
+max_random_00                   33.127334  52866510      63164423  1.195         488428            5.996        100.0
+max_random_01                   33.143181  52873432      63227557  1.196         493266            6.046        100.0
+max_random_02                   33.178697  52948238      63305139  1.196         488557            5.972        100.0
+max_random_03                   33.291775  53096903      63328735  1.193         494179            6.037        100.0
+max_random_04                   33.339893  53204430      63195997  1.188         491635            6.030        100.0
+random_00                       24.953094  39817752      47664090  1.197         378423            6.092        100.0
+random_01                       24.692794  39401471      47667176  1.210         365491            5.883        100.0
+random_02                       20.383621  32523815      39144496  1.204         358134            6.945        100.0
+random_03                        5.085173   8102567      10845531  1.339          59808            3.605        100.0
+random_04                       16.562231  26423005      32669249  1.236         307898            7.063        100.0
+
+submissions/data_structure/persistent_unionfind/oldyan.cpp
+SHA-256: 0d30272715a5b6de457cd947a114dc7dfd7eba4a3414df292e7e0d5f8d10b798
+case                      task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)             30.543266         -             -      -              -                -            -
+sum                            274.576409         -             -      -              -                -            -
+example_00                       0.812493   1281346       1910960  1.491           5748            1.322        100.0
+conchon_filliatre_tle_00        20.094070  32061217      65848674  2.054         186559            1.791        100.0
+conchon_filliatre_tle_01        20.199301  32228943      65821052  2.042         186103            1.788        100.0
+hand_00                          0.840794   1326248       1868992  1.409           5720            1.367        100.0
+max_random_00                   30.270152  48305315      70494251  1.459         580631            5.384        100.0
+max_random_01                   30.305836  48362755      70520201  1.458         576600            5.346        100.0
+max_random_02                   30.543266  48741997      70526876  1.447         581244            5.391        100.0
+max_random_03                   30.457569  48604196      70480451  1.450         579243            5.372        100.0
+max_random_04                   30.447009  48586409      70480719  1.451         580931            5.390        100.0
+random_00                       21.871267  34898396      51790418  1.484         384621            4.792        100.0
+random_01                       22.255032  35510851      52435860  1.477         409211            5.038        100.0
+random_02                       17.553754  28006230      41124862  1.468         348821            5.396        100.0
+random_03                        5.016845   7993160      12454393  1.558          69283            3.196        100.0
+random_04                       13.909021  22187412      33318481  1.502         320318            6.068        100.0
+
+submissions/data_structure/persistent_unionfind/sortA0329.cpp
+SHA-256: 3327b8daa0f147da63a90e67bcad86d2106606a852bdb7f9362e5301224261e9
+case                      task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)             33.361006         -             -      -              -                -            -
+sum                            310.741526         -             -      -              -                -            -
+example_00                       0.960391   1518362       2419036  1.593           6682            1.194        100.0
+conchon_filliatre_tle_00        25.228839  40257954      63294596  1.572          94100            1.161        100.0
+conchon_filliatre_tle_01        25.198616  40210054      63262534  1.573          94563            1.168        100.0
+hand_00                          0.934424   1475709       2370930  1.607           6442            1.181        100.0
+max_random_00                   33.163741  52923849      63169257  1.194         489262            6.006        100.0
+max_random_01                   33.283820  53116490      63214383  1.190         493753            6.054        100.0
+max_random_02                   33.361006  53239149      63249671  1.188         488426            5.984        100.0
+max_random_03                   33.354255  53229300      63252903  1.188         493885            6.051        100.0
+max_random_04                   33.309283  53156530      63235727  1.190         491508            6.016        100.0
+random_00                       25.042706  39960504      47691417  1.193         378387            6.083        100.0
+random_01                       24.798161  39570618      47668953  1.205         366894            5.901        100.0
+random_02                       20.500490  32708812      39127820  1.196         357978            6.946        100.0
+random_03                        5.060002   8062638      10884710  1.350          59642            3.561        100.0
+random_04                       16.545792  26398193      32657020  1.237         305660            7.025        100.0
+
+submissions/data_structure/persistent_unionfind/toomer.rs
+SHA-256: 54797aa779451dd69c5faca6bed69e93e2cc98de1e65632b2edb896c5c17fcee
+case                      task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_03)             35.852663         -             -      -              -                -            -
+sum                            331.752951         -             -      -              -                -            -
+example_00                       0.942809   1489524       2066912  1.388           7397            1.574        100.0
+conchon_filliatre_tle_00        27.117312  43272837      73798616  1.705          62417            0.530        100.0
+conchon_filliatre_tle_01        27.147784  43322401      73760286  1.703          62420            0.531        100.0
+hand_00                          0.934106   1475814       2019947  1.369           7290            1.604        100.0
+max_random_00                   35.683404  56945901      74840038  1.314         386443            3.182        100.0
+max_random_01                   35.589263  56795524      74874808  1.318         384789            3.167        100.0
+max_random_02                   35.846999  57207892      75006554  1.311         393940            3.231        100.0
+max_random_03                   35.852663  57215499      74972505  1.310         388944            3.192        100.0
+max_random_04                   35.609102  56827073      74828489  1.317         382962            3.155        100.0
+random_00                       26.928891  42971290      56365566  1.312         305007            3.311        100.0
+random_01                       26.762458  42706288      56355368  1.320         287932            3.135        100.0
+random_02                       21.579509  34432905      44593266  1.295         289073            3.928        100.0
+random_03                        5.461791   8703312      12216321  1.404          42295            1.996        100.0
+random_04                       16.296860  26000789      34458740  1.325         246122            4.310        100.0
+
+src/data_structure/persistent_unionfind/main.cxx
+SHA-256: 697d2fb0e3439e6430501fe07b342267ba6babb7809313a44c71a328ccb2e1a7
+case                      task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)             23.674604         -             -      -              -                -            -
+sum                            216.363818         -             -      -              -                -            -
+example_00                       0.786180   1239153       1762446  1.422           5585            1.416        100.0
+conchon_filliatre_tle_00        15.676425  25009784      41725149  1.668          60288            1.274        100.0
+conchon_filliatre_tle_01        15.704819  25053898      41741200  1.666          60367            1.274        100.0
+hand_00                          0.803840   1267860       1785692  1.408           5611            1.391        100.0
+max_random_00                   23.414608  37361686      44681137  1.196         324254            6.068        100.0
+max_random_01                   23.554777  37586012      44699372  1.189         323122            6.044        100.0
+max_random_02                   23.674604  37777400      44752427  1.185         333151            6.214        100.0
+max_random_03                   23.644270  37716284      44711172  1.185         328377            6.140        100.0
+max_random_04                   23.498175  37495943      44699793  1.192         320946            5.995        100.0
+random_00                       17.588938  28062215      33702266  1.201         259008            6.349        100.0
+random_01                       17.363168  27701912      33685663  1.216         242967            5.963        100.0
+random_02                       14.893277  23760126      27562589  1.160         261259            7.650        100.0
+random_03                        3.827672   6094202       8233367  1.351          33907            2.748        100.0
+random_04                       11.933065  19034072      22523145  1.183         223522            7.773        100.0

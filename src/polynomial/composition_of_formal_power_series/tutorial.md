@@ -1,22 +1,19 @@
 # 幂级数复合
 
+<!-- benchmark-summary -->
+2026-10-01 Lenovo，两轮全量逐测例取较小 task-clock；单位 ms，包含样例。
+五份参考最佳：max 35.528 (cmk666), sum 559.350 (cmk666)。
+
+- `main.cxx` max: 13.037 ms (-63.31%), sum: 209.381 ms (-62.57%)
+
+明细见 [bench.txt](bench.txt)，方法见 [benchmark.md](../../../tools/benchmark.md)。
+<!-- /benchmark-summary -->
 用首一分母 y-g(x) 隐式表示全部幂，每轮配对 x 和 -x，将 x 精度减半。
 逆序应用系数提取的转置，得到外层系数加权的 f(g(x))。
 
-两种数据规模共用 [fps_composition](../../../docs/fps_composition.md)，
+两种数据规模共用 [fps_composition](../../../include/toy/fps_composition.md)，
 单项式内层直接处理，其余用 radix-4 NTT 和转置 Bostan–Mori。
-<!-- experiment-history -->
 
 ## 尝试过程与取舍
 
 将全部内层幂隐式放进首一二元分母，使用转置 Bostan–Mori，复用 radix-4 NTT。小规模和单项式内层保留直接路径，普通版与 large 版使用同一库。现存完整对照首批即双项领先，之后复合逆的缩半投影改动没有改变本题产物。
-
-## 阶段评测记录
-
-下表保留各阶段的真实第 0 次观测，单位 ms，max/sum 包含样例。早期诊断即使有多轮，也不逐例挑最快值；不同批次应与各自参考比较。参考栏分别取同批参考提交的最小 max、sum，可能来自不同人。全量且包含五份参考时才判断本轮门槛；子集测量只作诊断。
-
-| 批次 / 方案 | 覆盖 | max | sum | 参考 max / sum | 本轮结果 |
-|---|---|---:|---:|---:|---|
-| composition-20260930/round1 / 当时主解 | 全量 27 例 | 12.984 | 208.755 | 35.563 / 559.069（5 份） | 双项低于参考 |
-
-批次名对应当时的实验目录；表格本身保存了主要数据，不依赖未提交的 build/、bench/ 才能阅读。最终接口与正确性约束见上文所链的库文档；运行库更新与命名空间整理的验证口径见 [评测审计](../../../docs/measurement_audit.md)。

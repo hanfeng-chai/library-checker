@@ -1,0 +1,185 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTMgdG9rZW5zCg==",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgMjEgdG9rZW5zCg==",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_02",
+      "checker_out": "b2sgMTcgdG9rZW5zCg==",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "example_03",
+      "checker_out": "b2sgOSB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMTM4NSB0b2tlbnMK",
+      "memory": 823296,
+      "status": "AC",
+      "time": 0.01
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMzk1IHRva2Vucwo=",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMTc1IHRva2Vucwo=",
+      "memory": 819200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgMjQzMyB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgMTA2MyB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgNzc5NjI1IHRva2Vucwo=",
+      "memory": 7905280,
+      "status": "AC",
+      "time": 0.007
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgOTI2MDkxIHRva2Vucwo=",
+      "memory": 9568256,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTA2NjcxIHRva2Vucwo=",
+      "memory": 1351680,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgODU4NDk3IHRva2Vucwo=",
+      "memory": 8429568,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgNTU0MDIzIHRva2Vucwo=",
+      "memory": 6565888,
+      "status": "AC",
+      "time": 0.005
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 10264576,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 9416704,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 9453568,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_03",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 10235904,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_04",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 10240000,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "all_same_00",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 14630912,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "all_same_01",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 14983168,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "all_same_02",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 14954496,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "all_same_03",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 14725120,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "all_same_04",
+      "checker_out": "b2sgOTk5OTk5IHRva2Vucwo=",
+      "memory": 14729216,
+      "status": "AC",
+      "time": 0.014
+    }
+  ],
+  "overview": {
+    "id": 406723,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 14983168,
+    "problem_name": "enumerate_palindromes",
+    "problem_title": "Enumerate Palindromes",
+    "status": "AC",
+    "submission_time": "2026-09-28T12:42:12.243126Z",
+    "time": 0.014,
+    "user_name": "lemon_qwq"
+  }
+}

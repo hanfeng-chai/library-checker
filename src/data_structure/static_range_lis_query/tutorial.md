@@ -1,5 +1,13 @@
 # 静态区间 LIS
 
+<!-- benchmark-summary -->
+2026-10-01 Lenovo，两轮全量逐测例取较小 task-clock；单位 ms，包含样例。
+五份参考最佳：max 439.949 (chaihf), sum 1839.167 (chaihf)。
+
+- `main.cxx` max: 332.102 ms (-24.51%), sum: 1633.958 ms (-11.16%)
+
+明细见 [bench.txt](bench.txt)，方法见 [benchmark.md](../../../tools/benchmark.md)。
+<!-- /benchmark-summary -->
 `main.cxx` 调用 lis.h，查询按右端点分组。维护半局部 LIS 的临界位置：插入当前
 位置后，按排列值向右进行 bumping，移除最终被推出的位置。活动集合在 [l,r)
 中的计数等于该区间 LIS 长度，因此用 PrefixTree32 即可回答。
@@ -9,20 +17,8 @@ bumping 按值分块，首块显式计算，后续整块用最大堆与延迟最
 新 BinaryHeap 的 replace_top、push_pop 合并了常见的两步操作。
 
 GCC/Clang 全部官方测例通过；逐步对照未分块递推，逐查询对照独立 LIS，并通过
-sanitizer。Lenovo 单次 max/sum 为 345.498/1645.625 ms，五份参考最小值为
-454.100/1857.430 ms。证据：bench/ds-lis-20261001/round1/。旧 .cpp 保留作参考。
-<!-- experiment-history -->
+sanitizer。
 
 ## 尝试过程与取舍
 
 采用半局部 LIS 的临界位置与 bumping 递推，先与未分块递推逐步对照，再加入按值分块、双堆延迟处理和 SIMD 前缀最大值。堆重建改用线性 heapify，replace_top/push_pop 合并常见的两步操作；逐查询仍与独立 LIS 算法比较。
-
-## 阶段评测记录
-
-下表保留各阶段的真实第 0 次观测，单位 ms，max/sum 包含样例。早期诊断即使有多轮，也不逐例挑最快值；不同批次应与各自参考比较。参考栏分别取同批参考提交的最小 max、sum，可能来自不同人。全量且包含五份参考时才判断本轮门槛；子集测量只作诊断。
-
-| 批次 / 方案 | 覆盖 | max | sum | 参考 max / sum | 本轮结果 |
-|---|---|---:|---:|---:|---|
-| ds-lis-20261001/round1 / 当时主解 | 全量 15 例 | 345.498 | 1645.625 | 454.100 / 1857.430（5 份） | 双项低于参考 |
-
-批次名对应当时的实验目录；表格本身保存了主要数据，不依赖未提交的 build/、bench/ 才能阅读。最终接口与正确性约束见上文所链的库文档；运行库更新与命名空间整理的验证口径见 [评测审计](../../../docs/measurement_audit.md)。

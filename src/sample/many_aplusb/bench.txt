@@ -1,0 +1,107 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 9, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                 47.464888     238.687936
+QgQ                                       47.335003     236.832932
+chaihf                                    50.096902     244.015233
+nandhagk                                  41.631581     222.420802
+toomer                                    47.635792     241.650651
+main                                      41.262120     200.696105
+
+submissions/sample/many_aplusb/Anonymous.cpp
+SHA-256: ad7583fbe6ab0483b1a919e6a67b3850d1880573696d683e2843ae22bfc77a62
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (digit_random_01)        47.464888         -             -      -              -                -            -
+sum                         238.687936         -             -      -              -                -            -
+example_00                    0.979173   1547122       2425373  1.568           6668            1.193        100.0
+all_max_00                   29.524270  47112573     140164165  2.975          11238            0.070        100.0
+all_zero_00                  28.558818  45572898      72765965  1.597           7349            0.049        100.0
+digit_random_00              47.440402  75712098      86980461  1.149        1226768           10.026        100.0
+digit_random_01              47.464888  75752545      86942251  1.148        1224251           10.009        100.0
+max_random_00                29.193273  46562603     124216249  2.668         223145            1.622        100.0
+max_random_01                29.082375  46408731     124241451  2.677         224772            1.632        100.0
+random_00                    12.198316  19456525      50278222  2.584          92481            1.596        100.0
+random_01                    14.246421  22726389      59132536  2.602         107662            1.596        100.0
+
+submissions/sample/many_aplusb/QgQ.cpp
+SHA-256: 246f5ab35f94483657cab7147d6263f531357580c0b543ecce9350b055788071
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (digit_random_01)        47.335003         -             -      -              -                -            -
+sum                         236.832932         -             -      -              -                -            -
+example_00                    0.772785   1218401       1751059  1.437           5401            1.381        100.0
+all_max_00                   29.400212  46915524     141423232  3.014          11568            0.065        100.0
+all_zero_00                  27.339849  43626840      70015630  1.605           7414            0.059        100.0
+digit_random_00              47.302360  75478680      84905027  1.125        1227219           11.455        100.0
+digit_random_01              47.335003  75530889      84893625  1.124        1229242           11.468        100.0
+max_random_00                29.219631  46627316     125469594  2.691         216933            1.393        100.0
+max_random_01                29.080316  46405570     125496114  2.704         216967            1.392        100.0
+random_00                    12.113612  19321838      50326552  2.605          88451            1.384        100.0
+random_01                    14.269164  22762981      59323365  2.606         104601            1.398        100.0
+
+submissions/sample/many_aplusb/chaihf.cpp
+SHA-256: 852479c11dea4d51ac845ae89ec5c47c047122bc396d653eb552a0925ff4d702
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (digit_random_00)        50.096902         -             -      -              -                -            -
+sum                         244.015233         -             -      -              -                -            -
+example_00                    0.980580   1550220       2409531  1.554           6645            1.195        100.0
+all_max_00                   28.871515  46071834     143049681  3.105          11194            0.059        100.0
+all_zero_00                  28.234578  45043050      72688891  1.614           8848            0.069        100.0
+digit_random_00              50.096902  79952976      92171595  1.153        1241123           10.265        100.0
+digit_random_01              50.083055  79907489      92193388  1.154        1239888           10.245        100.0
+max_random_00                29.511122  47092379     129402995  2.748         225857            1.349        100.0
+max_random_01                29.547358  47138709     129441863  2.746         227222            1.356        100.0
+random_00                    12.290567  19603945      52257806  2.666          92754            1.335        100.0
+random_01                    14.399556  22970198      61468702  2.676         108974            1.344        100.0
+
+submissions/sample/many_aplusb/nandhagk.cpp
+SHA-256: 45b45e805f48c0e9b494411bbc730090e5b56908de95bf3dda7a2627f82bd766
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (digit_random_01)        41.631581         -             -      -              -                -            -
+sum                         222.420802         -             -      -              -                -            -
+example_00                    0.812710   1281737       1818174  1.419           6034            1.478        100.0
+all_max_00                   33.142260  52867866     149873237  2.835          12749            0.082        100.0
+all_zero_00                   8.415265  13417497      52121894  3.885           7233            0.086        100.0
+digit_random_00              41.614105  66412554     133965571  2.017        1137751            8.725        100.0
+digit_random_01              41.631581  66440679     134007958  2.017        1132378            8.674        100.0
+max_random_00                33.597240  53593275     148645811  2.774          74531            0.489        100.0
+max_random_01                33.396026  53294148     148626302  2.789          74020            0.486        100.0
+random_00                    13.682090  21824742      59079262  2.707          33323            0.538        100.0
+random_01                    16.129525  25732229      69843897  2.714          38008            0.522        100.0
+
+submissions/sample/many_aplusb/toomer.rs
+SHA-256: 7a563c11f441b152721b10687171bec0796373b088abbcd04b882488b051953f
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (digit_random_01)        47.635792         -             -      -              -                -            -
+sum                         241.650651         -             -      -              -                -            -
+example_00                    0.944566   1492828       1996874  1.338           7062            1.573        100.0
+all_max_00                   32.172265  51341345     152816580  2.976          13431            0.084        100.0
+all_zero_00                  25.050860  39973513      75308979  1.884           9104            0.094        100.0
+digit_random_00              47.595479  75938333     102538863  1.350        1274942            9.649        100.0
+digit_random_01              47.635792  76024702     102514611  1.348        1282957            9.710        100.0
+max_random_00                30.463347  48613027     135990212  2.797         248595            1.379        100.0
+max_random_01                30.372403  48467555     135980545  2.806         249229            1.383        100.0
+random_00                    12.614162  20120993      54426242  2.705         101145            1.378        100.0
+random_01                    14.801777  23612052      64215736  2.720         119873            1.390        100.0
+
+src/sample/many_aplusb/main.cxx
+SHA-256: 50e10cd413f277fed373395252b4d6de5784a5e4228827ecab0955a8ea73a1f6
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (digit_random_01)        41.262120         -             -      -              -                -            -
+sum                         200.696105         -             -      -              -                -            -
+example_00                    0.792631   1249879       1770917  1.417           5583            1.407        100.0
+all_max_00                   27.393807  43712650     142423287  3.258          11122            0.070        100.0
+all_zero_00                   6.779784  10807777      37902291  3.507           7775            0.138        100.0
+digit_random_00              41.173505  65709584     105655400  1.608         735318            6.782        100.0
+digit_random_01              41.262120  65850357     105687203  1.605         734849            6.769        100.0
+max_random_00                28.720554  45830876     129707491  2.830         235832            1.640        100.0
+max_random_01                28.629857  45686343     129680789  2.839         235283            1.638        100.0
+random_00                    11.952380  19064435      51918686  2.723          95370            1.615        100.0
+random_01                    13.991467  22318996      61271928  2.745         113147            1.634        100.0

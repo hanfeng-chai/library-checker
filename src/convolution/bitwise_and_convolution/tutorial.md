@@ -1,21 +1,18 @@
 # 按位 AND 卷积
 
+<!-- benchmark-summary -->
+2026-10-01 Lenovo，每个程序两轮完整测例，逐例取较小 task-clock；单位 ms，包含样例。
+参考最佳（6 份）：max 56.193 (adamant), sum 199.217 (adamant)。
+
+- `main.cxx` max: 41.194 ms (-26.69%), sum: 145.387 ms (-27.02%)
+
+明细见 [bench.txt](bench.txt)，方法见 [benchmark.md](../../../tools/benchmark.md)。
+<!-- /benchmark-summary -->
 对超集做 zeta 变换，点乘后 Möbius 逆变换。时间 O(N log N)，空间 O(N)。
 
 实现使用 toy 的统一 I/O 和 Buffer。SIMD、接口约定与 Lenovo 对照见
-[`bitwise_convolution.md`](../../../docs/bitwise_convolution.md)。
-<!-- experiment-history -->
+[`bitwise_convolution.md`](../../../include/toy/bitwise_convolution.md)。
 
 ## 尝试过程与取舍
 
 本题保留超集 zeta/Möbius 这一经典算法，但把正变换、点乘、逆变换按子问题融合，减少大数组往返。底部三个维度用一个 AVX2 向量处理，只转换 B 的 Montgomery 表示。现存完整记录中，首批实现已双项超过五份参考，保留这一实现。
-
-## 阶段评测记录
-
-下表保留各阶段的真实第 0 次观测，单位 ms，max/sum 包含样例。早期诊断即使有多轮，也不逐例挑最快值；不同批次应与各自参考比较。参考栏分别取同批参考提交的最小 max、sum，可能来自不同人。全量且包含五份参考时才判断本轮门槛；子集测量只作诊断。
-
-| 批次 / 方案 | 覆盖 | max | sum | 参考 max / sum | 本轮结果 |
-|---|---|---:|---:|---:|---|
-| bitwise-20260930/round1 / 当时主解 | 全量 13 例 | 40.605 | 142.713 | 55.712 / 197.568（5 份） | 双项低于参考 |
-
-批次名对应当时的实验目录；表格本身保存了主要数据，不依赖未提交的 build/、bench/ 才能阅读。最终接口与正确性约束见上文所链的库文档；运行库更新与命名空间整理的验证口径见 [评测审计](../../../docs/measurement_audit.md)。

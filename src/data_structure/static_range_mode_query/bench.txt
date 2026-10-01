@@ -1,0 +1,119 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 11, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                154.207782     671.691333
+Rohan_Kapri                              176.130814     705.623238
+chaihf                                   180.430322     707.434746
+nandhagk                                  43.857064     122.204869
+oldyan                                   171.506975     617.300934
+main                                      38.895959     113.681723
+
+submissions/data_structure/static_range_mode_query/Anonymous.cpp
+SHA-256: c9952000c26985e6c140c34d76d486f7c7ec34f30591851d4ebef88a8b5d42cb
+case             task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_05)       154.207782          -             -      -              -                -            -
+sum                   671.691333          -             -      -              -                -            -
+example_00              0.877853    1385880       1873653  1.352           5583            1.318        100.0
+random_00              48.770617   77835490     124825300  1.604         995251            6.365        100.0
+random_01              40.122417   64031218     181975292  2.842         538717            2.782        100.0
+random_02              71.134935  113501982     258031107  2.273        1170516            4.149        100.0
+random_03             145.676416  232502761     582124168  2.504        1314464            2.156        100.0
+random_04             133.820993  213577936     580781264  2.719        1709792            2.802        100.0
+random_05             154.207782  246129233     583276132  2.370        2013228            3.272        100.0
+small_n_00             19.145569   30546393      53570100  1.754          15955            0.173        100.0
+small_n_01             21.959586   35039316      52372003  1.495         146221            1.588        100.0
+small_n_02             24.691986   39388074      51107470  1.298         298572            3.260        100.0
+small_q_00             11.283179   17996027      24032669  1.335         452099           10.539        100.0
+
+submissions/data_structure/static_range_mode_query/Rohan_Kapri.cpp
+SHA-256: 5592c4b8674024c4ee60dd9cc92422b9aece8ec15895e6d2ac5f19f9d8d58023
+case             task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_04)       176.130814          -             -      -              -                -            -
+sum                   705.623238          -             -      -              -                -            -
+example_00              1.018261    1610416       2458065  1.526           6747            1.180        100.0
+random_00              29.107617   46435914      55300875  1.191         881199            7.718        100.0
+random_01              54.246765   86565289     200325742  2.314        1169670            2.913        100.0
+random_02              63.261282  100967111     237387061  2.351         934934            2.091        100.0
+random_03             156.744447  250160260     217222295  0.868        5983784           13.619        100.0
+random_04             176.130814  281123846     626872456  2.230        3107254            2.549        100.0
+random_05             160.486070  256149976     547666468  2.138        1860808            1.830        100.0
+small_n_00              4.214808    6711723      16069883  2.394           7089            0.238        100.0
+small_n_01              4.189756    6672842      16050902  2.405           6967            0.234        100.0
+small_n_02              5.868191    9352440      15636749  1.672          57234            1.865        100.0
+small_q_00             50.355227   80366600     232064446  2.888        1109940            2.319        100.0
+
+submissions/data_structure/static_range_mode_query/chaihf.cpp
+SHA-256: ffea55b082d645f446e60622aa1b415154efb9f8f19edd0b6b68017ef0ac3c77
+case             task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_04)       180.430322          -             -      -              -                -            -
+sum                   707.434746          -             -      -              -                -            -
+example_00              1.045439    1653659       2418369  1.462           6686            1.199        100.0
+random_00              29.021332   46310462      55263173  1.193         880615            7.720        100.0
+random_01              54.035183   86240232     200284112  2.322        1172411            2.920        100.0
+random_02              63.588436  101488954     237412478  2.339         937016            2.095        100.0
+random_03             156.778388  250223917     217168074  0.868        5982707           13.621        100.0
+random_04             180.430322  287968641     626869250  2.177        3111405            2.553        100.0
+random_05             157.933420  252074841     547725100  2.173        1864191            1.834        100.0
+small_n_00              4.225858    6730193      16098554  2.392           7146            0.239        100.0
+small_n_01              4.190757    6673994      16022985  2.401           6940            0.234        100.0
+small_n_02              5.931465    9452783      15706808  1.662          57253            1.852        100.0
+small_q_00             50.254146   80191328     232061455  2.894        1110097            2.319        100.0
+
+submissions/data_structure/static_range_mode_query/nandhagk.cpp
+SHA-256: 8587b2bfb53d687f8ad74a2f9f350059ce56103edf3e9eb8c7928c4674363164
+case             task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_04)        43.857064         -             -      -              -                -            -
+sum                   122.204869         -             -      -              -                -            -
+example_00              1.128059   1784738       2479344  1.389           7495            1.309        100.0
+random_00               4.706282   7496912      17402907  2.321          16917            0.604        100.0
+random_01              13.027802  20780222      36251169  1.745          89240            1.740        100.0
+random_02              12.235795  19517219      28486509  1.460         147901            2.647        100.0
+random_03              10.185920  16244666      33701841  2.075          61547            1.133        100.0
+random_04              43.857064  69978431     126861120  1.813         377030            2.553        100.0
+random_05              22.249228  35484425      48016079  1.353         262864            2.811        100.0
+small_n_00              3.366639   5359334      13520910  2.523          18674            0.855        100.0
+small_n_01              3.984479   6344360      13610369  2.145          65400            2.899        100.0
+small_n_02              5.257794   8377304      14018106  1.673         144699            6.423        100.0
+small_q_00              2.205807   3505318       6174037  1.761          18679            1.317        100.0
+
+submissions/data_structure/static_range_mode_query/oldyan.cpp
+SHA-256: 7aa942c6ca9e5227ab6071f2465778ef729da156397bd7beedb414371c1632ac
+case             task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_04)       171.506975          -             -      -              -                -            -
+sum                   617.300934          -             -      -              -                -            -
+example_00              0.852758    1346259       1857155  1.379           5437            1.300        100.0
+random_00              23.679216   37783255      58830285  1.557         540492            5.086        100.0
+random_01              52.849841   84347727     221285893  2.623         798990            2.809        100.0
+random_02              69.103503  110259262     268609752  2.436         893631            2.698        100.0
+random_03              63.078236  100674620     236244211  2.347         733594            2.353        100.0
+random_04             171.506975  273734044     661184018  2.415        2581339            2.583        100.0
+random_05             164.313600  262248826     597199068  2.277        1776625            2.189        100.0
+small_n_00              5.112802    8145130      21458960  2.635           7225            0.197        100.0
+small_n_01              7.186078   11455673      21240645  1.854          79146            2.184        100.0
+small_n_02              7.277219   11599815      20643918  1.780          91463            2.535        100.0
+small_q_00             52.340706   83535843     285549411  3.418         533235            2.127        100.0
+
+src/data_structure/static_range_mode_query/main.cxx
+SHA-256: 8e986e75c4b3c13d20b6401cf4636b042e63080c0ead85acb53eb93cc9e56ee2
+case             task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_04)        38.895959         -             -      -              -                -            -
+sum                   113.681723         -             -      -              -                -            -
+example_00              0.862915   1362073       1843759  1.354           5660            1.372        100.0
+random_00               4.660121   7423799      13456896  1.813          29105            1.642        100.0
+random_01              10.356115  16516673      29589836  1.792          80982            2.008        100.0
+random_02              13.008356  20749974      27154868  1.309         130977            2.975        100.0
+random_03              10.932954  17436515      27143678  1.557          83456            2.248        100.0
+random_04              38.895959  62074497     112299264  1.809         334775            2.716        100.0
+random_05              22.900002  36540574      46549234  1.274         229039            3.062        100.0
+small_n_00              3.309401   5267642      12901015  2.449           5967            0.446        100.0
+small_n_01              3.968462   6320005      13380124  2.117           6015            0.393        100.0
+small_n_02              3.977337   6333341      13362332  2.110           6113            0.401        100.0
+small_q_00              0.810101   1277668       1755102  1.374           5334            1.362        100.0

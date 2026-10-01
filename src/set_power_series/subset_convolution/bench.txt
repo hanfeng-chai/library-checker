@@ -1,0 +1,119 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 11, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Nyaan                                    741.093737    3683.779210
+Qwerty1232                               317.345131    1561.957198
+Rohan_Kapri                              306.100568    1515.429671
+adamant                                  305.965965    1516.345549
+yoshi_likes_e4                           609.041529    6186.367423
+main                                     266.891737    1324.617299
+
+submissions/set_power_series/subset_convolution/Nyaan.cpp
+SHA-256: dc39b7a42ca185a75790cc47f8bfc7abecfbfaa2e223696218b3c8ed4b6c5dde
+case                 task-clock (ms)      cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)       741.093737           -             -      -              -                -            -
+sum                      3683.779210           -             -      -              -                -            -
+example_00                  1.037238     1640141       2518042  1.535           8121            1.409        100.0
+hack01_00                 725.209219  1157326268    2570711226  2.221         458881            0.240        100.0
+max_random_00             741.093737  1182662523    2637328911  2.230         728640            0.365        100.0
+max_random_01             737.533352  1177010927    2638069496  2.241         698274            0.350        100.0
+max_random_02             735.376748  1173559488    2631092705  2.242         705702            0.356        100.0
+random_00                 738.163066  1178010029    2629450326  2.232         689875            0.349        100.0
+random_01                   0.951917     1503919       2478286  1.648           6707            1.169        100.0
+random_02                   1.438774     2279926       3969694  1.741           8543            1.192        100.0
+small_00                    0.993540     1570123       2416056  1.539           6563            1.181        100.0
+small_01                    0.963508     1523274       2453732  1.611           6622            1.159        100.0
+small_02                    1.018111     1610058       2431936  1.510           6657            1.187        100.0
+
+submissions/set_power_series/subset_convolution/Qwerty1232.cpp
+SHA-256: f3e54819a494acaf35e06074bb90e1648abfc1d644dc313dd54e57800c9c15cf
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)       317.345131          -             -      -              -                -            -
+sum                      1561.957198          -             -      -              -                -            -
+example_00                  1.122924    1776402       2632967  1.482           8224            1.351        100.0
+hack01_00                 297.253500  474403829    1290809227  2.721         220715            0.230        100.0
+max_random_00             312.199360  498316069    1373886927  2.757         425858            0.408        100.0
+max_random_01             313.014317  499605324    1373860366  2.750         439576            0.421        100.0
+max_random_02             317.345131  506368191    1374950971  2.715         667702            0.637        100.0
+random_00                 314.928736  502665214    1373832256  2.733         428080            0.410        100.0
+random_01                   1.180171    1868982       2658489  1.422           8180            1.339        100.0
+random_02                   1.651583    2620695       4503527  1.718          10416            1.084        100.0
+small_00                    1.083482    1713641       2596943  1.515           8044            1.346        100.0
+small_01                    1.086974    1719633       2637155  1.534           7995            1.303        100.0
+small_02                    1.091020    1725864       2666711  1.545           8320            1.343        100.0
+
+submissions/set_power_series/subset_convolution/Rohan_Kapri.cpp
+SHA-256: ec78fbe886c596d7b04aa6d7fbb92bb1d85f9f8d277d0050f133bd3c5fb4a5d2
+case             task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_00)       306.100568          -             -      -              -                -            -
+sum                  1515.429671          -             -      -              -                -            -
+example_00              1.155079    1828843       2594470  1.419           7817            1.313        100.0
+hack01_00             289.249648  461148335    1080137985  2.342         176236            0.293        100.0
+max_random_00         305.847282  487627328    1155513649  2.370         380599            0.554        100.0
+max_random_01         303.672371  484163822    1154804984  2.385         379377            0.553        100.0
+max_random_02         303.755842  484316661    1155334358  2.385         381097            0.555        100.0
+random_00             306.100568  488009923    1155923034  2.369         381601            0.555        100.0
+random_01               1.086012    1718515       2669417  1.553           8050            1.306        100.0
+random_02               1.297889    2055660       3476336  1.691           8947            1.319        100.0
+small_00                1.077343    1703982       2634236  1.546           7902            1.296        100.0
+small_01                1.087955    1721562       2607954  1.515           7919            1.320        100.0
+small_02                1.099682    1739713       2607356  1.499           7872            1.312        100.0
+
+submissions/set_power_series/subset_convolution/adamant.cpp
+SHA-256: ec78fbe886c596d7b04aa6d7fbb92bb1d85f9f8d277d0050f133bd3c5fb4a5d2
+case             task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_00)       305.965965          -             -      -              -                -            -
+sum                  1516.345549          -             -      -              -                -            -
+example_00              1.105214    1748038       2605198  1.490           7907            1.319        100.0
+hack01_00             289.079459  460879073    1080427347  2.344         178599            0.297        100.0
+max_random_00         304.828043  485992640    1155247999  2.377         380913            0.555        100.0
+max_random_01         305.267877  486704722    1154738842  2.373         381808            0.557        100.0
+max_random_02         304.401912  485348071    1155218126  2.380         379973            0.554        100.0
+random_00             305.965965  487890273    1155432868  2.368         380371            0.554        100.0
+random_01               1.124503    1779440       2691382  1.512           8173            1.312        100.0
+random_02               1.303391    2065408       3482377  1.686           9140            1.345        100.0
+small_00                1.084032    1714279       2598419  1.516           8065            1.352        100.0
+small_01                1.089584    1724289       2597552  1.506           7808            1.305        100.0
+small_02                1.095569    1733332       2646720  1.527           7931            1.291        100.0
+
+submissions/set_power_series/subset_convolution/yoshi_likes_e4.cpp
+SHA-256: 608aecab467f535ab321ca81f37a49e28a95161c4f006680621f7f28e7115ee1
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)       609.041529          -             -      -              -                -            -
+sum                      6186.367423          -             -      -              -                -            -
+example_00                530.915955  847093871    1772029422  2.092         333443            0.343        100.0
+hack01_00                 574.836404  917125812    1976670257  2.155         492833            0.407        100.0
+max_random_00             594.810823  949035849    2059839012  2.170         749674            0.577        100.0
+max_random_01             596.470477  951666122    2058466857  2.163         755116            0.583        100.0
+max_random_02             609.041529  971720559    2061429213  2.121         760645            0.584        100.0
+random_00                 602.320106  960997464    2062009598  2.146         753055            0.578        100.0
+random_01                 538.524785  859235404    1770746351  2.061         340860            0.352        100.0
+random_02                 546.423624  871905961    1770924457  2.031         341905            0.353        100.0
+small_00                  531.114213  847420190    1772407013  2.092         333565            0.343        100.0
+small_01                  530.953054  847136411    1771357385  2.091         331561            0.342        100.0
+small_02                  530.956453  847106382    1772117991  2.092         336276            0.346        100.0
+
+src/set_power_series/subset_convolution/main.cxx
+SHA-256: a31f979bd8fb1d673443b5e481db25013132bb86b2d4af315a0fd64e9a32691d
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)       266.891737          -             -      -              -                -            -
+sum                      1324.617299          -             -      -              -                -            -
+example_00                  0.817698    1289566       1742817  1.351           5409            1.398        100.0
+hack01_00                 263.604802  420605480    1058941034  2.518         167032            0.185        100.0
+max_random_00             266.891737  425795522    1028983553  2.417         365999            0.443        100.0
+max_random_01             262.128710  418234081    1026786886  2.455         363481            0.443        100.0
+max_random_02             263.909460  421057812    1027041272  2.439         416725            0.507        100.0
+random_00                 263.194659  419942198    1028145286  2.448         363214            0.441        100.0
+random_01                   0.800766    1263096       1804321  1.428           5389            1.324        100.0
+random_02                   0.909309    1436330       2237919  1.558           6428            1.431        100.0
+small_00                    0.779417    1229060       1786717  1.454           5276            1.306        100.0
+small_01                    0.794780    1252971       1767386  1.411           5625            1.428        100.0
+small_02                    0.785961    1238472       1797604  1.451           5395            1.328        100.0

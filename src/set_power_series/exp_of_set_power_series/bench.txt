@@ -1,0 +1,131 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 13, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                260.809922    1120.988373
+Rohan_Kapri                              260.612315    1121.331683
+adamant                                  260.227569    1119.236932
+hos                                      934.325264    3986.597413
+sansen                                  1164.616484    4884.057219
+main                                     217.020922     920.953752
+
+submissions/set_power_series/exp_of_set_power_series/Anonymous.cpp
+SHA-256: 04c13345fbb24d2e735026e0c1cd83e8fff4535e93488fc7c601c7b39d16d98d
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)       260.809922          -             -      -              -                -            -
+sum                      1120.988373          -             -      -              -                -            -
+example_00                  1.159569    1835490       2653946  1.446           8129            1.325        100.0
+max_random_00             260.809922  415911797     985721233  2.370         269655            0.452        100.0
+max_random_01             258.932450  412760924     986234220  2.389         270614            0.453        100.0
+max_random_02             260.132119  414837963     985747410  2.376         270048            0.453        100.0
+n_01_00                     1.051159    1662937       2556436  1.537           7646            1.298        100.0
+n_01_01                     1.088441    1722344       2609116  1.515           7927            1.320        100.0
+overflow_00               254.939864  406522676     967015421  2.379         220175            0.383        100.0
+random_00                   4.430236    7055732      15210516  2.156          17239            1.109        100.0
+random_01                  59.766801   95367490     231861035  2.431          80383            0.483        100.0
+random_02                  15.046489   24003549      55530288  2.313          30654            0.711        100.0
+small_random_00             1.184455    1874980       2768966  1.477           8651            1.361        100.0
+small_random_01             1.254847    1987703       2970676  1.495           9258            1.388        100.0
+small_random_02             1.192021    1886617       2714383  1.439           8409            1.342        100.0
+
+submissions/set_power_series/exp_of_set_power_series/Rohan_Kapri.cpp
+SHA-256: 04c13345fbb24d2e735026e0c1cd83e8fff4535e93488fc7c601c7b39d16d98d
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)       260.612315          -             -      -              -                -            -
+sum                      1121.331683          -             -      -              -                -            -
+example_00                  1.140284    1804916       2647731  1.467           8216            1.347        100.0
+max_random_00             260.612315  415670714     985703867  2.371         269938            0.453        100.0
+max_random_01             260.230495  414861730     985902436  2.376         271884            0.456        100.0
+max_random_02             259.104873  413040617     986052909  2.387         269329            0.451        100.0
+n_01_00                     1.078976    1706798       2590458  1.518           7743            1.294        100.0
+n_01_01                     1.107373    1752877       2622959  1.496           8007            1.322        100.0
+overflow_00               255.255143  407041505     966939390  2.376         220037            0.383        100.0
+random_00                   4.424083    7046434      15200960  2.157          17278            1.115        100.0
+random_01                  59.736596   95329022     231850232  2.432          79918            0.480        100.0
+random_02                  15.033857   23983557      55467829  2.313          30598            0.711        100.0
+small_random_00             1.196699    1895118       2779969  1.467           8624            1.347        100.0
+small_random_01             1.265311    2004791       2967503  1.480           9238            1.386        100.0
+small_random_02             1.145678    1813630       2689703  1.483           8347            1.352        100.0
+
+submissions/set_power_series/exp_of_set_power_series/adamant.cpp
+SHA-256: 04c13345fbb24d2e735026e0c1cd83e8fff4535e93488fc7c601c7b39d16d98d
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)       260.227569          -             -      -              -                -            -
+sum                      1119.236932          -             -      -              -                -            -
+example_00                  1.145903    1813578       2641737  1.457           8222            1.351        100.0
+max_random_00             258.642281  412447731     985912446  2.390         269808            0.452        100.0
+max_random_01             259.080302  413079479     986312363  2.388         269901            0.452        100.0
+max_random_02             260.227569  414999731     985950920  2.376         269390            0.452        100.0
+n_01_00                     1.068286    1689291       2574351  1.524           7621            1.285        100.0
+n_01_01                     1.080978    1710373       2605060  1.523           7970            1.329        100.0
+overflow_00               255.185183  406853846     966930664  2.377         220235            0.383        100.0
+random_00                   4.429865    7034881      15165417  2.156          17493            1.134        100.0
+random_01                  59.738172   95321463     231837348  2.432          80698            0.485        100.0
+random_02                  15.071155   24042259      55524419  2.309          30525            0.708        100.0
+small_random_00             1.159367    1835264       2762457  1.505           8592            1.354        100.0
+small_random_01             1.259797    1995728       2959457  1.483           9215            1.390        100.0
+small_random_02             1.148074    1817711       2706477  1.489           8528            1.369        100.0
+
+submissions/set_power_series/exp_of_set_power_series/hos.cpp
+SHA-256: f975cac97c5f397a89fcf32124698d0738e1709bc72d76857f8de35c5c5ec7c4
+case                 task-clock (ms)      cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)       934.325264           -             -      -              -                -            -
+sum                      3986.597413           -             -      -              -                -            -
+example_00                  1.005838     1590823       2457407  1.545           6915            1.217        100.0
+max_random_00             929.774619  1482620149    4521886818  3.050         949451            0.147        100.0
+max_random_01             930.485845  1483422272    4523276695  3.049         946007            0.147        100.0
+max_random_02             934.325264  1489701030    4517800473  3.033         951184            0.148        100.0
+n_01_00                     1.007744     1592342       2441285  1.533           6817            1.207        100.0
+n_01_01                     1.009127     1594618       2431600  1.525           6775            1.208        100.0
+overflow_00               917.801367  1463480909    4423580415  3.023         907913            0.146        100.0
+random_00                  11.464187    18284727      55725014  3.048          31394            0.348        100.0
+random_01                 209.314132   333732062    1035249242  3.102         245876            0.161        100.0
+random_02                  47.176189    75292449     237898144  3.160          78734            0.216        100.0
+small_random_00             1.055489     1669339       2583202  1.547           7397            1.250        100.0
+small_random_01             1.154388     1826354       3034751  1.662           8985            1.345        100.0
+small_random_02             1.023224     1616995       2517352  1.557           7158            1.234        100.0
+
+submissions/set_power_series/exp_of_set_power_series/sansen.cpp
+SHA-256: 6d661bbb5d3947abe15e8a07c6021c2fdd9d4e84bf4e6ca1aa1a1e03671206dd
+case                 task-clock (ms)      cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)      1164.616484           -             -      -              -                -            -
+sum                      4884.057219           -             -      -              -                -            -
+example_00                  1.044663     1651982       2471053  1.496           6776            1.180        100.0
+max_random_00            1164.616484  1856903215    3489202480  1.879       11473934            2.187        100.0
+max_random_01            1156.923282  1844931791    3487329875  1.890       11186948            2.135        100.0
+max_random_02            1161.605712  1852319718    3487890484  1.883       11424976            2.179        100.0
+n_01_00                     0.968378     1530639       2420423  1.581           6564            1.176        100.0
+n_01_01                     0.958299     1514434       2419411  1.598           6553            1.174        100.0
+overflow_00              1078.688336  1720409763    3388728661  1.970        8565731            1.701        100.0
+random_00                  12.464247    19868580      41982257  2.113         131070            1.906        100.0
+random_01                 251.049855   400349419     785237197  1.961        2490846            2.069        100.0
+random_02                  52.616746    83948678     177709493  2.117         499232            1.782        100.0
+small_random_00             1.021007     1614482       2531906  1.568           7043            1.219        100.0
+small_random_01             1.106255     1750188       2868958  1.639           8285            1.308        100.0
+small_random_02             0.993955     1571569       2476575  1.576           6963            1.225        100.0
+
+src/set_power_series/exp_of_set_power_series/main.cxx
+SHA-256: d300b0c534e933ba058c1b6d407f3661230f60686acf6a45f3bc5b4f9f1f1b91
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)       217.020922          -             -      -              -                -            -
+sum                       920.953752          -             -      -              -                -            -
+example_00                  0.825451    1300498       1760446  1.354           5484            1.397        100.0
+max_random_00             217.020922  346070304     844658291  2.441         256736            0.377        100.0
+max_random_01             213.330089  340162519     845170321  2.485         250464            0.367        100.0
+max_random_02             214.112243  341419255     844195238  2.473         252416            0.371        100.0
+n_01_00                     0.833656    1315591       1775099  1.349           5530            1.391        100.0
+n_01_01                     0.806062    1269999       1775740  1.398           5577            1.402        100.0
+overflow_00               216.714979  345572811     852738902  2.468         202377            0.288        100.0
+random_00                   2.785570    4430648       9957238  2.247          12279            1.039        100.0
+random_01                  41.441123   66051871     180852174  2.738          73238            0.475        100.0
+random_02                  10.617557   16932731      42296416  2.498          24300            0.565        100.0
+small_random_00             0.828622    1307430       1776821  1.359           5643            1.422        100.0
+small_random_01             0.810944    1278215       1845817  1.444           5962            1.482        100.0
+small_random_02             0.826534    1302867       1780235  1.366           5437            1.365        100.0

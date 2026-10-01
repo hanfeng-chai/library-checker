@@ -1,22 +1,19 @@
 # 多项式前缀和
 
+<!-- benchmark-summary -->
+2026-10-01 Lenovo，每个程序两轮完整测例，逐例取较小 task-clock；单位 ms，包含样例。
+参考最佳（6 份）：max 335.945 (adamant), sum 1449.538 (kk2a)。
+
+- `main.cxx` max: 84.083 ms (-74.97%), sum: 359.760 ms (-75.18%)
+
+明细见 [bench.txt](bench.txt)，方法见 [benchmark.md](../../../tools/benchmark.md)。
+<!-- /benchmark-summary -->
 求 g，使 g(0)=0 且 g(x+1)-g(x)=f(x)，于是 g(k) 为 f(0)..f(k-1) 的和。
 先求 x/(exp(x)-1) 的系数，得到 Bernoulli 数的阶乘缩放形式，
 再用一次阶乘缩放卷积恢复 g 的各项。
 
-实现与次数约束见 [polynomial](../../../docs/polynomial.md)。
-<!-- experiment-history -->
+实现与次数约束见 [polynomial](../../../include/toy/polynomial.md)。
 
 ## 尝试过程与取舍
 
 使用 Bernoulli 数的阶乘缩放形式，将离散前缀和转换成一次卷积。复用 exp、求逆和卷积接口，重点验证 g(0)=0 与 g(x+1)-g(x)=f(x)，首批完整比较即达标。
-
-## 阶段评测记录
-
-下表保留各阶段的真实第 0 次观测，单位 ms，max/sum 包含样例。早期诊断即使有多轮，也不逐例挑最快值；不同批次应与各自参考比较。参考栏分别取同批参考提交的最小 max、sum，可能来自不同人。全量且包含五份参考时才判断本轮门槛；子集测量只作诊断。
-
-| 批次 / 方案 | 覆盖 | max | sum | 参考 max / sum | 本轮结果 |
-|---|---|---:|---:|---:|---|
-| poly-tune-20260930/round1 / 当时主解 | 全量 26 例 | 84.208 | 360.226 | 335.208 / 1467.671（5 份） | 双项低于参考 |
-
-批次名对应当时的实验目录；表格本身保存了主要数据，不依赖未提交的 build/、bench/ 才能阅读。最终接口与正确性约束见上文所链的库文档；运行库更新与命名空间整理的验证口径见 [评测审计](../../../docs/measurement_audit.md)。

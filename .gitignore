@@ -2,3 +2,4 @@
 /check
 /bench
 /bundle
+__pycache__/

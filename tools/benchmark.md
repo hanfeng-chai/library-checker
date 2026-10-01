@@ -1,77 +1,106 @@
-# Benchmark 要点
+# Benchmark
 
-使用独立、空闲的评测机。同批比较保持机器、编译参数、输入和系统配置一致。
-默认不绑核、不预热，每个测例只运行一次；沿用外部设置的 CPU 亲和性。
+使用独立、空闲的评测机；同批保持机器、编译参数、输入和系统配置一致。
+不绑核、不预热。编译、正确性检查、数据同步全部在计时前完成。
 
-验证、评测大栈提交前，可在相应 shell 执行 `ulimit -Ss "$(ulimit -Hs)"`，
-将栈软限制提高到当前硬上限（Lenovo 为 256 MiB）。
-例如 `log_of_formal_power_series/cmk666` 使用约 10 MiB 的栈，会超过常见的
-8 MiB 默认限制。资源限制由调用端设置，Makefile 不代为修改。
+## 全量评测命令
 
-评测前完成编译、生成数据、正确性检查和文件同步，再运行环境检查：
+以下命令在本机仓库根目录执行。`master.local` 用 `-j40` 编译和检查，
+`lenovo.local` 专门评测；两机均使用账号 chai。已完成题目由
+`src/*/*/main.cxx` 确定，包含其全部 `.cxx` 和本地下载提交；自建 checksum
+没有 OJ 提交。需要预先生成这些题目的正式数据。
 
-```sh
-python3 tools/bench_env.py
+```bash
+batch=full-$(date +%Y%m%d-%H%M%S)
+stage=bench/$batch/stage
+compile_root=/home/chai/.cache/lc-$batch-build
+mkdir -p "$stage"
+
+# 当前源码、参数、官方输入/答案和 checker 的传输清单。
+python3 tools/bench_suite.py files > "$stage/files.txt"
+git rev-parse HEAD > "$stage/source-commit"
+ssh -o BatchMode=yes chai@master.local "mkdir -p '$compile_root'"
+rsync -a --files-from="$stage/files.txt" ./ "chai@master.local:$compile_root/"
+rsync -a "$stage/source-commit" "chai@master.local:$compile_root/.source-commit"
+
+# 强制重编译，清除 AC 标记，重新检查；源码、参数、SHA-256 随批次保存。
+ssh -o BatchMode=yes chai@master.local \
+  "cd '$compile_root' && python3 tools/bench_suite.py prepare bench/stage -j 40"
+
+# 取回 binary 和清单；输入沿用本机正式数据，核对与 master 检查的输入一致。
+rsync -a --exclude='cases' "chai@master.local:$compile_root/bench/stage/" "$stage/"
+rsync -a "$stage/bin/" build/
+python3 tools/bench_suite.py inputs "$stage"
+
+# 全部准备完成后，将 binary、输入和脚本同步到 Lenovo。
+ssh -o BatchMode=yes chai@lenovo.local "mkdir -p '/home/chai/.cache/lc-$batch'"
+rsync -a "$stage/" "chai@lenovo.local:/home/chai/.cache/lc-$batch/"
+
+# 单个 SSH 串行执行两轮完整评测；保持此连接，等待命令自行结束。
+ssh -o BatchMode=yes -o ServerAliveInterval=0 -o TCPKeepAlive=no chai@lenovo.local \
+  "trap '' HUP; exec python3 '/home/chai/.cache/lc-$batch/bench_suite.py' run \
+  '/home/chai/.cache/lc-$batch' > '/home/chai/.cache/lc-$batch/environment.log' 2>&1"
+
+# 上一个命令正常结束后，再取回结果、生成报告。
+rsync -a --include='result.json' --include='round-*.json' \
+  --include='environment.log' --exclude='*' \
+  "chai@lenovo.local:/home/chai/.cache/lc-$batch/" "$stage/"
+python3 tools/bench_suite.py report "$stage"
 ```
 
-必须全部为 `OK`、退出码为 0：允许使用的 CPU 均为 performance governor，
-Turbo（支持 Intel/AMD 接口）、ASLR、NMI watchdog、SMT 均关闭。
-检查脚本只读配置；缺失接口显示 `UNKNOWN`，不能算通过。评测机还需安装 perf 并有计数权限。
+运行脚本先将栈软限制提高到硬上限，执行 `bench_env.py`，核对所有文件的 SHA-256，
+把程序复制到 `/dev/shm`，同步磁盘后空闲 15 秒。输入逐测例暂存到 `/dev/shm`，
+复制不计入 perf；同一输入的所有程序串行执行，stdout 丢弃。
+测例按 `example*` 优先、其余字母序排列；第一轮完整结束后才开始第二轮。
 
-确认准备完成、机器空闲后，在仓库根目录执行：
+每个 binary、每个测例选两轮中较小的 task-clock；cycles、instructions 等也取自
+这次运行。随后计算 max、sum，包含样例。这是两次观测的较小值，不是平均性能或
+统计置信区间；原始两轮保存于 `round-1.json`、`round-2.json`，方便检查波动。
 
-```sh
-make bench-many_aplusb-chaihf  # 单个解答
-make bench-many_aplusb        # 整题，二选一执行
-# make bench                 # 全部题目
+生成的 `src/<分类>/<题目>/bench.txt` 包含所有解答的汇总和逐例计数器；
+`tutorial.md` 顶部列自有解答的 max、sum，以及相对全部已测参考最佳值的百分比。
+参考 max、sum 分别取最小值，可能来自不同提交；负百分比表示更快。
+发布前核对当前源码和 binary 与被测文件一致，缺失任一轮则拒绝生成报告。
+
+## 环境与独占
+
+`bench_env.py` 必须全部为 `OK`、退出码为 0：允许使用的 CPU 均为 performance
+governor，Turbo/boost、ASLR、NMI watchdog、SMT 均关闭。缺失接口为 `UNKNOWN`，
+不能算通过。评测机需安装 perf 并允许读取硬件计数器。
+单独检查环境的完整命令如下；应在准备阶段执行：
+
+```bash
+rsync -a tools/bench_env.py chai@lenovo.local:/home/chai/.cache/lc-bench-env.py
+ssh -o BatchMode=yes chai@lenovo.local 'python3 /home/chai/.cache/lc-bench-env.py'
+ssh -o BatchMode=yes chai@lenovo.local 'cat /proc/sys/kernel/perf_event_paranoid'
 ```
 
-**评测期间不能在评测机上做其他操作。** 不编译、不测试、不同步或编辑文件，
-不另开 SSH 查询状态或运行监控，也不能另起 make/perf。全部结束后再查看、取回结果。
-单次 make 的 bench 会串行执行，但没有进程间锁，全机独占由使用者保证。
+**评测期间不能在评测机上做其他操作。** 不另起 make/perf，不编译、不测试、
+不同步、不编辑，不另开 SSH 查看 ps/top/日志，也不运行监控。
+只等待本机已有的 SSH 进程；本机自身可以继续工作。没有进程间锁，由使用者保证全机独占。
 
-binary 和输入暂存到 `/dev/shm`，复制不计入 perf，程序输出丢弃。
-测例按 `example*` 优先、组内字母序执行。结果保存在 `bench/<分类>/<题目>/<解答>.txt`。
-`task-clock` 是 CPU 时间；`max`、`sum` 仅汇总该指标，包含 example。
-IPC 为 instructions/cycles，running 为各事件计数覆盖率的最小值，不是稳定性评分。
+命令中的 `BatchMode=yes` 禁止交互；`ServerAliveInterval=0` 和 `TCPKeepAlive=no`
+关闭客户端两层保活，减少定时网络活动。这不控制服务端保活，也没有单独证明可观提速。
+前者默认就是 0，显式指定可覆盖本地配置。参见 [OpenSSH 文档](https://man.openbsd.org/ssh_config#ServerAliveInterval)。
 
-重点比较 **50 ms 以上的大用例**。之前静默实测的大用例波动约为 0.1%–1%，
-这只是部分用例的相对标准差，不是所有题目的误差保证。输出六位小数不代表相应的真实精度；
-小用例易受启动开销影响，单次结果不足以证明约 1% 或更小的差距是有效优化。
+SSH 连接中断时，不立即另起评测。忽略 HUP 的任务可能仍在运行，应等原批次预计
+结束后再登录确认；结果缺失、覆盖不完整或无法确认机器空闲的批次不能发布。
 
-本轮大整数乘法还观察到较大的偶发波动，补充诊断见
-[评测审计](../docs/measurement_audit.md)。内存分配与缺页的内核时间也计入
-`task-clock`；保留原始慢次，先区分用户态与内核态开销，再判断是否是代码回退。
+## 单个程序与精度
 
-结果会被缓存。更换机器或改变亲和性、内核参数、资源限制等环境后，先删除对应报告再评测；
-Makefile 不会自动识别这些环境变化。
+已有数据下，`make bench-many_aplusb-main` 测一个程序，`make bench-many_aplusb`
+测整题；仍是每例一次并缓存到 `bench/<分类>/<题目>/<解答>.txt`。
+即使 `make -j`，同一次 make 的 bench 也串行执行。更换环境后须删除旧报告；
+环境变化不会自动让缓存失效。全量两轮流程使用上面的独立批次，不复用这些报告。
 
-## 批量实验
+主要看 **50 ms 以上的大用例**。task-clock 是用户态加内核态 CPU 时间，包含缺页、
+内存分配等成本；IPC = instructions/cycles，running 是各计数器覆盖率的最小值。
+输出六位小数不代表微秒级精度。既往静默测试的部分大用例波动约为 0.1%–1%，
+不是所有题目的误差保证；两个较小值接近时，不能凭小数位断言优化有效。
 
-一次比较应包含当前方案、候选方案和五份参考提交。先在本机完成 GCC/Clang
-编译、正式测例检查，再把全部 binary、输入、清单和脚本同步到评测机。
-整批只开一个 SSH，按固定的题目、测例、程序顺序串行执行。数据复制和校验结束后
-留约 15 秒空闲时间；计时区间里只运行 perf 和目标程序，结果暂存在内存或 tmpfs。
+## 跟进优化时复用结果
 
-等待任务时，只轮询本机现有的 SSH 进程，不再登录评测机查看 ps、top 或日志。
-本机可以继续写代码、编译和检查，但不得再向评测机传文件或发命令。
-所有测量结束后才生成报告、同步结果。热点采样应单独运行，采样耗时不能混入
-正式 benchmark；报告和反汇编也在采样结束后生成。
-
-保留清单、编译参数、二进制及输入的 SHA-256、环境检查输出和原始 perf 记录。
-比较单次完整批次中的 max、sum，不从多轮中挑每例最快值拼成报告。采用候选后，
-核对实际生产 binary 与被测候选一致，避免源码已变、报告仍指向旧产物。
-本轮 glibc 更新按影响较小处理，并注明环境变化，不把这类变化当作代码优化。
-
-SSH 断开或本机重启后，先核实原任务是否仍在运行及是否留下完整结果，不能直接
-再启动一批。若结果缺失或无法确认测量期间空闲，该批标为中断，不纳入比较。
-长任务可忽略 SIGHUP 并将日志保存在评测机上，使本机连接中断不必终止测量；
-仍需在任务结束后核对结果完整性。
-
-## 保存实验结论
-
-build/、bench/ 中的二进制、输入副本、原始报告可以保持不提交。每题的
-`tutorial.md` 应记录重要尝试的算法、改动理由、正确性验证、同批 max/sum
-及参考值，包含有用的失败尝试和最终取舍。不能只链接被忽略的目录作为结论。
-经典对照解也参与正确性检查和实际测量，但不要求超过五份 OJ 提交；只有一份时
-命名为 naive.cxx，多份则按算法或数据结构命名。
+完整基准完成后，只计时新程序或 SHA-256 已变化的 binary；已有参考和经典解
+沿用原始两轮记录。候选采用后若正式 binary 的 SHA-256 相同，直接复用候选数据。
+每个程序仍须有覆盖完整测例的两轮，逐例取其中较小值；保留每个程序的来源批次、
+编译参数、binary 和输入哈希，不将不同源码的观察混成一份结果。

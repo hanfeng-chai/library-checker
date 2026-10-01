@@ -1,0 +1,144 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 12, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                 51.932479     402.028518
+chaihf                                    82.629269     513.571677
+nandhagk                                  47.738959     363.804873
+ssmkybb                                  193.791631    1181.420569
+urectanc                                 125.750657     935.031713
+main                                      44.361880     336.749216
+naive                                    307.353861    1224.839201
+
+submissions/data_structure/set_xor_min/Anonymous.cpp
+SHA-256: 25e371124e07b53fce9a366a41ee73bd8bd03dc6f3a0b0bae264f1d455533632
+case                       task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (almost_all_query_00)        51.932479         -             -      -              -                -            -
+sum                             402.028518         -             -      -              -                -            -
+example_00                        1.023913   1619383       2428248  1.499           6796            1.218        100.0
+almost_all_insert_00             33.098435  52820899      53627574  1.015          72519            1.157        100.0
+almost_all_query_00              51.932479  82884296      95337968  1.150         343549            4.680        100.0
+almost_all_query_close_00        28.043567  44749903      75544331  1.688          73537            1.257        100.0
+ans_big_00                        1.042466   1648973       2456944  1.490           6833            1.199        100.0
+max_ans_small_00                 45.510689  72633489      70247077  0.967          93350            1.307        100.0
+max_random_00                    48.209803  76942380      64637393  0.840         634709            8.435        100.0
+max_random_01                    48.245199  76968243      64671628  0.840         635326            8.437        100.0
+max_random_02                    48.330768  77116971      64652482  0.838         634709            8.430        100.0
+random_00                        39.208504  62557372      53590723  0.857         497984            7.584        100.0
+random_01                        45.110349  71994732      60970326  0.847         588190            8.156        100.0
+random_02                        12.272346  19575357      19441865  0.993          73908            2.062        100.0
+
+submissions/data_structure/set_xor_min/chaihf.cpp
+SHA-256: 5f963889abe62b581cea91acaf814b1b45050b51f8cbc94efad0044fd726dcdf
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (almost_all_query_00)        82.629269          -             -      -              -                -            -
+sum                             513.571677          -             -      -              -                -            -
+example_00                        8.210907   13091470      13296428  1.016           8315            0.289        100.0
+almost_all_insert_00             35.010665   55842191      55962714  1.002         161127            1.844        100.0
+almost_all_query_00              82.629269  131862522     145611976  1.104        4463259           19.728        100.0
+almost_all_query_close_00        38.576832   61563094     140330014  2.279          76941            0.311        100.0
+ans_big_00                        8.119945   12946299      13281824  1.026           8259            0.288        100.0
+max_ans_small_00                 66.546311  106212014      98957534  0.932        2375469           14.443        100.0
+max_random_00                    55.052380   87864800      80332749  0.914        2049492           15.182        100.0
+max_random_01                    55.106371   87934162      80380718  0.914        2053356           15.205        100.0
+max_random_02                    55.068356   87890608      80348540  0.914        2050120           15.182        100.0
+random_00                        44.427092   70903639      65709127  0.927        1598522           14.312        100.0
+random_01                        51.668873   82464022      75489305  0.915        1901314           14.937        100.0
+random_02                        13.154676   20983232      20536147  0.979         221285            5.516        100.0
+
+submissions/data_structure/set_xor_min/nandhagk.cpp
+SHA-256: 7315e3236f7922bec5258158b28caf52ed5fb4baa20e0ff1b8721af71f85b5c6
+case                       task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)              47.738959         -             -      -              -                -            -
+sum                             363.804873         -             -      -              -                -            -
+example_00                        8.045548  12827462      12847765  1.002           8059            0.294        100.0
+almost_all_insert_00             37.504245  59853784      72377714  1.209         183778            1.487        100.0
+almost_all_query_00              20.613808  32889972      72932354  2.217         175379            1.293        100.0
+almost_all_query_close_00        15.955818  25454635      64222634  2.523           9695            0.071        100.0
+ans_big_00                        8.096822  12909483      12927925  1.001           8030            0.290        100.0
+max_ans_small_00                 33.877911  54065190      71136119  1.316         170019            1.249        100.0
+max_random_00                    47.507987  75822239      83333019  1.099         817402            5.762        100.0
+max_random_01                    47.738959  76172906      83369378  1.094         818008            5.766        100.0
+max_random_02                    47.624761  76007801      83287934  1.096         817656            5.768        100.0
+random_00                        39.210039  62576399      68420138  1.093         641518            5.466        100.0
+random_01                        44.791596  71486777      78356394  1.096         759019            5.682        100.0
+random_02                        12.837379  20476846      21116511  1.031          82034            2.022        100.0
+
+submissions/data_structure/set_xor_min/ssmkybb.cpp
+SHA-256: 2a742b41150b2840ffc31e0234cf1c52239c518fa8649955b159d30acb86a531
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_ans_small_00)          193.791631          -             -      -              -                -            -
+sum                            1181.420569          -             -      -              -                -            -
+example_00                        1.035506    1637348       2463745  1.505           6727            1.181        100.0
+almost_all_insert_00            191.156563  305070631     264144776  0.866         558679            1.278        100.0
+almost_all_query_00              44.744212   71408399     196218038  2.748         561953            1.402        100.0
+almost_all_query_close_00        31.387688   50087750     193781130  3.869           9364            0.022        100.0
+ans_big_00                        1.047161    1655426       2447863  1.479           6661            1.180        100.0
+max_ans_small_00                193.791631  309291233     304049275  0.983         482238            0.941        100.0
+max_random_00                   151.834587  242341096     261856809  1.081        1164208            2.574        100.0
+max_random_01                   151.401715  241634267     261533723  1.082        1169951            2.591        100.0
+max_random_02                   151.635936  241994777     261514516  1.081        1167419            2.585        100.0
+random_00                       112.948781  180251041     202493562  1.123         913688            2.606        100.0
+random_01                       138.273359  220670239     241668564  1.095        1081258            2.589        100.0
+random_02                        12.163430   19400970      27621572  1.424         132737            2.666        100.0
+
+submissions/data_structure/set_xor_min/urectanc.rs
+SHA-256: 89910bdcb7cbe91b84252653ed08473f978abe2c44c217aae6877c808498dd5f
+case                       task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_ans_small_00)          125.750657          -             -      -              -                -            -
+sum                             935.031713          -             -      -              -                -            -
+example_00                        1.152103    1823837       2294543  1.258           7196            1.401        100.0
+almost_all_insert_00             88.721590  141579963     144788830  1.023         296362            1.102        100.0
+almost_all_query_00             119.830235  191267494     359943994  1.882        4297421            6.641        100.0
+almost_all_query_close_00        38.448292   61359278     140872083  2.296         488921            1.934        100.0
+ans_big_00                        1.116299    1766405       2281293  1.291           6885            1.348        100.0
+max_ans_small_00                125.750657  200718822     148458845  0.740         443517            1.631        100.0
+max_random_00                   117.907083  188166883     199494348  1.060        1662303            4.510        100.0
+max_random_01                   117.953224  188272087     199488021  1.060        1666531            4.522        100.0
+max_random_02                   118.193117  188626644     199662639  1.059        1661525            4.502        100.0
+random_00                        87.349456  139403613     157264096  1.128        1305813            4.493        100.0
+random_01                       107.586332  171707768     185684810  1.081        1545137            4.502        100.0
+random_02                        11.023325   17568945      24792632  1.411         197643            4.239        100.0
+
+src/data_structure/set_xor_min/main.cxx
+SHA-256: 45ce8b5c0ce7ba328e36a86db401067d3f3ceb698115488f1a02e707fcee61a9
+case                       task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)              44.361880         -             -      -              -                -            -
+sum                             336.749216         -             -      -              -                -            -
+example_00                        8.014696  12777801      12752707  0.998           7783            0.286        100.0
+almost_all_insert_00             31.765327  50679546      55458865  1.094         181433            2.123        100.0
+almost_all_query_00              18.252134  29119867      62130563  2.134          92185            1.076        100.0
+almost_all_query_close_00        13.992520  22321567      49211364  2.205           8958            0.111        100.0
+ans_big_00                        8.018052  12783640      12753445  0.998           7802            0.286        100.0
+max_ans_small_00                 33.289059  53123746      55672578  1.048         174259            1.939        100.0
+max_random_00                    44.361880  70798738      69941517  0.988         806027            8.244        100.0
+max_random_01                    44.237830  70601987      69924007  0.990         807414            8.273        100.0
+max_random_02                    44.314922  70726297      69833683  0.987         804970            8.257        100.0
+random_00                        36.479286  58217436      58082157  0.998         625009            7.519        100.0
+random_01                        41.850578  66791464      66048841  0.989         747766            8.044        100.0
+random_02                        12.172932  19416651      19534584  1.006          78694            2.208        100.0
+
+src/data_structure/set_xor_min/naive.cxx
+SHA-256: 9b95e7cffe8668f5fb7925288ebe45276d35a2ce8a75e8e29354984064fd12a8
+case                        task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (almost_all_insert_00)       307.353861          -             -      -              -                -            -
+sum                             1224.839201          -             -      -              -                -            -
+example_00                         0.840165    1325364       1738976  1.312           5596            1.450        100.0
+almost_all_insert_00             307.353861  490526179     247211938  0.504         705101            2.406        100.0
+almost_all_query_00               10.732515   17117391      51273885  2.995          90552            1.575        100.0
+almost_all_query_close_00          6.761242   10777642      38213909  3.546           7800            0.149        100.0
+ans_big_00                         0.826526    1303962       1776335  1.362           5502            1.375        100.0
+max_ans_small_00                 223.428452  356596584     174425769  0.489         589699            2.760        100.0
+max_random_00                    143.924935  229706322     147315256  0.641        1077437            6.614        100.0
+max_random_01                    143.052207  228312338     147376620  0.646        1080661            6.627        100.0
+max_random_02                    142.791272  227888667     147328252  0.646        1077685            6.615        100.0
+random_00                        105.733757  168753539     113470146  0.672         838373            6.639        100.0
+random_01                        129.709835  206999238     135842428  0.656         999568            6.642        100.0
+random_02                          9.684434   15443865      15011716  0.972         114738            6.092        100.0

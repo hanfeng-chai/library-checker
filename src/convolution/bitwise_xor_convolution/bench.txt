@@ -1,0 +1,159 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 13, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master (old results); fedora (new submissions); glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+IceKylin                                  63.865468     222.996339
+Qwerty1232                                70.699322     245.312307
+Rohan_Kapri                               56.996568     201.952644
+adamant                                   57.005157     201.965973
+cmk666                                    79.960819     276.060944
+main                                      44.403793     155.533274
+toomer                                    79.747788     273.113275
+
+submissions/convolution/bitwise_xor_convolution/IceKylin.cpp
+SHA-256: 9aec5d7aa1fe6d8e9b2689051ad8b933ecc2773e60e461d6549a5d3d814b1029
+Measured: full-20261001, original two complete passes
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)        63.865468          -             -      -              -                -            -
+sum                       222.996339          -             -      -              -                -            -
+example_00                  0.997406    1576295       2441125  1.549           6968            1.238        100.0
+large_00                    3.091468    4918885       9936903  2.020          19492            1.418        100.0
+large_01                    5.009351    7979804      17453341  2.187          31128            1.432        100.0
+large_02                   16.308447   26017283      61743882  2.373         100678            1.514        100.0
+max_random_00              63.865468  101934253     243496178  2.389         377484            1.510        100.0
+max_random_01              63.783810  101769219     243044619  2.388         377858            1.519        100.0
+max_random_02              63.820051  101860063     243047533  2.386         377373            1.516        100.0
+small_00                    1.001615    1582996       2480950  1.567           6741            1.169        100.0
+small_01                    1.025862    1620908       2468922  1.523           6922            1.211        100.0
+small_02                    1.059060    1674668       2509968  1.499           7118            1.236        100.0
+tiny_00                     0.993826    1571219       2480541  1.579           6924            1.200        100.0
+tiny_01                     1.022030    1615261       2483084  1.537           6881            1.192        100.0
+tiny_02                     1.017945    1609467       2471567  1.536           6921            1.208        100.0
+
+submissions/convolution/bitwise_xor_convolution/Qwerty1232.cpp
+SHA-256: 9ce353bc7aa770c1937f60036eb3a138234c7686b21eb470018b4e3c7759bc97
+Measured: full-20261001, original two complete passes
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)        70.699322          -             -      -              -                -            -
+sum                       245.312307          -             -      -              -                -            -
+example_00                  1.017461    1608373       2481866  1.543           6966            1.207        100.0
+large_00                    3.213595    5114866      12966784  2.535          20387            1.171        100.0
+large_01                    5.314743    8468967      23251882  2.746          33159            1.166        100.0
+large_02                   18.095184   28869761      85537111  2.963         109895            1.158        100.0
+max_random_00              70.699322  112738916     337230319  2.991         413935            1.146        100.0
+max_random_01              70.293265  112108497     337148889  3.007         413452            1.145        100.0
+max_random_02              70.527194  112469378     337201759  2.998         414292            1.147        100.0
+small_00                    1.015106    1605533       2469248  1.538           6903            1.203        100.0
+small_01                    1.002509    1585150       2455062  1.549           6849            1.214        100.0
+small_02                    1.032607    1632888       2527887  1.548           6939            1.202        100.0
+tiny_00                     1.066255    1686695       2483936  1.473           7002            1.212        100.0
+tiny_01                     1.024034    1619329       2467227  1.524           6909            1.207        100.0
+tiny_02                     1.011032    1598540       2479991  1.551           6917            1.199        100.0
+
+submissions/convolution/bitwise_xor_convolution/Rohan_Kapri.cpp
+SHA-256: c7887fb21bb6c8c13a6e0571e2c711c02d5ad9778212bdc9244a08c1ed36eaa4
+Measured: full-20261001, original two complete passes
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)        56.996568         -             -      -              -                -            -
+sum                       201.952644         -             -      -              -                -            -
+example_00                  1.111255   1758254       2590283  1.473           7364            1.227        100.0
+large_00                    3.149502   4995483      11759230  2.354          21096            1.296        100.0
+large_01                    4.877442   7770762      20386370  2.623          34953            1.361        100.0
+large_02                   15.384876  24543557      73963173  3.014         114380            1.374        100.0
+max_random_00              56.947431  90773709     280410094  3.089         433912            1.486        100.0
+max_random_01              56.996568  90857417     280415258  3.086         433982            1.486        100.0
+max_random_02              56.883069  90702481     280396238  3.091         431947            1.479        100.0
+small_00                    1.073240   1697568       2586356  1.524           7378            1.232        100.0
+small_01                    1.103436   1746251       2606774  1.493           7520            1.248        100.0
+small_02                    1.126641   1782969       2629758  1.475           7698            1.284        100.0
+tiny_00                     1.086258   1718373       2583589  1.504           7422            1.240        100.0
+tiny_01                     1.124946   1779500       2587711  1.454           7449            1.242        100.0
+tiny_02                     1.087980   1721237       2585305  1.502           7496            1.251        100.0
+
+submissions/convolution/bitwise_xor_convolution/adamant.cpp
+SHA-256: c7887fb21bb6c8c13a6e0571e2c711c02d5ad9778212bdc9244a08c1ed36eaa4
+Measured: full-20261001, original two complete passes
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)        57.005157         -             -      -              -                -            -
+sum                       201.965973         -             -      -              -                -            -
+example_00                  1.078749   1706459       2574052  1.508           7360            1.233        100.0
+large_00                    3.115575   4956757      11752531  2.371          21697            1.335        100.0
+large_01                    4.893357   7795695      20407517  2.618          34985            1.360        100.0
+large_02                   15.348770  24486435      73905193  3.018         113191            1.362        100.0
+max_random_00              56.995833  90881640     280451698  3.086         432116            1.479        100.0
+max_random_01              57.005157  90881486     280408957  3.085         431525            1.478        100.0
+max_random_02              56.990189  90873206     280423388  3.086         430189            1.473        100.0
+small_00                    1.087701   1720216       2587490  1.504           7392            1.233        100.0
+small_01                    1.071862   1695722       2560692  1.510           7449            1.264        100.0
+small_02                    1.107785   1752784       2660872  1.518           7544            1.232        100.0
+tiny_00                     1.083725   1715419       2554785  1.489           7392            1.255        100.0
+tiny_01                     1.097489   1736631       2587127  1.490           7432            1.240        100.0
+tiny_02                     1.089781   1723904       2600134  1.508           7403            1.226        100.0
+
+submissions/convolution/bitwise_xor_convolution/cmk666.cpp
+SHA-256: fa27d55badab84fd73d3de31ea32b3b1f0d19a94ff15d03c9674c6592d7a9d61
+Measured: full-20261001, original two complete passes
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)        79.960819          -             -      -              -                -            -
+sum                       276.060944          -             -      -              -                -            -
+example_00                  1.031079    1630447       2450004  1.503           6742            1.194        100.0
+large_00                    3.423913    5450154      14393589  2.641          20554            1.026        100.0
+large_01                    5.748909    9160704      26263164  2.867          33762            0.991        100.0
+large_02                   20.261824   32328235      97997440  3.031         113087            0.961        100.0
+max_random_00              79.960819  127608676     388155105  3.042         431292            0.952        100.0
+max_random_01              79.743964  127254628     388166467  3.050         431948            0.953        100.0
+max_random_02              79.787708  127333540     388127773  3.048         432896            0.955        100.0
+small_00                    0.986883    1559622       2486346  1.594           6613            1.145        100.0
+small_01                    1.001436    1583415       2491665  1.574           6860            1.193        100.0
+small_02                    1.035146    1637074       2560952  1.564           6974            1.193        100.0
+tiny_00                     1.024750    1620921       2478794  1.529           6847            1.191        100.0
+tiny_01                     1.030665    1629787       2482670  1.523           6646            1.151        100.0
+tiny_02                     1.023848    1618748       2472912  1.528           6740            1.176        100.0
+
+src/convolution/bitwise_xor_convolution/main.cxx
+SHA-256: e3b5a26fc33ca2f77367f5c5d7ee9ca0d26f07494d612826697bcfb8b5ab245a
+Measured: full-20261001, original two complete passes
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)        44.403793         -             -      -              -                -            -
+sum                       155.533274         -             -      -              -                -            -
+example_00                  0.831983   1312832       1796563  1.368           5496            1.352        100.0
+large_00                    2.218110   3525291       7646782  2.169          15103            1.443        100.0
+large_01                    3.611016   5749117      13597672  2.365          23720            1.415        100.0
+large_02                   11.349026  18100897      48923347  2.703          71935            1.352        100.0
+max_random_00              44.160635  70393106     193872869  2.754         264279            1.314        100.0
+max_random_01              44.061613  70235926     193853746  2.760         263407            1.310        100.0
+max_random_02              44.403793  70782154     193855500  2.739         267819            1.332        100.0
+small_00                    0.824754   1301135       1797243  1.381           5534            1.364        100.0
+small_01                    0.811551   1280337       1809167  1.413           5487            1.346        100.0
+small_02                    0.817057   1288525       1812339  1.407           5823            1.457        100.0
+tiny_00                     0.812031   1280302       1787722  1.396           5587            1.389        100.0
+tiny_01                     0.810953   1279088       1806464  1.412           5677            1.390        100.0
+tiny_02                     0.820752   1294803       1797816  1.388           5456            1.342        100.0
+
+submissions/convolution/bitwise_xor_convolution/toomer.rs
+SHA-256: bfe51f8d61fb719d890871548f7690c555ce5e5a8163f0a71b5e0aea61a6a6c3
+Measured: new-submissions-20261001, two complete passes
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)        79.747788          -             -      -              -                -            -
+sum                       273.113275          -             -      -              -                -            -
+example_00                  0.930661    1470430       2015788  1.371           7221            1.599        100.0
+large_00                    3.292052    5239352      13213521  2.522          19100            1.139        100.0
+large_01                    5.534239    8818108      24334278  2.760          30692            1.078        100.0
+large_02                   19.866119   31696936      92534539  2.919          97088            0.972        100.0
+max_random_00              79.330404  126546069     370975424  2.932         361656            0.932        100.0
+max_random_01              78.897430  125886510     370947305  2.947         359035            0.925        100.0
+max_random_02              79.747788  127267292     370977076  2.915         358817            0.924        100.0
+small_00                    0.917393    1448736       2029103  1.401           7293            1.602        100.0
+small_01                    0.918252    1449366       2056917  1.419           7322            1.583        100.0
+small_02                    0.919806    1453205       2095993  1.442           7392            1.590        100.0
+tiny_00                     0.918774    1451889       2024972  1.395           7132            1.558        100.0
+tiny_01                     0.922849    1457914       2025054  1.389           7295            1.603        100.0
+tiny_02                     0.917508    1449719       2035499  1.404           7223            1.571        100.0

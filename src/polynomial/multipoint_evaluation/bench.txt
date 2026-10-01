@@ -1,0 +1,119 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 11, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                 91.936003     497.613113
+QEFhjzh                                   93.144755     645.630630
+Rohan_Kapri                               91.626225     497.131010
+cmk666                                    93.247971     646.546544
+grishared                                117.409053    1247.714334
+main                                      90.126537     493.156483
+
+submissions/polynomial/multipoint_evaluation/Anonymous.cpp
+SHA-256: 8e57b01f72e2ff655d726113085ffaa2b02a949a57b6e2bd03717f17d8f2d633
+case                     task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (issue_1287_cpp_01)        91.936003          -             -      -              -                -            -
+sum                           497.613113          -             -      -              -                -            -
+example_00                      1.096688    1735184       2453884  1.414           7209            1.278        100.0
+example_01                      1.031859    1631501       2460141  1.508           6978            1.231        100.0
+issue_1287_00                   1.045258    1653552       2461594  1.489           7135            1.258        100.0
+issue_1287_cpp_00              91.613750  146208746     301827289  2.064          68843            0.347        100.0
+issue_1287_cpp_01              91.936003  146701873     301810666  2.057          69325            0.350        100.0
+max_random_00                  91.516138  146072379     301909020  2.067          68302            0.344        100.0
+max_random_01                  91.607570  146177312     301910659  2.065          69408            0.349        100.0
+random_00                      20.897459   33329221      65821644  1.975          32646            0.594        100.0
+random_01                      20.919737   33379543      64936547  1.945          26312            0.517        100.0
+random_02                      84.883828  135439871     277858410  2.052          56679            0.318        100.0
+zero_00                         1.064823    1684573       2458675  1.460           7005            1.237        100.0
+
+submissions/polynomial/multipoint_evaluation/QEFhjzh.cpp
+SHA-256: df62fe483c979febdedf020660a21ff40a71ca83182a937cbabe3719511b0df1
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)        93.144755          -             -      -              -                -            -
+sum                       645.630630          -             -      -              -                -            -
+example_00                  1.070748    1693372       2510091  1.482           6971            1.207        100.0
+example_01                  1.051429    1662349       2529288  1.522           6817            1.164        100.0
+issue_1287_00               1.080536    1710049       2479856  1.450           6981            1.229        100.0
+issue_1287_cpp_00          93.129607  148629200     321173914  2.161         124127            0.511        100.0
+issue_1287_cpp_01          93.014289  148446684     321463780  2.166         123099            0.506        100.0
+max_random_00              93.144755  148670311     321326868  2.161         123512            0.508        100.0
+max_random_01              93.049906  148486210     320989283  2.162         123871            0.511        100.0
+random_00                  89.186415  142320356     304242014  2.138          69626            0.320        100.0
+random_01                  88.308007  140950141     301074018  2.136          62813            0.295        100.0
+random_02                  91.562542  146126388     314563335  2.153         108403            0.467        100.0
+zero_00                     1.032396    1632091       2512875  1.540           6891            1.186        100.0
+
+submissions/polynomial/multipoint_evaluation/Rohan_Kapri.cpp
+SHA-256: 8e57b01f72e2ff655d726113085ffaa2b02a949a57b6e2bd03717f17d8f2d633
+case                     task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (issue_1287_cpp_00)        91.626225          -             -      -              -                -            -
+sum                           497.131010          -             -      -              -                -            -
+example_00                      1.057714    1673834       2450267  1.464           7137            1.267        100.0
+example_01                      1.036570    1639118       2489553  1.519           6945            1.199        100.0
+issue_1287_00                   1.033898    1635132       2489695  1.523           6955            1.200        100.0
+issue_1287_cpp_00              91.626225  146228808     301829883  2.064          68517            0.346        100.0
+issue_1287_cpp_01              91.619901  146219566     301852011  2.064          69728            0.352        100.0
+max_random_00                  91.520140  146077444     301921735  2.067          67974            0.342        100.0
+max_random_01                  91.582472  146151308     301817374  2.065          70163            0.354        100.0
+random_00                      20.870879   33301673      65753793  1.974          32535            0.594        100.0
+random_01                      20.949662   33427040      64997245  1.944          25857            0.506        100.0
+random_02                      84.761717  135257375     277820411  2.054          57765            0.325        100.0
+zero_00                         1.071832    1695540       2492428  1.470           6994            1.206        100.0
+
+submissions/polynomial/multipoint_evaluation/cmk666.cpp
+SHA-256: df62fe483c979febdedf020660a21ff40a71ca83182a937cbabe3719511b0df1
+case                     task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (issue_1287_cpp_00)        93.247971          -             -      -              -                -            -
+sum                           646.546544          -             -      -              -                -            -
+example_00                      1.060532    1677183       2477688  1.477           6909            1.218        100.0
+example_01                      1.038329    1641954       2523354  1.537           6813            1.165        100.0
+issue_1287_00                   1.067186    1688062       2522236  1.494           6868            1.175        100.0
+issue_1287_cpp_00              93.247971  148817072     321345953  2.159         124198            0.511        100.0
+issue_1287_cpp_01              93.109718  148568880     321011040  2.161         125404            0.517        100.0
+max_random_00                  93.130547  148621204     321302635  2.162         123336            0.508        100.0
+max_random_01                  92.963878  148382035     320817160  2.162         122676            0.507        100.0
+random_00                      89.593306  142983269     304460697  2.129          69394            0.318        100.0
+random_01                      88.380047  141047807     300988645  2.134          63101            0.297        100.0
+random_02                      91.906103  146693900     314549590  2.144         108357            0.467        100.0
+zero_00                         1.048927    1658723       2490394  1.501           6915            1.209        100.0
+
+submissions/polynomial/multipoint_evaluation/grishared.cpp
+SHA-256: c198c2a52debbb3170f4572ba64247b75054f6d6cf635179f293ee4ba15711ca
+case                     task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (issue_1287_cpp_00)       117.409053          -             -      -              -                -            -
+sum                          1247.714334          -             -      -              -                -            -
+example_00                    109.823117  175243204     358471819  2.046          42105            0.183        100.0
+example_01                    110.040878  175612325     358502298  2.041          39616            0.172        100.0
+issue_1287_00                 109.886533  175395732     358324186  2.043          39496            0.171        100.0
+issue_1287_cpp_00             117.409053  187367199     397792553  2.123          84363            0.310        100.0
+issue_1287_cpp_01             117.077803  186859937     397866867  2.129          84355            0.309        100.0
+max_random_00                 116.946112  186653314     397834474  2.131          83163            0.305        100.0
+max_random_01                 117.109315  186898584     397876566  2.129          84628            0.310        100.0
+random_00                     112.817320  180059678     377202963  2.095          57388            0.229        100.0
+random_01                     111.867806  178542297     370510475  2.075          52041            0.214        100.0
+random_02                     115.072938  183674252     386388835  2.104          72830            0.280        100.0
+zero_00                       109.663459  175041048     358310115  2.047          39285            0.171        100.0
+
+src/polynomial/multipoint_evaluation/main.cxx
+SHA-256: a57ad16ac982c4934f62a4eeacd10c3c4e579179d92044c7af01bdb340bf066d
+case                     task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (issue_1287_cpp_01)        90.126537          -             -      -              -                -            -
+sum                           493.156483          -             -      -              -                -            -
+example_00                      0.873096    1378382       1787860  1.297           5612            1.417        100.0
+example_01                      0.841357    1327969       1768325  1.332           5570            1.420        100.0
+issue_1287_00                   0.823552    1298636       1770612  1.363           5615            1.430        100.0
+issue_1287_cpp_00              90.109895  143755162     332255680  2.311          69332            0.330        100.0
+issue_1287_cpp_01              90.126537  143835329     332153739  2.309          69355            0.331        100.0
+max_random_00                  89.972792  143580473     332235908  2.314          68510            0.327        100.0
+max_random_01                  89.977284  143546018     332091141  2.313          68858            0.329        100.0
+random_00                      27.362188   43663451      97556944  2.234          39269            0.571        100.0
+random_01                      22.101463   35265550      78241476  2.219          30728            0.543        100.0
+random_02                      80.161663  127946531     293386023  2.293          56507            0.297        100.0
+zero_00                         0.806656    1272129       1766760  1.389           5581            1.417        100.0

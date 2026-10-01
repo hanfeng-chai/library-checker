@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 536576,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 577536,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "large_00",
+      "checker_out": "b2sgMzI3NjggdG9rZW5zCg==",
+      "memory": 700416,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "large_01",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1097728,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "large_02",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 4198400,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 14159872,
+      "status": "AC",
+      "time": 0.037
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 14934016,
+      "status": "AC",
+      "time": 0.035
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 15241216,
+      "status": "AC",
+      "time": 0.036
+    }
+  ],
+  "overview": {
+    "id": 407006,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 15241216,
+    "problem_name": "bitwise_xor_convolution",
+    "problem_title": "Bitwise Xor Convolution",
+    "status": "AC",
+    "submission_time": "2026-09-29T17:17:18.036514Z",
+    "time": 0.037,
+    "user_name": "toomer"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgOCB0b2tlbnMK",
+      "memory": 425984,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_00",
+      "checker_out": "b2sgIjMwOTMyNTEwNCIK",
+      "memory": 630784,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 524288,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "tiny_02",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMzIgdG9rZW5zCg==",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNjQgdG9rZW5zCg==",
+      "memory": 655360,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjU2IHRva2Vucwo=",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzI3NjggdG9rZW5zCg==",
+      "memory": 1024000,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNjU1MzYgdG9rZW5zCg==",
+      "memory": 1347584,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 3665920,
+      "status": "AC",
+      "time": 0.008
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 15466496,
+      "status": "AC",
+      "time": 0.033
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 14721024,
+      "status": "AC",
+      "time": 0.032
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMTA0ODU3NiB0b2tlbnMK",
+      "memory": 14938112,
+      "status": "AC",
+      "time": 0.032
+    }
+  ],
+  "overview": {
+    "id": 407005,
+    "is_latest": true,
+    "lang": "rust",
+    "memory": 15466496,
+    "problem_name": "bitwise_and_convolution",
+    "problem_title": "Bitwise And Convolution",
+    "status": "AC",
+    "submission_time": "2026-09-29T17:15:46.742979Z",
+    "time": 0.033,
+    "user_name": "toomer"
+  }
+}

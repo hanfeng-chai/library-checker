@@ -1,0 +1,186 @@
+2026-10-01 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes; per binary/case minimum task-clock; all counters from that same run.
+Cases: 18, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: master; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Rac                                       99.693975     705.445387
+Rohan_Kapri                              119.846480     842.886544
+chaihf                                   105.315239     734.107834
+nandhagk                                  71.355100     497.516847
+sortA0329                                107.202666     747.336260
+main                                      45.101040     351.893368
+naive                                    108.984544     764.681349
+
+submissions/data_structure/double_ended_priority_queue/Rac.cpp
+SHA-256: 454b41ee65f4333c3c6facff1783a4a4d4cf4fd489d8ef38a76c91af374d2606
+case                                  task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_n_max_q_max_many_pop_00)        99.693975          -             -      -              -                -            -
+sum                                        705.445387          -             -      -              -                -            -
+example_00                                   1.173745    1857864       2247382  1.210           5452            1.079        100.0
+random_n_max_q_max_00                       74.716779  119239475     182808330  1.533         635731            3.738        100.0
+random_n_max_q_max_01                       74.865248  119490573     182670390  1.529         634272            3.731        100.0
+random_n_max_q_max_many_pop_00              99.693975  159124252     233533520  1.468         621718            3.160        100.0
+random_n_max_q_max_many_pop_01              99.000844  158017407     233518396  1.478         621393            3.159        100.0
+random_n_max_q_max_only_type01_00           75.438288  120390855     188473006  1.566         471400            2.600        100.0
+random_n_max_q_max_only_type01_01           75.031509  119742599     188290298  1.572         470426            2.597        100.0
+random_n_max_q_max_small_value_00           82.332697  131386705     210841502  1.605         617935            3.198        100.0
+random_n_max_q_max_small_value_01           81.723091  130423939     210948378  1.617         618727            3.200        100.0
+random_n_zero_q_max_00                      31.981945   51024915      85299250  1.672         890172            9.403        100.0
+random_small_00                              1.171433    1854904       2320509  1.251           6048            1.201        100.0
+random_small_01                              1.171071    1853783       2271448  1.225           5959            1.201        100.0
+random_small_02                              1.229568    1947271       2297784  1.180           6356            1.263        100.0
+random_small_03                              1.174762    1860175       2260474  1.215           5916            1.191        100.0
+random_small_only_type01_00                  1.208479    1914100       2362440  1.234           5961            1.150        100.0
+random_small_only_type01_01                  1.165390    1845467       2289510  1.241           5848            1.164        100.0
+random_small_only_type01_02                  1.204659    1907340       2325247  1.219           6207            1.210        100.0
+random_small_only_type01_03                  1.161904    1839238       2321144  1.262           5858            1.137        100.0
+
+submissions/data_structure/double_ended_priority_queue/Rohan_Kapri.cpp
+SHA-256: 7237d2b1e3b75925521a5f7d93d153caa69ab905e7e9552cf05a7100315933fb
+case                                  task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_n_max_q_max_many_pop_01)       119.846480          -             -      -              -                -            -
+sum                                        842.886544          -             -      -              -                -            -
+example_00                                   1.042241    1648574       2418377  1.467           6598            1.187        100.0
+random_n_max_q_max_00                       91.440713  145923645     175469540  1.202        1377793            5.163        100.0
+random_n_max_q_max_01                       91.476097  145969644     175390853  1.202        1374537            5.153        100.0
+random_n_max_q_max_many_pop_00             119.459926  190660656     216056603  1.133        1466696            4.591        100.0
+random_n_max_q_max_many_pop_01             119.846480  191269508     216088646  1.130        1469340            4.599        100.0
+random_n_max_q_max_only_type01_00           87.557929  139751889     175984532  1.259        1070486            4.181        100.0
+random_n_max_q_max_only_type01_01           87.472536  139598901     175862949  1.260        1070351            4.183        100.0
+random_n_max_q_max_small_value_00           99.478352  158743695     192835307  1.215        1336037            4.323        100.0
+random_n_max_q_max_small_value_01           99.410524  158645831     192875868  1.216        1333464            4.315        100.0
+random_n_zero_q_max_00                      37.158635   59300209      81341066  1.372        1093642            8.410        100.0
+random_small_00                              1.090778    1724921       2585605  1.499           8281            1.395        100.0
+random_small_01                              1.062214    1679773       2517737  1.499           7387            1.269        100.0
+random_small_02                              1.053631    1666694       2500451  1.500           7672            1.341        100.0
+random_small_03                              1.047470    1656727       2473089  1.493           7446            1.318        100.0
+random_small_only_type01_00                  1.109891    1755523       2527687  1.440           7908            1.379        100.0
+random_small_only_type01_01                  1.063277    1682087       2515991  1.496           7381            1.274        100.0
+random_small_only_type01_02                  1.065491    1685971       2492492  1.478           7602            1.338        100.0
+random_small_only_type01_03                  1.050359    1661567       2517421  1.515           7218            1.240        100.0
+
+submissions/data_structure/double_ended_priority_queue/chaihf.cpp
+SHA-256: d25439866a1546857106e06574f6d0084810fd9164647afe8a73e92882bb43b1
+case                                  task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_n_max_q_max_many_pop_01)       105.315239          -             -      -              -                -            -
+sum                                        734.107834          -             -      -              -                -            -
+example_00                                   0.835667    1318294       1776045  1.347           5380            1.339        100.0
+random_n_max_q_max_00                       79.967313  127621785     179141852  1.404        1204552            6.132        100.0
+random_n_max_q_max_01                       79.850818  127449766     178998444  1.404        1202094            6.124        100.0
+random_n_max_q_max_many_pop_00             104.545242  166845328     228374464  1.369        1183635            4.880        100.0
+random_n_max_q_max_many_pop_01             105.315239  168063168     228366433  1.359        1186297            4.894        100.0
+random_n_max_q_max_only_type01_00           78.208438  124811917     180629065  1.447        1043147            5.308        100.0
+random_n_max_q_max_only_type01_01           78.138489  124701386     180464210  1.447        1043466            5.314        100.0
+random_n_max_q_max_small_value_00           83.224218  132833270     207692867  1.564        1160329            4.760        100.0
+random_n_max_q_max_small_value_01           83.367534  133047939     207740660  1.561        1162803            4.768        100.0
+random_n_zero_q_max_00                      33.724444   53817879      82052493  1.525         890151            9.293        100.0
+random_small_00                              0.882811    1394052       1852286  1.329           6712            1.680        100.0
+random_small_01                              0.834696    1316559       1805422  1.371           6080            1.532        100.0
+random_small_02                              0.856970    1353014       1844712  1.363           6438            1.576        100.0
+random_small_03                              0.858693    1355985       1831684  1.351           6136            1.507        100.0
+random_small_only_type01_00                  0.886443    1399846       1883874  1.346           6565            1.591        100.0
+random_small_only_type01_01                  0.851122    1343349       1811114  1.348           6098            1.532        100.0
+random_small_only_type01_02                  0.877315    1385498       1826182  1.318           6156            1.522        100.0
+random_small_only_type01_03                  0.882382    1392922       1807586  1.298           6027            1.517        100.0
+
+submissions/data_structure/double_ended_priority_queue/nandhagk.cpp
+SHA-256: 6a8ef95350326d1848a9c30a03a64b9e5f11a1d07d1096456944e829782700e3
+case                                  task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_n_max_q_max_many_pop_01)        71.355100          -             -      -              -                -            -
+sum                                        497.516847          -             -      -              -                -            -
+example_00                                   0.907109    1432140       1915079  1.337           6381            1.470        100.0
+random_n_max_q_max_00                       60.745774   96953060     187550796  1.934        1312247            4.252        100.0
+random_n_max_q_max_01                       58.419604   93239939     187641184  2.012        1269364            3.994        100.0
+random_n_max_q_max_many_pop_00              69.679880  111196774     215720277  1.940        1467213            4.284        100.0
+random_n_max_q_max_many_pop_01              71.355100  113888345     220818901  1.939        1482767            4.204        100.0
+random_n_max_q_max_only_type01_00           54.558597   87049074     182303696  2.094        1057583            3.521        100.0
+random_n_max_q_max_only_type01_01           54.902550   87625467     181816886  2.075        1082279            3.621        100.0
+random_n_max_q_max_small_value_00           40.432390   64498500     149405857  2.316         658925            2.553        100.0
+random_n_max_q_max_small_value_01           40.061934   63906872     146601734  2.294         658614            2.589        100.0
+random_n_zero_q_max_00                      39.057371   62330974     121620434  1.951        1122184            5.003        100.0
+random_small_00                              0.944013    1491402       2074341  1.391           7592            1.642        100.0
+random_small_01                              0.929174    1467534       1991212  1.357           7173            1.606        100.0
+random_small_02                              0.925473    1462141       1992680  1.363           7535            1.702        100.0
+random_small_03                              0.922492    1456881       1984005  1.362           7051            1.576        100.0
+random_small_only_type01_00                  0.928157    1465707       2010715  1.372           7094            1.607        100.0
+random_small_only_type01_01                  0.895800    1414355       1961354  1.387           7027            1.610        100.0
+random_small_only_type01_02                  0.914298    1444505       1975863  1.368           7269            1.664        100.0
+random_small_only_type01_03                  0.937131    1480736       1958189  1.322           6945            1.593        100.0
+
+submissions/data_structure/double_ended_priority_queue/sortA0329.cpp
+SHA-256: dbc9600bfc743df165c3bb878dfccdb6ac717ee2488450d4598b8a645f1be823
+case                                  task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_n_max_q_max_many_pop_01)       107.202666          -             -      -              -                -            -
+sum                                        747.336260          -             -      -              -                -            -
+example_00                                   0.928604    1467437       1893979  1.291           5690            1.353        100.0
+random_n_max_q_max_00                       80.163735  127947471     188614065  1.474         694673            3.962        100.0
+random_n_max_q_max_01                       80.224237  128046127     188412276  1.471         694617            3.969        100.0
+random_n_max_q_max_many_pop_00             106.603803  170154374     238152978  1.400         710071            3.402        100.0
+random_n_max_q_max_many_pop_01             107.202666  171077222     238147944  1.392         711308            3.410        100.0
+random_n_max_q_max_only_type01_00           77.968835  124444170     190547816  1.531         472591            2.711        100.0
+random_n_max_q_max_only_type01_01           77.526968  123726443     190325243  1.538         470689            2.704        100.0
+random_n_max_q_max_small_value_00           87.334348  139380537     209349938  1.502         707281            3.588        100.0
+random_n_max_q_max_small_value_01           87.350874  139422282     209425121  1.502         707670            3.588        100.0
+random_n_zero_q_max_00                      34.368863   54846670      87649150  1.598         931769            9.583        100.0
+random_small_00                              0.972170    1536783       1999947  1.301           6281            1.462        100.0
+random_small_01                              0.955727    1510031       1958760  1.297           6130            1.427        100.0
+random_small_02                              0.978145    1546546       1972834  1.276           6548            1.516        100.0
+random_small_03                              0.934411    1475953       1957605  1.326           6184            1.439        100.0
+random_small_only_type01_00                  0.972854    1537527       2015302  1.311           6203            1.427        100.0
+random_small_only_type01_01                  0.967343    1529169       1987083  1.299           6059            1.378        100.0
+random_small_only_type01_02                  0.956287    1511012       1948558  1.290           6497            1.529        100.0
+random_small_only_type01_03                  0.926390    1463808       1968647  1.345           6052            1.388        100.0
+
+src/data_structure/double_ended_priority_queue/main.cxx
+SHA-256: 881072e81498201e2ed570d4c57e30b52a39495156dd9964f695c1e185b36231
+case                                  task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_n_max_q_max_many_pop_01)        45.101040         -             -      -              -                -            -
+sum                                        351.893368         -             -      -              -                -            -
+example_00                                   0.850763   1343159       1777305  1.323           5613            1.402        100.0
+random_n_max_q_max_00                       43.184212  68918563     112681423  1.635        1206707            7.577        100.0
+random_n_max_q_max_01                       43.369205  69214508     113067568  1.634        1213172            7.545        100.0
+random_n_max_q_max_many_pop_00              45.030811  71840706     122443517  1.704        1088144            6.820        100.0
+random_n_max_q_max_many_pop_01              45.101040  71978608     122977529  1.709        1087875            6.840        100.0
+random_n_max_q_max_only_type01_00           39.171734  62486463     110693882  1.771         928403            5.943        100.0
+random_n_max_q_max_only_type01_01           37.319802  59541816     109665599  1.842         879296            5.764        100.0
+random_n_max_q_max_small_value_00           33.361135  53203196      89943192  1.691         987588            6.615        100.0
+random_n_max_q_max_small_value_01           33.153700  52879322      89657683  1.696         966605            6.473        100.0
+random_n_zero_q_max_00                      24.408375  38925249      66203378  1.701         690792            7.146        100.0
+random_small_00                              0.894065   1411701       1843915  1.306           6710            1.659        100.0
+random_small_01                              0.891336   1407473       1808203  1.285           6257            1.574        100.0
+random_small_02                              0.872158   1376561       1827678  1.328           6242            1.547        100.0
+random_small_03                              0.868906   1372067       1855404  1.352           6315            1.519        100.0
+random_small_only_type01_00                  0.861012   1359531       1858290  1.367           6599            1.619        100.0
+random_small_only_type01_01                  0.828943   1308042       1835340  1.403           6080            1.478        100.0
+random_small_only_type01_02                  0.869995   1373054       1852257  1.349           6166            1.497        100.0
+random_small_only_type01_03                  0.856176   1351951       1799559  1.331           6088            1.537        100.0
+
+src/data_structure/double_ended_priority_queue/naive.cxx
+SHA-256: b16d54aa2b1bd1eccefdfea6444d8f1777dd75e2cfbdcdbc577799ab1409aaf8
+case                                  task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (random_n_max_q_max_many_pop_00)       108.984544          -             -      -              -                -            -
+sum                                        764.681349          -             -      -              -                -            -
+example_00                                   0.823902    1299508       1740439  1.339           5553            1.438        100.0
+random_n_max_q_max_00                       83.713569  133615412     164835898  1.234        1384168            5.575        100.0
+random_n_max_q_max_01                       83.332805  132982705     164703088  1.239        1383323            5.577        100.0
+random_n_max_q_max_many_pop_00             108.984544  173955087     205656110  1.182        1390459            4.549        100.0
+random_n_max_q_max_many_pop_01             108.889556  173803736     205653963  1.183        1391975            4.554        100.0
+random_n_max_q_max_only_type01_00           79.242632  126477974     166329803  1.315        1074853            4.354        100.0
+random_n_max_q_max_only_type01_01           78.844739  125842847     166159502  1.320        1075740            4.364        100.0
+random_n_max_q_max_small_value_00           89.470237  142790563     182657074  1.279        1353711            4.604        100.0
+random_n_max_q_max_small_value_01           89.527272  142881201     182853376  1.280        1351922            4.594        100.0
+random_n_zero_q_max_00                      34.958211   55787523      78468278  1.407        1097106            8.619        100.0
+random_small_00                              0.884713    1397362       1854843  1.327           7092            1.744        100.0
+random_small_01                              0.852476    1345716       1835401  1.364           6242            1.518        100.0
+random_small_02                              0.884612    1397486       1786143  1.278           6591            1.677        100.0
+random_small_03                              0.833942    1316444       1769021  1.344           6367            1.633        100.0
+random_small_only_type01_00                  0.860717    1358846       1880414  1.384           6928            1.665        100.0
+random_small_only_type01_01                  0.870208    1372885       1801076  1.312           6066            1.524        100.0
+random_small_only_type01_02                  0.862819    1362259       1823123  1.338           6566            1.631        100.0
+random_small_only_type01_03                  0.844395    1333005       1844843  1.384           6338            1.533        100.0
