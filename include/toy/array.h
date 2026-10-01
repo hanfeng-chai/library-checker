@@ -12,11 +12,11 @@ struct Array {
         for (usize i = 0; i < n; ++i) std::construct_at(p + i);
     }
     Array(const Array&) = delete;
-    Array(Array&& other) noexcept : p(exchange(other.p, nullptr)), n(exchange(other.n, 0)) {}
+    Array(Array&& other) noexcept : p(std::exchange(other.p, nullptr)), n(std::exchange(other.n, 0)) {}
     ~Array() { for (usize i = 0; i < n; ++i) std::destroy_at(p + i); free(p); }
     T& operator[](usize i) { return p[i]; }
     const T& operator[](usize i) const { return p[i]; }
-    operator span<T>() { return {p, n}; }
-    operator span<const T>() const { return {p, n}; }
+    operator std::span<T>() { return {p, n}; }
+    operator std::span<const T>() const { return {p, n}; }
 };
 }

@@ -8,7 +8,7 @@ template<class Key, class Value, Key Empty = Key(-1)> struct HashMap {
     Buffer<Entry> table;
     usize mask;
     unsigned shift;
-    explicit HashMap(usize capacity) : table(bit_ceil(max<usize>(4, 2 * capacity + 1))), mask(table.n - 1), shift(64 - countr_zero(table.n)) {
+    explicit HashMap(usize capacity) : table(std::bit_ceil(std::max<usize>(4, 2 * capacity + 1))), mask(table.n - 1), shift(64 - std::countr_zero(table.n)) {
         for (usize i = 0; i < table.n; ++i) table[i].key = Empty;
     }
     usize bucket(Key key) const { return ((u64(key) ^ (u64(key) >> 32)) * 11995408973635179863ull) >> shift; }

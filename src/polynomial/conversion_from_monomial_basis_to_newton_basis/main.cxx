@@ -7,7 +7,7 @@ int main() {
     Buffer<u32> f(n), points(n);
     for (usize i = 0; i < n; ++i) f[i] = in.read<u32, 9>();
     for (usize i = 0; i < n; ++i) points[i] = in.read<u32, 9>();
-    Multipoint tree{span<const u32>(points)};
+    Multipoint tree{std::span<const u32>(points)};
     auto result = tree.to_newton(std::move(f));
-    out.write(span(result.p, result.n), ' ');
+    out.write(std::span(result.p, result.n), ' ');
 }

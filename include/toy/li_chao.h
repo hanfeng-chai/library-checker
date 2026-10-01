@@ -8,10 +8,10 @@ struct LiChaoTree {
     Buffer<i32> coordinates;
     Buffer<Line> lines;
     Buffer<i64> leaves;
-    explicit LiChaoTree(span<const i32> xs) : n(xs.size()), capacity(bit_ceil(max(n,1u))), height(countr_zero(capacity)), coordinates(capacity+1), lines(capacity), leaves(capacity) {
-        fill(coordinates.p,coordinates.p+coordinates.n,xs.empty()?0:xs.back());
+    explicit LiChaoTree(std::span<const i32> xs) : n(xs.size()), capacity(std::bit_ceil(std::max(n,1u))), height(std::countr_zero(capacity)), coordinates(capacity+1), lines(capacity), leaves(capacity) {
+        std::fill(coordinates.p,coordinates.p+coordinates.n,xs.empty()?0:xs.back());
         if(n)memcpy(coordinates.p,xs.data(),xs.size_bytes());
-        fill(lines.p,lines.p+lines.n,Line{});fill(leaves.p,leaves.p+leaves.n,Line::infinity);
+        std::fill(lines.p,lines.p+lines.n,Line{});std::fill(leaves.p,leaves.p+leaves.n,Line::infinity);
     }
     void add(int node, int level, Line line) {
         int left = (node << level) ^ capacity;
@@ -71,13 +71,13 @@ struct LiChaoTree {
     }
     void add(Line line){if(n)add(1,height,line);}
     void add_segment(u32 l,u32 r,Line line){
-        if(l==r)return;u32 a=l+capacity-1,b=r+capacity,width=bit_width(a^b)-1,mask=(1u<<width)-1;
-        for(u32 bits=~a&mask;bits;bits&=bits-1){unsigned k=countr_zero(bits);add((a>>k)^1,k,line);}
-        for(u32 bits=b&mask;bits;bits&=bits-1){unsigned k=countr_zero(bits);add((b>>k)^1,k,line);}
+        if(l==r)return;u32 a=l+capacity-1,b=r+capacity,width=std::bit_width(a^b)-1,mask=(1u<<width)-1;
+        for(u32 bits=~a&mask;bits;bits&=bits-1){unsigned k=std::countr_zero(bits);add((a>>k)^1,k,line);}
+        for(u32 bits=b&mask;bits;bits&=bits-1){unsigned k=std::countr_zero(bits);add((b>>k)^1,k,line);}
     }
     i64 minimum(u32 index)const{
         i64 result=leaves[index];i32 x=coordinates[index];
-        for(u32 node=capacity+index;node>>=1;)result=min(result,lines[node](x));return result;
+        for(u32 node=capacity+index;node>>=1;)result=std::min(result,lines[node](x));return result;
     }
 };
 }

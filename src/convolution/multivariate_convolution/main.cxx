@@ -11,6 +11,6 @@ int main() {
     Buffer<u32> a(n), b(n);
     for (usize i = 0; i < n; ++i) a[i] = in.read<u32, 9>();
     for (usize i = 0; i < n; ++i) b[i] = in.read<u32, 9>();
-    auto c = multivariate_convolution(span<const u32>(dimensions), std::move(a), std::move(b));
-    out.write(span(c.p, c.n), ' ');
+    auto c = multivariate_convolution(std::span<const u32>(dimensions), std::move(a), std::move(b));
+    out.write(std::span(c.p, c.n), ' ');
 }

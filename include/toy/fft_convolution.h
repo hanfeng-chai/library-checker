@@ -33,18 +33,18 @@ struct FFT {
     explicit FFT(usize vectors):root(storage<Point>(vectors)) {
         root[0]={1,0};
         for(usize half=1;half<vectors;half*=2) {
-            f80 angle=numbers::pi_v<f80>/(2*half);
+            f80 angle=std::numbers::pi_v<f80>/(2*half);
             Point w={f64(cosl(angle)),f64(sinl(angle))};
             for(usize i=0;i<half;++i)root[half+i]=root[i]*w;
         }
     }
     template<bool Inverse, usize Cache = 1024> void transform(Buffer<C4>& a) const {
-        usize n=a.n,limit=n>>(countr_zero(n)&1);
+        usize n=a.n,limit=n>>(std::countr_zero(n)&1);
         auto top=[&]{for(usize i=0;i<n/2;++i){auto x=a[i],y=a[i+n/2];a[i]=x+y;a[i+n/2]=x-y;}};
         if constexpr(!Inverse)if(limit!=n)top();
         auto stage=[&](usize begin,usize end,usize len) {
             usize q=len/4;
-            for(usize s=begin,k=begin>>countr_zero(len);s<end;s+=len,++k) {
+            for(usize s=begin,k=begin>>std::countr_zero(len);s<end;s+=len,++k) {
                 Point p1=root[k],p2=root[2*k],p3=p1*p2;
                 if constexpr(Inverse)p1=p1.conj(),p2=p2.conj(),p3=p3.conj();
                 C4 r1=C4::splat(p1),r2=C4::splat(p2),r3=C4::splat(p3);
@@ -99,7 +99,7 @@ struct FFT {
 };
 template<u32 P> constexpr u32 sqrt_mod(u32 x) {
     using M=Mod<P>;
-    int s=countr_zero(P-1);u32 q=(P-1)>>s,z=2;
+    int s=std::countr_zero(P-1);u32 q=(P-1)>>s,z=2;
     while(M::pow(z,(P-1)/2)==1)++z;
     u32 c=M::pow(z,q),r=M::pow(x,(q+1)/2),t=M::pow(x,q);
     while(t!=1) {
@@ -118,7 +118,7 @@ template<u32 P> inline constexpr Basis basis=[] {
     i128 a=P,b=0,c=-i128(r),e=1;
     auto norm=[&](i128 x,i128 y){return x*x+d*y*y;};
     while(true) {
-        if(norm(a,b)>norm(c,e))swap(a,c),swap(b,e);
+        if(norm(a,b)>norm(c,e))std::swap(a,c),std::swap(b,e);
         i128 dot=a*c+d*b*e,len=norm(a,b),q=(2*dot+(dot>=0?len:-len))/(2*len);
         if(!q||norm(c-q*a,e-q*b)>=norm(c,e))break;
         c-=q*a;e-=q*b;
@@ -132,16 +132,16 @@ inline __m256d nearest(__m256d x){return _mm256_round_pd(x,_MM_FROUND_TO_NEAREST
 // 2^20 padded coefficients; larger products and short sides use exact CRT.
 // The quadratic-lattice embedding follows the repository Rohan_Kapri/adamant
 // submissions; this kernel uses four-coefficient leaves and a small cache tree.
-template<u32 P> Buffer<u32> convolution_fft(span<const u32> a,span<const u32> b) {
+template<u32 P> Buffer<u32> convolution_fft(std::span<const u32> a,std::span<const u32> b) {
     using namespace fft_detail;
     if(a.empty()||b.empty())return {};
-    usize count=a.size()+b.size()-1,n=bit_ceil(count);
-    if(min(a.size(),b.size())<=16||n>(1<<20))return convolution_crt<P>(a,b);
+    usize count=a.size()+b.size()-1,n=std::bit_ceil(count);
+    if(std::min(a.size(),b.size())<=16||n>(1<<20))return convolution_crt<P>(a,b);
     constexpr auto L=basis<P>;
     constexpr f64 det=f64(L.a)*L.e-f64(L.c)*L.b;
     f64 scale=sqrt(f64(L.d));
     FFT fft(n/4);auto x=storage<C4>(n/4),y=storage<C4>(n/4);
-    auto fill=[&](Buffer<C4>& target,span<const u32> input,u32 seed) {
+    auto fill=[&](Buffer<C4>& target,std::span<const u32> input,u32 seed) {
         usize i=0;
         for(;i<input.size();i+=4) {
             alignas(16) u32 tail[4]{};

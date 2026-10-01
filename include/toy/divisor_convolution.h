@@ -17,7 +17,7 @@ Buffer<u32> divisor_convolution(Buffer<u32> a, Buffer<u32> b) {
     for (; i + 8 <= b.n; i += 8)
         _mm256_storeu_si256((__m256i*)(b.p + i), M::mont(_mm256_loadu_si256((const __m256i*)(b.p + i)), factor));
     for (; i <= n; ++i) b[i] = M::mont(b[i], M::r2);
-    for (u32 p : span(ps.p, ps.n)) {
+    for (u32 p : std::span(ps.p, ps.n)) {
         if constexpr (Kind == Divisor::Gcd) {
             // Descending propagates every power of p to its smaller multiples.
             for (usize i = n / p, j = i * p; i; --i, j -= p)
@@ -31,7 +31,7 @@ Buffer<u32> divisor_convolution(Buffer<u32> a, Buffer<u32> b) {
         _mm256_storeu_si256((__m256i*)(a.p + i), M::mont(
             _mm256_loadu_si256((const __m256i*)(a.p + i)), _mm256_loadu_si256((const __m256i*)(b.p + i))));
     for (; i <= n; ++i) a[i] = M::mont(a[i], b[i]);
-    for (u32 p : span(ps.p, ps.n)) {
+    for (u32 p : std::span(ps.p, ps.n)) {
         // Reverse each prime's traversal to apply the Mobius inverse.
         if constexpr (Kind == Divisor::Gcd) {
             for (usize i = 1, j = p; j <= n; ++i, j += p) a[i] = M::sub(a[i], a[j]);

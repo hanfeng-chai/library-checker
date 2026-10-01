@@ -8,6 +8,6 @@ int main() {
     u64 exponent = in.read<u64, 19>();
     Buffer<u32> f(n);
     for (usize i = 0; i < n; ++i) f[i] = in.read<u32, 9>();
-    auto g = fps_pow(span<const u32>(f), n, exponent);
-    out.write(span(g.p, g.n), ' ');
+    auto g = fps_pow(std::span<const u32>(f), n, exponent);
+    out.write(std::span(g.p, g.n), ' ');
 }

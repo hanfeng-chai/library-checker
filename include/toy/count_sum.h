@@ -10,17 +10,17 @@ inline BoundedSum operator-(BoundedSum a, BoundedSum b) { return {a.sum - b.sum,
 // than 2^16 positions, so count and bounded sum fit together in a u64.
 template<u32 MaxValue = ~u32(0)> struct CountSumTree {
     static constexpr usize chunk = 1 << 16;
-    static constexpr unsigned shift = max<unsigned>(1, bit_width(u64(MaxValue) * chunk));
+    static constexpr unsigned shift = std::max<unsigned>(1, std::bit_width(u64(MaxValue) * chunk));
     static_assert(shift + 16 <= 64);
     static constexpr u64 mask = (u64(1) << shift) - 1;
     Buffer<u64> tree;
-    array<usize, 4> offset{};
+    std::array<usize, 4> offset{};
     usize height = 0;
     Fenwick<BoundedSum> coarse;
     explicit CountSumTree(usize n) : coarse((n + chunk - 1) / chunk) {
         usize size = 0; ++n;
         do { n = (n + 15) / 16; offset[height++] = size; size += 16 * n; } while (height < 4);
-        usize bytes = (size * 8 + (1 << 21) - 1) & -usize(1 << 21); tree.p = (u64*)aligned_alloc(1 << 21, bytes); tree.n = tree.capacity = size; madvise(tree.p, bytes, MADV_HUGEPAGE); fill(tree.p, tree.p + size, u64(0));
+        usize bytes = (size * 8 + (1 << 21) - 1) & -usize(1 << 21); tree.p = (u64*)aligned_alloc(1 << 21, bytes); tree.n = tree.capacity = size; madvise(tree.p, bytes, MADV_HUGEPAGE); std::fill(tree.p, tree.p + size, u64(0));
     }
     void prefetch(usize position) const { __builtin_prefetch(tree.p + (position & -usize(16)), 1, 3); __builtin_prefetch(tree.p + (position & -usize(16)) + 8, 1, 3); }
     void add(usize position, u32 value) {

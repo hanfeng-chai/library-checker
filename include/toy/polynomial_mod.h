@@ -10,11 +10,11 @@ struct PolynomialMod {
     using E = PolynomialEuclid<P>;
     Buffer<u32> modulus, spectrum, inverse, work, temp;
     usize degree, size;
-    explicit PolynomialMod(span<const u32> f) : modulus(E::copy(f)), degree(f.size() - 1),
-        size(max<usize>(64, bit_ceil(2 * degree - 1))) {
+    explicit PolynomialMod(std::span<const u32> f) : modulus(E::copy(f)), degree(f.size() - 1),
+        size(std::max<usize>(64, std::bit_ceil(2 * degree - 1))) {
         fps_scale<P>(modulus, M::pow(f.back(), P - 2));
         if (degree <= 32) return;
-        Buffer<u32> reversed(degree + 1); reverse_copy(modulus.p, modulus.p + modulus.n, reversed.p);
+        Buffer<u32> reversed(degree + 1); std::reverse_copy(modulus.p, modulus.p + modulus.n, reversed.p);
         inverse = fps_inv<P>(reversed, degree - 1); inverse.resize(size);
         spectrum = E::copy(modulus); spectrum.resize(size);
         work = Buffer<u32>(size); temp = Buffer<u32>(size);
@@ -31,9 +31,9 @@ struct PolynomialMod {
         if (a.n <= degree) return a;
         if (degree <= 32) return polynomial_divmod<P>(std::move(a), modulus).second;
         usize count = a.n - degree;
-        reverse_copy(a.p + degree, a.p + a.n, work.p); fill(work.p + count, work.p + size, 0u);
+        std::reverse_copy(a.p + degree, a.p + a.n, work.p); std::fill(work.p + count, work.p + size, 0u);
         transform(work); product(work, inverse);
-        reverse_copy(work.p, work.p + count, temp.p); fill(temp.p + count, temp.p + size, 0u);
+        std::reverse_copy(work.p, work.p + count, temp.p); std::fill(temp.p + count, temp.p + size, 0u);
         transform(temp); product(temp, spectrum);
         for (usize i = 0; i < degree; ++i) a[i] = M::sub(a[i], temp[i]);
         a.n = degree; E::trim(a); return a;
@@ -50,7 +50,7 @@ struct PolynomialMod {
     // needs NTT. This is useful for Frobenius tests and randomized splitting.
     Buffer<u32> linear_power(u32 c, u32 exponent) {
         Buffer<u32> a(1); a[0] = 1;
-        for (int bit = int(bit_width(exponent)); bit--;) {
+        for (int bit = int(std::bit_width(exponent)); bit--;) {
             a = square(std::move(a));
             if ((exponent >> bit) & 1) {
                 a.resize(a.n + 1);

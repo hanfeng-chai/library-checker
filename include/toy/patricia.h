@@ -11,7 +11,7 @@ struct PatriciaSet {
     explicit PatriciaSet(usize capacity = 0) : nodes(1, 2 * capacity + 1) { nodes[0] = {0, {0,0}, -1}; }
     int allocate(Node value) {
         if (free) { int i = free; free = nodes[i].child[0]; nodes[i] = value; return i; }
-        if (nodes.n == nodes.capacity) nodes.reserve(max<usize>(4, 2 * nodes.capacity));
+        if (nodes.n == nodes.capacity) nodes.reserve(std::max<usize>(4, 2 * nodes.capacity));
         nodes[nodes.n] = value; return nodes.n++;
     }
     void recycle(int i) { nodes[i].child[0] = free; free = i; }
@@ -23,7 +23,7 @@ struct PatriciaSet {
     bool insert(u32 value) {
         if (!root) { root = allocate({value,{0,0},-1}); ++count; return true; }
         int found = leaf(value); u32 difference = value ^ nodes[found].value; if (!difference) return false;
-        int bit = bit_width(difference) - 1, parent = 0, direction = 0, node = root;
+        int bit = std::bit_width(difference) - 1, parent = 0, direction = 0, node = root;
         while (nodes[node].bit > bit) { parent = node; direction = value >> nodes[node].bit & 1; node = nodes[node].child[direction]; }
         int added = allocate({value,{0,0},-1}); u32 side = value >> bit & 1;
         Node branch{0,{node,node},bit}; branch.child[side] = added; int joined = allocate(branch);

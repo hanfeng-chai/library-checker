@@ -12,7 +12,7 @@ struct RadixNTT : NTT<P> {
         return M::mont(g, 1);
     }
     explicit RadixNTT(usize capacity) : NTT<P>(capacity, generator()) {}
-    void forward(span<u32> a) const {
+    void forward(std::span<u32> a) const {
         if (a.size() < 64) { NTT<P>::forward(a); return; }
         convolution_detail::info<P>.forward((__m256i*)a.data(), a.size() / 8);
         for (usize i = 0; i < a.size(); i += 8) {
@@ -23,7 +23,7 @@ struct RadixNTT : NTT<P> {
         }
         this->template small<false>(a, this->root.p);
     }
-    void inverse(span<u32> a) const {
+    void inverse(std::span<u32> a) const {
         if (a.size() < 64) { NTT<P>::inverse(a); return; }
         this->template small<true>(a, this->inverse_root.p);
         // Partial inverse includes Montgomery R. The eight-point leaves are

@@ -28,7 +28,7 @@ Buffer<u32> subset_binary(Buffer<u32> a, Buffer<u32> b) {
         }
         return a;
     }
-    int bits = countr_zero(n); usize half = n / 2, pitch = half + 16;
+    int bits = std::countr_zero(n); usize half = n / 2, pitch = half + 16;
     auto storage = [](usize count) {
         if (count * 4 < (1 << 20)) return Buffer<u32>(count);
         usize bytes = (count * 4 + (1 << 21) - 1) & -usize(1 << 21);
@@ -36,13 +36,13 @@ Buffer<u32> subset_binary(Buffer<u32> a, Buffer<u32> b) {
         a.p = (u32*)aligned_alloc(1 << 21, bytes); madvise(a.p, bytes, MADV_HUGEPAGE); return a;
     };
     Buffer<u32> f = storage(bits * pitch), g = storage(bits * pitch);
-    fill(f.p, f.p + f.n, 0u); fill(g.p, g.p + g.n, 0u);
+    std::fill(f.p, f.p + f.n, 0u); std::fill(g.p, g.p + g.n, 0u);
     u32 normalization = M::pow((P + 1) / 2, bits - 1);
     u32 scale = Divide ? M::r2 : M::mul(M::r2, normalization);
     // For disjoint pairs, |A|+|B|=|A xor B|. Rank parity determines bit 0,
     // so XOR transforms need only mask>>1. Empty factors are added separately.
     for (usize i = 1; i < n; ++i) {
-        usize offset = (popcount(i) - 1) * pitch + (i >> 1);
+        usize offset = (std::popcount(i) - 1) * pitch + (i >> 1);
         f[offset] = a[i]; g[offset] = M::mont(b[i], scale);
     }
     for (int r = 0; r < bits; ++r) {
@@ -58,7 +58,7 @@ Buffer<u32> subset_binary(Buffer<u32> a, Buffer<u32> b) {
             if constexpr (Divide) sum = M::mont(_mm256_loadu_si256((const __m256i*)(g.p + r * pitch + i)), q0);
             for (int first = 0; first < r; first += 8) {
                 auto even = _mm256_setzero_si256(), odd = even;
-                for (int j = first; j < min(first + 8, r); ++j) {
+                for (int j = first; j < std::min(first + 8, r); ++j) {
                     auto x = _mm256_loadu_si256((const __m256i*)(f.p + j * pitch + i));
                     auto y = _mm256_loadu_si256((const __m256i*)(g.p + (r - 1 - j) * pitch + i));
                     even = _mm256_add_epi64(even, _mm256_mul_epu32(x, y));
@@ -80,7 +80,7 @@ Buffer<u32> subset_binary(Buffer<u32> a, Buffer<u32> b) {
     auto factor = _mm256_set1_epi32(M::mont(normalization, M::r2));
     for (usize i = 0; i < n; i += 8) {
         alignas(32) u32 product[8];
-        for (usize j = 0; j < 8; ++j) product[j] = i + j ? f[(popcount(i + j) - 1) * pitch + ((i + j) >> 1)] : 0;
+        for (usize j = 0; j < 8; ++j) product[j] = i + j ? f[(std::popcount(i + j) - 1) * pitch + ((i + j) >> 1)] : 0;
         auto value = _mm256_load_si256((const __m256i*)product);
         if constexpr (Divide) value = M::mont(value, factor);
         else {
@@ -99,14 +99,14 @@ Buffer<u32> subset_convolution(Buffer<u32> a, Buffer<u32> b) {
     return subset_binary<false, P>(std::move(a), std::move(b));
 }
 template<u32 P = 998244353>
-Buffer<u32> subset_division(span<const u32> a, span<const u32> b) {
+Buffer<u32> subset_division(std::span<const u32> a, std::span<const u32> b) {
     Buffer<u32> x(a.size()), y(b.size());
     memcpy(x.p, a.data(), a.size() * 4); memcpy(y.p, b.data(), b.size() * 4);
     return subset_binary<true, P>(std::move(x), std::move(y));
 }
 
 template<u32 P = 998244353>
-Buffer<u32> subset_convolution(span<const u32> a, span<const u32> b) {
+Buffer<u32> subset_convolution(std::span<const u32> a, std::span<const u32> b) {
     Buffer<u32> x(a.size()), y(b.size());
     memcpy(x.p, a.data(), a.size() * 4); memcpy(y.p, b.data(), b.size() * 4);
     return subset_convolution<P>(std::move(x), std::move(y));

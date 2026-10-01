@@ -3,7 +3,7 @@
 using namespace toy;
 int main() {
     Reader in; Writer out; usize n = in.read<u32, 6>(), q = in.read<u32, 6>(); Buffer<i32> a(n, n + q);
-    for (auto& x : span(a.p, a.n)) x = in.read<i32, 10>();
+    for (auto& x : std::span(a.p, a.n)) x = in.read<i32, 10>();
     if (!n && q) while (*in.p <= ' ') ++in.p;
     PartitionQueue heap(std::move(a));
     while (q--) {

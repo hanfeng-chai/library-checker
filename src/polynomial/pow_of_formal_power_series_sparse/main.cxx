@@ -8,6 +8,6 @@ int main() {
     u64 exponent = in.read<u64, 19>();
     Buffer<SparseTerm> terms(k);
     for (usize i = 0; i < k; ++i) terms[i] = {in.read<u32, 6>(), in.read<u32, 9>()};
-    auto g = fps_pow_sparse(span<const SparseTerm>(terms), n, exponent);
-    out.write(span(g.p, g.n), ' ');
+    auto g = fps_pow_sparse(std::span<const SparseTerm>(terms), n, exponent);
+    out.write(std::span(g.p, g.n), ' ');
 }

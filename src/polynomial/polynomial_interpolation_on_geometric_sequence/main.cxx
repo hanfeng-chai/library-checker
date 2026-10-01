@@ -9,5 +9,5 @@ int main() {
     Buffer<u32> values(n);
     for (usize i = 0; i < n; ++i) values[i] = in.read<u32, 9>();
     auto f = polynomial_interpolate_geometric(std::move(values), a, r);
-    out.write(span(f.p, f.n), ' ');
+    out.write(std::span(f.p, f.n), ' ');
 }

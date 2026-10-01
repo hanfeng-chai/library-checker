@@ -8,7 +8,7 @@ template<u32 P = 998244353> struct AffinePointTree {
     using M = Mod<P>;
     static constexpr u32 one = (u64(1) << 32) % P;
     Buffer<u32> a, b, saved_a, saved_b;
-    array<usize, 16> offset{};
+    std::array<usize, 16> offset{};
     usize height = 0, leaves, stride, count = 0;
     static u32 multiply(u32 x, u32 y) { u64 z = u64(x) * y; return (z + u64(u32(z) * M::inverse) * P) >> 32; }
     static __m256i multiply(__m256i x, __m256i y) {
@@ -21,11 +21,11 @@ template<u32 P = 998244353> struct AffinePointTree {
     static __m256i add(__m256i x, __m256i y) {
         auto z = _mm256_add_epi32(x, y); return _mm256_min_epu32(z, _mm256_sub_epi32(z, _mm256_set1_epi32(2 * P)));
     }
-    AffinePointTree(span<const u32> values, usize queries) : leaves((values.size() + 8) & -usize(8)), stride((queries + 7) & -usize(8)) {
+    AffinePointTree(std::span<const u32> values, usize queries) : leaves((values.size() + 8) & -usize(8)), stride((queries + 7) & -usize(8)) {
         usize size = 0, n = values.size() + 1;
         for (;;) { offset[height++] = size; size += (n + 7) & -usize(8); if (n <= 8) break; n = (n + 7) / 8; }
         a = Buffer<u32>(size - leaves); b = Buffer<u32>(size);
-        fill(a.p, a.p + a.n, one); fill(b.p, b.p + b.n, 0u);
+        std::fill(a.p, a.p + a.n, one); std::fill(b.p, b.p + b.n, 0u);
         if (!values.empty()) memcpy(b.p, values.data(), values.size_bytes());
         for (usize i = 0; i < leaves; i += 8)
             _mm256_store_si256((__m256i*)(b.p + i), multiply(_mm256_load_si256((const __m256i*)(b.p + i)), _mm256_set1_epi32(M::r2)));
@@ -66,9 +66,9 @@ template<u32 P = 998244353> struct AffinePointTree {
     u32 get(u32 index) const {
         u32 value = b[index];
         for (usize k = 1; k < height; ++k) {
-            usize at = offset[k] + (index >> (3 * k)); value = multiply(value, a[at - leaves]) + b[at]; value = min(value, value - 2 * P);
+            usize at = offset[k] + (index >> (3 * k)); value = multiply(value, a[at - leaves]) + b[at]; value = std::min(value, value - 2 * P);
         }
-        value = multiply(value, 1); return min(value, value - P);
+        value = multiply(value, 1); return std::min(value, value - P);
     }
     void collect(u32 index) {
         saved_b[count] = b[index];
@@ -77,7 +77,7 @@ template<u32 P = 998244353> struct AffinePointTree {
         }
         ++count;
     }
-    span<const u32> resolve() {
+    std::span<const u32> resolve() {
         usize padded = (count + 7) & -usize(8);
         for (usize i = count; i < padded; ++i) {
             saved_b[i] = 0;
@@ -90,7 +90,7 @@ template<u32 P = 998244353> struct AffinePointTree {
             value = multiply(value, _mm256_set1_epi32(1));
             _mm256_store_si256((__m256i*)(saved_b.p + i), _mm256_min_epu32(value, _mm256_sub_epi32(value, _mm256_set1_epi32(P))));
         }
-        auto result = span<const u32>(saved_b.p, count); count = 0; return result;
+        auto result = std::span<const u32>(saved_b.p, count); count = 0; return result;
     }
 };
 }

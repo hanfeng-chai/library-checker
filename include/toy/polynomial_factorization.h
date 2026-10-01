@@ -26,13 +26,13 @@ struct PolynomialFactorizer {
         for (int i = 0; i < 4; ++i) inverse *= 2 + p * inverse;
         if constexpr (Binary) one = 1;
     }
-    u32 add(u32 a, u32 b) const { return min(a + b, a + b - p); }
-    u32 sub(u32 a, u32 b) const { return min(a - b, a - b + p); }
+    u32 add(u32 a, u32 b) const { return std::min(a + b, a + b - p); }
+    u32 sub(u32 a, u32 b) const { return std::min(a - b, a - b + p); }
     // Up to eight canonical products fit together with the correction term.
     u32 reduce(u64 a) const {
         if constexpr (Binary) return a & 1;
         u32 x = (a + u64(u32(a) * inverse) * p) >> 32;
-        x = min(x, x - 2 * p); return min(x, x - p);
+        x = std::min(x, x - 2 * p); return std::min(x, x - p);
     }
     u32 mul(u32 a, u32 b) const { return reduce(u64(a) * b); }
     u32 encode(u32 a) const { if constexpr (Binary) return a & 1; else return mul(a, r2); }
@@ -42,12 +42,12 @@ struct PolynomialFactorizer {
         return r;
     }
     static void trim(Poly& a) { while (a.n && !a[a.n - 1]) --a.n; }
-    static Poly copy(span<const u32> a) {
+    static Poly copy(std::span<const u32> a) {
         Poly b(a.size()); if (!a.empty()) memcpy(b.p, a.data(), a.size() * 4); return b;
     }
     Poly constant() const { Poly a(1); a[0] = one; return a; }
     template<bool Quotient = false>
-    Poly divide(Poly a, span<const u32> b) const {
+    Poly divide(Poly a, std::span<const u32> b) const {
         trim(a);
         if (a.n < b.size()) { if constexpr (Quotient) return {}; else return a; }
         usize count = a.n - b.size() + 1;
@@ -60,14 +60,14 @@ struct PolynomialFactorizer {
         if constexpr (Quotient) { trim(q); return q; }
         else { a.n = b.size() - 1; trim(a); return a; }
     }
-    Poly multiply(span<const u32> a, span<const u32> b) const {
+    Poly multiply(std::span<const u32> a, std::span<const u32> b) const {
         if (a.empty() || b.empty()) return {};
         Poly c(a.size() + b.size() - 1);
         for (usize k = 0; k < c.n; ++k) {
-            u32 value = 0; usize end = min(a.size(), k + 1);
+            u32 value = 0; usize end = std::min(a.size(), k + 1);
             for (usize first = k < b.size() ? 0 : k - b.size() + 1; first < end; first += 8) {
                 u64 sum = 0;
-                for (usize i = first; i < min(first + 8, end); ++i) sum += u64(a[i]) * b[k - i];
+                for (usize i = first; i < std::min(first + 8, end); ++i) sum += u64(a[i]) * b[k - i];
                 value = add(value, reduce(sum));
             }
             c[k] = value;
@@ -80,7 +80,7 @@ struct PolynomialFactorizer {
         if (a.n) { u32 inv = power(a[a.n - 1], p - 2); for (usize i = 0; i < a.n; ++i) a[i] = mul(a[i], inv); }
         return a;
     }
-    Poly powmod(Poly a, u32 e, span<const u32> f) const {
+    Poly powmod(Poly a, u32 e, std::span<const u32> f) const {
         a = divide(std::move(a), f); auto r = constant();
         for (; e; e >>= 1) {
             if (e & 1) r = divide(multiply(r, a), f);
@@ -105,13 +105,13 @@ struct PolynomialFactorizer {
             for (usize j = 0; j < n; ++j) matrix[j * n + i] = j < current.n ? current[j] : 0;
             if (i + 1 < n) current = divide(multiply(current, xp), f);
         }
-        auto frobenius = [&](span<const u32> a, span<const u32> modulus) {
+        auto frobenius = [&](std::span<const u32> a, std::span<const u32> modulus) {
             Poly b(n);
             for (usize j = 0; j < n; ++j) {
                 u32 value = 0;
                 for (usize first = 0; first < a.size(); first += 8) {
                     u64 sum = 0;
-                    for (usize i = first; i < min(first + 8, a.size()); ++i) sum += u64(a[i]) * matrix[j * n + i];
+                    for (usize i = first; i < std::min(first + 8, a.size()); ++i) sum += u64(a[i]) * matrix[j * n + i];
                     value = add(value, reduce(sum));
                 }
                 b[j] = value;
@@ -131,7 +131,7 @@ struct PolynomialFactorizer {
                 for (usize i = 1; i < degree; ++i) {
                     h = frobenius(h, g);
                     if constexpr (Binary) {
-                        h.resize(max(h.n, b.n));
+                        h.resize(std::max(h.n, b.n));
                         for (usize j = 0; j < b.n; ++j) h[j] = add(h[j], b[j]);
                     } else h = divide(multiply(h, b), g);
                 }
@@ -145,7 +145,7 @@ struct PolynomialFactorizer {
         current = std::move(x);
         for (usize degree = 1; 2 * degree < f.n; ++degree) {
             current = frobenius(current, f);
-            auto difference = copy(current); difference.resize(max<usize>(2, difference.n));
+            auto difference = copy(current); difference.resize(std::max<usize>(2, difference.n));
             difference[1] = sub(difference[1], one);
             auto part = gcd(copy(f), std::move(difference));
             if (part.n <= 1) continue;
@@ -175,7 +175,7 @@ struct PolynomialFactorizer {
 };
 
 // Monic input over a runtime prime 2<=p<2^30. Best suited to small degrees.
-inline PolynomialFactors polynomial_factorize(span<const u32> f, u32 p, u64 seed = 8213197421) {
+inline PolynomialFactors polynomial_factorize(std::span<const u32> f, u32 p, u64 seed = 8213197421) {
     auto solve = [&]<bool Binary>() {
         PolynomialFactorizer<Binary> solver(p, f.size() - 1, seed);
         Buffer<u32> a(f.size()); for (usize i = 0; i < a.n; ++i) a[i] = solver.encode(f[i]);

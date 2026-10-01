@@ -8,6 +8,6 @@ int main() {
     Buffer<u32> a(n), b(n);
     for (usize i = 0; i < n; ++i) a[i] = in.read<u32, 9>();
     for (usize i = 0; i < n; ++i) b[i] = in.read<u32, 9>();
-    auto c = bitwise_convolution<Bitwise::And>(move(a), move(b));
-    out.write(span(c.p, c.n), ' ');
+    auto c = bitwise_convolution<Bitwise::And>(std::move(a), std::move(b));
+    out.write(std::span(c.p, c.n), ' ');
 }

@@ -6,5 +6,5 @@ int main() {
     for (usize i = 0; i < m; ++i) f[i] = in.read<u32, 9>();
     while (*in.p <= ' ') ++in.p;
     for (usize i = 0; i < n; ++i) g[i] = in.read<u32, 9>();
-    auto h = set_compose(span<const u32>(f), span<const u32>(g)); out.write(span(h.p, h.n), ' ');
+    auto h = set_compose(std::span<const u32>(f), std::span<const u32>(g)); out.write(std::span(h.p, h.n), ' ');
 }

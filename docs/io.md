@@ -23,7 +23,7 @@ int main() {
     out.write(a);                 // 默认附加换行；第二个参数可改成 ' '
     out.write(b);
     u64 values[] = {a, index};
-    out.write(span(values));      // 批量整数输出
+    out.write(std::span(values));      // 批量整数输出
 }
 ```
 
@@ -63,7 +63,8 @@ GCC、Clang 均通过四题八份解答的各 129 项检查，生产二进制使
 最终源码、编译参数、输入和二进制 SHA-256、原始 perf 与逐测例结果保存在
 `bench/io-final-20260930/`。每个非样例各六次，轮换执行顺序后取 task-clock 中位数；
 max/sum 包含样例。全部准备完成后单个 SSH 任务串行测量，期间没有其他评测机操作。
-当前正式二进制与 `selected.json` 中选定的测量产物逐字节一致。
+定稿时的正式二进制与 `selected.json` 中选定的测量产物逐字节一致。
+之后的命名空间限定与运行库重链接单独审计，见 [评测审计](measurement_audit.md)。
 
 单位 ms。“对照最佳”的 max、sum 分别取下载的五份提交中的最小值，可能来自不同提交。
 

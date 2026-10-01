@@ -7,5 +7,5 @@ int main() {
     Buffer<u32> f(n);
     for (usize i = 0; i < n; ++i) f[i] = in.read<u32, 9>();
     auto g = polynomial_prefix_sum(std::move(f));
-    out.write(span(g.p, g.n), ' ');
+    out.write(std::span(g.p, g.n), ' ');
 }

@@ -9,5 +9,5 @@ int main() {
     for (usize i = 0; i < n; ++i) a[i] = in.read<u32, 9>();
     for (usize i = 0; i < n; ++i) b[i] = in.read<u32, 9>();
     auto c = multiplicative_convolution_2n(a, b);
-    out.write(span(c.p, c.n), ' ');
+    out.write(std::span(c.p, c.n), ' ');
 }

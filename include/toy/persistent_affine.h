@@ -12,11 +12,11 @@ template<u32 P=998244353> struct PersistentAffineArray {
     static Function identity(){return {R::one,0};}
     static bool is_identity(Function f){return f.a==R::one&&!f.b;}
     static Function compose(Function first,Function second){return {R::multiply(first.a,second.a),R::add(R::multiply(first.b,second.a),second.b)};}
-    static u32 mapped(u32 sum,u32 count,Function f){u64 z=u64(sum)*f.a+u64(count)*f.b;u32 value=(z+u64(u32(z)*Mod<P>::inverse)*P)>>32;return min(value,value-2*P);}
-    u32 create(Node node){if(nodes.n==nodes.capacity)nodes.reserve(max<usize>(4,2*nodes.capacity));nodes[nodes.n]=node;return nodes.n++;}
+    static u32 mapped(u32 sum,u32 count,Function f){u64 z=u64(sum)*f.a+u64(count)*f.b;u32 value=(z+u64(u32(z)*Mod<P>::inverse)*P)>>32;return std::min(value,value-2*P);}
+    u32 create(Node node){if(nodes.n==nodes.capacity)nodes.reserve(std::max<usize>(4,2*nodes.capacity));nodes[nodes.n]=node;return nodes.n++;}
     u32 merge(u32 a,u32 b){return create({a,b,R::add(nodes[a].sum,nodes[b].sum)});}
-    u32 build(span<const u32> a,u32 l,u32 r){if(r-l==1)return create({0,0,a[l]});u32 m=(l+r)/2,x=build(a,l,m),y=build(a,m,r);return merge(x,y);}
-    explicit PersistentAffineArray(span<const u32> values,usize reserve=0):nodes(1,max<usize>(2*values.size()+1,reserve)),n(values.size()) {nodes[0]={};root=n?build(values,0,n):0;}
+    u32 build(std::span<const u32> a,u32 l,u32 r){if(r-l==1)return create({0,0,a[l]});u32 m=(l+r)/2,x=build(a,l,m),y=build(a,m,r);return merge(x,y);}
+    explicit PersistentAffineArray(std::span<const u32> values,usize reserve=0):nodes(1,std::max<usize>(2*values.size()+1,reserve)),n(values.size()) {nodes[0]={};root=n?build(values,0,n):0;}
     u32 transform(u32 old,u32 length,Function f){if(is_identity(f))return old;Node node=nodes[old];node.sum=mapped(node.sum,length,f);node.lazy=compose(node.lazy,f);return create(node);}
     u32 update(u32 old,u32 l,u32 r,u32 first,u32 last,Function carry,Function f){
         if(last<=l||r<=first)return transform(old,r-l,carry);
@@ -33,10 +33,10 @@ template<u32 P=998244353> struct PersistentAffineArray {
     u32 query(u32 node,u32 l,u32 r,u32 first,u32 last)const{
         const auto& x=nodes[node];if(first<=l&&r<=last)return x.sum;u32 m=(l+r)/2,sum;
         if(last<=m)sum=query(x.left,l,m,first,last);else if(first>=m)sum=query(x.right,m,r,first,last);else sum=R::add(query(x.left,l,m,first,last),query(x.right,m,r,first,last));
-        return is_identity(x.lazy)?sum:mapped(sum,min(r,last)-max(l,first),x.lazy);
+        return is_identity(x.lazy)?sum:mapped(sum,std::min(r,last)-std::max(l,first),x.lazy);
     }
     u32 apply(u32 version,u32 l,u32 r,Function f){if(l==r)return version;return update(version,0,n,l,r,identity(),{R::encode(f.a),R::encode(f.b)});}
     u32 copy(u32 destination,u32 source,u32 l,u32 r){if(l==r||destination==source)return destination;return copy(destination,source,0,n,l,r,identity(),identity());}
-    u32 sum(u32 version,u32 l,u32 r)const{if(l==r)return 0;u32 value=query(version,0,n,l,r);return min(value,value-P);}
+    u32 sum(u32 version,u32 l,u32 r)const{if(l==r)return 0;u32 value=query(version,0,n,l,r);return std::min(value,value-P);}
 };
 }

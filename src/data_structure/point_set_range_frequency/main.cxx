@@ -9,5 +9,5 @@ int main(){
     Buffer<FrequencyEvent> events(0,2*q);
     while(q--){u32 type=in.read<u32,1>(),l=in.read<u32,6>();if(!type){u32 value=id(in.read<u32,10>());events[events.n++]=FrequencyEvent::change(current[l],l,false);current[l]=value;events[events.n++]=FrequencyEvent::change(value,l,true);}
         else{u32 r=in.read<u32,6>(),value=ids.get(in.read<u32,10>());if(value)events[events.n++]=FrequencyEvent::query(value-1,l,r,answers);++answers;}}
-    auto result=point_value_frequencies(value_count,span<const u32>(initial),span<const u32>(current),std::move(events),answers);out.write(span(result.p,result.n));
+    auto result=point_value_frequencies(value_count,std::span<const u32>(initial),std::span<const u32>(current),std::move(events),answers);out.write(std::span(result.p,result.n));
 }

@@ -9,9 +9,9 @@ template<u32 P=998244353> struct AffinePrefixTree {
     struct alignas(64) Node {u32 a[16],b[16];};
     struct Fraction {u32 numerator,denominator;};
     Buffer<Node> tree;
-    array<u32,9> offset{},groups{};
-    u32 height=0;array<Node*,9> layer{};
-    explicit AffinePrefixTree(span<const Affine<P>> values){
+    std::array<u32,9> offset{},groups{};
+    u32 height=0;std::array<Node*,9> layer{};
+    explicit AffinePrefixTree(std::span<const Affine<P>> values){
         u32 size=0,n=values.size()+1;
         do{offset[height]=size;groups[height]=(n+15)/16;size+=groups[height++]+1;n=(n+15)/16;}while(n>1);
         usize bytes=(size*sizeof(Node)+(1<<21)-1)&-usize(1<<21); tree.p=(Node*)aligned_alloc(1<<21,bytes);tree.n=tree.capacity=size;madvise(tree.p,bytes,MADV_HUGEPAGE);Buffer<Affine<P>> totals(size);Buffer<u32> prefix(size);u32 product=R::one;
@@ -21,7 +21,7 @@ template<u32 P=998244353> struct AffinePrefixTree {
                     node.b[j]=b;a=R::multiply(f.a,a);b=R::add(R::multiply(f.a,b),f.b);}
                 u32 at=offset[k]+i;totals[at]={a,b};prefix[at]=product;product=R::multiply(product,a);
             }
-            auto& sentinel=tree[offset[k]+groups[k]];fill(sentinel.a,sentinel.a+16,R::one);fill(sentinel.b,sentinel.b+16,0u);
+            auto& sentinel=tree[offset[k]+groups[k]];std::fill(sentinel.a,sentinel.a+16,R::one);std::fill(sentinel.b,sentinel.b+16,0u);
         }
         u32 inverse=R::power(product,P-2);
         for(u32 k=height;k--;){u32 children=k?groups[k-1]:values.size();
@@ -33,10 +33,10 @@ template<u32 P=998244353> struct AffinePrefixTree {
         for(u32 k=0;k<height;++k)layer[k]=tree.p+offset[k];
     }
     void prefetch(u32 l,u32 r)const{
-        for(u32 k=0;k<min(height,2u);++k,l>>=4,r>>=4){const auto* a=layer[k]+l/16;const auto* b=layer[k]+r/16;__builtin_prefetch(a->a,0,3);__builtin_prefetch(a->b,0,3);__builtin_prefetch(b->a,0,3);__builtin_prefetch(b->b,0,3);}
+        for(u32 k=0;k<std::min(height,2u);++k,l>>=4,r>>=4){const auto* a=layer[k]+l/16;const auto* b=layer[k]+r/16;__builtin_prefetch(a->a,0,3);__builtin_prefetch(a->b,0,3);__builtin_prefetch(b->a,0,3);__builtin_prefetch(b->b,0,3);}
     }
     static u32 multiply_sum(u32 a,u32 b,u32 c,u32 d){
-        u64 z=u64(a)*b+u64(c)*d;u32 x=(z+u64(u32(z)*Mod<P>::inverse)*P)>>32;return min(x,x-2*P);
+        u64 z=u64(a)*b+u64(c)*d;u32 x=(z+u64(u32(z)*Mod<P>::inverse)*P)>>32;return std::min(x,x-2*P);
     }
     // scale and translation encode replacement^-1 o old.
     void change(u32 position,u32 scale,u32 translation,u32 other){
@@ -51,17 +51,17 @@ template<u32 P=998244353> struct AffinePrefixTree {
     void change(u32 position,u32 scale,u32 translation){change(position,scale,translation,R::subtract(R::one,scale));}
     template<u32 Top> Fraction query_fixed(u32 l,u32 r,u32 x) const {
         u32 a=R::encode(x),b=0,denominator=R::one;
-        [&]<usize... K>(index_sequence<K...>){(([&]{
+        [&]<usize... K>(std::index_sequence<K...>){(([&]{
             constexpr u32 k=K;u32 le=l>>(4*k),re=r>>(4*k);const auto& first=layer[k][le/16];const auto& last=layer[k][re/16];
             a=R::add(R::multiply(first.a[le&15],a),first.b[le&15]);
             if constexpr(k==0){b=last.b[re&15];denominator=last.a[re&15];}
             else{b=R::add(R::multiply(last.a[re&15],b),last.b[re&15]);denominator=R::multiply(denominator,last.a[re&15]);}
-        }()),...);}(make_index_sequence<Top+1>{});
+        }()),...);}(std::make_index_sequence<Top+1>{});
         return {R::subtract(a,b),denominator};
     }
     Fraction query(u32 l,u32 r,u32 x)const{
         if(l==r)return {R::encode(x),R::one};
-        switch((bit_width(l^r)-1)/4){
+        switch((std::bit_width(l^r)-1)/4){
             case 0:return query_fixed<0>(l,r,x);case 1:return query_fixed<1>(l,r,x);
             case 2:return query_fixed<2>(l,r,x);case 3:return query_fixed<3>(l,r,x);
             case 4:return query_fixed<4>(l,r,x);case 5:return query_fixed<5>(l,r,x);

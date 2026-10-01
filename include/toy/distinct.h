@@ -4,11 +4,11 @@
 
 namespace toy {
 struct RangeQuery { u32 left, right; };
-inline Buffer<u32> range_distinct(span<const u32> values, span<const RangeQuery> queries) {
+inline Buffer<u32> range_distinct(std::span<const u32> values, std::span<const RangeQuery> queries) {
     usize n = values.size(); HashMap<u32, u32> last(n);
     Buffer<u32> previous(n), offset(n + 2), answer(queries.size());
-    for (u32 i = 0; i < n; ++i) { auto& p = last[values[i]]; previous[i] = exchange(p, i + 1); }
-    fill(offset.p, offset.p + offset.n, 0u);
+    for (u32 i = 0; i < n; ++i) { auto& p = last[values[i]]; previous[i] = std::exchange(p, i + 1); }
+    std::fill(offset.p, offset.p + offset.n, 0u);
     for (auto q : queries) ++offset[q.right + 1];
     for (usize i = 1; i < offset.n; ++i) offset[i] += offset[i - 1];
     Buffer<u32> cursor(n + 1), order(queries.size()); memcpy(cursor.p, offset.p, cursor.n * 4);

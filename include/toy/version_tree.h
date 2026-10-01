@@ -14,7 +14,7 @@ template<class T> Buffer<T> version_storage(usize n) {
 struct VersionTree {
     Buffer<int> head, next;
     int count = 0;
-    explicit VersionTree(usize capacity) : head(version_storage<int>(capacity + 1)), next(version_storage<int>(capacity + 1)) { fill(head.p, head.p + head.n, 0); }
+    explicit VersionTree(usize capacity) : head(version_storage<int>(capacity + 1)), next(version_storage<int>(capacity + 1)) { std::fill(head.p, head.p + head.n, 0); }
     int add(int base) { ++count; next[count] = head[base]; return head[base] = count; }
     template<class Enter, class Leave> void visit(Enter enter, Leave leave) const {
         Buffer<int> stack(2 * count + 1); usize size = 0;

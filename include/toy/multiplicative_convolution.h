@@ -6,11 +6,11 @@
 namespace toy {
 // Equal prime lengths p. c[k] = sum_{i*j mod p = k} a[i]*b[j] modulo Q.
 template<u32 Q = 998244353>
-Buffer<u32> multiplicative_convolution_prime(span<const u32> a, span<const u32> b) {
+Buffer<u32> multiplicative_convolution_prime(std::span<const u32> a, std::span<const u32> b) {
     using M = Mod<Q>;
     u32 p = a.size(), n = p - 1, g = primitive_root(p);
     Barrett mod(p);
-    usize size = bit_ceil(usize(2) * n - 1);
+    usize size = std::bit_ceil(usize(2) * n - 1);
     Buffer<u32> x(n, size), y(n, size), c(p);
     u64 sa = 0, sb = 0;
     for (u32 i = 0, k = 1; i < n; ++i, k = mod.mul(k, g)) {
@@ -26,17 +26,17 @@ Buffer<u32> multiplicative_convolution_prime(span<const u32> a, span<const u32> 
 
 // Equal power-of-two lengths. Split nonzero indices as 2^v * (-1)^s * 5^j.
 template<u32 Q = 998244353>
-Buffer<u32> multiplicative_convolution_2n(span<const u32> a, span<const u32> b) {
+Buffer<u32> multiplicative_convolution_2n(std::span<const u32> a, std::span<const u32> b) {
     using M = Mod<Q>;
     usize n = a.size(), mask = n - 1;
-    int log = countr_zero(n);
-    NTT<Q> ntt(max<usize>(1, n / 4));
+    int log = std::countr_zero(n);
+    NTT<Q> ntt(std::max<usize>(1, n / 4));
     Buffer<u32> x(n), y(n), z(n);
-    fill(z.p, z.p + n, 0u);
-    array<usize, 64> offset, width, height;
+    std::fill(z.p, z.p + n, 0u);
+    std::array<usize, 64> offset, width, height;
     usize pos = 0;
     for (int v = 0; v <= log; ++v) {
-        usize w = usize(1) << max(log - v - 2, 0), h = log - v >= 2 ? 2 : 1;
+        usize w = usize(1) << std::max(log - v - 2, 0), h = log - v >= 2 ? 2 : 1;
         offset[v] = pos; width[v] = w; height[v] = h;
         for (usize j = 0, k = (usize(1) << v) & mask; j < w; ++j, k = 5 * k & mask) {
             x[pos + j] = a[k]; y[pos + j] = M::mont(b[k], M::r2);
@@ -45,8 +45,8 @@ Buffer<u32> multiplicative_convolution_2n(span<const u32> a, span<const u32> b) 
             }
         }
         for (usize s = 0; s < h; ++s) {
-            ntt.forward(span(x.p + pos + s * w, w));
-            ntt.forward(span(y.p + pos + s * w, w));
+            ntt.forward(std::span(x.p + pos + s * w, w));
+            ntt.forward(std::span(y.p + pos + s * w, w));
         }
         if (h == 2) for (usize j = 0; j < w; ++j) {
             u32 a0 = x[pos + j], a1 = x[pos + w + j], b0 = y[pos + j], b1 = y[pos + w + j];
@@ -56,7 +56,7 @@ Buffer<u32> multiplicative_convolution_2n(span<const u32> a, span<const u32> b) 
         pos += h * w;
     }
     for (int i = 0; i <= log; ++i) for (int j = 0; j <= log; ++j) {
-        int k = min(log, i + j);
+        int k = std::min(log, i + j);
         // Bit-reversed frequency prefixes are precisely the smaller cyclic
         // quotient's frequencies, so no extra folding transforms are needed.
         for (usize s = 0; s < height[k]; ++s) {
@@ -72,7 +72,7 @@ Buffer<u32> multiplicative_convolution_2n(span<const u32> a, span<const u32> b) 
     }
     for (int v = 0; v <= log; ++v) {
         usize pos = offset[v], w = width[v], h = height[v];
-        for (usize s = 0; s < h; ++s) ntt.inverse(span(z.p + pos + s * w, w), h == 2 ? (Q + 1) / 2 : 1);
+        for (usize s = 0; s < h; ++s) ntt.inverse(std::span(z.p + pos + s * w, w), h == 2 ? (Q + 1) / 2 : 1);
         for (usize j = 0, k = (usize(1) << v) & mask; j < w; ++j, k = 5 * k & mask) {
             u32 a0 = z[pos + j];
             if (h == 2) {

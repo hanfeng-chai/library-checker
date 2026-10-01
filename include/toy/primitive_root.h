@@ -4,7 +4,7 @@
 namespace toy {
 // p is prime. Trial division factors p-1; sufficient for a 32-bit modulus.
 inline u32 primitive_root(u32 p) {
-    array<u32, 16> factors;
+    std::array<u32, 16> factors;
     int count = 0;
     u32 remaining = p - 1;
     for (u32 d = 2; u64(d) * d <= remaining; ++d) if (remaining % d == 0) {

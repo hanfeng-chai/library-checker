@@ -16,11 +16,11 @@ template<u32 P = 998244353> struct RangeSetComposite {
     usize capacity, height;
     Buffer<Function> tree, powers;
     Buffer<i32> lazy;
-    explicit RangeSetComposite(span<const Function> values, usize assignments = 0)
-        : capacity(bit_ceil(max<usize>(1, values.size()))), height(countr_zero(capacity)),
+    explicit RangeSetComposite(std::span<const Function> values, usize assignments = 0)
+        : capacity(std::bit_ceil(std::max<usize>(1, values.size()))), height(std::countr_zero(capacity)),
           tree(storage<Function>(2 * capacity)), powers(storage<Function>(assignments * (height + 1))), lazy(storage<i32>(2 * capacity)) {
         powers.n = 0;
-        fill(tree.p, tree.p + tree.n, Function{R::one,0}); fill(lazy.p, lazy.p + lazy.n, -1);
+        std::fill(tree.p, tree.p + tree.n, Function{R::one,0}); std::fill(lazy.p, lazy.p + lazy.n, -1);
         for(usize i=0;i<values.size();++i)tree[capacity+i]=encode(values[i]);
         for (usize i = capacity; --i;) pull(i);
     }
@@ -36,8 +36,8 @@ template<u32 P = 998244353> struct RangeSetComposite {
         }
     }
     void set(u32 l, u32 r, Function f) {
-        if (l == r) return; usize levels = bit_width(r - l), base = powers.n;
-        if (base + levels > powers.capacity) powers.reserve(max(base + levels, 2 * powers.capacity));
+        if (l == r) return; usize levels = std::bit_width(r - l), base = powers.n;
+        if (base + levels > powers.capacity) powers.reserve(std::max(base + levels, 2 * powers.capacity));
         powers[powers.n++] = encode(f);
         for (usize k = 1; k < levels; ++k) { auto previous = powers[powers.n - 1]; powers[powers.n++] = compose(previous, previous); }
         u32 a = l + capacity, b = r + capacity; boundary(a, b);
@@ -51,7 +51,7 @@ template<u32 P = 998244353> struct RangeSetComposite {
         }
     }
     Function repeat(i32 base,u32 count) const {
-        Function f=powers[base+countr_zero(count)];for(count&=count-1;count;count&=count-1)f=compose(f,powers[base+countr_zero(count)]);return f;
+        Function f=powers[base+std::countr_zero(count)];for(count&=count-1;count;count&=count-1)f=compose(f,powers[base+std::countr_zero(count)]);return f;
     }
     Function prefix(u32 r,usize i,usize width) const {
         Function result{R::one,0};
@@ -73,6 +73,6 @@ template<u32 P = 998244353> struct RangeSetComposite {
         }
     }
     Function fold(u32 l,u32 r) const {return l==r?Function{}:decode(query(l,r,1,capacity));}
-    u32 evaluate(u32 l,u32 r,u32 x)const {if(l==r)return x;auto f=query(l,r,1,capacity);u32 result=R::add(R::multiply(f.a,x),R::multiply(f.b,1));return min(result,result-P);}
+    u32 evaluate(u32 l,u32 r,u32 x)const {if(l==r)return x;auto f=query(l,r,1,capacity);u32 result=R::add(R::multiply(f.a,x),R::multiply(f.b,1));return std::min(result,result-P);}
 };
 }

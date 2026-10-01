@@ -12,7 +12,7 @@ int main() {
     u32 left[B], right[B];
     u64 answers[B];
     while (q) {
-        int count = min(q, B);
+        int count = std::min(q, B);
         // Prefetch both endpoints before the separate lookup loop.
         for (int i = 0; i < count; ++i) {
             auto [l, r] = in.read_pair<6>();
@@ -21,7 +21,7 @@ int main() {
             __builtin_prefetch(prefix + right[i]);
         }
         for (int i = 0; i < count; ++i) answers[i] = prefix[right[i]] - prefix[left[i]];
-        out.write(span(answers, count));
+        out.write(std::span(answers, count));
         q -= count;
     }
 }

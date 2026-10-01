@@ -6,7 +6,7 @@ struct RangeAddMin {
     static constexpr i64 infinity = 1ll << 60;
     struct alignas(64) Node { i64 value[8]; };
     Buffer<Node> tree;
-    array<u32, 12> offset{};
+    std::array<u32, 12> offset{};
     u32 height = 0, n;
     i64 root;
     static __m256i min4(__m256i a, __m256i b) { return _mm256_blendv_epi8(a,b,_mm256_cmpgt_epi64(a,b)); }
@@ -32,10 +32,10 @@ struct RangeAddMin {
         auto a=_mm256_blendv_epi8(inf,_mm256_load_si256((const __m256i*)node.value),mask(l,r,0));
         auto b=_mm256_blendv_epi8(inf,_mm256_load_si256((const __m256i*)(node.value+4)),mask(l,r,4));return reduce(min4(a,b));
     }
-    explicit RangeAddMin(span<const i64> values) : n(values.size()) {
-        u32 groups=max<usize>(1,(values.size()+7)/8),size=0;
+    explicit RangeAddMin(std::span<const i64> values) : n(values.size()) {
+        u32 groups=std::max<usize>(1,(values.size()+7)/8),size=0;
         for(;;){offset[height++]=size;size+=groups;if(groups==1)break;groups=(groups+7)/8;}
-        tree=Buffer<Node>(size);for(auto& node:span(tree.p,tree.n))fill(node.value,node.value+8,infinity);
+        tree=Buffer<Node>(size);for(auto& node:std::span(tree.p,tree.n))std::fill(node.value,node.value+8,infinity);
         for(u32 i=0;i<values.size();++i)tree[i/8].value[i&7]=values[i];
         for(u32 k=0;k<height;++k){u32 end=k+1<height?offset[k+1]:size;for(u32 i=0;i<end-offset[k];++i){i64 delta=normalize(tree[offset[k]+i]);if(k+1<height)tree[offset[k+1]+i/8].value[i&7]=delta;else root=delta;}}
     }
@@ -55,14 +55,14 @@ struct RangeAddMin {
     i64 minimum(u32 l,u32 r) const {
         if(l==r)return infinity; if(l==0&&r==n)return root;u32 a=l,b=r-1;i64 first=infinity,last=infinity;
         for(u32 k=0;k<height;++k){u32 x=a/8,y=b/8;const auto& left=tree[offset[k]+x];first+=left.value[a&7];
-            if(x==y){last+=left.value[b&7];first=min(first,last);if(l<r)first=min(first,minimum(left,l-8*x,r-8*x));
+            if(x==y){last+=left.value[b&7];first=std::min(first,last);if(l<r)first=std::min(first,minimum(left,l-8*x,r-8*x));
                 for(++k;k<height;++k,x/=8)first+=tree[offset[k]+x/8].value[x&7];return first+root;
             }
             const auto& right=tree[offset[k]+y];last+=right.value[b&7];
-            if(l<r){if(l&7)first=min(first,minimum(left,l&7,8));if(r&7)last=min(last,minimum(right,0,r&7));l=(l+7)/8;r/=8;}
+            if(l<r){if(l&7)first=std::min(first,minimum(left,l&7,8));if(r&7)last=std::min(last,minimum(right,0,r&7));l=(l+7)/8;r/=8;}
             a=x;b=y;
         }
-        return min(first,last)+root;
+        return std::min(first,last)+root;
     }
 };
 }

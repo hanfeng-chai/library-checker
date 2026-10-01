@@ -5,10 +5,10 @@ namespace toy {
 // Packed real convolution: even coefficients are real, odd coefficients imaginary.
 struct IntegerFFT {
     struct Fixed { Buffer<fft_detail::C4> spectrum; Buffer<u32> input; bool cyclic; };
-    optional<fft_detail::FFT> plan;
+    std::optional<fft_detail::FFT> plan;
     Buffer<fft_detail::C4> x, y;
     usize capacity = 0;
-    static void prepare(Buffer<fft_detail::C4>& out, span<const u32> input) {
+    static void prepare(Buffer<fft_detail::C4>& out, std::span<const u32> input) {
         using namespace fft_detail;
         auto order = _mm256_setr_epi32(0,2,4,6,1,3,5,7);
         usize blocks = (input.size() + 7) / 8;
@@ -30,13 +30,13 @@ struct IntegerFFT {
         prepare(spectrum, input); plan->template transform<false, 256>(spectrum);
         return {std::move(spectrum), std::move(input), cyclic};
     }
-    Buffer<u64> operator()(span<const u32> a, const Fixed& b) { return (*this)(a, span<const u32>(b.input), &b); }
-    Buffer<u64> operator()(span<const u32> a, span<const u32> b, const Fixed* fixed = nullptr) {
+    Buffer<u64> operator()(std::span<const u32> a, const Fixed& b) { return (*this)(a, std::span<const u32>(b.input), &b); }
+    Buffer<u64> operator()(std::span<const u32> a, std::span<const u32> b, const Fixed* fixed = nullptr) {
     using namespace fft_detail;
     if (a.empty() || b.empty()) return {};
-    if (!fixed && bit_ceil(a.size() + b.size() - 1) > (1 << 20)) return convolution_integer(a, b);
+    if (!fixed && std::bit_ceil(a.size() + b.size() - 1) > (1 << 20)) return convolution_integer(a, b);
     usize count = fixed && fixed->cyclic ? fixed->spectrum.n * 8 : a.size() + b.size() - 1;
-    usize size = fixed ? fixed->spectrum.n * 8 : max<usize>(32, bit_ceil(count)), n = size / 8;
+    usize size = fixed ? fixed->spectrum.n * 8 : std::max<usize>(32, std::bit_ceil(count)), n = size / 8;
     ensure(n); const auto& fft = *plan;
     bool square = !fixed && a.data() == b.data() && a.size() == b.size();
     prepare(x, a); fft.transform<false, 256>(x);
@@ -52,7 +52,7 @@ struct IntegerFFT {
         return madd(FFT::rotated<3>(a, aw), FFT::lane<3>(b), c);
     };
     for (usize i = 0; i < n; ++i) {
-        usize j = i ? i ^ (bit_floor(i) - 1) : 0;
+        usize j = i ? i ^ (std::bit_floor(i) - 1) : 0;
         if (i > j) continue;
         auto difference_a = x[i] - conjugate(x[j]), difference_b = rhs[i] - conjugate(rhs[j]);
         C4 odd_a{difference_a.y * _mm256_set1_pd(.5), difference_a.x * _mm256_set1_pd(-.5)};
@@ -79,7 +79,7 @@ struct IntegerFFT {
     return result;
     }
 };
-inline Buffer<u64> convolution_fft_integer(span<const u32> a, span<const u32> b) {
+inline Buffer<u64> convolution_fft_integer(std::span<const u32> a, std::span<const u32> b) {
     IntegerFFT fft; return fft(a, b);
 }
 }

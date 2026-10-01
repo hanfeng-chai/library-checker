@@ -15,13 +15,13 @@ template<u32 P=998244353> struct AffineRangeSum {
         }
     };
     struct alignas(64) Node {u32 sums[16],a[16],b[16];};
-    Buffer<u32> sums;Buffer<Node> nodes;array<Node*,12> rows{};
-    array<u32,12> groups{},length{};u32 height=0;
-    explicit AffineRangeSum(span<const u32> values){
+    Buffer<u32> sums;Buffer<Node> nodes;std::array<Node*,12> rows{};
+    std::array<u32,12> groups{},length{};u32 height=0;
+    explicit AffineRangeSum(std::span<const u32> values){
         u32 n=values.size()+1,size=0,width=1;
         for(;;){groups[height]=(n+15)/16;length[height]=width;if(height)size+=groups[height];++height;if(n<=16)break;n=(n+15)/16;width*=16;}
-        sums=Buffer<u32>(16*groups[0]);fill(sums.p,sums.p+sums.n,0u);for(u32 i=0;i<values.size();++i)sums[i]=values[i];
-        nodes=Buffer<Node>(size);for(auto& x:span(nodes.p,nodes.n)){fill(x.sums,x.sums+16,0u);fill(x.a,x.a+16,A::one);fill(x.b,x.b+16,0u);}
+        sums=Buffer<u32>(16*groups[0]);std::fill(sums.p,sums.p+sums.n,0u);for(u32 i=0;i<values.size();++i)sums[i]=values[i];
+        nodes=Buffer<Node>(size);for(auto& x:std::span(nodes.p,nodes.n)){std::fill(x.sums,x.sums+16,0u);std::fill(x.a,x.a+16,A::one);std::fill(x.b,x.b+16,0u);}
         for(u32 k=1,at=0;k<height;++k){rows[k]=nodes.p+at;at+=groups[k];for(u32 i=0;i<groups[k-1];++i)pull(k,i);}
     }
     u32* group(u32 k,u32 i){return k?rows[k][i].sums:sums.p+16*i;}
@@ -66,13 +66,13 @@ template<u32 P=998244353> struct AffineRangeSum {
     u32 lift(u32 k,u32 i,u32 sum,u32 count)const{
         if(!k||!count)return sum;const auto& node=rows[k][i/16];u32 at=i&15;
         // Sums/counts are ordinary, tags encoded: one mixed Montgomery reduction.
-        u64 z=u64(sum)*node.a[at]+u64(node.b[at])*count;u32 value=(z+u64(u32(z)*M::inverse)*P)>>32;return min(value,value-2*P);
+        u64 z=u64(sum)*node.a[at]+u64(node.b[at])*count;u32 value=(z+u64(u32(z)*M::inverse)*P)>>32;return std::min(value,value-2*P);
     }
     u32 sum(u32 l,u32 r)const{
         if(l==r)return 0;u32 first=l,last=r-1,lo=0,hi=0,nlo=0,nhi=0,width=1;
         for(u32 k=0;k<height;++k){u32 x=first/16,y=last/16;lo=lift(k,first,lo,nlo);hi=lift(k,last,hi,nhi);
             if(x==y){u32 value=A::add(lo,hi);if(l<r)value=A::add(value,fold(k,x,l-16*x,r-16*x));u32 count=nlo+nhi+(r-l)*width;
-                for(++k;k<height;++k,x/=16)value=lift(k,x,value,count);return min(value,value-P);}
+                for(++k;k<height;++k,x/=16)value=lift(k,x,value,count);return std::min(value,value-P);}
             if(l<r){if(l&15){lo=A::add(lo,fold(k,x,l&15,16));nlo=nlo+(16-(l&15))*width;}if(r&15){hi=A::add(hi,fold(k,y,0,r&15));nhi=nhi+(r&15)*width;}l=(l+15)/16;r/=16;}
             first=x;last=y;width*=16;
         }

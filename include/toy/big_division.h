@@ -5,7 +5,7 @@ template<bool Hex = false>
 struct BigDivision {
     using Big = BigInteger<Hex>;
     using Limb = typename Big::Limb;
-    using Wide = conditional_t<Hex, u128, u64>;
+    using Wide = std::conditional_t<Hex, u128, u64>;
     static constexpr Wide radix = [] { if constexpr (Hex) return u128(1) << 64; else return u64(Big::base); }();
     IntegerFFT fft;
     Buffer<Limb> u, v;
@@ -33,7 +33,7 @@ struct BigDivision {
         usize i = 0; while (!a.digits[i]) a.digits[i++] = Limb(radix - 1);
         --a.digits[i]; a.trim();
     }
-    static Limb word_division(span<const Limb> a, Limb divisor, Big& q) {
+    static Limb word_division(std::span<const Limb> a, Limb divisor, Big& q) {
         q.digits.reserve(a.size()); Wide rem = 0;
         for (usize i = a.size(); i--;) {
             Wide value = rem * radix + a[i]; q.digits[i] = quotient(value, divisor); rem = value - Wide(q.digits[i]) * divisor;
@@ -44,13 +44,13 @@ struct BigDivision {
     void school(const Big& a, const Big& b, Big& q, Big& r) {
         usize n = a.digits.n, m = b.digits.n;
         if (m == 1) {
-            Limb rem = word_division(span<const Limb>(a.digits), b.digits[0], q);
+            Limb rem = word_division(std::span<const Limb>(a.digits), b.digits[0], q);
             r.digits.reserve(1); r.digits[0] = rem; r.digits.n = rem != 0; r.negative = false; return;
         }
         u.reserve(n + 1); v.reserve(m); u.n = n + 1; v.n = m;
         unsigned shift = 0; Limb factor = 1;
         if constexpr (Hex) {
-            shift = countl_zero(b.digits[m - 1]);
+            shift = std::countl_zero(b.digits[m - 1]);
             auto normalize = [&](const Big& input, Limb* output) {
                 Limb carry = 0;
                 for (usize i = 0; i < input.digits.n; ++i) {
@@ -107,7 +107,7 @@ struct BigDivision {
         usize length = divisor.digits.n;
         if (length <= 32 || precision - length <= 32) {
             Big numerator, quotient, remainder;
-            numerator.digits = Buffer<Limb>(precision + 1); fill(numerator.digits.p, numerator.digits.p + precision + 1, Limb(0)); numerator.digits[precision] = 1;
+            numerator.digits = Buffer<Limb>(precision + 1); std::fill(numerator.digits.p, numerator.digits.p + precision + 1, Limb(0)); numerator.digits[precision] = 1;
             school(numerator, divisor, quotient, remainder); return quotient;
         }
         usize half = (precision - length + 5) / 2, drop = length > half ? length - half : 0;
@@ -117,8 +117,8 @@ struct BigDivision {
         // The residual is O(beta^(length+2)). Recover its signed value from
         // a shorter cyclic product, then discard a tail worth <1 in the correction.
         usize omit = shift > r.digits.n + 2 ? shift - r.digits.n - 2 : 0;
-        usize needed = max(length + 5, length + 3 - min(omit, length + 3) + r.digits.n);
-        usize size = max<usize>(64, bit_ceil(Hex ? (needed * 64 + 13) / 14 : 2 * needed));
+        usize needed = std::max(length + 5, length + 3 - std::min(omit, length + 3) + r.digits.n);
+        usize size = std::max<usize>(64, std::bit_ceil(Hex ? (needed * 64 + 13) / 14 : 2 * needed));
         usize period = Hex ? size * 14 / 64 : size / 2;
         auto fixed_r = fft.fixed(r.chunks(), size, true);
         auto coefficients = fft(divisor.chunks(), fixed_r);
@@ -128,7 +128,7 @@ struct BigDivision {
             Big::add(product, tail, product);
         }
         Big modulus; modulus.digits = Buffer<Limb>(period);
-        fill(modulus.digits.p, modulus.digits.p + period, Limb(radix - 1));
+        std::fill(modulus.digits.p, modulus.digits.p + period, Limb(radix - 1));
         if (Big::compare_magnitude(product, modulus) >= 0) Big::template magnitude<true>(product, modulus, product);
         Big unit; unit.digits.resize(exponent % period + 1); unit.digits[exponent % period] = 1;
         product.negative = true; Big::add(unit, product, error);
@@ -142,7 +142,7 @@ struct BigDivision {
         auto correction = slice(product, shift - omit);
         usize left_shift = precision - exponent;
         result.digits = Buffer<Limb>(r.digits.n + left_shift);
-        fill(result.digits.p, result.digits.p + left_shift, Limb(0));
+        std::fill(result.digits.p, result.digits.p + left_shift, Limb(0));
         memcpy(result.digits.p + left_shift, r.digits.p, r.digits.n * sizeof(Limb));
         if (over) { Big::template magnitude<true>(result, correction, result); decrement(result); }
         else Big::add(result, correction, result);
@@ -151,7 +151,7 @@ struct BigDivision {
     void blocked(const Big& a, const Big& b, Big& q, Big& r) {
         usize n = a.digits.n, m = b.digits.n;
         usize needed = Hex ? ((m + 1) * 64 + 13) / 14 : 2 * (m + 1);
-        usize cyclic_size = max<usize>(64, bit_ceil(needed));
+        usize cyclic_size = std::max<usize>(64, std::bit_ceil(needed));
         usize period = Hex ? cyclic_size * 14 / 64 : cyclic_size / 2;
         usize block = 0; u64 best_cost = -1;
         // Model the two variable transforms per block plus reciprocal setup.
@@ -160,9 +160,9 @@ struct BigDivision {
             usize limit = period / scale > 48 ? period / scale - 32 : 16;
             usize pieces = (n - m + limit) / limit, width = (n - m + pieces) / pieces;
             usize chunks = Hex ? ((2 * width + 8) * 64 + 13) / 14 : 2 * (2 * width + 8);
-            usize size = max<usize>(64, bit_ceil(chunks));
-            u64 cost = (2 * pieces + 6) * size * countr_zero(size)
-                     + (2 * pieces + 1) * cyclic_size * countr_zero(cyclic_size);
+            usize size = std::max<usize>(64, std::bit_ceil(chunks));
+            u64 cost = (2 * pieces + 6) * size * std::countr_zero(size)
+                     + (2 * pieces + 1) * cyclic_size * std::countr_zero(cyclic_size);
             if (cost < best_cost) best_cost = cost, block = width;
         }
         usize drop = m > block + 5 ? m - block - 5 : 0;
@@ -171,13 +171,13 @@ struct BigDivision {
         auto reciprocal = inverse(denominator, precision); precision += drop;
         auto rc = reciprocal.chunks();
         usize upper_chunks = Hex ? ((block + 2) * 64 + 13) / 14 : 2 * (block + 2);
-        usize inverse_size = max<usize>(64, bit_ceil(rc.n + upper_chunks - 1));
+        usize inverse_size = std::max<usize>(64, std::bit_ceil(rc.n + upper_chunks - 1));
         auto inverse_spectrum = fft.fixed(std::move(rc), inverse_size);
         auto divisor_spectrum = fft.fixed(b.chunks(), cyclic_size, true);
-        q.digits.resize(n - m + 1); fill(q.digits.p, q.digits.p + q.digits.n, Limb(0)); r.digits.n = 0;
+        q.digits.resize(n - m + 1); std::fill(q.digits.p, q.digits.p + q.digits.n, Limb(0)); r.digits.n = 0;
         Big window, estimate, product;
         for (usize start = (n - 1) / block * block;; start -= block) {
-            usize take = min(block, n - start), length = r.digits.n + take;
+            usize take = std::min(block, n - start), length = r.digits.n + take;
             window.digits.reserve(length); memcpy(window.digits.p, a.digits.p + start, take * sizeof(Limb));
             if (r.digits.n) memcpy(window.digits.p + take, r.digits.p, r.digits.n * sizeof(Limb));
             window.digits.n = length; window.trim();
@@ -240,7 +240,7 @@ struct BigDivision {
         usize n = a.digits.n, m = b.digits.n, zeros = 0;
         while (zeros + 1 < m && !b.digits[zeros]) ++zeros;
         if (zeros + 1 == m) {
-            Limb rem = word_division(span<const Limb>(a.digits.p + zeros, n - zeros), b.digits[m - 1], q);
+            Limb rem = word_division(std::span<const Limb>(a.digits.p + zeros, n - zeros), b.digits[m - 1], q);
             r.digits.reserve(zeros + 1); if (zeros) memcpy(r.digits.p, a.digits.p, zeros * sizeof(Limb));
             r.digits[zeros] = rem; r.digits.n = zeros + 1; r.trim();
         } else if (m <= 32 || n - m < 8) school(a, b, q, r);

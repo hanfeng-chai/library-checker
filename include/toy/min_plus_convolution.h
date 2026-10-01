@@ -5,7 +5,7 @@ namespace toy {
 
 // Finite values; additions must fit T. Convex means nondecreasing differences.
 template<class T>
-Buffer<T> min_plus_convex_convex(span<const T> a, span<const T> b) {
+Buffer<T> min_plus_convex_convex(std::span<const T> a, std::span<const T> b) {
     if (a.empty() || b.empty()) return {};
     Buffer<T> c(a.size() + b.size() - 1);
     usize i = 0, j = 0;
@@ -14,7 +14,7 @@ Buffer<T> min_plus_convex_convex(span<const T> a, span<const T> b) {
         T x = a[i + 1] + b[j], y = a[i] + b[j + 1];
         bool take = x < y;
         i += take; j += !take;
-        c[i + j] = min(x, y);
+        c[i + j] = std::min(x, y);
     }
     while (i + 1 < a.size()) ++i, c[i + j] = a[i] + b[j];
     while (j + 1 < b.size()) ++j, c[i + j] = a[i] + b[j];
@@ -22,14 +22,14 @@ Buffer<T> min_plus_convex_convex(span<const T> a, span<const T> b) {
 }
 
 template<class T>
-Buffer<T> min_plus_convex_arbitrary(span<const T> a, span<const T> b) {
+Buffer<T> min_plus_convex_arbitrary(std::span<const T> a, std::span<const T> b) {
     if (a.empty() || b.empty()) return {};
     int n = a.size(), m = b.size();
     Buffer<T> c(n + m - 1);
     // Convexity makes the leftmost minimizing index in B nondecreasing.
     auto solve = [&](auto&& self, int l, int r, int lo, int hi) -> void {
         if (l > r) return;
-        int mid = (l + r) / 2, first = max(lo, mid - n + 1), last = min(hi, mid);
+        int mid = (l + r) / 2, first = std::max(lo, mid - n + 1), last = std::min(hi, mid);
         int best = first;
         T value = a[mid - first] + b[first];
         for (int j = first + 1; j <= last; ++j) {
@@ -45,11 +45,11 @@ Buffer<T> min_plus_convex_arbitrary(span<const T> a, span<const T> b) {
 }
 
 template<class T>
-Buffer<T> min_plus_concave_arbitrary(span<const T> a, span<const T> b) {
+Buffer<T> min_plus_concave_arbitrary(std::span<const T> a, std::span<const T> b) {
     if (a.empty() || b.empty()) return {};
     int n = a.size(), m = b.size();
     Buffer<T> c(n + m - 1);
-    fill(c.p, c.p + c.n, numeric_limits<T>::max());
+    std::fill(c.p, c.p + c.n, std::numeric_limits<T>::max());
     struct Segment { int index, end; };
     Buffer<Segment> stack(n);
     // On a triangular block, a newly inserted translate beats an older one
@@ -78,12 +78,12 @@ Buffer<T> min_plus_concave_arbitrary(span<const T> a, span<const T> b) {
         }
     };
     for (int s = 0; s < m; s += n) {
-        int k = min(n, m - s);
+        int k = std::min(n, m - s);
         prefix(n, k, [&](int j, int t) { return a[t - j] + b[s + j]; },
-            [&](int t, T v) { c[s + t] = min(c[s + t], v); });
+            [&](int t, T v) { c[s + t] = std::min(c[s + t], v); });
         // Reverse both inputs for the right triangle, without copying them.
         prefix(k - 1, k, [&](int j, int t) { return a[n - 1 - t + j] + b[s + k - 1 - j]; },
-            [&](int t, T v) { int i = s + n + k - 2 - t; c[i] = min(c[i], v); });
+            [&](int t, T v) { int i = s + n + k - 2 - t; c[i] = std::min(c[i], v); });
     }
     return c;
 }

@@ -7,7 +7,7 @@
 namespace toy {
 
 template<u32 P = 998244353>
-void fps_scale(span<u32> f, u32 coefficient) {
+void fps_scale(std::span<u32> f, u32 coefficient) {
     using M = Mod<P>;
     if (coefficient == 1) return;
     auto c = _mm256_set1_epi32(M::mont(coefficient, M::r2));
@@ -51,81 +51,81 @@ Buffer<u32> inverse_numbers(usize n) {
 
 // First n coefficients of 1/f. P is prime and f[0] != 0.
 template<u32 P = 998244353>
-Buffer<u32> fps_inv(span<const u32> f, usize n) {
+Buffer<u32> fps_inv(std::span<const u32> f, usize n) {
     static_assert((P - 1) % 8 == 0);
     using M = Mod<P>;
     if (!n) return {};
-    f = f.first(min(f.size(), n));
+    f = f.first(std::min(f.size(), n));
     while (f.size() > 1 && !f.back()) f = f.first(f.size() - 1);
-    Buffer<u32> b(n, bit_ceil(n));
+    Buffer<u32> b(n, std::bit_ceil(n));
     b[0] = M::pow(f[0], P - 2);
-    if (f.size() == 1) { fill(b.p + 1, b.p + n, 0u); return b; }
-    usize seed = f.size() <= 4 ? n : min<usize>(32, n);
+    if (f.size() == 1) { std::fill(b.p + 1, b.p + n, 0u); return b; }
+    usize seed = f.size() <= 4 ? n : std::min<usize>(32, n);
     for (usize k = 1; k < seed; ++k) {
         u32 sum = 0;
-        for (usize j = 1; j <= min(k, f.size() - 1); ++j) sum = M::add(sum, M::mul(f[j], b[k - j]));
+        for (usize j = 1; j <= std::min(k, f.size() - 1); ++j) sum = M::add(sum, M::mul(f[j], b[k - j]));
         b[k] = M::mul(M::sub(0, sum), b[0]);
     }
     if (seed == n) return b;
-    Buffer<u32> work(bit_ceil(n)), spectrum(bit_ceil(n));
+    Buffer<u32> work(std::bit_ceil(n)), spectrum(std::bit_ceil(n));
     auto* x = (convolution_detail::Vec*)work.p;
     auto* y = (convolution_detail::Vec*)spectrum.p;
     const auto& ntt = convolution_detail::info<P>;
     for (usize half = seed; half < n; half *= 2) {
-        usize size = 2 * half, count = min(size, f.size());
+        usize size = 2 * half, count = std::min(size, f.size());
         memcpy(work.p, f.data(), count * sizeof(u32));
-        fill(work.p + count, work.p + size, 0u);
+        std::fill(work.p + count, work.p + size, 0u);
         memcpy(spectrum.p, b.p, half * sizeof(u32));
-        fill(spectrum.p + half, spectrum.p + size, 0u);
+        std::fill(spectrum.p + half, spectrum.p + size, 0u);
         ntt.forward(x, size / 8); ntt.forward(y, size / 8);
         ntt.products(x, y, size / 8); ntt.inverse(x, size / 8);
         // Cyclic wrap only contaminates the low half. The high half of f*b-1
         // is exact. Multiply it by the cached b spectrum and negate while storing.
-        fill(work.p, work.p + half, 0u);
+        std::fill(work.p, work.p + half, 0u);
         ntt.forward(x, size / 8); ntt.products(x, y, size / 8); ntt.inverse(x, size / 8);
-        for (usize i = half; i < min(size, n); ++i) b[i] = M::sub(0, work[i]);
+        for (usize i = half; i < std::min(size, n); ++i) b[i] = M::sub(0, work[i]);
     }
     return b;
 }
 
 // a/b mod x^n, b[0]!=0. Reuse small transforms of denominator and answer blocks.
 template<u32 P = 998244353>
-Buffer<u32> fps_div(span<const u32> a, span<const u32> b, usize n) {
+Buffer<u32> fps_div(std::span<const u32> a, std::span<const u32> b, usize n) {
     using M = Mod<P>;
     Buffer<u32> result(n);
     if (!n) return result;
-    b = b.first(min(b.size(), n));
+    b = b.first(std::min(b.size(), n));
     while (b.size() > 1 && !b.back()) b = b.first(b.size() - 1);
     if (n <= 64 || b.size() <= 4) {
         u32 inverse = M::pow(b[0], P - 2);
         for (usize i = 0; i < n; ++i) {
             u32 value = i < a.size() ? a[i] : 0;
-            for (usize j = 1; j <= min(i, b.size() - 1); ++j) value = M::sub(value, M::mul(b[j], result[i - j]));
+            for (usize j = 1; j <= std::min(i, b.size() - 1); ++j) value = M::sub(value, M::mul(b[j], result[i - j]));
             result[i] = M::mul(value, inverse);
         }
         return result;
     }
-    usize block = max<usize>(64, bit_ceil(n) / 16), size = 2 * block;
+    usize block = std::max<usize>(64, std::bit_ceil(n) / 16), size = 2 * block;
     usize inputs = (b.size() + block - 1) / block, outputs = (n + block - 1) / block;
     Buffer<u32> denominator(inputs * size), quotient(outputs * size), work(size);
     NTT<P> ntt(size);
     constexpr u32 one = (u64(1) << 32) % P;
-    auto inverse = fps_inv<P>(b.first(min(b.size(), block)), block);
+    auto inverse = fps_inv<P>(b.first(std::min(b.size(), block)), block);
     inverse.resize(size); fps_scale<P>(inverse, one); ntt.forward(inverse);
-    fill(denominator.p, denominator.p + denominator.n, 0u);
+    std::fill(denominator.p, denominator.p + denominator.n, 0u);
     for (usize k = 0; k < inputs; ++k) {
         u32* row = denominator.p + k * size;
-        usize count = min(block, b.size() - k * block);
+        usize count = std::min(block, b.size() - k * block);
         memcpy(row, b.data() + k * block, count * 4);
-        fps_scale<P>(span(row, count), one); ntt.forward(span(row, size));
+        fps_scale<P>(std::span(row, count), one); ntt.forward(std::span(row, size));
     }
     for (usize k = 0; k < outputs; ++k) {
         if (k) {
             for (usize i = 0; i < size; i += 8) {
                 auto sum = _mm256_setzero_si256();
-                for (usize first = 1; first <= min(k, inputs); first += 8) {
+                for (usize first = 1; first <= std::min(k, inputs); first += 8) {
                     auto even = _mm256_setzero_si256(), odd = even;
-                    for (usize t = first; t < min(first + 8, min(k, inputs) + 1); ++t) {
+                    for (usize t = first; t < std::min(first + 8, std::min(k, inputs) + 1); ++t) {
                         auto x = _mm256_loadu_si256((const __m256i*)(quotient.p + (k - t) * size + i));
                         auto y = t < inputs ? _mm256_loadu_si256((const __m256i*)(denominator.p + t * size + i)) : _mm256_setzero_si256();
                         auto z = _mm256_loadu_si256((const __m256i*)(denominator.p + (t - 1) * size + i));
@@ -140,13 +140,13 @@ Buffer<u32> fps_div(span<const u32> a, span<const u32> b, usize n) {
                 _mm256_storeu_si256((__m256i*)(work.p + i), sum);
             }
             ntt.inverse(work);
-        } else fill(work.p, work.p + block, 0u);
-        usize count = min(block, n - k * block);
+        } else std::fill(work.p, work.p + block, 0u);
+        usize count = std::min(block, n - k * block);
         for (usize i = 0; i < block; ++i) {
             usize j = k * block + i;
             work[i] = M::sub(j < a.size() ? a[j] : 0, work[i]);
         }
-        fill(work.p + block, work.p + size, 0u);
+        std::fill(work.p + block, work.p + size, 0u);
         ntt.forward(work);
         for (usize i = 0; i < size; i += 8) _mm256_storeu_si256((__m256i*)(work.p + i), M::mont(
             _mm256_loadu_si256((const __m256i*)(work.p + i)), _mm256_loadu_si256((const __m256i*)(inverse.p + i))));
@@ -154,8 +154,8 @@ Buffer<u32> fps_div(span<const u32> a, span<const u32> b, usize n) {
         memcpy(result.p + k * block, work.p, count * 4);
         if (k + 1 < outputs) {
             u32* row = quotient.p + k * size;
-            memcpy(row, work.p, block * 4); fill(row + block, row + size, 0u);
-            ntt.forward(span(row, size));
+            memcpy(row, work.p, block * 4); std::fill(row + block, row + size, 0u);
+            ntt.forward(std::span(row, size));
         }
     }
     return result;
@@ -163,14 +163,14 @@ Buffer<u32> fps_div(span<const u32> a, span<const u32> b, usize n) {
 
 // First n coefficients of log(f), with f[0]=1 and n<P.
 template<u32 P = 998244353>
-Buffer<u32> fps_log(span<const u32> f, usize n) {
+Buffer<u32> fps_log(std::span<const u32> f, usize n) {
     using M = Mod<P>;
     Buffer<u32> result(n);
     if (!n) return result;
     result[0] = 0;
-    f = f.first(min(f.size(), n));
+    f = f.first(std::min(f.size(), n));
     while (f.size() > 1 && !f.back()) f = f.first(f.size() - 1);
-    if (f.size() <= 1) { fill(result.p + 1, result.p + n, 0u); return result; }
+    if (f.size() <= 1) { std::fill(result.p + 1, result.p + n, 0u); return result; }
     auto g = fps_inv<P>(f, n - 1);
     Buffer<u32> derivative(f.size() - 1);
     for (usize i = 0; i < derivative.n; ++i) derivative[i] = M::mul(i + 1, f[i + 1]);
@@ -185,22 +185,22 @@ Buffer<u32> fps_log(span<const u32> f, usize n) {
 
 // exp(f) mod x^n, f[0]=0 and n<P. Maintain g and its reciprocal together.
 template<u32 P = 998244353>
-Buffer<u32> fps_exp(span<const u32> f, usize n) {
+Buffer<u32> fps_exp(std::span<const u32> f, usize n) {
     using M = Mod<P>;
     if (!n) return {};
-    f = f.first(min(f.size(), n));
+    f = f.first(std::min(f.size(), n));
     while (!f.empty() && !f.back()) f = f.first(f.size() - 1);
-    usize capacity = bit_ceil(n);
+    usize capacity = std::bit_ceil(n);
     Buffer<u32> g(n, capacity);
     g[0] = 1;
-    if (f.empty()) { fill(g.p + 1, g.p + n, 0u); return g; }
+    if (f.empty()) { std::fill(g.p + 1, g.p + n, 0u); return g; }
     auto inverse = inverse_numbers<P>(n - 1);
     Buffer<u32> derivative(f.size() - 1);
     for (usize i = 0; i < derivative.n; ++i) derivative[i] = M::mul(i + 1, f[i + 1]);
-    usize seed = f.size() <= 4 ? n : min<usize>(32, n);
+    usize seed = f.size() <= 4 ? n : std::min<usize>(32, n);
     for (usize i = 1; i < seed; ++i) {
         u32 sum = 0;
-        for (usize j = 1; j <= min(i, derivative.n); ++j) sum = M::add(sum, M::mul(derivative[j - 1], g[i - j]));
+        for (usize j = 1; j <= std::min(i, derivative.n); ++j) sum = M::add(sum, M::mul(derivative[j - 1], g[i - j]));
         g[i] = M::mul(sum, inverse[i]);
     }
     if (seed == n) return g;
@@ -217,23 +217,23 @@ Buffer<u32> fps_exp(span<const u32> f, usize n) {
     auto* G = (convolution_detail::Vec*)gs.p;
     auto* H = (convolution_detail::Vec*)hs.p;
     for (usize half = seed; half < n; half *= 2) {
-        usize size = 2 * half, count = min(size - 1, derivative.n), end = min(size, n);
-        memcpy(gs.p, g.p, half * 4); fill(gs.p + half, gs.p + size, 0u);
-        memcpy(hs.p, h.p, half * 4); fill(hs.p + half, hs.p + size, 0u);
-        memcpy(work.p, derivative.p, count * 4); fill(work.p + count, work.p + size, 0u);
+        usize size = 2 * half, count = std::min(size - 1, derivative.n), end = std::min(size, n);
+        memcpy(gs.p, g.p, half * 4); std::fill(gs.p + half, gs.p + size, 0u);
+        memcpy(hs.p, h.p, half * 4); std::fill(hs.p + half, hs.p + size, 0u);
+        memcpy(work.p, derivative.p, count * 4); std::fill(work.p + count, work.p + size, 0u);
         ntt.forward(G, size / 8); ntt.forward(H, size / 8); ntt.forward(x, size / 8);
         ntt.products(x, G, size / 8); ntt.inverse(x, size / 8);
         // f'-g'/g=(f'g-g')/g. The residual starts at degree half-1;
         // cyclic wrap is below that, and the old reciprocal suffices here.
-        fill(work.p, work.p + half - 1, 0u); work[size - 1] = 0;
+        std::fill(work.p, work.p + half - 1, 0u); work[size - 1] = 0;
         ntt.forward(x, size / 8); ntt.products(x, H, size / 8); ntt.inverse(x, size / 8);
         for (usize i = end; i-- > half;) work[i] = M::mul(work[i - 1], inverse[i]);
-        fill(work.p, work.p + half, 0u); fill(work.p + end, work.p + size, 0u);
+        std::fill(work.p, work.p + half, 0u); std::fill(work.p + end, work.p + size, 0u);
         if (size < n) {
             // h_new = h - h*((g*h-1)+delta), where delta=f-log(g).
             memcpy(other.p, gs.p, size * 4);
             ntt.products(y, H, size / 8); ntt.inverse(y, size / 8);
-            fill(other.p, other.p + half, 0u);
+            std::fill(other.p, other.p + half, 0u);
             for (usize i = half; i < size; ++i) other[i] = M::add(other[i], work[i]);
             ntt.forward(y, size / 8); ntt.products(y, H, size / 8); ntt.inverse(y, size / 8);
             for (usize i = half; i < size; ++i) h[i] = M::sub(0, other[i]);
@@ -246,41 +246,41 @@ Buffer<u32> fps_exp(span<const u32> f, usize n) {
 
 // Unit-series power, solving f*Dg=k*(Df)*g block by block, D=x*d/dx.
 template<u32 P>
-Buffer<u32> fps_power_blocks(span<const u32> f, usize n, u32 k) {
+Buffer<u32> fps_power_blocks(std::span<const u32> f, usize n, u32 k) {
     using M = Mod<P>;
-    if (n <= 64 || (P - 1) % bit_ceil(n)) {
+    if (n <= 64 || (P - 1) % std::bit_ceil(n)) {
         auto h = fps_log<P>(f, n); fps_scale<P>(h, k); return fps_exp<P>(h, n);
     }
-    usize target = bit_width(n) - 1;
-    usize block = max<usize>(32, bit_ceil((n + target - 1) / target)), size = 2 * block;
+    usize target = std::bit_width(n) - 1;
+    usize block = std::max<usize>(32, std::bit_ceil((n + target - 1) / target)), size = 2 * block;
     usize count = (n + block - 1) / block;
-    auto g = fps_power_blocks<P>(f.first(min(f.size(), block)), block, k); g.resize(count * block);
+    auto g = fps_power_blocks<P>(f.first(std::min(f.size(), block)), block, k); g.resize(count * block);
     Buffer<u32> nf(count * size), df(count * size), ng(count * size), psi(size), phi(size);
     RadixNTT<P> ntt(size);
     constexpr u32 one = (u64(1) << 32) % P;
     auto transform = [&](const u32* a, usize m, u32* out) {
-        if (m) memcpy(out, a, m * 4); fill(out + m, out + size, 0u);
-        ntt.forward(span(out, size));
+        if (m) memcpy(out, a, m * 4); std::fill(out + m, out + size, 0u);
+        ntt.forward(std::span(out, size));
     };
     auto fixed = [&](Buffer<u32>& a, const u32* b) {
-        fill(a.p + block, a.p + size, 0u); ntt.forward(a);
+        std::fill(a.p + block, a.p + size, 0u); ntt.forward(a);
         for (usize i = 0; i < size; i += 8) _mm256_storeu_si256((__m256i*)(a.p + i), M::mont(
             _mm256_loadu_si256((const __m256i*)(a.p + i)), _mm256_loadu_si256((const __m256i*)(b + i))));
         ntt.inverse(a);
     };
     Buffer<u32> base(block), input(block);
-    memcpy(base.p, g.p, block * 4); fill(input.p, input.p + block, 0u);
-    memcpy(input.p, f.data(), min(f.size(), block) * 4);
+    memcpy(base.p, g.p, block * 4); std::fill(input.p, input.p + block, 0u);
+    memcpy(input.p, f.data(), std::min(f.size(), block) * 4);
     auto product = convolution<P>(std::move(base), std::move(input));
-    auto h = fps_inv<P>(span<const u32>(product.p, block), block); h.resize(size);
+    auto h = fps_inv<P>(std::span<const u32>(product.p, block), block); h.resize(size);
     fps_scale<P>(h, one); ntt.forward(h);
     transform(g.p, block, ng.p);
     Buffer<u32> gs(size); memcpy(gs.p, ng.p, size * 4); fps_scale<P>(gs, one);
     for (usize b = 0; b < count; ++b) {
         usize offset = b * block;
         u32* a = nf.p + b * size; u32* d = df.p + b * size;
-        fill(a, a + size, 0u); fill(d, d + size, 0u);
-        usize used = offset < f.size() ? min(block, f.size() - offset) : 0, i = 0;
+        std::fill(a, a + size, 0u); std::fill(d, d + size, 0u);
+        usize used = offset < f.size() ? std::min(block, f.size() - offset) : 0, i = 0;
         auto r2 = _mm256_set1_epi32(M::r2), step = _mm256_set1_epi32(M::mul(8, one));
         auto index = M::mont(_mm256_setr_epi32(offset, offset + 1, offset + 2, offset + 3,
             offset + 4, offset + 5, offset + 6, offset + 7), r2);
@@ -292,7 +292,7 @@ Buffer<u32> fps_power_blocks(span<const u32> f, usize n, u32 k) {
         for (; i < used; ++i) {
             a[i] = M::mont(f[offset + i], M::r2); d[i] = M::mul(a[i], offset + i);
         }
-        ntt.forward(span(a, size)); ntt.forward(span(d, size));
+        ntt.forward(std::span(a, size)); ntt.forward(std::span(d, size));
     }
     // x^block equals +1 / -1 on the two frequency halves. Folding the
     // previous block supplies its high product without another transform.
@@ -312,7 +312,7 @@ Buffer<u32> fps_power_blocks(span<const u32> f, usize n, u32 k) {
             auto sum = _mm256_setzero_si256(), dsum = sum;
             for (usize first = 0; first < b; first += 8) {
                 auto even = _mm256_setzero_si256(), odd = even, deven = even, dodd = even;
-                for (usize j = first; j < min(b, first + 8); ++j) {
+                for (usize j = first; j < std::min(b, first + 8); ++j) {
                     auto x = _mm256_loadu_si256((const __m256i*)(ng.p + j * size + i));
                     auto y = _mm256_loadu_si256((const __m256i*)(nf.p + (b - j) * size + i));
                     auto d = _mm256_loadu_si256((const __m256i*)(df.p + (b - j) * size + i));
@@ -329,7 +329,7 @@ Buffer<u32> fps_power_blocks(span<const u32> f, usize n, u32 k) {
             _mm256_storeu_si256((__m256i*)(phi.p + i), dsum);
         }
         ntt.inverse(psi); ntt.inverse(phi);
-        usize offset = b * block, used = min(block, n - offset);
+        usize offset = b * block, used = std::min(block, n - offset);
         auto coefficient = _mm256_set1_epi32(M::mont(kp, M::r2));
         auto index = M::mont(_mm256_setr_epi32(offset, offset + 1, offset + 2, offset + 3,
             offset + 4, offset + 5, offset + 6, offset + 7), _mm256_set1_epi32(M::r2));
@@ -345,24 +345,24 @@ Buffer<u32> fps_power_blocks(span<const u32> f, usize n, u32 k) {
         for (; i + 8 <= used; i += 8) _mm256_store_si256((__m256i*)(psi.p + i), M::mont(
             _mm256_load_si256((const __m256i*)(psi.p + i)), _mm256_loadu_si256((const __m256i*)(inverses.p + offset + i))));
         for (; i < used; ++i) psi[i] = M::mont(psi[i], inverses[offset + i]);
-        fill(psi.p + used, psi.p + block, 0u);
+        std::fill(psi.p + used, psi.p + block, 0u);
         fixed(psi, gs.p); memcpy(g.p + offset, psi.p, used * 4);
     }
     g.n = n; return g;
 }
 
 template<u32 P = 998244353>
-Buffer<u32> fps_pow(span<const u32> f, usize n, u64 exponent) {
+Buffer<u32> fps_pow(std::span<const u32> f, usize n, u64 exponent) {
     using M = Mod<P>;
     if (!n) return {};
-    auto zero = [&] { Buffer<u32> result(n); fill(result.p, result.p + n, 0u); return result; };
+    auto zero = [&] { Buffer<u32> result(n); std::fill(result.p, result.p + n, 0u); return result; };
     if (!exponent) { auto result = zero(); result[0] = 1; return result; }
     usize first = 0;
-    while (first < min(n, f.size()) && !f[first]) ++first;
-    if (first == min(n, f.size()) || u128(first) * exponent >= n) return zero();
-    if (exponent == 1) { auto result = zero(); memcpy(result.p, f.data(), min(n, f.size()) * 4); return result; }
+    while (first < std::min(n, f.size()) && !f[first]) ++first;
+    if (first == std::min(n, f.size()) || u128(first) * exponent >= n) return zero();
+    if (exponent == 1) { auto result = zero(); memcpy(result.p, f.data(), std::min(n, f.size()) * 4); return result; }
     usize shift = first * exponent, count = n - shift;
-    f = f.subspan(first, min(f.size() - first, count));
+    f = f.subspan(first, std::min(f.size() - first, count));
     while (f.size() > 1 && !f.back()) f = f.first(f.size() - 1);
     u32 constant = M::pow(f[0], exponent);
     if (f.size() == 1) { auto result = zero(); result[shift] = constant; return result; }
@@ -378,19 +378,19 @@ Buffer<u32> fps_pow(span<const u32> f, usize n, u64 exponent) {
 }
 
 template<u32 P = 998244353>
-optional<Buffer<u32>> fps_sqrt(span<const u32> f, usize n) {
+std::optional<Buffer<u32>> fps_sqrt(std::span<const u32> f, usize n) {
     using M = Mod<P>;
     usize first = 0;
-    while (first < min(n, f.size()) && !f[first]) ++first;
-    if (first == min(n, f.size())) { Buffer<u32> zero(n); if (n) fill(zero.p, zero.p + n, 0u); return zero; }
-    if (first & 1) return nullopt;
+    while (first < std::min(n, f.size()) && !f[first]) ++first;
+    if (first == std::min(n, f.size())) { Buffer<u32> zero(n); if (n) std::fill(zero.p, zero.p + n, 0u); return zero; }
+    if (first & 1) return std::nullopt;
     auto root = mod_sqrt<P>(f[first]);
-    if (!root) return nullopt;
-    usize count = n - first, capacity = bit_ceil(count), seed = min<usize>(32, count);
-    f = f.subspan(first, min(f.size() - first, count));
+    if (!root) return std::nullopt;
+    usize count = n - first, capacity = std::bit_ceil(count), seed = std::min<usize>(32, count);
+    f = f.subspan(first, std::min(f.size() - first, count));
     while (f.size() > 1 && !f.back()) f = f.first(f.size() - 1);
     if (f.size() == 1) {
-        Buffer<u32> result(n); fill(result.p, result.p + n, 0u);
+        Buffer<u32> result(n); std::fill(result.p, result.p + n, 0u);
         result[first / 2] = *root; return result;
     }
     Buffer<u32> g(capacity), h(capacity), gs(capacity), hs(capacity), work(capacity);
@@ -409,13 +409,13 @@ optional<Buffer<u32>> fps_sqrt(span<const u32> f, usize n) {
     auto* G = (convolution_detail::Vec*)gs.p;
     auto* H = (convolution_detail::Vec*)hs.p;
     for (usize half = seed; half < count; half *= 2) {
-        usize size = 2 * half, end = min(size, count);
-        memcpy(gs.p, g.p, half * 4); fill(gs.p + half, gs.p + size, 0u);
-        memcpy(hs.p, h.p, half * 4); fill(hs.p + half, hs.p + size, 0u);
+        usize size = 2 * half, end = std::min(size, count);
+        memcpy(gs.p, g.p, half * 4); std::fill(gs.p + half, gs.p + size, 0u);
+        memcpy(hs.p, h.p, half * 4); std::fill(hs.p + half, hs.p + size, 0u);
         ntt.forward(G, size / 8); ntt.forward(H, size / 8);
         memcpy(work.p, gs.p, size * 4);
         ntt.products(x, G, size / 8); ntt.inverse(x, size / 8);
-        fill(work.p, work.p + half, 0u);
+        std::fill(work.p, work.p + half, 0u);
         for (usize i = half; i < size; ++i) work[i] = M::sub(i < f.size() ? f[i] : 0, work[i]);
         ntt.forward(x, size / 8); ntt.products(x, H, size / 8); ntt.inverse(x, size / 8);
         for (usize i = half; i < end; ++i) g[i] = (work[i] + (work[i] & 1) * P) >> 1;
@@ -423,13 +423,13 @@ optional<Buffer<u32>> fps_sqrt(span<const u32> f, usize n) {
             // Extend the reciprocal for the next precision using the new g.
             memcpy(work.p, g.p, size * 4);
             ntt.forward(x, size / 8); ntt.products(x, H, size / 8); ntt.inverse(x, size / 8);
-            fill(work.p, work.p + half, 0u);
+            std::fill(work.p, work.p + half, 0u);
             ntt.forward(x, size / 8); ntt.products(x, H, size / 8); ntt.inverse(x, size / 8);
             for (usize i = half; i < size; ++i) h[i] = M::sub(0, work[i]);
         }
     }
     if (!first) { g.n = n; return g; }
-    Buffer<u32> result(n); fill(result.p, result.p + n, 0u);
+    Buffer<u32> result(n); std::fill(result.p, result.p + n, 0u);
     memcpy(result.p + first / 2, g.p, count * 4);
     return result;
 }

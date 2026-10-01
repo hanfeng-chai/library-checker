@@ -8,7 +8,7 @@ int main() {
     for (usize i = 0; i < n; ++i) f[i] = in.read<u32, 9>();
     while (*in.p && *in.p <= ' ') ++in.p;
     for (usize i = 0; i < m; ++i) points[i] = in.read<u32, 9>();
-    Multipoint tree{span<const u32>(points)};
-    auto values = tree.evaluate(span<const u32>(f));
-    out.write(span(values.p, values.n), ' ');
+    Multipoint tree{std::span<const u32>(points)};
+    auto values = tree.evaluate(std::span<const u32>(f));
+    out.write(std::span(values.p, values.n), ' ');
 }

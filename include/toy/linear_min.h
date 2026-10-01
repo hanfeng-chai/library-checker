@@ -7,16 +7,16 @@ struct LinearAddMin {
     Buffer<Node> tree;u32 capacity,height;
     void pull(u32 i){auto& x=tree[i];const auto& l=tree[2*i];const auto& r=tree[2*i+1];
         const auto& best=l.minimum<=r.minimum?l:r;x.minimum=best.minimum;x.index=best.index;
-        x.forward=min(l.forward,r.forward);x.backward=min(l.backward,r.backward);
+        x.forward=std::min(l.forward,r.forward);x.backward=std::min(l.backward,r.backward);
         if(l.minimum==infinity||r.minimum==infinity)return;
-        if(l.minimum<=r.minimum)x.backward=min(x.backward,(r.minimum-l.minimum)/(r.index-l.index));
-        else x.forward=min(x.forward,(l.minimum-r.minimum)/(r.index-l.index));
+        if(l.minimum<=r.minimum)x.backward=std::min(x.backward,(r.minimum-l.minimum)/(r.index-l.index));
+        else x.forward=std::min(x.forward,(l.minimum-r.minimum)/(r.index-l.index));
     }
-    explicit LinearAddMin(span<const i64> input):tree(2*bit_ceil(max<usize>(1,input.size()))),capacity(tree.n/2),height(countr_zero(capacity)){
-        fill(tree.p,tree.p+tree.n,Node{});for(u32 i=0;i<input.size();++i){tree[capacity+i].minimum=input[i];tree[capacity+i].index=i;}for(u32 i=capacity;--i;)pull(i);
+    explicit LinearAddMin(std::span<const i64> input):tree(2*std::bit_ceil(std::max<usize>(1,input.size()))),capacity(tree.n/2),height(std::countr_zero(capacity)){
+        std::fill(tree.p,tree.p+tree.n,Node{});for(u32 i=0;i<input.size();++i){tree[capacity+i].minimum=input[i];tree[capacity+i].index=i;}for(u32 i=capacity;--i;)pull(i);
     }
     void shift(u32 i,i64 a,i64 b){auto& x=tree[i];if(x.minimum==infinity)return;x.minimum+=a*x.index+b;
-        if(i<capacity){x.a+=a;x.b+=b;x.forward=min(infinity,x.forward-a);x.backward=min(infinity,x.backward+a);}
+        if(i<capacity){x.a+=a;x.b+=b;x.forward=std::min(infinity,x.forward-a);x.backward=std::min(infinity,x.backward+a);}
     }
     void push(u32 i){auto& x=tree[i];if(x.a||x.b){shift(2*i,x.a,x.b);shift(2*i+1,x.a,x.b);x.a=x.b=0;}}
     void apply(u32 i,i64 a,i64 b){auto& x=tree[i];if(i>=capacity||(a>=0?a<=x.forward:-a<=x.backward)){shift(i,a,b);return;}
@@ -29,7 +29,7 @@ struct LinearAddMin {
     }
     i64 query(u32 i,u32 l,u32 r,u32 first,u32 last,i64 a,i64 b)const{const auto& x=tree[i];if(first<=l&&r<=last)return x.minimum+a*x.index+b;
         a+=x.a;b+=x.b;u32 m=(l+r)/2;if(last<=m)return query(2*i,l,m,first,last,a,b);if(first>=m)return query(2*i+1,m,r,first,last,a,b);
-        return min(query(2*i,l,m,first,last,a,b),query(2*i+1,m,r,first,last,a,b));
+        return std::min(query(2*i,l,m,first,last,a,b),query(2*i+1,m,r,first,last,a,b));
     }
     i64 minimum(u32 l,u32 r)const{return l==r?infinity:query(1,0,capacity,l,r,0,0);}
 };

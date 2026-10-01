@@ -21,7 +21,7 @@ constexpr u64 slow_mul(u64 a, u64 b) {
 // x^61 has trace one. Its Artin-Schreier chain ends in 1, then 0;
 // each suffix is a Cantor basis, so no runtime inversions or random basis search.
 inline constexpr auto chain = [] {
-    array<u64, 64> a{};
+    std::array<u64, 64> a{};
     u64 x = u64(1) << 61;
     for (auto& v : a) v = x, x = slow_mul(x, x) ^ x;
     return a;

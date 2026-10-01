@@ -10,12 +10,12 @@ template<unsigned Bits = 30> struct XorSet {
     Buffer<Leaf> leaves;
     Bitmap occupied;
     u32 free = 0, blocks = 0, count = 0, xor_all = 0;
-    explicit XorSet(usize reserve = 0) : directory(usize(1) << (Bits - 9)), leaves(1, reserve + 1), occupied(directory.n) {fill(directory.p,directory.p+directory.n,0u);}
+    explicit XorSet(usize reserve = 0) : directory(usize(1) << (Bits - 9)), leaves(1, reserve + 1), occupied(directory.n) {std::fill(directory.p,directory.p+directory.n,0u);}
     static u32 choose(u64 word, u32 key) {
         // Keep the preferred half whenever it is nonempty, from high bit to low.
-        if((word>>key)&1)return key; if(has_single_bit(word))return countr_zero(word);
+        if((word>>key)&1)return key; if(std::has_single_bit(word))return std::countr_zero(word);
         u32 result=0;
-        [&]<usize... K>(index_sequence<K...>){(([&]{constexpr unsigned step=32>>K;u32 side=key&step;u64 part=(word>>side)&((u64(1)<<step)-1);if(!part)side^=step;word=(word>>side)&((u64(1)<<step)-1);result|=side;}()),...);}(make_index_sequence<6>{});
+        [&]<usize... K>(std::index_sequence<K...>){(([&]{constexpr unsigned step=32>>K;u32 side=key&step;u64 part=(word>>side)&((u64(1)<<step)-1);if(!part)side^=step;word=(word>>side)&((u64(1)<<step)-1);result|=side;}()),...);}(std::make_index_sequence<6>{});
         return result;
     }
     u32 nearest_block(u32 key) const {
@@ -28,7 +28,7 @@ template<unsigned Bits = 30> struct XorSet {
     }
     u32 allocate() {
         if(free){u32 i=free;free=leaves[i].word[0];leaves[i]={};return i;}
-        if(leaves.n==leaves.capacity)leaves.reserve(max<usize>(4,2*leaves.capacity));
+        if(leaves.n==leaves.capacity)leaves.reserve(std::max<usize>(4,2*leaves.capacity));
         leaves[leaves.n]={};return leaves.n++;
     }
     u32 size() const{return count;}

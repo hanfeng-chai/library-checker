@@ -5,12 +5,12 @@ namespace toy {
 struct CoverageTree {
     struct alignas(64) Node { u32 count[8]{}, gap[8]{}; };
     Buffer<Node> tree;
-    array<u32, 12> offset{};
+    std::array<u32, 12> offset{};
     u32 height = 0, total = 0, uncovered = 0;
-    explicit CoverageTree(span<const u32> coordinates) {
-        usize n = coordinates.empty() ? 0 : coordinates.size() - 1, groups = max<usize>(1, (n + 7) / 8), size = 0;
+    explicit CoverageTree(std::span<const u32> coordinates) {
+        usize n = coordinates.empty() ? 0 : coordinates.size() - 1, groups = std::max<usize>(1, (n + 7) / 8), size = 0;
         for (;;) { offset[height++] = size; size += groups; if (groups == 1) break; groups = (groups + 7) / 8; }
-        tree = Buffer<Node>(size); fill(tree.p, tree.p + size, Node{});
+        tree = Buffer<Node>(size); std::fill(tree.p, tree.p + size, Node{});
         for (usize i = 0; i < n; ++i) total += tree[i / 8].gap[i & 7] = coordinates[i + 1] - coordinates[i];
         for (u32 k = 1; k < height; ++k)
             for (u32 i = 0; i < offset[k] - offset[k - 1]; ++i) {

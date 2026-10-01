@@ -8,6 +8,6 @@ int main() {
     u32 a = in.read<u32, 9>(), r = in.read<u32, 9>();
     Buffer<u32> f(n);
     for (usize i = 0; i < n; ++i) f[i] = in.read<u32, 9>();
-    auto g = polynomial_eval_geometric(span<const u32>(f), m, a, r);
-    out.write(span(g.p, g.n), ' ');
+    auto g = polynomial_eval_geometric(std::span<const u32>(f), m, a, r);
+    out.write(std::span(g.p, g.n), ' ');
 }

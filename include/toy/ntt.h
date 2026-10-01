@@ -11,7 +11,7 @@ struct NTT {
     using M = Mod<P>;
     Buffer<u32> root, inverse_root;
 
-    explicit NTT(usize capacity, u32 g = 0) : root(max<usize>(1, capacity / 2)), inverse_root(root.n) {
+    explicit NTT(usize capacity, u32 g = 0) : root(std::max<usize>(1, capacity / 2)), inverse_root(root.n) {
         root[0] = inverse_root[0] = (u64(1) << 32) % P; // Montgomery one.
         if (!g) g = primitive_root(P);
         for (usize half = 1; half < root.n; half *= 2) {
@@ -55,7 +55,7 @@ struct NTT {
     }
 
     template<bool Inverse>
-    void small(span<u32> a, const u32* roots) const {
+    void small(std::span<u32> a, const u32* roots) const {
         // Three dimensions inside each vector. Duplicate each lower/upper half
         // before the butterfly; masks restore the interleaved frequency layout.
         for (usize k = 0; k < a.size() / 8; ++k) {
@@ -77,7 +77,7 @@ struct NTT {
         }
     }
 
-    void forward(span<u32> a) const {
+    void forward(std::span<u32> a) const {
         usize n = a.size();
         for (usize half = n / 2; half >= (n >= 8 ? 8 : 1); half /= 2)
             for (usize i = 0, k = 0; i < n; i += 2 * half, ++k)
@@ -86,7 +86,7 @@ struct NTT {
     }
 
     // Ordinary residues in and out; optional ordinary scale multiplies output.
-    void inverse(span<u32> a, u32 scale = 1) const {
+    void inverse(std::span<u32> a, u32 scale = 1) const {
         usize n = a.size();
         if (n >= 8) small<true>(a, inverse_root.p);
         for (usize half = n >= 8 ? 8 : 1; half < n; half *= 2)

@@ -9,16 +9,16 @@ template<class T> struct RMQ {
     Buffer<u32> masks;
     usize blocks;
     explicit RMQ(Buffer<T> a) : values(std::move(a)), prefix(values.n), suffix(values.n), masks(values.n), blocks((values.n + 31) / 32) {
-        table = Buffer<T>(blocks * bit_width(blocks));
+        table = Buffer<T>(blocks * std::bit_width(blocks));
         for (usize b = 0; b < blocks; ++b) {
             usize first = 32 * b, last = std::min(first + 32, values.n); u32 stack = 0;
-            T low = numeric_limits<T>::max();
+            T low = std::numeric_limits<T>::max();
             for (usize i = first; i < last; ++i) {
-                while (stack && values[first + 31 - countl_zero(stack)] >= values[i]) stack &= ~(1u << (31 - countl_zero(stack)));
+                while (stack && values[first + 31 - std::countl_zero(stack)] >= values[i]) stack &= ~(1u << (31 - std::countl_zero(stack)));
                 stack |= 1u << (i - first); masks[i] = stack;
                 prefix[i] = low = std::min(low, values[i]);
             }
-            table[b] = low; low = numeric_limits<T>::max();
+            table[b] = low; low = std::numeric_limits<T>::max();
             for (usize i = last; i-- > first;) suffix[i] = low = std::min(low, values[i]);
         }
         for (usize k = 1; (usize(1) << k) <= blocks; ++k)
@@ -27,10 +27,10 @@ template<class T> struct RMQ {
     }
     T min(usize l, usize r) const {
         usize first = l / 32, last = (r - 1) / 32;
-        if (first == last) return values[32 * first + countr_zero(masks[r - 1] & (~u32(0) << (l & 31)))];
+        if (first == last) return values[32 * first + std::countr_zero(masks[r - 1] & (~u32(0) << (l & 31)))];
         T answer = std::min(suffix[l], prefix[r - 1]);
         if (++first < last) {
-            usize k = bit_width(last - first) - 1;
+            usize k = std::bit_width(last - first) - 1;
             answer = std::min(answer, std::min(table[k * blocks + first], table[k * blocks + last - (usize(1) << k)]));
         }
         return answer;
@@ -41,9 +41,9 @@ template<> struct RMQ<u32> {
     Buffer<u32> values, prefix, suffix, table;
     usize blocks, stride;
     explicit RMQ(Buffer<u32> a) : values(std::move(a)), blocks((values.n + 15) / 16), stride(blocks + 1) {
-        usize old = values.n; values.resize(16 * blocks); fill(values.p + old, values.p + values.n, ~u32(0));
+        usize old = values.n; values.resize(16 * blocks); std::fill(values.p + old, values.p + values.n, ~u32(0));
         prefix = Buffer<u32>(values.n); suffix = Buffer<u32>(values.n);
-        table = Buffer<u32>((bit_width(blocks) + 1) * stride); fill(table.p, table.p + table.n, ~u32(0));
+        table = Buffer<u32>((std::bit_width(blocks) + 1) * stride); std::fill(table.p, table.p + table.n, ~u32(0));
         auto p1 = _mm256_setr_epi32(0,0,1,2,3,4,5,6), p2 = _mm256_setr_epi32(0,0,0,1,2,3,4,5), p4 = _mm256_setr_epi32(0,0,0,0,0,1,2,3);
         auto s1 = _mm256_setr_epi32(1,2,3,4,5,6,7,7), s2 = _mm256_setr_epi32(2,3,4,5,6,7,7,7), s4 = _mm256_setr_epi32(4,5,6,7,7,7,7,7);
         for (usize b = 0; b < blocks; ++b) {
@@ -68,7 +68,7 @@ template<> struct RMQ<u32> {
             }
             table[stride + b] = suffix[16 * b];
         }
-        for (usize k = 2; k <= bit_width(blocks); ++k)
+        for (usize k = 2; k <= std::bit_width(blocks); ++k)
             for (usize i = 0; i + (usize(1) << (k - 1)) <= blocks; ++i)
                 table[k * stride + i] = std::min(table[(k - 1) * stride + i], table[(k - 1) * stride + i + (usize(1) << (k - 2))]);
     }
@@ -87,7 +87,7 @@ template<> struct RMQ<u32> {
             auto valid = _mm256_and_si256(_mm256_cmpgt_epi32(index, _mm256_set1_epi32(int(l - start) - 1)), _mm256_cmpgt_epi32(_mm256_set1_epi32(r - start), index));
             return reduce(_mm256_or_si256(_mm256_loadu_si256((const __m256i*)(values.p + start)), _mm256_andnot_si256(valid, _mm256_set1_epi32(-1))));
         }
-        usize gap = last - first - 1, k = bit_width((gap << 1) | usize(1)) - 1, width = (usize(1) << k) / 2;
+        usize gap = last - first - 1, k = std::bit_width((gap << 1) | usize(1)) - 1, width = (usize(1) << k) / 2;
         return std::min(std::min(suffix[l], prefix[r - 1]), std::min(table[k * stride + first + 1], table[k * stride + last - width]));
     }
 };

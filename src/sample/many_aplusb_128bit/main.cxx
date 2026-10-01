@@ -5,11 +5,11 @@ int main() {
     int t = in.read();
     i128 sums[2048];
     while (t) {
-        int n = min(t, 2048);
+        int n = std::min(t, 2048);
         for (int i = 0; i < n; ++i) {
             i128 a = in.read<i128, 38>(), b = in.read<i128, 38>();
             sums[i] = a + b;
         }
-        out.write(span(sums, n)); t -= n;
+        out.write(std::span(sums, n)); t -= n;
     }
 }

@@ -9,5 +9,5 @@ int main() {
     for (usize i = 0; i < n; ++i) a[i] = in.read<u64, 10>();
     for (usize i = 0; i < m; ++i) b[i] = in.read<u64, 10>();
     auto c = min_plus_convex_arbitrary<i32>(a, b);
-    out.write(span(c.p, c.n), ' ');
+    out.write(std::span(c.p, c.n), ' ');
 }

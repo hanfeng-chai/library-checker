@@ -10,5 +10,5 @@ int main() {
     for (usize i = 1; i <= n; ++i) a[i] = in.read<u32, 9>();
     for (usize i = 1; i <= n; ++i) b[i] = in.read<u32, 9>();
     auto c = divisor_convolution<Divisor::Gcd>(std::move(a), std::move(b));
-    out.write(span(c.p + 1, n), ' ');
+    out.write(std::span(c.p + 1, n), ' ');
 }

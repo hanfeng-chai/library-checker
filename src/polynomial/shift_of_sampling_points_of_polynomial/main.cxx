@@ -7,6 +7,6 @@ int main() {
     u32 c = in.read<u32, 9>();
     Buffer<u32> values(n);
     for (usize i = 0; i < n; ++i) values[i] = in.read<u32, 9>();
-    auto shifted = polynomial_shift_samples(span<const u32>(values), m, c);
-    out.write(span(shifted.p, shifted.n), ' ');
+    auto shifted = polynomial_shift_samples(std::span<const u32>(values), m, c);
+    out.write(std::span(shifted.p, shifted.n), ' ');
 }

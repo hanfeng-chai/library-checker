@@ -94,3 +94,52 @@ I/O 的五份生产二进制也与已验收产物逐字节一致。其诊断重�
 发现问题时，已对当时达标的 35 题重新审计首轮，35 题仍全部达标；记录在 `build/first-observation-audit.json`。本表进一步核对了最终 55 题的当前二进制与完整测例。
 
 这些结论只针对当前机器、配置、输入和下载的提交，不代表实时 OJ 排名或每个测例都更快。浮点快速路径的验证范围见 [fft_convolution.md](fft_convolution.md) 和 [fft_integer.md](fft_integer.md)。
+## 2026-10-01：命名空间整理与运行库更新
+
+common.h 不再包含 `using namespace std;`，相关标准库名字改为显式 std::。
+先使用更新后的同一工具链构建 135 份现有 `.cxx`，再进行命名空间修改并重建：
+**135 份二进制的 SHA-256 全部不变**。因此此次限定名字没有改变这些程序的
+机器码或运行开销。另用 GCC/Clang 验证 `using namespace toy;` 不引入 span，
+也不会让全局自定义的 array 与 std::array 冲突。
+
+此前本机重启启用了更新后的 glibc/启动运行库，同源码重链接时有 126 份产物
+发生变化。按本轮约定，将这项环境变化视为影响较小，保留原批次性能数据并
+单独记录旧、新产物映射；不把重链接当成算法优化。算法变化仍须重新正确性
+检查和静默比较，不能套用这个映射。GCC/Clang 都继续使用不链接 libstdc++ 的配置。
+
+各题的重要尝试、失败原因、阶段 max/sum 和经典对照解会记录在该题的
+`tutorial.md`，原始 perf 文件、输入和完整哈希留在未提交的实验目录。
+
+## 2026-10-01：tree 阶段
+
+20 题的 main 均已通过同批五份参考的 max、sum 门槛，生产产物逐项核对，运行库重链接按上节的明确映射处理。
+共享修改也重新核对了此前 47 道数据结构题，static_range_sum 的 naive 仍满足
+不劣于 chaihf 的约定。各题的完整尝试过程、失败方案和经典对照在相应 tutorial.md。
+
+以下为各题采用批次的真实第 0 次观测，单位 ms；不把多轮的最快测例拼接。
+
+| 题目 | main max / sum | 五份参考最小 max / sum |
+|---|---:|---:|
+| tree_diameter | 71.876 / 447.509 | 77.549 / 480.211 |
+| cartesian_tree | 37.098 / 278.236 | 39.611 / 309.692 |
+| lca | 49.421 / 852.148 | 56.527 / 867.988 |
+| vertex_add_path_sum | 239.861 / 2297.382 | 266.665 / 2570.970 |
+| tree_path_composite_sum | 39.059 / 348.625 | 80.924 / 753.619 |
+| vertex_add_subtree_sum | 65.676 / 512.364 | 70.859 / 559.154 |
+| rooted_tree_isomorphism_classification | 45.004 / 372.822 | 48.329 / 394.084 |
+| rooted_tree_topological_order_with_minimum_inversions | 119.216 / 2301.200 | 240.148 / 4261.176 |
+| frequency_table_of_tree_distance | 331.507 / 2147.472 | 356.689 / 3051.815 |
+| common_interval_decomposition_tree | 109.447 / 1468.668 | 144.181 / 1986.508 |
+| dynamic_tree_vertex_set_path_composite | 522.395 / 2365.933 | 556.798 / 2533.462 |
+| point_set_tree_path_composite_sum_fixed_root | 291.211 / 4188.141 | 375.050 / 5995.118 |
+| point_set_tree_path_composite_sum | 607.517 / 8336.027 | 684.546 / 10558.316 |
+| dynamic_tree_vertex_add_subtree_sum | 246.963 / 1557.950 | 267.040 / 1889.581 |
+| dynamic_tree_subtree_add_subtree_sum | 359.113 / 2224.468 | 487.377 / 3117.685 |
+| vertex_add_range_contour_sum_on_tree | 259.552 / 2470.535 | 292.961 / 2940.626 |
+| jump_on_tree | 152.452 / 1766.028 | 160.352 / 1896.726 |
+| vertex_set_path_composite | 299.214 / 1825.169 | 310.213 / 1992.671 |
+| dynamic_tree_vertex_add_path_sum | 390.386 / 1783.947 | 401.438 / 1848.033 |
+| vertex_get_range_contour_add_on_tree | 263.627 / 2586.965 | 276.008 / 3037.616 |
+
+此前已完成的数学类 55 题与三道 I/O 示例也保留完整阶段记录，本次总计整理
+125 份 tutorial。到 tree 为止暂停，后续 graph 等分类待阶段验收后继续。

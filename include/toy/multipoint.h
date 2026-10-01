@@ -5,14 +5,14 @@
 namespace toy {
 
 template<u32 P = 998244353>
-Buffer<u32> inverse_values(span<const u32> values) {
+Buffer<u32> inverse_values(std::span<const u32> values) {
     using M = Mod<P>;
     usize n = (values.size() + 7) & -usize(8);
     Buffer<u32> result(values.size(), n), prefix(n);
     if (!n) return result;
     constexpr u32 one = (u64(1) << 32) % P;
     auto cur = _mm256_set1_epi32(one), r2 = _mm256_set1_epi32(M::r2);
-    alignas(32) u32 tail[8]; fill(tail, tail + 8, 1u);
+    alignas(32) u32 tail[8]; std::fill(tail, tail + 8, 1u);
     if (values.size() & 7) memcpy(tail, values.data() + (values.size() & -usize(8)), (values.size() & 7) * 4);
     auto load = [&](usize i) {
         auto x = _mm256_loadu_si256((const __m256i*)(i + 8 <= values.size() ? values.data() + i : tail));
@@ -39,15 +39,15 @@ struct Multipoint {
     using M = Mod<P>;
     static constexpr usize leaf = 16;
     struct Node { Buffer<u32> polynomial, left, right; };
-    span<const u32> points;
+    std::span<const u32> points;
     usize groups, length;
     Array<Node> tree;
 
-    explicit Multipoint(span<const u32> x) : points(x), groups(bit_ceil(max<usize>(1, (x.size() + leaf - 1) / leaf))),
+    explicit Multipoint(std::span<const u32> x) : points(x), groups(std::bit_ceil(std::max<usize>(1, (x.size() + leaf - 1) / leaf))),
         length(groups * leaf), tree(2 * groups) {
         for (usize k = 0; k < groups; ++k) {
             auto& q = tree[groups + k].polynomial; q = Buffer<u32>(leaf + 1);
-            fill(q.p, q.p + q.n, 0u); q[0] = 1;
+            std::fill(q.p, q.p + q.n, 0u); q[0] = 1;
             for (usize j = 0; j < leaf && k * leaf + j < points.size(); ++j) {
                 u32 x = M::mont(points[k * leaf + j], M::r2);
                 auto w = _mm256_set1_epi32(x); usize i = j + 1;
@@ -67,14 +67,14 @@ struct Multipoint {
                 for (usize k = 0; k <= size; ++k) {
                     usize first = k < a.n ? 0 : k - a.n + 1;
                     u64 sum = M::mul(a[k - first], b[first]);
-                    for (usize j = first + 1; j < min(b.n, k + 1); ++j) sum += u64(a[k - j]) * b[j];
+                    for (usize j = first + 1; j < std::min(b.n, k + 1); ++j) sum += u64(a[k - j]) * b[j];
                     node.polynomial[k] = sum % P;
                 }
                 continue;
             }
             node.left = Buffer<u32>(size); node.right = Buffer<u32>(size);
-            memcpy(node.left.p, a.p, a.n * 4); fill(node.left.p + a.n, node.left.p + size, 0u);
-            memcpy(node.right.p, b.p, b.n * 4); fill(node.right.p + b.n, node.right.p + size, 0u);
+            memcpy(node.left.p, a.p, a.n * 4); std::fill(node.left.p + a.n, node.left.p + size, 0u);
+            memcpy(node.right.p, b.p, b.n * 4); std::fill(node.right.p + b.n, node.right.p + size, 0u);
             const auto& ntt = convolution_detail::info<P>;
             auto* l = (convolution_detail::Vec*)node.left.p;
             auto* r = (convolution_detail::Vec*)node.right.p;
@@ -87,7 +87,7 @@ struct Multipoint {
         }
     }
 
-    Buffer<u32> evaluate(span<const u32> f) {
+    Buffer<u32> evaluate(std::span<const u32> f) {
         Buffer<u32> answer(points.size());
         if (points.empty()) return answer;
         if (f.size() <= 16 || points.size() <= 16) {
@@ -95,14 +95,14 @@ struct Multipoint {
             return answer;
         }
         Buffer<u32> reversed(f.size());
-        reverse_copy(f.begin(), f.end(), reversed.p);
+        std::reverse_copy(f.begin(), f.end(), reversed.p);
         Buffer<u32> weights;
         if (f.size() > length) weights = fps_div<P>(reversed, tree[1].polynomial, f.size());
         else {
             auto inv = fps_inv<P>(tree[1].polynomial, f.size());
             weights = convolution<P>(std::move(reversed), std::move(inv)); weights.n = f.size();
         }
-        reverse(weights.p, weights.p + weights.n); weights.resize(length);
+        std::reverse(weights.p, weights.p + weights.n); weights.resize(length);
         auto visit = [&](auto&& self, usize node, usize start, Buffer<u32> u) -> void {
             usize size = u.n;
             if (start >= points.size()) return;
@@ -114,7 +114,7 @@ struct Multipoint {
                     remainder[i] = sum % P;
                 }
                 alignas(32) u32 point[leaf] = {}, value[leaf];
-                usize used = min(leaf, points.size() - start);
+                usize used = std::min(leaf, points.size() - start);
                 memcpy(point, points.data() + start, used * 4);
                 // Eight Horner chains in parallel, one point per lane.
                 for (usize i = 0; i < leaf; i += 8) {
@@ -138,7 +138,7 @@ struct Multipoint {
                     left[i] = a % P; right[i] = b % P;
                 }
             } else {
-                reverse(u.p, u.p + size); Buffer<u32> temp(size);
+                std::reverse(u.p, u.p + size); Buffer<u32> temp(size);
                 const auto& ntt = convolution_detail::info<P>;
                 auto* work = (convolution_detail::Vec*)temp.p;
                 ntt.forward((convolution_detail::Vec*)u.p, size / 8);
@@ -157,7 +157,7 @@ struct Multipoint {
         return answer;
     }
 
-    Buffer<u32> interpolate(span<const u32> values) {
+    Buffer<u32> interpolate(std::span<const u32> values) {
         usize n = points.size();
         if (!n) return {};
         Buffer<u32> derivative(n);
@@ -169,7 +169,7 @@ struct Multipoint {
             Buffer<u32> result(size < 64 ? size : 0);
             if (size == leaf) {
                 alignas(32) u32 point[leaf] = {}, w[leaf] = {};
-                usize used = start < n ? min(leaf, n - start) : 0;
+                usize used = start < n ? std::min(leaf, n - start) : 0;
                 if (used) { memcpy(point, points.data() + start, used * 4); memcpy(w, weight.p + start, used * 4); }
                 const auto& q = tree[node].polynomial;
                 auto r2 = _mm256_set1_epi32(M::r2);
@@ -195,7 +195,7 @@ struct Multipoint {
                 const auto& l = tree[2 * node].polynomial; const auto& r = tree[2 * node + 1].polynomial;
                 for (usize k = 0; k < size; ++k) {
                     u64 x = 0, y = 0;
-                    for (usize j = k < half ? 0 : k - half + 1; j <= min(half, k); ++j) {
+                    for (usize j = k < half ? 0 : k - half + 1; j <= std::min(half, k); ++j) {
                         x += u64(a[k - j]) * r[j]; y += u64(b[k - j]) * l[j];
                     }
                     result[k] = M::add(x % P, y % P);
@@ -208,12 +208,12 @@ struct Multipoint {
             ntt.forward(x, size / 8); ntt.forward(y, size / 8);
             ntt.products(x, (convolution_detail::Vec*)tree[node].right.p, size / 8);
             ntt.products(y, (convolution_detail::Vec*)tree[node].left.p, size / 8);
-            for (usize i = 0; i < size; ++i) a[i] = M::add(min(a[i], a[i] - P), min(b[i], b[i] - P));
+            for (usize i = 0; i < size; ++i) a[i] = M::add(std::min(a[i], a[i] - P), std::min(b[i], b[i] - P));
             ntt.inverse(x, size / 8);
             return a;
         };
         auto result = merge(merge, 1, 0, length);
-        result.n = n; reverse(result.p, result.p + n);
+        result.n = n; std::reverse(result.p, result.p + n);
         return result;
     }
 
@@ -234,7 +234,7 @@ struct Multipoint {
                 return;
             }
             const auto& q = tree[2 * node].polynomial;
-            Buffer<u32> divisor(q.n); reverse_copy(q.p, q.p + q.n, divisor.p);
+            Buffer<u32> divisor(q.n); std::reverse_copy(q.p, q.p + q.n, divisor.p);
             auto [high, low] = polynomial_divmod<P>(std::move(value), divisor);
             high.resize(size / 2); low.resize(size / 2);
             self(self, 2 * node, start, std::move(low));

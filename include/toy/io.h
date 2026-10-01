@@ -4,13 +4,13 @@
 namespace toy {
 namespace io_detail {
 inline constexpr auto shift = [] {
-    array<array<u8, 16>, 17> a{};
+    std::array<std::array<u8, 16>, 17> a{};
     for (int n = 0; n <= 16; ++n)
         for (int i = 0; i < 16; ++i) a[n][i] = i < 16 - n ? 128 : i - 16 + n;
     return a;
 }();
 inline constexpr auto power = [] {
-    array<u64, 20> a{1};
+    std::array<u64, 20> a{1};
     for (int i = 1; i <= 19; ++i) a[i] = a[i - 1] * 10;
     return a;
 }();
@@ -19,7 +19,7 @@ inline constexpr auto power = [] {
 // floor(b*log10(2)) by at most one. Adding x to this bias carries into
 // the high word exactly when x reaches the next power of ten.
 inline constexpr auto length = [] {
-    array<u128, 64> a{};
+    std::array<u128, 64> a{};
     for (int z = 0; z < 64; ++z) {
         int d = ((64 - z) * 1233) >> 12;
         a[z] = (u128(d + 1) << 64) - power[d];
@@ -43,23 +43,23 @@ template<bool Parallel = false>
     }
 }
 inline constexpr auto digits = [] {
-    array<array<char, 4>, 10000> a{};
+    std::array<std::array<char, 4>, 10000> a{};
     for (int i = 0; i < 10000; ++i)
         for (int j = 0, x = i; j < 4; ++j, x /= 10) a[i][3 - j] = '0' + x % 10;
     return a;
 }();
 inline constexpr auto trim = [] {
-    array<array<u8, 16>, 17> a{};
+    std::array<std::array<u8, 16>, 17> a{};
     for (int n = 0; n <= 16; ++n)
         for (int i = 0; i < 16; ++i) a[n][i] = i < n ? 16 - n + i : 128;
     return a;
 }();
 
 inline constexpr auto first = [] {
-    array<u32, 10000> a{};
+    std::array<u32, 10000> a{};
     for (int i = 0; i < 10000; ++i) {
         int skip = (i < 1000) + (i < 100) + (i < 10);
-        u32 word = bit_cast<u32>(digits[i]) >> (skip * 8);
+        u32 word = std::bit_cast<u32>(digits[i]) >> (skip * 8);
         a[i] = word | (u32(3 - skip) << 30);
     }
     return a;
@@ -117,7 +117,7 @@ struct Reader {
     // Digits is an optional bound on the magnitude's decimal length.
     template<class T = u32, int Digits = (sizeof(T) * 8 * 30103 / 100000 + 1)>
     [[gnu::always_inline]] T read() {
-        using U = conditional_t<(sizeof(T) > 8), u128, u64>;
+        using U = std::conditional_t<(sizeof(T) > 8), u128, u64>;
         if constexpr (sizeof(T) > 8 && T(-1) < T(0)) {
             bool neg = *p == '-'; p += neg;
             U v = read<U, Digits>();
@@ -150,7 +150,7 @@ struct Reader {
             memcpy(&x, p, 8);
             // Digits have bit 4 set; space/newline do not. Right-align the
             // digit nibbles, then reduce pairs of decimal digits.
-            int n = countr_zero(~x & 0x1010101010101010ULL) / 8;
+            int n = std::countr_zero(~x & 0x1010101010101010ULL) / 8;
             if constexpr (Digits == 4) {
                 u32 y = u32(x) << ((4 - n) * 8);
                 y &= 0x0f0f0f0f;
@@ -226,7 +226,7 @@ struct Reader {
                                 u64 low;
                                 int n;
                                 if (mask) {
-                                    n = countr_zero(mask); low = short16(x, n);
+                                    n = std::countr_zero(mask); low = short16(x, n);
                                 } else {
                                     low = io_detail::decimal16(x); n = 16;
                                     while (n < Digits - 19 && p[n] >= '0') low = low * 10 + p[n++] - '0';
@@ -251,12 +251,12 @@ struct Reader {
     // Read two u32 fields separated by one byte. Up to seven digits use a
     // 16-byte delimiter scan; wider fields use 32 bytes and separate lanes.
     template<int Digits = 7>
-    [[gnu::always_inline]] array<u32, 2> read_pair() {
+    [[gnu::always_inline]] std::array<u32, 2> read_pair() {
         static_assert(1 <= Digits && Digits <= 10);
         if constexpr(Digits <= 7) {
         __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)p), _mm_set1_epi8('0'));
         unsigned mask = _mm_movemask_epi8(x);
-        int a = countr_zero(mask), b = countr_zero(mask & (mask - 1));
+        int a = std::countr_zero(mask), b = std::countr_zero(mask & (mask - 1));
         auto first = _mm_loadu_si128((const __m128i*)io_detail::shift[a].data());
         auto second = _mm_loadu_si128((const __m128i*)io_detail::shift[b - a - 1].data());
         auto indices = _mm_add_epi8(_mm_unpackhi_epi64(first, second), _mm_set_epi64x(0x0101010101010101ULL * (a + 1), 0));
@@ -266,10 +266,10 @@ struct Reader {
         x = _mm_packus_epi32(x, x);
         x = _mm_madd_epi16(x, _mm_set1_epi32(0x00012710));
         p += b + 1;
-        return bit_cast<array<u32, 2>>(u64(_mm_cvtsi128_si64(x)));
+        return std::bit_cast<std::array<u32, 2>>(u64(_mm_cvtsi128_si64(x)));
         } else if constexpr(Digits==9) {
             auto raw=_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)p),_mm256_set1_epi8('0'));
-            u32 mask=_mm256_movemask_epi8(raw),a=countr_zero(mask),end=countr_zero(mask&(mask-1)),b=end-a-1;
+            u32 mask=_mm256_movemask_epi8(raw),a=std::countr_zero(mask),end=std::countr_zero(mask&(mask-1)),b=end-a-1;
             static constexpr u64 shifts[]{64,56,48,40,32,24,16,8,0,0};
             static constexpr u32 ninth[]{0,0,0,0,0,0,0,0,0,100000000};
             // Keep the final eight digits in each u64 lane; loads never precede p.
@@ -278,11 +278,11 @@ struct Reader {
             digits=_mm_and_si128(digits,_mm_set1_epi8(15));
             digits=_mm_maddubs_epi16(digits,_mm_set1_epi16(0x010a));digits=_mm_madd_epi16(digits,_mm_set1_epi32(0x00010064));
             digits=_mm_packus_epi32(digits,digits);digits=_mm_madd_epi16(digits,_mm_set1_epi32(0x00012710));
-            array<u32,2> result{u32(_mm_cvtsi128_si32(digits))+u32(p[0]-'0')*ninth[a],u32(_mm_extract_epi32(digits,1))+u32(p[a+1]-'0')*ninth[b]};
+            std::array<u32,2> result{u32(_mm_cvtsi128_si32(digits))+u32(p[0]-'0')*ninth[a],u32(_mm_extract_epi32(digits,1))+u32(p[a+1]-'0')*ninth[b]};
             p+=end+1;return result;
         } else {
             auto raw=_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)p),_mm256_set1_epi8('0'));
-            u32 mask=_mm256_movemask_epi8(raw);u32 a=countr_zero(mask),b=countr_zero(mask&(mask-1));
+            u32 mask=_mm256_movemask_epi8(raw);u32 a=std::countr_zero(mask),b=std::countr_zero(mask&(mask-1));
             auto first=_mm256_castsi256_si128(raw);
             auto second=_mm_sub_epi8(_mm_loadu_si128((const __m128i*)(p+a+1)),_mm_set1_epi8('0'));
             auto index=_mm_setr_epi8(-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1);
@@ -295,12 +295,12 @@ struct Reader {
         }
     }
 
-    [[gnu::always_inline]] string_view token() {
+    [[gnu::always_inline]] std::string_view token() {
         const char* begin = p;
         for (;;) {
             auto x = _mm256_loadu_si256((const __m256i*)p);
             u32 stop = _mm256_movemask_epi8(_mm256_cmpgt_epi8(_mm256_set1_epi8(' ' + 1), x));
-            if (stop) { p += countr_zero(stop); break; }
+            if (stop) { p += std::countr_zero(stop); break; }
             p += 32;
         }
         return {begin, usize(p++ - begin)};
@@ -314,9 +314,9 @@ struct Writer {
     [[gnu::always_inline]] ~Writer() { flush(); }
     [[gnu::always_inline]] void flush() { ::write(1, buf, p - buf); p = buf; }
     [[gnu::always_inline]] void put(char c) { if (p == buf + N) flush(); *p++ = c; }
-    void append(string_view text) {
+    void append(std::string_view text) {
         while (!text.empty()) {
-            usize count = min(text.size(), usize(buf + N - p));
+            usize count = std::min(text.size(), usize(buf + N - p));
             if (!count) { flush(); continue; }
             memcpy(p, text.data(), count); p += count; text.remove_prefix(count);
         }
@@ -326,7 +326,7 @@ struct Writer {
     [[gnu::always_inline]] static char* fixed(char* p, u64 x) {
         // Every quotient uses the original x, rather than waiting for the
         // previous group. Inlining shares quotients between adjacent groups.
-        constexpr int n = min(Digits, 4);
+        constexpr int n = std::min(Digits, 4);
         u64 q = io_detail::quotient<Offset>(x)
               - io_detail::quotient<Offset + n>(x) * io_detail::power[n];
         if constexpr (Digits > 4) {
@@ -347,7 +347,7 @@ struct Writer {
         // Four 4-digit table entries form one vector. Drop leading zeroes
         // with one byte shuffle, avoiding branches for 5..16 digit outputs.
         u64 a = io_detail::quotient<4>(x), b = io_detail::quotient<8>(x), c = io_detail::quotient<12>(x);
-        auto word = [](u64 v) { return bit_cast<u32>(io_detail::digits[v]); };
+        auto word = [](u64 v) { return std::bit_cast<u32>(io_detail::digits[v]); };
         auto digits = _mm_set_epi32(word(x - a * 10000), word(a - b * 10000), word(b - c * 10000), word(c));
         u32 n = u32((u128(x) + io_detail::length[__builtin_clzll(x)]) >> 64);
         digits = _mm_shuffle_epi8(digits, _mm_loadu_si128((const __m128i*)io_detail::trim[n].data()));
@@ -357,7 +357,7 @@ struct Writer {
 
     template<class T>
     [[gnu::always_inline]] static char* format(char* cursor, T x, char end) {
-        using U = conditional_t<(sizeof(T) > 8), u128, u64>;
+        using U = std::conditional_t<(sizeof(T) > 8), u128, u64>;
         U v = x;
         if constexpr (sizeof(T) > 8 && T(-1) < T(0)) {
             if (!x) { cursor[0] = '0'; cursor[1] = end; return cursor + 2; }
@@ -384,9 +384,9 @@ struct Writer {
         p = format(p, x, end);
     }
     template<class T, usize Extent>
-    [[gnu::always_inline]] void write(span<T, Extent> values, char end = '\n') {
+    [[gnu::always_inline]] void write(std::span<T, Extent> values, char end = '\n') {
         for (usize i = 0; i < values.size();) {
-            usize n = min(values.size() - i, usize(buf + N - p) / 48);
+            usize n = std::min(values.size() - i, usize(buf + N - p) / 48);
             if (!n) { flush(); continue; }
             // One capacity check and member update per batch. Character
             // stores cannot force the local cursor back into memory.

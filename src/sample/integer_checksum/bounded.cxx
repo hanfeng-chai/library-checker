@@ -15,6 +15,6 @@ int main() {
     Writer out;
     int n = in.read();
     i128 low = in.read<i128>(), high = in.read<i128>();
-    u128 bound = max(-low, high);
+    u128 bound = std::max(-low, high);
     out.write(low < 0 ? sum<i64>(in, n, bound) : sum<u64>(in, n, bound));
 }

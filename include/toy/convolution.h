@@ -121,7 +121,7 @@ static_assert(cache_log%2==0);
 }
 struct NTTInfo{
     u32 mod,mod2,ninv,one,r2,r3,imag,imagninv,RT3[max_log];
-    alignas(32) array<u32,8> rt3[max_log-2],rt3i[max_log-2],bwb,bwbi;
+    alignas(32) std::array<u32,8> rt3[max_log-2],rt3i[max_log-2],bwb,bwbi;
     [[gnu::always_inline]] constexpr NTTInfo(u32 m):
     mod(m),mod2(m*2),ninv([&]{auto n=2+m;for(auto i=0;i<4;++i){n*=2+m*n;}return n;}()),
     one((-m)%m),r2((-u64(m))%m),r3(mul_s(r2,r2,ninv,m)),
@@ -158,7 +158,7 @@ struct NTTInfo{
     // n counts 8-coefficient vectors. Radix-4 DIF stops at polynomial leaves;
     // finish the small levels per cache chunk instead of rescanning all memory.
     [[gnu::always_inline]] inline auto forward(Vec*const f,usize n)const{
-        alignas(32) array<u32,8> st_1[max_log>>1];
+        alignas(32) std::array<u32,8> st_1[max_log>>1];
         const auto Mod=expand(mod),Mod2=expand(mod2),Ninv=expand(ninv),Imag=expand(imag),ImagNinv=expand(imagninv);
         const auto id24=_mm256_set_epi32(4,0,2,0,4,0,2,0);
         const auto lgn=__builtin_ctzll(n);
@@ -231,7 +231,7 @@ struct NTTInfo{
     // Leaf products carry R^-1. The first inverse stage multiplies by R^2/n,
     // combining normalization and representation conversion in one reduction.
     [[gnu::always_inline]] inline auto inverse(Vec*const f,usize n)const{
-        alignas(32) array<u32,8> st_1[max_log>>1];
+        alignas(32) std::array<u32,8> st_1[max_log>>1];
         const auto Mod=expand(mod),Mod2=expand(mod2),Ninv=expand(ninv),Imag=expand(imag),ImagNinv=expand(imagninv);
         const auto id24=_mm256_set_epi32(4,0,2,0,4,0,2,0);
         const auto lgn=__builtin_ctzll(n);
@@ -343,19 +343,19 @@ template<u32 Mod = 998244353>
 Buffer<u32> convolution(Buffer<u32> a, Buffer<u32> b) {
     static_assert(Mod > 2 && Mod < (1u << 30) && (Mod - 1) % 8 == 0);
     if (!a.n || !b.n) return {};
-    if (a.n < b.n) swap(a, b);
+    if (a.n < b.n) std::swap(a, b);
     usize n = a.n, m = b.n, count = n + m - 1;
     if (m <= 16) {
         a.resize(count);
         for (usize k = count; k--;) {
             u64 sum = 0;
-            for (usize j = k < n ? 0 : k - n + 1; j < min(m, k + 1); ++j)
+            for (usize j = k < n ? 0 : k - n + 1; j < std::min(m, k + 1); ++j)
                 sum += u64(a[k - j]) * b[j];
             a[k] = sum % Mod;
         }
         return a;
     }
-    usize size = max<usize>(64, bit_ceil(count));
+    usize size = std::max<usize>(64, std::bit_ceil(count));
     a.resize(size); b.resize(size);
     const auto& ntt = convolution_detail::info<Mod>;
     auto* x = (convolution_detail::Vec*)a.p;
@@ -373,7 +373,7 @@ Buffer<u32> convolution_cyclic(Buffer<u32> a, Buffer<u32> b) {
     if (!a.n) return a;
     usize n = a.n;
     if (n < 64) {
-        Buffer<u32> c(n); fill(c.p, c.p + n, 0u);
+        Buffer<u32> c(n); std::fill(c.p, c.p + n, 0u);
         for (usize i = 0; i < n; ++i) for (usize j = 0; j < n; ++j)
             c[(i + j) & (n - 1)] = (c[(i + j) & (n - 1)] + u64(a[i]) * b[j]) % Mod;
         return c;

@@ -1,82 +1,27 @@
-# Cartesian Tree / 笛卡尔树
+# 笛卡尔树
 
-## 中文
+`main.cxx` 使用 cartesian.h 的单调栈。栈保存已处理前缀的最右路径；新值弹出
+比它大的节点，最后弹出的子树接为左孩子，未弹出的栈顶成为父亲。根的父亲为自己。
+每个栈项缓存值与下标，避免先读下标再随机访问原数组的依赖链。时间、空间 O(N)。
 
-### 定义
+25 个官方测例通过 GCC/Clang，包含重复值的独立递归最小值对照与 sanitizer 通过。
+Lenovo 静默、不绑核、每例一次：main max/sum 为 37.098/278.236 ms，
+五份参考最小值分别为 39.611/309.692 ms。
+证据：bench/tree-second-20261001/round1/selected/。旧 .cpp 保留作参考。
+<!-- experiment-history -->
 
-笛卡尔树同时满足：
+## 尝试过程与取舍
 
-1. 中序遍历的顶点顺序是原数组下标 `0,1,...,N-1`；
-2. 每个父亲的值小于孩子的值，即最小值位于根。
+先使用经典单调栈构造 Cartesian tree。首版栈只存下标，比较时还要重新读原值；随后让栈项同时缓存值和编号，减少间接读取，完整比较后采用。算法和相等值的约定保持不变，优化集中在必要数据的布局。
 
-数值互异，因此树唯一。
+## 阶段评测记录
 
-### 单调栈构造
+下表保留各阶段的真实第 0 次观测，单位 ms，max/sum 包含样例。早期诊断即使有多轮，也不逐例挑最快值；不同批次应与各自参考比较。参考栏分别取同批参考提交的最小 max、sum，可能来自不同人。全量且包含五份参考时才判断本轮门槛；子集测量只作诊断。
 
-从左到右维护一个按数组值严格递增的下标栈。处理新下标 `i`：
+| 批次 / 方案 | 覆盖 | max | sum | 参考 max / sum | 本轮结果 |
+|---|---|---:|---:|---:|---|
+| tree-first-20261001/round1 / 当时主解 | 全量 25 例 | 42.568 | 291.751 | 39.436 / 308.759（5 份） | 仅 sum 低于参考 |
+| tree-second-20261001/round1 / 缓存栈中数值 | 全量 25 例 | 37.098 | 278.236 | 39.611 / 309.692（5 份） | 双项低于参考 |
+| tree-second-20261001/round1 / 当时主解 | 全量 25 例 | 42.636 | 292.210 | 39.611 / 309.692（5 份） | 仅 sum 低于参考 |
 
-1. 不断弹出值大于 `a[i]` 的栈顶，记最后弹出的根为 `left_root`；
-2. 若栈仍非空，新栈顶是左侧第一个更小值，它成为 `i` 的父亲；
-3. 若弹出过顶点，`left_root` 是被整体截下的连续后缀子树，它的父亲改为
-   `i`；
-4. 将 `i` 入栈。
-
-为什么只连接最后弹出的点？更早弹出的点已经位于 `left_root` 的子树内，
-保留原父子关系即可。剩余栈顶比 `a[i]` 小，且在下标上离 `i` 最近，正好
-保持堆序与中序顺序。
-
-每个下标只入栈、出栈一次，时间 `O(N)`、空间 `O(N)`。最终栈底是全局最小
-值，对题目要求令其父亲为自身。
-
-### 两个实现
-
-`fixed_monotonic_stack.cpp` 调用固定容量公共模板，避免动态分配，作为性能
-实现。`vector_monotonic_stack.cpp` 使用 `std::vector` 展开同一个不变量，
-代码更便于单题阅读，但仍是最优的 `O(N)` 算法，并非故意缓慢的朴素解。
-
-这里不存在既明显更简单、又能在百万点最坏数据上可靠 AC 的不同算法；递归
-寻找区间最小值会在单调数组退化为 `O(N^2)`，因此不作为正式变体。
-
-所有变体都使用 direct-mapped Reader。`N` 位于七位范围、数组值位于十位
-范围且近似数值均匀，分别调用 `read_uniform<7>` 和
-`read_uniform<10>`。父亲编号小于一百万，统一调用
-`write_token_u32_6`，没有让较简洁变体退回通用 I/O。
-
-在完整 25 个官方用例、CPU 3、统一
-`-Ofast -flto -fno-exceptions -fno-rtti -march=native` 的交错测试中，固定
-容量版本相对当时最快公开实现的总耗时比约为 `0.939x`，即快约 6.1%。
-
-## English
-
-### Definition and invariant
-
-A Cartesian tree has the original indices as its inorder traversal and obeys
-the min-heap property. Distinct values make it unique.
-
-Scan left to right while maintaining indices with strictly increasing values.
-For a new index `i`, pop every larger stack top. The remaining top, if any,
-is the nearest smaller value on the left and becomes the parent of `i`. The
-last popped root is the whole suffix subtree displaced by `i`, so its parent
-becomes `i`.
-
-Earlier popped vertices already belong below that last root and retain their
-relationships. Consequently both inorder order and heap order remain valid.
-Each index is pushed and popped once, giving `O(N)` time and `O(N)` memory.
-The stack bottom is the global minimum and is reported as its own parent.
-
-`fixed_monotonic_stack.cpp` uses the reusable fixed-capacity template and
-avoids dynamic allocation. `vector_monotonic_stack.cpp` spells out the same
-invariant with `std::vector`; it is easier to read but remains optimal
-`O(N)`, rather than being intentionally slow.
-
-A recursive range-minimum construction is superficially simpler but degrades
-to `O(N^2)` on monotone arrays, so it is not a production variant.
-
-Both sources use the direct-mapped Reader, value-uniform policies for the
-seven- and ten-digit bounds, and `write_token_u32_6` for parent IDs. The
-simpler algorithm presentation does not fall back to slower generic I/O.
-
-Across all 25 official cases on CPU 3, with both programs compiled using
-`-Ofast -flto -fno-exceptions -fno-rtti -march=native` and run in interleaved
-order, the fixed-capacity implementation measured about `0.939x` the total
-time of the fastest public baseline available during this audit.
+批次名对应当时的实验目录；表格本身保存了主要数据，不依赖未提交的 build/、bench/ 才能阅读。最终接口与正确性约束见上文所链的库文档；运行库更新与命名空间整理的验证口径见 [评测审计](../../../docs/measurement_audit.md)。

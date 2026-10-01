@@ -11,9 +11,9 @@ template<u32 P=998244353> struct WeightedAffineSum {
     Buffer<u32> coordinates;
     u32 capacity;
     static bool identity(Function f){return f.a==R::one&&!f.b;}
-    static u32 mapped(u32 value,u32 length,Function f){u64 z=u64(value)*f.a+u64(length)*f.b;u32 result=(z+u64(u32(z)*Mod<P>::inverse)*P)>>32;return min(result,result-2*P);}
-    explicit WeightedAffineSum(span<const u32> points,span<const u32> values={}):coordinates(points.size()),capacity(bit_ceil(max<usize>(1,points.empty()?0:points.size()-1))){
-        if(!points.empty())memcpy(coordinates.p,points.data(),points.size_bytes());tree=Buffer<Node>(2*capacity);fill(tree.p,tree.p+tree.n,Node{});
+    static u32 mapped(u32 value,u32 length,Function f){u64 z=u64(value)*f.a+u64(length)*f.b;u32 result=(z+u64(u32(z)*Mod<P>::inverse)*P)>>32;return std::min(result,result-2*P);}
+    explicit WeightedAffineSum(std::span<const u32> points,std::span<const u32> values={}):coordinates(points.size()),capacity(std::bit_ceil(std::max<usize>(1,points.empty()?0:points.size()-1))){
+        if(!points.empty())memcpy(coordinates.p,points.data(),points.size_bytes());tree=Buffer<Node>(2*capacity);std::fill(tree.p,tree.p+tree.n,Node{});
         for(u32 i=0;i+1<points.size();++i){auto& x=tree[capacity+i];x.length=points[i+1]-points[i];if(!values.empty())x.sum=u64(values[i])*x.length%P;}
         for(u32 i=capacity;--i;){tree[i].length=tree[2*i].length+tree[2*i+1].length;pull(i);}
     }
@@ -26,9 +26,9 @@ template<u32 P=998244353> struct WeightedAffineSum {
     u32 query(u32 i,u32 l,u32 r,u32 first,u32 last)const{
         const auto& x=tree[i];if(first<=l&&r<=last)return x.sum;u32 m=(l+r)/2,value;
         if(last<=m)value=query(2*i,l,m,first,last);else if(first>=m)value=query(2*i+1,m,r,first,last);else value=R::add(query(2*i,l,m,first,last),query(2*i+1,m,r,first,last));
-        return identity(x.lazy)?value:mapped(value,coordinates[min(r,last)]-coordinates[max(l,first)],x.lazy);
+        return identity(x.lazy)?value:mapped(value,coordinates[std::min(r,last)]-coordinates[std::max(l,first)],x.lazy);
     }
     void apply(u32 l,u32 r,Function f){if(l<r)update(1,0,capacity,l,r,{R::encode(f.a),R::encode(f.b)});}
-    u32 sum(u32 l,u32 r)const{if(l==r)return 0;u32 value=query(1,0,capacity,l,r);return min(value,value-P);}
+    u32 sum(u32 l,u32 r)const{if(l==r)return 0;u32 value=query(1,0,capacity,l,r);return std::min(value,value-P);}
 };
 }

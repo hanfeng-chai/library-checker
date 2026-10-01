@@ -4,7 +4,7 @@
 namespace toy {
 struct DSU {
     Buffer<i32> parent;
-    explicit DSU(usize n) : parent(n) { fill(parent.p, parent.p + n, -1); }
+    explicit DSU(usize n) : parent(n) { std::fill(parent.p, parent.p + n, -1); }
     int leader(int x) {
         while (parent[x] >= 0) {
             int y = parent[x];
@@ -16,7 +16,7 @@ struct DSU {
     bool merge(int a, int b) {
         a = leader(a); b = leader(b);
         if (a == b) return false;
-        if (parent[a] > parent[b]) swap(a, b);
+        if (parent[a] > parent[b]) std::swap(a, b);
         parent[a] += parent[b]; parent[b] = a; return true;
     }
     bool same(int a, int b) { return leader(a) == leader(b); }

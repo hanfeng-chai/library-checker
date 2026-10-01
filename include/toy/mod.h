@@ -24,13 +24,13 @@ struct Mod {
     static_assert(P > 2 && (P & 1) && P < (1u << 30));
     static constexpr u32 inverse = [] { u32 x = 2 + P; for (int i = 0; i < 4; ++i) x *= 2 + P * x; return x; }();
     static constexpr u32 r2 = -u64(P) % P;
-    [[gnu::always_inline]] static constexpr u32 add(u32 a, u32 b) { return min(a + b, a + b - P); }
-    [[gnu::always_inline]] static constexpr u32 sub(u32 a, u32 b) { return min(a - b, a - b + P); }
+    [[gnu::always_inline]] static constexpr u32 add(u32 a, u32 b) { return std::min(a + b, a + b - P); }
+    [[gnu::always_inline]] static constexpr u32 sub(u32 a, u32 b) { return std::min(a - b, a - b + P); }
     [[gnu::always_inline]] static constexpr u32 mul(u32 a, u32 b) { return u64(a) * b % P; }
     [[gnu::always_inline]] static constexpr u32 mont(u32 a, u32 b) {
         u64 x = u64(a) * b;
         u32 y = (x + u64(u32(x) * inverse) * P) >> 32;
-        return min(y, y - P);
+        return std::min(y, y - P);
     }
     [[gnu::always_inline]] static constexpr u32 pow(u32 a, u64 n) {
         u32 x = 1;

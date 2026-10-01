@@ -82,7 +82,7 @@ Buffer<u32> bitwise_convolution(Buffer<u32> a, Buffer<u32> b) {
     // Only B enters Montgomery space. For XOR it also absorbs 1/N, allowing
     // every inverse butterfly to use plain additions and subtractions.
     u32 scale = M::r2;
-    if constexpr (Op == Bitwise::Xor) scale = M::mul(scale, M::pow((P + 1) / 2, countr_zero(a.n)));
+    if constexpr (Op == Bitwise::Xor) scale = M::mul(scale, M::pow((P + 1) / 2, std::countr_zero(a.n)));
     usize i = 0;
     auto factor = _mm256_set1_epi32(scale);
     for (; i + 8 <= b.n; i += 8)

@@ -11,5 +11,5 @@ int main() {
     }
     tree.visit([&](int i) { auto op = ops[i]; if (op.answer < 0) values[back++] = op.value; else answers[op.answer] = values[front++]; },
                [&](int i) { auto op = ops[i]; if (op.answer < 0) --back; else values[--front] = answers[op.answer]; });
-    out.write(span(answers.p, count));
+    out.write(std::span(answers.p, count));
 }

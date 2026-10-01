@@ -6,22 +6,22 @@ namespace toy {
 // Nonnegative integer convolution. Inputs are <P0 and every output is <P0*P1.
 // P0<P1 are NTT primes; the default pair supports partial lengths through 2^24.
 template<u32 P0 = 998244353, u32 P1 = 1004535809>
-Buffer<u64> convolution_integer(span<const u32> a, span<const u32> b) {
+Buffer<u64> convolution_integer(std::span<const u32> a, std::span<const u32> b) {
     static_assert(P0 < P1 && P1 < (1u << 30));
     if (a.empty() || b.empty()) return {};
     usize count = a.size() + b.size() - 1;
     Buffer<u64> result(count);
-    if (min(a.size(), b.size()) <= 16) {
-        if (a.size() < b.size()) swap(a, b);
+    if (std::min(a.size(), b.size()) <= 16) {
+        if (a.size() < b.size()) std::swap(a, b);
         for (usize k = 0; k < count; ++k) {
             u64 sum = 0;
-            for (usize j = k < a.size() ? 0 : k - a.size() + 1; j < min(b.size(), k + 1); ++j) sum += u64(a[k - j]) * b[j];
+            for (usize j = k < a.size() ? 0 : k - a.size() + 1; j < std::min(b.size(), k + 1); ++j) sum += u64(a[k - j]) * b[j];
             result[k] = sum;
         }
         return result;
     }
     auto under = [&]<u32 P>() {
-        usize size = max<usize>(64, bit_ceil(count));
+        usize size = std::max<usize>(64, std::bit_ceil(count));
         Buffer<u32> x(a.size(), size), y(b.size(), size);
         memcpy(x.p, a.data(), a.size() * 4); memcpy(y.p, b.data(), b.size() * 4);
         return convolution<P>(std::move(x), std::move(y));

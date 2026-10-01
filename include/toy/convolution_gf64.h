@@ -60,13 +60,13 @@ struct FFT {
 // Ordinary polynomial-basis field elements. Consumes both buffers.
 [[gnu::target("pclmul")]] inline Buffer<u64> convolution_gf64(Buffer<u64> a, Buffer<u64> b) {
     if (!a.n || !b.n) return {};
-    if (a.n < b.n) swap(a, b);
-    usize na = a.n, nb = b.n, count = na + nb - 1, size = bit_ceil(count);
+    if (a.n < b.n) std::swap(a, b);
+    usize na = a.n, nb = b.n, count = na + nb - 1, size = std::bit_ceil(count);
     if (nb <= 32) {
         a.resize(count);
         for (usize k = count; k--;) {
             u64 sum = 0;
-            for (usize j = k < na ? 0 : k - na + 1; j < min(nb, k + 1); ++j) sum ^= gf64_mul(a[k - j], b[j]);
+            for (usize j = k < na ? 0 : k - na + 1; j < std::min(nb, k + 1); ++j) sum ^= gf64_mul(a[k - j], b[j]);
             a[k] = sum;
         }
         return a;

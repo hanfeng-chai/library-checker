@@ -23,11 +23,11 @@ template<u32 P = 998244353> struct AffineTree {
     }
     u32 apply(u32 left, u32 right, u32 x) const {
         if (left == right) return x;
-        u32 l = 2 * n - 1 - right, r = 2 * n - left, width = bit_width(l ^ r) - 1, boundary = r >> width;
-        for (r = (r >> countr_zero(r)) ^ 1; r > boundary; r = (r >> countr_zero(r)) ^ 1) x = evaluate(tree[r],x);
+        u32 l = 2 * n - 1 - right, r = 2 * n - left, width = std::bit_width(l ^ r) - 1, boundary = r >> width;
+        for (r = (r >> std::countr_zero(r)) ^ 1; r > boundary; r = (r >> std::countr_zero(r)) ^ 1) x = evaluate(tree[r],x);
         u32 rest = ~l & ((1u << width) - 1);
-        while (rest) { unsigned k = bit_width(rest) - 1; rest ^= 1u << k; x = evaluate(tree[(l >> k) ^ 1],x); }
-        return min(x,x-P);
+        while (rest) { unsigned k = std::bit_width(rest) - 1; rest ^= 1u << k; x = evaluate(tree[(l >> k) ^ 1],x); }
+        return std::min(x,x-P);
     }
 };
 }

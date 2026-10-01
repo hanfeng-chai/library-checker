@@ -2,8 +2,8 @@
 #include <toy/rope.h>
 using namespace toy;
 int main(){
-    Reader in;Writer out;u32 n=in.read<u32,6>(),q=in.read<u32,6>();Buffer<u32> a(n);for(auto& x:span(a.p,a.n))x=in.read<u32,16>();if(!n&&q)while(*in.p<=' ')++in.p;
-    Rope<998244353> sequence{span<const u32>(a),q};
+    Reader in;Writer out;u32 n=in.read<u32,6>(),q=in.read<u32,6>();Buffer<u32> a(n);for(auto& x:std::span(a.p,a.n))x=in.read<u32,16>();if(!n&&q)while(*in.p<=' ')++in.p;
+    Rope<998244353> sequence{std::span<const u32>(a),q};
     while(q--){u32 type=in.read<u32,1>(),l=in.read<u32,6>();
         if(type==0)sequence.insert(l,in.read<u32,16>());
         else if(type==1)sequence.erase(l);

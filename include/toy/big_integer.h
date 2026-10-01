@@ -9,7 +9,7 @@ namespace toy {
 // least-significant first and keep zero nonnegative. Buffers are reused.
 template<bool Hex = false>
 struct BigInteger {
-    using Limb = conditional_t<Hex, u64, u32>;
+    using Limb = std::conditional_t<Hex, u64, u32>;
     static constexpr u32 base = 100000000;
     Buffer<Limb> digits;
     bool negative = false;
@@ -33,7 +33,7 @@ struct BigInteger {
     }
     // Padded Reader token, at most 18 magnitude digits. Decode its known length
     // directly, avoiding a second delimiter scan in the machine-integer path.
-    [[gnu::always_inline]] static i64 small_decimal(string_view text) {
+    [[gnu::always_inline]] static i64 small_decimal(std::string_view text) {
         bool sign = text.front() == '-'; text.remove_prefix(sign); u64 value;
         if (text.size() <= 16) {
             auto index = _mm_add_epi8(_mm_setr_epi8(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15), _mm_set1_epi8(int(text.size()) - 16));
@@ -51,7 +51,7 @@ struct BigInteger {
             _mm_and_si128(_mm_cmpgt_epi8(x, _mm_set1_epi8('9')), _mm_set1_epi8(9)));
         x = _mm_maddubs_epi16(x, _mm_set1_epi16(0x0110));
         x = _mm_packus_epi16(x, _mm_setzero_si128());
-        return byteswap(u64(_mm_cvtsi128_si64(x)));
+        return std::byteswap(u64(_mm_cvtsi128_si64(x)));
     }
     [[gnu::always_inline]] static u64 hexadecimal16(const char* p) {
         return hexadecimal(_mm_loadu_si128((const __m128i*)p));
@@ -63,7 +63,7 @@ struct BigInteger {
         return hexadecimal(_mm_shuffle_epi8(_mm_loadu_si128((const __m128i*)p), index));
     }
     // A padded Reader token with at most 31 magnitude digits; sum of two fits i128.
-    [[gnu::always_inline]] static i128 small_hex(string_view text) {
+    [[gnu::always_inline]] static i128 small_hex(std::string_view text) {
         bool sign = text.front() == '-'; text.remove_prefix(sign);
         u128 value = text.size() <= 16 ? hexadecimal_padded(text.data(), text.size())
             : (u128(hexadecimal_padded(text.data(), text.size() - 16)) << 64) | hexadecimal16(text.data() + text.size() - 16);
@@ -80,7 +80,7 @@ struct BigInteger {
         if (!digits.n) negative = false;
     }
 
-    void assign(string_view text) {
+    void assign(std::string_view text) {
         negative = text.front() == '-'; text.remove_prefix(negative);
         constexpr usize width = Hex ? 16 : 8;
         usize length = text.size(), used = 0;
@@ -216,7 +216,7 @@ struct BigInteger {
     }
 
     // Caller reserves enough native limbs; coefficients are nonnegative.
-    static void carry_product(span<const u64> product, BigInteger& out) {
+    static void carry_product(std::span<const u64> product, BigInteger& out) {
             usize used = 0; u64 carry = 0;
             if constexpr (Hex) {
                 u128 word = 0; int bits = 0; usize i = 0;
@@ -247,12 +247,12 @@ struct BigInteger {
         if (!a.digits.n || !b.digits.n) { out.digits.n = 0; out.negative = false; return; }
         if (&out == &a || &out == &b) { BigInteger temp; multiply(a, b, temp, workspace); out = std::move(temp); return; }
         const BigInteger* x = &a; const BigInteger* y = &b;
-        if (x->digits.n < y->digits.n) swap(x, y);
+        if (x->digits.n < y->digits.n) std::swap(x, y);
         usize n = x->digits.n, m = y->digits.n;
         if (out.digits.capacity < n + m + 1) out.digits = fft_detail::storage<Limb>(n + m + 1);
         if (m <= 64) {
             if constexpr (Hex) {
-                fill(out.digits.p, out.digits.p + n + m, 0ull);
+                std::fill(out.digits.p, out.digits.p + n + m, 0ull);
                 for (usize j = 0; j < m; ++j) {
                     u64 carry = 0;
                     for (usize i = 0; i < n; ++i) {
@@ -265,7 +265,7 @@ struct BigInteger {
                 u64 carry = 0;
                 for (usize k = 0; k < n + m - 1; ++k) {
                     u64 value = carry;
-                    for (usize j = k < n ? 0 : k - n + 1; j < min(m, k + 1); ++j) value += u64(x->digits[k - j]) * y->digits[j];
+                    for (usize j = k < n ? 0 : k - n + 1; j < std::min(m, k + 1); ++j) value += u64(x->digits[k - j]) * y->digits[j];
                     out.digits[k] = value % base; carry = value / base;
                 }
                 out.digits[n + m - 1] = carry;
@@ -277,15 +277,15 @@ struct BigInteger {
             bool square = a.digits.n == b.digits.n && memcmp(a.digits.p, b.digits.p, a.digits.n * sizeof(Limb)) == 0;
             auto left = a.chunks(); Buffer<u32> right;
             if (!square) right = b.chunks();
-            span<const u32> rhs = square ? span<const u32>(left) : span<const u32>(right);
+            std::span<const u32> rhs = square ? std::span<const u32>(left) : std::span<const u32>(right);
             auto product = workspace ? (*workspace)(left, rhs) : convolution_fft_integer(left, rhs);
-            carry_product(span<const u64>(product), out);
+            carry_product(std::span<const u64>(product), out);
         }
         out.negative = a.negative != b.negative; out.trim();
     }
 
     [[gnu::always_inline]] static __m128i hex_digits(u64 value) {
-        auto x = _mm_cvtsi64_si128(byteswap(value)), mask = _mm_set1_epi8(15);
+        auto x = _mm_cvtsi64_si128(std::byteswap(value)), mask = _mm_set1_epi8(15);
         auto nibbles = _mm_unpacklo_epi8(_mm_and_si128(_mm_srli_epi16(x, 4), mask), _mm_and_si128(x, mask));
         return _mm_shuffle_epi8(_mm_setr_epi8('0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'), nibbles);
     }
@@ -295,13 +295,13 @@ struct BigInteger {
         if (usize(out.p - out.buf) > N - 32) out.flush();
         if (negative) *out.p++ = '-';
         if constexpr (Hex) {
-            int size = (64 - countl_zero(digits[digits.n - 1]) + 3) / 4;
+            int size = (64 - std::countl_zero(digits[digits.n - 1]) + 3) / 4;
             auto x = _mm_shuffle_epi8(hex_digits(digits[digits.n - 1]), _mm_loadu_si128((const __m128i*)io_detail::trim[size].data()));
             _mm_storeu_si128((__m128i*)out.p, x); out.p += size;
         } else out.p = Writer<N>::number(out.p, digits[digits.n - 1]);
         constexpr usize width = Hex ? 16 : 8;
         for (usize remaining = digits.n - 1; remaining;) {
-            usize count = min(remaining, usize(out.buf + N - out.p) / width);
+            usize count = std::min(remaining, usize(out.buf + N - out.p) / width);
             if (!count) { out.flush(); continue; }
             char* cursor = out.p;
             for (usize stop = remaining - count; remaining != stop;) {

@@ -8,7 +8,7 @@ inline Buffer<u32> primes(u32 limit) {
     if (limit < 2) return {};
     usize odds = (usize(limit) + 1) / 2;
     Buffer<u64> composite((odds + 63) / 64);
-    fill(composite.p, composite.p + composite.n, 0);
+    std::fill(composite.p, composite.p + composite.n, 0);
     composite[0] = 1;
     for (u32 p = 3; u64(p) * p <= limit; p += 2)
         if (!(composite[(p / 2) / 64] >> ((p / 2) % 64) & 1))
@@ -19,7 +19,7 @@ inline Buffer<u32> primes(u32 limit) {
     for (usize i = 0; i < composite.n; ++i) {
         u64 bits = ~composite[i];
         if (i + 1 == composite.n && odds % 64) bits &= (u64(1) << (odds % 64)) - 1;
-        for (; bits; bits &= bits - 1) result[count++] = 2 * (64 * i + countr_zero(bits)) + 1;
+        for (; bits; bits &= bits - 1) result[count++] = 2 * (64 * i + std::countr_zero(bits)) + 1;
     }
     result.n = count;
     return result;

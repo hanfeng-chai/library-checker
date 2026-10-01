@@ -3,11 +3,11 @@
 
 namespace toy {
 // Alternating levels order minima and maxima. Push/pop are O(log n), build O(n).
-template<class T, class Compare = less<T>> struct MinMaxHeap {
+template<class T, class Compare = std::less<T>> struct MinMaxHeap {
     Buffer<T> data;
     [[no_unique_address]] Compare compare{};
     usize maximum = 0;
-    static bool min_level(usize i) { return bit_width(i + 1) & 1; }
+    static bool min_level(usize i) { return std::bit_width(i + 1) & 1; }
     template<bool Min> bool better(T a, T b) const { return Min ? compare(a, b) : compare(b, a); }
     void refresh() { maximum = data.n <= 2 ? data.n - 1 : compare(data[1], data[2]) ? 2 : 1; }
     template<bool Min> void up(usize i, T value) {
@@ -30,7 +30,7 @@ template<class T, class Compare = less<T>> struct MinMaxHeap {
                 if (!better<Min>(data[best], value)) break;
                 data[i] = data[best]; usize parent = (best - 1) / 2;
                 // The moved value must also respect the opposite-order parent.
-                if (better<Min>(data[parent], value)) swap(data[parent], value);
+                if (better<Min>(data[parent], value)) std::swap(data[parent], value);
                 i = best; continue;
             }
             usize best = child;
@@ -41,7 +41,7 @@ template<class T, class Compare = less<T>> struct MinMaxHeap {
                 data[i] = data[best];
                 if (best >= grandchild) {
                     usize parent = (best - 1) / 2;
-                    if (better<Min>(data[parent], value)) swap(data[parent], value);
+                    if (better<Min>(data[parent], value)) std::swap(data[parent], value);
                 }
                 data[best] = value; return;
             }
