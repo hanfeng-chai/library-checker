@@ -1,0 +1,180 @@
+2026-10-02 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 16, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: fedora; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                  2.645819      23.846744
+Penguin07                                  1.197405      17.516161
+Rohan_Kapri                                1.167158      17.481222
+hushuqi                                    1.355922      17.978223
+isaunoya                                   1.168715      17.399501
+main                                       0.864269      13.337398
+naive                                      7.694598      67.255144
+
+submissions/graph/maximum_independent_set/Anonymous.cpp
+SHA-256: c31b0c70348b5935fafb46404725d549249fa8d15e4125a13ef162ec0400bf15
+Measured: bench/graph-polish-20261002/accepted-37 [Anonymous]
+case              task-clock (ms)   cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (one_two_00)         2.645819        -             -      -              -                -            -
+sum                     23.846744        -             -      -              -                -            -
+example_00               1.227142  1941850       2476495  1.275           6958            1.215        100.0
+example_01               1.026188  1622769       2457992  1.515           6763            1.181        100.0
+hack0_00                 1.247519  1976241       3316111  1.678           8694            1.144        100.0
+handmade_00              1.055446  1669469       2469591  1.479           7296            1.281        100.0
+many_maximals_00         1.064067  1683893       2550979  1.515           7054            1.203        100.0
+max_random_00            1.751654  2780780       4759802  1.712          20388            1.887        100.0
+max_random_01            2.583055  4108131       5807497  1.414          61734            4.630        100.0
+max_random_02            1.253270  1985314       2982520  1.502          13893            2.022        100.0
+max_random_03            2.299733  3655427       5081218  1.390          51735            4.456        100.0
+max_random_04            1.825812  2899550       4758499  1.641          24859            2.287        100.0
+one_two_00               2.645819  4208624       9090019  2.160          24321            1.159        100.0
+random_00                1.554333  2465979       3934171  1.595          20576            2.273        100.0
+random_01                1.059104  1675644       2440786  1.457           6957            1.236        100.0
+random_02                1.066242  1686942       2462406  1.460           6969            1.224        100.0
+random_03                1.057934  1673026       2424887  1.449           6648            1.185        100.0
+random_04                1.129426  1787318       2620876  1.466           8930            1.478        100.0
+
+submissions/graph/maximum_independent_set/Penguin07.cpp
+SHA-256: df5bb0f2feeaf1c3846ed7f9f235d61ae658207f2e3e7e0e6d1f43c62a691695
+Measured: bench/graph-polish-20261002/accepted-37 [Penguin07]
+case                 task-clock (ms)   cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_03)         1.197405        -             -      -              -                -            -
+sum                        17.516161        -             -      -              -                -            -
+example_00                  1.038184  1641710       2413080  1.470           6852            1.235        100.0
+example_01                  1.038035  1641843       2423154  1.476           6854            1.227        100.0
+hack0_00                    1.130175  1789251       2867269  1.602           7534            1.155        100.0
+handmade_00                 1.033082  1633477       2463663  1.508           6865            1.197        100.0
+many_maximals_00            1.073255  1698457       2549827  1.501           7738            1.320        100.0
+max_random_00               1.161646  1839732       3174760  1.726           7718            1.061        100.0
+max_random_01               1.167069  1847829       2848616  1.542          12362            1.925        100.0
+max_random_02               1.136556  1799041       2619963  1.456           9237            1.551        100.0
+max_random_03               1.197405  1896476       2867173  1.512          12302            1.900        100.0
+max_random_04               1.156965  1831430       3029496  1.654           8521            1.229        100.0
+one_two_00                  1.117466  1768249       2623617  1.484           9311            1.565        100.0
+random_00                   1.109711  1756441       2770103  1.577           8290            1.310        100.0
+random_01                   1.023995  1619502       2455671  1.516           6751            1.181        100.0
+random_02                   1.054187  1667105       2495730  1.497           7423            1.298        100.0
+random_03                   1.013147  1602488       2403935  1.500           6731            1.213        100.0
+random_04                   1.065283  1686128       2494772  1.480           7526            1.313        100.0
+
+submissions/graph/maximum_independent_set/Rohan_Kapri.cpp
+SHA-256: 1611f5c66215126852364d7efac9f7e4ae6a2469c46715e4e0ae8c17134d582b
+Measured: bench/graph-polish-20261002/accepted-37 [Rohan_Kapri]
+case                 task-clock (ms)   cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_04)         1.167158        -             -      -              -                -            -
+sum                        17.481222        -             -      -              -                -            -
+example_00                  1.055674  1669935       2485876  1.489           6688            1.157        100.0
+example_01                  1.036270  1638923       2433050  1.485           6683            1.191        100.0
+hack0_00                    1.099483  1739505       2820201  1.621           7106            1.095        100.0
+handmade_00                 1.045509  1653313       2446008  1.479           6857            1.216        100.0
+many_maximals_00            1.059554  1676344       2539414  1.515           7005            1.198        100.0
+max_random_00               1.164987  1843834       3021700  1.639           7354            1.071        100.0
+max_random_01               1.133414  1793871       2744587  1.530           7854            1.249        100.0
+max_random_02               1.155537  1829194       2843336  1.554           8050            1.236        100.0
+max_random_03               1.154238  1826716       2867065  1.570           8095            1.240        100.0
+max_random_04               1.167158  1848286       2932010  1.586           7693            1.149        100.0
+one_two_00                  1.074908  1700374       2571438  1.512           6992            1.183        100.0
+random_00                   1.108119  1753565       2730926  1.557           7544            1.209        100.0
+random_01                   1.045589  1654165       2452560  1.483           6690            1.180        100.0
+random_02                   1.056157  1669155       2513076  1.506           6884            1.187        100.0
+random_03                   1.053025  1666074       2415883  1.450           6624            1.193        100.0
+random_04                   1.071600  1694923       2517737  1.485           7055            1.214        100.0
+
+submissions/graph/maximum_independent_set/hushuqi.cpp
+SHA-256: 9a6fab15fdc564c5850c9d06468453040cfd1a3ecb61681b4c0fdff639bffd0a
+Measured: bench/graph-polish-20261002/accepted-37 [hushuqi]
+case                 task-clock (ms)   cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)         1.355922        -             -      -              -                -            -
+sum                        17.978223        -             -      -              -                -            -
+example_00                  1.020603  1613629       2407260  1.492           6699            1.210        100.0
+example_01                  1.030545  1630067       2417465  1.483           6669            1.199        100.0
+hack0_00                    1.196962  1895271       3141240  1.657           7447            1.039        100.0
+handmade_00                 1.047952  1657718       2455908  1.481           6695            1.178        100.0
+many_maximals_00            1.069800  1692332       2540096  1.501           6968            1.198        100.0
+max_random_00               1.355922  2149886       3973141  1.848           7312            0.808        100.0
+max_random_01               1.178221  1865316       2963387  1.589           7547            1.118        100.0
+max_random_02               1.163607  1841552       2892039  1.570           7978            1.227        100.0
+max_random_03               1.195766  1893015       3105682  1.641           8254            1.173        100.0
+max_random_04               1.283820  2034373       3620355  1.780           7350            0.890        100.0
+one_two_00                  1.080150  1708594       2627920  1.538           6915            1.143        100.0
+random_00                   1.178013  1864763       3104265  1.665           7117            1.006        100.0
+random_01                   1.017840  1609709       2438196  1.515           6775            1.205        100.0
+random_02                   1.063609  1682799       2482841  1.475           6912            1.212        100.0
+random_03                   1.041380  1646815       2452714  1.489           6724            1.178        100.0
+random_04                   1.054033  1667741       2545478  1.526           7001            1.197        100.0
+
+submissions/graph/maximum_independent_set/isaunoya.cpp
+SHA-256: d6d6e2586def077c5d242d42c109535f4054d09820ce11ee8e670584bc24c923
+Measured: bench/graph-polish-20261002/accepted-37 [isaunoya]
+case                 task-clock (ms)   cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_04)         1.168715        -             -      -              -                -            -
+sum                        17.399501        -             -      -              -                -            -
+example_00                  1.046859  1655658       2448479  1.479           6752            1.192        100.0
+example_01                  1.038524  1642560       2477908  1.509           6752            1.172        100.0
+hack0_00                    1.096133  1735135       2813111  1.621           7042            1.087        100.0
+handmade_00                 1.026120  1622203       2443892  1.507           6705            1.191        100.0
+many_maximals_00            1.084411  1715097       2557742  1.491           7069            1.197        100.0
+max_random_00               1.162431  1840315       3043068  1.654           7411            1.070        100.0
+max_random_01               1.129806  1788473       2745196  1.535           7847            1.247        100.0
+max_random_02               1.125007  1780911       2800370  1.572           7943            1.248        100.0
+max_random_03               1.158700  1833772       2847969  1.553           8332            1.292        100.0
+max_random_04               1.168715  1850281       2931801  1.585           7773            1.161        100.0
+one_two_00                  1.073446  1698747       2553406  1.503           6978            1.191        100.0
+random_00                   1.085219  1717590       2761176  1.608           7426            1.166        100.0
+random_01                   1.056544  1671202       2475575  1.481           6761            1.175        100.0
+random_02                   1.047514  1657398       2516574  1.518           7115            1.226        100.0
+random_03                   1.042820  1650002       2426063  1.470           6664            1.191        100.0
+random_04                   1.057252  1672159       2520297  1.507           7078            1.218        100.0
+
+src/graph/maximum_independent_set/main.cxx
+SHA-256: df5bb0252f5f2aa29620c8ae36b3c5cff7d23a5691e45a6c812b3380155ebb56
+Measured: bench/graph-polish-20261002/accepted-37 [main]
+case                 task-clock (ms)   cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)         0.864269        -             -      -              -                -            -
+sum                        13.337398        -             -      -              -                -            -
+example_00                  0.826303  1303070       1790295  1.374           5627            1.391        100.0
+example_01                  0.830833  1311043       1768134  1.349           5578            1.409        100.0
+hack0_00                    0.822387  1297971       1810850  1.395           5586            1.376        100.0
+handmade_00                 0.819356  1291679       1740261  1.347           5242            1.350        100.0
+many_maximals_00            0.830030  1309890       1763059  1.346           5579            1.423        100.0
+max_random_00               0.828451  1307484       1779145  1.361           5610            1.433        100.0
+max_random_01               0.830980  1311412       1795947  1.369           5829            1.449        100.0
+max_random_02               0.864269  1364124       1798923  1.319           6527            1.666        100.0
+max_random_03               0.843946  1332462       1806501  1.356           6601            1.668        100.0
+max_random_04               0.839566  1324303       1779873  1.344           5418            1.374        100.0
+one_two_00                  0.829107  1308027       1779591  1.361           5691            1.433        100.0
+random_00                   0.831764  1312916       1755682  1.337           5663            1.464        100.0
+random_01                   0.834569  1317361       1750406  1.329           5521            1.416        100.0
+random_02                   0.838024  1323153       1746256  1.320           5516            1.426        100.0
+random_03                   0.823547  1299842       1758325  1.353           5335            1.355        100.0
+random_04                   0.844266  1331411       1776842  1.335           5688            1.432        100.0
+
+src/graph/maximum_independent_set/naive.cxx
+SHA-256: da8d05f10724465a5b134ba97881f6e5381ec779a8b49cc4ae07a6a40d6ff76b
+Measured: bench/graph-polish-20261002/accepted-37 [naive]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_03)         7.694598         -             -      -              -                -            -
+sum                        67.255144         -             -      -              -                -            -
+example_00                  0.838432   1323137       1754313  1.326           5604            1.426        100.0
+example_01                  0.793533   1251629       1765748  1.411           5334            1.335        100.0
+hack0_00                    7.457821  11889972      30963476  2.604           6893            0.273        100.0
+handmade_00                 0.803595   1267640       1739644  1.372           5552            1.433        100.0
+many_maximals_00            7.470608  11911027      31328569  2.630           7096            0.275        100.0
+max_random_00               7.273371  11595070      30965889  2.671           6809            0.269        100.0
+max_random_01               7.616799  12144502      30965055  2.550           7438            0.294        100.0
+max_random_02               7.680223  12244661      31034831  2.535           7667            0.301        100.0
+max_random_03               7.694598  12267764      31093235  2.535           7461            0.291        100.0
+max_random_04               7.370042  11751174      31002564  2.638           7072            0.279        100.0
+one_two_00                  7.277687  11604020      30978717  2.670           6920            0.274        100.0
+random_00                   1.646383   2613270       5417628  2.073           6357            0.964        100.0
+random_01                   0.825125   1302046       1740331  1.337           5612            1.447        100.0
+random_02                   0.844952   1332775       1818483  1.364           5571            1.441        100.0
+random_03                   0.826081   1301733       1725200  1.325           5318            1.374        100.0
+random_04                   0.835894   1318849       1765709  1.339           5600            1.439        100.0

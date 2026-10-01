@@ -1,0 +1,162 @@
+2026-10-02 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 17, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: fedora; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                 23.011158     148.376544
+Rohan_Kapri                               30.384008     137.938360
+jeoffrey0522                              22.827774     140.889810
+kostia244                                 29.907968     220.151089
+soryuusi0219                              30.367740     137.857196
+main                                      18.284753      94.721520
+
+submissions/graph/enumerate_triangles/Anonymous.cpp
+SHA-256: 20fa23895c27560a444417d4f64faa7d57adb1a37563498811d1945659649b40
+Measured: bench/graph-polish-20261002/accepted-37 [Anonymous]
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_complete_00)        23.011158         -             -      -              -                -            -
+sum                         148.376544         -             -      -              -                -            -
+example_00                    1.246742   1974645       2777382  1.407           6734            1.062        100.0
+large_random_00              12.095541  19292587      33180562  1.720         226506            3.606        100.0
+large_random_01               6.112804   9743165      22354569  2.294          55137            1.250        100.0
+large_random_02              11.140610  17769143      34034124  1.915         148809            2.297        100.0
+max_complete_00              23.011158  36716841     119669117  3.259         160127            0.770        100.0
+max_random_00                18.430796  29406306      56477633  1.921         213066            1.992        100.0
+max_random_01                18.428815  29402884      56449837  1.920         213152            1.994        100.0
+max_random_02                18.362708  29297290      56423644  1.926         213113            1.994        100.0
+minimum_00                    1.222894   1936881       2772403  1.431           6631            1.047        100.0
+small_dense_00                1.382367   2191034       3213296  1.467          10414            1.452        100.0
+small_dense_01                3.957677   6301744      14065832  2.232          54298            2.053        100.0
+small_dense_02                1.422859   2256296       3292943  1.459           9938            1.348        100.0
+small_sparse_00               1.290576   2044656       2925374  1.431           7967            1.193        100.0
+small_sparse_01               1.289297   2043353       2876710  1.408           7601            1.164        100.0
+small_sparse_02               1.268655   2010378       2863887  1.425           7227            1.101        100.0
+star_00                      13.931599  22223903      55382543  2.492          89643            0.849        100.0
+star_01                      13.781446  21984966      56679761  2.578          51422            0.478        100.0
+
+submissions/graph/enumerate_triangles/Rohan_Kapri.cpp
+SHA-256: 73c9ddd2fa6e7dda257ab03090390c75c69f7187f39a249915481b2ea57353fe
+Measured: bench/graph-polish-20261002/accepted-37 [Rohan_Kapri]
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_complete_00)        30.384008         -             -      -              -                -            -
+sum                         137.938360         -             -      -              -                -            -
+example_00                    1.310357   2076970       2871542  1.383           6840            1.045        100.0
+large_random_00              10.273653  16384831      20477914  1.250         206443            7.146        100.0
+large_random_01               4.882685   7778184      12456295  1.601          48702            2.356        100.0
+large_random_02               9.235598  14727750      20517226  1.393         122266            4.087        100.0
+max_complete_00              30.384008  48486573     153258445  3.161         195910            0.920        100.0
+max_random_00                14.926650  23812357      32381966  1.360         190610            4.165        100.0
+max_random_01                14.906659  23780335      32390659  1.362         190477            4.162        100.0
+max_random_02                14.908712  23783766      32358521  1.361         190842            4.173        100.0
+minimum_00                    1.306560   2070363       2884121  1.393           6578            0.994        100.0
+small_dense_00                1.481302   2349098       3185249  1.356          10776            1.533        100.0
+small_dense_01                6.240211   9945892      15067730  1.515         164278            7.070        100.0
+small_dense_02                1.565968   2485077       3231872  1.301          17083            2.428        100.0
+small_sparse_00               1.328082   2105292       2931778  1.393           7381            1.115        100.0
+small_sparse_01               1.346362   2133856       2917783  1.367           7098            1.076        100.0
+small_sparse_02               1.332069   2110875       2895803  1.372           6996            1.065        100.0
+star_00                      11.128445  17750240      32360030  1.823          30649            0.678        100.0
+star_01                      11.381039  18152543      32282588  1.778          44133            0.981        100.0
+
+submissions/graph/enumerate_triangles/jeoffrey0522.rs
+SHA-256: 8b6e5d3aa16e4765c38f65dbf329ba73182842fb2c46db0925b64e15d7e81cd5
+Measured: bench/graph-polish-20261002/accepted-37 [jeoffrey0522]
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_complete_00)        22.827774         -             -      -              -                -            -
+sum                         140.889810         -             -      -              -                -            -
+example_00                    0.924637   1461027       1957007  1.339           6883            1.569        100.0
+large_random_00              10.638418  16966765      29323051  1.728         230601            3.701        100.0
+large_random_01               6.269878   9993611      25687734  2.570          56492            1.014        100.0
+large_random_02              10.637353  16965144      33843790  1.995         197601            2.751        100.0
+max_complete_00              22.827774  36424905     129541604  3.556         207338            0.592        100.0
+max_random_00                17.401667  27763577      56880892  2.049         292333            2.423        100.0
+max_random_01                17.514220  27929200      56852333  2.036         294792            2.446        100.0
+max_random_02                17.477443  27883779      56850817  2.039         291152            2.415        100.0
+minimum_00                    0.924251   1460444       1981989  1.357           6903            1.540        100.0
+small_dense_00                1.034492   1636528       2381584  1.455          10837            2.025        100.0
+small_dense_01                3.481966   5542326      13452083  2.427          54267            1.594        100.0
+small_dense_02                1.023146   1617807       2386773  1.475           9848            1.832        100.0
+small_sparse_00               0.961703   1519822       2100086  1.382           8004            1.692        100.0
+small_sparse_01               0.920145   1453529       2041503  1.405           7770            1.701        100.0
+small_sparse_02               0.954251   1507898       2014023  1.336           7355            1.632        100.0
+star_00                      14.186544  22631174      54075020  2.389         131422            1.112        100.0
+star_01                      13.711922  21872979      55109790  2.520          80937            0.674        100.0
+
+submissions/graph/enumerate_triangles/kostia244.cpp
+SHA-256: 544e246be3a2f7b2b2f91c6f1b584e3fc673a9d8e7039c4563dc6127f4fc00c7
+Measured: bench/graph-polish-20261002/accepted-37 [kostia244]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)        29.907968         -             -      -              -                -            -
+sum                       220.151089         -             -      -              -                -            -
+example_00                  1.193540   1889683       2685287  1.421           6792            1.097        100.0
+large_random_00            13.440397  21439546      35609932  1.661         207861            3.080        100.0
+large_random_01            12.956232  20652558      35534173  1.721         118623            1.691        100.0
+large_random_02            17.257133  27531762      51373601  1.866         160150            1.584        100.0
+max_complete_00            22.934078  36594632      77961264  2.130         322411            4.486        100.0
+max_random_00              29.895662  47709097      88037939  1.845         242321            1.401        100.0
+max_random_01              29.902417  47719399      88034176  1.845         242908            1.404        100.0
+max_random_02              29.907968  47728556      87948421  1.843         242777            1.405        100.0
+minimum_00                  1.137182   1799919       2650674  1.473           6754            1.113        100.0
+small_dense_00              1.297271   2055345       3092759  1.505          10882            1.573        100.0
+small_dense_01              3.894777   6201299      10645116  1.717          75342            4.764        100.0
+small_dense_02              1.326056   2101628       3095515  1.473          10685            1.552        100.0
+small_sparse_00             1.209305   1915211       2843039  1.484           8064            1.243        100.0
+small_sparse_01             1.222262   1935937       2808465  1.451           8027            1.258        100.0
+small_sparse_02             1.174324   1859953       2723624  1.464           7295            1.174        100.0
+star_00                    26.099165  41647820      92039963  2.210         143660            0.783        100.0
+star_01                    25.303320  40377642      92907571  2.301          90694            0.491        100.0
+
+submissions/graph/enumerate_triangles/soryuusi0219.cpp
+SHA-256: 73c9ddd2fa6e7dda257ab03090390c75c69f7187f39a249915481b2ea57353fe
+Measured: bench/graph-polish-20261002/accepted-37 [soryuusi0219]
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_complete_00)        30.367740         -             -      -              -                -            -
+sum                         137.857196         -             -      -              -                -            -
+example_00                    1.312528   2080154       2863771  1.377           6607            1.012        100.0
+large_random_00              10.253540  16351376      20448372  1.251         206558            7.166        100.0
+large_random_01               4.841546   7713319      12429357  1.611          48544            2.355        100.0
+large_random_02               9.249915  14750433      20491980  1.389         122453            4.101        100.0
+max_complete_00              30.367740  48460411     153292107  3.163         196022            0.920        100.0
+max_random_00                14.916492  23796077      32399405  1.362         189931            4.141        100.0
+max_random_01                14.895199  23763098      32363442  1.362         190081            4.158        100.0
+max_random_02                14.948917  23848635      32403727  1.359         191053            4.163        100.0
+minimum_00                    1.298427   2057868       2857754  1.389           6533            1.002        100.0
+small_dense_00                1.448578   2297095       3181822  1.385          10860            1.547        100.0
+small_dense_01                6.260903   9978984      15094867  1.513         164568            7.065        100.0
+small_dense_02                1.567211   2486726       3233316  1.300          17075            2.426        100.0
+small_sparse_00               1.354610   2146973       2935199  1.367           7488            1.130        100.0
+small_sparse_01               1.341846   2126098       2955598  1.390           7320            1.090        100.0
+small_sparse_02               1.367071   2165866       2937502  1.356           7353            1.096        100.0
+star_00                      11.058525  17638078      32293003  1.831          30576            0.680        100.0
+star_01                      11.374148  18142308      32347045  1.783          44080            0.975        100.0
+
+src/graph/enumerate_triangles/main.cxx
+SHA-256: 77161d21649d34015ea45326d3296e8cf4f5fc83cac92fa70a812b28cf02595b
+Measured: bench/graph-polish-20261002/accepted-37 [main]
+case                   task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_complete_00)        18.284753         -             -      -              -                -            -
+sum                          94.721520         -             -      -              -                -            -
+example_00                    0.772424   1217987       1727575  1.418           5468            1.425        100.0
+large_random_00               8.147902  12991378      16394666  1.262         191836            9.820        100.0
+large_random_01               3.303456   5258560       8762817  1.666          20782            1.444        100.0
+large_random_02               6.707952  10693094      14699830  1.375          92493            4.685        100.0
+max_complete_00              18.284753  29172382      74000985  2.537         240752            4.108        100.0
+max_random_00                10.615671  16931199      22140205  1.308         126315            4.394        100.0
+max_random_01                10.634012  16958957      22148437  1.306         126011            4.380        100.0
+max_random_02                10.626300  16948366      22164630  1.308         126233            4.386        100.0
+minimum_00                    0.799415   1260704       1765948  1.401           5414            1.369        100.0
+small_dense_00                0.869844   1373506       1979405  1.441           8699            2.115        100.0
+small_dense_01                2.834560   4510022       8624376  1.912          53744            5.587        100.0
+small_dense_02                0.934859   1477207       2041550  1.382           9164            2.196        100.0
+small_sparse_00               0.819418   1292812       1831994  1.417           6095            1.507        100.0
+small_sparse_01               0.823579   1299583       1785092  1.374           6028            1.539        100.0
+small_sparse_02               0.809519   1277686       1795913  1.406           5837            1.462        100.0
+star_00                       8.852815  14117382      18834541  1.334          76441            3.008        100.0
+star_01                       8.885041  14168547      18833744  1.329          81908            3.227        100.0

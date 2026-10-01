@@ -1,0 +1,180 @@
+2026-10-02 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 16, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: fedora; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Haar                                      70.123301     434.202758
+MeIoN                                    142.265574     669.473050
+Rohan_Kapri                               30.987517     304.828786
+adamant                                   31.041098     305.132306
+toomer                                    26.134717     219.635555
+main                                      25.829782     155.983515
+naive                                    129.037546     586.443286
+
+submissions/graph/counting_eulerian_circuits/Haar.rs
+SHA-256: b5a79c07fd39d36d0fa51ecd869c452a868c79264041075c42bd023399beb07d
+Measured: bench/graph-polish-20261002/accepted-37 [Haar]
+case                         task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_circuit_00)        70.123301          -             -      -              -                -            -
+sum                               434.202758          -             -      -              -                -            -
+example_00                          1.190729    1857654       2211046  1.190           9985            1.995        100.0
+example_01                          1.194931    1866106       2219015  1.189          10198            2.031        100.0
+example_02                          1.202399    1877636       2210101  1.177           9958            1.989        100.0
+example_03                          1.178599    1837526       2189125  1.191           9885            2.009        100.0
+has_isolated_point_00              22.942193   36576570      80220933  2.193         131684            0.906        100.0
+has_isolated_point_01              22.915326   36533893      81465031  2.230         142772            0.996        100.0
+has_isolated_point_02              19.896840   31714797      69508736  2.192         125494            0.919        100.0
+has_isolated_point_03              22.899392   36508401      81728371  2.239         120060            0.827        100.0
+loops_00                           20.807270   33168877      73108904  2.204          78980            0.541        100.0
+loops_01                           13.241310   21089514      43961569  2.085         117878            1.208        100.0
+max_random_00                      13.186281   21004310      43915083  2.091         117046            1.200        100.0
+max_random_01                      13.197929   21022596      44007282  2.093         117369            1.200        100.0
+max_random_circuit_00              70.123301  111890641     249736758  2.232         241583            1.096        100.0
+max_random_circuit_01              70.029979  111742752     249249153  2.231         242043            1.104        100.0
+max_random_circuit_02              70.085442  111806878     249381031  2.230         242334            1.104        100.0
+max_random_circuit_03              70.110837  111870198     249806873  2.233         241679            1.096        100.0
+
+submissions/graph/counting_eulerian_circuits/MeIoN.cpp
+SHA-256: 3f988bf4a0b178e4ef6c4db8ff0786a2bc83d6b03d3b433a613a89a6d3631809
+Measured: bench/graph-polish-20261002/accepted-37 [MeIoN]
+case                         task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_circuit_01)       142.265574          -             -      -              -                -            -
+sum                               669.473050          -             -      -              -                -            -
+example_00                          0.955696    1510870       2422806  1.604           6503            1.167        100.0
+example_01                          1.006057    1589910       2479614  1.560           6806            1.181        100.0
+example_02                          0.985579    1557930       2462248  1.580           6774            1.185        100.0
+example_03                          1.019537    1612534       2430996  1.508           6620            1.180        100.0
+has_isolated_point_00              16.997102   27116977      71577582  2.640         133882            1.741        100.0
+has_isolated_point_01              18.884586   30129632      81926094  2.719         145759            1.761        100.0
+has_isolated_point_02              10.706500   17075812      39243863  2.298         124773            2.243        100.0
+has_isolated_point_03              18.133306   28931304      79190621  2.737         120890            1.479        100.0
+loops_00                           10.985400   17520204      38082399  2.174          70432            1.053        100.0
+loops_01                            7.030598   11208146      27176192  2.425         109238            2.336        100.0
+max_random_00                       7.009358   11174066      27042654  2.420         108509            2.338        100.0
+max_random_01                       7.036932   11217564      27065202  2.413         108727            2.341        100.0
+max_random_circuit_00             142.227726  226998714     741013510  3.264         247559            0.494        100.0
+max_random_circuit_01             142.265574  227066509     741145470  3.264         248787            0.497        100.0
+max_random_circuit_02             142.152443  226870458     740706802  3.265         249033            0.498        100.0
+max_random_circuit_03             142.076656  226749773     740177550  3.264         247907            0.496        100.0
+
+submissions/graph/counting_eulerian_circuits/Rohan_Kapri.cpp
+SHA-256: 28f4d3281a5893326a0ea99f84a22e634927559e6df22a198aa890b98001eab8
+Measured: bench/graph-polish-20261002/accepted-37 [Rohan_Kapri]
+case                         task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_circuit_01)        30.987517         -             -      -              -                -            -
+sum                               304.828786         -             -      -              -                -            -
+example_00                          5.678179   9036430      10725152  1.187           8406            1.221        100.0
+example_01                          5.663182   9024984      10713181  1.187           8161            1.189        100.0
+example_02                          5.671782   9037586      10744033  1.189           8176            1.181        100.0
+example_03                          5.645787   8997075      10712713  1.191           8117            1.184        100.0
+has_isolated_point_00              27.636654  44100963     100534240  2.280         138562            1.738        100.0
+has_isolated_point_01              27.941209  44588052     100932769  2.264         152354            1.909        100.0
+has_isolated_point_02              26.980606  43053947      98686192  2.292         138866            1.758        100.0
+has_isolated_point_03              27.437435  43783044     100715456  2.300         122606            1.535        100.0
+loops_00                           13.150924  20976702      39144692  1.866          59299            1.228        100.0
+loops_01                           11.756018  18751086      29220154  1.558         104991            3.228        100.0
+max_random_00                      11.771733  18775568      29276663  1.559         104948            3.209        100.0
+max_random_01                      11.799616  18820262      29258112  1.555         105299            3.223        100.0
+max_random_circuit_00              30.896555  49305589     113600138  2.304         124272            1.468        100.0
+max_random_circuit_01              30.987517  49450613     113596655  2.297         124727            1.474        100.0
+max_random_circuit_02              30.906900  49321625     113573929  2.303         124815            1.476        100.0
+max_random_circuit_03              30.904689  49301754     113609916  2.304         124198            1.467        100.0
+
+submissions/graph/counting_eulerian_circuits/adamant.cpp
+SHA-256: 28f4d3281a5893326a0ea99f84a22e634927559e6df22a198aa890b98001eab8
+Measured: bench/graph-polish-20261002/accepted-37 [adamant]
+case                         task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_circuit_02)        31.041098         -             -      -              -                -            -
+sum                               305.132306         -             -      -              -                -            -
+example_00                          5.666137   9028803      10686585  1.184           8031            1.187        100.0
+example_01                          5.697482   9079152      10731573  1.182           8302            1.203        100.0
+example_02                          5.671125   9037903      10728712  1.187           8123            1.179        100.0
+example_03                          5.656981   9015130      10729213  1.190           8055            1.167        100.0
+has_isolated_point_00              27.621365  44077690     100523530  2.281         138220            1.734        100.0
+has_isolated_point_01              27.947745  44597851     100914716  2.263         151943            1.906        100.0
+has_isolated_point_02              26.982743  43057311      98700039  2.292         138721            1.755        100.0
+has_isolated_point_03              27.452839  43807762     100684597  2.298         122074            1.530        100.0
+loops_00                           13.185918  21033209      39179751  1.863          59301            1.226        100.0
+loops_01                           11.832105  18872653      29214398  1.548         105694            3.250        100.0
+max_random_00                      11.856149  18910677      29221690  1.545         104878            3.221        100.0
+max_random_01                      11.801894  18824082      29245090  1.554         105566            3.240        100.0
+max_random_circuit_00              30.908291  49324169     113582932  2.303         123887            1.465        100.0
+max_random_circuit_01              30.911799  49329270     113599559  2.303         124586            1.473        100.0
+max_random_circuit_02              31.041098  49520252     113565255  2.293         125013            1.480        100.0
+max_random_circuit_03              30.898635  49308856     113558778  2.303         124287            1.472        100.0
+
+submissions/graph/counting_eulerian_circuits/toomer.rs
+SHA-256: 20f19552ae22e827a8d6fcb9dcc5a1979f5e541950cc3140d9c0ce3739482f73
+Measured: bench/graph-polish-20261002/accepted-37 [toomer]
+case                         task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_circuit_03)        26.134717         -             -      -              -                -            -
+sum                               219.635555         -             -      -              -                -            -
+example_00                          0.963961   1522436       2060148  1.353           7311            1.565        100.0
+example_01                          0.930580   1470726       2007245  1.365           7199            1.600        100.0
+example_02                          0.984944   1556393       2035150  1.308           7390            1.615        100.0
+example_03                          0.954553   1508263       2018737  1.338           7208            1.595        100.0
+has_isolated_point_00              21.190240  33810554      85214359  2.520          26567            0.281        100.0
+has_isolated_point_01              21.589203  34447702      86466214  2.510          27588            0.287        100.0
+has_isolated_point_02              19.806951  31602557      80392829  2.544          23749            0.264        100.0
+has_isolated_point_03              21.092902  33655117      85243143  2.533          27456            0.289        100.0
+loops_00                            6.802586  10843348      18530380  1.709           8505            0.309        100.0
+loops_01                            6.994814  11150569      18257403  1.637           8446            0.318        100.0
+max_random_00                       7.053067  11243468      18270484  1.625           8555            0.322        100.0
+max_random_01                       7.023928  11196985      18278798  1.632           8527            0.321        100.0
+max_random_circuit_00              26.002564  41492604     105523799  2.543          35332            0.308        100.0
+max_random_circuit_01              26.002973  41493458     105432960  2.541          35304            0.308        100.0
+max_random_circuit_02              26.107572  41659459     105527794  2.533          35153            0.306        100.0
+max_random_circuit_03              26.134717  41703552     105567120  2.531          35000            0.305        100.0
+
+src/graph/counting_eulerian_circuits/main.cxx
+SHA-256: 82ce8f5bd205188da6b1dde8435597a7878b0b130499aa82997bb465aed59953
+Measured: bench/graph-polish-20261002/accepted-37 [main]
+case                         task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_circuit_02)        25.829782         -             -      -              -                -            -
+sum                               155.983515         -             -      -              -                -            -
+example_00                          0.801816   1264764       1757905  1.390           5462            1.386        100.0
+example_01                          0.837039   1320844       1757546  1.331           5611            1.440        100.0
+example_02                          0.794216   1253229       1774496  1.416           5565            1.400        100.0
+example_03                          0.818708   1291231       1749480  1.355           5479            1.411        100.0
+has_isolated_point_00               8.395020  13385017      27965041  2.089          22238            0.507        100.0
+has_isolated_point_01               8.758529  13966102      29273180  2.096          25056            0.558        100.0
+has_isolated_point_02               7.462007  11895925      24311447  2.044          23564            0.579        100.0
+has_isolated_point_03               8.623065  13749300      28753235  2.091          21877            0.493        100.0
+loops_00                            4.269148   6798988      15403560  2.266          10625            0.383        100.0
+loops_01                            4.319532   6868033      15988031  2.328          10569            0.382        100.0
+max_random_00                       4.257676   6781354      15968451  2.355           9950            0.360        100.0
+max_random_01                       4.279086   6815148      15952388  2.341          10094            0.366        100.0
+max_random_circuit_00              25.507233  40701710      97031143  2.384          74954            0.792        100.0
+max_random_circuit_01              25.525822  40731084      97017672  2.382          74848            0.790        100.0
+max_random_circuit_02              25.829782  41217195      96934854  2.352          74060            0.785        100.0
+max_random_circuit_03              25.504836  40698373      96962398  2.382          74432            0.788        100.0
+
+src/graph/counting_eulerian_circuits/naive.cxx
+SHA-256: 3520a36e2893ae18eaad86668da09a214374cefdd80c88824d024e7b536c3790
+Measured: bench/graph-polish-20261002/accepted-37 [naive]
+case                         task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_circuit_03)       129.037546          -             -      -              -                -            -
+sum                               586.443286          -             -      -              -                -            -
+example_00                          0.804733    1269277       1742310  1.373           5574            1.443        100.0
+example_01                          0.827029    1304790       1743167  1.336           5587            1.446        100.0
+example_02                          0.816340    1287364       1756279  1.364           5690            1.453        100.0
+example_03                          0.772443    1217647       1732444  1.423           5458            1.411        100.0
+has_isolated_point_00              13.153279   20981719      54502409  2.598          33356            0.572        100.0
+has_isolated_point_01              15.097418   24084644      64488477  2.678          37270            0.572        100.0
+has_isolated_point_02               7.846659   12510415      26579944  2.125          25930            0.643        100.0
+has_isolated_point_03              14.458364   23064274      61359512  2.660          34132            0.542        100.0
+loops_00                            4.307843    6862014      14983521  2.184          10691            0.416        100.0
+loops_01                            4.191379    6675088      15599576  2.337          10149            0.394        100.0
+max_random_00                       4.186862    6668248      15571703  2.335          10555            0.411        100.0
+max_random_01                       4.155644    6618102      15606448  2.358          10289            0.399        100.0
+max_random_circuit_00             128.862062  205670987     684801810  3.330         140849            0.307        100.0
+max_random_circuit_01             128.895869  205716705     685165641  3.331         140646            0.307        100.0
+max_random_circuit_02             129.029816  205953002     686181992  3.332         139695            0.305        100.0
+max_random_circuit_03             129.037546  205965480     686127564  3.331         139805            0.305        100.0

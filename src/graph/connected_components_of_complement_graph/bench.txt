@@ -1,0 +1,210 @@
+2026-10-02 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 25, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: fedora; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                 97.170025    1342.113088
+Rohan_Kapri                               87.458711    1276.011527
+soryuusi0219                              87.759986    1275.318958
+square1001                                97.815291    1343.715305
+wery0                                     55.546682     738.471007
+main                                      40.177353     476.465499
+
+submissions/graph/connected_components_of_complement_graph/Anonymous.cpp
+SHA-256: e0b7eb49331ecfd61ce923b56283c3c7fdf324b01270e4d64b9445f39653e514
+Measured: bench/graph-polish-20261002/accepted-37 [Anonymous]
+case                         task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)                97.170025          -             -      -              -                -            -
+sum                              1342.113088          -             -      -              -                -            -
+example_00                          0.851749    1343715       1972431  1.468           5587            1.301        100.0
+example_01                          0.868204    1370208       1978669  1.444           5712            1.328        100.0
+example_02                          0.856661    1351888       1947460  1.441           5511            1.314        100.0
+complement_of_many_paths_00        62.958201  100360554     138144474  1.376         492998            2.326        100.0
+complement_of_many_paths_01        63.041198  100515053     137229551  1.365         493683            2.357        100.0
+complement_of_many_paths_02        63.243515  100856096     138516545  1.373         501209            2.363        100.0
+complement_of_many_paths_03        63.479349  101192409     137841579  1.362         497561            2.360        100.0
+complement_of_many_paths_04        62.856707  100220830     137620123  1.373         489260            2.320        100.0
+complement_of_sparse_00            63.354219  101032432     137230843  1.358         499109            2.375        100.0
+complement_of_sparse_01            63.067578  100574142     136874082  1.361         502670            2.403        100.0
+complement_of_sparse_02            63.171746  100741131     136481689  1.355         504464            2.421        100.0
+complement_of_sparse_03            63.400332  101105839     137142356  1.356         499892            2.383        100.0
+complement_of_sparse_04            63.323744  100966026     136542306  1.352         503805            2.416        100.0
+complete_00                        68.663117  109566028     147568920  1.347         608498            2.695        100.0
+max_random_00                      96.833372  154355887     231455943  1.499         704330            1.926        100.0
+max_random_01                      97.170025  155012242     230934287  1.490         702429            1.927        100.0
+max_random_02                      97.035467  154780645     230917147  1.492         706811            1.939        100.0
+max_random_03                      96.939313  154559203     230913423  1.494         705087            1.934        100.0
+max_random_04                      96.895326  154573284     230908242  1.494         704371            1.933        100.0
+minimum_00                          0.836217    1320009       1963415  1.487           5477            1.281        100.0
+minimum_01                          0.833463    1315173       1945949  1.480           5548            1.322        100.0
+minimum_02                          0.846667    1336739       1965138  1.470           5459            1.276        100.0
+no_edge_00                         22.626303   36084666      81286699  2.253           9518            0.060        100.0
+star_00                            65.317030  104065715     249773426  2.400          15355            0.039        100.0
+star_remove_one_edge_00            63.643585  101479030     240870595  2.374          15056            0.040        100.0
+
+submissions/graph/connected_components_of_complement_graph/Rohan_Kapri.cpp
+SHA-256: 484b9fbae3841b6682ea67ffa0f44589dd44a5899cb3df3e1fdaae2f47dded03
+Measured: bench/graph-polish-20261002/accepted-37 [Rohan_Kapri]
+case                           task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (complement_of_sparse_04)        87.458711          -             -      -              -                -            -
+sum                                1276.011527          -             -      -              -                -            -
+example_00                            1.306980    2071170       2896738  1.399           6650            1.000        100.0
+example_01                            1.293258    2049562       2898703  1.414           6697            1.008        100.0
+example_02                            1.295813    2053788       2896126  1.410           6773            1.020        100.0
+complement_of_many_paths_00          86.242151  137628836      92843381  0.675          33536            0.246        100.0
+complement_of_many_paths_01          86.581182  138176604      92855764  0.672          33474            0.246        100.0
+complement_of_many_paths_02          85.471479  136404389      92757631  0.680          32168            0.237        100.0
+complement_of_many_paths_03          85.638719  136671751      92811518  0.679          32521            0.239        100.0
+complement_of_many_paths_04          86.905057  138710544      92778251  0.669          31163            0.229        100.0
+complement_of_sparse_00              86.781277  138483825      92684837  0.669          36018            0.265        100.0
+complement_of_sparse_01              86.132758  137478751      92619724  0.674          36712            0.271        100.0
+complement_of_sparse_02              86.193638  137574663      92603073  0.673          36216            0.267        100.0
+complement_of_sparse_03              87.254974  139251347      92642160  0.665          36192            0.267        100.0
+complement_of_sparse_04              87.458711  139578117      92633453  0.664          35328            0.260        100.0
+complete_00                          87.087593  139002605      93103774  0.670          26738            0.196        100.0
+max_random_00                        45.602594   72761653     118570707  1.630         227724            1.394        100.0
+max_random_01                        46.805054   74700044     117638854  1.575         225924            1.401        100.0
+max_random_02                        45.716135   72962468     117633132  1.612         225507            1.398        100.0
+max_random_03                        45.728351   72954794     117799550  1.615         226100            1.397        100.0
+max_random_04                        45.213391   72126622     117888821  1.634         226960            1.399        100.0
+minimum_00                            1.318916    2090197       2891651  1.383           6689            1.008        100.0
+minimum_01                            1.306775    2070287       2878702  1.390           6722            1.017        100.0
+minimum_02                            1.317824    2088646       2897605  1.387           6654            1.001        100.0
+no_edge_00                           14.790491   23595616      38720901  1.641           9986            0.147        100.0
+star_00                              37.219755   59400035     123265162  2.075          14940            0.087        100.0
+star_remove_one_edge_00              35.348651   56412913     118624286  2.103          16331            0.101        100.0
+
+submissions/graph/connected_components_of_complement_graph/soryuusi0219.cpp
+SHA-256: 484b9fbae3841b6682ea67ffa0f44589dd44a5899cb3df3e1fdaae2f47dded03
+Measured: bench/graph-polish-20261002/accepted-37 [soryuusi0219]
+case                         task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (complete_00)                  87.759986          -             -      -              -                -            -
+sum                              1275.318958          -             -      -              -                -            -
+example_00                          1.325708    2100818       2859779  1.361           6505            0.997        100.0
+example_01                          1.303341    2065080       2896647  1.403           6808            1.026        100.0
+example_02                          1.339084    2122466       2876346  1.355           6850            1.045        100.0
+complement_of_many_paths_00        86.617099  138233789      92812964  0.671          33307            0.245        100.0
+complement_of_many_paths_01        86.183042  137525849      92827925  0.675          32699            0.240        100.0
+complement_of_many_paths_02        86.308158  137719114      92866049  0.674          33063            0.243        100.0
+complement_of_many_paths_03        86.801664  138545724      92809401  0.670          31717            0.233        100.0
+complement_of_many_paths_04        86.569352  138174692      92698153  0.671          32190            0.237        100.0
+complement_of_sparse_00            86.826573  138554595      92643442  0.669          36437            0.269        100.0
+complement_of_sparse_01            86.343633  137784852      92657045  0.672          36253            0.267        100.0
+complement_of_sparse_02            86.150434  137506664      92626086  0.674          36668            0.270        100.0
+complement_of_sparse_03            85.846324  137021690      92629083  0.676          35931            0.265        100.0
+complement_of_sparse_04            85.728270  136832476      92574523  0.677          39107            0.288        100.0
+complete_00                        87.759986  140075738      93123128  0.665          26932            0.197        100.0
+max_random_00                      46.101322   73558081     117779830  1.601         225736            1.395        100.0
+max_random_01                      45.499118   72616284     117750048  1.622         224597            1.388        100.0
+max_random_02                      45.734897   72992030     117744552  1.613         225914            1.397        100.0
+max_random_03                      46.099759   73560873     118167320  1.606         225587            1.387        100.0
+max_random_04                      45.600358   72777853     117762332  1.618         224539            1.388        100.0
+minimum_00                          1.311327    2078213       2893137  1.392           6650            1.002        100.0
+minimum_01                          1.300024    2059437       2883210  1.400           6782            1.025        100.0
+minimum_02                          1.357335    2152010       2864832  1.331           6537            1.001        100.0
+no_edge_00                         14.744223   23522186      38693590  1.645          10019            0.148        100.0
+star_00                            37.178900   59333635     123053331  2.074          15626            0.091        100.0
+star_remove_one_edge_00            35.289027   56317122     118488732  2.104          15874            0.098        100.0
+
+submissions/graph/connected_components_of_complement_graph/square1001.cpp
+SHA-256: 5931d56993f636e7a95b021ef3e51662b25086002329df7c6900ad1c90b27fdb
+Measured: bench/graph-polish-20261002/accepted-37 [square1001]
+case                         task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)                97.815291          -             -      -              -                -            -
+sum                              1343.715305          -             -      -              -                -            -
+example_00                          0.876699    1383332       1970863  1.425           5570            1.299        100.0
+example_01                          0.856140    1351661       1969104  1.457           5449            1.271        100.0
+example_02                          0.834562    1317164       1941896  1.474           5372            1.283        100.0
+complement_of_many_paths_00        62.874354  100240193     137575832  1.372         491292            2.321        100.0
+complement_of_many_paths_01        63.292592  101001933     136838654  1.355         494549            2.358        100.0
+complement_of_many_paths_02        63.407288  101074771     136991793  1.355         500697            2.388        100.0
+complement_of_many_paths_03        63.304679  101022085     137743272  1.363         496228            2.346        100.0
+complement_of_many_paths_04        62.786494  100110074     136819326  1.367         488523            2.328        100.0
+complement_of_sparse_00            62.921968  100343297     136494079  1.360         499406            2.387        100.0
+complement_of_sparse_01            63.145830  100700041     136352160  1.354         501084            2.398        100.0
+complement_of_sparse_02            63.189812  100753960     135821240  1.348         502368            2.417        100.0
+complement_of_sparse_03            63.003739  100473174     136270366  1.356         499460            2.393        100.0
+complement_of_sparse_04            63.338653  100961374     136496190  1.352         504953            2.411        100.0
+complete_00                        69.143916  110249362     146954787  1.333         608094            2.696        100.0
+max_random_00                      97.503155  155511560     230732647  1.484         724034            1.976        100.0
+max_random_01                      97.815291  156025679     229569301  1.471         724005            1.992        100.0
+max_random_02                      97.367665  155310254     229717188  1.479         725069            1.992        100.0
+max_random_03                      97.747986  155892923     229928497  1.475         726228            1.992        100.0
+max_random_04                      97.375723  155309891     229723377  1.479         723445            1.987        100.0
+minimum_00                          0.876479    1384007       1976867  1.428           5611            1.304        100.0
+minimum_01                          0.864919    1365545       1979991  1.450           5688            1.320        100.0
+minimum_02                          0.847167    1337392       1975456  1.477           5629            1.310        100.0
+no_edge_00                         22.692431   36196638      81268267  2.245          10011            0.063        100.0
+star_00                            64.495417  102769326     247453878  2.408          14587            0.037        100.0
+star_remove_one_edge_00            63.152346  100682479     239587207  2.380          14934            0.040        100.0
+
+submissions/graph/connected_components_of_complement_graph/wery0.cpp
+SHA-256: 95feabed0b534aab2cb559b7d6e94f12915248bf329813ccb7b01d3059e5d9d1
+Measured: bench/graph-polish-20261002/accepted-37 [wery0]
+case                         task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)                55.546682         -             -      -              -                -            -
+sum                               738.471007         -             -      -              -                -            -
+example_00                          1.194125   1891115       2695525  1.425           6882            1.117        100.0
+example_01                          1.197033   1895446       2732990  1.442           7042            1.122        100.0
+example_02                          1.206658   1911095       2741521  1.435           7013            1.112        100.0
+complement_of_many_paths_00        30.497146  48655612     119144976  2.449         151760            0.675        100.0
+complement_of_many_paths_01        30.473817  48630999     119132148  2.450         151162            0.672        100.0
+complement_of_many_paths_02        30.505862  48681802     119100924  2.447         150970            0.672        100.0
+complement_of_many_paths_03        30.543527  48725220     119149630  2.445         151178            0.672        100.0
+complement_of_many_paths_04        30.588696  48814763     119279149  2.444         151714            0.674        100.0
+complement_of_sparse_00            30.607559  48844261     119140125  2.439         151272            0.672        100.0
+complement_of_sparse_01            30.635343  48861777     119149635  2.439         151415            0.673        100.0
+complement_of_sparse_02            30.486781  48651198     119047804  2.447         151018            0.672        100.0
+complement_of_sparse_03            30.608035  48845226     119142710  2.439         151327            0.673        100.0
+complement_of_sparse_04            30.569028  48765196     119010210  2.440         151787            0.676        100.0
+complete_00                        30.583415  48806132     119635814  2.451         149139            0.660        100.0
+max_random_00                      55.437707  88479985     171910081  1.943         257641            0.863        100.0
+max_random_01                      55.546682  88557771     172294827  1.946         258196            0.862        100.0
+max_random_02                      55.247268  88176857     171857546  1.949         257500            0.862        100.0
+max_random_03                      55.322913  88297062     171890852  1.947         256584            0.859        100.0
+max_random_04                      55.485073  88555760     171884864  1.941         256977            0.860        100.0
+minimum_00                          1.168807   1850944       2707710  1.463           6798            1.091        100.0
+minimum_01                          1.192114   1887499       2689832  1.425           6971            1.135        100.0
+minimum_02                          1.187305   1879048       2717861  1.446           6938            1.111        100.0
+no_edge_00                         11.220120  17895445      50277232  2.809           8311            0.092        100.0
+star_00                            55.255144  88104024     256125514  2.907          50373            0.113        100.0
+star_remove_one_edge_00            51.710849  82445127     233742427  2.835          49860            0.121        100.0
+
+src/graph/connected_components_of_complement_graph/main.cxx
+SHA-256: 083129365490e1b2ed222aabecd87fc8e67f9c21d362d6ee721609efb5816313
+Measured: bench/graph-polish-20261002/accepted-37 [main]
+case                         task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_03)                40.177353         -             -      -              -                -            -
+sum                               476.465499         -             -      -              -                -            -
+example_00                          0.786282   1239373       1768645  1.427           5640            1.422        100.0
+example_01                          0.794451   1252706       1769690  1.413           5510            1.390        100.0
+example_02                          0.806006   1271524       1723208  1.355           5290            1.382        100.0
+complement_of_many_paths_00        18.501989  29519646      59898550  2.029          16863            0.283        100.0
+complement_of_many_paths_01        18.604523  29684731      59909811  2.018          16570            0.278        100.0
+complement_of_many_paths_02        18.619064  29707029      59851520  2.015          16713            0.281        100.0
+complement_of_many_paths_03        18.620598  29709757      59880421  2.016          16738            0.281        100.0
+complement_of_many_paths_04        18.595137  29667552      59838438  2.017          16536            0.279        100.0
+complement_of_sparse_00            18.570172  29629620      59914945  2.022          16762            0.281        100.0
+complement_of_sparse_01            18.585649  29653343      59895292  2.020          16557            0.278        100.0
+complement_of_sparse_02            18.845453  30055105      60420694  2.010          17764            0.293        100.0
+complement_of_sparse_03            18.610722  29695579      59897767  2.017          16609            0.279        100.0
+complement_of_sparse_04            18.640144  29723657      59824764  2.013          16976            0.286        100.0
+complete_00                        18.616344  29703504      59933543  2.018          15898            0.267        100.0
+max_random_00                      40.111479  64014809      82345353  1.286          17394            0.186        100.0
+max_random_01                      39.991429  63784132      82502631  1.293          18257            0.195        100.0
+max_random_02                      40.002286  63796734      82502535  1.293          18392            0.196        100.0
+max_random_03                      40.177353  64119931      82758370  1.291          17369            0.184        100.0
+max_random_04                      39.993571  63806036      82467483  1.292          17789            0.190        100.0
+minimum_00                          0.804060   1267323       1746580  1.378           5576            1.439        100.0
+minimum_01                          0.798602   1260157       1770507  1.405           5408            1.364        100.0
+minimum_02                          0.792894   1250533       1727579  1.381           5493            1.431        100.0
+no_edge_00                         10.651168  16988192      33723605  1.985           8443            0.149        100.0
+star_00                            28.242544  45069207     102266890  2.269          12407            0.093        100.0
+star_remove_one_edge_00            27.703579  44209503      98714709  2.233          12513            0.099        100.0

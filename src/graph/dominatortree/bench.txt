@@ -1,0 +1,138 @@
+2026-10-02 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 13, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: fedora; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                 71.052395     437.735949
+Rohan_Kapri                               56.650645     338.578550
+jeoffrey0522                              71.211642     439.313065
+nandhagk                                  56.696467     338.956495
+nor                                       58.497694     357.565943
+main                                      51.702891     302.785936
+
+submissions/graph/dominatortree/Anonymous.rs
+SHA-256: 91c8ae099845b731db60e67c0590601d9177665787d6694445692224490558cd
+Measured: bench/graph-polish-20261002/accepted-37 [Anonymous]
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (gen_tree_2_01)        71.052395          -             -      -              -                -            -
+sum                       437.735949          -             -      -              -                -            -
+example_00                  0.935345    1478450       1956770  1.324           6959            1.589        100.0
+example_01                  0.935321    1478017       1968322  1.332           6987            1.579        100.0
+gen_tree_00                52.564531   83893837     121785460  1.452         527659            1.996        100.0
+gen_tree_01                52.786631   84249281     123153203  1.462         490799            1.859        100.0
+gen_tree_02                52.779559   84237053     121784304  1.446         526645            1.992        100.0
+gen_tree_2_00              70.958586  113229561     141179704  1.247         584515            1.906        100.0
+gen_tree_2_01              71.052395  113378142     141433794  1.247         587454            1.912        100.0
+gen_tree_2_02              70.643214  112727786     141037644  1.251         580841            1.896        100.0
+random_00                  13.059915   20833363      58912162  2.828          21013            0.163        100.0
+random_01                  25.378519   40497617      99920978  2.467         143082            0.670        100.0
+random_02                   7.165334   11422858      30172837  2.641          19793            0.303        100.0
+random_03                  17.195076   27434128      77174121  2.813          36356            0.216        100.0
+random_04                   2.281523    3626572       8286854  2.285           8461            0.462        100.0
+
+submissions/graph/dominatortree/Rohan_Kapri.cpp
+SHA-256: b253734b8bffd5efe505c0ddeab43287db32ef57e52ae2725280db7f78b87b4b
+Measured: bench/graph-polish-20261002/accepted-37 [Rohan_Kapri]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (gen_tree_2_00)        56.650645         -             -      -              -                -            -
+sum                       338.578550         -             -      -              -                -            -
+example_00                  1.057090   1672464       2480928  1.483           7099            1.240        100.0
+example_01                  1.043196   1650381       2459242  1.490           7080            1.253        100.0
+gen_tree_00                40.245786  64200516      89831314  1.399         475307            3.849        100.0
+gen_tree_01                40.543349  64704785      90085125  1.392         474508            3.826        100.0
+gen_tree_02                40.228777  64203412      89780067  1.398         474877            3.849        100.0
+gen_tree_2_00              56.650645  90416721     101435767  1.122         605929            4.364        100.0
+gen_tree_2_01              56.502083  90179571     101197866  1.122         607523            4.395        100.0
+gen_tree_2_02              56.462731  90117325     101192268  1.123         607139            4.392        100.0
+random_00                   8.939705  14256093      23887043  1.676          21592            0.645        100.0
+random_01                  18.052443  28802978      50251408  1.745         140944            1.994        100.0
+random_02                   5.238619   8347994      14768271  1.769          20112            0.902        100.0
+random_03                  11.729267  18709683      31017210  1.658          36962            0.865        100.0
+random_04                   1.884859   2993796       4694551  1.568           8550            1.001        100.0
+
+submissions/graph/dominatortree/jeoffrey0522.rs
+SHA-256: eda4a09b5d6cf264635f75dd0fc2cded5357613decbf332b15b3144f334188ee
+Measured: bench/graph-polish-20261002/accepted-37 [jeoffrey0522]
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (gen_tree_2_01)        71.211642          -             -      -              -                -            -
+sum                       439.313065          -             -      -              -                -            -
+example_00                  0.908284    1434148       1944084  1.356           6641            1.518        100.0
+example_01                  0.943565    1490603       1986719  1.333           6934            1.547        100.0
+gen_tree_00                52.970179   84541340     122026132  1.443         540416            2.059        100.0
+gen_tree_01                52.988490   84554419     123414586  1.460         503743            1.922        100.0
+gen_tree_02                53.086469   84727465     122019333  1.440         540576            2.059        100.0
+gen_tree_2_00              71.061143  113392279     141361638  1.247         600170            1.970        100.0
+gen_tree_2_01              71.211642  113658722     141427913  1.244         599999            1.969        100.0
+gen_tree_2_02              70.996696  113316928     141231137  1.246         593944            1.951        100.0
+random_00                  13.072985   20853967      58742215  2.817          21083            0.164        100.0
+random_01                  25.408240   40544470      99799122  2.461         145239            0.679        100.0
+random_02                   7.162029   11417512      30137540  2.640          20041            0.306        100.0
+random_03                  17.277102   27565539      77083898  2.796          36860            0.219        100.0
+random_04                   2.226241    3538463       8159564  2.306           8409            0.467        100.0
+
+submissions/graph/dominatortree/nandhagk.cpp
+SHA-256: b253734b8bffd5efe505c0ddeab43287db32ef57e52ae2725280db7f78b87b4b
+Measured: bench/graph-polish-20261002/accepted-37 [nandhagk]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (gen_tree_2_00)        56.696467         -             -      -              -                -            -
+sum                       338.956495         -             -      -              -                -            -
+example_00                  1.077915   1706072       2454243  1.439           7118            1.263        100.0
+example_01                  1.055173   1669344       2449259  1.467           7072            1.257        100.0
+gen_tree_00                40.281881  64287527      89844108  1.398         475268            3.848        100.0
+gen_tree_01                40.691854  64941724      89986054  1.386         474759            3.836        100.0
+gen_tree_02                40.168810  64107169      89768750  1.400         474528            3.847        100.0
+gen_tree_2_00              56.696467  90472173     101387867  1.121         605617            4.366        100.0
+gen_tree_2_01              56.475543  90110363     101234825  1.123         609513            4.407        100.0
+gen_tree_2_02              56.563698  90246775     101210307  1.121         606398            4.385        100.0
+random_00                   8.959611  14288682      23887049  1.672          21377            0.639        100.0
+random_01                  18.104873  28887459      50247795  1.739         141107            1.997        100.0
+random_02                   5.250558   8365939      14756908  1.764          19903            0.893        100.0
+random_03                  11.727089  18706219      30999572  1.657          37157            0.871        100.0
+random_04                   1.903023   3021868       4713123  1.560           8589            1.002        100.0
+
+submissions/graph/dominatortree/nor.cpp
+SHA-256: 477d39364c6de411a11de43a2e8468cdcfb0ade01d24be99b1d3c2601984da33
+Measured: bench/graph-polish-20261002/accepted-37 [nor]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (gen_tree_2_02)        58.497694         -             -      -              -                -            -
+sum                       357.565943         -             -      -              -                -            -
+example_00                  4.220228   6721986       6987179  1.039           7326            0.471        100.0
+example_01                  4.218565   6719862       7000062  1.042           7305            0.468        100.0
+gen_tree_00                37.680544  60135654      79909994  1.329         534689            3.949        100.0
+gen_tree_01                37.911084  60503561      83601815  1.382         493570            3.458        100.0
+gen_tree_02                37.751744  60248939      79852744  1.325         533431            3.944        100.0
+gen_tree_2_00              58.117885  92740322      91288103  0.984         687020            4.566        100.0
+gen_tree_2_01              57.918571  92440932      91277963  0.987         688831            4.579        100.0
+gen_tree_2_02              58.497694  93349323      91370127  0.979         686371            4.555        100.0
+random_00                  12.811378  20437356      30737837  1.504          22648            0.333        100.0
+random_01                  19.560179  31210395      56635327  1.815         155571            1.361        100.0
+random_02                   8.267821  13184453      19932475  1.512          21460            0.503        100.0
+random_03                  15.475604  24677662      38128317  1.545          38831            0.463        100.0
+random_04                   5.134646   8182631       9500827  1.161           9239            0.435        100.0
+
+src/graph/dominatortree/main.cxx
+SHA-256: 8d74498010494d7e74cc6ab1fd8a13c96d24d1a766b3b3aeef09d2f99b64117a
+Measured: bench/graph-polish-20261002/accepted-37 [main]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (gen_tree_2_01)        51.702891         -             -      -              -                -            -
+sum                       302.785936         -             -      -              -                -            -
+example_00                  0.852057   1344676       1762393  1.311           5580            1.428        100.0
+example_01                  0.816459   1288168       1742947  1.353           5356            1.386        100.0
+gen_tree_00                39.175984  62521492      58380274  0.934         500989            6.118        100.0
+gen_tree_01                39.390969  62865769      60151004  0.957         466034            5.620        100.0
+gen_tree_02                39.303869  62696545      58610844  0.935         500453            6.069        100.0
+gen_tree_2_00              51.670203  82466754      69134744  0.838         645066            6.756        100.0
+gen_tree_2_01              51.702891  82494235      69188245  0.839         647126            6.772        100.0
+gen_tree_2_02              51.355733  81935552      69048337  0.843         639844            6.709        100.0
+random_00                   4.878578   7772356      12646900  1.627           7734            0.343        100.0
+random_01                  12.740401  20322694      28520588  1.403          10265            0.264        100.0
+random_02                   3.382642   5385131       8214280  1.525           7257            0.544        100.0
+random_03                   6.303983  10048643      16318485  1.624           8175            0.286        100.0
+random_04                   1.212167   1919575       2821345  1.470           6348            1.087        100.0

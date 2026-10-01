@@ -1,0 +1,152 @@
+2026-10-02 lenovo / Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+Two complete passes per binary; per case minimum task-clock; all counters from that same run.
+Unchanged binaries reuse their recorded passes; each section identifies its measurement batch.
+Cases: 12, including examples. Units: ms. No CPU pinning.
+Compiler: g++ (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2); rustc 1.98.1 (48a229cea 2026-09-01)
+Build host: fedora; glibc 2.43
+Environment: Linux 7.2.8-200.fc44.x86_64; affinity [0, 1, 2, 3]; stack 268435456 bytes; bench_env OK.
+cxx_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iinclude -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -nostdlib++ -static -lm -s
+cpp_flags.txt: -std=c++23 -DEVAL -DONLINE_JUDGE -Iac-library -include cassert -O3 -fwhole-program -fno-exceptions -fno-rtti -march=x86-64-v3 -fno-pie -no-pie -static -lgmp -s
+rust_flags.txt: -C opt-level=3 -C codegen-units=1 -C lto=fat -C panic=abort -C target-cpu=x86-64-v3 -C target-feature=+crt-static -C relocation-model=static -C link-arg=-Wl,-u,__cxa_thread_atexit_impl -C strip=symbols
+
+solution                                max (ms)       sum (ms)
+Anonymous                                107.901464     858.940009
+Kiffaz11                                 104.969078     886.578862
+Rohan_Kapri                               70.741320     549.375717
+learningstud                              53.081636     422.669365
+nandhagk                                  70.812589     547.478811
+main                                      51.373761     412.247495
+naive                                     83.375037     676.284567
+
+submissions/graph/scc/Anonymous.cpp
+SHA-256: 73540a7abbe959265d41e6c47a44f5720d7426313be664c5f178436e342a0f63
+Measured: bench/graph-polish-20261002/accepted-37 [Anonymous]
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_04)       107.901464          -             -      -              -                -            -
+sum                       858.940009          -             -      -              -                -            -
+example_00                  0.748539    1137365       1750932  1.539           5305            1.357        100.0
+large_cycle_00             66.890595  106762935     172363514  1.614         264884            0.697        100.0
+max_random_00             107.118177  170958108     246002323  1.439        1209983            2.258        100.0
+max_random_01             107.451926  171478615     246032586  1.435        1212320            2.262        100.0
+max_random_02             107.780676  172003878     246034134  1.430        1212005            2.262        100.0
+max_random_03             107.706909  171917298     246025174  1.431        1211659            2.261        100.0
+max_random_04             107.901464  172185688     246125646  1.429        1209860            2.256        100.0
+random_00                  80.111452  127850051     198636851  1.554        1054614            2.431        100.0
+random_01                  86.642819  138292596     213122511  1.541        1077201            2.334        100.0
+random_02                  39.530058   63087379     115315214  1.828         349732            1.303        100.0
+random_03                  21.434731   34202083      93266113  2.727          78685            0.434        100.0
+random_04                  25.622663   40887239      85121669  2.082         333551            1.896        100.0
+
+submissions/graph/scc/Kiffaz11.cpp
+SHA-256: c739054709ad07db30f699fdcd23cfcf97b9339d512b959edf04b5c2a1049e65
+Measured: bench/graph-polish-20261002/accepted-37 [Kiffaz11]
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)       104.969078          -             -      -              -                -            -
+sum                       886.578862          -             -      -              -                -            -
+example_00                  0.987198    1560898       2551058  1.634           6735            1.141        100.0
+large_cycle_00            101.769078  162437061     179155902  1.103         497466            1.833        100.0
+max_random_00             103.900585  165807490     261154187  1.575         984976            2.720        100.0
+max_random_01             104.969078  167527960     260972268  1.558         985113            2.724        100.0
+max_random_02             104.722352  167120362     260739250  1.560         986435            2.731        100.0
+max_random_03             104.412756  166658137     260692881  1.564         986340            2.732        100.0
+max_random_04             104.059868  166075981     261106935  1.572         986708            2.724        100.0
+random_00                  80.183348  127959794     207729533  1.623         843831            2.935        100.0
+random_01                  86.994514  138829537     230923999  1.663         871627            2.697        100.0
+random_02                  33.611969   53605652      91868677  1.714         331581            2.753        100.0
+random_03                  31.349703   50028923     134248401  2.683          68249            0.333        100.0
+random_04                  29.618413   47265906     105707957  2.236         271210            1.739        100.0
+
+submissions/graph/scc/Rohan_Kapri.cpp
+SHA-256: e19f3e816f63c6265fdeb863ed50990f10d092c2e8f0a2a1bf3c186da0ab34ea
+Measured: bench/graph-polish-20261002/accepted-37 [Rohan_Kapri]
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)        70.741320          -             -      -              -                -            -
+sum                       549.375717          -             -      -              -                -            -
+example_00                  0.797789    1258327       1878059  1.493           6055            1.433        100.0
+large_cycle_00             37.614918   60010994      66805691  1.113         150251            1.427        100.0
+max_random_00              70.741320  112909315     107928891  0.956         903487            4.749        100.0
+max_random_01              70.232327  112095781     107815705  0.962         906283            4.771        100.0
+max_random_02              70.434986  112419666     107855745  0.959         906900            4.769        100.0
+max_random_03              69.633161  111123071     107420890  0.967         902378            4.761        100.0
+max_random_04              69.721838  111280751     107369394  0.965         902412            4.763        100.0
+random_00                  50.706215   80927775      87162196  1.077         741181            4.834        100.0
+random_01                  54.750179   87381740      94401740  1.080         811632            4.822        100.0
+random_02                  24.703549   39419285      43785476  1.111         120706            2.016        100.0
+random_03                  13.423051   21413328      48898327  2.284          70574            0.750        100.0
+random_04                  16.616384   26509389      40127895  1.514         276544            3.690        100.0
+
+submissions/graph/scc/learningstud.cpp
+SHA-256: b62deb02a874be9e1e3f2eab4a129a1135c28f7f670891d34de12dd3f5274f1e
+Measured: bench/graph-polish-20261002/accepted-37 [learningstud]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_00)        53.081636         -             -      -              -                -            -
+sum                       422.669365         -             -      -              -                -            -
+example_00                  1.935350   3075231       3515288  1.143           6466            0.841        100.0
+large_cycle_00             28.820119  45975217      79102280  1.721          40059            0.556        100.0
+max_random_00              53.081636  84616085     108950919  1.288         869839            9.947        100.0
+max_random_01              52.902283  84314659     108874168  1.291         869536            9.957        100.0
+max_random_02              52.794650  84177457     108903047  1.294         869386            9.956        100.0
+max_random_03              52.511210  83723583     108822628  1.300         868872            9.949        100.0
+max_random_04              52.563530  83808797     108837902  1.299         869074            9.961        100.0
+random_00                  39.220598  62560485      88293749  1.411         695461            9.627        100.0
+random_01                  42.941348  68431061      94876696  1.386         763395           10.097        100.0
+random_02                  22.745437  36293727      45295346  1.248         188793            3.877        100.0
+random_03                  10.014236  15971165      37361762  2.339          56035            2.243        100.0
+random_04                  13.138968  20917279      38281510  1.830         211088            6.968        100.0
+
+submissions/graph/scc/nandhagk.cpp
+SHA-256: b1dc6980d20f4d1f5b9e74bf721574a829917c379c73010c052ae5a356c4e4f6
+Measured: bench/graph-polish-20261002/accepted-37 [nandhagk]
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_02)        70.812589          -             -      -              -                -            -
+sum                       547.478811          -             -      -              -                -            -
+example_00                  0.797978    1258622       1902788  1.512           6189            1.441        100.0
+large_cycle_00             37.613012   60026697      66823315  1.113         150079            1.425        100.0
+max_random_00              69.721352  111246792     107886393  0.970         903583            4.754        100.0
+max_random_01              69.436922  110810540     107793793  0.973         904585            4.763        100.0
+max_random_02              70.812589  113022805     107870189  0.954         904180            4.754        100.0
+max_random_03              69.454893  110823083     107357534  0.969         904910            4.779        100.0
+max_random_04              69.195370  110424464     107415166  0.973         903016            4.761        100.0
+random_00                  51.222597   81751327      87155002  1.066         742251            4.842        100.0
+random_01                  54.850936   87543679      94393284  1.078         815093            4.843        100.0
+random_02                  24.448223   38997135      43836276  1.124         120941            2.014        100.0
+random_03                  13.372250   21331740      48885589  2.292          70305            0.747        100.0
+random_04                  16.552689   26408135      40124600  1.519         277788            3.707        100.0
+
+src/graph/scc/main.cxx
+SHA-256: 9da682b857a51aece477ad9c1d10e215eb2c865f41acfa654012083bdb4c9a47
+Measured: bench/graph-polish-20261002/accepted-37 [main]
+case                 task-clock (ms)    cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_01)        51.373761         -             -      -              -                -            -
+sum                       412.247495         -             -      -              -                -            -
+example_00                  0.805235   1269252       1801897  1.420           5712            1.418        100.0
+large_cycle_00             25.927922  41357950      67488858  1.632          22112            0.275        100.0
+max_random_00              51.225469  81641060     107709060  1.319         842391            5.529        100.0
+max_random_01              51.373761  81881667     107595862  1.314         844420            5.555        100.0
+max_random_02              51.337300  81830640     107624946  1.315         841232            5.530        100.0
+max_random_03              50.811590  81011862     107541114  1.327         839727            5.525        100.0
+max_random_04              51.160044  81568033     107554997  1.319         838426            5.514        100.0
+random_00                  38.246019  61038203      86268687  1.413         684250            5.632        100.0
+random_01                  42.333325  67478581      94949532  1.407         741655            5.467        100.0
+random_02                  21.241461  33893060      41079398  1.212         138854            2.957        100.0
+random_03                  13.508516  21464931      51480920  2.398          55483            0.691        100.0
+random_04                  14.276853  22775579      43609231  1.915         210926            3.158        100.0
+
+src/graph/scc/naive.cxx
+SHA-256: 82795759ff534f82260d61bfa2f0819e705b43c85fac4314797a1378dfdc6021
+Measured: bench/graph-polish-20261002/accepted-37 [naive]
+case                 task-clock (ms)     cycles  instructions    IPC  branch-misses  branch-miss (%)  running (%)
+max (max_random_04)        83.375037          -             -      -              -                -            -
+sum                       676.284567          -             -      -              -                -            -
+example_00                  0.781601    1231071       1761250  1.431           5789            1.474        100.0
+large_cycle_00             64.014149  102170259      93748024  0.918          18010            0.141        100.0
+max_random_00              82.190128  131185066     146989966  1.120         827431            4.396        100.0
+max_random_01              83.022223  132512681     147011128  1.109         827566            4.395        100.0
+max_random_02              82.579248  131787800     146925855  1.115         825179            4.390        100.0
+max_random_03              82.657024  131928896     147030910  1.114         830369            4.409        100.0
+max_random_04              83.375037  133046208     146974074  1.105         826893            4.397        100.0
+random_00                  62.249758   99312450     117434685  1.182         662877            4.408        100.0
+random_01                  68.551866  109413414     130514618  1.193         729522            4.330        100.0
+random_02                  23.568750   37607797      50557704  1.344         113797            2.191        100.0
+random_03                  21.556181   34394834      80320864  2.335          56641            0.496        100.0
+random_04                  21.738602   34687285      62097901  1.790         201388            2.360        100.0

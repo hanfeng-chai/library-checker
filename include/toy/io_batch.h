@@ -1,6 +1,56 @@
 #pragma once
 #include <toy/io.h>
 namespace toy {
+// Three unsigned fields per line, bounded by 6/6/10 digits. Four independent
+// line streams overlap conversion dependencies; scratch rows are concatenated.
+template<class Record>void read_triple_rows(Reader& in,std::span<Record>output){
+    static_assert(std::is_trivially_copyable_v<Record>);
+    constexpr u32 Quarter=16384,Capacity=Quarter/6+5;Record scratch[3][Capacity];usize remaining=output.size();auto*dst=output.data();
+    auto row=[](Reader& r){return Record{r.read<u32,6>(),r.read<u32,6>(),r.read<u32,10>()};};
+    while(remaining>4*Quarter/6+5){Reader readers[4]{in,in,in,in};const char*end[4];Record*out[]{dst,scratch[0],scratch[1],scratch[2]};u32 count[4]{};
+        for(u32 j=0;j<4;++j){auto p=in.p+(j+1)*Quarter;while(*p!='\n')++p;end[j]=p+1;if(j)readers[j].p=end[j-1];}
+        for(;;){usize bytes=end[0]-readers[0].p;for(u32 j=1;j<4;++j)bytes=std::min(bytes,usize(end[j]-readers[j].p));usize steps=bytes/25;if(!steps)break;
+            do{
+                #pragma GCC unroll 4
+                for(u32 j=0;j<4;++j)out[j][count[j]++]=row(readers[j]);
+            }while(--steps);
+        }
+        usize used=0;for(u32 j=0;j<4;++j){while(readers[j].p<end[j])out[j][count[j]++]=row(readers[j]);if(j)memcpy(dst+used,out[j],count[j]*sizeof(*dst));used+=count[j];}dst+=used;remaining-=used;in.p=end[3];
+    }
+    while(remaining--)*dst++=row(in);
+}
+// Triples (u,v,w), with u,v < 10^6 and w < 10^10 fitting u32. Delimiter
+// positions make the three conversions independent of each other's cursor.
+template<class F>void read_triples(Reader& in,u32 count,F emit){
+    auto number=[](const char* p,u32 digits){u64 x;u32 tail=std::min(digits,8u);memcpy(&x,p+digits-tail,8);u32 value=io_detail::decimal8(x<<((8-tail)*8));
+        if(digits>8){u32 first=p[0]-'0';if(digits==10)first=first*10+p[1]-'0';value+=first*100000000;}return value;
+    };
+    u32 i=0;while(i<count){const char* block=in.p;auto zero=_mm256_set1_epi8('0');
+        u64 mask=u32(_mm256_movemask_epi8(_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)block),zero)));
+        mask|=u64(u32(_mm256_movemask_epi8(_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)(block+32)),zero))))<<32;
+        while(i<count){u64 second=mask&(mask-1),third=second&(second-1);if(!third)break;
+            const char* a=block+std::countr_zero(mask),*b=block+std::countr_zero(second),*c=block+std::countr_zero(third);mask=third&(third-1);
+            emit(i++,number(in.p,a-in.p),number(a+1,b-a-1),number(b+1,c-b-1));in.p=c+1;
+        }
+    }
+}
+// Decode pairs of <=6-digit tokens. One delimiter mask covers several pairs;
+// the callback can consume them directly without a full input array.
+template<class F>void read_pairs6(Reader& in,u32 count,F emit){
+    static constexpr auto shuffle=[] {
+        std::array<std::array<u8,16>,64> table{};
+        for(int a=1;a<=6;++a)for(int b=1;b<=6;++b){auto& t=table[a*8+b];t.fill(128);for(int j=0;j<a;++j)t[8-a+j]=j;for(int j=0;j<b;++j)t[16-b+j]=a+1+j;}return table;
+    }();
+    u32 i=0;while(i<count){const char* block=in.p;
+        auto zero=_mm256_set1_epi8('0');u64 mask=u32(_mm256_movemask_epi8(_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)block),zero)));
+        mask|=u64(u32(_mm256_movemask_epi8(_mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)(block+32)),zero))))<<32;
+        while(i<count&&(mask&(mask-1))){const char* space=block+std::countr_zero(mask);mask&=mask-1;const char* end=block+std::countr_zero(mask);mask&=mask-1;
+            u32 a=space-in.p,b=end-space-1;auto x=_mm_sub_epi8(_mm_loadu_si128((const __m128i*)in.p),_mm_set1_epi8('0'));
+            x=_mm_shuffle_epi8(x,_mm_loadu_si128((const __m128i*)shuffle[a*8+b].data()));x=_mm_maddubs_epi16(x,_mm_set1_epi16(0x010a));x=_mm_madd_epi16(x,_mm_set1_epi32(0x00010064));x=_mm_madd_epi16(_mm_packus_epi32(x,x),_mm_set1_epi32(0x00012710));
+            emit(i++,u32(_mm_cvtsi128_si32(x)),u32(_mm_extract_epi32(x,1)));in.p=end+1;
+        }
+    }
+}
 // Unsigned tokens separated by exactly one space/newline, as with Reader.
 template<class T,int Digits,int Chunk=16384>
 void read_bulk(Reader& in,std::span<T> output){
@@ -142,4 +192,19 @@ template<usize N> void write_bulk9(Writer<N>& out,std::span<const u32> a){
     for(;i+8<=a.size();i+=8){if(out.buf+N-out.p<86)out.flush();bulk_detail::blocks3<1>(a.data()+i,out.p);out.p+=80;}
     for(;i<a.size();++i)out.write(a[i],' ');
 }
+// Canonical decimal output for x<10^6: one leading group and three fixed digits.
+template<usize N> [[gnu::always_inline]] inline char* format6(char* p,u32 x,char end){
+    u32 high=x/1000,low=x-high*1000;
+    if(high){p=Writer<N>::leading(p,high);u32 digits=std::bit_cast<u32>(io_detail::digits[low])>>8;memcpy(p,&digits,4);p+=3;}
+    else p=Writer<N>::leading(p,x);
+    *p++=end;return p;
+}
+template<usize N> [[gnu::always_inline]] inline void write6(Writer<N>& out,u32 x,char end='\n'){
+    if(out.buf+N-out.p<8)out.flush();out.p=format6<N>(out.p,x,end);
+}
+template<usize N,class T,usize Extent>void write_bulk6(Writer<N>& out,std::span<T,Extent> values,char end=' '){
+    for(usize i=0;i<values.size();){usize stop=std::min(values.size(),i+usize(out.buf+N-out.p)/8);if(stop==i){out.flush();continue;}
+        char* p=out.p;for(;i<stop;++i)p=format6<N>(p,values[i],end);out.p=p;}
+}
+
 }
