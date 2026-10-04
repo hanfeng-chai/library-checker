@@ -8,16 +8,18 @@ struct FFT {
     Buffer<u64> points, scratch;
     explicit FFT(usize size) : points(size), scratch(2 * size) {
         for (int k = 2; (usize(1) << k) <= size; ++k) {
-            u64* p = points.p + (usize(1) << (k - 1));
+            u64 *p = points.p + (usize(1) << (k - 1));
             p[0] = 0;
             for (int j = 0; j < k - 1; ++j)
                 for (usize i = 0; i < (usize(1) << j); ++i)
                     p[(usize(1) << j) + i] = p[i] ^ chain[64 - k + j];
         }
     }
-    template<bool Inverse> static void shift(u64* f, usize n) {
+    template <bool Inverse>
+    static void shift(u64 *f, usize n) {
         // Convert between powers of x and the two parity parts in x^2+x.
-        for (usize len = Inverse ? 1 : n / 4; len && 4 * len <= n; len = Inverse ? len * 2 : len / 2)
+        for (usize len = Inverse ? 1 : n / 4; len && 4 * len <= n;
+             len = Inverse ? len * 2 : len / 2)
             for (usize s = 0; s < n; s += 4 * len)
                 for (usize i = 0; i < len; ++i) {
                     u64 b = f[s + len + i], c = f[s + 2 * len + i], d = f[s + 3 * len + i];
@@ -25,14 +27,17 @@ struct FFT {
                     f[s + 2 * len + i] = c ^ d;
                 }
     }
-    template<bool Inverse>
-    [[gnu::target("pclmul")]] void transform(u64* f, usize n, u64* work) const {
+    template <bool Inverse>
+    [[gnu::target("pclmul")]] void transform(u64 *f, usize n, u64 *work) const {
         if (n == 1) return;
-        if (n == 2) { f[1] ^= f[0]; return; }
+        if (n == 2) {
+            f[1] ^= f[0];
+            return;
+        }
         usize half = n / 2;
-        const u64* p = points.p + half;
-        u64* even = work;
-        u64* odd = work + half;
+        const u64 *p = points.p + half;
+        u64 *even = work;
+        u64 *odd = work + half;
         if constexpr (!Inverse) {
             shift<false>(f, n);
             for (usize i = 0; i < half; ++i) even[i] = f[2 * i], odd[i] = f[2 * i + 1];
@@ -55,7 +60,7 @@ struct FFT {
         }
     }
 };
-}
+} // namespace gf64_detail
 
 // Ordinary polynomial-basis field elements. Consumes both buffers.
 [[gnu::target("pclmul")]] inline Buffer<u64> convolution_gf64(Buffer<u64> a, Buffer<u64> b) {
@@ -66,7 +71,8 @@ struct FFT {
         a.resize(count);
         for (usize k = count; k--;) {
             u64 sum = 0;
-            for (usize j = k < na ? 0 : k - na + 1; j < std::min(nb, k + 1); ++j) sum ^= gf64_mul(a[k - j], b[j]);
+            for (usize j = k < na ? 0 : k - na + 1; j < std::min(nb, k + 1); ++j)
+                sum ^= gf64_mul(a[k - j], b[j]);
             a[k] = sum;
         }
         return a;
@@ -81,7 +87,8 @@ struct FFT {
         for (usize i = 0; i < nb; ++i) c[na - 1 + i] ^= tail[i];
         return c;
     }
-    a.resize(size); b.resize(size);
+    a.resize(size);
+    b.resize(size);
     gf64_detail::FFT fft(size);
     fft.transform<false>(a.p, size, fft.scratch.p);
     fft.transform<false>(b.p, size, fft.scratch.p);
@@ -90,4 +97,4 @@ struct FFT {
     a.n = count;
     return a;
 }
-}
+} // namespace toy

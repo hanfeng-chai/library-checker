@@ -4,8 +4,8 @@
 
 namespace toy {
 
-template<unsigned KeyBits = 32, unsigned RadixBits = 16,
-         std::random_access_iterator Iterator, class Key>
+template <unsigned KeyBits = 32, unsigned RadixBits = 16, std::random_access_iterator Iterator,
+          class Key>
 void radix_sort_u32(Iterator first, Iterator last, Key key) {
     static_assert(1 <= RadixBits && RadixBits <= 16);
     static_assert(RadixBits < KeyBits && KeyBits <= 2 * RadixBits);
@@ -15,17 +15,16 @@ void radix_sort_u32(Iterator first, Iterator last, Key key) {
 
     std::size_t count = last - first;
     if (count < bucket_count / 8) {
-        std::stable_sort(first, last, [&](const Value& left, const Value& right) {
+        std::stable_sort(first, last, [&](const Value &left, const Value &right) {
             return key(left) < key(right);
         });
         return;
     }
 
     std::array<uint32_t, bucket_count> low_count{}, high_count{};
-    for (const Value& value : std::ranges::subrange(first, last)) {
+    for (const Value &value : std::ranges::subrange(first, last)) {
         uint32_t current = key(value);
-        if constexpr (KeyBits < 32)
-            assert(current < (uint32_t(1) << KeyBits));
+        if constexpr (KeyBits < 32) assert(current < (uint32_t(1) << KeyBits));
         ++low_count[current & mask];
         ++high_count[(current >> RadixBits) & mask];
     }
@@ -41,13 +40,12 @@ void radix_sort_u32(Iterator first, Iterator last, Key key) {
     }
     for (std::size_t i = count; i--;) {
         uint32_t current = key(temporary[i]);
-        first[--high_count[(current >> RadixBits) & mask]] =
-            std::move(temporary[i]);
+        first[--high_count[(current >> RadixBits) & mask]] = std::move(temporary[i]);
     }
 }
 
-template<unsigned KeyBits = 64, unsigned RadixBits = 16,
-         std::random_access_iterator Iterator, class Key>
+template <unsigned KeyBits = 64, unsigned RadixBits = 16, std::random_access_iterator Iterator,
+          class Key>
 void radix_sort_u64(Iterator first, Iterator last, Key key) {
     static_assert(1 <= RadixBits && RadixBits <= 16);
     static_assert(RadixBits < KeyBits && KeyBits <= 64);
@@ -58,7 +56,7 @@ void radix_sort_u64(Iterator first, Iterator last, Key key) {
 
     std::size_t count = last - first;
     if (count < bucket_count / 8) {
-        std::stable_sort(first, last, [&](const Value& left, const Value& right) {
+        std::stable_sort(first, last, [&](const Value &left, const Value &right) {
             return key(left) < key(right);
         });
         return;
@@ -70,27 +68,21 @@ void radix_sort_u64(Iterator first, Iterator last, Key key) {
         unsigned shift = pass * RadixBits;
         std::array<uint32_t, bucket_count> frequencies{};
         if (!in_temporary) {
-            for (std::size_t i = 0; i < count; ++i)
-                ++frequencies[key(first[i]) >> shift & mask];
+            for (std::size_t i = 0; i < count; ++i) ++frequencies[key(first[i]) >> shift & mask];
         } else {
-            for (const Value& value : temporary)
-                ++frequencies[key(value) >> shift & mask];
+            for (const Value &value : temporary) ++frequencies[key(value) >> shift & mask];
         }
-        for (uint32_t i = 1; i < bucket_count; ++i)
-            frequencies[i] += frequencies[i - 1];
+        for (uint32_t i = 1; i < bucket_count; ++i) frequencies[i] += frequencies[i - 1];
         if (!in_temporary) {
             for (std::size_t i = count; i--;)
-                temporary[--frequencies[key(first[i]) >> shift & mask]] =
-                    std::move(first[i]);
+                temporary[--frequencies[key(first[i]) >> shift & mask]] = std::move(first[i]);
         } else {
             for (std::size_t i = count; i--;)
-                first[--frequencies[key(temporary[i]) >> shift & mask]] =
-                    std::move(temporary[i]);
+                first[--frequencies[key(temporary[i]) >> shift & mask]] = std::move(temporary[i]);
         }
         in_temporary = !in_temporary;
     }
-    if (in_temporary)
-        std::move(temporary.begin(), temporary.end(), first);
+    if (in_temporary) std::move(temporary.begin(), temporary.end(), first);
 }
 
 } // namespace toy

@@ -17,16 +17,16 @@ struct OfflineFrequencyEvent {
         return {value, position, 0, -1, delta};
     }
 
-    static OfflineFrequencyEvent query(
-        int value, int left, int right, int answer) {
+    static OfflineFrequencyEvent query(int value, int left, int right, int answer) {
         return {value, left, right, answer, 0};
     }
 };
 
-inline std::vector<int> offline_point_value_frequencies(
-    int value_count, std::span<const int> initial_values,
-    std::span<const int> final_values,
-    std::vector<OfflineFrequencyEvent> events, int answer_count) {
+inline std::vector<int> offline_point_value_frequencies(int value_count,
+                                                        std::span<const int> initial_values,
+                                                        std::span<const int> final_values,
+                                                        std::vector<OfflineFrequencyEvent> events,
+                                                        int answer_count) {
     struct Position {
         int value;
         int index;
@@ -41,33 +41,27 @@ inline std::vector<int> offline_point_value_frequencies(
         final_positions.push_back({final_values[i], i});
     }
     CsrBuckets initial(value_count, std::move(initial_positions),
-                       [](const Position& item) { return item.value; });
+                       [](const Position &item) { return item.value; });
     CsrBuckets final(value_count, std::move(final_positions),
-                     [](const Position& item) { return item.value; });
-    CsrBuckets grouped_events(
-        value_count, std::move(events),
-        [](const OfflineFrequencyEvent& event) { return event.value; });
+                     [](const Position &item) { return item.value; });
+    CsrBuckets grouped_events(value_count, std::move(events),
+                              [](const OfflineFrequencyEvent &event) { return event.value; });
 
     FenwickBitset frequencies((int)initial_values.size());
     std::vector<int> answers(answer_count);
     for (int value = 0; value < value_count; ++value) {
-        std::span<const OfflineFrequencyEvent> value_events =
-            grouped_events[value];
+        std::span<const OfflineFrequencyEvent> value_events = grouped_events[value];
         bool queried = std::ranges::any_of(
-            value_events,
-            [](const OfflineFrequencyEvent& event) { return !event.delta; });
+            value_events, [](const OfflineFrequencyEvent &event) { return !event.delta; });
         if (!queried) continue;
-        for (const Position& item : initial[value])
-            frequencies.set(item.index, true);
-        for (const OfflineFrequencyEvent& event : value_events) {
+        for (const Position &item : initial[value]) frequencies.set(item.index, true);
+        for (const OfflineFrequencyEvent &event : value_events) {
             if (event.delta)
                 frequencies.set(event.first, event.delta > 0);
             else
-                answers[event.answer] =
-                    frequencies.count(event.first, event.second);
+                answers[event.answer] = frequencies.count(event.first, event.second);
         }
-        for (const Position& item : final[value])
-            frequencies.set(item.index, false);
+        for (const Position &item : final[value]) frequencies.set(item.index, false);
     }
     return answers;
 }

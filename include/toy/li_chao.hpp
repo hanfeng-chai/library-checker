@@ -19,9 +19,7 @@ struct CompactLine {
     int32_t slope = 0;
     int64_t intercept = infinity;
 
-    int64_t operator()(int32_t x) const {
-        return (int64_t)slope * x + intercept;
-    }
+    int64_t operator()(int32_t x) const { return (int64_t)slope * x + intercept; }
 };
 
 class IndexedLiChaoTree {
@@ -40,11 +38,10 @@ class IndexedLiChaoTree {
 
         while (true) {
             if (left + 1 == right) {
-                leaf_values[left] =
-                    std::min(leaf_values[left], line_left);
+                leaf_values[left] = std::min(leaf_values[left], line_left);
                 return;
             }
-            CompactLine& current = lines[node];
+            CompactLine &current = lines[node];
             int64_t current_left = current(coordinates[left]);
             int64_t current_right = current(coordinates[right]);
             if (line_left < current_left) {
@@ -89,19 +86,13 @@ class IndexedLiChaoTree {
         }
     }
 
-public:
-    explicit IndexedLiChaoTree(
-        std::vector<int32_t> sorted_coordinates,
-        int32_t padding_coordinate = 1'000'000'005)
-        : count(sorted_coordinates.size()),
-          size(std::bit_ceil((unsigned)std::max(count, 1))),
-          height(std::countr_zero((unsigned)size)),
-          coordinates(size + 1, padding_coordinate),
-          lines(2 * size),
-          leaf_values(size, CompactLine::infinity) {
-        std::copy(
-            sorted_coordinates.begin(), sorted_coordinates.end(),
-            coordinates.begin());
+  public:
+    explicit IndexedLiChaoTree(std::vector<int32_t> sorted_coordinates,
+                               int32_t padding_coordinate = 1'000'000'005)
+        : count(sorted_coordinates.size()), size(std::bit_ceil((unsigned)std::max(count, 1))),
+          height(std::countr_zero((unsigned)size)), coordinates(size + 1, padding_coordinate),
+          lines(2 * size), leaf_values(size, CompactLine::infinity) {
+        std::copy(sorted_coordinates.begin(), sorted_coordinates.end(), coordinates.begin());
     }
 
     void add(CompactLine line) {
@@ -112,8 +103,7 @@ public:
         if (left >= right) return;
         int left_path = left + size - 1;
         int right_path = right + size;
-        unsigned width =
-            std::bit_width((unsigned)(left_path ^ right_path)) - 1;
+        unsigned width = std::bit_width((unsigned)(left_path ^ right_path)) - 1;
         unsigned mask = (unsigned(1) << width) - 1;
 
         unsigned remaining = ~unsigned(left_path) & mask;
@@ -133,8 +123,7 @@ public:
     int64_t minimum(int index) const {
         int64_t result = leaf_values[index];
         int32_t x = coordinates[index];
-        for (int node = index + size; node >>= 1;)
-            result = std::min(result, lines[node](x));
+        for (int node = index + size; node >>= 1;) result = std::min(result, lines[node](x));
         return result;
     }
 };
@@ -149,11 +138,12 @@ class DiscreteLiChaoTree {
         bool better_middle = line(xs[middle]) < tree[node](xs[middle]);
         if (better_middle) std::swap(line, tree[node]);
         if (right - left == 1) return;
-        if (better_left != better_middle) add(node * 2, left, middle, line);
-        else add(node * 2 + 1, middle, right, line);
+        if (better_left != better_middle)
+            add(node * 2, left, middle, line);
+        else
+            add(node * 2 + 1, middle, right, line);
     }
-    void add_segment(int node, int left, int right, int query_left,
-                     int query_right, Line line) {
+    void add_segment(int node, int left, int right, int query_left, int query_right, Line line) {
         if (query_right <= left || right <= query_left) return;
         if (query_left <= left && right <= query_right) {
             add(node, left, right, line);
@@ -164,7 +154,7 @@ class DiscreteLiChaoTree {
         add_segment(node * 2 + 1, middle, right, query_left, query_right, line);
     }
 
-public:
+  public:
     explicit DiscreteLiChaoTree(std::vector<int64_t> coordinates)
         : xs(std::move(coordinates)), tree(4 * std::max<std::size_t>(xs.size(), 1)) {
         std::sort(xs.begin(), xs.end());
@@ -176,8 +166,7 @@ public:
     void add_segment(int64_t left, int64_t right, Line line) {
         int query_left = std::lower_bound(xs.begin(), xs.end(), left) - xs.begin();
         int query_right = std::lower_bound(xs.begin(), xs.end(), right) - xs.begin();
-        if (query_left < query_right)
-            add_segment(1, 0, xs.size(), query_left, query_right, line);
+        if (query_left < query_right) add_segment(1, 0, xs.size(), query_left, query_right, line);
     }
     int64_t minimum(int64_t x) const {
         int index = std::lower_bound(xs.begin(), xs.end(), x) - xs.begin();
@@ -187,8 +176,10 @@ public:
             result = std::min(result, tree[node](x));
             if (right - left == 1) return result;
             int middle = (left + right) / 2;
-            if (index < middle) node *= 2, right = middle;
-            else node = node * 2 + 1, left = middle;
+            if (index < middle)
+                node *= 2, right = middle;
+            else
+                node = node * 2 + 1, left = middle;
         }
     }
 };
@@ -212,25 +203,31 @@ class DynamicLiChaoTree {
         int child = better_left != better_middle ? nodes[node].left : nodes[node].right;
         if (!child) {
             child = nodes.size();
-            if (better_left != better_middle) nodes[node].left = child;
-            else nodes[node].right = child;
+            if (better_left != better_middle)
+                nodes[node].left = child;
+            else
+                nodes[node].right = child;
             nodes.push_back({});
         }
-        if (better_left != better_middle) add(child, left, middle, line);
-        else add(child, middle, right, line);
+        if (better_left != better_middle)
+            add(child, left, middle, line);
+        else
+            add(child, middle, right, line);
     }
     int ensure_child(int node, bool right_child) {
         int child = right_child ? nodes[node].right : nodes[node].left;
         if (!child) {
             child = nodes.size();
-            if (right_child) nodes[node].right = child;
-            else nodes[node].left = child;
+            if (right_child)
+                nodes[node].right = child;
+            else
+                nodes[node].left = child;
             nodes.push_back({});
         }
         return child;
     }
-    void add_segment(int node, int64_t left, int64_t right, int64_t query_left,
-                     int64_t query_right, Line line) {
+    void add_segment(int node, int64_t left, int64_t right, int64_t query_left, int64_t query_right,
+                     Line line) {
         if (query_right <= left || right <= query_left) return;
         if (query_left <= left && right <= query_right) {
             add(node, left, right, line);
@@ -238,14 +235,12 @@ class DynamicLiChaoTree {
         }
         int64_t middle = std::midpoint(left, right);
         if (query_left < middle)
-            add_segment(ensure_child(node, false), left, middle,
-                        query_left, query_right, line);
+            add_segment(ensure_child(node, false), left, middle, query_left, query_right, line);
         if (middle < query_right)
-            add_segment(ensure_child(node, true), middle, right,
-                        query_left, query_right, line);
+            add_segment(ensure_child(node, true), middle, right, query_left, query_right, line);
     }
 
-public:
+  public:
     explicit DynamicLiChaoTree(std::size_t lines = 0) { nodes.reserve(lines * 16); }
     void add(Line line) { add(1, lower, upper, line); }
     void add_segment(int64_t left, int64_t right, Line line) {
@@ -258,8 +253,10 @@ public:
         while (node) {
             result = std::min(result, nodes[node].line(x));
             int64_t middle = std::midpoint(left, right);
-            if (x < middle) node = nodes[node].left, right = middle;
-            else node = nodes[node].right, left = middle;
+            if (x < middle)
+                node = nodes[node].left, right = middle;
+            else
+                node = nodes[node].right, left = middle;
         }
         return result;
     }

@@ -5,7 +5,7 @@
 
 namespace toy {
 
-template<class T>
+template <class T>
 class OfflinePersistentQueue {
     struct Operation {
         int next;
@@ -17,16 +17,15 @@ class OfflinePersistentQueue {
     std::vector<Operation> operations;
     int answer_count = 0;
 
-    void visit(int version, std::vector<T>& buffer, int& front, int& back,
-               std::vector<T>& answers) const {
-        const Operation& operation = operations[version - 1];
+    void visit(int version, std::vector<T> &buffer, int &front, int &back,
+               std::vector<T> &answers) const {
+        const Operation &operation = operations[version - 1];
         if (operation.answer < 0)
             buffer[back++] = operation.value;
         else
             answers[operation.answer] = buffer[front++];
 
-        for (int child = first_child[version]; child;
-             child = operations[child - 1].next)
+        for (int child = first_child[version]; child; child = operations[child - 1].next)
             visit(child, buffer, front, back, answers);
 
         if (operation.answer < 0)
@@ -35,9 +34,8 @@ class OfflinePersistentQueue {
             buffer[--front] = answers[operation.answer];
     }
 
-public:
-    explicit OfflinePersistentQueue(int operation_count)
-        : first_child(operation_count + 1) {
+  public:
+    explicit OfflinePersistentQueue(int operation_count) : first_child(operation_count + 1) {
         operations.reserve(operation_count);
     }
 
@@ -49,8 +47,7 @@ public:
 
     void pop(int base_version) {
         int version = operations.size() + 1;
-        operations.push_back(
-            {first_child[base_version], answer_count++, T{}});
+        operations.push_back({first_child[base_version], answer_count++, T{}});
         first_child[base_version] = version;
     }
 
@@ -59,27 +56,26 @@ public:
         std::vector<T> answers(answer_count);
         int front = 0;
         int back = 0;
-        for (int version = first_child[0]; version;
-             version = operations[version - 1].next)
+        for (int version = first_child[0]; version; version = operations[version - 1].next)
             visit(version, buffer, front, back, answers);
         return answers;
     }
 };
 
-template<class T, unsigned Levels>
+template <class T, unsigned Levels>
 class PersistentQueue {
     struct Node {
         T value{};
         std::array<int, Levels> ancestor{};
     };
 
-public:
+  public:
     struct Version {
         int back = 0;
         int size = 0;
     };
 
-private:
+  private:
     std::vector<Node> nodes{{}};
 
     int ancestor(int node, int distance) const {
@@ -88,18 +84,15 @@ private:
         return node;
     }
 
-public:
-    explicit PersistentQueue(std::size_t capacity = 0) {
-        nodes.reserve(capacity + 1);
-    }
+  public:
+    explicit PersistentQueue(std::size_t capacity = 0) { nodes.reserve(capacity + 1); }
 
     Version push(Version version, T value) {
         Node node;
         node.value = value;
         node.ancestor[0] = version.back;
         for (unsigned level = 1; level < Levels; ++level)
-            node.ancestor[level] =
-                nodes[node.ancestor[level - 1]].ancestor[level - 1];
+            node.ancestor[level] = nodes[node.ancestor[level - 1]].ancestor[level - 1];
         nodes.push_back(node);
         return {(int)nodes.size() - 1, version.size + 1};
     }
@@ -123,23 +116,20 @@ class OfflinePersistentUnionFind {
     std::vector<Operation> operations;
     int answer_count = 0;
 
-    void visit(int version, RollbackUnionFind& dsu,
-               std::vector<int>& answers) const {
-        const Operation& operation = operations[version - 1];
+    void visit(int version, RollbackUnionFind &dsu, std::vector<int> &answers) const {
+        const Operation &operation = operations[version - 1];
         if (operation.answer < 0)
             dsu.merge(operation.first, operation.second);
         else
-            answers[operation.answer] =
-                dsu.same(operation.first, operation.second);
+            answers[operation.answer] = dsu.same(operation.first, operation.second);
 
-        for (int child = first_child[version]; child;
-             child = operations[child - 1].next)
+        for (int child = first_child[version]; child; child = operations[child - 1].next)
             visit(child, dsu, answers);
 
         if (operation.answer < 0) dsu.undo();
     }
 
-public:
+  public:
     OfflinePersistentUnionFind(int vertices, int operation_count)
         : vertex_count(vertices), first_child(operation_count + 1) {
         operations.reserve(operation_count);
@@ -147,23 +137,20 @@ public:
 
     void merge(int base_version, int first, int second) {
         int version = operations.size() + 1;
-        operations.push_back(
-            {first_child[base_version], first, second, -1});
+        operations.push_back({first_child[base_version], first, second, -1});
         first_child[base_version] = version;
     }
 
     void same(int base_version, int first, int second) {
         int version = operations.size() + 1;
-        operations.push_back(
-            {first_child[base_version], first, second, answer_count++});
+        operations.push_back({first_child[base_version], first, second, answer_count++});
         first_child[base_version] = version;
     }
 
     std::vector<int> solve() const {
         RollbackUnionFind dsu(vertex_count, operations.size());
         std::vector<int> answers(answer_count);
-        for (int version = first_child[0]; version;
-             version = operations[version - 1].next)
+        for (int version = first_child[0]; version; version = operations[version - 1].next)
             visit(version, dsu, answers);
         return answers;
     }
@@ -202,7 +189,7 @@ class PersistentUnionFind {
         return copy;
     }
 
-public:
+  public:
     explicit PersistentUnionFind(int n, std::size_t updates = 0)
         : size(std::bit_ceil((unsigned)n)) {
         nodes.reserve(1 + updates * 2 * std::bit_width((unsigned)size));
@@ -233,7 +220,7 @@ public:
     }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class PersistentAffineArray {
     struct Node {
         int left = 0;
@@ -256,153 +243,109 @@ class PersistentAffineArray {
         return nodes.size() - 1;
     }
 
-    int build(const std::vector<uint32_t>& values, int left, int right) {
-        if (right - left == 1)
-            return make_node({.sum = values[left]});
+    int build(const std::vector<uint32_t> &values, int left, int right) {
+        if (right - left == 1) return make_node({.sum = values[left]});
         int middle = (left + right) / 2;
         int left_child = build(values, left, middle);
         int right_child = build(values, middle, right);
         return make_node(
-            {left_child, right_child,
-             add(nodes[left_child].sum, nodes[right_child].sum)});
+            {left_child, right_child, add(nodes[left_child].sum, nodes[right_child].sum)});
     }
 
     int transform(int old, int length, uint32_t a, uint32_t b) {
         if (a == 1 && b == 0) return old;
         Node node = nodes[old];
-        node.sum =
-            ((uint64_t)a * node.sum + (uint64_t)b * length) % Mod;
+        node.sum = ((uint64_t)a * node.sum + (uint64_t)b * length) % Mod;
         node.a = (uint64_t)a * node.a % Mod;
         node.b = ((uint64_t)a * node.b + b) % Mod;
         return make_node(node);
     }
 
     int merge(int left, int right) {
-        return make_node(
-            {left, right, add(nodes[left].sum, nodes[right].sum)});
+        return make_node({left, right, add(nodes[left].sum, nodes[right].sum)});
     }
 
-    int range_apply(int old, int left, int right, int query_left,
-                    int query_right, uint32_t after_a, uint32_t after_b,
-                    uint32_t update_a, uint32_t update_b) {
+    int range_apply(int old, int left, int right, int query_left, int query_right, uint32_t after_a,
+                    uint32_t after_b, uint32_t update_a, uint32_t update_b) {
         int length = right - left;
         if (query_right <= left || right <= query_left)
             return transform(old, length, after_a, after_b);
         if (query_left <= left && right <= query_right) {
-            uint32_t combined_a =
-                (uint64_t)update_a * after_a % Mod;
-            uint32_t combined_b =
-                ((uint64_t)update_a * after_b + update_b) % Mod;
+            uint32_t combined_a = (uint64_t)update_a * after_a % Mod;
+            uint32_t combined_b = ((uint64_t)update_a * after_b + update_b) % Mod;
             return transform(old, length, combined_a, combined_b);
         }
 
         Node node = nodes[old];
         uint32_t next_a = (uint64_t)after_a * node.a % Mod;
-        uint32_t next_b =
-            ((uint64_t)after_a * node.b + after_b) % Mod;
+        uint32_t next_b = ((uint64_t)after_a * node.b + after_b) % Mod;
         int middle = (left + right) / 2;
-        int left_child = range_apply(
-            node.left, left, middle, query_left, query_right,
-            next_a, next_b, update_a, update_b);
-        int right_child = range_apply(
-            node.right, middle, right, query_left, query_right,
-            next_a, next_b, update_a, update_b);
+        int left_child = range_apply(node.left, left, middle, query_left, query_right, next_a,
+                                     next_b, update_a, update_b);
+        int right_child = range_apply(node.right, middle, right, query_left, query_right, next_a,
+                                      next_b, update_a, update_b);
         return merge(left_child, right_child);
     }
 
-    int range_copy(int destination, int source, int left, int right,
-                   int query_left, int query_right,
-                   uint32_t destination_after_a,
-                   uint32_t destination_after_b,
-                   uint32_t source_after_a,
-                   uint32_t source_after_b) {
+    int range_copy(int destination, int source, int left, int right, int query_left,
+                   int query_right, uint32_t destination_after_a, uint32_t destination_after_b,
+                   uint32_t source_after_a, uint32_t source_after_b) {
         int length = right - left;
         if (query_right <= left || right <= query_left)
-            return transform(
-                destination, length,
-                destination_after_a, destination_after_b);
+            return transform(destination, length, destination_after_a, destination_after_b);
         if (query_left <= left && right <= query_right)
-            return transform(
-                source, length, source_after_a, source_after_b);
+            return transform(source, length, source_after_a, source_after_b);
 
         Node destination_node = nodes[destination];
         Node source_node = nodes[source];
-        uint32_t next_destination_a =
-            (uint64_t)destination_after_a * destination_node.a % Mod;
+        uint32_t next_destination_a = (uint64_t)destination_after_a * destination_node.a % Mod;
         uint32_t next_destination_b =
-            ((uint64_t)destination_after_a * destination_node.b +
-             destination_after_b) %
-            Mod;
-        uint32_t next_source_a =
-            (uint64_t)source_after_a * source_node.a % Mod;
-        uint32_t next_source_b =
-            ((uint64_t)source_after_a * source_node.b +
-             source_after_b) %
-            Mod;
+            ((uint64_t)destination_after_a * destination_node.b + destination_after_b) % Mod;
+        uint32_t next_source_a = (uint64_t)source_after_a * source_node.a % Mod;
+        uint32_t next_source_b = ((uint64_t)source_after_a * source_node.b + source_after_b) % Mod;
         int middle = (left + right) / 2;
-        int left_child = range_copy(
-            destination_node.left, source_node.left, left, middle,
-            query_left, query_right,
-            next_destination_a, next_destination_b,
-            next_source_a, next_source_b);
-        int right_child = range_copy(
-            destination_node.right, source_node.right, middle, right,
-            query_left, query_right,
-            next_destination_a, next_destination_b,
-            next_source_a, next_source_b);
+        int left_child = range_copy(destination_node.left, source_node.left, left, middle,
+                                    query_left, query_right, next_destination_a, next_destination_b,
+                                    next_source_a, next_source_b);
+        int right_child = range_copy(destination_node.right, source_node.right, middle, right,
+                                     query_left, query_right, next_destination_a,
+                                     next_destination_b, next_source_a, next_source_b);
         return merge(left_child, right_child);
     }
 
-    uint32_t fold(int node, int left, int right, int query_left,
-                  int query_right, uint32_t after_a,
+    uint32_t fold(int node, int left, int right, int query_left, int query_right, uint32_t after_a,
                   uint32_t after_b) const {
         if (query_left <= left && right <= query_right)
-            return ((uint64_t)after_a * nodes[node].sum +
-                    (uint64_t)after_b * (right - left)) %
-                   Mod;
+            return ((uint64_t)after_a * nodes[node].sum + (uint64_t)after_b * (right - left)) % Mod;
 
-        const Node& current = nodes[node];
+        const Node &current = nodes[node];
         uint32_t next_a = (uint64_t)after_a * current.a % Mod;
-        uint32_t next_b =
-            ((uint64_t)after_a * current.b + after_b) % Mod;
+        uint32_t next_b = ((uint64_t)after_a * current.b + after_b) % Mod;
         int middle = (left + right) / 2;
         if (query_right <= middle)
-            return fold(
-                current.left, left, middle, query_left, query_right,
-                next_a, next_b);
+            return fold(current.left, left, middle, query_left, query_right, next_a, next_b);
         if (middle <= query_left)
-            return fold(
-                current.right, middle, right, query_left, query_right,
-                next_a, next_b);
-        return add(
-            fold(current.left, left, middle, query_left, query_right,
-                 next_a, next_b),
-            fold(current.right, middle, right, query_left, query_right,
-                 next_a, next_b));
+            return fold(current.right, middle, right, query_left, query_right, next_a, next_b);
+        return add(fold(current.left, left, middle, query_left, query_right, next_a, next_b),
+                   fold(current.right, middle, right, query_left, query_right, next_a, next_b));
     }
 
-public:
-    explicit PersistentAffineArray(
-        const std::vector<uint32_t>& values,
-        std::size_t reserve_nodes = 0)
+  public:
+    explicit PersistentAffineArray(const std::vector<uint32_t> &values,
+                                   std::size_t reserve_nodes = 0)
         : size(values.size()) {
-        nodes.reserve(std::max<std::size_t>(
-            2 * values.size() + 1, reserve_nodes));
+        nodes.reserve(std::max<std::size_t>(2 * values.size() + 1, reserve_nodes));
         root = build(values, 0, size);
     }
 
     int root;
 
-    int apply(int version, int left, int right,
-              uint32_t a, uint32_t b) {
-        return range_apply(
-            version, 0, size, left, right, 1, 0, a, b);
+    int apply(int version, int left, int right, uint32_t a, uint32_t b) {
+        return range_apply(version, 0, size, left, right, 1, 0, a, b);
     }
 
     int copy(int destination, int source, int left, int right) {
-        return range_copy(
-            destination, source, 0, size, left, right,
-            1, 0, 1, 0);
+        return range_copy(destination, source, 0, size, left, right, 1, 0, 1, 0);
     }
 
     uint32_t fold(int version, int left, int right) const {

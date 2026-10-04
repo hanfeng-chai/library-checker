@@ -12,7 +12,8 @@ inline Buffer<u32> primes(u32 limit) {
     composite[0] = 1;
     for (u32 p = 3; u64(p) * p <= limit; p += 2)
         if (!(composite[(p / 2) / 64] >> ((p / 2) % 64) & 1))
-            for (usize i = usize(p) * p / 2; i < odds; i += p) composite[i / 64] |= u64(1) << (i % 64);
+            for (usize i = usize(p) * p / 2; i < odds; i += p)
+                composite[i / 64] |= u64(1) << (i % 64);
     Buffer<u32> result((usize(limit) + 1) / 2);
     usize count = 0;
     result[count++] = 2;
@@ -24,4 +25,4 @@ inline Buffer<u32> primes(u32 limit) {
     result.n = count;
     return result;
 }
-}
+} // namespace toy

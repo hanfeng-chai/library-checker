@@ -12,13 +12,18 @@ int main() {
     while (queries--) {
         int type = input.read_fixed<1, toy::u32>();
         int key = input.read_uniform<7, toy::u32>();
-        if (type == 0) set.insert(key);
-        else if (type == 1) set.erase(key);
-        else if (type == 2) output.writeln_fixed<1>((toy::u64)set.contains(key));
+        if (type == 0)
+            set.insert(key);
+        else if (type == 1)
+            set.erase(key);
+        else if (type == 2)
+            output.writeln_fixed<1>((toy::u64)set.contains(key));
         else {
             int answer = type == 3 ? set.successor(key) : set.predecessor(key);
-            if (answer < 0) output.write("-1\n");
-            else output.writeln((toy::u64)answer);
+            if (answer < 0)
+                output.write("-1\n");
+            else
+                output.writeln((toy::u64)answer);
         }
     }
 }

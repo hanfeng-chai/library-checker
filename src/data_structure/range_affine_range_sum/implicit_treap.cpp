@@ -8,7 +8,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int queries = input.read_uniform<6, toy::u32>();
     std::vector<toy::u32> values(n);
-    for (auto& value : values) value = input.read_uniform<9, toy::u32>();
+    for (auto &value : values) value = input.read_uniform<9, toy::u32>();
     toy::AffineImplicitTreap<mod> sequence(values);
     while (queries--) {
         toy::u32 type = input.read_fixed<1, toy::u32>();

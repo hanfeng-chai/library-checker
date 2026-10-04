@@ -17,8 +17,10 @@ void update(int node, int left, int right, int index, Function value) {
         return;
     }
     int middle = (left + right) / 2;
-    if (index < middle) update(node * 2, left, middle, index, value);
-    else update(node * 2 + 1, middle, right, index, value);
+    if (index < middle)
+        update(node * 2, left, middle, index, value);
+    else
+        update(node * 2 + 1, middle, right, index, value);
     tree[node] = compose(tree[node * 2], tree[node * 2 + 1]);
 }
 
@@ -29,7 +31,7 @@ Function query(int node, int left, int right, int query_left, int query_right) {
     return compose(query(node * 2, left, middle, query_left, query_right),
                    query(node * 2 + 1, middle, right, query_left, query_right));
 }
-}
+} // namespace
 
 int main() {
     toy::Reader input(toy::direct_mapping);
@@ -39,15 +41,13 @@ int main() {
     size = std::bit_ceil((unsigned)n);
     for (int i = 0; i < size; ++i) tree[size + i] = {};
     for (int i = 0; i < n; ++i)
-        tree[size + i] = {input.read_uniform<9, toy::u32>(),
-                          input.read_uniform<9, toy::u32>()};
+        tree[size + i] = {input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>()};
     for (int i = size - 1; i; --i) tree[i] = compose(tree[i * 2], tree[i * 2 + 1]);
     while (queries--) {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         if (type == 0) {
             int index = input.read_uniform<6, toy::u32>();
-            Function value{input.read_uniform<9, toy::u32>(),
-                           input.read_uniform<9, toy::u32>()};
+            Function value{input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>()};
             update(1, 0, size, index, value);
         } else {
             int left = input.read_uniform<6, toy::u32>();

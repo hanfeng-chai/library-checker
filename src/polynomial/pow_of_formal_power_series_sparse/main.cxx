@@ -1,9 +1,10 @@
-#include <toy/io.h>
 #include <toy/fps_sparse.h>
+#include <toy/io.h>
 using namespace toy;
 
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     usize n = in.read<u32, 7>(), k = in.read<u32, 2>();
     u64 exponent = in.read<u64, 19>();
     Buffer<SparseTerm> terms(k);

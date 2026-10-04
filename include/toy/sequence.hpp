@@ -40,8 +40,7 @@ class ReverseSumTreap {
     }
     void pull(int node) {
         nodes[node].size = 1 + size_of(nodes[node].left) + size_of(nodes[node].right);
-        nodes[node].sum =
-            sum_of(nodes[node].left) + nodes[node].value + sum_of(nodes[node].right);
+        nodes[node].sum = sum_of(nodes[node].left) + nodes[node].value + sum_of(nodes[node].right);
     }
     std::pair<int, int> split(int node, int count) {
         if (!node) return {0, 0};
@@ -52,8 +51,7 @@ class ReverseSumTreap {
             pull(node);
             return {left, node};
         }
-        auto [middle, right] =
-            split(nodes[node].right, count - size_of(nodes[node].left) - 1);
+        auto [middle, right] = split(nodes[node].right, count - size_of(nodes[node].left) - 1);
         nodes[node].right = middle;
         pull(node);
         return {node, right};
@@ -72,9 +70,8 @@ class ReverseSumTreap {
         return right;
     }
 
-public:
-    explicit ReverseSumTreap(const std::vector<uint64_t>& values,
-                             bool reserve_storage = true) {
+  public:
+    explicit ReverseSumTreap(const std::vector<uint64_t> &values, bool reserve_storage = true) {
         if (reserve_storage) nodes.reserve(values.size() + 1);
         for (uint64_t value : values) {
             nodes.push_back({0, 0, 1, random(), value, value, false});
@@ -110,12 +107,9 @@ class ReverseSumSplay {
     int root;
 
     void pull(int node) {
-        nodes[node].size =
-            nodes[nodes[node].left].size + 1 +
-            nodes[nodes[node].right].size;
+        nodes[node].size = nodes[nodes[node].left].size + 1 + nodes[nodes[node].right].size;
         nodes[node].sum =
-            nodes[nodes[node].left].sum + nodes[node].value +
-            nodes[nodes[node].right].sum;
+            nodes[nodes[node].left].sum + nodes[node].value + nodes[nodes[node].right].sum;
     }
 
     int build(int left, int right) {
@@ -139,7 +133,7 @@ class ReverseSumSplay {
         if (node != 0) nodes[node].reversed ^= 1;
     }
 
-    void rotate_right(int& node) {
+    void rotate_right(int &node) {
         int left = nodes[node].left;
         nodes[node].left = nodes[left].right;
         pull(node);
@@ -147,7 +141,7 @@ class ReverseSumSplay {
         node = left;
     }
 
-    void rotate_left(int& node) {
+    void rotate_left(int &node) {
         int right = nodes[node].right;
         nodes[node].right = nodes[right].left;
         pull(node);
@@ -155,12 +149,12 @@ class ReverseSumSplay {
         node = right;
     }
 
-    void splay(int& node, int rank) {
+    void splay(int &node, int rank) {
         push(node);
         int left_size = nodes[nodes[node].left].size;
         if (rank == left_size) return;
         if (rank < left_size) {
-            int& left = nodes[node].left;
+            int &left = nodes[node].left;
             push(left);
             int left_left_size = nodes[nodes[left].left].size;
             if (rank == left_left_size) {
@@ -170,14 +164,12 @@ class ReverseSumSplay {
                 rotate_right(node);
                 rotate_right(node);
             } else {
-                splay(
-                    nodes[left].right,
-                    rank - left_left_size - 1);
+                splay(nodes[left].right, rank - left_left_size - 1);
                 rotate_left(left);
                 rotate_right(node);
             }
         } else {
-            int& right = nodes[node].right;
+            int &right = nodes[node].right;
             rank -= left_size + 1;
             push(right);
             int right_left_size = nodes[nodes[right].left].size;
@@ -188,9 +180,7 @@ class ReverseSumSplay {
                 rotate_right(right);
                 rotate_left(node);
             } else {
-                splay(
-                    nodes[right].right,
-                    rank - right_left_size - 1);
+                splay(nodes[right].right, rank - right_left_size - 1);
                 rotate_left(node);
                 rotate_left(node);
             }
@@ -203,21 +193,15 @@ class ReverseSumSplay {
         return nodes[nodes[root].right].left;
     }
 
-public:
-    explicit ReverseSumSplay(const std::vector<uint64_t>& values)
-        : nodes(values.size() + 3) {
-        for (int i = 0; i < (int)values.size(); ++i)
-            nodes[i + 2].value = values[i];
+  public:
+    explicit ReverseSumSplay(const std::vector<uint64_t> &values) : nodes(values.size() + 3) {
+        for (int i = 0; i < (int)values.size(); ++i) nodes[i + 2].value = values[i];
         root = build(1, values.size() + 2);
     }
 
-    void reverse(int left, int right) {
-        reverse_node(isolate(left, right));
-    }
+    void reverse(int left, int right) { reverse_node(isolate(left, right)); }
 
-    uint64_t sum(int left, int right) {
-        return nodes[isolate(left, right)].sum;
-    }
+    uint64_t sum(int left, int right) { return nodes[isolate(left, right)].sum; }
 };
 
 class AddMinTreap {
@@ -254,29 +238,39 @@ class AddMinTreap {
     }
     void pull(int x) {
         nodes[x].size = 1 + size_of(nodes[x].left) + size_of(nodes[x].right);
-        nodes[x].minimum = std::min({nodes[x].value, min_of(nodes[x].left),
-                                     min_of(nodes[x].right)});
+        nodes[x].minimum =
+            std::min({nodes[x].value, min_of(nodes[x].left), min_of(nodes[x].right)});
     }
     std::pair<int, int> split(int x, int count) {
         if (!x) return {0, 0};
         push(x);
         if (size_of(nodes[x].left) >= count) {
             auto [a, b] = split(nodes[x].left, count);
-            nodes[x].left = b; pull(x); return {a, x};
+            nodes[x].left = b;
+            pull(x);
+            return {a, x};
         }
-        auto [a, b] = split(nodes[x].right,
-                            count - size_of(nodes[x].left) - 1);
-        nodes[x].right = a; pull(x); return {x, b};
+        auto [a, b] = split(nodes[x].right, count - size_of(nodes[x].left) - 1);
+        nodes[x].right = a;
+        pull(x);
+        return {x, b};
     }
     int merge(int a, int b) {
         if (!a || !b) return a ? a : b;
         if (nodes[a].priority > nodes[b].priority) {
-            push(a); nodes[a].right = merge(nodes[a].right, b); pull(a); return a;
+            push(a);
+            nodes[a].right = merge(nodes[a].right, b);
+            pull(a);
+            return a;
         }
-        push(b); nodes[b].left = merge(a, nodes[b].left); pull(b); return b;
+        push(b);
+        nodes[b].left = merge(a, nodes[b].left);
+        pull(b);
+        return b;
     }
-public:
-    explicit AddMinTreap(const std::vector<int64_t>& values) {
+
+  public:
+    explicit AddMinTreap(const std::vector<int64_t> &values) {
         nodes.reserve(values.size() + 1);
         for (int64_t value : values) {
             nodes.push_back({0, 0, 1, random(), value, value, 0});
@@ -284,12 +278,17 @@ public:
         }
     }
     void add(int left, int right, int64_t value) {
-        auto [a, c] = split(root, right); auto [p, b] = split(a, left);
-        apply(b, value); root = merge(merge(p, b), c);
+        auto [a, c] = split(root, right);
+        auto [p, b] = split(a, left);
+        apply(b, value);
+        root = merge(merge(p, b), c);
     }
     int64_t minimum(int left, int right) {
-        auto [a, c] = split(root, right); auto [p, b] = split(a, left);
-        int64_t result = min_of(b); root = merge(merge(p, b), c); return result;
+        auto [a, c] = split(root, right);
+        auto [p, b] = split(a, left);
+        int64_t result = min_of(b);
+        root = merge(merge(p, b), c);
+        return result;
     }
 };
 

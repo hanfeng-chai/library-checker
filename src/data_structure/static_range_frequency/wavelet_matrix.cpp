@@ -7,7 +7,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int queries = input.read_uniform<6, toy::u32>();
     std::vector<toy::u32> values(n);
-    for (auto& value : values) value = input.read_uniform<10, toy::u32>();
+    for (auto &value : values) value = input.read_uniform<10, toy::u32>();
     toy::WaveletMatrix<30> matrix(std::move(values));
     if (queries && n == 0) input.skip_spaces();
     while (queries--) {

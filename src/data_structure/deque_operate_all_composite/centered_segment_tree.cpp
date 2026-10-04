@@ -15,10 +15,11 @@ int main() {
     while (queries--) {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         if (type <= 1) {
-            Function function{input.read_uniform<9, toy::u32>(),
-                              input.read_uniform<9, toy::u32>()};
-            if (type == 0) tree.set(--left, function);
-            else tree.set(right++, function);
+            Function function{input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>()};
+            if (type == 0)
+                tree.set(--left, function);
+            else
+                tree.set(right++, function);
         } else if (type == 2) {
             tree.set(left++, {});
         } else if (type == 3) {

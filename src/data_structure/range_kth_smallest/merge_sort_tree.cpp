@@ -7,7 +7,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int queries = input.read_uniform<6, toy::u32>();
     std::vector<toy::u32> values(n);
-    for (auto& value : values) value = input.read_uniform<10, toy::u32>();
+    for (auto &value : values) value = input.read_uniform<10, toy::u32>();
     toy::MergeSortTree tree(values);
     while (queries--) {
         int left = input.read_uniform<6, toy::u32>();

@@ -7,4 +7,4 @@ struct Line {
     i64 intercept = infinity;
     i64 operator()(i32 x) const { return i64(slope) * x + intercept; }
 };
-}
+} // namespace toy

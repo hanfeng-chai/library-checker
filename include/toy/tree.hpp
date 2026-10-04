@@ -9,7 +9,7 @@ struct TreeDiameter {
     std::vector<int> path;
 };
 
-template<int VertexCapacity, int QueryCapacity>
+template <int VertexCapacity, int QueryCapacity>
 class FixedOfflineLca {
     int size = 0, query_count = 0, query_edges = 0;
     std::array<int, VertexCapacity> first_child, next_sibling;
@@ -30,18 +30,16 @@ class FixedOfflineLca {
     }
     void visit(int vertex) {
         disjoint_set[vertex] = vertex;
-        for (int child = first_child[vertex]; child != -1;
-             child = next_sibling[child]) {
+        for (int child = first_child[vertex]; child != -1; child = next_sibling[child]) {
             visit(child);
             disjoint_set[child] = vertex;
         }
         finished[vertex] = true;
         for (int edge = first_query[vertex]; edge != -1; edge = next_query[edge])
-            if (finished[query_vertex[edge]])
-                answer[query_id[edge]] = find(query_vertex[edge]);
+            if (finished[query_vertex[edge]]) answer[query_id[edge]] = find(query_vertex[edge]);
     }
 
-public:
+  public:
     void reset(int vertex_count, int queries) {
         size = vertex_count;
         query_count = queries;
@@ -64,13 +62,13 @@ public:
         next_query[query_edges] = first_query[second];
         first_query[second] = query_edges++;
     }
-    const int* solve(int root = 0) {
+    const int *solve(int root = 0) {
         visit(root);
         return answer.data();
     }
 };
 
-template<int Capacity, int BlockBits = 6>
+template <int Capacity, int BlockBits = 6>
 class FixedOrderedParentLca {
     static constexpr int block_bits = BlockBits;
     static constexpr int block_size = 1 << block_bits;
@@ -84,8 +82,8 @@ class FixedOrderedParentLca {
     std::array<int, Capacity> suffix_minimum{};
     std::array<std::array<int, max_blocks>, max_levels> table{};
 
-public:
-    void build(int vertex_count, const int* parents) {
+  public:
+    void build(int vertex_count, const int *parents) {
         size = vertex_count;
         std::fill_n(vertex_to_order.data(), size, 0);
         for (int vertex = size - 1; vertex > 0; --vertex)
@@ -93,7 +91,7 @@ public:
         for (int vertex = 1; vertex < size; ++vertex) {
             int parent = parents[vertex - 1];
             int child_subtree = vertex_to_order[vertex];
-            int& parent_cursor = vertex_to_order[parent];
+            int &parent_cursor = vertex_to_order[parent];
             int next_cursor = parent_cursor - child_subtree - 1;
             vertex_to_order[vertex] = parent_cursor;
             parent_cursor = next_cursor;
@@ -119,8 +117,7 @@ public:
         }
         for (int level = 1, half = 1; half * 2 <= blocks; ++level, half <<= 1)
             for (int i = 0; i + half * 2 <= blocks; ++i)
-                table[level][i] =
-                    std::min(table[level - 1][i], table[level - 1][i + half]);
+                table[level][i] = std::min(table[level - 1][i], table[level - 1][i + half]);
     }
 
     [[gnu::always_inline]] int lca(int first, int second) const {
@@ -133,8 +130,7 @@ public:
         int right_block = right >> block_bits;
         if (left_block == right_block) {
             int answer = order_value[left];
-            for (int i = left + 1; i <= right; ++i)
-                answer = std::min(answer, order_value[i]);
+            for (int i = left + 1; i <= right; ++i) answer = std::min(answer, order_value[i]);
             return answer;
         }
         int answer = std::min(suffix_minimum[left], prefix_minimum[right]);
@@ -150,7 +146,7 @@ public:
     }
 };
 
-template<int Capacity>
+template <int Capacity>
 class FixedSchieberVishkinLca {
     struct VertexInfo {
         uint32_t ascendant;
@@ -163,11 +159,9 @@ class FixedSchieberVishkinLca {
     alignas(64) std::array<VertexInfo, Capacity> info{};
     alignas(64) std::array<uint32_t, Capacity> head_parent{};
 
-    [[gnu::always_inline]] static uint32_t lowbit(uint32_t value) {
-        return value & (0U - value);
-    }
+    [[gnu::always_inline]] static uint32_t lowbit(uint32_t value) { return value & (0U - value); }
 
-public:
+  public:
     void reset(int vertex_count) {
         size = vertex_count;
         parent[0] = 0;
@@ -192,8 +186,7 @@ public:
             info[ancestor].inlabel += leaf_count[vertex];
         }
 
-        for (int vertex = 0; vertex < size; ++vertex)
-            info[parent[vertex]].inlabel = 0;
+        for (int vertex = 0; vertex < size; ++vertex) info[parent[vertex]].inlabel = 0;
         for (int vertex = size - 1; vertex >= 0; --vertex) {
             int ancestor = parent[vertex];
             if (lowbit(info[ancestor].inlabel) < lowbit(info[vertex].inlabel))
@@ -204,14 +197,12 @@ public:
 
         info[0].ascendant = 0;
         for (int vertex = 1; vertex < size; ++vertex)
-            info[vertex].ascendant =
-                info[parent[vertex]].ascendant | lowbit(info[vertex].inlabel);
+            info[vertex].ascendant = info[parent[vertex]].ascendant | lowbit(info[vertex].inlabel);
     }
 
-    void build(int vertex_count, const int* parents) {
+    void build(int vertex_count, const int *parents) {
         reset(vertex_count);
-        for (int vertex = 1; vertex < size; ++vertex)
-            add_parent(vertex, parents[vertex - 1]);
+        for (int vertex = 1; vertex < size; ++vertex) add_parent(vertex, parents[vertex - 1]);
         build();
     }
 
@@ -219,8 +210,7 @@ public:
         uint32_t difference = info[first].inlabel ^ info[second].inlabel;
         if (difference != 0) {
             uint32_t highest = std::bit_floor(difference);
-            uint32_t common = info[first].ascendant & info[second].ascendant &
-                              (0U - highest);
+            uint32_t common = info[first].ascendant & info[second].ascendant & (0U - highest);
             uint32_t branch = info[first].ascendant ^ common;
             if (branch != 0) {
                 uint32_t bit = std::bit_floor(branch);
@@ -236,14 +226,14 @@ public:
     }
 };
 
-template<class T, int Capacity>
+template <class T, int Capacity>
 class FixedCartesianTree {
     std::array<T, Capacity> values;
     std::array<int, Capacity> parent, stack;
 
-public:
-    T& operator[](int index) { return values[index]; }
-    const int* build(int size) {
+  public:
+    T &operator[](int index) { return values[index]; }
+    const int *build(int size) {
         int stack_size = 0;
         for (int index = 0; index < size; ++index) {
             int detached = -1;
@@ -258,14 +248,12 @@ public:
     }
 };
 
-template<int VertexCapacity, int QueryCapacity>
+template <int VertexCapacity, int QueryCapacity>
 class FixedOfflineTreeJump {
     static constexpr int block_bits = 4;
     static constexpr int block_size = 1 << block_bits;
-    static constexpr int block_capacity =
-        (VertexCapacity + block_size - 1) / block_size + 1;
-    static constexpr int level_capacity =
-        std::bit_width((unsigned)block_capacity);
+    static constexpr int block_capacity = (VertexCapacity + block_size - 1) / block_size + 1;
+    static constexpr int level_capacity = std::bit_width((unsigned)block_capacity);
 
     int size = 0, query_count = 0;
     std::array<uint32_t, VertexCapacity> degree{}, parent_xor{}, order{};
@@ -280,14 +268,12 @@ class FixedOfflineTreeJump {
         uint32_t right_block = right >> block_bits;
         if (left_block == right_block) {
             uint32_t result = depth[order[left]];
-            for (uint32_t i = left + 1; i <= right; ++i)
-                result = std::min(result, depth[order[i]]);
+            for (uint32_t i = left + 1; i <= right; ++i) result = std::min(result, depth[order[i]]);
             return result;
         }
         uint32_t result = std::min(suffix[left], prefix[right]);
         if (left_block + 1 < right_block) {
-            uint32_t level =
-                std::bit_width(right_block - left_block - 1) - 1;
+            uint32_t level = std::bit_width(right_block - left_block - 1) - 1;
             uint32_t width = 1U << level;
             result = std::min(result, table[level][left_block + 1]);
             result = std::min(result, table[level][right_block - width]);
@@ -295,7 +281,7 @@ class FixedOfflineTreeJump {
         return result;
     }
 
-public:
+  public:
     void reset(int vertex_count, int queries) {
         size = vertex_count;
         query_count = queries;
@@ -314,8 +300,7 @@ public:
         degree[root] = 0;
         uint32_t order_index = size - 1;
         for (uint32_t start = 0; start < (uint32_t)size; ++start) {
-            for (uint32_t vertex = start; degree[vertex] == 1;
-                 vertex = parent_xor[vertex]) {
+            for (uint32_t vertex = start; degree[vertex] == 1; vertex = parent_xor[vertex]) {
                 uint32_t parent = parent_xor[vertex];
                 order[order_index--] = vertex;
                 position[parent] += position[vertex];
@@ -340,21 +325,17 @@ public:
         }
         for (int i = 0; i < size; ++i) {
             uint32_t value = depth[order[i]];
-            prefix[i] = (i & (block_size - 1))
-                ? std::min(prefix[i - 1], value) : value;
-            if ((i & (block_size - 1)) == block_size - 1)
-                table[0][i >> block_bits] = prefix[i];
+            prefix[i] = (i & (block_size - 1)) ? std::min(prefix[i - 1], value) : value;
+            if ((i & (block_size - 1)) == block_size - 1) table[0][i >> block_bits] = prefix[i];
         }
         for (int i = size - 1; i >= 0; --i) {
             uint32_t value = depth[order[i]];
-            suffix[i] = ((~i) & (block_size - 1))
-                ? std::min(suffix[i + 1], value) : value;
+            suffix[i] = ((~i) & (block_size - 1)) ? std::min(suffix[i + 1], value) : value;
         }
         int blocks = (size + block_size - 1) >> block_bits;
         for (int level = 1, half = 1; half * 2 <= blocks; ++level, half <<= 1)
             for (int i = 0; i + half * 2 <= blocks; ++i)
-                table[level][i] =
-                    std::min(table[level - 1][i], table[level - 1][i + half]);
+                table[level][i] = std::min(table[level - 1][i], table[level - 1][i + half]);
     }
     void add_query(int index, uint32_t from, uint32_t to, uint32_t step) {
         uint32_t from_position = position[from];
@@ -364,8 +345,7 @@ public:
             common_depth = range_minimum(from_position + 1, to_position) - 1;
         else if (to_position < from_position)
             common_depth = range_minimum(to_position + 1, from_position) - 1;
-        uint32_t path_vertices =
-            depth[from] + depth[to] - 2 * common_depth + 1;
+        uint32_t path_vertices = depth[from] + depth[to] - 2 * common_depth + 1;
         if (step <= depth[from] - common_depth) {
             query_position[index] = from_position;
             query_distance[index] = step;
@@ -377,7 +357,7 @@ public:
         }
         ++count[query_position[index]];
     }
-    const uint32_t* solve() {
+    const uint32_t *solve() {
         std::partial_sum(count.begin(), count.begin() + size + 1, count.begin());
         for (int query = 0; query < query_count; ++query)
             query_order[--count[query_position[query]]] = query;
@@ -400,9 +380,11 @@ public:
     }
 };
 
-template<int Capacity>
+template <int Capacity>
 class FixedHeavyLightTree {
-    struct Edge { int to, next; };
+    struct Edge {
+        int to, next;
+    };
     int size = 0, edge_count = 0, timer = 0;
     std::array<Edge, Capacity * 2> edges;
     std::array<int, Capacity> first_edge, parent, depth, subtree;
@@ -431,7 +413,7 @@ class FixedHeavyLightTree {
         }
     }
 
-public:
+  public:
     void reset(int vertex_count) {
         size = vertex_count;
         edge_count = timer = 0;
@@ -464,8 +446,7 @@ public:
             int vertex = order[i];
             int up = parent[vertex];
             subtree[up] += subtree[vertex];
-            if (heavy[up] == -1 || subtree[heavy[up]] < subtree[vertex])
-                heavy[up] = vertex;
+            if (heavy[up] == -1 || subtree[heavy[up]] < subtree[vertex]) heavy[up] = vertex;
         }
         decompose(root, root);
     }
@@ -498,19 +479,18 @@ public:
         int upward = depth[from] - depth[common];
         int total = upward + depth[to] - depth[common];
         if (step > total) return -1;
-        return step <= upward ? kth_ancestor(from, step)
-                              : kth_ancestor(to, total - step);
+        return step <= upward ? kth_ancestor(from, step) : kth_ancestor(to, total - step);
     }
 };
 
-template<int Capacity>
+template <int Capacity>
 class FixedWeightedTreeDiameter {
     int size = 0;
     std::array<uint32_t, Capacity> degree{}, xor_neighbor{}, xor_weight{};
     std::array<int, Capacity> parent{}, endpoint{};
     std::array<int64_t, Capacity> downward{};
 
-public:
+  public:
     void reset(int vertex_count) {
         size = vertex_count;
         std::fill_n(degree.data(), size, 0);
@@ -578,16 +558,16 @@ class OrderedParentLca {
     std::vector<int> suffix_minimum;
     std::vector<std::vector<int>> table;
 
-public:
-    explicit OrderedParentLca(const std::vector<int>& parents)
-        : size(parents.size() + 1), vertex_to_order(size), order_value(size),
-          prefix_minimum(size), suffix_minimum(size) {
+  public:
+    explicit OrderedParentLca(const std::vector<int> &parents)
+        : size(parents.size() + 1), vertex_to_order(size), order_value(size), prefix_minimum(size),
+          suffix_minimum(size) {
         for (int vertex = size - 1; vertex > 0; --vertex)
             vertex_to_order[parents[vertex - 1]] += vertex_to_order[vertex] + 1;
         for (int vertex = 1; vertex < size; ++vertex) {
             int parent = parents[vertex - 1];
             int child_subtree = vertex_to_order[vertex];
-            int& parent_cursor = vertex_to_order[parent];
+            int &parent_cursor = vertex_to_order[parent];
             int next_cursor = parent_cursor - child_subtree - 1;
             vertex_to_order[vertex] = parent_cursor;
             parent_cursor = next_cursor;
@@ -616,8 +596,7 @@ public:
             table.emplace_back(blocks - width + 1);
             int level = table.size() - 1;
             for (int i = 0; i + width <= blocks; ++i)
-                table[level][i] =
-                    std::min(table[level - 1][i], table[level - 1][i + half]);
+                table[level][i] = std::min(table[level - 1][i], table[level - 1][i + half]);
         }
     }
 
@@ -631,8 +610,7 @@ public:
         int right_block = right >> block_bits;
         if (left_block == right_block) {
             int answer = order_value[left];
-            for (int i = left + 1; i <= right; ++i)
-                answer = std::min(answer, order_value[i]);
+            for (int i = left + 1; i <= right; ++i) answer = std::min(answer, order_value[i]);
             return answer;
         }
         int answer = std::min(suffix_minimum[left], prefix_minimum[right]);
@@ -652,11 +630,10 @@ class HeavyLightTree {
     int size;
     std::vector<int> parent, depth, subtree, heavy, head, position, vertex_at;
 
-public:
-    HeavyLightTree(int vertex_count, const std::vector<std::pair<int, int>>& edges,
-                   int root = 0)
-        : size(vertex_count), parent(size, -1), depth(size), subtree(size, 1),
-          heavy(size, -1), head(size), position(size), vertex_at(size) {
+  public:
+    HeavyLightTree(int vertex_count, const std::vector<std::pair<int, int>> &edges, int root = 0)
+        : size(vertex_count), parent(size, -1), depth(size), subtree(size, 1), heavy(size, -1),
+          head(size), position(size), vertex_at(size) {
         std::vector<int> offset(size + 1);
         for (auto [from, to] : edges) ++offset[from + 1], ++offset[to + 1];
         std::partial_sum(offset.begin(), offset.end(), offset.begin());
@@ -684,8 +661,7 @@ public:
             int vertex = order[i];
             int up = parent[vertex];
             subtree[up] += subtree[vertex];
-            if (heavy[up] == -1 || subtree[heavy[up]] < subtree[vertex])
-                heavy[up] = vertex;
+            if (heavy[up] == -1 || subtree[heavy[up]] < subtree[vertex]) heavy[up] = vertex;
         }
         int timer = 0;
         std::vector<std::pair<int, int>> chains{{root, root}};
@@ -737,13 +713,12 @@ public:
         int upward = depth[from] - depth[common];
         int total = upward + depth[to] - depth[common];
         if (step > total) return -1;
-        return step <= upward ? kth_ancestor(from, step)
-                              : kth_ancestor(to, total - step);
+        return step <= upward ? kth_ancestor(from, step) : kth_ancestor(to, total - step);
     }
 };
 
-template<class T>
-std::vector<int> cartesian_tree_parents(const std::vector<T>& values) {
+template <class T>
+std::vector<int> cartesian_tree_parents(const std::vector<T> &values) {
     std::vector<int> parent(values.size(), -1);
     std::vector<int> stack;
     stack.reserve(values.size());
@@ -762,9 +737,9 @@ std::vector<int> cartesian_tree_parents(const std::vector<T>& values) {
     return parent;
 }
 
-inline TreeDiameter weighted_tree_diameter(
-    const std::vector<std::vector<std::pair<int, int64_t>>>& graph) {
-    auto farthest = [&](int start, std::vector<int>* output_parent = nullptr) {
+inline TreeDiameter
+weighted_tree_diameter(const std::vector<std::vector<std::pair<int, int64_t>>> &graph) {
+    auto farthest = [&](int start, std::vector<int> *output_parent = nullptr) {
         std::vector<int> parent(graph.size(), -1);
         std::vector<int64_t> distance(graph.size());
         std::vector<int> stack{start};
@@ -780,7 +755,6 @@ inline TreeDiameter weighted_tree_diameter(
                 distance[next] = distance[vertex] + weight;
                 stack.push_back(next);
             }
-
         }
         if (output_parent) *output_parent = std::move(parent);
         return std::pair{best, distance[best]};
@@ -797,8 +771,8 @@ inline TreeDiameter weighted_tree_diameter(
     return {length, std::move(path)};
 }
 
-inline TreeDiameter weighted_tree_diameter(
-    int size, const std::vector<std::tuple<int, int, int64_t>>& edges) {
+inline TreeDiameter
+weighted_tree_diameter(int size, const std::vector<std::tuple<int, int, int64_t>> &edges) {
     std::vector<uint32_t> degree(size), xor_neighbor(size), xor_weight(size);
     for (auto [from, to, weight] : edges) {
         ++degree[from];
@@ -867,14 +841,12 @@ class BinaryLiftTree {
         for (int level = 1; level < levels; ++level) {
             ancestor[level].resize(depth.size());
             for (int vertex = 0; vertex < (int)depth.size(); ++vertex)
-                ancestor[level][vertex] =
-                    ancestor[level - 1][ancestor[level - 1][vertex]];
+                ancestor[level][vertex] = ancestor[level - 1][ancestor[level - 1][vertex]];
         }
     }
 
-public:
-    explicit BinaryLiftTree(const std::vector<int>& parents)
-        : depth(parents.size() + 1) {
+  public:
+    explicit BinaryLiftTree(const std::vector<int> &parents) : depth(parents.size() + 1) {
         std::vector<int> parent(parents.size() + 1);
         for (int vertex = 1; vertex < (int)parent.size(); ++vertex) {
             parent[vertex] = parents[vertex - 1];
@@ -882,8 +854,7 @@ public:
         }
         build(std::move(parent));
     }
-    BinaryLiftTree(int size, const std::vector<std::pair<int, int>>& edges,
-                   int root = 0)
+    BinaryLiftTree(int size, const std::vector<std::pair<int, int>> &edges, int root = 0)
         : depth(size, -1) {
         std::vector<std::vector<int>> graph(size);
         for (auto [from, to] : edges) {
@@ -932,8 +903,7 @@ public:
         int upward = depth[from] - depth[common];
         int total = upward + depth[to] - depth[common];
         if (distance_from_start > total) return -1;
-        if (distance_from_start <= upward)
-            return kth_ancestor(from, distance_from_start);
+        if (distance_from_start <= upward) return kth_ancestor(from, distance_from_start);
         return kth_ancestor(to, total - distance_from_start);
     }
 };

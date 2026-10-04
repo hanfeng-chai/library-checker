@@ -20,6 +20,5 @@ int main() {
         toy::u32 up = input.read_uniform<10, toy::u32>();
         solver.add_query(left, down, right, up);
     }
-    for (toy::u64 answer : solver.solve())
-        output.writeln(answer);
+    for (toy::u64 answer : solver.solve()) output.writeln(answer);
 }

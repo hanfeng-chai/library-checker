@@ -18,8 +18,7 @@ int main() {
     events.reserve(2 * n + 2 * query_count);
 
     auto add_event = [&](int operation, toy::u32 kind, int32_t coordinate) {
-        toy::u32 ordered =
-            std::bit_cast<toy::u32>(coordinate) ^ 0x8000'0000U;
+        toy::u32 ordered = std::bit_cast<toy::u32>(coordinate) ^ 0x8000'0000U;
         toy::u32 payload = (toy::u32)operation * 4 + kind;
         events.push_back((toy::u64)payload << 32 | ordered);
     };
@@ -40,22 +39,20 @@ int main() {
             read_segment(i);
         } else {
             int32_t x = input.read_uniform<10, int32_t>();
-            operations[i] = {
-                x, 0, {0, toy::CompactLine::infinity + 1}};
+            operations[i] = {x, 0, {0, toy::CompactLine::infinity + 1}};
             add_event(i, 2, x);
         }
     }
 
-    toy::radix_sort_u32(
-        events.begin(), events.end(),
-        [](toy::u64 event) { return (toy::u32)event; });
+    toy::radix_sort_u32(events.begin(), events.end(),
+                        [](toy::u64 event) { return (toy::u32)event; });
     std::vector<int32_t> coordinates;
     coordinates.reserve(query_count);
     toy::u32 previous = std::numeric_limits<toy::u32>::max();
     for (toy::u64 event : events) {
         toy::u32 ordered = (toy::u32)event;
         toy::u32 payload = event >> 32;
-        Operation& operation = operations[payload / 4];
+        Operation &operation = operations[payload / 4];
         toy::u32 kind = payload & 3;
         if (kind == 2) {
             if (ordered != previous) {
@@ -74,10 +71,9 @@ int main() {
     }
 
     toy::IndexedLiChaoTree tree(std::move(coordinates));
-    for (const Operation& operation : operations) {
+    for (const Operation &operation : operations) {
         if (operation.line.intercept <= toy::CompactLine::infinity) {
-            tree.add_segment(
-                operation.left, operation.right, operation.line);
+            tree.add_segment(operation.left, operation.right, operation.line);
         } else {
             int64_t answer = tree.minimum(operation.left);
             if (answer == toy::CompactLine::infinity)

@@ -10,9 +10,7 @@ int main() {
     std::vector<toy::u32> selected;
     selected.reserve(1'000'000);
     toy::u64 count = toy::HybridWheel30Sieve::enumerate(
-        n, [&](toy::u64, toy::u64 prime) {
-            selected.push_back(prime);
-        }, a, b);
+        n, [&](toy::u64, toy::u64 prime) { selected.push_back(prime); }, a, b);
     out.write_token(count);
     out.write_token(selected.size());
     out.put('\n');

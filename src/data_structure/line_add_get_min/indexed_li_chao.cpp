@@ -14,9 +14,7 @@ int main() {
     int query_count = input.read_uniform<6, toy::u32>();
     std::vector<Operation> operations(n + query_count);
     for (int i = 0; i < n; ++i) {
-        operations[i] = {
-            input.read_uniform<10, int32_t>(),
-            input.read_uniform<19, int64_t>()};
+        operations[i] = {input.read_uniform<10, int32_t>(), input.read_uniform<19, int64_t>()};
     }
 
     std::vector<toy::u64> query_coordinates;
@@ -25,20 +23,16 @@ int main() {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         int32_t first = input.read_uniform<10, int32_t>();
         if (type == 0) {
-            operations[i] = {
-                first, input.read_uniform<19, int64_t>()};
+            operations[i] = {first, input.read_uniform<19, int64_t>()};
         } else {
             operations[i] = {first, toy::CompactLine::infinity + 1};
-            toy::u32 ordered =
-                std::bit_cast<toy::u32>(first) ^ 0x8000'0000U;
-            query_coordinates.push_back(
-                (toy::u64)(toy::u32)i << 32 | ordered);
+            toy::u32 ordered = std::bit_cast<toy::u32>(first) ^ 0x8000'0000U;
+            query_coordinates.push_back((toy::u64)(toy::u32)i << 32 | ordered);
         }
     }
 
-    toy::radix_sort_u32(
-        query_coordinates.begin(), query_coordinates.end(),
-        [](toy::u64 value) { return (toy::u32)value; });
+    toy::radix_sort_u32(query_coordinates.begin(), query_coordinates.end(),
+                        [](toy::u64 value) { return (toy::u32)value; });
     std::vector<int32_t> coordinates(query_coordinates.size());
     for (int index = 0; index < (int)query_coordinates.size(); ++index) {
         toy::u64 event = query_coordinates[index];
@@ -48,7 +42,7 @@ int main() {
     }
 
     toy::IndexedLiChaoTree tree(std::move(coordinates));
-    for (const Operation& operation : operations) {
+    for (const Operation &operation : operations) {
         if (operation.second <= toy::CompactLine::infinity) {
             tree.add({operation.first, operation.second});
         } else {

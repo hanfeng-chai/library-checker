@@ -36,6 +36,7 @@
 #include <cwctype>
 #include <expected>
 #include <functional>
+#include <immintrin.h>
 #include <initializer_list>
 #include <iterator>
 #include <limits>
@@ -51,15 +52,14 @@
 #include <source_location>
 #include <span>
 #include <string_view>
+#include <sys/mman.h>
+#include <sys/stat.h>
 #include <tuple>
 #include <type_traits>
+#include <unistd.h>
 #include <utility>
 #include <variant>
 #include <version>
-#include <immintrin.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#include <unistd.h>
 
 namespace toy {
 using i8 = int8_t;
@@ -77,4 +77,4 @@ using usize = uintptr_t;
 using f32 = float;
 using f64 = double;
 using f80 = long double;
-}
+} // namespace toy

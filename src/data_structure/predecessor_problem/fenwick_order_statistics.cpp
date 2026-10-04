@@ -14,21 +14,27 @@ int main() {
     while (queries--) {
         int type = input.read_fixed<1, toy::u32>();
         int key = input.read_uniform<7, toy::u32>();
-        if (type == 0 && !present[key]) present[key] = true, tree.add(key, 1);
-        else if (type == 1 && present[key]) present[key] = false, tree.add(key, -1);
+        if (type == 0 && !present[key])
+            present[key] = true, tree.add(key, 1);
+        else if (type == 1 && present[key])
+            present[key] = false, tree.add(key, -1);
         else if (type == 2)
             output.writeln_fixed<1>((toy::u64)present[key]);
         else if (type == 3) {
             int before = tree.prefix_sum(key);
             int total = tree.prefix_sum(n);
             int answer = before == total ? -1 : tree.lower_bound(before + 1);
-            if (answer < 0) output.write("-1\n");
-            else output.writeln((toy::u64)answer);
+            if (answer < 0)
+                output.write("-1\n");
+            else
+                output.writeln((toy::u64)answer);
         } else if (type == 4) {
             int count = tree.prefix_sum(key + 1);
             int answer = count ? tree.lower_bound(count) : -1;
-            if (answer < 0) output.write("-1\n");
-            else output.writeln((toy::u64)answer);
+            if (answer < 0)
+                output.write("-1\n");
+            else
+                output.writeln((toy::u64)answer);
         }
     }
 }

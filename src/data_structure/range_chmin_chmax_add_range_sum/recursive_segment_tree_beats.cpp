@@ -7,25 +7,18 @@ int main() {
     int n = input.read_uniform<6, int>();
     int q = input.read_uniform<6, int>();
     std::vector<int64_t> values(n);
-    for (int64_t& value : values)
-        value = input.read_uniform<13, int64_t>();
+    for (int64_t &value : values) value = input.read_uniform<13, int64_t>();
     toy::RecursiveRangeClampAddSumTree tree(values);
     while (q--) {
         int type = input.read_fixed<1, int>();
         int left = input.read_uniform<6, int>();
         int right = input.read_uniform<6, int>();
         if (type == 0)
-            tree.chmin(
-                left, right,
-                input.read_uniform<13, int64_t>());
+            tree.chmin(left, right, input.read_uniform<13, int64_t>());
         else if (type == 1)
-            tree.chmax(
-                left, right,
-                input.read_uniform<13, int64_t>());
+            tree.chmax(left, right, input.read_uniform<13, int64_t>());
         else if (type == 2)
-            tree.add(
-                left, right,
-                input.read_uniform<13, int64_t>());
+            tree.add(left, right, input.read_uniform<13, int64_t>());
         else
             output.writeln_i64(tree.sum(left, right));
     }

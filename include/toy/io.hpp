@@ -41,12 +41,15 @@ using f80 = long double;
 
 namespace detail {
 
-inline void write_all(const char* p, usize n) {
+inline void write_all(const char *p, usize n) {
     while (n) {
         isize z = ::write(1, p, n);
-        if (z > 0) p += z, n -= z;
-        else if (z < 0 && errno == EINTR) continue;
-        else break;
+        if (z > 0)
+            p += z, n -= z;
+        else if (z < 0 && errno == EINTR)
+            continue;
+        else
+            break;
     }
 }
 
@@ -63,8 +66,7 @@ inline u128 mulhi(u128 a, u128 b) {
 // q=floor(x/10^19) via ceil(2^192/10^19); r=x-q*10^19.
 inline pair<u64, u64> divmod_1e19(u128 x) {
     constexpr u64 B = 10'000'000'000'000'000'000ULL;
-    constexpr u128 M = ((u128)0xd83c94fb6d2ac34aULL << 64) |
-                       0x5663d3c7a0d865cbULL;
+    constexpr u128 M = ((u128)0xd83c94fb6d2ac34aULL << 64) | 0x5663d3c7a0d865cbULL;
     if (x < B) return {0, (u64)x};
     u128 h = mulhi(x, M), s = x + h;
     u64 q = (u64)((s >> 64) + (s < x));
@@ -74,34 +76,32 @@ inline pair<u64, u64> divmod_1e19(u128 x) {
 } // namespace detail
 
 class Reader {
-    const char* p;
+    const char *p;
 
-    static const char* map_stdin() {
+    static const char *map_stdin() {
         struct stat st{};
         fstat(0, &st);
         usize page = (usize)sysconf(_SC_PAGESIZE);
         usize size = (usize)st.st_size;
         usize mapped = (size + page - 1) & -page;
-        void* base = mmap(nullptr, mapped + page, PROT_READ,
-                          MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+        void *base = mmap(nullptr, mapped + page, PROT_READ, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
         toy_assert(base != MAP_FAILED);
         if (size) {
-            void* file = mmap(base, size, PROT_READ,
-                              MAP_PRIVATE | MAP_FIXED, 0, 0);
+            void *file = mmap(base, size, PROT_READ, MAP_PRIVATE | MAP_FIXED, 0, 0);
             toy_assert(file == base);
         }
-        return (const char*)base;
+        return (const char *)base;
     }
 
-    static const char* map_stdin_direct() {
+    static const char *map_stdin_direct() {
         struct stat st{};
         fstat(0, &st);
-        void* base = mmap(nullptr, (usize)st.st_size, PROT_READ, MAP_PRIVATE, 0, 0);
+        void *base = mmap(nullptr, (usize)st.st_size, PROT_READ, MAP_PRIVATE, 0, 0);
         toy_assert(base != MAP_FAILED);
-        return (const char*)base;
+        return (const char *)base;
     }
 
-    static const array<array<char, 16>, 17>& masks() {
+    static const array<array<char, 16>, 17> &masks() {
         static constexpr auto a = [] {
             array<array<char, 16>, 17> result{};
             for (int n = 0; n <= 16; ++n)
@@ -117,17 +117,14 @@ class Reader {
         x = _mm_madd_epi16(x, _mm_set1_epi32(0x00010064));
         __m128i a = _mm_mul_epu32(x, _mm_set_epi32(1, 10000, 1, 10000));
         x = _mm_add_epi64(a, _mm_srli_epi64(x, 32));
-        return (u64)_mm_cvtsi128_si64(x) * 100000000ULL +
-               (u64)_mm_extract_epi64(x, 1);
+        return (u64)_mm_cvtsi128_si64(x) * 100000000ULL + (u64)_mm_extract_epi64(x, 1);
     }
 
     static bool all_digit(u64 x) {
         return !(((x ^ 0x3030303030303030ULL) & 0xf0f0f0f0f0f0f0f0ULL));
     }
 
-    static bool all_digit4(u32 x) {
-        return !(((x ^ 0x30303030U) & 0xf0f0f0f0U));
-    }
+    static bool all_digit4(u32 x) { return !(((x ^ 0x30303030U) & 0xf0f0f0f0U)); }
 
     static u32 parse4(u32 x) {
         x ^= 0x30303030U;
@@ -145,19 +142,16 @@ class Reader {
     static u128 parse32(__m256i x) {
         x = _mm256_maddubs_epi16(x, _mm256_set1_epi16(0x010a));
         x = _mm256_madd_epi16(x, _mm256_set1_epi32(0x00010064));
-        __m256i a = _mm256_mul_epu32(
-            x, _mm256_set_epi32(1, 10000, 1, 10000, 1, 10000, 1, 10000));
+        __m256i a = _mm256_mul_epu32(x, _mm256_set_epi32(1, 10000, 1, 10000, 1, 10000, 1, 10000));
         x = _mm256_add_epi64(a, _mm256_srli_epi64(x, 32));
         __m128i a0 = _mm256_castsi256_si128(x);
         __m128i a1 = _mm256_extracti128_si256(x, 1);
-        u64 hi = (u64)_mm_cvtsi128_si64(a0) * 100000000ULL +
-                 (u64)_mm_extract_epi64(a0, 1);
-        u64 lo = (u64)_mm_cvtsi128_si64(a1) * 100000000ULL +
-                 (u64)_mm_extract_epi64(a1, 1);
+        u64 hi = (u64)_mm_cvtsi128_si64(a0) * 100000000ULL + (u64)_mm_extract_epi64(a0, 1);
+        u64 lo = (u64)_mm_cvtsi128_si64(a1) * 100000000ULL + (u64)_mm_extract_epi64(a1, 1);
         return (u128)hi * 10000000000000000ULL + lo;
     }
 
-    static const array<u64, 17>& powers10() {
+    static const array<u64, 17> &powers10() {
         static constexpr auto a = [] {
             array<u64, 17> result{1};
             for (int i = 1; i <= 16; ++i) result[i] = result[i - 1] * 10;
@@ -166,20 +160,20 @@ class Reader {
         return a;
     }
 
-    [[gnu::always_inline]] static u64 parse_short16(__m128i x, u32 boundary,
-                                                     int& digits) {
+    [[gnu::always_inline]] static u64 parse_short16(__m128i x, u32 boundary, int &digits) {
         digits = __builtin_ctz(boundary);
-        x = _mm_shuffle_epi8(
-            x, _mm_loadu_si128((const __m128i*)masks()[digits].data()));
+        x = _mm_shuffle_epi8(x, _mm_loadu_si128((const __m128i *)masks()[digits].data()));
         return parse16(x);
     }
 
     [[gnu::always_inline]] u64 read_swar_u64() {
-        const char* q = p;
+        const char *q = p;
         u64 a, b;
-        memcpy(&a, q, 8); memcpy(&b, q + 8, 8);
+        memcpy(&a, q, 8);
+        memcpy(&b, q + 8, 8);
         if (all_digit(a)) {
-            u64 v = parse8(a); q += 8;
+            u64 v = parse8(a);
+            q += 8;
             if (all_digit(b)) v = v * 100000000ULL + parse8(b), q += 8;
             while (*q >= '0') v = v * 10 + *q++ - '0';
             p = q + 1;
@@ -192,7 +186,7 @@ class Reader {
     }
 
     [[gnu::always_inline]] u64 read_swar4_u64() {
-        const char* q = p;
+        const char *q = p;
         u32 block;
         memcpy(&block, q, 4);
         u64 value = 0;
@@ -213,33 +207,31 @@ class Reader {
     }
 
     [[gnu::always_inline]] u64 read_simd_u64() {
-        const char* q = p;
-        __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)q),
-                                  _mm_set1_epi8('0'));
+        const char *q = p;
+        __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i *)q), _mm_set1_epi8('0'));
         u32 boundary = (u32)_mm_movemask_epi8(x);
         if (__builtin_expect(boundary != 0, 1)) {
             int digits = __builtin_ctz(boundary);
-            x = _mm_shuffle_epi8(
-                x, _mm_loadu_si128((const __m128i*)masks()[digits].data()));
+            x = _mm_shuffle_epi8(x, _mm_loadu_si128((const __m128i *)masks()[digits].data()));
             p = q + digits + 1;
             return parse16(x);
         }
-        u64 v = parse16(x); q += 16;
+        u64 v = parse16(x);
+        q += 16;
         while (*q >= '0') v = v * 10 + *q++ - '0';
         p = q + 1;
         return v;
     }
 
-    [[gnu::always_inline]] static u128 read_avx_u128(const char*& cursor) {
-        const char* q = cursor;
+    [[gnu::always_inline]] static u128 read_avx_u128(const char *&cursor) {
+        const char *q = cursor;
         u128 v;
-        __m256i x = _mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)q),
-                                     _mm256_set1_epi8('0'));
+        __m256i x = _mm256_sub_epi8(_mm256_loadu_si256((const __m256i *)q), _mm256_set1_epi8('0'));
         __m256i hi = _mm256_and_si256(x, _mm256_set1_epi8((char)0xf0));
-        u32 bad = ~((u32)_mm256_movemask_epi8(
-            _mm256_cmpeq_epi8(hi, _mm256_setzero_si256())));
+        u32 bad = ~((u32)_mm256_movemask_epi8(_mm256_cmpeq_epi8(hi, _mm256_setzero_si256())));
         if (!bad) {
-            v = parse32(x); q += 32;
+            v = parse32(x);
+            q += 32;
             u64 tail = 0, scale = 1;
             while (*q >= '0') {
                 tail = tail * 10 + *q++ - '0';
@@ -253,13 +245,12 @@ class Reader {
         if (n) {
             if (n <= 16) {
                 __m128i lo = _mm256_castsi256_si128(x);
-                lo = _mm_shuffle_epi8(
-                    lo, _mm_loadu_si128((const __m128i*)masks()[n].data()));
+                lo = _mm_shuffle_epi8(lo, _mm_loadu_si128((const __m128i *)masks()[n].data()));
                 v = parse16(lo);
             } else {
                 alignas(32) u8 b[64]{};
-                _mm256_storeu_si256((__m256i*)(b + 32 - n), x);
-                v = parse32(_mm256_load_si256((const __m256i*)b));
+                _mm256_storeu_si256((__m256i *)(b + 32 - n), x);
+                v = parse32(_mm256_load_si256((const __m256i *)b));
             }
             cursor = q + n + 1;
             return v;
@@ -270,10 +261,9 @@ class Reader {
         return v;
     }
 
-    [[gnu::always_inline]] static u128 read_staged_u128(const char*& cursor) {
-        const char* q = cursor;
-        __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)q),
-                                  _mm_set1_epi8('0'));
+    [[gnu::always_inline]] static u128 read_staged_u128(const char *&cursor) {
+        const char *q = cursor;
+        __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i *)q), _mm_set1_epi8('0'));
         u32 boundary = (u32)_mm_movemask_epi8(x);
         if (boundary) {
             int digits;
@@ -284,8 +274,7 @@ class Reader {
 
         u128 value = parse16(x);
         q += 16;
-        x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)q),
-                         _mm_set1_epi8('0'));
+        x = _mm_sub_epi8(_mm_loadu_si128((const __m128i *)q), _mm_set1_epi8('0'));
         boundary = (u32)_mm_movemask_epi8(x);
         if (boundary) {
             int digits;
@@ -296,8 +285,7 @@ class Reader {
 
         value = value * 10000000000000000ULL + parse16(x);
         q += 16;
-        x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)q),
-                         _mm_set1_epi8('0'));
+        x = _mm_sub_epi8(_mm_loadu_si128((const __m128i *)q), _mm_set1_epi8('0'));
         boundary = (u32)_mm_movemask_epi8(x);
         int digits;
         u64 tail = parse_short16(x, boundary, digits);
@@ -305,7 +293,7 @@ class Reader {
         return value * powers10()[digits] + tail;
     }
 
-    template<int Digits, class U>
+    template <int Digits, class U>
     [[gnu::always_inline]] U read_fixed_unsigned() {
         static_assert(1 <= Digits && Digits <= 37);
         U v;
@@ -317,10 +305,8 @@ class Reader {
             memcpy(&x, p, 8);
             v = (U)parse8(x);
         } else if constexpr (Digits <= 16) {
-            __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)p),
-                                      _mm_set1_epi8('0'));
-            x = _mm_shuffle_epi8(
-                x, _mm_loadu_si128((const __m128i*)masks()[Digits].data()));
+            __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i *)p), _mm_set1_epi8('0'));
+            x = _mm_shuffle_epi8(x, _mm_loadu_si128((const __m128i *)masks()[Digits].data()));
             v = (U)parse16(x);
         } else if constexpr (Digits < 32) {
             if constexpr (Digits >= 24) {
@@ -333,14 +319,13 @@ class Reader {
                 }
                 for (; offset < Digits; ++offset) v = v * 10 + p[offset] - '0';
             } else {
-                __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i*)p),
-                                          _mm_set1_epi8('0'));
+                __m128i x = _mm_sub_epi8(_mm_loadu_si128((const __m128i *)p), _mm_set1_epi8('0'));
                 v = (U)parse16(x);
                 for (int i = 16; i < Digits; ++i) v = v * 10 + p[i] - '0';
             }
         } else {
-            __m256i x = _mm256_sub_epi8(_mm256_loadu_si256((const __m256i*)p),
-                                         _mm256_set1_epi8('0'));
+            __m256i x =
+                _mm256_sub_epi8(_mm256_loadu_si256((const __m256i *)p), _mm256_set1_epi8('0'));
             v = (U)parse32(x);
             for (int i = 32; i < Digits; ++i) v = v * 10 + p[i] - '0';
         }
@@ -348,19 +333,20 @@ class Reader {
         return v;
     }
 
-    template<class T>
+    template <class T>
     [[gnu::always_inline]] T read_signed(auto read_unsigned) {
-        bool neg = *p == '-'; p += neg;
+        bool neg = *p == '-';
+        p += neg;
         auto v = (this->*read_unsigned)();
         using U = make_unsigned_t<T>;
         U magnitude = (U)v;
         return neg ? (T)(U(0) - magnitude) : (T)magnitude;
     }
 
-public:
-    Reader(): p(map_stdin()) {}
-    explicit Reader(DirectMappingTag): p(map_stdin_direct()) {}
-    explicit Reader(const char* input): p(input) {}
+  public:
+    Reader() : p(map_stdin()) {}
+    explicit Reader(DirectMappingTag) : p(map_stdin_direct()) {}
+    explicit Reader(const char *input) : p(input) {}
 
     [[gnu::always_inline]] u32 read_digit() {
         u32 value = (u32)(*p - '0');
@@ -374,27 +360,31 @@ public:
     [[gnu::always_inline]] i64 read_i64() { return read_signed<i64>(&Reader::read_simd_u64); }
     [[gnu::always_inline]] u128 read_u128() { return read_avx_u128(p); }
     [[gnu::always_inline]] i128 read_i128() {
-        bool neg = *p == '-'; p += neg;
+        bool neg = *p == '-';
+        p += neg;
         u128 value = read_avx_u128(p);
         return neg ? (i128)(u128(0) - value) : (i128)value;
     }
     [[gnu::always_inline]] i128 read_staged_i128() {
-        bool neg = *p == '-'; p += neg;
+        bool neg = *p == '-';
+        p += neg;
         u128 value = read_staged_u128(p);
         return neg ? (i128)(u128(0) - value) : (i128)value;
     }
 
-    template<int Digits, class T = u64>
+    template <int Digits, class T = u64>
     [[gnu::always_inline]] T read_fixed() {
         static_assert(is_integral_v<T> || same_as<T, i128> || same_as<T, u128>);
         if constexpr (same_as<T, i128>) {
-            bool neg = *p == '-'; p += neg;
+            bool neg = *p == '-';
+            p += neg;
             u128 value = read_fixed_unsigned<Digits, u128>();
             return neg ? (i128)(u128(0) - value) : (i128)value;
         } else if constexpr (same_as<T, u128>) {
             return read_fixed_unsigned<Digits, u128>();
         } else if constexpr (is_signed_v<T>) {
-            bool neg = *p == '-'; p += neg;
+            bool neg = *p == '-';
+            p += neg;
             using U = make_unsigned_t<T>;
             U value = read_fixed_unsigned<Digits, U>();
             return neg ? (T)(U(0) - value) : (T)value;
@@ -403,76 +393,97 @@ public:
         }
     }
 
-    template<int MaxDigits, class T = u64>
+    template <int MaxDigits, class T = u64>
     [[gnu::always_inline]] T read_var() {
         static_assert(1 <= MaxDigits && MaxDigits <= 37);
         if constexpr (same_as<T, u128>) {
-            if constexpr (MaxDigits <= 19) return (u128)read_simd_u64();
-            else return read_u128();
+            if constexpr (MaxDigits <= 19)
+                return (u128)read_simd_u64();
+            else
+                return read_u128();
         } else if constexpr (same_as<T, i128>) {
-            bool neg = *p == '-'; p += neg;
+            bool neg = *p == '-';
+            p += neg;
             u128 value;
-            if constexpr (MaxDigits <= 18) value = read_simd_u64();
-            else value = read_avx_u128(p);
+            if constexpr (MaxDigits <= 18)
+                value = read_simd_u64();
+            else
+                value = read_avx_u128(p);
             return neg ? (i128)(u128(0) - value) : (i128)value;
-        }
-        else if constexpr (is_signed_v<T>) {
+        } else if constexpr (is_signed_v<T>) {
             if constexpr (MaxDigits <= 2)
                 return read_signed<T>(&Reader::read_scalar_u64);
-            else return read_signed<T>(&Reader::read_simd_u64);
+            else
+                return read_signed<T>(&Reader::read_simd_u64);
         } else {
-            if constexpr (MaxDigits <= 2) return (T)read_scalar_u64();
-            else return (T)read_simd_u64();
+            if constexpr (MaxDigits <= 2)
+                return (T)read_scalar_u64();
+            else
+                return (T)read_simd_u64();
         }
     }
 
-    template<int MaxDigits, class T = u64>
+    template <int MaxDigits, class T = u64>
     [[gnu::always_inline]] T read_uniform() {
         static_assert(1 <= MaxDigits && MaxDigits <= 37);
         if constexpr (same_as<T, u128>) {
-            if constexpr (MaxDigits <= 19) return (u128)read_simd_u64();
+            if constexpr (MaxDigits <= 19)
+                return (u128)read_simd_u64();
             else if constexpr (32 <= MaxDigits && MaxDigits <= 34)
                 return read_avx_u128(p);
-            else return read_staged_u128(p);
+            else
+                return read_staged_u128(p);
         } else if constexpr (same_as<T, i128>) {
-            bool neg = *p == '-'; p += neg;
+            bool neg = *p == '-';
+            p += neg;
             u128 value;
-            if constexpr (MaxDigits <= 18) value = read_simd_u64();
+            if constexpr (MaxDigits <= 18)
+                value = read_simd_u64();
             else if constexpr (32 <= MaxDigits && MaxDigits <= 36)
                 value = read_avx_u128(p);
-            else value = read_staged_u128(p);
+            else
+                value = read_staged_u128(p);
             return neg ? (i128)(u128(0) - value) : (i128)value;
         } else {
             bool neg = false;
             if constexpr (is_signed_v<T>) neg = *p == '-', p += neg;
             u64 value;
             if constexpr (is_signed_v<T>) {
-                if constexpr (MaxDigits <= 3) value = read_scalar_u64();
-                else if constexpr (MaxDigits <= 7) value = read_swar4_u64();
-                else if constexpr (MaxDigits <= 13) value = read_swar_u64();
-                else value = read_simd_u64();
+                if constexpr (MaxDigits <= 3)
+                    value = read_scalar_u64();
+                else if constexpr (MaxDigits <= 7)
+                    value = read_swar4_u64();
+                else if constexpr (MaxDigits <= 13)
+                    value = read_swar_u64();
+                else
+                    value = read_simd_u64();
             } else {
-                if constexpr (MaxDigits <= 3) value = read_scalar_u64();
-                else if constexpr (MaxDigits <= 7) value = read_swar4_u64();
-                else if constexpr (MaxDigits <= 12) value = read_swar_u64();
-                else value = read_simd_u64();
+                if constexpr (MaxDigits <= 3)
+                    value = read_scalar_u64();
+                else if constexpr (MaxDigits <= 7)
+                    value = read_swar4_u64();
+                else if constexpr (MaxDigits <= 12)
+                    value = read_swar_u64();
+                else
+                    value = read_simd_u64();
             }
             using U = make_unsigned_t<T>;
             U magnitude = (U)value;
             if constexpr (is_signed_v<T>)
                 return neg ? (T)(U(0) - magnitude) : (T)magnitude;
-            else return (T)magnitude;
+            else
+                return (T)magnitude;
         }
     }
 
-    template<u32 Mod>
+    template <u32 Mod>
     [[gnu::always_inline]] u32 read_mod() {
         u32 value = read_u32();
         toy_assert(value < Mod);
         return value;
     }
 
-    template<class T = u32>
+    template <class T = u32>
     [[gnu::always_inline]] T read_index(T size) {
         T value = read<T>();
         toy_assert(value < size);
@@ -480,7 +491,7 @@ public:
     }
 
     string_view read_token() {
-        const char* begin = p;
+        const char *begin = p;
         while (*p > ' ') ++p;
         string_view token(begin, p);
         ++p;
@@ -499,31 +510,36 @@ public:
         while (*p <= ' ') ++p;
     }
 
-    template<class T> [[gnu::always_inline]] T read() {
-        if constexpr (same_as<T, i128>) return read_i128();
-        else if constexpr (same_as<T, u128>) return read_u128();
-        else if constexpr (is_signed_v<T> && sizeof(T) <= 4) return (T)read_i32();
-        else if constexpr (is_signed_v<T>) return (T)read_i64();
-        else if constexpr (sizeof(T) <= 4) return (T)read_u32();
-        else return (T)read_u64();
+    template <class T>
+    [[gnu::always_inline]] T read() {
+        if constexpr (same_as<T, i128>)
+            return read_i128();
+        else if constexpr (same_as<T, u128>)
+            return read_u128();
+        else if constexpr (is_signed_v<T> && sizeof(T) <= 4)
+            return (T)read_i32();
+        else if constexpr (is_signed_v<T>)
+            return (T)read_i64();
+        else if constexpr (sizeof(T) <= 4)
+            return (T)read_u32();
+        else
+            return (T)read_u64();
     }
 };
 
-template<usize N = 1 << 19, bool Compact = false>
+template <usize N = 1 << 19, bool Compact = false>
 class Writer {
     alignas(64) array<char, N> storage;
-    char* begin = storage.data();
-    char* p = begin;
-    char* end = begin + N;
+    char *begin = storage.data();
+    char *p = begin;
+    char *end = begin + N;
 
     static constexpr u32 packed_digits(int x) {
-        return (u32)('0' + x / 1000) |
-               (u32)('0' + x / 100 % 10) << 8 |
-               (u32)('0' + x / 10 % 10) << 16 |
-               (u32)('0' + x % 10) << 24;
+        return (u32)('0' + x / 1000) | (u32)('0' + x / 100 % 10) << 8 |
+               (u32)('0' + x / 10 % 10) << 16 | (u32)('0' + x % 10) << 24;
     }
 
-    static const array<u32, 10000>& lut() {
+    static const array<u32, 10000> &lut() {
         static constexpr auto a = [] {
             array<u32, 10000> result{};
             for (int x = 0; x < 10000; ++x) result[x] = packed_digits(x);
@@ -532,7 +548,7 @@ class Writer {
         return a;
     }
 
-    static const array<u32, 10000>& first_lut() {
+    static const array<u32, 10000> &first_lut() {
         static constexpr auto a = [] {
             array<u32, 10000> result{};
             for (int x = 0; x < 10000; ++x) {
@@ -548,7 +564,7 @@ class Writer {
         return a;
     }
 
-    static const array<u32, 10000>& negative_lut() {
+    static const array<u32, 10000> &negative_lut() {
         static constexpr auto a = [] {
             array<u32, 10000> result{};
             for (int x = 0; x < 10000; ++x) {
@@ -564,7 +580,7 @@ class Writer {
         return a;
     }
 
-    template<u64 Magic, int Shift>
+    template <u64 Magic, int Shift>
     [[gnu::always_inline]] static u64 reciprocal_div(u64 x) {
         return (u64)(((u128)x * Magic) >> 64) >> Shift;
     }
@@ -589,25 +605,25 @@ class Writer {
         if ((usize)(end - p) < n) flush();
     }
 
-    [[gnu::always_inline]] static void group(char*& cursor, u32 s) {
-        memcpy(cursor, &s, 4); cursor += 4;
+    [[gnu::always_inline]] static void group(char *&cursor, u32 s) {
+        memcpy(cursor, &s, 4);
+        cursor += 4;
     }
 
-    [[gnu::always_inline]] static void first_group(char*& cursor, u64 x) {
+    [[gnu::always_inline]] static void first_group(char *&cursor, u64 x) {
         if constexpr (Compact) {
             unsigned skip = 3 - (x >= 10) - (x >= 100) - (x >= 1000);
             u32 s = lut()[x] >> (skip * 8);
             memcpy(cursor, &s, 4);
             cursor += 4 - skip;
         } else {
-            group(cursor, x ? first_lut()[x]
-                            : (u32)' ' | (u32)' ' << 8 |
-                              (u32)' ' << 16 | (u32)'0' << 24);
+            group(cursor,
+                  x ? first_lut()[x] : (u32)' ' | (u32)' ' << 8 | (u32)' ' << 16 | (u32)'0' << 24);
         }
     }
 
-    [[gnu::always_inline]] static void u64_raw(char*& cursor, u64 x) {
-        const auto& table = lut();
+    [[gnu::always_inline]] static void u64_raw(char *&cursor, u64 x) {
+        const auto &table = lut();
         if constexpr (!Compact) {
             if (x >= 10'000'000'000'000'000ULL) {
                 u64 low = x % 100'000'000ULL;
@@ -637,8 +653,7 @@ class Writer {
             } else if (x) {
                 first_group(cursor, x);
             } else {
-                group(cursor, (u32)' ' | (u32)' ' << 8 |
-                              (u32)' ' << 16 | (u32)'0' << 24);
+                group(cursor, (u32)' ' | (u32)' ' << 8 | (u32)' ' << 16 | (u32)'0' << 24);
             }
         } else if (x > 9999'9999'9999'9999ULL) {
             u64 q1 = div_1e4(x), q2 = div_1e8(x);
@@ -668,16 +683,18 @@ class Writer {
         }
     }
 
-    template<u64 Max>
-    [[gnu::always_inline]] static void compact_u64_bounded(char*& cursor, u64 x) {
+    template <u64 Max>
+    [[gnu::always_inline]] static void compact_u64_bounded(char *&cursor, u64 x) {
         static_assert(Max <= numeric_limits<u64>::max());
-        const auto& table = lut();
+        const auto &table = lut();
         if constexpr (Max <= 9'999ULL) {
             first_group(cursor, x);
         } else if constexpr (Max <= 99'999'999ULL) {
             u64 q1 = div_1e4(x);
-            if (q1) first_group(cursor, q1), group(cursor, table[x - q1 * 10000]);
-            else first_group(cursor, x);
+            if (q1)
+                first_group(cursor, q1), group(cursor, table[x - q1 * 10000]);
+            else
+                first_group(cursor, x);
         } else if constexpr (Max <= 999'999'999'999ULL) {
             u64 q1 = div_1e4(x), q2 = div_1e8(x);
             if (q2) {
@@ -712,8 +729,8 @@ class Writer {
         }
     }
 
-    template<unsigned Digits>
-    [[gnu::always_inline]] static void u64_fixed(char*& cursor, u64 x) {
+    template <unsigned Digits>
+    [[gnu::always_inline]] static void u64_fixed(char *&cursor, u64 x) {
         static_assert(1 <= Digits && Digits <= 20);
         constexpr unsigned groups = (Digits + 3) / 4;
         constexpr unsigned leading = Digits - 4 * (groups - 1);
@@ -722,7 +739,7 @@ class Writer {
             memcpy(cursor, &first, 4);
             cursor += leading;
         };
-        const auto& table = lut();
+        const auto &table = lut();
         if constexpr (groups == 1) {
             first_fixed(x);
         } else if constexpr (groups == 2) {
@@ -751,8 +768,8 @@ class Writer {
         }
     }
 
-    template<unsigned Digits>
-    [[gnu::always_inline]] static void i128_fixed(char*& cursor, i128 x) {
+    template <unsigned Digits>
+    [[gnu::always_inline]] static void i128_fixed(char *&cursor, i128 x) {
         static_assert(1 <= Digits && Digits <= 39);
         bool negative = x < 0;
         u128 magnitude = negative ? u128(0) - (u128)x : (u128)x;
@@ -766,15 +783,16 @@ class Writer {
         }
     }
 
-    [[gnu::always_inline]] static void i64_raw(char*& cursor, u64 x) {
+    [[gnu::always_inline]] static void i64_raw(char *&cursor, u64 x) {
         if constexpr (Compact) {
             *cursor++ = '-';
             u64_raw(cursor, x);
         } else {
-            const auto& next = lut();
-            const auto& negative = negative_lut();
+            const auto &next = lut();
+            const auto &negative = negative_lut();
             if (x >= 10'000'000'000'000'000'000ULL) {
-                *cursor++ = '-'; u64_raw(cursor, x);
+                *cursor++ = '-';
+                u64_raw(cursor, x);
             } else if (x > 999'9999'9999'9999ULL) {
                 u64 q1 = div_1e4(x), q2 = div_1e8(x);
                 u64 q3 = div_1e12(x), q4 = div_1e16(x);
@@ -804,21 +822,25 @@ class Writer {
         }
     }
 
-    [[gnu::always_inline]] static void fixed19(char*& cursor, u64 x) {
-        const auto& next = lut();
+    [[gnu::always_inline]] static void fixed19(char *&cursor, u64 x) {
+        const auto &next = lut();
         u64 q1 = div_1e4(x), q2 = div_1e8(x);
         u64 q3 = div_1e12(x), q4 = div_1e16(x);
         u32 first = next[q4] >> 8;
-        memcpy(cursor, &first, 4); cursor += 3;
+        memcpy(cursor, &first, 4);
+        cursor += 3;
         group(cursor, next[q3 - q4 * 10000]);
         group(cursor, next[q2 - q3 * 10000]);
         group(cursor, next[q1 - q2 * 10000]);
         group(cursor, next[x - q1 * 10000]);
     }
 
-public:
+  public:
     ~Writer() { flush(); }
-    void flush() { detail::write_all(begin, p - begin); p = begin; }
+    void flush() {
+        detail::write_all(begin, p - begin);
+        p = begin;
+    }
     void put(char c) {
         ensure(1);
         *p++ = c;
@@ -838,7 +860,7 @@ public:
 
     [[gnu::always_inline]] void write_padded_u32(u32 x) {
         ensure(16);
-        char* cursor = p;
+        char *cursor = p;
         *cursor++ = ' ';
         if (x > 99'999'999U) {
             u32 high = x / 100'000'000U;
@@ -853,8 +875,7 @@ public:
         } else if (x) {
             group(cursor, first_lut()[x]);
         } else {
-            group(cursor, (u32)' ' | (u32)' ' << 8 |
-                          (u32)' ' << 16 | (u32)'0' << 24);
+            group(cursor, (u32)' ' | (u32)' ' << 8 | (u32)' ' << 16 | (u32)'0' << 24);
         }
         p = cursor;
     }
@@ -862,7 +883,7 @@ public:
     [[gnu::always_inline]] void write_token_u32_6(u32 x) {
         toy_assert(x < 1'000'000U);
         ensure(8);
-        char* cursor = p;
+        char *cursor = p;
         *cursor++ = ' ';
         if (x >= 10'000U) {
             u32 high = x / 10'000U;
@@ -878,22 +899,21 @@ public:
         } else if (x) {
             group(cursor, first_lut()[x]);
         } else {
-            group(cursor, (u32)' ' | (u32)' ' << 8 |
-                          (u32)' ' << 16 | (u32)'0' << 24);
+            group(cursor, (u32)' ' | (u32)' ' << 8 | (u32)' ' << 16 | (u32)'0' << 24);
         }
         p = cursor;
     }
 
     [[gnu::always_inline]] void writeln(u64 x) {
         ensure(24);
-        char* cursor = p;
+        char *cursor = p;
         u64_raw(cursor, x);
         *cursor++ = '\n';
         p = cursor;
     }
     [[gnu::always_inline]] void writeln_i64(i64 x) {
         ensure(24);
-        char* cursor = p;
+        char *cursor = p;
         if (x < 0)
             i64_raw(cursor, u64(0) - (u64)x);
         else
@@ -901,80 +921,92 @@ public:
         *cursor++ = '\n';
         p = cursor;
     }
-    template<unsigned Digits>
+    template <unsigned Digits>
     [[gnu::always_inline]] void writeln_fixed(u64 x) {
         ensure(24);
-        char* cursor = p;
+        char *cursor = p;
         u64_fixed<Digits>(cursor, x);
         *cursor++ = '\n';
         p = cursor;
     }
-    template<unsigned Digits>
+    template <unsigned Digits>
     [[gnu::always_inline]] void write_token_fixed(u64 x) {
         ensure(24);
-        char* cursor = p;
+        char *cursor = p;
         *cursor++ = ' ';
         u64_fixed<Digits>(cursor, x);
         p = cursor;
     }
-    template<u64 Max>
+    template <u64 Max>
     [[gnu::always_inline]] void writeln_bounded(u64 x) {
         toy_assert(x <= Max);
         ensure(24);
-        char* cursor = p;
-        if constexpr (Compact) compact_u64_bounded<Max>(cursor, x);
-        else u64_raw(cursor, x);
+        char *cursor = p;
+        if constexpr (Compact)
+            compact_u64_bounded<Max>(cursor, x);
+        else
+            u64_raw(cursor, x);
         *cursor++ = '\n';
         p = cursor;
     }
     [[gnu::always_inline]] void write_token(u64 x) {
         ensure(24);
-        char* cursor = p;
+        char *cursor = p;
         *cursor++ = ' ';
         u64_raw(cursor, x);
         p = cursor;
     }
-    template<u64 Max>
+    template <u64 Max>
     [[gnu::always_inline]] void write_token_bounded(u64 x) {
         toy_assert(x <= Max);
         ensure(24);
-        char* cursor = p;
+        char *cursor = p;
         *cursor++ = ' ';
-        if constexpr (Compact) compact_u64_bounded<Max>(cursor, x);
-        else u64_raw(cursor, x);
+        if constexpr (Compact)
+            compact_u64_bounded<Max>(cursor, x);
+        else
+            u64_raw(cursor, x);
         p = cursor;
     }
     [[gnu::always_inline]] void writeln(i128 x) {
-        ensure(48); bool neg = x < 0; u128 v = neg ? u128(0) - (u128)x : (u128)x;
+        ensure(48);
+        bool neg = x < 0;
+        u128 v = neg ? u128(0) - (u128)x : (u128)x;
         auto [q, r] = detail::divmod_1e19(v);
-        char* cursor = p;
+        char *cursor = p;
         if (neg) {
-            if (q) i64_raw(cursor, q), fixed19(cursor, r); else i64_raw(cursor, r);
+            if (q)
+                i64_raw(cursor, q), fixed19(cursor, r);
+            else
+                i64_raw(cursor, r);
         } else {
-            if (q) u64_raw(cursor, q), fixed19(cursor, r); else u64_raw(cursor, r);
+            if (q)
+                u64_raw(cursor, q), fixed19(cursor, r);
+            else
+                u64_raw(cursor, r);
         }
         *cursor++ = '\n';
         p = cursor;
     }
-    template<unsigned Digits>
+    template <unsigned Digits>
     [[gnu::always_inline]] void writeln_fixed(i128 x) {
         ensure(48);
-        char* cursor = p;
+        char *cursor = p;
         i128_fixed<Digits>(cursor, x);
         *cursor++ = '\n';
         p = cursor;
     }
-    template<unsigned Digits>
+    template <unsigned Digits>
     [[gnu::always_inline]] void write_token_fixed(i128 x) {
         ensure(48);
-        char* cursor = p;
+        char *cursor = p;
         *cursor++ = ' ';
         i128_fixed<Digits>(cursor, x);
         p = cursor;
     }
 };
 
-template<usize N = 1 << 19>
+template <usize N = 1 << 19>
 using CompactWriter = Writer<N, true>;
 
 } // namespace toy

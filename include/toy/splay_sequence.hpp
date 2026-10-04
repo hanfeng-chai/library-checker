@@ -4,7 +4,7 @@
 
 namespace toy {
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class AffineSplaySequence {
     using Function = Affine<Mod>;
 
@@ -29,21 +29,17 @@ class AffineSplaySequence {
         return result >= Mod ? result - Mod : result;
     }
 
-    static uint32_t replace_sum(
-        uint32_t total, uint32_t old_part, uint32_t new_part) {
-        total = total >= old_part ? total - old_part
-                                  : total + Mod - old_part;
+    static uint32_t replace_sum(uint32_t total, uint32_t old_part, uint32_t new_part) {
+        total = total >= old_part ? total - old_part : total + Mod - old_part;
         return add_sum(total, new_part);
     }
 
     void apply_node(int node, Function function) {
         if (!node) return;
-        Node& current = nodes[node];
+        Node &current = nodes[node];
         current.value = function(current.value);
         current.sum =
-            ((uint64_t)function.a * current.sum +
-             (uint64_t)function.b * current.size) %
-            Mod;
+            ((uint64_t)function.a * current.sum + (uint64_t)function.b * current.size) % Mod;
         current.lazy = ComposeAffine<Mod>{}(current.lazy, function);
     }
 
@@ -67,9 +63,8 @@ class AffineSplaySequence {
     }
 
     void pull(int node) {
-        Node& current = nodes[node];
-        current.size =
-            1 + size_of(current.left) + size_of(current.right);
+        Node &current = nodes[node];
+        current.size = 1 + size_of(current.left) + size_of(current.right);
         uint32_t sum = sum_of(current.left) + current.value;
         if (sum >= Mod) sum -= Mod;
         sum += sum_of(current.right);
@@ -86,7 +81,7 @@ class AffineSplaySequence {
         return middle;
     }
 
-    void rotate_right(int& node) {
+    void rotate_right(int &node) {
         int old_size = nodes[node].size;
         uint32_t old_sum = nodes[node].sum;
         int child = nodes[node].left;
@@ -98,7 +93,7 @@ class AffineSplaySequence {
         node = child;
     }
 
-    void rotate_left(int& node) {
+    void rotate_left(int &node) {
         int old_size = nodes[node].size;
         uint32_t old_sum = nodes[node].sum;
         int child = nodes[node].right;
@@ -110,12 +105,12 @@ class AffineSplaySequence {
         node = child;
     }
 
-    void splay(int& node, int rank) {
+    void splay(int &node, int rank) {
         push(node);
         int left_size = size_of(nodes[node].left);
         if (rank == left_size) return;
         if (rank < left_size) {
-            int& left = nodes[node].left;
+            int &left = nodes[node].left;
             push(left);
             int left_left_size = size_of(nodes[left].left);
             if (rank == left_left_size) {
@@ -131,7 +126,7 @@ class AffineSplaySequence {
             }
         } else {
             rank -= left_size + 1;
-            int& right = nodes[node].right;
+            int &right = nodes[node].right;
             push(right);
             int right_left_size = size_of(nodes[right].left);
             if (rank == right_left_size) {
@@ -156,21 +151,16 @@ class AffineSplaySequence {
 
     void replace_exposed_sum(uint32_t old_sum, uint32_t new_sum) {
         int successor = nodes[root].right;
-        nodes[successor].sum =
-            replace_sum(nodes[successor].sum, old_sum, new_sum);
-        nodes[root].sum =
-            replace_sum(nodes[root].sum, old_sum, new_sum);
+        nodes[successor].sum = replace_sum(nodes[successor].sum, old_sum, new_sum);
+        nodes[root].sum = replace_sum(nodes[root].sum, old_sum, new_sum);
     }
 
-public:
-    explicit AffineSplaySequence(
-        const std::vector<uint32_t>& values,
-        std::size_t extra_capacity = 0) {
+  public:
+    explicit AffineSplaySequence(const std::vector<uint32_t> &values,
+                                 std::size_t extra_capacity = 0) {
         nodes.reserve(values.size() + extra_capacity + 3);
         nodes.push_back({});
-        for (uint32_t value : values)
-            nodes.push_back(
-                {.value = value, .sum = value});
+        for (uint32_t value : values) nodes.push_back({.value = value, .sum = value});
         nodes.push_back({});
         root = build(1, nodes.size());
     }
@@ -197,9 +187,7 @@ public:
         replace_exposed_sum(nodes[removed].sum, 0);
     }
 
-    void reverse(int left, int right) {
-        reverse_node(expose(left, right));
-    }
+    void reverse(int left, int right) { reverse_node(expose(left, right)); }
 
     void apply(int left, int right, Function function) {
         int middle = expose(left, right);
@@ -208,9 +196,7 @@ public:
         replace_exposed_sum(old_sum, nodes[middle].sum);
     }
 
-    uint32_t fold(int left, int right) {
-        return sum_of(expose(left, right));
-    }
+    uint32_t fold(int left, int right) { return sum_of(expose(left, right)); }
 
     uint32_t get(int index) { return fold(index, index + 1); }
 };

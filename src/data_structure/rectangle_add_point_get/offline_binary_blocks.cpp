@@ -32,12 +32,10 @@ int main() {
             toy::u32 right = input.read_uniform<10, toy::u32>();
             toy::u32 up = input.read_uniform<10, toy::u32>();
             toy::i64 weight = input.read_uniform<10, toy::i64>();
-            solver.add_rectangle(
-                first, second, right, up, weight);
+            solver.add_rectangle(first, second, right, up, weight);
         } else {
             solver.add_query(first, second);
         }
     }
-    for (toy::i64 answer : solver.solve())
-        output.writeln_i64(answer);
+    for (toy::i64 answer : solver.solve()) output.writeln_i64(answer);
 }

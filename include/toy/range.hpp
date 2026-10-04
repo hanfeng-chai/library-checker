@@ -4,29 +4,29 @@
 
 namespace toy {
 
-template<class T>
+template <class T>
 class PrefixSum {
     std::vector<T> prefix;
 
-public:
-    template<class Range>
-    explicit PrefixSum(const Range& values) : prefix(values.size() + 1) {
+  public:
+    template <class Range>
+    explicit PrefixSum(const Range &values) : prefix(values.size() + 1) {
         std::partial_sum(values.begin(), values.end(), prefix.begin() + 1);
     }
 
     T sum(int left, int right) const { return prefix[right] - prefix[left]; }
 };
 
-template<class T, class Operation>
+template <class T, class Operation>
 class SegmentTree {
     int size;
     T identity;
     Operation operation;
     std::vector<T> data;
 
-public:
-    template<class Range>
-    SegmentTree(const Range& values, T identity_value, Operation combine = {})
+  public:
+    template <class Range>
+    SegmentTree(const Range &values, T identity_value, Operation combine = {})
         : size(std::bit_ceil((unsigned)values.size())), identity(identity_value),
           operation(combine), data(2 * size, identity_value) {
         std::copy(values.begin(), values.end(), data.begin() + size);
@@ -50,14 +50,14 @@ public:
     }
 };
 
-template<class T, class Operation>
+template <class T, class Operation>
 class SparseTable {
     Operation operation;
     std::vector<std::vector<T>> table;
 
-public:
-    template<class Range>
-    explicit SparseTable(const Range& values, Operation combine = {})
+  public:
+    template <class Range>
+    explicit SparseTable(const Range &values, Operation combine = {})
         : operation(combine), table(std::bit_width(values.size())) {
         table[0].assign(values.begin(), values.end());
         for (int level = 1; level < (int)table.size(); ++level) {
@@ -65,8 +65,7 @@ public:
             int count = values.size() - (1 << level) + 1;
             table[level].resize(std::max(count, 0));
             for (int i = 0; i < count; ++i)
-                table[level][i] = operation(table[level - 1][i],
-                                            table[level - 1][i + half]);
+                table[level][i] = operation(table[level - 1][i], table[level - 1][i + half]);
         }
     }
 
@@ -77,8 +76,7 @@ public:
 };
 
 class RangeAddMinTree {
-    static constexpr int64_t infinity =
-        4'000'000'000'000'000'000LL;
+    static constexpr int64_t infinity = 4'000'000'000'000'000'000LL;
 
     struct PrefixMinimum {
         int64_t sum = 0;
@@ -90,18 +88,14 @@ class RangeAddMinTree {
     std::vector<int64_t> difference;
     std::vector<PrefixMinimum> data;
 
-    static PrefixMinimum combine(
-        const PrefixMinimum& left, const PrefixMinimum& right) {
-        return {
-            left.sum + right.sum,
-            std::min(left.minimum, left.sum + right.minimum)};
+    static PrefixMinimum combine(const PrefixMinimum &left, const PrefixMinimum &right) {
+        return {left.sum + right.sum, std::min(left.minimum, left.sum + right.minimum)};
     }
 
     void set(int index) {
         int node = size + index;
         data[node] = {difference[index], difference[index]};
-        while (node >>= 1)
-            data[node] = combine(data[node * 2], data[node * 2 + 1]);
+        while (node >>= 1) data[node] = combine(data[node * 2], data[node * 2 + 1]);
     }
 
     PrefixMinimum fold(int left, int right) const {
@@ -115,15 +109,13 @@ class RangeAddMinTree {
         while (bits != 0) {
             int level = std::countr_zero(bits);
             bits ^= uint32_t(1) << level;
-            result = combine(
-                result, data[(lower >> level) ^ 1]);
+            result = combine(result, data[(lower >> level) ^ 1]);
         }
         bits = upper & mask;
         while (bits != 0) {
             int level = std::bit_width(bits) - 1;
             bits ^= uint32_t(1) << level;
-            result = combine(
-                result, data[(upper >> level) ^ 1]);
+            result = combine(result, data[(upper >> level) ^ 1]);
         }
         return result;
     }
@@ -135,10 +127,9 @@ class RangeAddMinTree {
         return result;
     }
 
-public:
-    explicit RangeAddMinTree(const std::vector<int64_t>& values)
-        : length(values.size()),
-          size(std::bit_ceil((unsigned)values.size())),
+  public:
+    explicit RangeAddMinTree(const std::vector<int64_t> &values)
+        : length(values.size()), size(std::bit_ceil((unsigned)values.size())),
           difference(values.size()), data(2 * size) {
         int64_t previous = 0;
         for (int i = 0; i < length; ++i) {
@@ -177,28 +168,26 @@ class RecursiveRangeClampAddSumTree {
     std::vector<Node> data;
 
     void pull(int node) {
-        const Node& left = data[node * 2];
-        const Node& right = data[node * 2 + 1];
-        Node& current = data[node];
+        const Node &left = data[node * 2];
+        const Node &right = data[node * 2 + 1];
+        Node &current = data[node];
         current.sum = left.sum + right.sum;
         current.maximum = std::max(left.maximum, right.maximum);
-        current.maximum_count =
-            (left.maximum == current.maximum ? left.maximum_count : 0) +
-            (right.maximum == current.maximum ? right.maximum_count : 0);
+        current.maximum_count = (left.maximum == current.maximum ? left.maximum_count : 0) +
+                                (right.maximum == current.maximum ? right.maximum_count : 0);
         current.second_maximum =
             std::max(left.maximum == current.maximum ? left.second_maximum : left.maximum,
                      right.maximum == current.maximum ? right.second_maximum : right.maximum);
         current.minimum = std::min(left.minimum, right.minimum);
-        current.minimum_count =
-            (left.minimum == current.minimum ? left.minimum_count : 0) +
-            (right.minimum == current.minimum ? right.minimum_count : 0);
+        current.minimum_count = (left.minimum == current.minimum ? left.minimum_count : 0) +
+                                (right.minimum == current.minimum ? right.minimum_count : 0);
         current.second_minimum =
             std::min(left.minimum == current.minimum ? left.second_minimum : left.minimum,
                      right.minimum == current.minimum ? right.second_minimum : right.minimum);
         current.lazy_add = 0;
     }
     void apply_add(int node, int length, int64_t value) {
-        Node& current = data[node];
+        Node &current = data[node];
         current.sum += value * length;
         current.maximum += value;
         current.minimum += value;
@@ -207,36 +196,38 @@ class RecursiveRangeClampAddSumTree {
         current.lazy_add += value;
     }
     void apply_chmin(int node, int64_t value) {
-        Node& current = data[node];
+        Node &current = data[node];
         current.sum += (value - current.maximum) * current.maximum_count;
-        if (current.minimum == current.maximum) current.minimum = value;
-        else if (current.second_minimum == current.maximum) current.second_minimum = value;
+        if (current.minimum == current.maximum)
+            current.minimum = value;
+        else if (current.second_minimum == current.maximum)
+            current.second_minimum = value;
         current.maximum = value;
     }
     void apply_chmax(int node, int64_t value) {
-        Node& current = data[node];
+        Node &current = data[node];
         current.sum += (value - current.minimum) * current.minimum_count;
-        if (current.maximum == current.minimum) current.maximum = value;
-        else if (current.second_maximum == current.minimum) current.second_maximum = value;
+        if (current.maximum == current.minimum)
+            current.maximum = value;
+        else if (current.second_maximum == current.minimum)
+            current.second_maximum = value;
         current.minimum = value;
     }
     void push(int node, int left_length, int right_length) {
-        Node& current = data[node];
+        Node &current = data[node];
         if (current.lazy_add) {
             apply_add(node * 2, left_length, current.lazy_add);
             apply_add(node * 2 + 1, right_length, current.lazy_add);
             current.lazy_add = 0;
         }
-        if (data[node * 2].maximum > current.maximum)
-            apply_chmin(node * 2, current.maximum);
+        if (data[node * 2].maximum > current.maximum) apply_chmin(node * 2, current.maximum);
         if (data[node * 2 + 1].maximum > current.maximum)
             apply_chmin(node * 2 + 1, current.maximum);
-        if (data[node * 2].minimum < current.minimum)
-            apply_chmax(node * 2, current.minimum);
+        if (data[node * 2].minimum < current.minimum) apply_chmax(node * 2, current.minimum);
         if (data[node * 2 + 1].minimum < current.minimum)
             apply_chmax(node * 2 + 1, current.minimum);
     }
-    void build(int node, int left, int right, const std::vector<int64_t>& values) {
+    void build(int node, int left, int right, const std::vector<int64_t> &values) {
         if (right - left == 1) {
             int64_t value = values[left];
             data[node] = {value, -infinity, value, infinity, value, 0, 1, 1};
@@ -247,12 +238,9 @@ class RecursiveRangeClampAddSumTree {
         build(node * 2 + 1, middle, right, values);
         pull(node);
     }
-    void chmin(int node, int left, int right, int query_left, int query_right,
-               int64_t value) {
-        if (query_right <= left || right <= query_left || data[node].maximum <= value)
-            return;
-        if (query_left <= left && right <= query_right &&
-            data[node].second_maximum < value) {
+    void chmin(int node, int left, int right, int query_left, int query_right, int64_t value) {
+        if (query_right <= left || right <= query_left || data[node].maximum <= value) return;
+        if (query_left <= left && right <= query_right && data[node].second_maximum < value) {
             apply_chmin(node, value);
             return;
         }
@@ -262,12 +250,9 @@ class RecursiveRangeClampAddSumTree {
         chmin(node * 2 + 1, middle, right, query_left, query_right, value);
         pull(node);
     }
-    void chmax(int node, int left, int right, int query_left, int query_right,
-               int64_t value) {
-        if (query_right <= left || right <= query_left || value <= data[node].minimum)
-            return;
-        if (query_left <= left && right <= query_right &&
-            value < data[node].second_minimum) {
+    void chmax(int node, int left, int right, int query_left, int query_right, int64_t value) {
+        if (query_right <= left || right <= query_left || value <= data[node].minimum) return;
+        if (query_left <= left && right <= query_right && value < data[node].second_minimum) {
             apply_chmax(node, value);
             return;
         }
@@ -277,8 +262,7 @@ class RecursiveRangeClampAddSumTree {
         chmax(node * 2 + 1, middle, right, query_left, query_right, value);
         pull(node);
     }
-    void add(int node, int left, int right, int query_left, int query_right,
-             int64_t value) {
+    void add(int node, int left, int right, int query_left, int query_right, int64_t value) {
         if (query_right <= left || right <= query_left) return;
         if (query_left <= left && right <= query_right) {
             apply_add(node, right - left, value);
@@ -299,29 +283,19 @@ class RecursiveRangeClampAddSumTree {
                sum(node * 2 + 1, middle, right, query_left, query_right);
     }
 
-public:
-    explicit RecursiveRangeClampAddSumTree(
-        const std::vector<int64_t>& values)
+  public:
+    explicit RecursiveRangeClampAddSumTree(const std::vector<int64_t> &values)
         : size(values.size()), data(values.size() * 4) {
         build(1, 0, size, values);
     }
-    void chmin(int left, int right, int64_t value) {
-        chmin(1, 0, size, left, right, value);
-    }
-    void chmax(int left, int right, int64_t value) {
-        chmax(1, 0, size, left, right, value);
-    }
-    void add(int left, int right, int64_t value) {
-        add(1, 0, size, left, right, value);
-    }
-    int64_t sum(int left, int right) {
-        return sum(1, 0, size, left, right);
-    }
+    void chmin(int left, int right, int64_t value) { chmin(1, 0, size, left, right, value); }
+    void chmax(int left, int right, int64_t value) { chmax(1, 0, size, left, right, value); }
+    void add(int left, int right, int64_t value) { add(1, 0, size, left, right, value); }
+    int64_t sum(int left, int right) { return sum(1, 0, size, left, right); }
 };
 
 class RangeClampAddSumTree {
-    static constexpr int64_t infinity =
-        std::numeric_limits<int64_t>::max();
+    static constexpr int64_t infinity = std::numeric_limits<int64_t>::max();
 
     struct Node {
         int64_t maximum = -infinity;
@@ -340,63 +314,52 @@ class RangeClampAddSumTree {
     std::vector<Node> data;
 
     void pull(uint32_t node) {
-        const Node& left = data[node * 2];
-        const Node& right = data[node * 2 + 1];
-        Node& current = data[node];
+        const Node &left = data[node * 2];
+        const Node &right = data[node * 2 + 1];
+        Node &current = data[node];
         current.sum = left.sum + right.sum;
         if (left.maximum == right.maximum) {
             current.maximum = left.maximum;
-            current.second_maximum =
-                std::max(left.second_maximum, right.second_maximum);
-            current.maximum_count =
-                left.maximum_count + right.maximum_count;
+            current.second_maximum = std::max(left.second_maximum, right.second_maximum);
+            current.maximum_count = left.maximum_count + right.maximum_count;
         } else if (left.maximum > right.maximum) {
             current.maximum = left.maximum;
-            current.second_maximum =
-                std::max(left.second_maximum, right.maximum);
+            current.second_maximum = std::max(left.second_maximum, right.maximum);
             current.maximum_count = left.maximum_count;
         } else {
             current.maximum = right.maximum;
-            current.second_maximum =
-                std::max(left.maximum, right.second_maximum);
+            current.second_maximum = std::max(left.maximum, right.second_maximum);
             current.maximum_count = right.maximum_count;
         }
         if (left.minimum == right.minimum) {
             current.minimum = left.minimum;
-            current.second_minimum =
-                std::min(left.second_minimum, right.second_minimum);
-            current.minimum_count =
-                left.minimum_count + right.minimum_count;
+            current.second_minimum = std::min(left.second_minimum, right.second_minimum);
+            current.minimum_count = left.minimum_count + right.minimum_count;
         } else if (left.minimum < right.minimum) {
             current.minimum = left.minimum;
-            current.second_minimum =
-                std::min(left.second_minimum, right.minimum);
+            current.second_minimum = std::min(left.second_minimum, right.minimum);
             current.minimum_count = left.minimum_count;
         } else {
             current.minimum = right.minimum;
-            current.second_minimum =
-                std::min(left.minimum, right.second_minimum);
+            current.second_minimum = std::min(left.minimum, right.second_minimum);
             current.minimum_count = right.minimum_count;
         }
         current.lazy_add = 0;
     }
 
     void apply_add(uint32_t node, uint32_t node_length, int64_t value) {
-        Node& current = data[node];
+        Node &current = data[node];
         current.sum += value * node_length;
         current.maximum += value;
         current.minimum += value;
-        if (current.second_maximum != -infinity)
-            current.second_maximum += value;
-        if (current.second_minimum != infinity)
-            current.second_minimum += value;
+        if (current.second_maximum != -infinity) current.second_maximum += value;
+        if (current.second_minimum != infinity) current.second_minimum += value;
         current.lazy_add += value;
     }
 
     void apply_chmin(uint32_t node, int64_t value) {
-        Node& current = data[node];
-        current.sum +=
-            (value - current.maximum) * current.maximum_count;
+        Node &current = data[node];
+        current.sum += (value - current.maximum) * current.maximum_count;
         if (current.minimum == current.maximum)
             current.minimum = value;
         else if (current.second_minimum == current.maximum)
@@ -405,9 +368,8 @@ class RangeClampAddSumTree {
     }
 
     void apply_chmax(uint32_t node, int64_t value) {
-        Node& current = data[node];
-        current.sum +=
-            (value - current.minimum) * current.minimum_count;
+        Node &current = data[node];
+        current.sum += (value - current.minimum) * current.minimum_count;
         if (current.maximum == current.minimum)
             current.maximum = value;
         else if (current.second_maximum == current.minimum)
@@ -416,25 +378,22 @@ class RangeClampAddSumTree {
     }
 
     void push(uint32_t node, uint32_t node_length) {
-        Node& current = data[node];
+        Node &current = data[node];
         uint32_t child_length = node_length >> 1;
         if (current.lazy_add != 0) {
             apply_add(node * 2, child_length, current.lazy_add);
             apply_add(node * 2 + 1, child_length, current.lazy_add);
             current.lazy_add = 0;
         }
-        if (data[node * 2].maximum > current.maximum)
-            apply_chmin(node * 2, current.maximum);
-        if (data[node * 2].minimum < current.minimum)
-            apply_chmax(node * 2, current.minimum);
+        if (data[node * 2].maximum > current.maximum) apply_chmin(node * 2, current.maximum);
+        if (data[node * 2].minimum < current.minimum) apply_chmax(node * 2, current.minimum);
         if (data[node * 2 + 1].maximum > current.maximum)
             apply_chmin(node * 2 + 1, current.maximum);
         if (data[node * 2 + 1].minimum < current.minimum)
             apply_chmax(node * 2 + 1, current.minimum);
     }
 
-    void apply_chmin_subtree(
-        uint32_t node, uint32_t node_length, int64_t value) {
+    void apply_chmin_subtree(uint32_t node, uint32_t node_length, int64_t value) {
         if (data[node].maximum <= value) return;
         if (data[node].second_maximum < value) {
             apply_chmin(node, value);
@@ -446,8 +405,7 @@ class RangeClampAddSumTree {
         pull(node);
     }
 
-    void apply_chmax_subtree(
-        uint32_t node, uint32_t node_length, int64_t value) {
+    void apply_chmax_subtree(uint32_t node, uint32_t node_length, int64_t value) {
         if (data[node].minimum >= value) return;
         if (value < data[node].second_minimum) {
             apply_chmax(node, value);
@@ -459,7 +417,7 @@ class RangeClampAddSumTree {
         pull(node);
     }
 
-    template<class Apply>
+    template <class Apply>
     void apply_range(int left, int right, Apply apply) {
         uint32_t lower = left + capacity;
         uint32_t upper = right - 1 + capacity;
@@ -474,8 +432,7 @@ class RangeClampAddSumTree {
             return;
         }
 
-        uint32_t split_level =
-            std::bit_width(lower ^ upper) - 1;
+        uint32_t split_level = std::bit_width(lower ^ upper) - 1;
         uint32_t node_length = capacity;
         for (uint32_t level = depth; level > split_level; --level) {
             push(lower >> level, node_length);
@@ -491,11 +448,9 @@ class RangeClampAddSumTree {
         apply(upper, 1);
         node_length = 1;
         while ((lower >> 1) < (upper >> 1)) {
-            if ((lower & 1) == 0)
-                apply(lower + 1, node_length);
+            if ((lower & 1) == 0) apply(lower + 1, node_length);
             pull(lower >>= 1);
-            if (upper & 1)
-                apply(upper - 1, node_length);
+            if (upper & 1) apply(upper - 1, node_length);
             pull(upper >>= 1);
             node_length <<= 1;
         }
@@ -511,8 +466,7 @@ class RangeClampAddSumTree {
             }
             return;
         }
-        uint32_t split_level =
-            std::bit_width(lower ^ upper) - 1;
+        uint32_t split_level = std::bit_width(lower ^ upper) - 1;
         uint32_t node_length = capacity;
         for (uint32_t level = depth; level > split_level; --level) {
             push(lower >> level, node_length);
@@ -525,45 +479,33 @@ class RangeClampAddSumTree {
         }
     }
 
-public:
-    explicit RangeClampAddSumTree(
-        const std::vector<int64_t>& values)
-        : length(values.size()),
-          capacity(std::bit_ceil((uint32_t)values.size())),
-          depth(std::bit_width(capacity) - 1),
-          data(2 * capacity) {
+  public:
+    explicit RangeClampAddSumTree(const std::vector<int64_t> &values)
+        : length(values.size()), capacity(std::bit_ceil((uint32_t)values.size())),
+          depth(std::bit_width(capacity) - 1), data(2 * capacity) {
         for (uint32_t i = 0; i < values.size(); ++i) {
             int64_t value = values[i];
-            data[capacity + i] = {
-                value, -infinity, value, infinity,
-                value, 0, 1, 1};
+            data[capacity + i] = {value, -infinity, value, infinity, value, 0, 1, 1};
         }
-        for (uint32_t node = capacity - 1; node != 0; --node)
-            pull(node);
+        for (uint32_t node = capacity - 1; node != 0; --node) pull(node);
     }
 
     void chmin(int left, int right, int64_t value) {
-        apply_range(
-            left, right,
-            [&](uint32_t node, uint32_t node_length) {
-                apply_chmin_subtree(node, node_length, value);
-            });
+        apply_range(left, right, [&](uint32_t node, uint32_t node_length) {
+            apply_chmin_subtree(node, node_length, value);
+        });
     }
 
     void chmax(int left, int right, int64_t value) {
-        apply_range(
-            left, right,
-            [&](uint32_t node, uint32_t node_length) {
-                apply_chmax_subtree(node, node_length, value);
-            });
+        apply_range(left, right, [&](uint32_t node, uint32_t node_length) {
+            apply_chmax_subtree(node, node_length, value);
+        });
     }
 
     void add(int left, int right, int64_t value) {
-        apply_range(
-            left, right,
-            [&](uint32_t node, uint32_t node_length) {
-                apply_add(node, node_length, value);
-            });
+        apply_range(left, right, [&](uint32_t node, uint32_t node_length) {
+            apply_add(node, node_length, value);
+        });
     }
 
     int64_t sum(int left, int right) {
@@ -574,10 +516,8 @@ public:
         if (lower == upper) return left_sum;
         int64_t right_sum = data[upper].sum;
         while ((lower >> 1) != (upper >> 1)) {
-            if ((lower & 1) == 0)
-                left_sum += data[lower + 1].sum;
-            if (upper & 1)
-                right_sum += data[upper - 1].sum;
+            if ((lower & 1) == 0) left_sum += data[lower + 1].sum;
+            if (upper & 1) right_sum += data[upper - 1].sum;
             lower >>= 1;
             upper >>= 1;
         }

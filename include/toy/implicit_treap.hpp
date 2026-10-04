@@ -4,7 +4,7 @@
 
 namespace toy {
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class AffineImplicitTreap {
     using Function = Affine<Mod>;
     struct Node {
@@ -35,10 +35,10 @@ class AffineImplicitTreap {
 
     void apply(int node, Function function) {
         if (!node) return;
-        Node& current = nodes[node];
+        Node &current = nodes[node];
         current.value = function(current.value);
-        current.sum = ((uint64_t)function.a * current.sum +
-                       (uint64_t)function.b * current.size) % Mod;
+        current.sum =
+            ((uint64_t)function.a * current.sum + (uint64_t)function.b * current.size) % Mod;
         current.lazy = ComposeAffine<Mod>{}(current.lazy, function);
     }
 
@@ -60,7 +60,7 @@ class AffineImplicitTreap {
     }
 
     void pull(int node) {
-        Node& current = nodes[node];
+        Node &current = nodes[node];
         current.size = 1 + size_of(current.left) + size_of(current.right);
         current.sum = (sum_of(current.left) + current.value) % Mod;
         current.sum += sum_of(current.right);
@@ -76,8 +76,7 @@ class AffineImplicitTreap {
             pull(node);
             return {left, node};
         }
-        auto [middle, right] =
-            split(nodes[node].right, count - size_of(nodes[node].left) - 1);
+        auto [middle, right] = split(nodes[node].right, count - size_of(nodes[node].left) - 1);
         nodes[node].right = middle;
         pull(node);
         return {node, right};
@@ -97,8 +96,8 @@ class AffineImplicitTreap {
         return right;
     }
 
-public:
-    explicit AffineImplicitTreap(const std::vector<uint32_t>& values,
+  public:
+    explicit AffineImplicitTreap(const std::vector<uint32_t> &values,
                                  std::size_t extra_capacity = 0) {
         nodes.reserve(values.size() + extra_capacity + 1);
         for (uint32_t value : values) {

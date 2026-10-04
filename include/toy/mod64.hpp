@@ -15,7 +15,7 @@ class Montgomery64 {
     u64 neg_inv_;
     u64 r2_;
 
-public:
+  public:
     explicit Montgomery64(u64 mod) : mod_(mod), neg_inv_(mod) {
         for (int i = 0; i < 6; ++i) neg_inv_ *= 2 - mod * neg_inv_;
         neg_inv_ = -neg_inv_;
@@ -35,9 +35,7 @@ public:
         return reduce((u128)(x % mod_) * r2_);
     }
 
-    [[nodiscard, gnu::always_inline]] u64 mul(u64 a, u64 b) const {
-        return reduce((u128)a * b);
-    }
+    [[nodiscard, gnu::always_inline]] u64 mul(u64 a, u64 b) const { return reduce((u128)a * b); }
 
     [[nodiscard]] u64 one() const { return init(1); }
     [[nodiscard]] u64 value(u64 x) const { return reduce(x); }

@@ -2,7 +2,8 @@
 #include <toy/multipoint.h>
 using namespace toy;
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     usize n = in.read<u32, 6>();
     Buffer<u32> f(n), points(n);
     for (usize i = 0; i < n; ++i) f[i] = in.read<u32, 9>();

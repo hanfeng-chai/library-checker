@@ -8,9 +8,9 @@ class BridgeRangeLinearAddMinTree {
     using Linear = std::pair<int64_t, int64_t>;
     struct Point {
         int64_t x = 0, y = 0;
-        Point operator+(const Point& other) const { return {x + other.x, y + other.y}; }
-        Point operator-(const Point& other) const { return {x - other.x, y - other.y}; }
-        bool operator==(const Point&) const = default;
+        Point operator+(const Point &other) const { return {x + other.x, y + other.y}; }
+        Point operator-(const Point &other) const { return {x - other.x, y - other.y}; }
+        bool operator==(const Point &) const = default;
     };
     using Bridge = std::pair<Point, Point>;
 
@@ -19,12 +19,8 @@ class BridgeRangeLinearAddMinTree {
     std::vector<Linear> lazy;
     std::vector<Bridge> bridge;
 
-    static __int128 cross(Point a, Point b) {
-        return (__int128)a.x * b.y - (__int128)a.y * b.x;
-    }
-    static Linear merge(Linear a, Linear b) {
-        return {a.first + b.first, a.second + b.second};
-    }
+    static __int128 cross(Point a, Point b) { return (__int128)a.x * b.y - (__int128)a.y * b.x; }
+    static Linear merge(Linear a, Linear b) { return {a.first + b.first, a.second + b.second}; }
     static Point apply(Point point, Linear line) {
         point.y += point.x * line.first + line.second;
         return point;
@@ -32,8 +28,7 @@ class BridgeRangeLinearAddMinTree {
     void rebuild(int node) {
         if (node >= size) return;
         Linear offset{};
-        for (int ancestor = node; ancestor; ancestor >>= 1)
-            offset = merge(offset, lazy[ancestor]);
+        for (int ancestor = node; ancestor; ancestor >>= 1) offset = merge(offset, lazy[ancestor]);
 
         int left = node * 2, right = node * 2 + 1;
         int border = right;
@@ -60,10 +55,10 @@ class BridgeRangeLinearAddMinTree {
             } else {
                 __int128 c1 = cross(b - a, d - c);
                 __int128 c2 = cross(b - a, b - c);
-                bool take_left = c1 == 0 && c2 == 0
-                    ? c.x < border
-                    : (__int128)c.x * c1 + (__int128)(d.x - c.x) * c2 <
-                          c1 * border;
+                bool take_left =
+                    c1 == 0 && c2 == 0
+                        ? c.x < border
+                        : (__int128)c.x * c1 + (__int128)(d.x - c.x) * c2 < c1 * border;
                 if (take_left) {
                     left = left * 2 + 1;
                     left_add = merge(left_add, lazy[left]);
@@ -90,8 +85,8 @@ class BridgeRangeLinearAddMinTree {
         return apply(base[node], accumulated).y;
     }
 
-public:
-    explicit BridgeRangeLinearAddMinTree(const std::vector<int64_t>& values) {
+  public:
+    explicit BridgeRangeLinearAddMinTree(const std::vector<int64_t> &values) {
         size = 1;
         height = 0;
         while (size < (int)values.size()) size <<= 1, ++height;
@@ -150,11 +145,11 @@ class KineticRangeLinearAddMinTree {
     std::vector<Node> data;
 
     void pull(int node) {
-        const Node& left = data[node * 2];
-        const Node& right = data[node * 2 + 1];
-        Node& current = data[node];
-        const Node* winner;
-        const Node* other;
+        const Node &left = data[node * 2];
+        const Node &right = data[node * 2 + 1];
+        Node &current = data[node];
+        const Node *winner;
+        const Node *other;
         if (left.minimum <= right.minimum) {
             current.minimum = left.minimum;
             current.slope = left.slope;
@@ -166,44 +161,34 @@ class KineticRangeLinearAddMinTree {
             winner = &right;
             other = &left;
         }
-        current.forward_melt =
-            std::min(left.forward_melt, right.forward_melt);
-        current.backward_melt =
-            std::min(left.backward_melt, right.backward_melt);
+        current.forward_melt = std::min(left.forward_melt, right.forward_melt);
+        current.backward_melt = std::min(left.backward_melt, right.backward_melt);
         if (winner->slope > other->slope)
-            current.forward_melt = std::min(
-                current.forward_melt,
-                (other->minimum - winner->minimum) /
-                    (winner->slope - other->slope));
+            current.forward_melt =
+                std::min(current.forward_melt,
+                         (other->minimum - winner->minimum) / (winner->slope - other->slope));
         if (other->slope > winner->slope)
-            current.backward_melt = std::min(
-                current.backward_melt,
-                (other->minimum - winner->minimum) /
-                    (other->slope - winner->slope));
+            current.backward_melt =
+                std::min(current.backward_melt,
+                         (other->minimum - winner->minimum) / (other->slope - winner->slope));
     }
 
-    void apply_shift(
-        int node, int64_t slope, int64_t constant) {
-        Node& current = data[node];
+    void apply_shift(int node, int64_t slope, int64_t constant) {
+        Node &current = data[node];
         current.minimum += slope * current.slope + constant;
-        current.forward_melt =
-            std::min(infinity, current.forward_melt - slope);
-        current.backward_melt =
-            std::min(infinity, current.backward_melt + slope);
+        current.forward_melt = std::min(infinity, current.forward_melt - slope);
+        current.backward_melt = std::min(infinity, current.backward_melt + slope);
         current.lazy_slope += slope;
         current.lazy_constant += constant;
     }
 
-    void add_node(
-        int node, int left, int right,
-        int64_t slope, int64_t constant) {
+    void add_node(int node, int left, int right, int64_t slope, int64_t constant) {
         if (right - left == 1) {
             data[node].minimum += slope * data[node].slope + constant;
             return;
         }
         bool safe =
-            slope >= 0 ? slope <= data[node].forward_melt
-                       : -slope <= data[node].backward_melt;
+            slope >= 0 ? slope <= data[node].forward_melt : -slope <= data[node].backward_melt;
         if (safe) {
             apply_shift(node, slope, constant);
             return;
@@ -216,23 +201,16 @@ class KineticRangeLinearAddMinTree {
     }
 
     void push(int node, int left, int right) {
-        Node& current = data[node];
-        if (current.lazy_slope == 0 && current.lazy_constant == 0)
-            return;
+        Node &current = data[node];
+        if (current.lazy_slope == 0 && current.lazy_constant == 0) return;
         int middle = (left + right) >> 1;
-        add_node(
-            node * 2, left, middle,
-            current.lazy_slope, current.lazy_constant);
-        add_node(
-            node * 2 + 1, middle, right,
-            current.lazy_slope, current.lazy_constant);
+        add_node(node * 2, left, middle, current.lazy_slope, current.lazy_constant);
+        add_node(node * 2 + 1, middle, right, current.lazy_slope, current.lazy_constant);
         current.lazy_slope = 0;
         current.lazy_constant = 0;
     }
 
-    void build(
-        int node, int left, int right,
-        const std::vector<int64_t>& values) {
+    void build(int node, int left, int right, const std::vector<int64_t> &values) {
         if (right - left == 1) {
             data[node].minimum = values[left];
             data[node].slope = left;
@@ -244,10 +222,8 @@ class KineticRangeLinearAddMinTree {
         pull(node);
     }
 
-    void add(
-        int node, int left, int right,
-        int query_left, int query_right,
-        int64_t slope, int64_t constant) {
+    void add(int node, int left, int right, int query_left, int query_right, int64_t slope,
+             int64_t constant) {
         if (query_right <= left || right <= query_left) return;
         if (query_left <= left && right <= query_right) {
             add_node(node, left, right, slope, constant);
@@ -255,47 +231,31 @@ class KineticRangeLinearAddMinTree {
         }
         push(node, left, right);
         int middle = (left + right) >> 1;
-        add(
-            node * 2, left, middle,
-            query_left, query_right, slope, constant);
-        add(
-            node * 2 + 1, middle, right,
-            query_left, query_right, slope, constant);
+        add(node * 2, left, middle, query_left, query_right, slope, constant);
+        add(node * 2 + 1, middle, right, query_left, query_right, slope, constant);
         pull(node);
     }
 
-    int64_t minimum(
-        int node, int left, int right,
-        int query_left, int query_right) {
-        if (query_right <= left || right <= query_left)
-            return infinity;
-        if (query_left <= left && right <= query_right)
-            return data[node].minimum;
+    int64_t minimum(int node, int left, int right, int query_left, int query_right) {
+        if (query_right <= left || right <= query_left) return infinity;
+        if (query_left <= left && right <= query_right) return data[node].minimum;
         push(node, left, right);
         int middle = (left + right) >> 1;
-        return std::min(
-            minimum(
-                node * 2, left, middle, query_left, query_right),
-            minimum(
-                node * 2 + 1, middle, right,
-                query_left, query_right));
+        return std::min(minimum(node * 2, left, middle, query_left, query_right),
+                        minimum(node * 2 + 1, middle, right, query_left, query_right));
     }
 
-public:
-    explicit KineticRangeLinearAddMinTree(
-        const std::vector<int64_t>& values)
+  public:
+    explicit KineticRangeLinearAddMinTree(const std::vector<int64_t> &values)
         : length(values.size()), data(4 * values.size()) {
         build(1, 0, length, values);
     }
 
-    void add(
-        int left, int right, int64_t slope, int64_t constant) {
+    void add(int left, int right, int64_t slope, int64_t constant) {
         add(1, 0, length, left, right, slope, constant);
     }
 
-    int64_t minimum(int left, int right) {
-        return minimum(1, 0, length, left, right);
-    }
+    int64_t minimum(int left, int right) { return minimum(1, 0, length, left, right); }
 };
 
 } // namespace toy

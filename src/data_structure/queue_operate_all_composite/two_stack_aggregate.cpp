@@ -7,8 +7,8 @@ int main() {
     toy::Reader input(toy::direct_mapping);
     toy::Writer output;
     int queries = input.read_uniform<6, toy::u32>();
-    static toy::FixedFoldableQueue<Function, toy::ComposeAffine<mod>, 500'000>
-        queue(Function{}, toy::ComposeAffine<mod>{});
+    static toy::FixedFoldableQueue<Function, toy::ComposeAffine<mod>, 500'000> queue(
+        Function{}, toy::ComposeAffine<mod>{});
     while (queries--) {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         if (type == 0) {

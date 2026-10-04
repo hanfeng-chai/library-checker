@@ -17,8 +17,10 @@ int main() {
             output.write_padded_u32(dsu.unite(first, second, value));
         } else {
             auto value = dsu.difference(first, second);
-            if (value) output.write_padded_u32(*value);
-            else output.write(" -1\n");
+            if (value)
+                output.write_padded_u32(*value);
+            else
+                output.write(" -1\n");
         }
     }
 }

@@ -1,7 +1,8 @@
 #include <toy/io.hpp>
 
 int main() {
-    toy::Reader input(toy::direct_mapping); toy::Writer<1 << 20> output;
+    toy::Reader input(toy::direct_mapping);
+    toy::Writer<1 << 20> output;
     int n = input.read_uniform<6, uint32_t>();
     int q = input.read_uniform<6, uint32_t>();
     std::vector<std::vector<int>> children(n);
@@ -10,11 +11,13 @@ int main() {
 
     std::vector<int> first(n), depth(n), euler;
     euler.reserve(2 * n - 1);
-    struct Frame { int vertex, next_child; };
+    struct Frame {
+        int vertex, next_child;
+    };
     std::vector<Frame> stack{{0, 0}};
     first[0] = 0;
     while (!stack.empty()) {
-        Frame& frame = stack.back();
+        Frame &frame = stack.back();
         if (frame.next_child == (int)children[frame.vertex].size()) {
             stack.pop_back();
             if (!stack.empty()) euler.push_back(stack.back().vertex);

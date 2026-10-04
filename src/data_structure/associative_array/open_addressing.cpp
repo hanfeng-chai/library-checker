@@ -9,7 +9,9 @@ int main() {
     while (queries--) {
         int type = input.read_fixed<1, toy::u32>();
         toy::u64 key = input.read_uniform<19, toy::u64>();
-        if (type == 0) map.set(key, input.read_uniform<19, toy::u64>());
-        else output.writeln(map.get(key));
+        if (type == 0)
+            map.set(key, input.read_uniform<19, toy::u64>());
+        else
+            output.writeln(map.get(key));
     }
 }

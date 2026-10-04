@@ -6,7 +6,7 @@ struct Range {
     int left;
     int right;
 };
-}
+} // namespace
 
 int main() {
     toy::Reader input(toy::direct_mapping);
@@ -14,14 +14,12 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int query_count = input.read_uniform<6, toy::u32>();
     std::vector<toy::u32> values(n);
-    for (toy::u32& value : values)
-        value = input.read_uniform<10, toy::u32>();
+    for (toy::u32 &value : values) value = input.read_uniform<10, toy::u32>();
     std::vector<Range> queries(query_count);
-    for (Range& query : queries) {
+    for (Range &query : queries) {
         query.left = input.read_uniform<6, toy::u32>();
         query.right = input.read_uniform<6, toy::u32>();
     }
-    for (toy::u64 answer :
-         toy::static_range_inversion_counts(values, queries))
+    for (toy::u64 answer : toy::static_range_inversion_counts(values, queries))
         output.writeln(answer);
 }

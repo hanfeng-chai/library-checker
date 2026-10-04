@@ -3,7 +3,8 @@
 
 int main() {
     static toy::FixedHeavyLightTree<500'000> tree;
-    toy::Reader input(toy::direct_mapping); toy::Writer<1 << 20> output;
+    toy::Reader input(toy::direct_mapping);
+    toy::Writer<1 << 20> output;
     int n = input.read_uniform<6, uint32_t>();
     int q = input.read_uniform<6, uint32_t>();
     tree.reset(n);
@@ -18,7 +19,9 @@ int main() {
         int to = input.read_uniform<6, uint32_t>();
         int step = input.read_uniform<6, uint32_t>();
         int answer = tree.jump(from, to, step);
-        if (answer < 0) output.write(" -1");
-        else output.write_token_u32_6(answer);
+        if (answer < 0)
+            output.write(" -1");
+        else
+            output.write_token_u32_6(answer);
     }
 }

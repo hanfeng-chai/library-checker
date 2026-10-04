@@ -7,7 +7,7 @@ int main() {
     int n = input.read_uniform<6, int>();
     int q = input.read_uniform<6, int>();
     std::vector<int64_t> values(n);
-    for (auto& value : values) value = input.read_uniform<9, int64_t>();
+    for (auto &value : values) value = input.read_uniform<9, int64_t>();
     toy::KineticRangeLinearAddMinTree tree(values);
     while (q--) {
         int type = input.read_fixed<1, int>();

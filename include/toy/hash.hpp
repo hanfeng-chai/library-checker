@@ -4,7 +4,7 @@
 
 namespace toy {
 
-template<std::unsigned_integral Key, std::unsigned_integral Value>
+template <std::unsigned_integral Key, std::unsigned_integral Value>
 class IntegerHashMap {
     std::vector<Key> keys;
     std::vector<Value> values;
@@ -12,23 +12,20 @@ class IntegerHashMap {
     std::size_t mask;
     unsigned shift;
 
-    bool used(std::size_t index) const {
-        return occupied[index / 64] >> (index % 64) & 1;
-    }
+    bool used(std::size_t index) const { return occupied[index / 64] >> (index % 64) & 1; }
 
     std::size_t locate(Key key) const {
         constexpr uint64_t multiplier = 11'995'408'973'635'179'863ULL;
         std::size_t index = uint64_t(key) * multiplier >> shift;
-        while (used(index) && keys[index] != key)
-            index = (index + 1) & mask;
+        while (used(index) && keys[index] != key) index = (index + 1) & mask;
         return index;
     }
 
-public:
+  public:
     explicit IntegerHashMap(std::size_t capacity)
-        : keys(std::bit_ceil(std::max<std::size_t>(4, capacity + 1))),
-          values(keys.size()), occupied((keys.size() + 63) / 64),
-          mask(keys.size() - 1), shift(64 - std::bit_width(mask)) {}
+        : keys(std::bit_ceil(std::max<std::size_t>(4, capacity + 1))), values(keys.size()),
+          occupied((keys.size() + 63) / 64), mask(keys.size() - 1),
+          shift(64 - std::bit_width(mask)) {}
 
     void set(Key key, Value value) {
         std::size_t index = locate(key);

@@ -3,7 +3,8 @@
 using namespace toy;
 
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     usize k = in.read<u32, 2>(), n = 1;
     Buffer<u32> dimensions(k);
     for (usize i = 0; i < k; ++i) n *= dimensions[i] = in.read<u32, 6>();

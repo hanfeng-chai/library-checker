@@ -7,13 +7,15 @@
 namespace toy {
 
 class PermutationLisBumping {
-    template<bool Minimum>
+    template <bool Minimum>
     class IntHeap {
         std::vector<int> values;
 
         static bool better(int left, int right) {
-            if constexpr (Minimum) return left < right;
-            else return left > right;
+            if constexpr (Minimum)
+                return left < right;
+            else
+                return left > right;
         }
 
         void sift_down() {
@@ -21,8 +23,7 @@ class PermutationLisBumping {
             int index = 0;
             while (2 * index + 1 < (int)values.size()) {
                 int child = 2 * index + 1;
-                if (child + 1 < (int)values.size() &&
-                    better(values[child + 1], values[child]))
+                if (child + 1 < (int)values.size() && better(values[child + 1], values[child]))
                     ++child;
                 if (!better(values[child], value)) break;
                 values[index] = values[child];
@@ -31,7 +32,7 @@ class PermutationLisBumping {
             values[index] = value;
         }
 
-    public:
+      public:
         void reserve(int capacity) { values.reserve(capacity); }
         bool empty() const { return values.empty(); }
         int top() const { return values.front(); }
@@ -82,35 +83,30 @@ class PermutationLisBumping {
     std::vector<IntHeap<true>> pending_replacements;
 
     int block_left(int block) const { return block * block_size; }
-    int block_right(int block) const {
-        return std::min(length, (block + 1) * block_size);
-    }
+    int block_right(int block) const { return std::min(length, (block + 1) * block_size); }
 
     void materialize(int block) {
-        auto& pending = pending_replacements[block];
+        auto &pending = pending_replacements[block];
         if (pending.empty()) return;
         for (int value = block_left(block); value < block_right(block); ++value) {
             if (!bump_positions[value]) continue;
-            bump_positions[value] =
-                pending.push_pop(bump_positions[value]);
+            bump_positions[value] = pending.push_pop(bump_positions[value]);
         }
         pending.clear();
     }
 
     void rebuild(int block) {
-        auto& maximums = block_maximums[block];
+        auto &maximums = block_maximums[block];
         maximums.clear();
         for (int value = block_left(block); value < block_right(block); ++value)
             if (bump_positions[value]) maximums.push(bump_positions[value]);
     }
 
-public:
+  public:
     explicit PermutationLisBumping(int n)
-        : length(n),
-          block_size(std::max(1, (int)std::sqrt(n))),
-          block_count((n + block_size - 1) / block_size),
-          bump_positions(n), block_maximums(block_count),
-          pending_replacements(block_count) {
+        : length(n), block_size(std::max(1, (int)std::sqrt(n))),
+          block_count((n + block_size - 1) / block_size), bump_positions(n),
+          block_maximums(block_count), pending_replacements(block_count) {
         for (int block = 0; block < block_count; ++block) {
             block_maximums[block].reserve(block_size);
             pending_replacements[block].reserve(block_size);
@@ -134,19 +130,21 @@ public:
         if (changed) rebuild(block);
 
         for (++block; block < block_count; ++block) {
-            auto& maximums = block_maximums[block];
+            auto &maximums = block_maximums[block];
             if (maximums.empty() || maximums.top() <= evicted) continue;
             pending_replacements[block].push(evicted);
-            if (evicted) evicted = maximums.replace_top(evicted);
-            else evicted = maximums.pop();
+            if (evicted)
+                evicted = maximums.replace_top(evicted);
+            else
+                evicted = maximums.pop();
         }
         return evicted;
     }
 };
 
-template<class Range>
-std::vector<int> static_range_lis_permutation(
-    const std::vector<int>& permutation, const std::vector<Range>& queries) {
+template <class Range>
+std::vector<int> static_range_lis_permutation(const std::vector<int> &permutation,
+                                              const std::vector<Range> &queries) {
     struct IndexedQuery {
         int left;
         int right;
@@ -158,9 +156,8 @@ std::vector<int> static_range_lis_permutation(
     indexed.reserve(queries.size());
     for (int i = 0; i < (int)queries.size(); ++i)
         indexed.push_back({queries[i].left, queries[i].right, i});
-    CsrBuckets by_right(
-        n + 1, std::move(indexed),
-        [](const IndexedQuery& query) { return query.right; });
+    CsrBuckets by_right(n + 1, std::move(indexed),
+                        [](const IndexedQuery &query) { return query.right; });
 
     PermutationLisBumping bumping(n);
     FenwickTree<int> active(n);
@@ -169,7 +166,7 @@ std::vector<int> static_range_lis_permutation(
         active.add(position, 1);
         int evicted = bumping.insert(position, permutation[position]);
         if (evicted) active.add(evicted - 1, -1);
-        for (const IndexedQuery& query : by_right[position + 1])
+        for (const IndexedQuery &query : by_right[position + 1])
             answers[query.index] = active.sum(query.left, query.right);
     }
     return answers;

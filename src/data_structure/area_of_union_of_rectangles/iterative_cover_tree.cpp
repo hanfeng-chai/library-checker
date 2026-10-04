@@ -33,28 +33,24 @@ int main() {
         endpoints.push_back({up, (toy::u32)(2 * i + 1)});
     }
 
-    toy::radix_sort_u32(
-        endpoints.begin(), endpoints.end(),
-        [](const Endpoint& endpoint) { return endpoint.coordinate; });
+    toy::radix_sort_u32(endpoints.begin(), endpoints.end(),
+                        [](const Endpoint &endpoint) { return endpoint.coordinate; });
     std::vector<toy::u32> coordinates;
     coordinates.reserve(endpoints.size());
-    for (const Endpoint& endpoint : endpoints) {
-        if (coordinates.empty() ||
-            coordinates.back() != endpoint.coordinate)
+    for (const Endpoint &endpoint : endpoints) {
+        if (coordinates.empty() || coordinates.back() != endpoint.coordinate)
             coordinates.push_back(endpoint.coordinate);
         toy::u32 index = coordinates.size() - 1;
         events[endpoint.event].first_y = index;
         events[endpoint.event ^ 1].second_y = index;
     }
-    toy::radix_sort_u32(
-        events.begin(), events.end(),
-        [](const Event& event) { return event.x; });
+    toy::radix_sort_u32(events.begin(), events.end(), [](const Event &event) { return event.x; });
 
-    toy::CoveredLengthTree<toy::u32, toy::u32> tree(
-        std::move(coordinates), toy::sorted_unique_coordinates);
+    toy::CoveredLengthTree<toy::u32, toy::u32> tree(std::move(coordinates),
+                                                    toy::sorted_unique_coordinates);
     toy::u64 area = 0;
     toy::u32 previous = events.front().x;
-    for (const Event& event : events) {
+    for (const Event &event : events) {
         area += (toy::u64)(event.x - previous) * tree.covered();
         previous = event.x;
         if (event.first_y < event.second_y)

@@ -1,12 +1,12 @@
 #pragma once
-#include <toy/prime.h>
 #include <toy/mod.h>
+#include <toy/prime.h>
 
 namespace toy {
 enum class Divisor { Gcd, Lcm };
 
 // Index zero is unused. Equal lengths, ordinary residues, both arrays consumed.
-template<Divisor Kind, u32 P = 998244353>
+template <Divisor Kind, u32 P = 998244353>
 Buffer<u32> divisor_convolution(Buffer<u32> a, Buffer<u32> b) {
     using M = Mod<P>;
     if (a.n <= 1) return a;
@@ -15,7 +15,8 @@ Buffer<u32> divisor_convolution(Buffer<u32> a, Buffer<u32> b) {
     auto factor = _mm256_set1_epi32(M::r2);
     usize i = 1;
     for (; i + 8 <= b.n; i += 8)
-        _mm256_storeu_si256((__m256i*)(b.p + i), M::mont(_mm256_loadu_si256((const __m256i*)(b.p + i)), factor));
+        _mm256_storeu_si256((__m256i *)(b.p + i),
+                            M::mont(_mm256_loadu_si256((const __m256i *)(b.p + i)), factor));
     for (; i <= n; ++i) b[i] = M::mont(b[i], M::r2);
     for (u32 p : std::span(ps.p, ps.n)) {
         if constexpr (Kind == Divisor::Gcd) {
@@ -28,8 +29,9 @@ Buffer<u32> divisor_convolution(Buffer<u32> a, Buffer<u32> b) {
         }
     }
     for (i = 1; i + 8 <= a.n; i += 8)
-        _mm256_storeu_si256((__m256i*)(a.p + i), M::mont(
-            _mm256_loadu_si256((const __m256i*)(a.p + i)), _mm256_loadu_si256((const __m256i*)(b.p + i))));
+        _mm256_storeu_si256((__m256i *)(a.p + i),
+                            M::mont(_mm256_loadu_si256((const __m256i *)(a.p + i)),
+                                    _mm256_loadu_si256((const __m256i *)(b.p + i))));
     for (; i <= n; ++i) a[i] = M::mont(a[i], b[i]);
     for (u32 p : std::span(ps.p, ps.n)) {
         // Reverse each prime's traversal to apply the Mobius inverse.
@@ -41,4 +43,4 @@ Buffer<u32> divisor_convolution(Buffer<u32> a, Buffer<u32> b) {
     }
     return a;
 }
-}
+} // namespace toy

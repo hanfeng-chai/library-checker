@@ -14,14 +14,14 @@ int main() {
         int first = input.read_uniform<6, toy::u32>();
         int second = input.read_uniform<6, toy::u32>();
         if (type == 0) {
-            Group::Value value{input.read_uniform<9, toy::u32>(),
-                               input.read_uniform<9, toy::u32>(),
+            Group::Value value{input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>(),
                                input.read_uniform<9, toy::u32>(),
                                input.read_uniform<9, toy::u32>()};
             output.write_padded_u32(dsu.unite(first, second, value));
         } else {
             auto value = dsu.difference(first, second);
-            if (!value) output.write(" -1\n");
+            if (!value)
+                output.write(" -1\n");
             else {
                 output.write_padded_u32(value->a);
                 output.write_padded_u32(value->b);

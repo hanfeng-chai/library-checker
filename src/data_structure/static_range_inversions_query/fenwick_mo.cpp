@@ -11,11 +11,11 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int query_count = input.read_uniform<6, toy::u32>();
     std::vector<int> values(n);
-    for (int& value : values) value = input.read_uniform<10, toy::u32>();
+    for (int &value : values) value = input.read_uniform<10, toy::u32>();
     std::vector<int> order = values;
     std::sort(order.begin(), order.end());
     order.erase(std::unique(order.begin(), order.end()), order.end());
-    for (int& value : values)
+    for (int &value : values)
         value = std::lower_bound(order.begin(), order.end(), value) - order.begin();
     std::vector<Query> queries(query_count);
     for (int i = 0; i < query_count; ++i) {
@@ -24,7 +24,7 @@ int main() {
         queries[i].index = i;
     }
     int block = std::max(1, n / std::max(1, (int)std::sqrt(query_count)));
-    std::sort(queries.begin(), queries.end(), [&](const Query& a, const Query& b) {
+    std::sort(queries.begin(), queries.end(), [&](const Query &a, const Query &b) {
         int first = a.left / block, second = b.left / block;
         if (first != second) return first < second;
         return first & 1 ? a.right > b.right : a.right < b.right;

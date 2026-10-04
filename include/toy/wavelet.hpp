@@ -5,26 +5,24 @@
 
 namespace toy {
 
-template<unsigned Bits>
+template <unsigned Bits>
 class WaveletMatrix {
     int length;
     std::array<std::vector<int>, Bits> prefix_ones;
     std::array<int, Bits> zero_count{};
 
-public:
+  public:
     explicit WaveletMatrix(std::vector<uint32_t> values) : length(values.size()) {
         std::vector<uint32_t> buffer(length);
         for (unsigned level = 0; level < Bits; ++level) {
             int bit = Bits - 1 - level;
-            auto& prefix = prefix_ones[level];
+            auto &prefix = prefix_ones[level];
             prefix.resize(length + 1);
-            for (int i = 0; i < length; ++i)
-                prefix[i + 1] = prefix[i] + (values[i] >> bit & 1);
+            for (int i = 0; i < length; ++i) prefix[i + 1] = prefix[i] + (values[i] >> bit & 1);
             zero_count[level] = length - prefix[length];
             int zero = 0;
             int one = zero_count[level];
-            for (uint32_t value : values)
-                buffer[(value >> bit & 1) ? one++ : zero++] = value;
+            for (uint32_t value : values) buffer[(value >> bit & 1) ? one++ : zero++] = value;
             values.swap(buffer);
         }
     }
@@ -79,37 +77,36 @@ class CompressedWaveletMatrix {
     std::vector<Block> blocks;
 
     int rank_one(int level, int position) const {
-        const Block& block = blocks[level * stride + (position >> 6)];
+        const Block &block = blocks[level * stride + (position >> 6)];
         unsigned offset = position & 63;
         uint64_t mask = offset ? (uint64_t(1) << offset) - 1 : 0;
         return block.before + std::popcount(block.bits & mask);
     }
 
-public:
-    explicit CompressedWaveletMatrix(const std::vector<uint32_t>& input)
-        : length(input.size()) {
+  public:
+    explicit CompressedWaveletMatrix(const std::vector<uint32_t> &input) : length(input.size()) {
         assert(length > 0);
         std::vector<std::pair<uint32_t, int>> ordered(length);
         for (int i = 0; i < length; ++i) ordered[i] = {input[i], i};
-        radix_sort_u32<30, 15>(
-            ordered.begin(), ordered.end(),
-            [](const auto& item) { return item.first; });
+        radix_sort_u32<30, 15>(ordered.begin(), ordered.end(),
+                               [](const auto &item) { return item.first; });
 
         std::vector<uint32_t> current(length), buffer(length), ones_buffer(length);
-        for (const auto& [value, index] : ordered) {
+        for (const auto &[value, index] : ordered) {
             if (original_values.empty() || original_values.back() != value)
                 original_values.push_back(value);
             current[index] = original_values.size() - 1;
         }
         levels = original_values.size() <= 1
-            ? 1 : std::bit_width((unsigned)(original_values.size() - 1));
+                     ? 1
+                     : std::bit_width((unsigned)(original_values.size() - 1));
         stride = (length + 63) / 64 + 1;
         zero_count.resize(levels);
         blocks.resize((std::size_t)levels * stride);
 
         for (int level = 0; level < levels; ++level) {
             int bit = levels - 1 - level;
-            Block* row = blocks.data() + (std::size_t)level * stride;
+            Block *row = blocks.data() + (std::size_t)level * stride;
             uint32_t ones = 0;
             int zeros = 0;
             int one_values = 0;
@@ -139,55 +136,47 @@ public:
             }
             row[stride - 1].before = ones;
             zero_count[level] = zeros;
-            std::copy_n(ones_buffer.begin(), one_values,
-                        buffer.begin() + zeros);
+            std::copy_n(ones_buffer.begin(), one_values, buffer.begin() + zeros);
             current.swap(buffer);
         }
     }
 
-    std::vector<uint32_t> kth_batch(
-        std::vector<int> left, std::vector<int> right,
-        std::vector<int> index) const {
+    std::vector<uint32_t> kth_batch(std::vector<int> left, std::vector<int> right,
+                                    std::vector<int> index) const {
         assert(left.size() == right.size() && left.size() == index.size());
         std::vector<uint32_t> answer(left.size());
         for (int level = 0; level < levels; ++level) {
             uint32_t bit = uint32_t(1) << (levels - 1 - level);
-            const Block* row =
-                blocks.data() + (std::size_t)level * stride;
+            const Block *row = blocks.data() + (std::size_t)level * stride;
             int level_zeros = zero_count[level];
             for (std::size_t query = 0; query < left.size(); ++query) {
                 int left_position = left[query];
                 int right_position = right[query];
-                const Block& left_block = row[left_position >> 6];
-                const Block& right_block = row[right_position >> 6];
+                const Block &left_block = row[left_position >> 6];
+                const Block &right_block = row[right_position >> 6];
                 int left_offset = left_position & 63;
                 int right_offset = right_position & 63;
-                int left_ones = left_block.before + std::popcount(
-                    left_block.bits &
-                    ((uint64_t(1) << left_offset) - 1));
-                int right_ones = right_block.before + std::popcount(
-                    right_block.bits &
-                    ((uint64_t(1) << right_offset) - 1));
+                int left_ones = left_block.before +
+                                std::popcount(left_block.bits & ((uint64_t(1) << left_offset) - 1));
+                int right_ones =
+                    right_block.before +
+                    std::popcount(right_block.bits & ((uint64_t(1) << right_offset) - 1));
                 int left_zeros = left_position - left_ones;
                 int right_zeros = right_position - right_ones;
                 int zeros = right_zeros - left_zeros;
                 int take_one = -(index[query] >= zeros);
-                left[query] =
-                    (left_zeros & ~take_one) |
-                    ((level_zeros + left_ones) & take_one);
-                right[query] =
-                    (right_zeros & ~take_one) |
-                    ((level_zeros + right_ones) & take_one);
+                left[query] = (left_zeros & ~take_one) | ((level_zeros + left_ones) & take_one);
+                right[query] = (right_zeros & ~take_one) | ((level_zeros + right_ones) & take_one);
                 index[query] -= zeros & take_one;
                 answer[query] |= bit & take_one;
             }
         }
-        for (uint32_t& value : answer) value = original_values[value];
+        for (uint32_t &value : answer) value = original_values[value];
         return answer;
     }
 };
 
-template<class T>
+template <class T>
 class MergeSortTree {
     int size;
     std::vector<std::vector<T>> tree;
@@ -210,16 +199,15 @@ class MergeSortTree {
         return result;
     }
 
-public:
-    explicit MergeSortTree(const std::vector<T>& input)
+  public:
+    explicit MergeSortTree(const std::vector<T> &input)
         : size(std::bit_ceil((unsigned)input.size())), tree(2 * size), values(input) {
         std::sort(values.begin(), values.end());
         values.erase(std::unique(values.begin(), values.end()), values.end());
         for (int i = 0; i < (int)input.size(); ++i) tree[size + i].push_back(input[i]);
         for (int node = size - 1; node; --node)
-            std::merge(tree[node * 2].begin(), tree[node * 2].end(),
-                       tree[node * 2 + 1].begin(), tree[node * 2 + 1].end(),
-                       std::back_inserter(tree[node]));
+            std::merge(tree[node * 2].begin(), tree[node * 2].end(), tree[node * 2 + 1].begin(),
+                       tree[node * 2 + 1].end(), std::back_inserter(tree[node]));
     }
 
     T kth(int left, int right, int index) const {
@@ -227,8 +215,10 @@ public:
         int high = values.size();
         while (low < high) {
             int middle = (low + high) / 2;
-            if (count_less_equal(left, right, values[middle]) > index) high = middle;
-            else low = middle + 1;
+            if (count_less_equal(left, right, values[middle]) > index)
+                high = middle;
+            else
+                low = middle + 1;
         }
         return values[low];
     }

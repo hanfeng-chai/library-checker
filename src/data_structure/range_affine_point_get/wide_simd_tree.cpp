@@ -8,8 +8,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int query_count = input.read_uniform<6, toy::u32>();
     std::vector<toy::u32> values(n);
-    for (toy::u32& value : values)
-        value = input.read_uniform<9, toy::u32>();
+    for (toy::u32 &value : values) value = input.read_uniform<9, toy::u32>();
 
     static toy::WideAffinePointTree<mod, 500'000, 500'000> tree;
     tree.reset(values);
@@ -25,6 +24,5 @@ int main() {
             tree.collect(input.read_uniform<6, toy::u32>());
         }
     }
-    for (toy::u32 answer : tree.resolve())
-        output.write_padded_u32(answer);
+    for (toy::u32 answer : tree.resolve()) output.write_padded_u32(answer);
 }

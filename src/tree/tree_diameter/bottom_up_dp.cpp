@@ -1,7 +1,8 @@
 #include <toy/io.hpp>
 
 int main() {
-    toy::Reader input(toy::direct_mapping); toy::Writer<1 << 20> output;
+    toy::Reader input(toy::direct_mapping);
+    toy::Writer<1 << 20> output;
     int n = input.read_uniform<6, uint32_t>();
     std::vector<std::vector<std::pair<int, int64_t>>> graph(n);
     for (int i = 1; i < n; ++i) {
@@ -35,10 +36,13 @@ int main() {
             if (parent[child] != vertex) continue;
             int64_t candidate = downward[child] + weight;
             if (candidate > best) {
-                next_best = best; next_end = best_end;
-                best = candidate; best_end = endpoint[child];
+                next_best = best;
+                next_end = best_end;
+                best = candidate;
+                best_end = endpoint[child];
             } else if (candidate > next_best) {
-                next_best = candidate; next_end = endpoint[child];
+                next_best = candidate;
+                next_end = endpoint[child];
             }
         }
         downward[vertex] = best;
@@ -68,7 +72,6 @@ int main() {
 
     output.write_token((toy::u64)diameter);
     output.write_token_u32_6(left_path.size());
-    for (int vertex : left_path)
-        output.write_token_u32_6(vertex);
+    for (int vertex : left_path) output.write_token_u32_6(vertex);
     output.put('\n');
 }

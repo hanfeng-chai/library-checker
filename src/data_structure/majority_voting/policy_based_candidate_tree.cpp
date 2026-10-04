@@ -4,10 +4,9 @@
 #include <toy/io.hpp>
 #include <toy/range.hpp>
 
-using OrderedPairs = __gnu_pbds::tree<
-    std::pair<toy::u32, int>, __gnu_pbds::null_type,
-    std::less<std::pair<toy::u32, int>>, __gnu_pbds::rb_tree_tag,
-    __gnu_pbds::tree_order_statistics_node_update>;
+using OrderedPairs = __gnu_pbds::tree<std::pair<toy::u32, int>, __gnu_pbds::null_type,
+                                      std::less<std::pair<toy::u32, int>>, __gnu_pbds::rb_tree_tag,
+                                      __gnu_pbds::tree_order_statistics_node_update>;
 
 namespace {
 struct Vote {
@@ -19,14 +18,12 @@ struct MergeVote {
     Vote operator()(Vote left, Vote right) const {
         if (!left.balance) return right;
         if (!right.balance) return left;
-        if (left.value == right.value)
-            return {left.value, left.balance + right.balance};
-        if (left.balance > right.balance)
-            return {left.value, left.balance - right.balance};
+        if (left.value == right.value) return {left.value, left.balance + right.balance};
+        if (left.balance > right.balance) return {left.value, left.balance - right.balance};
         return {right.value, right.balance - left.balance};
     }
 };
-}
+} // namespace
 
 int main() {
     toy::Reader input(toy::direct_mapping);
@@ -54,9 +51,8 @@ int main() {
             candidates.set(first, {values[first], 1});
         } else {
             toy::u32 candidate = candidates.fold(first, second).value;
-            int frequency =
-                positions.order_of_key({candidate, second}) -
-                positions.order_of_key({candidate, first});
+            int frequency = positions.order_of_key({candidate, second}) -
+                            positions.order_of_key({candidate, first});
             if (2 * frequency > second - first)
                 output.writeln((toy::u64)candidate);
             else

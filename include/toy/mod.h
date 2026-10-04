@@ -14,18 +14,27 @@ struct Barrett {
     }
     u32 pow(u32 a, u32 n) const {
         u32 r = 1;
-        for (; n; n >>= 1, a = mul(a, a)) if (n & 1) r = mul(r, a);
+        for (; n; n >>= 1, a = mul(a, a))
+            if (n & 1) r = mul(r, a);
         return r;
     }
 };
 
-template<u32 P>
+template <u32 P>
 struct Mod {
     static_assert(P > 2 && (P & 1) && P < (1u << 30));
-    static constexpr u32 inverse = [] { u32 x = 2 + P; for (int i = 0; i < 4; ++i) x *= 2 + P * x; return x; }();
+    static constexpr u32 inverse = [] {
+        u32 x = 2 + P;
+        for (int i = 0; i < 4; ++i) x *= 2 + P * x;
+        return x;
+    }();
     static constexpr u32 r2 = -u64(P) % P;
-    [[gnu::always_inline]] static constexpr u32 add(u32 a, u32 b) { return std::min(a + b, a + b - P); }
-    [[gnu::always_inline]] static constexpr u32 sub(u32 a, u32 b) { return std::min(a - b, a - b + P); }
+    [[gnu::always_inline]] static constexpr u32 add(u32 a, u32 b) {
+        return std::min(a + b, a + b - P);
+    }
+    [[gnu::always_inline]] static constexpr u32 sub(u32 a, u32 b) {
+        return std::min(a - b, a - b + P);
+    }
     [[gnu::always_inline]] static constexpr u32 mul(u32 a, u32 b) { return u64(a) * b % P; }
     [[gnu::always_inline]] static constexpr u32 mont(u32 a, u32 b) {
         u64 x = u64(a) * b;
@@ -34,7 +43,8 @@ struct Mod {
     }
     [[gnu::always_inline]] static constexpr u32 pow(u32 a, u64 n) {
         u32 x = 1;
-        for (; n; n >>= 1, a = mul(a, a)) if (n & 1) x = mul(x, a);
+        for (; n; n >>= 1, a = mul(a, a))
+            if (n & 1) x = mul(x, a);
         return x;
     }
     [[gnu::always_inline]] static __m256i add(__m256i a, __m256i b) {
@@ -68,4 +78,4 @@ struct Mod {
     }
 };
 
-}
+} // namespace toy

@@ -3,14 +3,12 @@
 class RecursiveDsu {
     std::vector<int> parent, rank;
 
-public:
+  public:
     explicit RecursiveDsu(int n) : parent(n), rank(n) {
         std::iota(parent.begin(), parent.end(), 0);
     }
 
-    int leader(int x) {
-        return parent[x] == x ? x : parent[x] = leader(parent[x]);
-    }
+    int leader(int x) { return parent[x] == x ? x : parent[x] = leader(parent[x]); }
 
     void merge(int a, int b) {
         a = leader(a);
@@ -32,7 +30,9 @@ int main() {
         int type = input.read_fixed<1, toy::u32>();
         int u = input.read_uniform<6, toy::u32>();
         int v = input.read_uniform<6, toy::u32>();
-        if (type == 0) dsu.merge(u, v);
-        else output.writeln_fixed<1>((toy::u64)(dsu.leader(u) == dsu.leader(v)));
+        if (type == 0)
+            dsu.merge(u, v);
+        else
+            output.writeln_fixed<1>((toy::u64)(dsu.leader(u) == dsu.leader(v)));
     }
 }

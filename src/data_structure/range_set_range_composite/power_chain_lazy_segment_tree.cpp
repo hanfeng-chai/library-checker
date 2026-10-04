@@ -9,9 +9,8 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int queries = input.read_uniform<6, toy::u32>();
     std::vector<Function> functions(n);
-    for (auto& function : functions) {
-        function = {input.read_uniform<9, toy::u32>(),
-                    input.read_uniform<9, toy::u32>()};
+    for (auto &function : functions) {
+        function = {input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>()};
     }
     toy::RangeSetCompositeTree<mod> tree(functions, queries);
     while (queries--) {
@@ -19,8 +18,7 @@ int main() {
         int left = input.read_uniform<6, toy::u32>();
         int right = input.read_uniform<6, toy::u32>();
         if (type == 0) {
-            Function function{input.read_uniform<9, toy::u32>(),
-                              input.read_uniform<9, toy::u32>()};
+            Function function{input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>()};
             tree.set(left, right, function);
         } else {
             toy::u32 x = input.read_uniform<9, toy::u32>();

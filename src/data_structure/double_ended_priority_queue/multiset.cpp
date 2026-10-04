@@ -16,8 +16,10 @@ int main() {
             auto iterator = type == 1 ? values.begin() : std::prev(values.end());
             int value = *iterator;
             values.erase(iterator);
-            if (value < 0) output.writeln((toy::i128)value);
-            else output.writeln((toy::u64)value);
+            if (value < 0)
+                output.writeln((toy::i128)value);
+            else
+                output.writeln((toy::u64)value);
         }
     }
 }

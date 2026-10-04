@@ -1,9 +1,10 @@
-#include <toy/io.h>
 #include <toy/fps.h>
+#include <toy/io.h>
 using namespace toy;
 
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     usize n = in.read<u32, 6>();
     u64 exponent = in.read<u64, 19>();
     Buffer<u32> f(n);

@@ -7,15 +7,16 @@ int main() {
     toy::Reader input(toy::direct_mapping);
     toy::Writer output;
     int queries = input.read_uniform<6, toy::u32>();
-    static toy::FixedFoldableDeque<Function, toy::ComposeAffine<mod>, 500'000>
-        deque(Function{}, toy::ComposeAffine<mod>{});
+    static toy::FixedFoldableDeque<Function, toy::ComposeAffine<mod>, 500'000> deque(
+        Function{}, toy::ComposeAffine<mod>{});
     while (queries--) {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         if (type <= 1) {
-            Function function{input.read_uniform<9, toy::u32>(),
-                              input.read_uniform<9, toy::u32>()};
-            if (type == 0) deque.push_front(function);
-            else deque.push_back(function);
+            Function function{input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>()};
+            if (type == 0)
+                deque.push_front(function);
+            else
+                deque.push_back(function);
         } else if (type == 2) {
             deque.pop_front();
         } else if (type == 3) {

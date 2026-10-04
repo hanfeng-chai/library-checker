@@ -3,10 +3,9 @@
 #include <ext/pb_ds/tree_policy.hpp>
 #include <toy/io.hpp>
 
-using OrderedPairs = __gnu_pbds::tree<
-    std::pair<toy::u32, int>, __gnu_pbds::null_type,
-    std::less<std::pair<toy::u32, int>>, __gnu_pbds::rb_tree_tag,
-    __gnu_pbds::tree_order_statistics_node_update>;
+using OrderedPairs = __gnu_pbds::tree<std::pair<toy::u32, int>, __gnu_pbds::null_type,
+                                      std::less<std::pair<toy::u32, int>>, __gnu_pbds::rb_tree_tag,
+                                      __gnu_pbds::tree_order_statistics_node_update>;
 
 int main() {
     toy::Reader input(toy::direct_mapping);
@@ -32,8 +31,7 @@ int main() {
         } else {
             toy::u32 value = input.read_uniform<10, toy::u32>();
             int frequency =
-                positions.order_of_key({value, second}) -
-                positions.order_of_key({value, first});
+                positions.order_of_key({value, second}) - positions.order_of_key({value, first});
             output.write_padded_u32(frequency);
         }
     }

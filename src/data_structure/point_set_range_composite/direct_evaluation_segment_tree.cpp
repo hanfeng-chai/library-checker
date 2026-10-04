@@ -9,7 +9,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int queries = input.read_uniform<6, toy::u32>();
     std::vector<Function> functions(n);
-    for (auto& function : functions)
+    for (auto &function : functions)
         function = {input.read_uniform<9, toy::u32>(), input.read_uniform<9, toy::u32>()};
     toy::AffineEvaluationSegmentTree<mod> tree(functions);
     while (queries--) {

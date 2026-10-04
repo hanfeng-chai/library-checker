@@ -24,14 +24,13 @@ int main() {
     }
 
     std::vector<Operation> operations(q);
-    for (Operation& operation : operations) {
+    for (Operation &operation : operations) {
         operation.type = input.read_fixed<1, toy::u32>();
         operation.first = input.read_uniform<10, toy::u32>();
         operation.second = input.read_uniform<10, toy::u32>();
         if (operation.type == 0) {
             operation.third = input.read_uniform<10, toy::u32>();
-            operation.point_id = tree.register_point(
-                operation.first, operation.second);
+            operation.point_id = tree.register_point(operation.first, operation.second);
         } else {
             operation.third = input.read_uniform<10, toy::u32>();
             operation.fourth = input.read_uniform<10, toy::u32>();
@@ -39,14 +38,12 @@ int main() {
     }
 
     tree.build();
-    for (const Operation& operation : operations) {
+    for (const Operation &operation : operations) {
         if (operation.type == 0) {
             tree.add(operation.point_id, operation.third);
         } else {
-            output.writeln(
-                tree.rectangle(
-                    operation.first, operation.second,
-                    operation.third, operation.fourth));
+            output.writeln(tree.rectangle(operation.first, operation.second, operation.third,
+                                          operation.fourth));
         }
     }
 }

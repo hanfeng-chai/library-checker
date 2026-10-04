@@ -10,7 +10,7 @@ struct Operation {
     toy::u32 x;
     toy::u32 y;
 };
-}
+} // namespace
 
 int main() {
     constexpr toy::u32 mod = 998244353;
@@ -23,7 +23,7 @@ int main() {
     events.reserve(2 * query_count);
 
     for (int index = 0; index < query_count; ++index) {
-        Operation& operation = operations[index];
+        Operation &operation = operations[index];
         operation.type = input.read_fixed<1, toy::u32>();
         operation.left = input.read_uniform<10, toy::u32>();
         if (operation.type == 0) {
@@ -38,16 +38,15 @@ int main() {
         }
     }
 
-    toy::radix_sort_u32<30, 15>(
-        events.begin(), events.end(),
-        [](toy::u64 event) { return (toy::u32)event; });
+    toy::radix_sort_u32<30, 15>(events.begin(), events.end(),
+                                [](toy::u64 event) { return (toy::u32)event; });
 
     toy::u32 previous = std::numeric_limits<toy::u32>::max();
     int compressed_size = 0;
     for (toy::u64 event : events) {
         toy::u32 coordinate = event;
         toy::u32 tag = event >> 32;
-        Operation& operation = operations[tag >> 2];
+        Operation &operation = operations[tag >> 2];
         if (tag & 3) {
             toy::u32 compressed = compressed_size - (coordinate == previous);
             (tag & 1 ? operation.left : operation.right) = compressed;
@@ -61,13 +60,13 @@ int main() {
     }
 
     toy::AffineSegmentTree<mod> tree(compressed_size);
-    for (const Operation& operation : operations) {
+    for (const Operation &operation : operations) {
         if (operation.type == 0) {
             tree.set(operation.left, {operation.x, operation.y});
         } else {
             toy::u32 answer = operation.left == operation.right
-                ? operation.x
-                : tree.apply(operation.left, operation.right, operation.x);
+                                  ? operation.x
+                                  : tree.apply(operation.left, operation.right, operation.x);
             output.write_padded_u32(answer);
         }
     }

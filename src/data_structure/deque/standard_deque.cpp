@@ -16,7 +16,6 @@ int main() {
         else if (type == 3)
             values.pop_back();
         else
-            output.write_padded_u32(
-                values[input.read_uniform<6, toy::u32>()]);
+            output.write_padded_u32(values[input.read_uniform<6, toy::u32>()]);
     }
 }

@@ -26,7 +26,8 @@ int main() {
             int64_t answer = tree.minimum(first);
             if (answer == std::numeric_limits<int64_t>::max())
                 output.write("INFINITY\n");
-            else output.writeln_i64(answer);
+            else
+                output.writeln_i64(answer);
         }
     }
 }

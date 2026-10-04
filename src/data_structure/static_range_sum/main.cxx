@@ -16,7 +16,8 @@ int main() {
         // Prefetch both endpoints before the separate lookup loop.
         for (int i = 0; i < count; ++i) {
             auto [l, r] = in.read_pair<6>();
-            left[i] = l; right[i] = r;
+            left[i] = l;
+            right[i] = r;
             __builtin_prefetch(prefix + left[i]);
             __builtin_prefetch(prefix + right[i]);
         }

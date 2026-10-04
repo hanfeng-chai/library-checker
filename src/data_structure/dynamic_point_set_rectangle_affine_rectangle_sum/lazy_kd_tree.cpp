@@ -26,7 +26,7 @@ int main() {
         tree.register_point(x, y, weight, true);
     }
     std::vector<Query> queries(q);
-    for (Query& query : queries) {
+    for (Query &query : queries) {
         query.operation = input.read_fixed<1, toy::u32>();
         if (query.operation == 0) {
             toy::u32 x = input.read_uniform<9, toy::u32>();
@@ -48,21 +48,17 @@ int main() {
         }
     }
     tree.build();
-    for (const Query& query : queries) {
+    for (const Query &query : queries) {
         if (query.operation == 0) {
             tree.activate(query.first, query.second);
         } else if (query.operation == 1) {
             tree.set(query.first, query.second);
         } else if (query.operation == 2) {
             output.write_padded_u32(
-                tree.rectangle_sum(
-                    query.first, query.second,
-                    query.third, query.fourth));
+                tree.rectangle_sum(query.first, query.second, query.third, query.fourth));
         } else {
-            tree.rectangle_apply(
-                query.first, query.second,
-                query.third, query.fourth,
-                query.fifth, query.sixth);
+            tree.rectangle_apply(query.first, query.second, query.third, query.fourth, query.fifth,
+                                 query.sixth);
         }
     }
 }

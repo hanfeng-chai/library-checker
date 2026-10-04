@@ -14,12 +14,15 @@ struct DSU {
         return x;
     }
     bool merge(int a, int b) {
-        a = leader(a); b = leader(b);
+        a = leader(a);
+        b = leader(b);
         if (a == b) return false;
         if (parent[a] > parent[b]) std::swap(a, b);
-        parent[a] += parent[b]; parent[b] = a; return true;
+        parent[a] += parent[b];
+        parent[b] = a;
+        return true;
     }
     bool same(int a, int b) { return leader(a) == leader(b); }
     int size(int x) { return -parent[leader(x)]; }
 };
-}
+} // namespace toy

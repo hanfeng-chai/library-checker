@@ -5,7 +5,7 @@
 
 namespace toy {
 
-template<unsigned Bits>
+template <unsigned Bits>
 class BinaryTrieSet {
     struct Node {
         int child[2]{};
@@ -13,10 +13,8 @@ class BinaryTrieSet {
     };
     std::vector<Node> nodes{{}};
 
-public:
-    explicit BinaryTrieSet(std::size_t capacity = 0) {
-        nodes.reserve(1 + capacity * (Bits + 1));
-    }
+  public:
+    explicit BinaryTrieSet(std::size_t capacity = 0) { nodes.reserve(1 + capacity * (Bits + 1)); }
 
     bool contains(uint32_t value) const {
         int node = 0;
@@ -71,7 +69,7 @@ public:
     }
 };
 
-template<unsigned Bits>
+template <unsigned Bits>
 class PatriciaTrieSet {
     static_assert(Bits < 32);
     struct Node {
@@ -88,16 +86,13 @@ class PatriciaTrieSet {
         return nodes.size() - 1;
     }
 
-public:
-    explicit PatriciaTrieSet(std::size_t capacity = 0) {
-        nodes.reserve(1 + 2 * capacity);
-    }
+  public:
+    explicit PatriciaTrieSet(std::size_t capacity = 0) { nodes.reserve(1 + 2 * capacity); }
 
     bool contains(uint32_t value) const {
         int node = root;
         if (!node) return false;
-        while (nodes[node].bit >= 0)
-            node = nodes[node].child[value >> nodes[node].bit & 1];
+        while (nodes[node].bit >= 0) node = nodes[node].child[value >> nodes[node].bit & 1];
         return nodes[node].value == value;
     }
 
@@ -108,13 +103,12 @@ public:
             return true;
         }
         int leaf = root;
-        while (nodes[leaf].bit >= 0)
-            leaf = nodes[leaf].child[value >> nodes[leaf].bit & 1];
+        while (nodes[leaf].bit >= 0) leaf = nodes[leaf].child[value >> nodes[leaf].bit & 1];
         uint32_t difference = value ^ nodes[leaf].value;
         if (!difference) return false;
         int bit = std::bit_width(difference) - 1;
 
-        int* link = &root;
+        int *link = &root;
         int node = root;
         while (nodes[node].bit > bit) {
             link = &nodes[node].child[value >> nodes[node].bit & 1];
@@ -150,8 +144,10 @@ public:
             root = 0;
         } else {
             int sibling = nodes[parent].child[parent_direction ^ 1];
-            if (!grandparent) root = sibling;
-            else nodes[grandparent].child[grandparent_direction] = sibling;
+            if (!grandparent)
+                root = sibling;
+            else
+                nodes[grandparent].child[grandparent_direction] = sibling;
         }
         return true;
     }
@@ -159,8 +155,7 @@ public:
     uint32_t min_xor(uint32_t value) const {
         assert(root);
         int node = root;
-        while (nodes[node].bit >= 0)
-            node = nodes[node].child[value >> nodes[node].bit & 1];
+        while (nodes[node].bit >= 0) node = nodes[node].child[value >> nodes[node].bit & 1];
         return value ^ nodes[node].value;
     }
 };
@@ -199,16 +194,12 @@ class ChunkedXorTrieSet {
 
     static uint32_t xor_min_bit(uint64_t mask, uint32_t desired) {
         constexpr uint64_t one_masks[] = {
-            0xaaaaaaaaaaaaaaaaULL,
-            0xccccccccccccccccULL,
-            0xf0f0f0f0f0f0f0f0ULL,
-            0xff00ff00ff00ff00ULL,
-            0xffff0000ffff0000ULL,
-            0xffffffff00000000ULL,
+            0xaaaaaaaaaaaaaaaaULL, 0xccccccccccccccccULL, 0xf0f0f0f0f0f0f0f0ULL,
+            0xff00ff00ff00ff00ULL, 0xffff0000ffff0000ULL, 0xffffffff00000000ULL,
         };
         for (int bit = 5; bit >= 0; --bit) {
-            uint64_t preferred = desired >> bit & 1
-                ? mask & one_masks[bit] : mask & ~one_masks[bit];
+            uint64_t preferred =
+                desired >> bit & 1 ? mask & one_masks[bit] : mask & ~one_masks[bit];
             if (preferred) mask = preferred;
         }
         return std::countr_zero(mask);
@@ -223,25 +214,24 @@ class ChunkedXorTrieSet {
 
     void unmark_group(uint32_t value) {
         uint64_t mask = uint64_t(1) << (value >> 9 & 63);
-        uint64_t& at3 = level3[value >> 15];
+        uint64_t &at3 = level3[value >> 15];
         at3 ^= mask;
         if (at3) return;
 
         mask = uint64_t(1) << (value >> 15 & 63);
-        uint64_t& at2 = level2[value >> 21];
+        uint64_t &at2 = level2[value >> 21];
         at2 ^= mask;
         if (at2) return;
 
         mask = uint64_t(1) << (value >> 21 & 63);
-        uint64_t& at1 = level1[value >> 27];
+        uint64_t &at1 = level1[value >> 27];
         at1 ^= mask;
         if (at1) return;
         top_mask ^= uint64_t(1) << (value >> 27);
     }
 
-public:
-    explicit ChunkedXorTrieSet(std::size_t capacity = 0)
-        : leaf_indices(group_count), leaves(1) {
+  public:
+    explicit ChunkedXorTrieSet(std::size_t capacity = 0) : leaf_indices(group_count), leaves(1) {
         leaves.reserve(capacity / 2 + 1);
     }
 
@@ -255,7 +245,7 @@ public:
 
     bool insert(uint32_t value) {
         uint32_t low = value & 511;
-        uint32_t& entry = leaf_indices[value >> low_bits];
+        uint32_t &entry = leaf_indices[value >> low_bits];
         if (!entry) {
             entry = inline_flag | low;
             mark_group(value);
@@ -270,7 +260,7 @@ public:
             leaves.back().insert(low);
             return true;
         }
-        Leaf& leaf = leaves[entry];
+        Leaf &leaf = leaves[entry];
         uint64_t mask = uint64_t(1) << (low & 63);
         if (leaf.words[low >> 6] & mask) return false;
         leaf.insert(low);
@@ -279,7 +269,7 @@ public:
 
     bool erase(uint32_t value) {
         uint32_t low = value & 511;
-        uint32_t& entry = leaf_indices[value >> low_bits];
+        uint32_t &entry = leaf_indices[value >> low_bits];
         if (!entry) return false;
         if (entry & inline_flag) {
             if ((entry ^ inline_flag) != low) return false;
@@ -287,7 +277,7 @@ public:
             unmark_group(value);
             return true;
         }
-        Leaf& leaf = leaves[entry];
+        Leaf &leaf = leaves[entry];
         if (!leaf.erase(low)) return false;
         if (leaf.nonempty_words) return true;
         entry = 0;
@@ -297,22 +287,16 @@ public:
 
     uint32_t min_xor(uint32_t value) const {
         uint32_t result = xor_min_bit(top_mask, value >> 27);
-        result = result << 6 | xor_min_bit(
-            level1[result], value >> 21 & 63);
-        result = result << 6 | xor_min_bit(
-            level2[result], value >> 15 & 63);
-        result = result << 6 | xor_min_bit(
-            level3[result], value >> 9 & 63);
+        result = result << 6 | xor_min_bit(level1[result], value >> 21 & 63);
+        result = result << 6 | xor_min_bit(level2[result], value >> 15 & 63);
+        result = result << 6 | xor_min_bit(level3[result], value >> 9 & 63);
 
         uint32_t entry = leaf_indices[result];
         result <<= low_bits;
-        if (entry & inline_flag)
-            return (result | (entry ^ inline_flag)) ^ value;
-        const Leaf& leaf = leaves[entry];
-        uint32_t word = xor_min_bit(
-            leaf.nonempty_words, value >> 6 & 7);
-        uint32_t bit = xor_min_bit(
-            leaf.words[word], value & 63);
+        if (entry & inline_flag) return (result | (entry ^ inline_flag)) ^ value;
+        const Leaf &leaf = leaves[entry];
+        uint32_t word = xor_min_bit(leaf.nonempty_words, value >> 6 & 7);
+        uint32_t bit = xor_min_bit(leaf.words[word], value & 63);
         return (result | word << 6 | bit) ^ value;
     }
 };
@@ -322,19 +306,17 @@ class BitBlockOrderedSet {
     FenwickTree<int> counts;
     int element_count = 0;
 
-public:
+  public:
     explicit BitBlockOrderedSet(int universe)
         : bits((universe + 63) / 64), counts((int)bits.size()) {}
 
     int size() const { return element_count; }
 
-    bool contains(int value) const {
-        return bits[value >> 6] >> (value & 63) & 1;
-    }
+    bool contains(int value) const { return bits[value >> 6] >> (value & 63) & 1; }
 
     bool insert(int value) {
         uint64_t mask = uint64_t(1) << (value & 63);
-        uint64_t& word = bits[value >> 6];
+        uint64_t &word = bits[value >> 6];
         if (word & mask) return false;
         word |= mask;
         counts.add(value >> 6, 1);
@@ -344,7 +326,7 @@ public:
 
     bool erase(int value) {
         uint64_t mask = uint64_t(1) << (value & 63);
-        uint64_t& word = bits[value >> 6];
+        uint64_t &word = bits[value >> 6];
         if (!(word & mask)) return false;
         word ^= mask;
         counts.add(value >> 6, -1);
@@ -356,8 +338,7 @@ public:
         int block = end >> 6;
         int result = counts.prefix_sum(block);
         if ((end & 63) && block < (int)bits.size())
-            result += std::popcount(
-                bits[block] & ((uint64_t(1) << (end & 63)) - 1));
+            result += std::popcount(bits[block] & ((uint64_t(1) << (end & 63)) - 1));
         return result;
     }
 
@@ -382,32 +363,29 @@ class WidePrefixTree {
 
         constexpr MaskTable() {
             for (int child = 0; child < branch; ++child)
-                for (int i = child + 1; i < branch; ++i)
-                    values[child][i] = -1;
+                for (int i = child + 1; i < branch; ++i) values[child][i] = -1;
         }
     };
 
     std::vector<std::vector<Block>> levels;
 
-    static const MaskTable& masks() {
+    static const MaskTable &masks() {
         static constexpr MaskTable table;
         return table;
     }
 
-    static int select_child(const Block& block, int index) {
+    static int select_child(const Block &block, int index) {
         __m256i target = _mm256_set1_epi32(index + 1);
         int count = 0;
         for (int offset = 0; offset < branch; offset += 8) {
-            __m256i prefix = _mm256_load_si256(
-                (const __m256i*)(block.prefix + offset));
+            __m256i prefix = _mm256_load_si256((const __m256i *)(block.prefix + offset));
             __m256i before = _mm256_cmpgt_epi32(target, prefix);
-            count += std::popcount((unsigned)_mm256_movemask_ps(
-                _mm256_castsi256_ps(before)));
+            count += std::popcount((unsigned)_mm256_movemask_ps(_mm256_castsi256_ps(before)));
         }
         return count - 1;
     }
 
-public:
+  public:
     explicit WidePrefixTree(std::vector<int> counts) {
         if (counts.empty()) counts.push_back(0);
         while (true) {
@@ -431,10 +409,9 @@ public:
 
     int prefix_sum(int end) const {
         int result = 0;
-        for (const auto& level : levels) {
+        for (const auto &level : levels) {
             int block = end >> branch_bits;
-            if (block < (int)level.size())
-                result += level[block].prefix[end & (branch - 1)];
+            if (block < (int)level.size()) result += level[block].prefix[end & (branch - 1)];
             end = block;
         }
         return result;
@@ -442,18 +419,14 @@ public:
 
     void add(int index, int delta) {
         __m256i change = _mm256_set1_epi32(delta);
-        for (auto& level : levels) {
+        for (auto &level : levels) {
             int block = index >> branch_bits;
             int child = index & (branch - 1);
             for (int offset = 0; offset < branch; offset += 8) {
-                __m256i value = _mm256_load_si256(
-                    (__m256i*)(level[block].prefix + offset));
-                __m256i mask = _mm256_load_si256(
-                    (const __m256i*)(masks().values[child] + offset));
-                value = _mm256_add_epi32(
-                    value, _mm256_and_si256(change, mask));
-                _mm256_store_si256(
-                    (__m256i*)(level[block].prefix + offset), value);
+                __m256i value = _mm256_load_si256((__m256i *)(level[block].prefix + offset));
+                __m256i mask = _mm256_load_si256((const __m256i *)(masks().values[child] + offset));
+                value = _mm256_add_epi32(value, _mm256_and_si256(change, mask));
+                _mm256_store_si256((__m256i *)(level[block].prefix + offset), value);
             }
             index = block;
         }
@@ -462,7 +435,7 @@ public:
     std::pair<int, int> kth(int index) const {
         int block = 0;
         for (int level = levels.size(); level--;) {
-            const Block& current = levels[level][block];
+            const Block &current = levels[level][block];
             int child = select_child(current, index);
             index -= current.prefix[child];
             block = block * branch + child;
@@ -476,33 +449,29 @@ class WideBitBlockOrderedSet {
     int element_count = 0;
     WidePrefixTree counts;
 
-public:
+  public:
     WideBitBlockOrderedSet(int universe, std::span<const int> initial)
-        : bits((universe + 63) / 64),
-          counts([&] {
+        : bits((universe + 63) / 64), counts([&] {
               std::vector<int> word_counts(bits.size());
               for (int value : initial) {
                   uint64_t mask = uint64_t(1) << (value & 63);
-                  uint64_t& word = bits[value >> 6];
+                  uint64_t &word = bits[value >> 6];
                   if (!(word & mask)) {
                       word |= mask;
                       ++element_count;
                   }
               }
-              for (int i = 0; i < (int)bits.size(); ++i)
-                  word_counts[i] = std::popcount(bits[i]);
+              for (int i = 0; i < (int)bits.size(); ++i) word_counts[i] = std::popcount(bits[i]);
               return word_counts;
           }()) {}
 
     int size() const { return element_count; }
 
-    bool contains(int value) const {
-        return bits[value >> 6] >> (value & 63) & 1;
-    }
+    bool contains(int value) const { return bits[value >> 6] >> (value & 63) & 1; }
 
     bool insert(int value) {
         uint64_t mask = uint64_t(1) << (value & 63);
-        uint64_t& word = bits[value >> 6];
+        uint64_t &word = bits[value >> 6];
         if (word & mask) return false;
         word |= mask;
         counts.add(value >> 6, 1);
@@ -512,7 +481,7 @@ public:
 
     bool erase(int value) {
         uint64_t mask = uint64_t(1) << (value & 63);
-        uint64_t& word = bits[value >> 6];
+        uint64_t &word = bits[value >> 6];
         if (!(word & mask)) return false;
         word ^= mask;
         counts.add(value >> 6, -1);
@@ -524,20 +493,18 @@ public:
         int block = end >> 6;
         int result = counts.prefix_sum(block);
         if ((end & 63) && block < (int)bits.size())
-            result += std::popcount(
-                bits[block] & ((uint64_t(1) << (end & 63)) - 1));
+            result += std::popcount(bits[block] & ((uint64_t(1) << (end & 63)) - 1));
         return result;
     }
 
     int kth(int index) const {
         auto [block, within] = counts.kth(index);
-        uint64_t selected =
-            _pdep_u64(uint64_t(1) << within, bits[block]);
+        uint64_t selected = _pdep_u64(uint64_t(1) << within, bits[block]);
         return block * 64 + std::countr_zero(selected);
     }
 };
 
-template<class T>
+template <class T>
 class DoubleEndedPriorityQueue {
     std::priority_queue<T, std::vector<T>, std::greater<T>> minimum;
     std::priority_queue<T> maximum;
@@ -558,9 +525,9 @@ class DoubleEndedPriorityQueue {
         }
     }
 
-public:
-    template<class Range>
-    explicit DoubleEndedPriorityQueue(const Range& values) {
+  public:
+    template <class Range>
+    explicit DoubleEndedPriorityQueue(const Range &values) {
         for (T value : values) push(value);
     }
 
@@ -586,23 +553,21 @@ public:
     }
 };
 
-template<class T, class Compare = std::less<T>>
+template <class T, class Compare = std::less<T>>
 class MinMaxHeap {
     std::vector<T> data;
     [[no_unique_address]] Compare compare;
     std::size_t maximum_index = 0;
 
-    bool is_min_level(std::size_t index) const {
-        return std::bit_width(index + 1) & 1;
-    }
+    bool is_min_level(std::size_t index) const { return std::bit_width(index + 1) & 1; }
 
-    bool less(const T& left, const T& right) const {
-        return compare(left, right);
-    }
+    bool less(const T &left, const T &right) const { return compare(left, right); }
 
     void refresh_maximum() {
-        if (data.size() <= 2) maximum_index = data.size() - 1;
-        else maximum_index = less(data[1], data[2]) ? 2 : 1;
+        if (data.size() <= 2)
+            maximum_index = data.size() - 1;
+        else
+            maximum_index = less(data[1], data[2]) ? 2 : 1;
     }
 
     void bubble_min(std::size_t index, T value) {
@@ -625,13 +590,15 @@ class MinMaxHeap {
         data[index] = std::move(value);
     }
 
-    template<bool Minimum>
-    bool better(const T& left, const T& right) const {
-        if constexpr (Minimum) return less(left, right);
-        else return less(right, left);
+    template <bool Minimum>
+    bool better(const T &left, const T &right) const {
+        if constexpr (Minimum)
+            return less(left, right);
+        else
+            return less(right, left);
     }
 
-    template<bool Minimum>
+    template <bool Minimum>
     void push_down(std::size_t index) {
         T value = std::move(data[index]);
         while (true) {
@@ -640,14 +607,12 @@ class MinMaxHeap {
             std::size_t first_grandchild = 4 * index + 3;
 
             if (first_grandchild + 3 < data.size()) {
-                std::size_t left = first_grandchild +
-                    better<Minimum>(data[first_grandchild + 1],
-                                    data[first_grandchild]);
-                std::size_t right = first_grandchild + 2 +
-                    better<Minimum>(data[first_grandchild + 3],
-                                    data[first_grandchild + 2]);
-                std::size_t best = better<Minimum>(data[right], data[left])
-                    ? right : left;
+                std::size_t left = first_grandchild + better<Minimum>(data[first_grandchild + 1],
+                                                                      data[first_grandchild]);
+                std::size_t right =
+                    first_grandchild + 2 +
+                    better<Minimum>(data[first_grandchild + 3], data[first_grandchild + 2]);
+                std::size_t best = better<Minimum>(data[right], data[left]) ? right : left;
                 if (!better<Minimum>(data[best], value)) break;
                 data[index] = std::move(data[best]);
                 std::size_t parent = (best - 1) / 2;
@@ -669,25 +634,19 @@ class MinMaxHeap {
             }
 
             std::size_t best = first_child;
-            std::size_t end =
-                std::min(data.size(), first_grandchild + 4);
-            if (first_child + 1 < data.size() &&
-                better<Minimum>(data[first_child + 1], data[best]))
+            std::size_t end = std::min(data.size(), first_grandchild + 4);
+            if (first_child + 1 < data.size() && better<Minimum>(data[first_child + 1], data[best]))
                 best = first_child + 1;
-            for (std::size_t candidate = first_grandchild;
-                 candidate < end; ++candidate)
-                if (better<Minimum>(data[candidate], data[best]))
-                    best = candidate;
+            for (std::size_t candidate = first_grandchild; candidate < end; ++candidate)
+                if (better<Minimum>(data[candidate], data[best])) best = candidate;
             if (better<Minimum>(data[best], value)) {
                 data[index] = std::move(data[best]);
                 if (best >= first_grandchild) {
                     std::size_t parent = (best - 1) / 2;
                     if constexpr (Minimum) {
-                        if (less(data[parent], value))
-                            std::swap(data[parent], value);
+                        if (less(data[parent], value)) std::swap(data[parent], value);
                     } else {
-                        if (less(value, data[parent]))
-                            std::swap(data[parent], value);
+                        if (less(value, data[parent])) std::swap(data[parent], value);
                     }
                 }
                 data[best] = std::move(value);
@@ -698,25 +657,25 @@ class MinMaxHeap {
         data[index] = std::move(value);
     }
 
-public:
+  public:
     MinMaxHeap() = default;
 
-    template<class Range>
-    explicit MinMaxHeap(const Range& values) : data(values.begin(), values.end()) {
+    template <class Range>
+    explicit MinMaxHeap(const Range &values) : data(values.begin(), values.end()) {
         for (std::size_t index = data.size() / 2; index--;) {
-            if (is_min_level(index)) push_down<true>(index);
-            else push_down<false>(index);
+            if (is_min_level(index))
+                push_down<true>(index);
+            else
+                push_down<false>(index);
         }
         if (!data.empty()) refresh_maximum();
     }
 
     void reserve(std::size_t capacity) { data.reserve(capacity); }
 
-    const T& min() const { return data.front(); }
+    const T &min() const { return data.front(); }
 
-    const T& max() const {
-        return data[maximum_index];
-    }
+    const T &max() const { return data[maximum_index]; }
 
     void push(T value) {
         data.push_back(value);
@@ -764,8 +723,10 @@ public:
         T result = data[index];
         if (index == data.size() - 1) {
             data.pop_back();
-            if (!data.empty()) refresh_maximum();
-            else maximum_index = 0;
+            if (!data.empty())
+                refresh_maximum();
+            else
+                maximum_index = 0;
             return result;
         }
         data[index] = std::move(data.back());

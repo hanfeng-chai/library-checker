@@ -18,8 +18,7 @@ int main() {
         functions[i].b = input.read_uniform<9, toy::u32>();
     }
 
-    toy::TreapSortableSegmentTree tree(
-        keys, functions, Function{}, toy::ComposeAffine<mod>{});
+    toy::TreapSortableSegmentTree tree(keys, functions, Function{}, toy::ComposeAffine<mod>{});
     for (int query = 0; query < query_count; ++query) {
         int type = input.read_fixed<1, toy::u32>();
         int x = input.read_uniform<6, toy::u32>();
@@ -30,8 +29,7 @@ int main() {
             tree.set(x, y, Function{a, b});
         } else if (type == 1) {
             toy::u32 value = input.read_uniform<9, toy::u32>();
-            output.write_padded_u32(
-                tree.fold(x, y)(value));
+            output.write_padded_u32(tree.fold(x, y)(value));
         } else if (type == 2) {
             tree.sort_ascending(x, y);
         } else {

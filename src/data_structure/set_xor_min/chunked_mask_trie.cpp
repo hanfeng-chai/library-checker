@@ -9,8 +9,11 @@ int main() {
     while (queries--) {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         toy::u32 value = input.read_uniform<9, toy::u32>();
-        if (type == 0) set.insert(value);
-        else if (type == 1) set.erase(value);
-        else output.write_padded_u32(set.min_xor(value));
+        if (type == 0)
+            set.insert(value);
+        else if (type == 1)
+            set.erase(value);
+        else
+            output.write_padded_u32(set.min_xor(value));
     }
 }

@@ -7,7 +7,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int queries = input.read_uniform<6, toy::u32>();
     std::vector<toy::u64> values(n);
-    for (auto& value : values) value = input.read_uniform<10, toy::u64>();
+    for (auto &value : values) value = input.read_uniform<10, toy::u64>();
     toy::SegmentTree<toy::u64, std::plus<>> tree(values, 0);
     while (queries--) {
         int type = input.read_fixed<1, toy::u32>();

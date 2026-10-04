@@ -1,9 +1,10 @@
-#include <toy/io.h>
 #include <toy/divisor_convolution.h>
+#include <toy/io.h>
 using namespace toy;
 
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     usize n = in.read<u32, 7>();
     Buffer<u32> a(n + 1), b(n + 1);
     a[0] = b[0] = 0;

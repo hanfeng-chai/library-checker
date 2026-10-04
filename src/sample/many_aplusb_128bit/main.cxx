@@ -1,7 +1,8 @@
 #include <toy/io.h>
 using namespace toy;
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     int t = in.read();
     i128 sums[2048];
     while (t) {
@@ -10,6 +11,7 @@ int main() {
             i128 a = in.read<i128, 38>(), b = in.read<i128, 38>();
             sums[i] = a + b;
         }
-        out.write(std::span(sums, n)); t -= n;
+        out.write(std::span(sums, n));
+        t -= n;
     }
 }

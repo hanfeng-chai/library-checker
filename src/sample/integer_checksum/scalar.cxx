@@ -5,7 +5,8 @@ int main() {
     Reader in;
     Writer out;
     int n = in.read();
-    in.read<i128>(); in.read<i128>();
+    in.read<i128>();
+    in.read<i128>();
     u64 sum = 0;
     while (n--) {
         bool neg = *in.p == '-';

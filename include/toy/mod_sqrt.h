@@ -3,7 +3,7 @@
 
 namespace toy {
 // Smaller square root in an odd prime field, or nullopt for a nonresidue.
-template<u32 P = 998244353>
+template <u32 P = 998244353>
 std::optional<u32> mod_sqrt(u32 x) {
     using M = Mod<P>;
     if (!x) return 0;
@@ -20,8 +20,11 @@ std::optional<u32> mod_sqrt(u32 x) {
         int i = 1;
         for (u32 v = M::mul(t, t); v != 1; v = M::mul(v, v)) ++i;
         u32 b = M::pow(c, u32(1) << (s - i - 1));
-        r = M::mul(r, b); c = M::mul(b, b); t = M::mul(t, c); s = i;
+        r = M::mul(r, b);
+        c = M::mul(b, b);
+        t = M::mul(t, c);
+        s = i;
     }
     return std::min(r, P - r);
 }
-}
+} // namespace toy

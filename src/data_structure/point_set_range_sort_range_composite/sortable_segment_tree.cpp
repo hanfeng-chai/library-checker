@@ -45,20 +45,17 @@ int main() {
     }
     std::sort(all_keys.begin(), all_keys.end());
     all_keys.erase(std::unique(all_keys.begin(), all_keys.end()), all_keys.end());
-    for (int& key : keys)
-        key = std::lower_bound(all_keys.begin(), all_keys.end(), key) -
-              all_keys.begin();
+    for (int &key : keys)
+        key = std::lower_bound(all_keys.begin(), all_keys.end(), key) - all_keys.begin();
     toy::SortableSegmentTree tree(all_keys.size(), keys, functions, Function{},
-                                 toy::ComposeAffine<mod>{});
-    for (const Query& query : queries) {
+                                  toy::ComposeAffine<mod>{});
+    for (const Query &query : queries) {
         if (!query.type) {
             int key =
-                std::lower_bound(all_keys.begin(), all_keys.end(), query.y) -
-                all_keys.begin();
+                std::lower_bound(all_keys.begin(), all_keys.end(), query.y) - all_keys.begin();
             tree.set(query.x, key, Function{query.a, query.b});
         } else if (query.type == 1) {
-            output.write_padded_u32(
-                tree.fold(query.x, query.y)(query.a));
+            output.write_padded_u32(tree.fold(query.x, query.y)(query.a));
         } else if (query.type == 2) {
             tree.sort_ascending(query.x, query.y);
         } else {

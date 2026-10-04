@@ -1,8 +1,9 @@
-#include <toy/io.h>
 #include <toy/fps_2d.h>
+#include <toy/io.h>
 using namespace toy;
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     usize n = in.read<u32, 6>(), m = in.read<u32, 6>();
     Buffer<u32> f(n * m);
     for (usize i = 0; i < f.n; ++i) f[i] = in.read<u32, 9>();

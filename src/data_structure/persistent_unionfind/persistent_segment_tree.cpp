@@ -17,8 +17,7 @@ int main() {
             versions[query + 1] = dsu.unite(versions[base], first, second);
         else {
             versions[query + 1] = versions[base];
-            output.write_padded_u32(
-                dsu.same(versions[base], first, second));
+            output.write_padded_u32(dsu.same(versions[base], first, second));
         }
     }
 }

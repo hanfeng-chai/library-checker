@@ -8,7 +8,7 @@ namespace toy {
 class DisjointSetUnion {
     std::vector<int> parent_or_size;
 
-public:
+  public:
     explicit DisjointSetUnion(int n) : parent_or_size(n, -1) {}
 
     int leader(int x) {
@@ -46,21 +46,17 @@ class RollbackUnionFind {
     std::vector<int> parent_or_size;
     std::vector<Change> history;
 
-public:
-    explicit RollbackUnionFind(int n, std::size_t capacity = 0)
-        : parent_or_size(n, -1) {
+  public:
+    explicit RollbackUnionFind(int n, std::size_t capacity = 0) : parent_or_size(n, -1) {
         history.reserve(capacity);
     }
 
     int leader(int vertex) const {
-        while (parent_or_size[vertex] >= 0)
-            vertex = parent_or_size[vertex];
+        while (parent_or_size[vertex] >= 0) vertex = parent_or_size[vertex];
         return vertex;
     }
 
-    bool same(int first, int second) const {
-        return leader(first) == leader(second);
-    }
+    bool same(int first, int second) const { return leader(first) == leader(second); }
 
     bool merge(int first, int second) {
         first = leader(first);
@@ -69,8 +65,7 @@ public:
             history.push_back({-1, -1, 0});
             return false;
         }
-        if (parent_or_size[first] > parent_or_size[second])
-            std::swap(first, second);
+        if (parent_or_size[first] > parent_or_size[second]) std::swap(first, second);
         history.push_back({first, second, parent_or_size[second]});
         parent_or_size[first] += parent_or_size[second];
         parent_or_size[second] = first;
@@ -92,15 +87,15 @@ public:
     }
 };
 
-template<class T>
+template <class T>
 class FenwickTree {
     std::vector<T> data;
 
-public:
+  public:
     explicit FenwickTree(int n) : data(n + 1) {}
 
-    template<class Range>
-    explicit FenwickTree(const Range& values) : data(values.size() + 1) {
+    template <class Range>
+    explicit FenwickTree(const Range &values) : data(values.size() + 1) {
         for (int i = 0; i < (int)values.size(); ++i) data[i + 1] += values[i];
         for (int i = 1; i < (int)data.size(); ++i) {
             int parent = i + (i & -i);
@@ -109,8 +104,7 @@ public:
     }
 
     void add(int index, T delta) {
-        for (++index; index < (int)data.size(); index += index & -index)
-            data[index] += delta;
+        for (++index; index < (int)data.size(); index += index & -index) data[index] += delta;
     }
 
     T prefix_sum(int end) const {
@@ -119,9 +113,7 @@ public:
         return result;
     }
 
-    T sum(int left, int right) const {
-        return prefix_sum(right) - prefix_sum(left);
-    }
+    T sum(int left, int right) const { return prefix_sum(right) - prefix_sum(left); }
 
     int lower_bound(T target) const {
         if (target <= T{}) return 0;
@@ -141,9 +133,7 @@ class FenwickBitset {
     std::vector<uint64_t> bits;
     std::vector<int> block_counts;
 
-    static uint64_t low_bits(unsigned width) {
-        return (uint64_t{1} << width) - 1;
-    }
+    static uint64_t low_bits(unsigned width) { return (uint64_t{1} << width) - 1; }
 
     int prefix_blocks(int end) const {
         int result = 0;
@@ -151,14 +141,10 @@ class FenwickBitset {
         return result;
     }
 
-public:
-    explicit FenwickBitset(int size)
-        : bits((size + 63) / 64 + 1),
-          block_counts((size + 63) / 64) {}
+  public:
+    explicit FenwickBitset(int size) : bits((size + 63) / 64 + 1), block_counts((size + 63) / 64) {}
 
-    bool contains(int index) const {
-        return bits[index >> 6] >> (index & 63) & 1;
-    }
+    bool contains(int index) const { return bits[index >> 6] >> (index & 63) & 1; }
 
     void set(int index, bool value) {
         int block = index >> 6;
@@ -166,48 +152,43 @@ public:
         if (bool(bits[block] & mask) == value) return;
         bits[block] ^= mask;
         int delta = value ? 1 : -1;
-        for (++block; block <= (int)block_counts.size();
-             block += block & -block)
+        for (++block; block <= (int)block_counts.size(); block += block & -block)
             block_counts[block - 1] += delta;
     }
 
     int count(int left, int right) const {
         int left_block = left >> 6;
         int right_block = right >> 6;
-        int result =
-            std::popcount(bits[right_block] & low_bits(right & 63)) -
-            std::popcount(bits[left_block] & low_bits(left & 63));
-        return result + prefix_blocks(right_block) -
-               prefix_blocks(left_block);
+        int result = std::popcount(bits[right_block] & low_bits(right & 63)) -
+                     std::popcount(bits[left_block] & low_bits(left & 63));
+        return result + prefix_blocks(right_block) - prefix_blocks(left_block);
     }
 };
 
-template<class T, std::size_t Capacity>
+template <class T, std::size_t Capacity>
 class FixedCenteredDeque {
     std::array<T, 2 * Capacity + 1> data{};
     std::size_t left = Capacity;
     std::size_t right = Capacity;
 
-public:
+  public:
     bool empty() const { return left == right; }
     std::size_t size() const { return right - left; }
 
-    void push_front(const T& value) { data[--left] = value; }
-    void push_back(const T& value) { data[right++] = value; }
+    void push_front(const T &value) { data[--left] = value; }
+    void push_back(const T &value) { data[right++] = value; }
     void pop_front() { ++left; }
     void pop_back() { --right; }
 
-    T& operator[](std::size_t index) { return data[left + index]; }
-    const T& operator[](std::size_t index) const {
-        return data[left + index];
-    }
+    T &operator[](std::size_t index) { return data[left + index]; }
+    const T &operator[](std::size_t index) const { return data[left + index]; }
 };
 
 class PredecessorSet {
     std::vector<std::vector<uint64_t>> levels;
     int universe;
 
-    static int next_in_word(const std::vector<uint64_t>& words, int index) {
+    static int next_in_word(const std::vector<uint64_t> &words, int index) {
         int word = index >> 6;
         if (word >= (int)words.size()) return -1;
         uint64_t candidates = words[word] & (~0ULL << (index & 63));
@@ -215,7 +196,7 @@ class PredecessorSet {
         return -1;
     }
 
-    static int previous_in_word(const std::vector<uint64_t>& words, int index) {
+    static int previous_in_word(const std::vector<uint64_t> &words, int index) {
         if (index < 0) return -1;
         int word = std::min<int>(index >> 6, words.size() - 1);
         uint64_t mask = (index & 63) == 63 ? ~0ULL : (1ULL << ((index & 63) + 1)) - 1;
@@ -224,40 +205,37 @@ class PredecessorSet {
         return -1;
     }
 
-public:
+  public:
     explicit PredecessorSet(int n) : universe(n) {
-        for (int size = n; ; size = (size + 63) / 64) {
+        for (int size = n;; size = (size + 63) / 64) {
             levels.emplace_back((size + 63) / 64);
             if (size <= 64) break;
         }
     }
 
     void assign(std::string_view bits) {
-        for (auto& level : levels) std::fill(level.begin(), level.end(), 0);
+        for (auto &level : levels) std::fill(level.begin(), level.end(), 0);
         int index = 0;
         for (; index + 64 <= universe; index += 64) {
             __m256i ones = _mm256_set1_epi8('1');
             uint32_t low = _mm256_movemask_epi8(_mm256_cmpeq_epi8(
-                _mm256_loadu_si256((const __m256i*)(bits.data() + index)), ones));
+                _mm256_loadu_si256((const __m256i *)(bits.data() + index)), ones));
             uint32_t high = _mm256_movemask_epi8(_mm256_cmpeq_epi8(
-                _mm256_loadu_si256((const __m256i*)(bits.data() + index + 32)), ones));
+                _mm256_loadu_si256((const __m256i *)(bits.data() + index + 32)), ones));
             levels[0][index / 64] = low | (uint64_t)high << 32;
         }
         for (; index < universe; ++index)
             if (bits[index] == '1') levels[0][index / 64] |= 1ULL << (index % 64);
         for (int level = 1; level < (int)levels.size(); ++level)
             for (int child = 0; child < (int)levels[level - 1].size(); ++child)
-                if (levels[level - 1][child])
-                    levels[level][child / 64] |= 1ULL << (child % 64);
+                if (levels[level - 1][child]) levels[level][child / 64] |= 1ULL << (child % 64);
     }
 
-    bool contains(int x) const {
-        return levels[0][x >> 6] >> (x & 63) & 1;
-    }
+    bool contains(int x) const { return levels[0][x >> 6] >> (x & 63) & 1; }
 
     void insert(int x) {
-        for (auto& level : levels) {
-            uint64_t& word = level[x >> 6];
+        for (auto &level : levels) {
+            uint64_t &word = level[x >> 6];
             uint64_t bit = 1ULL << (x & 63);
             if (word & bit) break;
             word |= bit;
@@ -266,8 +244,8 @@ public:
     }
 
     void erase(int x) {
-        for (auto& level : levels) {
-            uint64_t& word = level[x >> 6];
+        for (auto &level : levels) {
+            uint64_t &word = level[x >> 6];
             word &= ~(1ULL << (x & 63));
             if (word) break;
             x >>= 6;
@@ -311,109 +289,106 @@ public:
 
 template <std::size_t MaxUniverse>
 class BoundedPredecessorSet {
-        static_assert(MaxUniverse <= (1ULL << 24));
-        static constexpr std::size_t leaf_count = (MaxUniverse + 63) / 64;
-        static constexpr std::size_t level1_count = (leaf_count + 63) / 64;
-        static constexpr std::size_t level2_count = (level1_count + 63) / 64;
+    static_assert(MaxUniverse <= (1ULL << 24));
+    static constexpr std::size_t leaf_count = (MaxUniverse + 63) / 64;
+    static constexpr std::size_t level1_count = (leaf_count + 63) / 64;
+    static constexpr std::size_t level2_count = (level1_count + 63) / 64;
 
-        std::array<uint64_t, leaf_count> leaf{};
-        std::array<uint64_t, level1_count> level1{};
-        std::array<uint64_t, level2_count> level2{};
-        uint64_t root = 0;
-        std::size_t assigned_leaves = 0;
+    std::array<uint64_t, leaf_count> leaf{};
+    std::array<uint64_t, level1_count> level1{};
+    std::array<uint64_t, level2_count> level2{};
+    uint64_t root = 0;
+    std::size_t assigned_leaves = 0;
 
-    public:
-        void assign(std::string_view bits) {
-            level1.fill(0);
-            level2.fill(0);
-            root = 0;
-            std::size_t index = 0;
-            const __m256i ones = _mm256_set1_epi8('1');
-            for (; index + 64 <= bits.size(); index += 64) {
-                uint32_t low = _mm256_movemask_epi8(_mm256_cmpeq_epi8(
-                    _mm256_loadu_si256((const __m256i*)(bits.data() + index)), ones));
-                uint32_t high = _mm256_movemask_epi8(_mm256_cmpeq_epi8(
-                    _mm256_loadu_si256((const __m256i*)(bits.data() + index + 32)), ones));
-                leaf[index / 64] = low | (uint64_t)high << 32;
-            }
-            if (index < bits.size()) {
-                leaf[index / 64] = 0;
-                for (; index < bits.size(); ++index)
-                    if (bits[index] == '1') leaf[index / 64] |= 1ULL << (index % 64);
-            }
-            std::size_t used_leaves = (bits.size() + 63) / 64;
-            if (used_leaves < assigned_leaves)
-                std::fill(leaf.begin() + used_leaves, leaf.begin() + assigned_leaves, 0);
-            assigned_leaves = used_leaves;
-            for (std::size_t i = 0; i < used_leaves; ++i)
-                level1[i / 64] |= uint64_t(leaf[i] != 0) << (i % 64);
-            for (std::size_t i = 0; i < (leaf_count + 63) / 64; ++i)
-                level2[i / 64] |= uint64_t(level1[i] != 0) << (i % 64);
-            for (std::size_t i = 0; i < (level1_count + 63) / 64; ++i)
-                root |= uint64_t(level2[i] != 0) << i;
+  public:
+    void assign(std::string_view bits) {
+        level1.fill(0);
+        level2.fill(0);
+        root = 0;
+        std::size_t index = 0;
+        const __m256i ones = _mm256_set1_epi8('1');
+        for (; index + 64 <= bits.size(); index += 64) {
+            uint32_t low = _mm256_movemask_epi8(_mm256_cmpeq_epi8(
+                _mm256_loadu_si256((const __m256i *)(bits.data() + index)), ones));
+            uint32_t high = _mm256_movemask_epi8(_mm256_cmpeq_epi8(
+                _mm256_loadu_si256((const __m256i *)(bits.data() + index + 32)), ones));
+            leaf[index / 64] = low | (uint64_t)high << 32;
         }
-
-        void insert(unsigned x) {
-            leaf[x >> 6] |= 1ULL << (x & 63);
-            level1[x >> 12] |= 1ULL << ((x >> 6) & 63);
-            level2[x >> 18] |= 1ULL << ((x >> 12) & 63);
-            root |= 1ULL << (x >> 18);
+        if (index < bits.size()) {
+            leaf[index / 64] = 0;
+            for (; index < bits.size(); ++index)
+                if (bits[index] == '1') leaf[index / 64] |= 1ULL << (index % 64);
         }
+        std::size_t used_leaves = (bits.size() + 63) / 64;
+        if (used_leaves < assigned_leaves)
+            std::fill(leaf.begin() + used_leaves, leaf.begin() + assigned_leaves, 0);
+        assigned_leaves = used_leaves;
+        for (std::size_t i = 0; i < used_leaves; ++i)
+            level1[i / 64] |= uint64_t(leaf[i] != 0) << (i % 64);
+        for (std::size_t i = 0; i < (leaf_count + 63) / 64; ++i)
+            level2[i / 64] |= uint64_t(level1[i] != 0) << (i % 64);
+        for (std::size_t i = 0; i < (level1_count + 63) / 64; ++i)
+            root |= uint64_t(level2[i] != 0) << i;
+    }
 
-        void erase(unsigned x) {
-            if (!(leaf[x >> 6] &= ~(1ULL << (x & 63))))
-                if (!(level1[x >> 12] &= ~(1ULL << ((x >> 6) & 63))))
-                    if (!(level2[x >> 18] &= ~(1ULL << ((x >> 12) & 63))))
-                        root &= ~(1ULL << (x >> 18));
+    void insert(unsigned x) {
+        leaf[x >> 6] |= 1ULL << (x & 63);
+        level1[x >> 12] |= 1ULL << ((x >> 6) & 63);
+        level2[x >> 18] |= 1ULL << ((x >> 12) & 63);
+        root |= 1ULL << (x >> 18);
+    }
+
+    void erase(unsigned x) {
+        if (!(leaf[x >> 6] &= ~(1ULL << (x & 63))))
+            if (!(level1[x >> 12] &= ~(1ULL << ((x >> 6) & 63))))
+                if (!(level2[x >> 18] &= ~(1ULL << ((x >> 12) & 63)))) root &= ~(1ULL << (x >> 18));
+    }
+
+    bool contains(unsigned x) const { return leaf[x >> 6] >> (x & 63) & 1; }
+
+    int successor(unsigned x) const {
+        uint64_t word = leaf[x >> 6] & (~0ULL << (x & 63));
+        if (word) return int((x >> 6) << 6 | std::countr_zero(word));
+        word = level1[x >> 12] & (-2ULL << ((x >> 6) & 63));
+        if (word) {
+            unsigned answer = (x >> 12) << 6 | std::countr_zero(word);
+            return int(answer << 6 | std::countr_zero(leaf[answer]));
         }
-
-        bool contains(unsigned x) const {
-            return leaf[x >> 6] >> (x & 63) & 1;
-        }
-
-        int successor(unsigned x) const {
-            uint64_t word = leaf[x >> 6] & (~0ULL << (x & 63));
-            if (word) return int((x >> 6) << 6 | std::countr_zero(word));
-            word = level1[x >> 12] & (-2ULL << ((x >> 6) & 63));
-            if (word) {
-                unsigned answer = (x >> 12) << 6 | std::countr_zero(word);
-                return int(answer << 6 | std::countr_zero(leaf[answer]));
-            }
-            word = level2[x >> 18] & (-2ULL << ((x >> 12) & 63));
-            if (word) {
-                unsigned answer = (x >> 18) << 6 | std::countr_zero(word);
-                answer = answer << 6 | std::countr_zero(level1[answer]);
-                return int(answer << 6 | std::countr_zero(leaf[answer]));
-            }
-            word = root & (-2ULL << (x >> 18));
-            if (!word) return -1;
-            unsigned answer = std::countr_zero(word);
-            answer = answer << 6 | std::countr_zero(level2[answer]);
+        word = level2[x >> 18] & (-2ULL << ((x >> 12) & 63));
+        if (word) {
+            unsigned answer = (x >> 18) << 6 | std::countr_zero(word);
             answer = answer << 6 | std::countr_zero(level1[answer]);
             return int(answer << 6 | std::countr_zero(leaf[answer]));
         }
+        word = root & (-2ULL << (x >> 18));
+        if (!word) return -1;
+        unsigned answer = std::countr_zero(word);
+        answer = answer << 6 | std::countr_zero(level2[answer]);
+        answer = answer << 6 | std::countr_zero(level1[answer]);
+        return int(answer << 6 | std::countr_zero(leaf[answer]));
+    }
 
-        int predecessor(unsigned x) const {
-            uint64_t word = leaf[x >> 6] & ~(-2ULL << (x & 63));
-            if (word) return int((x >> 6) << 6 | (63 - std::countl_zero(word)));
-            word = level1[x >> 12] & ~(~0ULL << ((x >> 6) & 63));
-            if (word) {
-                unsigned answer = (x >> 12) << 6 | (63 - std::countl_zero(word));
-                return int(answer << 6 | (63 - std::countl_zero(leaf[answer])));
-            }
-            word = level2[x >> 18] & ~(~0ULL << ((x >> 12) & 63));
-            if (word) {
-                unsigned answer = (x >> 18) << 6 | (63 - std::countl_zero(word));
-                answer = answer << 6 | (63 - std::countl_zero(level1[answer]));
-                return int(answer << 6 | (63 - std::countl_zero(leaf[answer])));
-            }
-            word = root & ~(~0ULL << (x >> 18));
-            if (!word) return -1;
-            unsigned answer = 63 - std::countl_zero(word);
-            answer = answer << 6 | (63 - std::countl_zero(level2[answer]));
+    int predecessor(unsigned x) const {
+        uint64_t word = leaf[x >> 6] & ~(-2ULL << (x & 63));
+        if (word) return int((x >> 6) << 6 | (63 - std::countl_zero(word)));
+        word = level1[x >> 12] & ~(~0ULL << ((x >> 6) & 63));
+        if (word) {
+            unsigned answer = (x >> 12) << 6 | (63 - std::countl_zero(word));
+            return int(answer << 6 | (63 - std::countl_zero(leaf[answer])));
+        }
+        word = level2[x >> 18] & ~(~0ULL << ((x >> 12) & 63));
+        if (word) {
+            unsigned answer = (x >> 18) << 6 | (63 - std::countl_zero(word));
             answer = answer << 6 | (63 - std::countl_zero(level1[answer]));
             return int(answer << 6 | (63 - std::countl_zero(leaf[answer])));
         }
+        word = root & ~(~0ULL << (x >> 18));
+        if (!word) return -1;
+        unsigned answer = 63 - std::countl_zero(word);
+        answer = answer << 6 | (63 - std::countl_zero(level2[answer]));
+        answer = answer << 6 | (63 - std::countl_zero(level1[answer]));
+        return int(answer << 6 | (63 - std::countl_zero(leaf[answer])));
+    }
 };
 
 } // namespace toy

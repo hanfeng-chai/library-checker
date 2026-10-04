@@ -7,7 +7,7 @@ namespace toy {
 
 namespace factor_detail {
 
-inline u64 splitmix64(u64& state) {
+inline u64 splitmix64(u64 &state) {
     u64 z = (state += 0x9e3779b97f4a7c15ULL);
     z = (z ^ (z >> 30)) * 0xbf58476d1ce4e5b9ULL;
     z = (z ^ (z >> 27)) * 0x94d049bb133111ebULL;
@@ -51,7 +51,7 @@ inline u64 pollard_rho(u64 n) {
     }
 }
 
-inline void factor_rec(u64 n, std::vector<u64>& result) {
+inline void factor_rec(u64 n, std::vector<u64> &result) {
     if (n == 1) return;
     if (is_prime(n)) {
         result.push_back(n);

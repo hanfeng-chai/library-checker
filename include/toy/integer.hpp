@@ -10,8 +10,7 @@ using u128 = __uint128_t;
 [[nodiscard]] inline bool power_leq(u64 base, unsigned exponent, u64 limit) {
     u64 result = 1;
     while (exponent) {
-        if ((exponent & 1) && __builtin_mul_overflow(result, base, &result))
-            return false;
+        if ((exponent & 1) && __builtin_mul_overflow(result, base, &result)) return false;
         exponent >>= 1;
         if (!exponent) break;
         if (__builtin_mul_overflow(base, base, &base)) return false;
@@ -47,13 +46,15 @@ using u128 = __uint128_t;
     u64 low = 0, high = n;
     while (low < high) {
         u64 middle = low + (high - low) / 2 + 1;
-        if (power_leq(middle, k, n)) low = middle;
-        else high = middle - 1;
+        if (power_leq(middle, k, n))
+            low = middle;
+        else
+            high = middle - 1;
     }
     return low;
 }
 
-template<class Int>
+template <class Int>
 [[nodiscard]] std::vector<Int> enumerate_quotients(Int n) {
     std::vector<Int> result;
     Int boundary = 1;
@@ -66,8 +67,8 @@ template<class Int>
     return result;
 }
 
-template<class Int, class Callback>
-[[nodiscard]] u64 enumerate_quotients(Int n, Callback&& callback) {
+template <class Int, class Callback>
+[[nodiscard]] u64 enumerate_quotients(Int n, Callback &&callback) {
     Int root = std::sqrt((long double)n);
     while ((root + 1) <= n / (root + 1)) ++root;
     while (root > n / root) --root;
@@ -107,23 +108,19 @@ template<class Int, class Callback>
 
 namespace detail {
 
-inline u64 min_mod_recursive(u64 n, u64 m, u64 a, u64 b,
-                             bool odd = true, u64 p = 1, u64 q = 1) {
+inline u64 min_mod_recursive(u64 n, u64 m, u64 a, u64 b, bool odd = true, u64 p = 1, u64 q = 1) {
     if (!a) return b;
     if ((odd && b >= a) || (!odd && b < m - a)) {
         u64 offset = odd ? 1 : 0;
         u64 times = (m - b + a * offset - 1) / a;
         u64 consumed = (times - offset) * p + q * offset;
-        if (n <= consumed)
-            return odd ? b : a * ((n - 1) / p) + b;
+        if (n <= consumed) return odd ? b : a * ((n - 1) / p) + b;
         n -= consumed;
         b += a * times - m * offset;
     }
     b = (odd ? a : m) - 1 - b;
     u64 quotient = m / a;
-    u64 result = min_mod_recursive(
-        n, a, m % a, b, !odd,
-        (quotient - 1) * p + q, quotient * p + q);
+    u64 result = min_mod_recursive(n, a, m % a, b, !odd, (quotient - 1) * p + q, quotient * p + q);
     return odd ? a - 1 - result : m - 1 - result;
 }
 
@@ -141,8 +138,10 @@ inline u64 min_mod_recursive(u64 n, u64 m, u64 a, u64 b,
     while (low + 1 < high) {
         u64 middle = (low + high) / 2;
         u64 at_least = floor_sum(n, m, a, b + m - middle) - base;
-        if (at_least < n) high = middle;
-        else low = middle;
+        if (at_least < n)
+            high = middle;
+        else
+            low = middle;
     }
     return high - 1;
 }

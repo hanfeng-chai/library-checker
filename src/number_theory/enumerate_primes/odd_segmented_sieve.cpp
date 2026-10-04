@@ -8,10 +8,9 @@ int main() {
     toy::u32 a = input.read_uniform<9, toy::u32>();
     toy::u32 b = input.read_uniform<9, toy::u32>();
     std::vector<toy::u32> selected;
-    toy::u64 count = toy::OddSegmentedSieve::enumerate(
-        n, [&](toy::u64 index, toy::u64 prime) {
-            if (index % a == b) selected.push_back(prime);
-        });
+    toy::u64 count = toy::OddSegmentedSieve::enumerate(n, [&](toy::u64 index, toy::u64 prime) {
+        if (index % a == b) selected.push_back(prime);
+    });
     output.write_token(count);
     output.write_token(selected.size());
     output.put('\n');

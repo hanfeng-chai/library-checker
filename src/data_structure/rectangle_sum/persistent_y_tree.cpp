@@ -7,7 +7,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int query_count = input.read_uniform<6, toy::u32>();
     std::vector<toy::WeightedPoint2D<toy::u32>> points(n);
-    for (auto& point : points) {
+    for (auto &point : points) {
         point.x = input.read_uniform<10, toy::u32>();
         point.y = input.read_uniform<10, toy::u32>();
         point.weight = input.read_uniform<10, toy::u32>();

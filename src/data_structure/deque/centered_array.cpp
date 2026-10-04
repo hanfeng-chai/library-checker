@@ -10,8 +10,10 @@ int main() {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         if (type <= 1) {
             toy::u32 value = input.read_uniform<10, toy::u32>();
-            if (type == 0) deque.push_front(value);
-            else deque.push_back(value);
+            if (type == 0)
+                deque.push_front(value);
+            else
+                deque.push_back(value);
         } else if (type == 2) {
             deque.pop_front();
         } else if (type == 3) {

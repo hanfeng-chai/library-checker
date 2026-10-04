@@ -1,10 +1,15 @@
 #include <toy/io.h>
 using namespace toy;
 
-template<class T, int Digits = 1>
-u64 sum(Reader& in, int n, u128 bound) {
-    constexpr u128 limit = [] { u128 x = 1; for (int i = 0; i < Digits; ++i) x *= 10; return x; }();
-    if constexpr (Digits < 20) if (bound >= limit) return sum<T, Digits + 1>(in, n, bound);
+template <class T, int Digits = 1>
+u64 sum(Reader &in, int n, u128 bound) {
+    constexpr u128 limit = [] {
+        u128 x = 1;
+        for (int i = 0; i < Digits; ++i) x *= 10;
+        return x;
+    }();
+    if constexpr (Digits < 20)
+        if (bound >= limit) return sum<T, Digits + 1>(in, n, bound);
     u64 s = 0;
     while (n--) s += in.read<T, Digits>();
     return s;

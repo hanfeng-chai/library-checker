@@ -7,7 +7,7 @@ int main() {
     int n = input.read_uniform<6, toy::u32>();
     int queries = input.read_uniform<6, toy::u32>();
     std::vector<toy::u64> values(n);
-    for (auto& value : values) value = input.read_var<10, toy::u64>();
+    for (auto &value : values) value = input.read_var<10, toy::u64>();
     toy::PrefixSum<toy::u64> prefix(values);
     while (queries--) {
         int left = input.read_uniform<6, toy::u32>();

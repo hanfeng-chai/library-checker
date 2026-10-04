@@ -11,7 +11,9 @@ int main() {
         int type = input.read_fixed<1, toy::u32>();
         int u = input.read_uniform<6, toy::u32>();
         int v = input.read_uniform<6, toy::u32>();
-        if (type == 0) dsu.merge(u, v);
-        else output.writeln_fixed<1>((toy::u64)dsu.same(u, v));
+        if (type == 0)
+            dsu.merge(u, v);
+        else
+            output.writeln_fixed<1>((toy::u64)dsu.same(u, v));
     }
 }

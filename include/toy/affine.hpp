@@ -4,27 +4,23 @@
 
 namespace toy {
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 struct Affine {
     uint32_t a = 1;
     uint32_t b = 0;
 
-    uint32_t operator()(uint32_t x) const {
-        return ((uint64_t)a * x + b) % Mod;
-    }
+    uint32_t operator()(uint32_t x) const { return ((uint64_t)a * x + b) % Mod; }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 struct ComposeAffine {
     Affine<Mod> operator()(Affine<Mod> first, Affine<Mod> second) const {
-        return {
-            (uint32_t)((uint64_t)second.a * first.a % Mod),
-            (uint32_t)(((uint64_t)second.a * first.b + second.b) % Mod)
-        };
+        return {(uint32_t)((uint64_t)second.a * first.a % Mod),
+                (uint32_t)(((uint64_t)second.a * first.b + second.b) % Mod)};
     }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class AffineSegmentTree {
     using Function = Affine<Mod>;
     int count;
@@ -35,15 +31,13 @@ class AffineSegmentTree {
         return ComposeAffine<Mod>{}(first, second);
     }
 
-public:
+  public:
     explicit AffineSegmentTree(int length)
-        : count(length), size(std::bit_ceil((unsigned)std::max(length, 1))),
-          tree(2 * size) {}
+        : count(length), size(std::bit_ceil((unsigned)std::max(length, 1))), tree(2 * size) {}
 
-    explicit AffineSegmentTree(const std::vector<Function>& values)
+    explicit AffineSegmentTree(const std::vector<Function> &values)
         : count(values.size()),
-          size(std::bit_ceil((unsigned)std::max<std::size_t>(values.size(), 1))),
-          tree(2 * size) {
+          size(std::bit_ceil((unsigned)std::max<std::size_t>(values.size(), 1))), tree(2 * size) {
         std::copy(values.begin(), values.end(), tree.begin() + size);
         for (int node = size - 1; node; --node)
             tree[node] = compose(tree[node * 2], tree[node * 2 + 1]);
@@ -52,8 +46,7 @@ public:
     void set(int index, Function function) {
         int node = size + index;
         tree[node] = function;
-        while (node >>= 1)
-            tree[node] = compose(tree[node * 2], tree[node * 2 + 1]);
+        while (node >>= 1) tree[node] = compose(tree[node * 2], tree[node * 2 + 1]);
     }
 
     Function fold(int left, int right) const {
@@ -88,7 +81,7 @@ public:
     }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class AffineEvaluationSegmentTree {
     using Function = Affine<Mod>;
     int size;
@@ -98,11 +91,10 @@ class AffineEvaluationSegmentTree {
         return ComposeAffine<Mod>{}(right, left);
     }
 
-public:
-    explicit AffineEvaluationSegmentTree(const std::vector<Function>& values)
+  public:
+    explicit AffineEvaluationSegmentTree(const std::vector<Function> &values)
         : size(values.size()), tree(2 * size) {
-        for (int i = 0; i < size; ++i)
-            tree[2 * size - 1 - i] = values[i];
+        for (int i = 0; i < size; ++i) tree[2 * size - 1 - i] = values[i];
         for (int node = size - 1; node; --node)
             tree[node] = reverse_compose(tree[node * 2], tree[node * 2 + 1]);
     }
@@ -110,8 +102,7 @@ public:
     void set(int index, Function function) {
         int node = 2 * size - 1 - index;
         tree[node] = function;
-        while (node >>= 1)
-            tree[node] = reverse_compose(tree[node * 2], tree[node * 2 + 1]);
+        while (node >>= 1) tree[node] = reverse_compose(tree[node * 2], tree[node * 2 + 1]);
     }
 
     uint32_t apply(int left, int right, uint32_t value) const {
@@ -119,8 +110,7 @@ public:
         int r = 2 * size - left;
         unsigned width = std::bit_width((unsigned)(l ^ r)) - 1;
         int boundary = r >> width;
-        for (r = (r >> std::countr_zero((unsigned)r)) ^ 1;
-             r > boundary;
+        for (r = (r >> std::countr_zero((unsigned)r)) ^ 1; r > boundary;
              r = (r >> std::countr_zero((unsigned)r)) ^ 1) {
             value = tree[r](value);
         }
@@ -134,7 +124,7 @@ public:
     }
 };
 
-template<class T, class Operation>
+template <class T, class Operation>
 class FoldableQueue {
     struct Node {
         T value;
@@ -155,7 +145,7 @@ class FoldableQueue {
         }
     }
 
-public:
+  public:
     explicit FoldableQueue(T identity_value, Operation combine = {})
         : identity(identity_value), operation(combine) {}
 
@@ -176,7 +166,7 @@ public:
     }
 };
 
-template<class T, class Operation, std::size_t Capacity>
+template <class T, class Operation, std::size_t Capacity>
 class FixedFoldableQueue {
     struct Node {
         T value;
@@ -191,39 +181,33 @@ class FixedFoldableQueue {
     std::size_t front_size = 0;
     std::size_t back_size = 0;
 
-    Node& front(std::size_t index) {
-        return *reinterpret_cast<Node*>(&front_storage[index]);
+    Node &front(std::size_t index) { return *reinterpret_cast<Node *>(&front_storage[index]); }
+    const Node &front(std::size_t index) const {
+        return *reinterpret_cast<const Node *>(&front_storage[index]);
     }
-    const Node& front(std::size_t index) const {
-        return *reinterpret_cast<const Node*>(&front_storage[index]);
+    Node &back(std::size_t index) { return *reinterpret_cast<Node *>(&back_storage[index]); }
+    const Node &back(std::size_t index) const {
+        return *reinterpret_cast<const Node *>(&back_storage[index]);
     }
-    Node& back(std::size_t index) {
-        return *reinterpret_cast<Node*>(&back_storage[index]);
-    }
-    const Node& back(std::size_t index) const {
-        return *reinterpret_cast<const Node*>(&back_storage[index]);
-    }
-    static void store(Node& destination, T value, T aggregate) {
+    static void store(Node &destination, T value, T aggregate) {
         std::construct_at(&destination, Node{value, aggregate});
     }
 
     void transfer() {
         while (back_size) {
             T value = back(--back_size).value;
-            T aggregate = front_size
-                ? operation(value, front(front_size - 1).aggregate) : value;
+            T aggregate = front_size ? operation(value, front(front_size - 1).aggregate) : value;
             store(front(front_size++), value, aggregate);
         }
     }
 
-public:
+  public:
     explicit FixedFoldableQueue(T identity_value, Operation combine = {})
         : identity(identity_value), operation(combine) {}
 
     void push(T value) {
         assert(front_size + back_size < Capacity);
-        T aggregate = back_size
-            ? operation(back(back_size - 1).aggregate, value) : value;
+        T aggregate = back_size ? operation(back(back_size - 1).aggregate, value) : value;
         store(back(back_size++), value, aggregate);
     }
 
@@ -233,15 +217,13 @@ public:
     }
 
     T fold() const {
-        if (!front_size)
-            return back_size ? back(back_size - 1).aggregate : identity;
+        if (!front_size) return back_size ? back(back_size - 1).aggregate : identity;
         if (!back_size) return front(front_size - 1).aggregate;
-        return operation(front(front_size - 1).aggregate,
-                         back(back_size - 1).aggregate);
+        return operation(front(front_size - 1).aggregate, back(back_size - 1).aggregate);
     }
 };
 
-template<class T, class Operation>
+template <class T, class Operation>
 class FoldableDeque {
     struct Node {
         T value;
@@ -253,12 +235,12 @@ class FoldableDeque {
     std::vector<Node> left;
     std::vector<Node> right;
 
-    void append_left(std::vector<Node>& stack, T value) {
+    void append_left(std::vector<Node> &stack, T value) {
         T aggregate = stack.empty() ? value : operation(value, stack.back().aggregate);
         stack.push_back({value, aggregate});
     }
 
-    void append_right(std::vector<Node>& stack, T value) {
+    void append_right(std::vector<Node> &stack, T value) {
         T aggregate = stack.empty() ? value : operation(stack.back().aggregate, value);
         stack.push_back({value, aggregate});
     }
@@ -270,8 +252,7 @@ class FoldableDeque {
         new_left.reserve(count);
         new_right.reserve(right.size() - count);
         for (std::size_t i = count; i-- > 0;) append_left(new_left, right[i].value);
-        for (std::size_t i = count; i < right.size(); ++i)
-            append_right(new_right, right[i].value);
+        for (std::size_t i = count; i < right.size(); ++i) append_right(new_right, right[i].value);
         left.swap(new_left);
         right.swap(new_right);
     }
@@ -282,15 +263,13 @@ class FoldableDeque {
         std::vector<Node> new_right;
         new_left.reserve(left.size() - count);
         new_right.reserve(count);
-        for (std::size_t i = count; i < left.size(); ++i)
-            append_left(new_left, left[i].value);
-        for (std::size_t i = count; i-- > 0;)
-            append_right(new_right, left[i].value);
+        for (std::size_t i = count; i < left.size(); ++i) append_left(new_left, left[i].value);
+        for (std::size_t i = count; i-- > 0;) append_right(new_right, left[i].value);
         left.swap(new_left);
         right.swap(new_right);
     }
 
-public:
+  public:
     explicit FoldableDeque(T identity_value, Operation combine = {})
         : identity(identity_value), operation(combine) {}
 
@@ -314,7 +293,7 @@ public:
     }
 };
 
-template<class T, class Operation, std::size_t MaxOperations>
+template <class T, class Operation, std::size_t MaxOperations>
 class FixedFoldableDeque {
     struct Node {
         T value;
@@ -330,13 +309,11 @@ class FixedFoldableDeque {
     std::size_t middle = MaxOperations;
     std::size_t end = MaxOperations;
 
-    Node& data(std::size_t index) {
-        return *reinterpret_cast<Node*>(&storage[index]);
+    Node &data(std::size_t index) { return *reinterpret_cast<Node *>(&storage[index]); }
+    const Node &data(std::size_t index) const {
+        return *reinterpret_cast<const Node *>(&storage[index]);
     }
-    const Node& data(std::size_t index) const {
-        return *reinterpret_cast<const Node*>(&storage[index]);
-    }
-    static void store(Node& destination, T value, T aggregate) {
+    static void store(Node &destination, T value, T aggregate) {
         std::construct_at(&destination, Node{value, aggregate});
     }
 
@@ -364,22 +341,20 @@ class FixedFoldableDeque {
             data(i).aggregate = operation(data(i - 1).aggregate, data(i).value);
     }
 
-public:
+  public:
     explicit FixedFoldableDeque(T identity_value, Operation combine = {})
         : identity(identity_value), operation(combine) {}
 
     void push_front(T value) {
         assert(begin);
-        T aggregate = begin < middle
-            ? operation(value, data(begin).aggregate) : value;
+        T aggregate = begin < middle ? operation(value, data(begin).aggregate) : value;
         --begin;
         store(data(begin), value, aggregate);
     }
 
     void push_back(T value) {
         assert(end < storage.size());
-        T aggregate = middle < end
-            ? operation(data(end - 1).aggregate, value) : value;
+        T aggregate = middle < end ? operation(data(end - 1).aggregate, value) : value;
         store(data(end++), value, aggregate);
     }
 
@@ -394,14 +369,13 @@ public:
     }
 
     T fold() const {
-        if (begin == middle)
-            return middle == end ? identity : data(end - 1).aggregate;
+        if (begin == middle) return middle == end ? identity : data(end - 1).aggregate;
         if (middle == end) return data(begin).aggregate;
         return operation(data(begin).aggregate, data(end - 1).aggregate);
     }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class AffineDualSegmentTree {
     using Function = Affine<Mod>;
     int size;
@@ -420,12 +394,11 @@ class AffineDualSegmentTree {
         lazy[node] = {};
     }
 
-public:
+  public:
     explicit AffineDualSegmentTree(std::vector<uint32_t> initial_values)
-        : size(std::bit_ceil((unsigned)std::max<std::size_t>(
-              initial_values.size(), 1))),
-          height(std::countr_zero((unsigned)size)),
-          values(std::move(initial_values)), lazy(2 * size) {}
+        : size(std::bit_ceil((unsigned)std::max<std::size_t>(initial_values.size(), 1))),
+          height(std::countr_zero((unsigned)size)), values(std::move(initial_values)),
+          lazy(2 * size) {}
 
     void apply(int left, int right, Function function) {
         int l = left + size;
@@ -449,7 +422,7 @@ public:
     }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class AffineLazySegmentTree {
     using Function = Affine<Mod>;
     int size;
@@ -457,8 +430,7 @@ class AffineLazySegmentTree {
     std::vector<Function> lazy;
 
     void apply_node(int node, int length, Function function) {
-        sum[node] = ((uint64_t)function.a * sum[node] +
-                     (uint64_t)function.b * length) % Mod;
+        sum[node] = ((uint64_t)function.a * sum[node] + (uint64_t)function.b * length) % Mod;
         lazy[node] = ComposeAffine<Mod>{}(lazy[node], function);
     }
 
@@ -469,8 +441,8 @@ class AffineLazySegmentTree {
         lazy[node] = {};
     }
 
-    void range_apply(int node, int left, int right, int query_left,
-                     int query_right, Function function) {
+    void range_apply(int node, int left, int right, int query_left, int query_right,
+                     Function function) {
         if (query_right <= left || right <= query_left) return;
         if (query_left <= left && right <= query_right) {
             apply_node(node, right - left, function);
@@ -494,10 +466,9 @@ class AffineLazySegmentTree {
         return result >= Mod ? result - Mod : result;
     }
 
-public:
-    explicit AffineLazySegmentTree(const std::vector<uint32_t>& values)
-        : size(std::bit_ceil((unsigned)values.size())), sum(2 * size),
-          lazy(2 * size) {
+  public:
+    explicit AffineLazySegmentTree(const std::vector<uint32_t> &values)
+        : size(std::bit_ceil((unsigned)values.size())), sum(2 * size), lazy(2 * size) {
         std::copy(values.begin(), values.end(), sum.begin() + size);
         for (int node = size - 1; node; --node) {
             sum[node] = sum[node * 2] + sum[node * 2 + 1];
@@ -509,14 +480,12 @@ public:
         range_apply(1, 0, size, left, right, function);
     }
 
-    uint32_t fold(int left, int right) {
-        return fold(1, 0, size, left, right);
-    }
+    uint32_t fold(int left, int right) { return fold(1, 0, size, left, right); }
 
     uint32_t get(int index) { return fold(index, index + 1); }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class RangeSetCompositeTree {
     using Function = Affine<Mod>;
     int size;
@@ -536,28 +505,25 @@ class RangeSetCompositeTree {
         lazy_base[node] = -1;
     }
     void pull(int node) {
-        aggregate[node] = ComposeAffine<Mod>{}(
-            aggregate[node * 2], aggregate[node * 2 + 1]);
+        aggregate[node] = ComposeAffine<Mod>{}(aggregate[node * 2], aggregate[node * 2 + 1]);
     }
-public:
-    explicit RangeSetCompositeTree(const std::vector<Function>& values,
+
+  public:
+    explicit RangeSetCompositeTree(const std::vector<Function> &values,
                                    int expected_assignments = 0)
         : size(std::bit_ceil((unsigned)std::max<std::size_t>(values.size(), 1))),
-          depth(std::countr_zero((unsigned)size)), aggregate(2 * size),
-          lazy_base(2 * size, -1) {
+          depth(std::countr_zero((unsigned)size)), aggregate(2 * size), lazy_base(2 * size, -1) {
         powers.reserve((std::size_t)expected_assignments * (depth + 1));
         std::copy(values.begin(), values.end(), aggregate.begin() + size);
         for (int node = size - 1; node; --node)
-            aggregate[node] = ComposeAffine<Mod>{}(
-                aggregate[node * 2], aggregate[node * 2 + 1]);
+            aggregate[node] = ComposeAffine<Mod>{}(aggregate[node * 2], aggregate[node * 2 + 1]);
     }
     void set(int left, int right, Function function) {
         int levels = std::bit_width((unsigned)(right - left));
         int base = powers.size();
         powers.push_back(function);
         for (int level = 1; level < levels; ++level)
-            powers.push_back(ComposeAffine<Mod>{}(
-                powers.back(), powers.back()));
+            powers.push_back(ComposeAffine<Mod>{}(powers.back(), powers.back()));
 
         int l = left + size;
         int r = right + size;
@@ -574,8 +540,7 @@ public:
             if (r & 1) apply(--r, level, base);
         }
         for (int level = 1; level <= depth; ++level) {
-            if ((original_left >> level) << level != original_left)
-                pull(original_left >> level);
+            if ((original_left >> level) << level != original_left) pull(original_left >> level);
             if ((original_right >> level) << level != original_right)
                 pull((original_right - 1) >> level);
         }
@@ -589,10 +554,8 @@ public:
         }
         Function before, after;
         while (l < r) {
-            if (l & 1)
-                before = ComposeAffine<Mod>{}(before, aggregate[l++]);
-            if (r & 1)
-                after = ComposeAffine<Mod>{}(aggregate[--r], after);
+            if (l & 1) before = ComposeAffine<Mod>{}(before, aggregate[l++]);
+            if (r & 1) after = ComposeAffine<Mod>{}(aggregate[--r], after);
             l >>= 1;
             r >>= 1;
         }
@@ -600,7 +563,7 @@ public:
     }
 };
 
-template<uint32_t Mod, std::size_t Capacity>
+template <uint32_t Mod, std::size_t Capacity>
 class FixedAffineRangeSumTree {
     using Function = Affine<Mod>;
     struct Node {
@@ -620,8 +583,8 @@ class FixedAffineRangeSumTree {
     void apply_node(int node, Function function) {
         nodes[node].lazy = ComposeAffine<Mod>{}(nodes[node].lazy, function);
         nodes[node].sum =
-            ((uint64_t)function.a * nodes[node].sum +
-             (uint64_t)function.b * nodes[node].length) % Mod;
+            ((uint64_t)function.a * nodes[node].sum + (uint64_t)function.b * nodes[node].length) %
+            Mod;
     }
 
     void push(int node) {
@@ -633,25 +596,21 @@ class FixedAffineRangeSumTree {
     }
 
     void push_path(int node) {
-        for (int shift = std::bit_width((unsigned)node) - 1; shift; --shift)
-            push(node >> shift);
+        for (int shift = std::bit_width((unsigned)node) - 1; shift; --shift) push(node >> shift);
     }
 
     void pull_path(int node) {
-        while (node >>= 1)
-            nodes[node].sum = add(nodes[node * 2].sum, nodes[node * 2 + 1].sum);
+        while (node >>= 1) nodes[node].sum = add(nodes[node * 2].sum, nodes[node * 2 + 1].sum);
     }
 
-public:
-    void reset(const std::vector<uint32_t>& values) {
+  public:
+    void reset(const std::vector<uint32_t> &values) {
         count = values.size();
         assert(count <= (int)Capacity);
-        for (int i = 0; i < count; ++i)
-            nodes[count + i] = {{}, 1, values[i]};
+        for (int i = 0; i < count; ++i) nodes[count + i] = {{}, 1, values[i]};
         for (int node = count - 1; node; --node) {
             nodes[node].lazy = {};
-            nodes[node].length =
-                nodes[node * 2].length + nodes[node * 2 + 1].length;
+            nodes[node].length = nodes[node * 2].length + nodes[node * 2 + 1].length;
             nodes[node].sum = add(nodes[node * 2].sum, nodes[node * 2 + 1].sum);
         }
     }
@@ -699,49 +658,65 @@ public:
             }
             l >>= 1;
             r >>= 1;
-            left_sum = (nodes[l].lazy.a * left_sum +
-                        nodes[l].lazy.b * left_length) % Mod;
-            right_sum = (nodes[r].lazy.a * right_sum +
-                         nodes[r].lazy.b * right_length) % Mod;
+            left_sum = (nodes[l].lazy.a * left_sum + nodes[l].lazy.b * left_length) % Mod;
+            right_sum = (nodes[r].lazy.a * right_sum + nodes[r].lazy.b * right_length) % Mod;
         }
         uint64_t sum = add(left_sum, right_sum);
         uint64_t length = left_length + right_length;
-        for (l >>= 1; l; l >>= 1)
-            sum = (nodes[l].lazy.a * sum + nodes[l].lazy.b * length) % Mod;
+        for (l >>= 1; l; l >>= 1) sum = (nodes[l].lazy.a * sum + nodes[l].lazy.b * length) % Mod;
         return sum;
     }
 };
 
-template<uint32_t Mod>
+template <uint32_t Mod>
 class CompressedAffineSumTree {
-    using Function=Affine<Mod>;
+    using Function = Affine<Mod>;
     int size;
-    std::vector<uint32_t> sum,length;
+    std::vector<uint32_t> sum, length;
     std::vector<Function> lazy;
-    void apply(int node,Function f){
-        sum[node]=((uint64_t)f.a*sum[node]+(uint64_t)f.b*length[node])%Mod;
-        lazy[node]=ComposeAffine<Mod>{}(lazy[node],f);
+    void apply(int node, Function f) {
+        sum[node] = ((uint64_t)f.a * sum[node] + (uint64_t)f.b * length[node]) % Mod;
+        lazy[node] = ComposeAffine<Mod>{}(lazy[node], f);
     }
-    void push(int node){if(lazy[node].a==1&&lazy[node].b==0)return;apply(node*2,lazy[node]);apply(node*2+1,lazy[node]);lazy[node]={};}
-    void apply(int node,int left,int right,int ql,int qr,Function f){
-        if(qr<=left||right<=ql)return;
-        if(ql<=left&&right<=qr){apply(node,f);return;}
-        push(node);int middle=(left+right)/2;apply(node*2,left,middle,ql,qr,f);apply(node*2+1,middle,right,ql,qr,f);
-        sum[node]=sum[node*2]+sum[node*2+1];if(sum[node]>=Mod)sum[node]-=Mod;
+    void push(int node) {
+        if (lazy[node].a == 1 && lazy[node].b == 0) return;
+        apply(node * 2, lazy[node]);
+        apply(node * 2 + 1, lazy[node]);
+        lazy[node] = {};
     }
-    uint32_t fold(int node,int left,int right,int ql,int qr){
-        if(qr<=left||right<=ql)return 0;
-        if(ql<=left&&right<=qr)return sum[node];
-        push(node);int middle=(left+right)/2;uint32_t result=fold(node*2,left,middle,ql,qr)+fold(node*2+1,middle,right,ql,qr);return result>=Mod?result-Mod:result;
+    void apply(int node, int left, int right, int ql, int qr, Function f) {
+        if (qr <= left || right <= ql) return;
+        if (ql <= left && right <= qr) {
+            apply(node, f);
+            return;
+        }
+        push(node);
+        int middle = (left + right) / 2;
+        apply(node * 2, left, middle, ql, qr, f);
+        apply(node * 2 + 1, middle, right, ql, qr, f);
+        sum[node] = sum[node * 2] + sum[node * 2 + 1];
+        if (sum[node] >= Mod) sum[node] -= Mod;
     }
-public:
-    explicit CompressedAffineSumTree(const std::vector<int>& coordinates)
-        :size(std::bit_ceil((unsigned)(coordinates.size()-1))),sum(2*size),length(2*size),lazy(2*size){
-        for(int i=0;i+1<(int)coordinates.size();++i)length[size+i]=coordinates[i+1]-coordinates[i];
-        for(int i=size-1;i;--i)length[i]=length[i*2]+length[i*2+1];
+    uint32_t fold(int node, int left, int right, int ql, int qr) {
+        if (qr <= left || right <= ql) return 0;
+        if (ql <= left && right <= qr) return sum[node];
+        push(node);
+        int middle = (left + right) / 2;
+        uint32_t result =
+            fold(node * 2, left, middle, ql, qr) + fold(node * 2 + 1, middle, right, ql, qr);
+        return result >= Mod ? result - Mod : result;
     }
-    void apply(int left,int right,Function f){apply(1,0,size,left,right,f);}
-    uint32_t fold(int left,int right){return fold(1,0,size,left,right);}
+
+  public:
+    explicit CompressedAffineSumTree(const std::vector<int> &coordinates)
+        : size(std::bit_ceil((unsigned)(coordinates.size() - 1))), sum(2 * size), length(2 * size),
+          lazy(2 * size) {
+        for (int i = 0; i + 1 < (int)coordinates.size(); ++i)
+            length[size + i] = coordinates[i + 1] - coordinates[i];
+        for (int i = size - 1; i; --i) length[i] = length[i * 2] + length[i * 2 + 1];
+    }
+    void apply(int left, int right, Function f) { apply(1, 0, size, left, right, f); }
+    uint32_t fold(int left, int right) { return fold(1, 0, size, left, right); }
 };
 
 } // namespace toy

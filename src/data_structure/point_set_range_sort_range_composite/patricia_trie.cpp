@@ -17,8 +17,7 @@ int main() {
         functions[i].b = input.read_uniform<9, toy::u32>();
     }
 
-    toy::PatriciaSortableSegmentTree tree(
-        keys, functions, Function{}, toy::ComposeAffine<mod>{});
+    toy::PatriciaSortableSegmentTree tree(keys, functions, Function{}, toy::ComposeAffine<mod>{});
     while (query_count--) {
         toy::u32 type = input.read_fixed<1, toy::u32>();
         int first = input.read_uniform<6, toy::u32>();
@@ -29,8 +28,7 @@ int main() {
             tree.set(first, second, Function{a, b});
         } else if (type == 1) {
             toy::u32 value = input.read_uniform<9, toy::u32>();
-            output.write_padded_u32(
-                tree.fold(first, second)(value));
+            output.write_padded_u32(tree.fold(first, second)(value));
         } else if (type == 2) {
             tree.sort_ascending(first, second);
         } else {

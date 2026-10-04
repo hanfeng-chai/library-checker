@@ -15,10 +15,8 @@ int main() {
         int left = input.read_uniform<6, int>();
         int right = input.read_uniform<6, int>();
         int value = input.read_uniform<10, int>();
-        auto first = std::lower_bound(positions.begin(), positions.end(),
-                                      std::pair{value, left});
-        auto last = std::lower_bound(positions.begin(), positions.end(),
-                                     std::pair{value, right});
+        auto first = std::lower_bound(positions.begin(), positions.end(), std::pair{value, left});
+        auto last = std::lower_bound(positions.begin(), positions.end(), std::pair{value, right});
         output.writeln((toy::u64)(last - first));
     }
 }

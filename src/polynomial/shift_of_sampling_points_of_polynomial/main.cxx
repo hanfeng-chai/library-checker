@@ -2,7 +2,8 @@
 #include <toy/polynomial.h>
 using namespace toy;
 int main() {
-    Reader in; Writer out;
+    Reader in;
+    Writer out;
     usize n = in.read<u32, 6>(), m = in.read<u32, 6>();
     u32 c = in.read<u32, 9>();
     Buffer<u32> values(n);

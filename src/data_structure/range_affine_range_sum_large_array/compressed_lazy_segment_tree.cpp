@@ -9,7 +9,7 @@ struct Operation {
     toy::u32 b;
     toy::u32 c;
 };
-}
+} // namespace
 
 int main() {
     constexpr toy::u32 mod = 998244353;
@@ -19,7 +19,7 @@ int main() {
     int query_count = input.read_uniform<6, toy::u32>();
     std::vector<Operation> operations(query_count);
     std::vector<int> coordinates{0, n};
-    for (Operation& operation : operations) {
+    for (Operation &operation : operations) {
         operation.type = input.read_fixed<1, toy::u32>();
         operation.left = input.read_uniform<10, toy::u32>();
         operation.right = input.read_uniform<10, toy::u32>();
@@ -31,14 +31,13 @@ int main() {
         coordinates.push_back(operation.right);
     }
     std::sort(coordinates.begin(), coordinates.end());
-    coordinates.erase(std::unique(coordinates.begin(), coordinates.end()),
-                      coordinates.end());
+    coordinates.erase(std::unique(coordinates.begin(), coordinates.end()), coordinates.end());
     toy::CompressedAffineSumTree<mod> tree(coordinates);
-    for (const Operation& operation : operations) {
-        int left = std::lower_bound(coordinates.begin(), coordinates.end(),
-                                    operation.left) - coordinates.begin();
-        int right = std::lower_bound(coordinates.begin(), coordinates.end(),
-                                     operation.right) - coordinates.begin();
+    for (const Operation &operation : operations) {
+        int left = std::lower_bound(coordinates.begin(), coordinates.end(), operation.left) -
+                   coordinates.begin();
+        int right = std::lower_bound(coordinates.begin(), coordinates.end(), operation.right) -
+                    coordinates.begin();
         if (operation.type == 0)
             tree.apply(left, right, {operation.b, operation.c});
         else
