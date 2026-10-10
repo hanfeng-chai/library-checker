@@ -1,0 +1,192 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgMTkgdG9rZW5zCg==",
+      "memory": 794624,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "max_00",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 161685504,
+      "status": "AC",
+      "time": 2.419
+    },
+    {
+      "case": "max_01",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 161902592,
+      "status": "AC",
+      "time": 2.422
+    },
+    {
+      "case": "max_02",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 161947648,
+      "status": "AC",
+      "time": 2.431
+    },
+    {
+      "case": "max_03",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 161812480,
+      "status": "AC",
+      "time": 2.432
+    },
+    {
+      "case": "max_04",
+      "checker_out": "b2sgMTk5OTk5OCB0b2tlbnMK",
+      "memory": 161943552,
+      "status": "AC",
+      "time": 2.423
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNTU1OSB0b2tlbnMK",
+      "memory": 1114112,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMzc3MSB0b2tlbnMK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgMjg0NyB0b2tlbnMK",
+      "memory": 1036288,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTE4MyB0b2tlbnMK",
+      "memory": 1323008,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNTcwNSB0b2tlbnMK",
+      "memory": 1318912,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "very_small_00",
+      "checker_out": "b2sgIjExNjQ1MDMwNiIK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "very_small_01",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 790528,
+      "status": "AC",
+      "time": 0.009
+    },
+    {
+      "case": "very_small_02",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 540672,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "very_small_03",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 528384,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "very_small_04",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 806912,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgOTcwMjM5IHRva2Vucwo=",
+      "memory": 79122432,
+      "status": "AC",
+      "time": 0.899
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMTM2ODgxNyB0b2tlbnMK",
+      "memory": 116252672,
+      "status": "AC",
+      "time": 1.434
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNDg0NDEyIHRva2Vucwo=",
+      "memory": 40030208,
+      "status": "AC",
+      "time": 0.355
+    },
+    {
+      "case": "random_03",
+      "checker_out": "b2sgMTkzOTIyNyB0b2tlbnMK",
+      "memory": 157343744,
+      "status": "AC",
+      "time": 2.306
+    },
+    {
+      "case": "random_04",
+      "checker_out": "b2sgMTY4MzI0MCB0b2tlbnMK",
+      "memory": 139022336,
+      "status": "AC",
+      "time": 1.898
+    },
+    {
+      "case": "many_00",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 14192640,
+      "status": "AC",
+      "time": 0.192
+    },
+    {
+      "case": "many_01",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 14168064,
+      "status": "AC",
+      "time": 0.191
+    },
+    {
+      "case": "many_02",
+      "checker_out": "b2sgMTMxODU0OSB0b2tlbnMK",
+      "memory": 14159872,
+      "status": "AC",
+      "time": 0.199
+    }
+  ],
+  "overview": {
+    "id": 408822,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 161947648,
+    "problem_name": "dirichlet_inverse_and_prefix_sums",
+    "problem_title": "Dirichlet Inverse and Prefix Sums",
+    "status": "AC",
+    "submission_time": "2026-10-08T10:33:21.679125Z",
+    "time": 2.432,
+    "user_name": "qwerasdfzxcl"
+  }
+}

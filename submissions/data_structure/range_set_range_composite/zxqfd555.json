@@ -1,0 +1,178 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 1613824,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_random_00",
+      "checker_out": "b2sgNjE2IHRva2Vucwo=",
+      "memory": 2928640,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_random_01",
+      "checker_out": "b2sgNjE3IHRva2Vucwo=",
+      "memory": 1871872,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgNDg1IHRva2Vucwo=",
+      "memory": 2924544,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgNDk1IHRva2Vucwo=",
+      "memory": 2138112,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNDg5IHRva2Vucwo=",
+      "memory": 2928640,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_03",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 1855488,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_04",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 1847296,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_05",
+      "checker_out": "b2sgNTE2IHRva2Vucwo=",
+      "memory": 1089536,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_06",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 1843200,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_07",
+      "checker_out": "b2sgNDk3IHRva2Vucwo=",
+      "memory": 2641920,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_08",
+      "checker_out": "b2sgNTEwIHRva2Vucwo=",
+      "memory": 2920448,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "small_09",
+      "checker_out": "b2sgNDg3IHRva2Vucwo=",
+      "memory": 839680,
+      "status": "AC",
+      "time": 0.002
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMjA1NzQ4IHRva2Vucwo=",
+      "memory": 32813056,
+      "status": "AC",
+      "time": 0.167
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgMjA2ODMyIHRva2Vucwo=",
+      "memory": 35684352,
+      "status": "AC",
+      "time": 0.171
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgMTkxMzM2IHRva2Vucwo=",
+      "memory": 18653184,
+      "status": "AC",
+      "time": 0.125
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgMjQ5ODk3IHRva2Vucwo=",
+      "memory": 40140800,
+      "status": "AC",
+      "time": 0.204
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgMjUwNzE0IHRva2Vucwo=",
+      "memory": 40251392,
+      "status": "AC",
+      "time": 0.204
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgMjUwMDY3IHRva2Vucwo=",
+      "memory": 40132608,
+      "status": "AC",
+      "time": 0.205
+    },
+    {
+      "case": "fragment_00",
+      "checker_out": "b2sgMjQ5OTA5IHRva2Vucwo=",
+      "memory": 40259584,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "fragment_01",
+      "checker_out": "b2sgMjQ5NjI3IHRva2Vucwo=",
+      "memory": 40112128,
+      "status": "AC",
+      "time": 0.159
+    },
+    {
+      "case": "slide_window_00",
+      "checker_out": "b2sgMjA3OTc3IHRva2Vucwo=",
+      "memory": 40378368,
+      "status": "AC",
+      "time": 0.178
+    },
+    {
+      "case": "slide_window_01",
+      "checker_out": "b2sgMjA4NTMzIHRva2Vucwo=",
+      "memory": 40419328,
+      "status": "AC",
+      "time": 0.166
+    }
+  ],
+  "overview": {
+    "id": 409160,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 40419328,
+    "problem_name": "range_set_range_composite",
+    "problem_title": "Range Set Range Composite",
+    "status": "AC",
+    "submission_time": "2026-10-09T13:22:55.029986Z",
+    "time": 0.205,
+    "user_name": "zxqfd555"
+  }
+}

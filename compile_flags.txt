@@ -6,8 +6,6 @@
 
 -Wall
 -Wextra
--Wshadow
--Wconversion
 
 -Iinclude
 -Iac-libarary

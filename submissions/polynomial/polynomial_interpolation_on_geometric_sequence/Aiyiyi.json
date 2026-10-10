@@ -1,0 +1,213 @@
+{
+  "can_rejudge": false,
+  "case_results": [
+    {
+      "case": "example_00",
+      "checker_out": "b2sgNCB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "example_01",
+      "checker_out": "b2sgIjEwMCIK",
+      "memory": 544768,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_00",
+      "checker_out": "b2sgMiB0b2tlbnMK",
+      "memory": 802816,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "small_01",
+      "checker_out": "b2sgMyB0b2tlbnMK",
+      "memory": 561152,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "small_02",
+      "checker_out": "b2sgNSB0b2tlbnMK",
+      "memory": 798720,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "random_00",
+      "checker_out": "b2sgMzg5ODEzIHRva2Vucwo=",
+      "memory": 18522112,
+      "status": "AC",
+      "time": 0.012
+    },
+    {
+      "case": "random_01",
+      "checker_out": "b2sgNDYzMDQ2IHRva2Vucwo=",
+      "memory": 19185664,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "random_02",
+      "checker_out": "b2sgNTMzMzYgdG9rZW5zCg==",
+      "memory": 5009408,
+      "status": "AC",
+      "time": 0.003
+    },
+    {
+      "case": "max_random_00",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 18915328,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_01",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 18882560,
+      "status": "AC",
+      "time": 0.015
+    },
+    {
+      "case": "max_random_02",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 20750336,
+      "status": "AC",
+      "time": 0.014
+    },
+    {
+      "case": "y0_00",
+      "checker_out": "b2sgNTI0Mjg4IHRva2Vucwo=",
+      "memory": 19668992,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "nar_0_00",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 573440,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "nar_0_01",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 569344,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "nar_0_02",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "nar_0_03",
+      "checker_out": "b2sgMCB0b2tlbnMK",
+      "memory": 581632,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "nar_0_04",
+      "checker_out": "b2sgIjcyOTU2MTYxOSIK",
+      "memory": 827392,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "nar_0_05",
+      "checker_out": "b2sgIjIyMDYwMzYxMiIK",
+      "memory": 786432,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "nar_0_06",
+      "checker_out": "b2sgIjU4NDMyNzYzIgo=",
+      "memory": 663552,
+      "status": "AC",
+      "time": 0.001
+    },
+    {
+      "case": "nar_0_07",
+      "checker_out": "b2sgIjM1NTIzNjI0NiIK",
+      "memory": 565248,
+      "status": "AC",
+      "time": 0
+    },
+    {
+      "case": "near_pow2_00",
+      "checker_out": "b2sgMjYyMTQyIHRva2Vucwo=",
+      "memory": 15888384,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "near_pow2_01",
+      "checker_out": "b2sgMjYyMTQzIHRva2Vucwo=",
+      "memory": 17571840,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "near_pow2_02",
+      "checker_out": "b2sgMjYyMTQ0IHRva2Vucwo=",
+      "memory": 16523264,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "near_pow2_03",
+      "checker_out": "b2sgMjYyMTQ1IHRva2Vucwo=",
+      "memory": 16527360,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "near_pow2_04",
+      "checker_out": "b2sgMjYyMTQ2IHRva2Vucwo=",
+      "memory": 17838080,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "pow_rN_equal_1_00",
+      "checker_out": "b2sgMjc4NTI4IHRva2Vucwo=",
+      "memory": 17997824,
+      "status": "AC",
+      "time": 0.011
+    },
+    {
+      "case": "pow_rN_equal_1_01",
+      "checker_out": "b2sgNDU4NzUyIHRva2Vucwo=",
+      "memory": 19959808,
+      "status": "AC",
+      "time": 0.013
+    },
+    {
+      "case": "pow_rN_equal_1_02",
+      "checker_out": "b2sgMzQ4MTYgdG9rZW5zCg==",
+      "memory": 5005312,
+      "status": "AC",
+      "time": 0.002
+    }
+  ],
+  "overview": {
+    "id": 409510,
+    "is_latest": true,
+    "lang": "cpp",
+    "memory": 20750336,
+    "problem_name": "polynomial_interpolation_on_geometric_sequence",
+    "problem_title": "Polynomial Interpolation (Geometric Sequence)",
+    "status": "AC",
+    "submission_time": "2026-10-10T07:29:33.039026Z",
+    "time": 0.015,
+    "user_name": "Aiyiyi"
+  }
+}
